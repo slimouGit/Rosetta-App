@@ -7,10 +7,10 @@ include 'includes/db_insert.php';
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kiwi Banana Requirements Engineering Tool</title>
+        <title>Rosetta-App</title>
         <meta charset="utf-8"/>
         <meta name="author" content="Salim Oussayfi">
-        <meta name="description" content="ESA Requirements Engineering SWT">
+        <meta name="description" content="Requirements Engineering Praxis-Semester">
         
         <!-- CSS Import -->
         <link rel="stylesheet" href="css/stylesheet.css">
@@ -113,7 +113,7 @@ include 'includes/db_insert.php';
         	<table>
         		<thead>
         			<tr>
-        				<td class="headline" colspan="5">Projekt KiwiBanana</td>
+        				<td class="headline" colspan="5">Projekt Rosetta-App</td>
         				<td class="headline" id="status_headline" colspan="3"></td>
         			</tr>
         		</thead>

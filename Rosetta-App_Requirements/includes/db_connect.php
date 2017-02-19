@@ -1,8 +1,8 @@
 <?php
-$servername = "slimou.de.mysql";
-$dbname = "slimou_de";
-$username = "slimou_de";
-$password = "26041980";
+$servername = "127.0.0.1";
+$dbname = "rosetta-app";
+$username = "root";
+$password = "";
 ?>
 
 <?php

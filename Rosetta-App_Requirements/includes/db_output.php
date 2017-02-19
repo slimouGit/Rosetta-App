@@ -6,7 +6,7 @@
     //---------------------------------------------------------------------------------------------------------
     
     //alle Funde ausser Verbindlichkeit = "kann" ausgeben
-    $sql = "SELECT * FROM `kiwibanana_requirements` WHERE `verbindlichkeit` <> 'kann' order by `verbindlichkeit` ASC";
+    $sql = "SELECT * FROM `rosetta-app_requirements` WHERE `verbindlichkeit` <> 'kann' order by `verbindlichkeit` ASC";
     $result = $conn->query($sql);
     
     //---------------------------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@
     //---------------------------------------------------------------------------------------------------------
     
     //nur die Eintraege mit Verbindlichkeit = "kann" ausgeben
-    $sql = "SELECT * FROM `kiwibanana_requirements` WHERE `verbindlichkeit` = 'kann'";
+    $sql = "SELECT * FROM `rosetta-app_requirements` WHERE `verbindlichkeit` = 'kann'";
     $result = $conn->query($sql);
                 
     //Datenausgabe

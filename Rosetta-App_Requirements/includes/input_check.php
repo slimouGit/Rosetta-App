@@ -1,7 +1,8 @@
 <?php
 
 $fehler = false;
-$verbindlichkeit = $author = $titel = $beschreibung = $prioritaet = $verantworlicher = "";
+$verbindlichkeit = $author = $titel = $beschreibung =  "";
+$verbindlichkeit_Err = $author_Err = $titel_Err = $beschreibung_Err =  "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -9,25 +10,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $author = test_input($_POST["author"]);
   $titel = test_input($_POST["titel"]);
   $beschreibung = test_input($_POST["beschreibung"]);
-  $prioritaet = test_input($_POST["prioritaet"]);
-  $verantwortlicher = test_input($_POST["verantwortlicher"]);
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
     if (empty($_POST["verbindlichkeit"])) {
-      $verbindlichkeit_Err = "Bitte die Verbindlichkeit angeben?";
+        $verbindlichkeit_Err = "Bitte die Verbindlichkeit angeben?";
       $fehler = true;
     } else {
       $verbindlichkeit = test_input($_POST["verbindlichkeit"]);
     }
-  
-    if (empty($_POST["author"])) {
-      $author_Err = "Wer ist denn hier der Verantwortliche?";
-      $fehler = true;
-    } else {
-      $author = test_input($_POST["author"]);
-    }
-  
+
     if (empty($_POST["titel"])) {
       $titel_Err = "Bitte eine kurze Beschreibung angeben";
       $fehler = true;
