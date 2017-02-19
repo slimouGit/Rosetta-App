@@ -2,7 +2,7 @@
 if(isset($_POST['submit']) && (!$fehler)) {
         
 //Daten einfuegen
-$sql = "INSERT INTO rosetta-app_requirements(verbindlichkeit, author, titel, beschreibung)
+$sql = "INSERT INTO rosetta_requirements(verbindlichkeit, author, titel, beschreibung)
         VALUES ('$verbindlichkeit', '$author', '$titel', '$beschreibung')";
         
         if ($conn->query($sql) === TRUE) {
