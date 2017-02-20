@@ -185,12 +185,12 @@ include 'includes/db_insert.php';
         <table class="table table-hover table-responsive" id="tabelle">
             <thead>
             <tr>
-                <th class="col-sm-2">Verbidlichkeit</th>
-                <th>ID</th>
-                <th>Datum/Uhrzeit</th>
-                <th>Author</th>
-                <th>Titel</th>
-                <th>Beschreibung</th>
+                <th class="col-sm-1">Verbidlichkeit</th>
+                <th class="col-sm-1">ID</th>
+                <th class="col-sm-1">Datum/Uhrzeit</th>
+                <th class="col-sm-1">Author</th>
+                <th class="col-sm-2">Titel</th>
+                <th class="col-sm-6">Beschreibung</th>
             </tr>
             </thead>
 
