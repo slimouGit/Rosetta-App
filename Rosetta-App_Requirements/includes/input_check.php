@@ -13,20 +13,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $beschreibung = test_input($_POST["beschreibung"]);
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      
-    if (empty($_POST["verbindlichkeit"])) {
-        $verbindlichkeit_Err = "Bitte die Verbindlichkeit angeben?";
-      $fehler = true;
-    } else {
-      $verbindlichkeit = test_input($_POST["verbindlichkeit"]);
-    }
 
-    if (empty($_POST["titel"])) {
-      $titel_Err = "Bitte eine kurze Beschreibung angeben";
-      $fehler = true;
-    } else {
-      $titel = test_input($_POST["titel"]);
-    }
+      if (empty($_POST["verbindlichkeit"])) {
+        $verbindlichkeit_Err = "Bitte die Verbindlichkeit angeben?";
+        $fehler = true;
+      } else {
+            $verbindlichkeit = test_input($_POST["verbindlichkeit"]);
+      }
+
+      if (empty($_POST["author"])) {
+          $author_Err = "Bitte den Author eintragen";
+          $fehler = true;
+      } else {
+          $titel = test_input($_POST["author"]);
+      }
+
+      if (empty($_POST["titel"])) {
+          $titel_Err = "Bitte eine kurze Beschreibung angeben";
+          $fehler = true;
+      } else {
+          $titel = test_input($_POST["titel"]);
+      }
   
     if (empty($_POST["beschreibung"])) {
       $beschreibung_Err = "Eine ausfuehrliche Beschreibung fehlt";
