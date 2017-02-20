@@ -50,7 +50,7 @@ include 'includes/db_insert.php';
         .partition{
             padding:0px 10px;margin:10px 0px 10px 0px;
         }
-        #requires{
+        #views{
             position: relative;
             top:10px;
         }
@@ -87,7 +87,7 @@ include 'includes/db_insert.php';
     </div>
     <!--------------------------------------------------------------------------------------->
 
-    <div id="requires">
+    <div id="views">
 
     <!--pageHeader-->
 
