@@ -27,6 +27,7 @@
             echo "<td class=\"author\">" . $row["author"] . "</td>";
             echo "<td class=\"titel\">" . $row["titel"] . "</td>";
             echo "<td class=\"beschreibung\">" . $row["beschreibung"] . "</td>";
+            echo "<td class=\"id\"><input type=\"checkbox\" id=\"Checkbox_$verbindlichkeit_ID\"></td>";
                         
         echo "</tr>";
                           
@@ -51,7 +52,7 @@
             echo "<td class=\"author\">" . $row["author"] . "</td>";
             echo "<td class=\"titel\">" . $row["titel"] . "</td>";
             echo "<td class=\"beschreibung\">" . $row["beschreibung"] . "</td>";
-                        
+        echo "<td class=\"id\"><input type=\"checkbox\" id=\"Checkbox_$verbindlichkeit_ID\"></td>";
         echo "</tr>";
                           
         //Wert fuer ID wir inkrementiert
