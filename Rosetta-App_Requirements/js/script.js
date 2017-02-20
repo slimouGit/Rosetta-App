@@ -6,6 +6,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 //ID flipFormular wird mit EventListener belegt
+
 document.getElementById("flipFormular").addEventListener("click", changeText);
 
 //Hilfsvariable

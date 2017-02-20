@@ -6,154 +6,183 @@ include 'includes/db_insert.php';
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Rosetta-App</title>
-        <meta charset="utf-8"/>
-        <meta name="author" content="Salim Oussayfi">
-        <meta name="description" content="Requirements Engineering Praxis-Semester">
-        
-        <!-- CSS Import -->
-        <link rel="stylesheet" href="css/stylesheet.css">
-        
-        <!-- Import fuer JQery Animation fuer Eingabefelder -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        
-    </head>
-    <body>
-        
-        <header>Requirements Engineering Tool</header>
-        <span  id="home"></span>
-        <main>
-                
-                <!------------------------------------------------------------------------------------------------------------------------------------------>
-                
-                <div id="eingabeFormular">
-                
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-                        
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        
-                        <div>
-                            <div class="form_container">
-                                <label class="form">Verbindlichkeit</label>
-                                <div id="verbindlichkeit_container">
-                                    <input type="radio" id="muss" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="muss">
-                                    <label class="radio formular" for="muss">muss</label>
-                                    <input type="radio" id="soll" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="soll") echo "checked";?> value="soll">
-                                    <label class="radio formular" for="soll">soll</label>
-                                    <input type="radio" id="wird" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="wird") echo "checked";?> value="wird">
-                                    <label class="radio formular" for="wird">wird</label>
-                                    <input type="radio" id="kann" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="kann") echo "checked";?> value="kann">
-                                    <label class="radio formular" for="kann">kann</label>
-                                </div>
-                            </div>
-                            <!------------------------------------------------------------------------------------------------------------------------------------------>
-                            <div class="error_container">
-                                <span class="error"><?php echo $verbindlichkeit_Err;?></span>
-                            </div>
-                        </div>
-                        
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        
-                        <div>
-                            <div class="form_container">
-                                <label class="form">Author</label>
-                                <!--<input class="textFeld formular" placeholder="Author" type="text" name="author" value="<?php echo $author;?>">-->
-                                <select name="author">
-                                    <option value="" selected="selected">bitte wählen</option>
-                                    <option value="Welde">Welde</option>
-                                    <option value="Salim">Salim</option>
-                                </select>
-                            </div>
-                            <!------------------------------------------------------------------------------------------------------------------------------------------>
-                            <div class="error_container">
-                                <span class="error"><?php echo $author_Err;?></span>
-                            </div>
-                        </div>
-                        
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        
-                        <div>
-                            <div class="form_container">
-                                <label class="form">Titel</label>
-                                <input class="textFeld formular" placeholder="Titel" type="text" name="titel" value="<?php echo $titel;?>">
-                            </div>
-                            <!------------------------------------------------------------------------------------------------------------------------------------------>
-                            <div class="error_container">
-                                <span class="error"><?php echo $titel_Err;?></span>
-                            </div>
-                        </div>
-                        
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        
-                        <div>
-                            <div class="form_container">
-                                <label class="form">Beschreibung</label>
-                                <textarea class="textArea formular" placeholder="Beschreibung" rows="5" cols="40" name="beschreibung" value="<?php echo $beschreibung;?>"></textarea>
-                            </div>
-                            <!------------------------------------------------------------------------------------------------------------------------------------------>
-                            <div class="error_container">
-                                <span class="error"><?php echo $beschreibung_Err;?></span>
-                            </div>
-                        </div>
-                        
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        
-                        <div>
-                            <input type="submit" class="button" value="eintragen" name="submit"/>
-                        </div>
-                        
-                        <!------------------------------------------------------------------------------------------------------------------------------------------>
-                        
-                    </form> 
+<head>
+    <title>Rosetta-App</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Salim Oussayfi">
+    <meta name="description" content="Requirements Engineering Praxis-Semester">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap-->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Import
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- Import fuer JQery Animation fuer Eingabefelder -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <style>
+        #formular{position:relative;top:50px;}
+        .error{color:red;}
+        .btn-primary {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+        }
+        .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+            color: #fff;
+            background-color: #ccc;
+            border-color: #000;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container-fluid">
+
+    <!--------------------------------------------------------------------------------------->
+    <!--navbar-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Rosetta-App</a>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------------------------------------------->
+
+    <!--------------------------------------------------------------------------------------->
+    <!--formular-->
+
+    <div class="row">
+        <form class="form-horizontal" id="formular" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+
+            <!--------------------------------------------------------------------------------------->
+            <!--verbidlichkeit-->
+
+            <div class="form-group">
+                <label for="select" class="col-sm-2 control-label">Verbindlichkeit</label>
+                <div class="col-sm-6">
+                    <label class="radio-inline">
+                        <input type="radio" id="muss" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="muss">muss
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" selected id="soll" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="soll">soll
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="kann" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="kann">kann
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="wird" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="wird">wird
+                    </label>
                 </div>
-            <div id="flipFormular"><span id="textWechsel">Formular ausblenden</span></div>
-            <!------------------------------------------------------------------------------------------------------------------------------------------>
-        
-        	<table>
-        		<thead>
-        			<tr>
-        				<td class="headline" colspan="5">Projekt Rosetta-App</td>
-        				<td class="headline" id="status_headline" colspan="3"></td>
-        			</tr>
-        		</thead>
-        		
-        		<!------------------------------------------------------------------------------------------------------------------------------------------>
-        		
-        		<tbody>
-        			<tr>
-        				<th class="head">Verbindlichkeit</th>
-        				<td class="head">ID</td>
-        				<td class="head">Datum/Uhrzeit</td>
-        				<td class="head">Author</td>
-        				<td class="head">Titel</td>
-        				<td class="head">Beschreibung</td>
-        			</tr>
-        			
-        	
-                    <!------------------------------------------------------------------------------------------------------------------------------------------>
-        	        <?php
-        	        include 'includes/db_output.php';
-                    ?>
-                    <!------------------------------------------------------------------------------------------------------------------------------------------>
-                    
-                </tbody>
-                <tr>
-                    <td class="footer" colspan="8">
-                        <div id="arrow">
-                            <a href="#home" title="nach oben">
-                                <img src="img/home-arrow.png"/>
-                            </a>
-                        </div>
-                        <div id="logo">
-                            <!--
-                            <img src="img/slimou.png" title="slimou by Salim Oussayfi"/>
-                            -->
-                        </div>
-                    </td>
-                </tr>
-        	</table>
-        </main>
-    </body>
-    <script src="js/script.js"></script>
+                <div class="col-sm-4 errorContainer">
+                    <span class="error"><?php echo $verbindlichkeit_Err;?></span>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------------------------->
+            <!--author-->
+
+            <div class="form-group">
+                <label for="select" class="col-sm-2 control-label">Author</label>
+                <div class="col-sm-6">
+                    <select name="author" class="form-control">
+                        <option value="" selected="selected">bitte wählen</option>
+                        <option value="Claudia">Claudia</option>
+                        <option value="Salim">Salim</option>
+                        <option value="Thomas">Thomas</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 errorContainer">
+                    <span class="error"><?php echo $author_Err;?></span>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------------------------->
+            <!--titel-->
+
+            <div class="form-group">
+                <label for="titel" class="col-sm-2 control-label">Titel</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="titel" value="<?php echo $titel;?>">
+                </div>
+                <div class="col-sm-4 errorContainer">
+                    <span class="error"><?php echo $titel_Err;?></span>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------------------------->
+            <!--beschreibung-->
+
+            <div class="form-group">
+                <label for="beschreibung" class="col-sm-2 control-label">Beschreibung</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" rows="5" name="beschreibung" value="<?php echo $beschreibung;?>"></textarea>
+                </div>
+                <div class="col-sm-4 errorContainer">
+                    <span class="error"><?php echo $beschreibung_Err;?></span>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------------------------->
+            <!--submit-->
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary" value="eintragen" name="submit">Submit</button>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------------------------->
+
+        </form>
+    </div>
+    <!--------------------------------------------------------------------------------------->
+
+    <!--pageHeader-->
+
+    <div class="row">
+        <div class="page-header">
+            <h1>Requirements <small>Rosetta-App</small></h1>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------------------------------------------------->
+    <!--table-->
+
+    <div class="row">
+        <table class="table table-hover table-responsive" id="tabelle">
+            <thead>
+            <tr>
+                <th class="col-sm-2">Verbidlichkeit</th>
+                <th>ID</th>
+                <th>Datum/Uhrzeit</th>
+                <th>Author</th>
+                <th>Titel</th>
+                <th>Beschreibung</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <!--include data-->
+                <?php
+                    include 'includes/db_output.php';
+                ?>
+            </tbody>
+        </table>
+    </div>
+    <!--------------------------------------------------------------------------------------->
+
+</div>
+
+
+</body>
+<!---->
+<script src="js/liability.js"></script>
 </html>

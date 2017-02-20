@@ -5,8 +5,9 @@ $verbindlichkeit = $author = $titel = $beschreibung =  "";
 $verbindlichkeit_Err = $author_Err = $titel_Err = $beschreibung_Err =  "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-  $verbindlichkeit = test_input($_POST["verbindlichkeit"]);
+   if(!empty($verbidlichkeit)){
+        $verbindlichkeit = test_input($_POST["verbindlichkeit"]);
+   }
   $author = test_input($_POST["author"]);
   $titel = test_input($_POST["titel"]);
   $beschreibung = test_input($_POST["beschreibung"]);
