@@ -19,7 +19,7 @@ include 'includes/db_insert.php';
     <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS Import
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">-->
 
     <!-- Import fuer JQery Animation fuer Eingabefelder -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
