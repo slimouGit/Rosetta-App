@@ -2,7 +2,7 @@
             <thead>
             <tr>
                 <!-- ?orderBy= -->
-                <th class="col-sm-1"><a href="index.php?orderBy=verbindlichkeit">Verbidlichkeit</a></th>
+                <th class="col-sm-1"><a href="index.php?orderBy=verbindlichkeit">Verbindlichkeit</a></th>
                 <th class="col-sm-1"><a href="index.php?orderBy=id">ID</a></th>
                 <th class="col-sm-1"><a href="index.php?orderBy=datum">Datum/Uhrzeit</a></th>
                 <th class="col-sm-1"><a href="index.php?orderBy=author">Author</a></th>
