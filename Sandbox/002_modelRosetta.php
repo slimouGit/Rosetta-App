@@ -15,58 +15,58 @@ $xmlstr = <<<XML
     </monat>
     <monat>
         <de>Februar</de>
-        <fr>février</fr>
-        <it>febbraio</it>
+        <fr>Février</fr>
+        <it>Febbraio</it>
     </monat>
     <monat>
         <de>März</de>
-        <fr>mars</fr>
-        <it>marzo</it>
+        <fr>Mars</fr>
+        <it>Marzo</it>
     </monat>
     <monat>
         <de>April</de>
-        <fr>avril</fr>
-        <it>aprile</it>
+        <fr>Avril</fr>
+        <it>Aprile</it>
     </monat>
     <monat>
         <de>Mai</de>
-        <fr>mai</fr>
-        <it>maggio</it>
+        <fr>Mai</fr>
+        <it>Maggio</it>
     </monat>
     <monat>
         <de>Juni</de>
-        <fr>juin</fr>
-        <it>giugno</it>
+        <fr>Juin</fr>
+        <it>Giugno</it>
     </monat>
     <monat>
         <de>Juli</de>
-        <fr>juillet</fr>
-        <it>luglio</it>
+        <fr>Juillet</fr>
+        <it>Luglio</it>
     </monat>
     <monat>
         <de>August</de>
-        <fr>août</fr>
-        <it>agosto</it>
+        <fr>Août</fr>
+        <it>Agosto</it>
     </monat>
     <monat>
         <de>September</de>
-        <fr>septembre</fr>
-        <it>settembre</it>
+        <fr>Aeptembre</fr>
+        <it>Settembre</it>
     </monat>
     <monat>
         <de>Oktober</de>
-        <fr>octobre</fr>
-        <it>ottobre</it>
+        <fr>Octobre</fr>
+        <it>Ottobre</it>
     </monat>
     <monat>
         <de>November</de>
-        <fr>novembre</fr>
-        <it>novembre</it>
+        <fr>Novembre</fr>
+        <it>Novembre</it>
     </monat>
     <monat>
         <de>Dezember</de>
-        <fr>décembre</fr>
-        <it>dicembre</it>
+        <fr>Décembre</fr>
+        <it>Dicembre</it>
     </monat>
  </monate>
 </titelseite>

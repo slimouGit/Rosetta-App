@@ -27,11 +27,15 @@ echo $testItems->monate[0]->monat[1]->it;
 for($i = 0;$i<=11;$i+=1){
     echo "<br/>";
     echo $testItems->monate[0]->monat[$i]->de;
-    echo "<br/>";
+    echo "  |  ";
     echo $testItems->monate[0]->monat[$i]->fr;
-    echo "<br/>";
+    echo "  |  ";
     echo $testItems->monate[0]->monat[$i]->it;
     echo "<br/>-----------------------------------<br/>";
 }
+
+$result = $testItems->xpath("Januar");
+
+print_r(var_dump($result));
 
 ?>
