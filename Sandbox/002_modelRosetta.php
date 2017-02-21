@@ -1,0 +1,74 @@
+<?php
+$xmlstr = <<<XML
+<?xml version='1.0' standalone='yes'?>
+<titelseite>
+ <headline>
+    <de>Ausstattungen und Preise</de>
+    <fr>Equipements et prix</fr>
+    <it>Equipaggiamenti e prezzi</it>
+ </headline>
+ <monate>
+    <monat>
+        <de>Januar</de>
+        <fr>Janvier</fr>
+        <it>Gennaio</it>
+    </monat>
+    <monat>
+        <de>Februar</de>
+        <fr>février</fr>
+        <it>febbraio</it>
+    </monat>
+    <monat>
+        <de>März</de>
+        <fr>mars</fr>
+        <it>marzo</it>
+    </monat>
+    <monat>
+        <de>April</de>
+        <fr>avril</fr>
+        <it>aprile</it>
+    </monat>
+    <monat>
+        <de>Mai</de>
+        <fr>mai</fr>
+        <it>maggio</it>
+    </monat>
+    <monat>
+        <de>Juni</de>
+        <fr>juin</fr>
+        <it>giugno</it>
+    </monat>
+    <monat>
+        <de>Juli</de>
+        <fr>juillet</fr>
+        <it>luglio</it>
+    </monat>
+    <monat>
+        <de>August</de>
+        <fr>août</fr>
+        <it>agosto</it>
+    </monat>
+    <monat>
+        <de>September</de>
+        <fr>septembre</fr>
+        <it>settembre</it>
+    </monat>
+    <monat>
+        <de>Oktober</de>
+        <fr>octobre</fr>
+        <it>ottobre</it>
+    </monat>
+    <monat>
+        <de>November</de>
+        <fr>novembre</fr>
+        <it>novembre</it>
+    </monat>
+    <monat>
+        <de>Dezember</de>
+        <fr>décembre</fr>
+        <it>dicembre</it>
+    </monat>
+ </monate>
+</titelseite>
+XML;
+?>
