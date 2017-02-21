@@ -18,8 +18,8 @@ include 'includes/db_insert.php';
 
     <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS Import
-    <link rel="stylesheet" href="css/stylesheet.css">-->
+    <!-- CSS Import-->
+    <link rel="stylesheet" href="css/layout.css">-->
 
     <!-- Import fuer JQery Animation fuer Eingabefelder -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -27,37 +27,9 @@ include 'includes/db_insert.php';
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <style>
-        body{margin:0px;padding:0px;}
-        header {position:fixed;left:0px;top:0px;width:100%;height:45px;z-index:2000;background-color:#000;color:#fff;padding:10px 0px;text-transform: uppercase;box-shadow: 0px 2px 5px #888888;}
-        footer {position:fixed;left:0px;bottom:0px;width:100%;height:45px;z-index:99;background-color:#000;color:#fff;padding:10px 0px;text-transform: uppercase;box-shadow: 0px -2px 5px #888888;}
-        #content{padding-bottom:50px;}
-
-        #navtab{position:relative;top:50px;z-index:1000;}
-        #formular{position:relative;left:0px;top:50px;height:100%;}
-
-        .error{color:red;}
-        .btn-primary {
-            color: #fff;
-            background-color: #000;
-            border-color: #000;
-        }
-        .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-            color: #fff;
-            background-color: #ccc;
-            border-color: #000;
-        }
-        .partition{
-            padding:0px 10px;margin:10px 0px 10px 0px;
-        }
-        #views{
-            position: relative;
-            top:10px;
-        }
-    </style>
-
 </head>
 <body>
+<a href="" id="home"></a>
 <div class="container-fluid" id="content">
 
     <!--------------------------------------------------------------------------------------->
@@ -66,6 +38,7 @@ include 'includes/db_insert.php';
     <header>
 
     </header>
+
     <!--------------------------------------------------------------------------------------->
 
     <!--------------------------------------------------------------------------------------->
@@ -102,26 +75,9 @@ include 'includes/db_insert.php';
     <!--table-->
 
     <div class="row partition">
-        <table class="table table-hover table-responsive" id="tabelle">
-            <thead>
-            <tr>
-                <!-- ?orderBy= -->
-                <th class="col-sm-1"><a href="index.php?sort=verbindlichkeit">Verbidlichkeit</a></th>
-                <th class="col-sm-1"><a href="index.php?sort=id">ID</a></th>
-                <th class="col-sm-1"><a href="index.php?sort=datum">Datum/Uhrzeit</a></th>
-                <th class="col-sm-1"><a href="index.php?sort=author">Author</a></th>
-                <th class="col-sm-2"><a href="index.php?sort=titel">Titel</a></th>
-                <th class="col-sm-6"><a href="index.php?sort=beschreibung">Beschreibung</a></th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <!--include data-->
-                <?php
-                    include 'includes/db_output.php';
-                ?>
-            </tbody>
-        </table>
+        <?php
+        include 'views/tabelle.php';
+        ?>
     </div>
     <!--------------------------------------------------------------------------------------->
 
@@ -131,7 +87,7 @@ include 'includes/db_insert.php';
     <!--footer-->
 
     <footer>
-
+        <a href="#home"><img src="img/home-arrow.png"></a>
     </footer>
 
     <!--------------------------------------------------------------------------------------->

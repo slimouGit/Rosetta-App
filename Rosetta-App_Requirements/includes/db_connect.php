@@ -1,8 +1,20 @@
 <?php
+
+//local
 $servername = "127.0.0.1";
 $dbname = "rosetta-app";
 $username = "root";
 $password = "";
+
+
+/*
+//online
+$servername = "rdbms.strato.de";
+$dbname = "DB2881460";
+$username = "U2881460";
+$password = "Rosetta-App_1";
+*/
+
 ?>
 
 <?php

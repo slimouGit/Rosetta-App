@@ -4,18 +4,14 @@
     $verbindlichkeit_ID = 1;
 
     //---------------------------------------------------------------------------------------------------------
-/*
-$orderBy = array('type', 'description', 'recorded_date', 'added_date');
+    $orderBy = array('verbindlichkeit', 'id', 'datum', 'author', 'titel', 'beschreibung');
 
-$order = 'type';
-if (isset($_GET['orderBy']) && in_array($_GET['orderBy'], $orderBy)) {
-    $order = $_GET['orderBy'];
-}
+    $order = 'verbindlichkeit';
+    if (isset($_GET['orderBy']) && in_array($_GET['orderBy'], $orderBy)) {
+        $order = $_GET['orderBy'];
+    }
 
-$query = 'SELECT * FROM aTable ORDER BY '.$order;
-*/
-    //alle Funde ausser Verbindlichkeit = "kann" ausgeben
-    $sql = "SELECT * FROM `rosetta_requirements`  order by `verbindlichkeit` ASC";
+    $sql = 'SELECT * FROM `rosetta_requirements` ORDER BY '.$order;
 
     $result = $conn->query($sql);
     
@@ -39,65 +35,12 @@ $query = 'SELECT * FROM aTable ORDER BY '.$order;
             echo "<td class=\"author\">" . $row["author"] . "</td>";
             echo "<td class=\"titel\">" . $row["titel"] . "</td>";
             echo "<td class=\"beschreibung\">" . $row["beschreibung"] . "</td>";
-            echo "<td class=\"id\"><input type=\"checkbox\" id=\"Checkbox_$verbindlichkeit_ID\"></td>";
+            //echo "<td class=\"id\"><input type=\"checkbox\" id=\"Checkbox_$verbindlichkeit_ID\"></td>";
                         
         echo "</tr>";
                           
         //Wert fuer ID wir inkrementiert
         $verbindlichkeit_ID += 1;
     }
-/*
-$sql = "SELECT * FROM rosetta_requirements";
-
-if ($_GET['sort'] == 'verbindlichkei')
-{
-    $sql .= " ORDER BY Verbindlichkei";
-}
-elseif ($_GET['sort'] == 'id')
-{
-    $sql .= " ORDER BY ID";
-}
-elseif ($_GET['sort'] == 'datum')
-{
-    $sql .= " ORDER BY Datum/Uhrzeit";
-}
-elseif($_GET['sort'] == 'author')
-{
-    $sql .= " ORDER BY Author";
-}
-elseif ($_GET['sort'] == 'titel')
-{
-    $sql .= " ORDER BY Titel";
-}
-elseif($_GET['sort'] == 'beschreibung')
-{
-    $sql .= " ORDER BY Beschreibung";
-}
-*/
     //---------------------------------------------------------------------------------------------------------
-    
-    //nur die Eintraege mit Verbindlichkeit = "kann" ausgeben
-/*
-    $sql = "SELECT * FROM `rosetta_requirements` WHERE `verbindlichkeit` = 'kann'";
-    $result = $conn->query($sql);
-                
-    //Datenausgabe
-    while ($row = $result->fetch_assoc()) {
-                        
-        echo "<tr>";
-                        
-            echo "<td class=\"verbindlichkeit\" id=\"Verb_ID_$verbindlichkeit_ID\">" . $row["verbindlichkeit"] . "</td>";
-            echo "<td class=\"id\">" . $row["id"] . "</td>";
-            echo "<td class=\"datum\">" . $row["datum"] . "</td>";
-            echo "<td class=\"author\">" . $row["author"] . "</td>";
-            echo "<td class=\"titel\">" . $row["titel"] . "</td>";
-            echo "<td class=\"beschreibung\">" . $row["beschreibung"] . "</td>";
-        echo "<td class=\"id\"><input type=\"checkbox\" id=\"Checkbox_$verbindlichkeit_ID\"></td>";
-        echo "</tr>";
-                          
-        //Wert fuer ID wir inkrementiert
-        $verbindlichkeit_ID += 1;
-    }
-
-*/
 ?>

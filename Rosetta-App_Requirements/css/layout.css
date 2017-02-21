@@ -1,0 +1,35 @@
+body{margin:0px;padding:0px;}
+header {position:fixed;left:0px;top:0px;width:100%;height:45px;z-index:2000;background-color:#000;color:#fff;padding:10px 0px;text-transform: uppercase;box-shadow: 0px 2px 5px #888888;}
+footer {position:fixed;left:0px;bottom:0px;width:100%;height:45px;z-index:99;background-color:#000;color:#fff;padding:10px 20px;text-transform: uppercase;box-shadow: 0px -2px 5px #888888;text-align:right;}
+#content{padding-bottom:50px;}
+
+#navtab{position:relative;top:50px;z-index:1000;}
+#formular{position:relative;left:0px;top:50px;height:100%;}
+
+.error{color:red;}
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #000;
+}
+.partition{
+    padding:0px 10px;margin:10px 0px 10px 0px;
+}
+#views{
+    position: relative;
+    top:10px;
+}
+a:link, a:visited, a:hover, a:active{
+    color: #000;text-decoration: none;
+}
+.verbindlichkeit{
+    color:#fff;
+    font-size: 1.5 em;
+    font-weight: bold;
+}
+

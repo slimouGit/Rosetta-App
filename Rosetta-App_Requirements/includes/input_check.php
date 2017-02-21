@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       if (empty($_POST["verbindlichkeit"])) {
-        $verbindlichkeit_Err = "Bitte die Verbindlichkeit angeben?";
+        $verbindlichkeit_Err = "Bitte die Verbindlichkeit angeben";
         $fehler = true;
       } else {
             $verbindlichkeit = test_input($_POST["verbindlichkeit"]);
