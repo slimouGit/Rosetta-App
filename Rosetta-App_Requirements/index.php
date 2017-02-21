@@ -105,12 +105,13 @@ include 'includes/db_insert.php';
         <table class="table table-hover table-responsive" id="tabelle">
             <thead>
             <tr>
-                <th class="col-sm-1">Verbidlichkeit</th>
-                <th class="col-sm-1">ID</th>
-                <th class="col-sm-1">Datum/Uhrzeit</th>
-                <th class="col-sm-1">Author</th>
-                <th class="col-sm-2">Titel</th>
-                <th class="col-sm-6">Beschreibung</th>
+                <!-- ?orderBy= -->
+                <th class="col-sm-1"><a href="index.php?sort=verbindlichkeit">Verbidlichkeit</a></th>
+                <th class="col-sm-1"><a href="index.php?sort=id">ID</a></th>
+                <th class="col-sm-1"><a href="index.php?sort=datum">Datum/Uhrzeit</a></th>
+                <th class="col-sm-1"><a href="index.php?sort=author">Author</a></th>
+                <th class="col-sm-2"><a href="index.php?sort=titel">Titel</a></th>
+                <th class="col-sm-6"><a href="index.php?sort=beschreibung">Beschreibung</a></th>
             </tr>
             </thead>
 
