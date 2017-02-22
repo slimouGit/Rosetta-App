@@ -3,6 +3,7 @@
     <meta charset="utf-8"/>
     <!-- Bootstrap-->
     <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <?php
