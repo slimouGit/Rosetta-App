@@ -6,6 +6,9 @@
     <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
+<?php include 'navigation.php'; ?>
+
 <?php
 /* Verbindung aufnehmen */
 $con = mysqli_connect("","root");
@@ -16,9 +19,6 @@ mysqli_select_db($con, "rosetta-app");
 /* SQL-Abfrage ausfuehren */
 $res = mysqli_query($con, "select * from rosetta_data");
 
-/* Anzahl Datensaetze ermitteln und ausgeben */
-$num = mysqli_num_rows($res);
-echo "$num Datensaetze gefunden<br />";
 
 echo    "<table class=\"table table-hover table-responsive\">".
             "<thead>".
@@ -58,8 +58,11 @@ while ($dsatz = mysqli_fetch_assoc($res))
     echo    "</table>";
 /* Verbindung schlie�en */
 mysqli_close($con);
-?>
 
-<p>Neuen Datensatz <a href="003_db_erzeugen.php">hinzufuegen</a></p>
+
+/* Anzahl Datensaetze ermitteln und ausgeben */
+$num = mysqli_num_rows($res);
+echo "$num Datensaetze gefunden<br />";
+?>
 </body>
 </html>

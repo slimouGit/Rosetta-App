@@ -1,32 +1,23 @@
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <!-- Bootstrap-->
-    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <script type="text/javascript">
-        function submitForm(action)
-        {
-            document.getElementById('form1').action = action;
-            document.getElementById('form1').submit();
-        }
-    </script>
-
-</head>
 <body>
 
 <?php include 'navigation.php'; ?>
 
+<?php
+
+$con = mysqli_connect("","root");
+mysqli_select_db($con, "rosetta-app");
+
+$sql = "select * from rosetta_data";
+$sql .= " where de like '%" . $_POST["search"] . "%' ";
+
+$res = mysqli_query($con, $sql);
+$num = mysqli_num_rows($res);
+if ($num==0) echo "Keine passenden Datensaetze gefunden";
+else{
+?>
 <form action = "003_db_aendern_b.php" method = "post">
 <?php
-   $con = mysqli_connect("","root");
-   mysqli_select_db($con, "rosetta-app");
-
-   $res = mysqli_query($con, "select * from rosetta_data");
-   $num = mysqli_num_rows($res);
-
-   // Tabellenbeginn
 echo    "<table class=\"table table-hover table-responsive\">".
     "<thead>".
 
@@ -43,8 +34,6 @@ echo    "<table class=\"table table-hover table-responsive\">".
     "</tr>".
     "</thead>";
 
-/* Datensaetze aus Ergebnis ermitteln, */
-/* in Array speichern und ausgeben    */
 while ($dsatz = mysqli_fetch_assoc($res))
 {
 
@@ -66,15 +55,15 @@ while ($dsatz = mysqli_fetch_assoc($res))
 }
 echo    "</table>";
 
-
-
-   mysqli_close($con);
+mysqli_close($con);
 ?>
+
 <p><input type="submit" value="anzeigen" /></p>
 </form>
 
+<?php
+}
+?>
 
-
-</form>
 </body>
 </html>

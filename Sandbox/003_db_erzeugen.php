@@ -1,5 +1,8 @@
 <html>
 <head>
+
+    <?php include 'navigation.php'; ?>
+
     <?php
     if (isset($_POST["gesendet"]))
     {
@@ -16,14 +19,14 @@
         if ($num>0)
         {
             echo "<p><font color='#00aa00'>";
-            echo "Es wurde 1 Datensatz hinzugef�gt";
+            echo "Es wurde 1 Datensatz hinzugefuegt";
             echo "</font></p>";
         }
         else
         {
             echo "<p><font color='#ff0000'>";
             echo "Es ist ein Fehler aufgetreten, ";
-            echo "es wurde kein Datensatz hinzugef�gt";
+            echo "es wurde kein Datensatz hinzugefuegt";
             echo "</font></p>";
         }
 
@@ -32,8 +35,6 @@
     ?>
 </head>
 <body>
-<p>Geben Sie bitte einen vollst�ndigen Datensatz ein<br />
-    und senden Sie das Formular ab:</p>
 <form action = "003_db_erzeugen.php" method = "post">
     <p><input name="dts" placeholder="---" /> deutsch</p>
     <p><input name="frz" placeholder="---" /> französisch</p>
@@ -46,6 +47,5 @@
         <input type="reset" /></p>
 </form>
 
-<p>Alle Datens�tze <a href="003_db_anzeigen.php">anzeigen</a></p>
 </body>
 </html>

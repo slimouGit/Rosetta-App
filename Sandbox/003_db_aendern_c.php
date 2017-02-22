@@ -1,5 +1,8 @@
 <html>
 <body>
+
+<?php include 'navigation.php'; ?>
+
 <?php
 $con = mysqli_connect("","root");
 mysqli_select_db($con, "rosetta-app");
@@ -17,12 +20,12 @@ mysqli_query($con, $sql);
 
 $num = mysqli_affected_rows($con);
 if ($num>0)
-    echo "<p>Der Datensatz wurde ge�ndert</p>";
+    echo "<p>Der Datensatz wurde geaendert</p>";
 else
-    echo "<p>Der Datensatz wurde nicht ge�ndert</p>";
+    echo "<p>Der Datensatz wurde nicht geaendert</p>";
 
 mysqli_close($con);
 ?>
-<p>Zur�ck zur <a href="003_db_aendern_a.php">Auswahl</a></p>
+<p>Zurueck zur <a href="003_db_aendern_a.php">Auswahl</a></p>
 </body>
 </html>

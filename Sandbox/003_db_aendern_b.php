@@ -1,6 +1,11 @@
 <html>
 <body>
+
+<?php include 'navigation.php'; ?>
+
 <?php
+
+
 if (isset($_POST["auswahl"]))
 {
    $con = mysqli_connect("","root");
@@ -10,11 +15,10 @@ if (isset($_POST["auswahl"]))
    $res = mysqli_query($con, $sql);
    $dsatz = mysqli_fetch_assoc($res);
 
-   echo "<p>F�hren Sie die �nderungen durch,<br />";
-   echo "bet�tigen Sie anschlie�end den Button</p>";
+
    echo "<form action = '003_db_aendern_c.php' method = 'post'>";
 
-    echo "<p><input type='hidden' name='id' value='" . $_POST["auswahl"] . "' /> ID</p>";
+    echo "<p><input type='hidden' name='id' value='" . $_POST["auswahl"] . "' /> </p>";
     echo "<p><input name='dts' value='" . $dsatz["de"] . "' /> Deutsch</p>";
    echo "<p><input name='frz' value='" . $dsatz["fr"] . "' /> Französisch</p>";
    echo "<p><input name='itl'  value='" . $dsatz["it"] . "' /> Italienisch</p>";
@@ -23,7 +27,7 @@ if (isset($_POST["auswahl"]))
     echo "<p><input name='inf' value='" . $dsatz["info"] . "' /> Info/</p>";
     echo "<p><input name='car' value='" . $dsatz["carline"] . "' /> Carline</p>";
    echo "<input type='hidden' name='orianr' value='" . $_POST["auswahl"] . "' />";
-   echo "<p><input type='submit' value='�nderungen in Datenbank speichern'>";
+   echo "<p><input type='submit' value='Aenderung speichern'>";
    echo "<input type='reset' /></p>";
    echo "</form>";
    

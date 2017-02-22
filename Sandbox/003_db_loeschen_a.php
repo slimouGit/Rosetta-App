@@ -1,24 +1,9 @@
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <!-- Bootstrap-->
-    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <script type="text/javascript">
-        function submitForm(action)
-        {
-            document.getElementById('form1').action = action;
-            document.getElementById('form1').submit();
-        }
-    </script>
-
-</head>
 <body>
 
 <?php include 'navigation.php'; ?>
 
-<form action = "003_db_aendern_b.php" method = "post">
+<form action = "003_db_loeschen_b.php" method = "post">
 <?php
    $con = mysqli_connect("","root");
    mysqli_select_db($con, "rosetta-app");
@@ -26,7 +11,7 @@
    $res = mysqli_query($con, "select * from rosetta_data");
    $num = mysqli_num_rows($res);
 
-   // Tabellenbeginn
+// Tabellenbeginn
 echo    "<table class=\"table table-hover table-responsive\">".
     "<thead>".
 
@@ -65,16 +50,10 @@ while ($dsatz = mysqli_fetch_assoc($res))
 
 }
 echo    "</table>";
-
-
-
+   
    mysqli_close($con);
 ?>
-<p><input type="submit" value="anzeigen" /></p>
-</form>
-
-
-
+<p><input type="submit" value="loeschen" /></p>
 </form>
 </body>
 </html>
