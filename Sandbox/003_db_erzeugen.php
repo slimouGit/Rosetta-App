@@ -1,6 +1,8 @@
 <html>
 <head>
-
+    <title>Rosetta-App</title>
+</head>
+<body>
     <?php include 'navigation.php'; ?>
 
     <?php
@@ -33,8 +35,7 @@
         mysqli_close($con);
     }
     ?>
-</head>
-<body>
+
 <form action = "003_db_erzeugen.php" method = "post">
     <p><input name="dts" placeholder="---" /> deutsch</p>
     <p><input name="frz" placeholder="---" /> französisch</p>

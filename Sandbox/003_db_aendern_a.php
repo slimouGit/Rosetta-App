@@ -1,5 +1,6 @@
 <html>
 <head>
+    <title>Rosetta-App</title>
     <meta charset="utf-8"/>
     <!-- Bootstrap-->
     <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
