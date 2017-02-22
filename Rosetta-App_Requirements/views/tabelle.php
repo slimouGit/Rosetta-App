@@ -1,5 +1,6 @@
 <table class="table table-hover table-responsive" id="tabelle">
             <thead>
+
             <tr>
                 <!-- ?orderBy= -->
                 <th class="col-sm-1"><a href="index.php?orderBy=verbindlichkeit">Verbindlichkeit</a></th>
