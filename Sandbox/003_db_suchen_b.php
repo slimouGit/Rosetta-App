@@ -1,4 +1,7 @@
 <html>
+<head>
+    <title>Rosetta-App</title>
+</head>
 <body>
 
 <?php include 'navigation.php'; ?>
@@ -8,8 +11,10 @@
 $con = mysqli_connect("","root");
 mysqli_select_db($con, "rosetta-app");
 
+$var = $_POST['taskOption'];
+
 $sql = "select * from rosetta_data";
-$sql .= " where de like '%" . $_POST["search"] . "%' ";
+$sql .= " where $var like '%" . $_POST["search"] . "%' ";
 
 $res = mysqli_query($con, $sql);
 $num = mysqli_num_rows($res);

@@ -1,4 +1,7 @@
 <html>
+<head>
+    <title>Rosetta-App</title>
+</head>
 <body>
 
 <?php include 'navigation.php'; ?>
