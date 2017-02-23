@@ -1,0 +1,152 @@
+<?php
+//include header
+include "elements/header.html";
+?>
+
+<?php
+//include navigation
+include 'elements/navigation.php';
+?>
+
+<?php
+//include db connection
+include "include/connect_db.php";
+?>
+
+<h2>Form control: inline checkbox</h2>
+<p>The form below contains three inline checkboxes:</p>
+
+<form action = "003_db_erzeugen_b.php" method = "post">
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Deutsch</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="dts">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Französisch</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="frz">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Italienisch</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="itl">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Englisch</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="eng">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Rubrik</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="rub">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Info</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="inf">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Carline</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="car">
+            </div>
+            <div class="col-sm-4 errorContainer"></div>
+        </div>
+    </div>
+
+
+    <!--
+          https://www.formget.com/php-checkbox/
+
+    <div class="row">
+    <label class="col-sm-2 control-label">Carline</label>
+        <div class="col-sm-6">
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="General">General
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="ADAM">ADAM
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Astra HB5">Astra HB5
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Astra ST">Astra ST
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="GTC/OPC">GTC/OPC
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="KARL">KARL
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Meriva">Meriva
+    </label>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-6">
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="MokkaX">MokkaX
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Movano Combi Bus">Movano Combi Bus
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Movano Fahrgestell">Movano Fahrgestell
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Movano Van">Movano Van
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Vivaro">Vivaro
+    </label>
+    <label class="checkbox-inline">
+        <input name="check_list[]" type="checkbox" value="Zafira">Zafira
+    </label>
+    </div>
+    </div>
+      -->
+    <p><input type="submit" value="Eintragen" name="gesendet"/> <input type="reset" value="Zuruecksetzen"/></p>
+
+</form>
+
+<?php
+//include footer
+include "elements/footer.html";
+?>

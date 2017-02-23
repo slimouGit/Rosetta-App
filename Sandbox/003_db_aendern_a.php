@@ -1,81 +1,37 @@
-<html>
-<head>
-    <title>Rosetta-App</title>
-    <meta charset="utf-8"/>
-    <!-- Bootstrap-->
-    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <script type="text/javascript">
-        function submitForm(action)
-        {
-            document.getElementById('form1').action = action;
-            document.getElementById('form1').submit();
-        }
-    </script>
-
-</head>
-<body>
-
-<?php include 'navigation.php'; ?>
-
-<form action = "003_db_aendern_b.php" method = "post">
 <?php
-   $con = mysqli_connect("","root");
-   mysqli_select_db($con, "rosetta-app");
-
-   $res = mysqli_query($con, "select * from rosetta_data");
-   $num = mysqli_num_rows($res);
-
-   // Tabellenbeginn
-echo    "<table class=\"table table-hover table-responsive\">".
-    "<thead>".
-
-    "<tr>".
-    "<th class=\"col-sm-1\">Id</th>".
-    "<th class=\"col-sm-2\">De</th>".
-    "<th class=\"col-sm-2\">Fr</th>".
-    "<th class=\"col-sm-2\">It</th>".
-    "<th class=\"col-sm-2\">En</th>".
-    "<th class=\"col-sm-2\">Rubrik</th>".
-    "<th class=\"col-sm-2\">Info</th>".
-    "<th class=\"col-sm-2\">Carline</th>".
-    "<th class=\"col-sm-2\">Edit</th>".
-    "</tr>".
-    "</thead>";
-
-/* Datensaetze aus Ergebnis ermitteln, */
-/* in Array speichern und ausgeben    */
-while ($dsatz = mysqli_fetch_assoc($res))
-{
-
-
-    echo    "<tr>".
-
-        "<td>" . $dsatz["id"]        . "</td>".
-        "<td>" . $dsatz["de"]        . "</td>".
-        "<td>" . $dsatz["fr"]        . "</td>".
-        "<td>" . $dsatz["it"]        . "</td>".
-        "<td>" . $dsatz["en"]        . "</td>".
-        "<td>" . $dsatz["rubrik"]    . "</td>".
-        "<td>" . $dsatz["info"]      . "</td>".
-        "<td>" . $dsatz["carline"]   . "</td>".
-        "<td ><input type='radio' name='auswahl' value='" . $dsatz["id"] . "' /></td>";
-
-    echo    "</tr>";
-
-}
-echo    "</table>";
-
-
-
-   mysqli_close($con);
+//include header
+include "elements/header.html";
 ?>
-<p><input type="submit" value="anzeigen" /></p>
-</form>
+
+<?php
+//include navigation
+include 'elements/navigation.php';
+?>
+
+<?php
+//include db connection
+include "include/connect_db.php";
+?>
+
+    <form action = "003_db_aendern_b.php" method = "post">
+        <?php
+
+            $res = mysqli_query($con, "select * from rosetta_data");
+            $num = mysqli_num_rows($res);
+
+            //include table
+            include "include/view_table.php";
 
 
+            //close connection
+            mysqli_close($con);
+        ?>
 
-</form>
-</body>
-</html>
+        <p><input type="submit" value="anzeigen" /></p>
+
+    </form>
+
+<?php
+//include footer
+include "elements/footer.html";
+?>
