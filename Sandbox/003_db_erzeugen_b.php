@@ -15,12 +15,26 @@ include "include/connect_db.php";
 
 <?php
 
+//Pruefung, ob checkboxen ausgewaehlt wurden
+if(!empty($_POST['carline'])) {
+    //das Array carline wird ueber implode in $car gespeichert
+    $car = implode(',', $_POST['carline']);
+    //
+
+}
+
+if(empty($car)) {
+    $car = 'General';
+}
+
+
+
 if (isset($_POST["gesendet"]))
 {
 
     $sql = "insert rosetta_data"
         . "(de, fr, it, en, rubrik, info, carline) values "
-        . "('" . $_POST["dts"] . "', "  .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["eng"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $_POST["car"] . "')";
+        . "('" . $_POST["dts"] . "', "  .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["eng"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "')";
 
     mysqli_query($con, $sql);
 

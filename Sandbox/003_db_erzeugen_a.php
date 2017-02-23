@@ -77,7 +77,7 @@ include "include/connect_db.php";
             <div class="col-sm-4 errorContainer"></div>
         </div>
     </div>
-
+    <!--
     <div class="row">
         <div class="form-group">
             <label class="col-sm-2 control-label">Carline</label>
@@ -87,34 +87,31 @@ include "include/connect_db.php";
             <div class="col-sm-4 errorContainer"></div>
         </div>
     </div>
-
-
-    <!--
-          https://www.formget.com/php-checkbox/
+-->
 
     <div class="row">
     <label class="col-sm-2 control-label">Carline</label>
         <div class="col-sm-6">
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="General">General
+        <input name="carline[]" type="checkbox" value="General">General
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="ADAM">ADAM
+        <input name="carline[]" type="checkbox" value="ADAM">ADAM
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Astra HB5">Astra HB5
+        <input name="carline[]" type="checkbox" value="Astra HB5">Astra HB5
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Astra ST">Astra ST
+        <input name="carline[]" type="checkbox" value="Astra ST">Astra ST
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="GTC/OPC">GTC/OPC
+        <input name="carline[]" type="checkbox" value="GTC/OPC">GTC/OPC
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="KARL">KARL
+        <input name="carline[]" type="checkbox" value="KARL">KARL
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Meriva">Meriva
+        <input name="carline[]" type="checkbox" value="Meriva">Meriva
     </label>
         </div>
     </div>
@@ -122,27 +119,37 @@ include "include/connect_db.php";
         <label class="col-sm-2 control-label"></label>
         <div class="col-sm-6">
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="MokkaX">MokkaX
+        <input name="carline[]" type="checkbox" value="MokkaX">MokkaX
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Movano Combi Bus">Movano Combi Bus
+        <input name="carline[]" type="checkbox" value="Movano Combi Bus">Movano Combi Bus
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Movano Fahrgestell">Movano Fahrgestell
+        <input name="carline[]" type="checkbox" value="Movano Fahrgestell">Movano Fahrgestell
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Movano Van">Movano Van
+        <input name="carline[]" type="checkbox" value="Movano Van">Movano Van
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Vivaro">Vivaro
+        <input name="carline[]" type="checkbox" value="Vivaro">Vivaro
     </label>
     <label class="checkbox-inline">
-        <input name="check_list[]" type="checkbox" value="Zafira">Zafira
+        <input name="carline[]" type="checkbox" value="Zafira">Zafira
     </label>
     </div>
     </div>
-      -->
-    <p><input type="submit" value="Eintragen" name="gesendet"/> <input type="reset" value="Zuruecksetzen"/></p>
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-1">
+                <input type="submit" class="btn btn-primary" value="Eintragen" name="gesendet"></input>
+            </div>
+            <div class="col-sm-1">
+                <button type="reset" class="btn btn-primary" value=""">Zurueckstezen</button>
+            </div>
+        </div>
+    </div>
 
 </form>
 
