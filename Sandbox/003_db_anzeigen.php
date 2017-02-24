@@ -8,6 +8,9 @@ include "elements/header.html";
 include 'elements/navigation.php';
 ?>
 
+<h2>Form control: inline checkbox</h2>
+<p>The form below contains three inline checkboxes:</p>
+
 <?php
 //include db connection
 include "include/connect_db.php";

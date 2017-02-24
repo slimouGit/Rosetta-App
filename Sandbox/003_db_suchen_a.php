@@ -20,7 +20,7 @@ include 'elements/navigation.php';
         <div class="form-group">
             <label for="select" class="col-sm-2 control-label"></label>
             <div class="col-sm-6">
-                <select name="taskOption" class="form-control">
+                <select multiple size="3" name="taskOption" class="form-control">
                     <option selected value="">bitte wählen</option>
                     <option value="de">deutsch</option>
                     <option value="fr">französisch</option>

@@ -22,7 +22,7 @@ include "include/connect_db.php";
         <div class="form-group">
             <label class="col-sm-2 control-label">Deutsch</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" name="dts">
+                <input type="hidden" class="form-control" name="dts">
             </div>
             <div class="col-sm-4 errorContainer"></div>
         </div>

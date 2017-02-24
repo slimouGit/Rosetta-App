@@ -19,10 +19,8 @@ include "include/connect_db.php";
 if(!empty($_POST['carline'])) {
     //das Array carline wird ueber implode in $car gespeichert
     $car = implode(',', $_POST['carline']);
-    //
-
 }
-
+//
 if(empty($car)) {
     $car = 'General';
 }
@@ -72,10 +70,9 @@ if (isset($_POST["gesendet"]))
         echo "</font></p>";
     }
 
-
-
     //close connection
     mysqli_close($con);
+
 }
 
 ?>

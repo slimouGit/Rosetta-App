@@ -16,11 +16,14 @@ include "include/connect_db.php";
     <?php
 
         $var = $_POST['taskOption'];
+        //$var = implode(',', $_POST['taskOption']);
 
         $sql = "select * from rosetta_data";
-        $sql .= " where $var like '%" . $_POST["search"] . "%' ";
+        //$sql .= " where $var like '%" . $_POST["search"] . "%' ";
+        //$sql .= " where CONCAT_WS($var) like '%" . $_POST["search"] . "%' ";
+        $sql .=" WHERE CONCAT_WS('', de, fr, it, en, rubrik, info, carline) LIKE '%" . $_POST["search"] . "%'";
 
-        $res = mysqli_query($con, $sql);
+    $res = mysqli_query($con, $sql);
         $num = mysqli_num_rows($res);
         if ($num==0) echo "Keine passenden Datensaetze gefunden";
         else{
