@@ -16,20 +16,12 @@ include 'elements/navigation.php';
 
 <form action = "003_db_suchen_b.php" method = "post">
 
+
     <div class="row">
         <div class="form-group">
-            <label for="select" class="col-sm-2 control-label"></label>
+            <label for="suche" class="col-sm-2 control-label">Was soll gesucht werden</label>
             <div class="col-sm-6">
-                <select multiple size="3" name="taskOption" class="form-control">
-                    <option selected value="">bitte wählen</option>
-                    <option value="de">deutsch</option>
-                    <option value="fr">französisch</option>
-                    <option value="it">italienisch</option>
-                    <option value="en">englisch</option>
-                    <option value="rubrik">Rubrik</option>
-                    <option value="info">Info</option>
-                    <option value="carline">Carline</option>
-                </select>
+                <input type="text" class="form-control" name="search">
             </div>
             <div class="col-sm-4 errorContainer"></div>
         </div>
@@ -37,23 +29,38 @@ include 'elements/navigation.php';
 
 
     <div class="row">
-        <div class="form-group">
-            <label for="suche" class="col-sm-2 control-label">Suchen</label>
-            <div class="col-sm-6">
-                <input type="text" class="form-control" name="search">
-            </div>
-        <div class="col-sm-4 errorContainer"></div>
+        <label class="col-sm-2 control-label">in welcher Kategorie</label>
+        <div class="col-sm-6">
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="de">deutsch
+            </label>
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="fr">französisch
+            </label>
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="it">italienisch
+            </label>
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="en">englisch
+            </label>
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="rubrik">Rubrik
+            </label>
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="info">Info
+            </label>
+            <label class="checkbox-inline">
+                <input name="category[]" type="checkbox" value="carline">Carline
+            </label>
+        </div>
     </div>
-    </div>
+
 
     <div class="row">
         <div class="form-group">
             <div class="col-sm-2"></div>
             <div class="col-sm-1">
                 <button type="submit" class="btn btn-primary" value="Suchen"">Suchen</button>
-            </div>
-            <div class="col-sm-1">
-                <button type="reset" class="btn btn-primary" value=""">Zurueckstezen</button>
             </div>
         </div>
     </div>

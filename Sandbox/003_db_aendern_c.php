@@ -15,6 +15,16 @@ include "include/connect_db.php";
 
     <?php
 
+//Pruefung, ob checkboxen ausgewaehlt wurden
+if(!empty($_POST['carline'])) {
+    //das Array carline wird ueber implode in $car gespeichert
+    $car = implode(', ', $_POST['carline']);
+}
+//
+if(empty($car)) {
+    $car = 'General';
+}
+
     $sql = "update rosetta_data set id = '" . $_POST["id"] . "',"
         . " de = '" . $_POST["dts"] . "',"
         . " fr = '" . $_POST["frz"] . "',"
@@ -22,7 +32,7 @@ include "include/connect_db.php";
         . " en = '" . $_POST["eng"] . "',"
         . " rubrik = '" . $_POST["rub"] . "',"
         . " info = '" . $_POST["inf"] . "',"
-        . " carline = '" . $_POST["car"] . "'"
+        . " carline = '" . $car . "'"
         . " where id = '" . $_POST["orianr"] . "'";
 
     mysqli_query($con, $sql);

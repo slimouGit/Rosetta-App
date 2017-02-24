@@ -12,7 +12,8 @@
         </div>
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="003_db_suchen_a.php">Start</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="003_db_suchen_a.php">Search</a></li>
                 <li><a href="003_db_erzeugen_a.php">Create</a></li>
                 <li><a href="003_db_anzeigen.php">Read</a></li>
                 <li><a href="003_db_aendern_a.php">Update</a></li>
@@ -23,6 +24,3 @@
     </div>
 </nav>
 
-<?php
-
-?>

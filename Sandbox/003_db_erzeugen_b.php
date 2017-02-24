@@ -18,7 +18,7 @@ include "include/connect_db.php";
 //Pruefung, ob checkboxen ausgewaehlt wurden
 if(!empty($_POST['carline'])) {
     //das Array carline wird ueber implode in $car gespeichert
-    $car = implode(',', $_POST['carline']);
+    $car = implode(', ', $_POST['carline']);
 }
 //
 if(empty($car)) {

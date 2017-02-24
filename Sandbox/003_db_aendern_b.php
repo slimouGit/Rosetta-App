@@ -17,6 +17,11 @@ include 'elements/navigation.php';
 include "include/connect_db.php";
 ?>
 
+
+
+<h2>Form control: inline checkbox</h2>
+<p>The form below contains three inline checkboxes:</p>
+
 <?php
 
     if (isset($_POST["auswahl"]))
@@ -28,17 +33,150 @@ include "include/connect_db.php";
         echo "<form action = '003_db_aendern_c.php' method = 'post'>";
 
             echo "<p><input type='hidden' name='id' value='" . $_POST["auswahl"] . "' /> </p>";
-            echo "<p><input name='dts' value='" . $dsatz["de"] . "' /> Deutsch</p>";
-            echo "<p><input name='frz' value='" . $dsatz["fr"] . "' /> Französisch</p>";
-            echo "<p><input name='itl'  value='" . $dsatz["it"] . "' /> Italienisch</p>";
-            echo "<p><input name='eng' value='" . $dsatz["en"] . "' /> Englisch</p>";
-            echo "<p><input name='rub' value='" . $dsatz["rubrik"] . "' /> Rubrik</p>";
-            echo "<p><input name='inf' value='" . $dsatz["info"] . "' /> Info/</p>";
-            echo "<p><input name='car' value='" . $dsatz["carline"] . "' /> Carline</p>";
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Deutsch</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"dts\" value='" . $dsatz["de"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Französisch</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"frz\" value='" . $dsatz["fr"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Italienisch</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"itl\" value='" . $dsatz["it"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Englisch</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"eng\" value='" . $dsatz["en"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Rubrik</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"rub\" value='" . $dsatz["rubrik"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Info</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"inf\" value='" . $dsatz["info"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+            echo "
+                    <div class=\"row\">
+                        <div class=\"form-group\">
+                            <label class=\"col-sm-2 control-label\">Carline</label>
+                            <div class=\"col-sm-6\">
+                                <input class=\"form-control\" name=\"car\" value='" . $dsatz["carline"] . "'>
+                            </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+        echo "
+                    <div class=\"row\">
+                        <label class=\"col-sm-2 control-label\">Carline</label>
+                    <div class=\"col-sm-6\">";
+
+
+        $carline = array_map('trim', explode(", ", $dsatz['carline']));
+        //print_r( $carline);
+        if (in_array("General", $carline)) { ?> <input type="checkbox" value="General" name="carline[]" checked >General<?php }  else { ?> <input type="checkbox" value="General" name="carline[]"> <span class="carline">General</span><?php }
+        if (in_array("ADAM", $carline)) { ?> <input type="checkbox" value="ADAM" name="carline[]" checked >ADAM<?php }  else { ?> <input type="checkbox" value="ADAM" name="carline[]"> ADAM<?php }
+        if (in_array("Astra HB5", $carline)) { ?> <input type="checkbox" value="Astra HB5" name="carline[]" checked >Astra HB5<?php }  else { ?> <input type="checkbox" value="Astra HB5" name="carline[]"> Astra HB5<?php }
+        if (in_array("Astra ST", $carline)) { ?> <input type="checkbox" value="Astra ST" name="carline[]" checked >Astra ST<?php }  else { ?> <input type="checkbox" value="Astra ST" name="carline[]"> Astra ST<?php }
+        if (in_array("KARL", $carline)) { ?> <input type="checkbox" value="Karl" name="carline[]" checked >KARL<?php }  else { ?> <input type="checkbox" value="Karl" name="carline[]"> KARL<?php }
+        if (in_array("Meriva", $carline)) { ?> <input type="checkbox" value="Meriva" name="carline[]" checked >Meriva<?php }  else { ?> <input type="checkbox" value="Meriva" name="carline[]"> Meriva<?php }
+        if (in_array("MokkaX", $carline)) { ?> <input type="checkbox" value="MokkaX" name="carline[]" checked >MokkaX<?php }  else { ?> <input type="checkbox" value="MokkaX" name="carline[]"> MokkaX<?php }
+        if (in_array("Movano Combi Bus", $carline)) { ?> <input type="checkbox" value="Movano Combi Bus" name="carline[]" checked >Movano Combi Bus<?php }  else { ?> <input type="checkbox" value="Movano Combi Bus" name="carline[]"> Movano Combi Bus<?php }
+        if (in_array("Movano Fahrgestell", $carline)) { ?> <input type="checkbox" value="Movano Fahrgestell" name="carline[]" checked >Movano Fahrgestell<?php }  else { ?> <input type="checkbox" value="Movano Fahrgestell" name="carline[]"> Movano Fahrgestell<?php }
+        if (in_array("Movano Van", $carline)) { ?> <input type="checkbox" value="Movano Van" name="carline[]" checked >Movano Van<?php }  else { ?> <input type="checkbox" value="Movano Van" name="carline[]"> Movano Van<?php }
+        if (in_array("Vivaro", $carline)) { ?> <input type="checkbox" value="Vivaro" name="carline[]" checked >Vivaro<?php }  else { ?> <input type="checkbox" value="Vivaro" name="carline[]"> Vivaro<?php }
+        if (in_array("Zafira", $carline)) { ?> <input type="checkbox" value="Zafira" name="carline[]" checked >Zafira<?php }  else { ?> <input type="checkbox" value="Zafira" name="carline[]"> Zafira<?php }
+
+            echo "
+                    </div>
+                            <div class=\"col-sm-4 errorContainer\"></div>
+                        </div>
+                    </div>
+            
+                    ";
+
+
+    echo $dsatz['carline'];
+
+
+
+
+
+
             echo "<input type='hidden' name='orianr' value='" . $_POST["auswahl"] . "' />";
 
-            echo "<p><input type='submit' value='Aenderung speichern'>";
-            echo "<input type='reset' /></p>";
+            echo "
+                <div class=\"row\">
+        <div class=\"form-group\">
+            <div class=\"col-sm-2\"></div>
+            <div class=\"col-sm-1\">
+                <input type=\"submit\" class=\"btn btn-primary\" value=\"Eintragen\" name=\"gesendet\"></input>
+            </div>
+            <div class=\"col-sm-1\">
+                <button type=\"reset\" class=\"btn btn-primary\" value=\"\"\">Zurueckstezen</button>
+            </div>
+        </div>
+    </div>
+                
+                ";
+
 
         echo "</form>";
 
