@@ -130,34 +130,27 @@ include "include/connect_db.php";
 
             echo "
                     </div>
-                            <div class=\"col-sm-4 errorContainer\"></div>
-                        </div>
+                        <div class=\"col-sm-4 errorContainer\"></div>
                     </div>
-            
+                    </div>
+   
                     ";
-
-
-   // echo $dsatz['carline'];
-
-
-
-
 
 
             echo "<input type='hidden' name='orianr' value='" . $_POST["auswahl"] . "' />";
 
             echo "
-                <div class=\"row\">
-        <div class=\"form-group\">
-            <div class=\"col-sm-2\"></div>
-            <div class=\"col-sm-1\">
-                <input type=\"submit\" class=\"btn btn-primary\" value=\"Eintragen\" name=\"gesendet\"></input>
-            </div>
-            <div class=\"col-sm-1\">
-                <button type=\"reset\" class=\"btn btn-primary\" value=\"\"\">Zurueckstezen</button>
-            </div>
-        </div>
-    </div>
+                <div class=\"row button\">
+                    <div class=\"form-group\">
+                        <div class=\"col-sm-2\"></div>
+                        <div class=\"col-sm-1\">
+                            <input type=\"submit\" class=\"btn btn-primary\" value=\"Eintragen\" name=\"gesendet\"></input>
+                        </div>
+                        <div class=\"col-sm-1\">
+                            <button type=\"reset\" class=\"btn btn-primary\" value=\"\"\">Zurueckstezen</button>
+                        </div>
+                    </div>
+                </div>
                 
                 ";
 
