@@ -15,19 +15,24 @@ if(!empty($_POST['carline'])) {
     //das Array carline wird ueber implode in $car gespeichert
     $car = implode(', ', $_POST['carline']);
 }
-//
+//falls keine Carline genannt wurde, wird die Variable mit General belegt
 if(empty($car)) {
     $car = 'General';
 }
 
+//Erstellen eines einzigartigen token
+//dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
+//da hier noch nicht mit der ID gearbeitet werden kann
+$token = bin2hex(openssl_random_pseudo_bytes(16));
+$token = (string)$token;
 
 
 if (isset($_POST["gesendet"]))
 {
 
     $sql = "insert rosetta_data"
-        . "(de, fr, it, en, rubrik, info, carline) values "
-        . "('" . $_POST["dts"] . "', "  .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["eng"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "')";
+        . "(token, de, fr, it, en, rubrik, info, carline) values "
+        . "('" . $token . "', "  .  "'" . $_POST["dts"] . "', " .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["eng"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "')";
 
     mysqli_query($con, $sql);
 
@@ -44,7 +49,7 @@ if (isset($_POST["gesendet"]))
             //Den Datensatz, der ertsellt wurde, anzeigen
 
             $sql = "select * from rosetta_data";
-            $sql .= " where de like '" . $_POST["dts"] . "' ";
+            $sql .= " where token like '" . $token . "' ";
             $res = mysqli_query($con, $sql);
             $num = mysqli_num_rows($res);
 

@@ -8,6 +8,7 @@ include "elements/header.php";
 include "include/connect_db.php";
 ?>
 
+
 <h2>Form control: inline checkbox</h2>
 <p>The form below contains three inline checkboxes:</p>
 
@@ -72,17 +73,7 @@ include "include/connect_db.php";
             <div class="col-sm-4 errorContainer"></div>
         </div>
     </div>
-    <!--
-    <div class="row">
-        <div class="form-group">
-            <label class="col-sm-2 control-label">Carline</label>
-            <div class="col-sm-6">
-                <input type="text" class="form-control" name="car">
-            </div>
-            <div class="col-sm-4 errorContainer"></div>
-        </div>
-    </div>
--->
+
 
     <div class="row">
     <label class="col-sm-2 control-label">Carline</label>
