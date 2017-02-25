@@ -20,6 +20,7 @@ if(empty($car)) {
     $car = 'General';
 }
 
+
 //Erstellen eines einzigartigen token
 //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
 //da hier noch nicht mit der ID gearbeitet werden kann
