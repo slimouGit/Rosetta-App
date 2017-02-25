@@ -4,12 +4,7 @@
 </head>
 <?php
 //include header
-include "elements/header.html";
-?>
-
-<?php
-//include navigation
-include 'elements/navigation.php';
+include "elements/header.php";
 ?>
 
 <?php

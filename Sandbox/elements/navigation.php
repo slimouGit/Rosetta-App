@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-inverse navbar-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-exmple-navbar-collapse-1" >

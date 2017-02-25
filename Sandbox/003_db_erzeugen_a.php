@@ -1,11 +1,6 @@
 <?php
 //include header
-include "elements/header.html";
-?>
-
-<?php
-//include navigation
-include 'elements/navigation.php';
+include "elements/header.php";
 ?>
 
 <?php
@@ -103,6 +98,9 @@ include "include/connect_db.php";
     </label>
     <label class="checkbox-inline">
         <input name="carline[]" type="checkbox" value="Astra ST">Astra ST
+    </label>
+    <label class="checkbox-inline">
+        <input name="carline[]" type="checkbox" value="Corsa">Corsa
     </label>
     <label class="checkbox-inline">
         <input name="carline[]" type="checkbox" value="GTC/OPC">GTC/OPC

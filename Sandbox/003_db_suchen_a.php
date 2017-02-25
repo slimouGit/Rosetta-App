@@ -2,12 +2,7 @@
 
 <?php
 //include header
-include "elements/header.html";
-?>
-
-<?php
-//include navigation
-include 'elements/navigation.php';
+include "elements/header.php";
 ?>
 
 <?php
@@ -23,11 +18,8 @@ include "include/input_check.php";
 <h2>Form control: inline checkbox</h2>
 <p>The form below contains three inline checkboxes:</p>
 
-<!--
-<form action = "003_db_suchen_b.php" method = "post">
-   -->
+<!--Suchformular-->
 <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post">
-
 
     <div class="row">
         <div class="form-group">
@@ -38,7 +30,6 @@ include "include/input_check.php";
             <div class="col-sm-4 errorContainer"><span class="error"><?php echo $search_Err;?></span></div>
         </div>
     </div>
-
 
     <div class="row">
         <label class="col-sm-2 control-label">in welcher Kategorie</label>
@@ -67,7 +58,6 @@ include "include/input_check.php";
         </div>
     </div>
 
-
     <div class="row">
         <div class="form-group">
             <div class="col-sm-2"></div>
@@ -79,9 +69,10 @@ include "include/input_check.php";
 
 </form>
 
-<!--Code, sobald auf Button gedrueckt wurde-->
 
+<!--Code, sobald auf Button gedrueckt wurde-->
 <?php
+
 if(isset($_POST['Suchen']) && (!$fehler)) {
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {
@@ -120,7 +111,6 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
         <?php
     }
 }
-
 ?>
 
 <?php

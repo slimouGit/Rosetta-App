@@ -4,12 +4,7 @@
 </head>
 <?php
 //include header
-include "elements/header.html";
-?>
-
-<?php
-//include navigation
-include 'elements/navigation.php';
+include "elements/header.php";
 ?>
 
 <?php
@@ -110,19 +105,6 @@ include "include/connect_db.php";
             
                     ";
 
-            echo "
-                    <div class=\"row\">
-                        <div class=\"form-group\">
-                            <label class=\"col-sm-2 control-label\">Carline</label>
-                            <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"car\" value='" . $dsatz["carline"] . "'>
-                            </div>
-                            <div class=\"col-sm-4 errorContainer\"></div>
-                        </div>
-                    </div>
-            
-                    ";
-
         echo "
                     <div class=\"row\">
                         <label class=\"col-sm-2 control-label\">Carline</label>
@@ -135,6 +117,8 @@ include "include/connect_db.php";
         if (in_array("ADAM", $carline)) { ?> <input type="checkbox" value="ADAM" name="carline[]" checked >ADAM<?php }  else { ?> <input type="checkbox" value="ADAM" name="carline[]"> ADAM<?php }
         if (in_array("Astra HB5", $carline)) { ?> <input type="checkbox" value="Astra HB5" name="carline[]" checked >Astra HB5<?php }  else { ?> <input type="checkbox" value="Astra HB5" name="carline[]"> Astra HB5<?php }
         if (in_array("Astra ST", $carline)) { ?> <input type="checkbox" value="Astra ST" name="carline[]" checked >Astra ST<?php }  else { ?> <input type="checkbox" value="Astra ST" name="carline[]"> Astra ST<?php }
+        if (in_array("Corsa", $carline)) { ?> <input type="checkbox" value="Corsa" name="carline[]" checked > Corsa<?php }  else { ?> <input type="checkbox" value="Corsa" name="carline[]">  Corsa<?php }
+        if (in_array("GTC/OPC", $carline)) { ?> <input type="checkbox" value="GTC/OPC" name="carline[]" checked > GTC/OPC <?php }  else { ?> <input type="checkbox" value="GTC/OPC" name="carline[]">  GTC/OPC <?php }
         if (in_array("KARL", $carline)) { ?> <input type="checkbox" value="Karl" name="carline[]" checked >KARL<?php }  else { ?> <input type="checkbox" value="Karl" name="carline[]"> KARL<?php }
         if (in_array("Meriva", $carline)) { ?> <input type="checkbox" value="Meriva" name="carline[]" checked >Meriva<?php }  else { ?> <input type="checkbox" value="Meriva" name="carline[]"> Meriva<?php }
         if (in_array("MokkaX", $carline)) { ?> <input type="checkbox" value="MokkaX" name="carline[]" checked >MokkaX<?php }  else { ?> <input type="checkbox" value="MokkaX" name="carline[]"> MokkaX<?php }
@@ -153,7 +137,7 @@ include "include/connect_db.php";
                     ";
 
 
-    echo $dsatz['carline'];
+   // echo $dsatz['carline'];
 
 
 

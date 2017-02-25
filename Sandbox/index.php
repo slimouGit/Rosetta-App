@@ -2,12 +2,7 @@
 
 <?php
 //include header
-include "elements/header.html";
-?>
-
-<?php
-//include navigation
-include 'elements/navigation.php';
+include "elements/header.php";
 ?>
 
 <h2>Form control: inline checkbox</h2>
@@ -24,7 +19,6 @@ include 'elements/navigation.php';
             </div>
         </div>
     </div>
-
 
 
 <?php

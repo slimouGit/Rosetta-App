@@ -21,4 +21,8 @@
 
     </head>
     <body>
-        <div class="container-fluid">
+        <?php
+        //include navigation
+        include 'elements/navigation.php';
+        ?>
+        <div class="container-fluid content">
