@@ -23,9 +23,9 @@ include "include/connect_db.php";
             //close connection
             mysqli_close($con);
         ?>
-
+        <!--
         <p><input type="submit" value="loeschen" /></p>
-
+        -->
     </form>
 
 <?php

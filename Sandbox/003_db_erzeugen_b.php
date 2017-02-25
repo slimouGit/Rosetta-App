@@ -57,7 +57,7 @@ if (isset($_POST["gesendet"]))
             include "include/view_table.php";
             //---------------------------------------------------
 
-            echo "<p><input type=\"submit\" value=\"anzeigen\" /></p>";
+           // echo "<p><input type=\"submit\" value=\"anzeigen\" /></p>";
 
         echo "</form>";
 

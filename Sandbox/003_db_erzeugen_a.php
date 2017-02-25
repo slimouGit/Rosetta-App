@@ -9,8 +9,8 @@ include "include/connect_db.php";
 ?>
 
 
-<h2>Form control: inline checkbox</h2>
-<p>The form below contains three inline checkboxes:</p>
+<h2>Datensatz erzeugen</h2>
+<p>Verschieden Parameter stehen zur Auswahl, kann beliebig erweitert werden</p>
 
 <form action = "003_db_erzeugen_b.php" method = "post">
 

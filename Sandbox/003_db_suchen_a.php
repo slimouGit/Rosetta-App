@@ -15,8 +15,9 @@ include "include/connect_db.php";
 include "include/input_check.php";
 ?>
 
-<h2>Form control: inline checkbox</h2>
-<p>The form below contains three inline checkboxes:</p>
+<h2>Suche</h2>
+<p>Volltextsuche (evtl. später mit Autovervollständigung)</p>
+<p>Die Suche kann eingeschränkt werden nach bestehenden Rubriken. Gibt man keine Rubrik an, wird in allen gesucht</p>
 
 <!--Suchformular-->
 <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post">
@@ -25,7 +26,7 @@ include "include/input_check.php";
         <div class="form-group">
             <label for="suche" class="col-sm-2 control-label">Was soll gesucht werden</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" name="search" placeholder="Suchbegriff">
+                <input type="text" class="form-control" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
             </div>
             <div class="col-sm-4 errorContainer"><span class="error"><?php echo $search_Err;?></span></div>
         </div>
@@ -90,7 +91,7 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 
     $res = mysqli_query($con, $sql);
     $num = mysqli_num_rows($res);
-    if ($num==0) echo "Keine passenden Datensaetze gefunden";
+    if ($num==0) echo $_POST['search'] . " ist nicht vorhanden";
     else{
         ?>
 

@@ -3,8 +3,8 @@
 include "elements/header.php";
 ?>
 
-<h2>Form control: inline checkbox</h2>
-<p>The form below contains three inline checkboxes:</p>
+<h2>Ändern eines Eintrags</h2>
+<p>Ist später auch nicht nötig, da über Suchergebnis erreichbar</p>
 
 <?php
 //include db connection
@@ -24,9 +24,9 @@ include "include/connect_db.php";
             //close connection
             mysqli_close($con);
         ?>
-
+        <!--
         <p><input type="submit" value="anzeigen" /></p>
-
+        -->
     </form>
 
 <?php

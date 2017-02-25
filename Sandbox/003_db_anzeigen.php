@@ -3,8 +3,8 @@
 include "elements/header.php";
 ?>
 
-<h2>Form control: inline checkbox</h2>
-<p>The form below contains three inline checkboxes:</p>
+<h2>Ausgabe aller Datensätze</h2>
+<p>Dieser Bereich wird später nicht sichtbar sein, weil unübersichtlich (zu viele Daten) und man gelangt ja zu dem relevanten Eintrag über die Suchfunktion</p>
 
 <?php
 //include db connection
@@ -28,10 +28,15 @@ include "include/connect_db.php";
 
         /* Anzahl Datensaetze ermitteln und ausgeben */
         $num = mysqli_num_rows($res);
-        echo "$num Datensaetze gefunden<br />";
+        //echo "$num Datensaetze gefunden<br />";
         ?>
-
+        <!--
         <p><input type="submit" value="anzeigen" /></p>
+        <input type="submit" name="calc" value="Find Angle">
+
+        <input  type="submit" value="Ändern" formaction="003_db_aendern_b.php"></button>
+        <input  type="submit" value="Löschen" formaction="003_db_loeschen_b.php"></button>
+        -->
     </form>
 
 <?php

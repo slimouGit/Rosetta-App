@@ -55,7 +55,7 @@ if(empty($car)) {
     //close connection
     mysqli_close($con);
 
-echo "<p><input type=\"submit\" value=\"anzeigen\" /></p>";
+//echo "<p><input type=\"submit\" value=\"anzeigen\" /></p>";
 
 echo "</form>";
 

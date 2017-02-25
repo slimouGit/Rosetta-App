@@ -5,8 +5,10 @@
 include "elements/header.php";
 ?>
 
-<h2>Form control: inline checkbox</h2>
-<p>The form below contains three inline checkboxes:</p>
+
+
+<h2>Startseite</h2>
+<p>Man kann direkt wechseln zum Suchen oder Erstellen eines Datensatzes</p>
 
 
     <div class="row">
