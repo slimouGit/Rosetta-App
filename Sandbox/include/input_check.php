@@ -1,24 +1,16 @@
 <?php
 
 $fehler = false;
-$taskOption = $search =  "";
-$taskOption_Err = $search_Err =  "";
+$search =  "";
+$search_Err =  "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $taskOption = test_input($_POST["taskOption"]);
     $search = test_input($_POST["search"]);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        if (empty($_POST["taskOption"])) {
-            $taskOption_Err = "Bitte den Author eintragen";
-            $fehler = true;
-        } else {
-            $titel = test_input($_POST["taskOption"]);
-        }
-
         if (empty($_POST["search"])) {
-            $search_Err = "Bitte den Author eintragen";
+            $search_Err = "Bitte einen Suchbegriff angeben";
             $fehler = true;
         } else {
             $titel = test_input($_POST["search"]);

@@ -15,6 +15,9 @@ include "include/connect_db.php";
 
     <?php
 
+    if(isset($_POST['Suchen'])) {
+
+
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {
         //das Array carline wird ueber implode in $car gespeichert
@@ -51,6 +54,10 @@ include "include/connect_db.php";
 
         <?php
         }
+
+    }else{
+        echo "Ficken";
+    }
     ?>
 
 <?php
