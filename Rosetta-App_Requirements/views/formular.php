@@ -7,16 +7,16 @@
         <label for="select" class="col-sm-2 control-label">Verbindlichkeit</label>
         <div class="col-sm-6">
             <label class="radio-inline">
-                <input type="radio" id="muss" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="muss">muss
+                <input type="radio" id="muss" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="muss"><b>muss</b> (Pflicht)
             </label>
             <label class="radio-inline">
-                <input type="radio" selected id="soll" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="soll">soll
+                <input type="radio" selected id="soll" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="soll"><b>soll</b> (Wunsch)
             </label>
             <label class="radio-inline">
-                <input type="radio" id="kann" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="kann">kann
+                <input type="radio" id="kann" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="kann"><b>kann</b> (Absicht)
             </label>
             <label class="radio-inline">
-                <input type="radio" id="wird" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="wird">wird
+                <input type="radio" id="wird" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="wird"><b>wird</b> (Vorschlag)
             </label>
         </div>
         <div class="col-sm-4 errorContainer">
