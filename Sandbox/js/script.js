@@ -26,7 +26,7 @@ function checkRadio(){
 }
 
 function testFunction(){
-    alert("Fett");
+    //alert("Fett");
 
     //var editButtons = document.getElementsByClassName("editButton");
     document.querySelectorAll(".editButton").disabled = false;

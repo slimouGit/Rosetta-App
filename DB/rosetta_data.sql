@@ -2,10 +2,10 @@
 -- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Erstellungszeit: 22. Feb 2017 um 17:39
--- Server-Version: 10.1.21-MariaDB
--- PHP-Version: 7.1.1
+-- Host: 127.0.0.1
+-- Generation Time: Feb 26, 2017 at 08:12 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 7.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,16 +17,17 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `rosetta-app`
+-- Database: `rosetta-app`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `rosetta_data`
+-- Table structure for table `rosetta_data`
 --
 
 CREATE TABLE `rosetta_data` (
+  `token` varchar(100) DEFAULT NULL,
   `id` int(5) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `de` varchar(100) DEFAULT NULL,
@@ -39,38 +40,34 @@ CREATE TABLE `rosetta_data` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 --
--- Daten für Tabelle `rosetta_data`
+-- Dumping data for table `rosetta_data`
 --
 
-INSERT INTO `rosetta_data` (`id`, `date`, `de`, `fr`, `it`, `en`, `rubrik`, `info`, `carline`) VALUES
-(4, '2017-02-22 14:25:38', 'Januar', 'Janvier', 'Gennaio', 'January', 'Titel/U4', 'Monat', 'Generel'),
-(7, '2017-02-22 14:26:01', 'Februar', 'Fevrier', 'Febbraio', 'February', 'Titel/U4', 'Monat', 'Generel'),
-(9, '2017-02-22 16:17:10', 'Leichtmetallfelgen 7 J x 17, 5 Doppelspeichen, Hoch- glanzschwarz, Reifen 215/45 R17, inkl. Sportfah', 'Cerchi in lega leggera 7 J x 17, 5 razze doppie, Nero lucido, pneumatici 215/45 R17, incl. autotelai', 'Calzone', '', 'Fahrwerk und Felgen', 'RZS & 13P', 'Corsa Astra'),
-(11, '2017-02-22 16:18:14', 'Cerchi in lega leggera 17Ë', 'Cerchi in lega leggera 17Ë', 'Pizza', '', '', '', ''),
-(12, '2017-02-22 11:08:03', 'Innovationen', '', 'Innovazioni', '', 'Pakete und Sonderausstattungen', '', ''),
-(16, '2017-02-22 15:59:54', 'Hallo', 'Salut', 'Ciao', 'hello', 'Begruessung', 'Nette sache', ''),
-(15, '2017-02-22 14:28:15', 'MÃ¤rz', 'Mars', 'Marzo', 'March', 'Titel/U4', 'Monat', 'Generel'),
-(18, '2017-02-22 16:22:15', 'April', 'Avril', 'Aprile', 'April', 'Monat', 'Titel/U4', 'Generel');
+INSERT INTO `rosetta_data` (`token`, `id`, `date`, `de`, `fr`, `it`, `en`, `rubrik`, `info`, `carline`) VALUES
+('3281c5e256c1af611fdf9f63e4288385', 105, '2017-02-25 14:52:50', 'Adaptives Bremslicht', 'Luce di stop adattiva', 'Feux de stop adaptatifs', '', 'Serienausstattung', 'Sicherheit', 'ADAM'),
+('36073aa967e78f9963b02938ce17a5c6', 106, '2017-02-25 14:53:50', 'Serienausstattung', 'Equipaggiamento di serie', 'Equipement de sÃ©rie', '', '', 'Header', 'General'),
+('41325a62138088bd3b025d3361e9d9ca', 123, '2017-02-25 17:16:48', '', '', '', '', 'drrgdsrgfd', '', 'ADAM'),
+('5143c0a53f9b43e4b4f03f24e816396d', 104, '2017-02-25 15:32:14', 'Ausstattungen und Preise', 'Equipaggiamenti e prezzi', 'Equipaggiamenti e prezzi', '', 'Titel', '', 'General, Astra ST, Corsa');
 
 --
--- Indizes der exportierten Tabellen
+-- Indexes for dumped tables
 --
 
 --
--- Indizes für die Tabelle `rosetta_data`
+-- Indexes for table `rosetta_data`
 --
 ALTER TABLE `rosetta_data`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT für exportierte Tabellen
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT für Tabelle `rosetta_data`
+-- AUTO_INCREMENT for table `rosetta_data`
 --
 ALTER TABLE `rosetta_data`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

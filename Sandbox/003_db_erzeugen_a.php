@@ -5,12 +5,13 @@ include "elements/header.php";
 
 <?php
 //include db connection
-include "include/connect_db.php";
+include "include/db_connect.php";
 ?>
 
 
 <h2>Datensatz erzeugen</h2>
 <p>Verschieden Parameter stehen zur Auswahl, kann beliebig erweitert werden</p>
+<p>wird keine Carline ausgewählt, wird der Wert mit "General" initialisiert</p>
 
 <form action = "003_db_erzeugen_b.php" method = "post">
 

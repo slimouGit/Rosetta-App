@@ -8,7 +8,7 @@ include "elements/header.php";
 
 <?php
 //include db connection
-include "include/connect_db.php";
+include "include/db_connect.php";
 ?>
 
     <form action = "003_db_aendern_b.php" method = "post">

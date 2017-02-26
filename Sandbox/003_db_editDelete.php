@@ -9,7 +9,7 @@ include "elements/header.php";
 
 <?php
 //include db connection
-include "include/connect_db.php";
+include "include/db_connect.php";
 ?>
 
 <?php
