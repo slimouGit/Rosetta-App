@@ -105,8 +105,9 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
             //close connection
             mysqli_close($con);
             ?>
-
+            <!--
             <p><input type="submit" value="anzeigen" /></p>
+            -->
         </form>
 
         <?php
