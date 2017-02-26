@@ -6,7 +6,7 @@
  * Time: 09:12
  */
 // Tabellenbeginn
-echo    "<table class=\"table table-hover table-responsive\">".
+echo    "<table class=\"table table-hover table-responsive table-striped\">".
     "<thead>".
 
     "<tr>".

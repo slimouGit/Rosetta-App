@@ -1,6 +1,6 @@
 
 
-<table class="table table-hover table-responsive">
+<table class="table table-hover table-responsive table-striped">
     <thead>
         <tr>
             <th class="col-sm-1">Id</th>
