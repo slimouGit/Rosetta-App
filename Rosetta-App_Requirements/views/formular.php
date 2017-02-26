@@ -33,6 +33,7 @@
             <select name="author" class="form-control">
                 <option value="" selected="selected">bitte wählen</option>
                 <option value="Claudia">Claudia</option>
+                <option value="Nicole">Nicole</option>
                 <option value="Salim">Salim</option>
                 <option value="Thomas">Thomas</option>
             </select>
