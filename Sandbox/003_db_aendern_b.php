@@ -14,8 +14,8 @@ include "include/db_connect.php";
 
 
 
-<h2>Form control: inline checkbox</h2>
-<p>The form below contains three inline checkboxes:</p>
+<h2>Daten ändern</h2>
+<p>Bestehende Daten werden angezeigt und können geändert werden.</p>
 
 <?php
 

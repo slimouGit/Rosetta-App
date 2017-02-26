@@ -8,6 +8,9 @@ include "elements/header.php";
 include "include/db_connect.php";
 ?>
 
+<h2>Daten gelöscht</h2>
+<p>Die gelöschten Daten werden angezeigt.</p>
+
     <?php
 
     if (isset($_POST["auswahl"]))
@@ -43,7 +46,7 @@ include "include/db_connect.php";
 
     ?>
 
-    <p>Zurueck zur <a href="003_db_loeschen_a.php">Auswahl</a></p>
+    <p>Zurueck zum <a href="index.php">Start</a></p>
 
 <?php
 //include footer

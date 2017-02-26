@@ -8,6 +8,9 @@ include "elements/header.php";
 include "include/db_connect.php";
 ?>
 
+<h2>Daten erstellt</h2>
+<p>Neuer Datensatz wird angezeigt.</p>
+
 <?php
 
 //Pruefung, ob checkboxen ausgewaehlt wurden
