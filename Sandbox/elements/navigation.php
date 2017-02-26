@@ -9,10 +9,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="index.php">Rosetta-App</a>
         </div>
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Start</a></li>
+                <!--<li><a href="index.php">Start</a></li>-->
                 <li><a href="003_db_suchen_a.php">Suchen</a></li>
                 <li><a href="003_db_erzeugen_a.php">Erstellen</a></li>
                 <li><a href="003_db_anzeigen.php">Daten</a></li>
