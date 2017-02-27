@@ -26,7 +26,7 @@ include "include/input_check.php";
         <div class="form-group">
             <label for="suche" class="col-sm-2 control-label">Was soll gesucht werden</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
+                <input type="text" class="form-control" id="searchInput" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
             </div>
             <div class="col-sm-4 errorContainer"><span class="error"><?php echo $search_Err;?></span></div>
         </div>
@@ -89,14 +89,17 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
     $sql .= " where CONCAT_WS('',$cat) like '%" . $_POST["search"] . "%' ";
 
 
+
     $res = mysqli_query($con, $sql);
     $num = mysqli_num_rows($res);
-    if ($num==0) echo "\"" . $_POST['search'] . "\"" . " ist nicht vorhanden";
+    if ($num==0) {
+        echo "\"" . $_POST['search'] . "\"" . " ist nicht vorhanden";
+    }
     else{
         ?>
 
         <form action = "003_db_aendern_b.php" method = "post">
-
+            <div id="results">
             <?php
 
             //include table
@@ -105,6 +108,7 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
             //close connection
             mysqli_close($con);
             ?>
+            </div><!-- ENDE results -->
             <!--
             <p><input type="submit" value="anzeigen" /></p>
             -->
@@ -120,3 +124,27 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 include "elements/footer.html";
 ?>
 
+<script>
+    var searchContainer = document.getElementById("results");
+    var search = document.getElementById("searchInput").value;
+    //$("searchContainer contains(search)")
+      //  .closest("search").css("color" , "green");
+
+    $('.searchContainer').filter(':contains(search)')
+        .find('search').css('background-color', 'green');
+
+    /*
+    var searchContainer = document.getElementById("results").value;
+    console.log(searchContainer);
+
+    var n = searchContainer.toString();
+    var search = document.getElementById("searchInput");
+
+    var m = n.includes(/search/i);
+
+    if(m){
+        alert("ist drin");
+    }
+    */
+    //alert(search.value);
+</script>
