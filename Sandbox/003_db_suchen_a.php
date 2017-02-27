@@ -127,12 +127,17 @@ include "elements/footer.html";
 <script>
     var searchContainer = document.getElementById("results");
     var search = document.getElementById("searchInput").value;
-    //$("searchContainer contains(search)")
-      //  .closest("search").css("color" , "green");
+    coloring();
+    function coloring(){
+        console.log(search);
+        $('#results:contains(search)').addClass('success');
 
-    $('.searchContainer').filter(':contains(search)')
-        .find('search').css('background-color', 'green');
+        $(".searchContainer:contains(search)")
+        .closest("search").css("color" , "green");
 
+        //$('searchContainer').filter(':contains(search)')
+        //.find('search').css('color', 'green');
+    }
     /*
     var searchContainer = document.getElementById("results").value;
     console.log(searchContainer);
