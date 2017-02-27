@@ -91,7 +91,7 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 
     $res = mysqli_query($con, $sql);
     $num = mysqli_num_rows($res);
-    if ($num==0) echo $_POST['search'] . " ist nicht vorhanden";
+    if ($num==0) echo "\"" . $_POST['search'] . "\"" . " ist nicht vorhanden";
     else{
         ?>
 
