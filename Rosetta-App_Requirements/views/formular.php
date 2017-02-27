@@ -1,32 +1,10 @@
 <form class="form-horizontal" id="formular" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
 
-    <!--------------------------------------------------------------------------------------->
-    <!--verbidlichkeit-->
 
-    <div class="form-group">
-        <label for="select" class="col-sm-2 control-label">Verbindlichkeit</label>
-        <div class="col-sm-6">
-            <label class="radio-inline">
-                <input type="radio" id="muss" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="muss"><b>muss</b> (Pflicht)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" selected id="soll" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="soll"><b>soll</b> (Wunsch)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" id="kann" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="kann"><b>kann</b> (Absicht)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" id="wird" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="wird"><b>wird</b> (Vorschlag)
-            </label>
-        </div>
-        <div class="col-sm-4 errorContainer">
-            <span class="error"><?php echo $verbindlichkeit_Err;?></span>
-        </div>
-    </div>
 
     <!--------------------------------------------------------------------------------------->
     <!--author-->
-
+    <div class="row"><br></div>
     <div class="form-group">
         <label for="select" class="col-sm-2 control-label">Author</label>
         <div class="col-sm-6">
@@ -69,6 +47,31 @@
         </div>
     </div>
 
+    <!--------------------------------------------------------------------------------------->
+    <!--verbidlichkeit-->
+
+    <div class="form-group">
+        <label for="select" class="col-sm-2 control-label">Verbindlichkeit</label>
+        <div class="col-sm-6">
+            <label class="radio-inline">
+                <input type="radio" id="muss" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="muss"><b>muss</b> (Pflicht)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" selected id="soll" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="soll"><b>soll</b> (Wunsch)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" id="kann" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="kann"><b>kann</b> (Absicht)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" id="wird" name="verbindlichkeit" <?php if (isset($verbindlichkeit) && $verbindlichkeit=="muss") echo "checked";?> value="wird"><b>wird</b> (Vorschlag)
+            </label>
+        </div>
+        <div class="col-sm-4 errorContainer">
+            <span class="error"><?php echo $verbindlichkeit_Err;?></span>
+        </div>
+    </div>
+
+    <div class="row"><br></div>
     <!--------------------------------------------------------------------------------------->
     <!--submit-->
 
