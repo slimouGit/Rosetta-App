@@ -34,10 +34,10 @@ while ($dsatz = mysqli_fetch_assoc($res))
         "<td>" . $dsatz["carline"]   . "</td>".
         "<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
         "<td >
-            <input  type=\"image\" value=\"Ändern\" src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
+            <input  type=\"submit\" value=\"Ändern\" src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
         </td>".
         "<td >
-            <input  type=\"image\" value=\"Löschen\" src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
+            <input  type=\"submit\" value=\"Löschen\" src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
         </td>";
 
     echo    "</tr>";
