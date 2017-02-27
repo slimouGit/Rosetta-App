@@ -11,6 +11,7 @@
             <th class="col-sm-2">Rubrik</th>
             <th class="col-sm-2">Info</th>
             <th class="col-sm-2">Carline</th>
+            <th class="col-sm-2"></th>
             <th class="col-sm-2" colspan="3">Edit</th>
         </tr>
     </thead>
@@ -32,6 +33,7 @@ while ($dsatz = mysqli_fetch_assoc($res))
         "<td>" . $dsatz["rubrik"]    . "</td>".
         "<td>" . $dsatz["info"]      . "</td>".
         "<td>" . $dsatz["carline"]   . "</td>".
+        "<td>" .  "</td>".
         "<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
         "<td >
             <input  type=\"submit\" value=\"Ändern\" src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
