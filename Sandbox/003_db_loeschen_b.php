@@ -13,13 +13,13 @@ include "include/db_connect.php";
 
     <?php
 
-    if (isset($_POST["auswahl"]))
+    if (isset($_POST["delete"]))
     {
 
         //---------------------------------------------------
         //Den Datensatz, der gesucht wurde, anzeigen
         $sql = "select * from rosetta_data";
-        $sql .= " where id like '" . $_POST["auswahl"] . "'";
+        $sql .= " where id like '" . $_POST["delete"] . "'";
         $res = mysqli_query($con, $sql);
         $num = mysqli_num_rows($res);
 
@@ -28,7 +28,7 @@ include "include/db_connect.php";
         //---------------------------------------------------
 
 
-       $sql = "delete from rosetta_data where id = '" . $_POST["auswahl"] . "'";
+       $sql = "delete from rosetta_data where id = '" . $_POST["delete"] . "'";
        mysqli_query($con, $sql);
 
        $num = mysqli_affected_rows($con);

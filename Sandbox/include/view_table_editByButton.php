@@ -1,5 +1,16 @@
+<script type="text/javascript">
+    function send(edit, id)
+    {
+        if(edit==1)
+            alert("Update" + "<?php $_POST["id"] ?>");
+        else if(edit==2)
+        {
+            alert("Delete");
+        }
+    }
+</script>
 
-
+<form action="google.de" method = 'post'>
 <table class="table table-hover table-responsive table-striped">
     <thead>
         <tr>
@@ -16,6 +27,7 @@
         </tr>
     </thead>
 
+
 <?php
 /* Datensaetze aus Ergebnis ermitteln, */
 /* in Array speichern und ausgeben    */
@@ -25,7 +37,7 @@ while ($dsatz = mysqli_fetch_assoc($res))
 
     echo    "<tr>".
 
-        "<td>" . $dsatz["id"]        . "</td>".
+        "<td >" . $dsatz["id"]        . "</td>".
         "<td>" . $dsatz["de"]        . "</td>".
         "<td>" . $dsatz["fr"]        . "</td>".
         "<td>" . $dsatz["it"]        . "</td>".
@@ -34,18 +46,17 @@ while ($dsatz = mysqli_fetch_assoc($res))
         "<td>" . $dsatz["info"]      . "</td>".
         "<td>" . $dsatz["carline"]   . "</td>".
         "<td>" .  "</td>".
-        //"<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
-        //$id = $dsatz["id"];
+        "<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"send(1)\" value='" . $dsatz["id"] . "' /></td>".
         "<td >
-            <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
+            <a value='" . $dsatz["id"] . "' href='javascript:send(1, " . $dsatz["id"] . ");'>Update</a>
         </td>".
         "<td >
-            <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
+            <a value='" . $dsatz["id"] . "' href='javascript:send(2, " . $dsatz["id"] . ");'>Delete</a>
         </td>";
 
     echo    "</tr>";
 
 }
 echo    "</table>";
-
+echo "</form>";
 ?>

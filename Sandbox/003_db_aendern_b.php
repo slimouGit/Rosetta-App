@@ -19,15 +19,15 @@ include "include/db_connect.php";
 
 <?php
 
-    if (isset($_POST["auswahl"]))
+    if (isset($_POST["update"]))
     {
-        $sql = "select * from rosetta_data where id = '" . $_POST["auswahl"] . "'";
+        $sql = "select * from rosetta_data where id = '" . $_POST["update"] . "'";
         $res = mysqli_query($con, $sql);
         $dsatz = mysqli_fetch_assoc($res);
 
         echo "<form action = '003_db_aendern_c.php' method = 'post'>";
 
-            echo "<p><input type='hidden' name='id' value='" . $_POST["auswahl"] . "' /> </p>";
+            echo "<p><input type='hidden' name='id' value='" . $_POST["update"] . "' /> </p>";
             echo "
                     <div class=\"row\">
                         <div class=\"form-group\">
@@ -137,7 +137,7 @@ include "include/db_connect.php";
                     ";
 
 
-            echo "<input type='hidden' name='orianr' value='" . $_POST["auswahl"] . "' />";
+            echo "<input type='hidden' name='orianr' value='" . $_POST["update"] . "' />";
 
             echo "
                 <div class=\"row button\">

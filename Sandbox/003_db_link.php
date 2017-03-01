@@ -3,14 +3,14 @@
   <link rel="stylesheet" type="text/css" href="db_linkcss.css">
 
 <script type="text/javascript">
-function send(ak,id)
+function send(edit,id)
 {
-   if(ak==1)
-       document.f.ak.value = "up";
-   else if(ak==2)
+   if(edit==1)
+       document.f.edit.value = "up";
+   else if(edit==2)
    {
        if (confirm("Datensatz mit id " + id + " l�schen?"))
-          document.f.ak.value = "de";
+          document.f.edit.value = "de";
        else
           return;
    }
@@ -26,10 +26,10 @@ function send(ak,id)
    mysqli_select_db($con, "firma");
 
    /* Aktion ausf�hren */
-   if(isset($_POST["ak"]))
+   if(isset($_POST["edit"]))
    {
       /* neu eintragen */
-      if($_POST["ak"]=="up")
+      if($_POST["edit"]=="up")
       {
          $id = $_POST["id"];
          $sql = "update personen set "
@@ -43,7 +43,7 @@ function send(ak,id)
       }
 
       /* l�schen */
-      else if($_POST["ak"]=="de")
+      else if($_POST["edit"]=="de")
       {
          $sql = "delete from personen where personalnummer = " . $_POST["id"];
          mysqli_query($con, $sql);
@@ -51,9 +51,9 @@ function send(ak,id)
    }
 
    /* Formular-Beginn */
-   echo "<form name='f' action='db_linkcss.php'
+   echo "<form name='f' action='db_link.php'
                method='post'>";
-   echo "<input name='ak' type='hidden' />";
+   echo "<input name='edit' type='hidden' />";
    echo "<input name='id' type='hidden' />";
 
    /* Tabellen-Beginn */
