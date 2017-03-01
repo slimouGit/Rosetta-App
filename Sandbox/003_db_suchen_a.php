@@ -75,6 +75,9 @@ include "include/input_check.php";
 <?php
 
 if(isset($_POST['Suchen']) && (!$fehler)) {
+
+
+
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {
         //das Array carline wird ueber implode in $car gespeichert
@@ -90,6 +93,8 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 
 
 
+
+
     $res = mysqli_query($con, $sql);
     $num = mysqli_num_rows($res);
     if ($num==0) {
@@ -99,7 +104,6 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
         ?>
 
         <form action = "003_db_aendern_b.php" method = "post">
-            <div id="results">
             <?php
 
             //include table
@@ -108,7 +112,7 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
             //close connection
             mysqli_close($con);
             ?>
-            </div><!-- ENDE results -->
+
             <!--
             <p><input type="submit" value="anzeigen" /></p>
             -->
@@ -131,7 +135,7 @@ include "elements/footer.html";
     coloring();
     function coloring(){
         console.log(search);
-        $('#results:contains(search)').addClass('success');
+        $('.results:contains(search)').addClass('success');
 
         $(".searchContainer:contains(search)")
         .closest("search").css("color" , "green");

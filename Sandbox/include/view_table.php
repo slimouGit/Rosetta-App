@@ -4,17 +4,18 @@
     <thead>
         <tr>
             <th class="col-sm-1">Id</th>
-            <th class="col-sm-2">De</a></th>
-            <th class="col-sm-2">Fr</th>
-            <th class="col-sm-2">It</th>
-            <th class="col-sm-2">En</th>
-            <th class="col-sm-2">Rubrik</th>
+            <th class="col-sm-2 german">De</a></th>
+            <th class="col-sm-2 french">Fr</th>
+            <th class="col-sm-2 italy">It</th>
+            <th class="col-sm-2 english">En</th>
+            <th class="col-sm-2 ">Rubrik</th>
             <th class="col-sm-2">Info</th>
             <th class="col-sm-2">Carline</th>
             <th class="col-sm-2"></th>
             <th class="col-sm-2" colspan="3">Edit</th>
         </tr>
     </thead>
+    <tbody class="results">
 
 <?php
 /* Datensaetze aus Ergebnis ermitteln, */
@@ -23,8 +24,7 @@ while ($dsatz = mysqli_fetch_assoc($res))
 {
 
 
-    echo    "<tr>".
-
+    echo   "<tr>".
         "<td>" . $dsatz["id"]        . "</td>".
         "<td>" . $dsatz["de"]        . "</td>".
         "<td>" . $dsatz["fr"]        . "</td>".
@@ -46,6 +46,7 @@ while ($dsatz = mysqli_fetch_assoc($res))
     echo    "</tr>";
 
 }
-echo    "</table>";
-
 ?>
+
+</tbody>
+    </table>
