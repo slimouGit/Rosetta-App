@@ -127,6 +127,7 @@ include "elements/footer.html";
 <script>
     var searchContainer = document.getElementById("results");
     var search = document.getElementById("searchInput").value;
+
     coloring();
     function coloring(){
         console.log(search);
