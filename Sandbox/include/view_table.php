@@ -33,7 +33,7 @@ while ($dsatz = mysqli_fetch_assoc($res))
         "<td>" . $dsatz["en"]        . "</td>".
         "<td>" . $dsatz["rubrik"]    . "</td>".
         "<td>" . $dsatz["info"]      . "</td>".
-        "<td>" . $dsatz["carline"]   . "</td>".
+        "<td class='columnCarline'>" . $dsatz["carline"]   . "</td>".
         "<td>" .  "</td>".
         //"<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
         //$id = $dsatz["id"];
