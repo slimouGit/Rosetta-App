@@ -102,8 +102,8 @@ while ($dsatz = mysqli_fetch_assoc($res))
         . "<td>" . $dsatz["id"] . "</td>"
         . "<td>" . $dsatz["de"] . "</td>"
         . "<td><input class='toEdit' name='frz[$id_nr]' value='" . $dsatz["fr"] . "' size='40' /></td>"
-        . "<td><a href='javascript:send(1,$id_nr);'>ändern</a>"
-        . " <a href='javascript:send(2,$id_nr);'>löschen</a></td>"
+        . "<td><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a></td>"
+        //. " <a href='javascript:send(2,$id_nr);'><img src=\"img/button_delete.png\"></a></td>"
         . "</tr>";
 }
 echo "</table>";
