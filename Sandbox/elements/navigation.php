@@ -16,11 +16,16 @@
                 <!--<li><a href="index.php">Start</a></li>-->
                 <li><a href="003_db_suchen_a.php">Suchen</a></li>
                 <li><a href="003_db_erzeugen_a.php">Erstellen</a></li>
-                <li><a href="003_db_anzeigen.php">Daten</a></li>
-                <!--
-                <li><a href="003_db_aendern_a.php">Update</a></li>
-                <li><a href="003_db_loeschen_a.php">Delete</a></li>
-                -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daten
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="003_db_anzeigen.php">alle Daten</a></li>
+                        <li><a href="003_db_anzeigen_fr.php">Französisch</a></li>
+                        <li><a href="#">Italienisch</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
