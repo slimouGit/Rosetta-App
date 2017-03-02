@@ -3,6 +3,11 @@
 include "elements/header.php";
 ?>
 
+<?php
+//include db connection
+include "include/db_connect.php";
+?>
+
 <h2>Ausgabe aller Datensätze auf Deutsch und Französisch</h2>
 <p>Die französische Übersetzung kann vom Übersetzer eingetragen werden.</p>
 
@@ -29,8 +34,7 @@ include "elements/header.php";
 
 
 <?php
-$con = mysqli_connect("","root");
-mysqli_select_db($con, "rosetta-app");
+
 
 /* Aktion ausf�hren */
 if(isset($_POST["ak"]))
