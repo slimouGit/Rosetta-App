@@ -42,8 +42,8 @@ if(isset($_POST["ak"]))
             . "(id, de, fr) values ('"
             . "('" . $_POST["ident"][0] . "', '" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "')";
         */
-        $sql = "INSERT INTO rosetta_data (de, fr, comment_fr)
-          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "', '"  . $_POST["com"][0] . "')";
+        $sql = "INSERT INTO rosetta_data (de, fr)
+          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "')";
         mysqli_query($con, $sql);
     }
 
@@ -75,13 +75,12 @@ echo "<input name='id' type='hidden' />";
 /* Tabellen-Beginn */
 echo "\n\n<table class=\"table table-hover table-responsive table-striped\">"
     . "<thead>"
-    . "<tr>"
-    . "<th class=\"col-sm-1\">ID</th>"
-    . "<th class=\"col-sm-4\">DE</th>"
-    . "<th class=\"col-sm-4\">FR</th>"
-    . "<th class=\"col-sm-4\">Kommentar</th>"
-    . "<th class=\"col-sm-1\">Aktion</th>"
-    . "</tr>"
+        . "<tr>"
+            . "<th class=\"col-sm-1\">ID</th>"
+            . "<th class=\"col-sm-4\">DE</th>"
+            . "<th class=\"col-sm-4\">FR</th>"
+            . "<th class=\"col-sm-1\">Aktion</th>"
+        . "</tr>"
     . "</thead>";
 
 /* Neuer Eintrag */
@@ -89,7 +88,6 @@ echo "\n\n<tr>"
     . "<td><input class='toEdit' name='ident[0]' size='3' /></td>"
     . "<td><input class='toEdit' name='dts[0]' size='40' /></td>"
     . "<td><input class='toEdit' name='frz[0]' size='40' /></td>"
-    . "<td><input class='toEdit' name='com[0]' size='40' /></td>"
     . "<td><a href='javascript:send(0,0);'>neu eintragen</a></td>"
     . "</tr>";
 
@@ -104,7 +102,6 @@ while ($dsatz = mysqli_fetch_assoc($res))
         . "<td>" . $dsatz["id"] . "</td>"
         . "<td>" . $dsatz["de"] . "</td>"
         . "<td><input class='toEdit' name='frz[$id_nr]' value='" . $dsatz["fr"] . "' size='40' /></td>"
-        . "<td><input class='toEdit' name='com[$id_nr]' value='" . $dsatz["comment_fr"] . "' size='40' /></td>"
         . "<td><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a></td>"
         //. " <a href='javascript:send(2,$id_nr);'><img src=\"img/button_delete.png\"></a></td>"
         . "</tr>";
