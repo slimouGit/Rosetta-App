@@ -37,12 +37,11 @@ while ($row = $query->fetch_assoc()) {
     $data[] = $row['de'];
     $data[] = $row['fr'];
     $data[] = $row['it'];
-    /*
-    $data[] = $row['en'];
-    $data[] = $row['rubrik'];
-    $data[] = $row['info'];
-    $data[] = $row['carline'];
-    */
+    //$data[] = $row['en'];
+    //$data[] = $row['rubrik'];
+    //$data[] = $row['info'];
+    //$data[] = $row['carline'];
+
 }
 
 //return json data
