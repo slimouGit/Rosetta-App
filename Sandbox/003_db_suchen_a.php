@@ -15,18 +15,30 @@ include "include/db_connect.php";
 include "include/input_check.php";
 ?>
 
+<!--Script Autovervollstaendigung-->
+<script>
+    $(function() {
+        $( "#skills" ).autocomplete({
+            source: 'search.php'
+        });
+    });
+</script>
+
+
+
 <h2>Suche</h2>
 <p>Volltextsuche (evtl. später mit Autovervollständigung)</p>
 <p>Die Suche kann eingeschränkt werden nach bestehenden Rubriken. Gibt man keine Rubrik an, wird in allen gesucht</p>
+
 
 <!--Suchformular-->
 <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post">
 
     <div class="row">
-        <div class="form-group">
-            <label for="suche" class="col-sm-2 control-label">Was soll gesucht werden</label>
+        <div class="form-group "> <!--ui-widget-->
+            <label for="skills" class="col-sm-2 control-label">Was soll gesucht werden</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="searchInput" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
+                <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
             </div>
             <div class="col-sm-4 errorContainer"><span class="error"><?php echo $search_Err;?></span></div>
         </div>
@@ -133,33 +145,3 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 include "elements/footer.html";
 ?>
 
-<script>
-    var searchContainer = document.getElementById("results");
-    var search = document.getElementById("searchInput").value;
-
-    coloring();
-    function coloring(){
-        console.log(search);
-        $('.results:contains(search)').addClass('success');
-
-        $(".searchContainer:contains(search)")
-        .closest("search").css("color" , "green");
-
-        //$('searchContainer').filter(':contains(search)')
-        //.find('search').css('color', 'green');
-    }
-    /*
-    var searchContainer = document.getElementById("results").value;
-    console.log(searchContainer);
-
-    var n = searchContainer.toString();
-    var search = document.getElementById("searchInput");
-
-    var m = n.includes(/search/i);
-
-    if(m){
-        alert("ist drin");
-    }
-    */
-    //alert(search.value);
-</script>
