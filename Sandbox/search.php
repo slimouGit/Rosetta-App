@@ -27,7 +27,7 @@ if(!empty($_POST['category'])) {
 }
 //falls keine checkbox aktiv, wird in allen Spalten gesucht
 if(empty($cat)) {
-    $cat = 'de, fr, it, en, rubrik, info, carline';
+    $cat = 'de, fr, it';
 }
 
 
