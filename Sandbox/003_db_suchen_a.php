@@ -91,6 +91,11 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
     $sql = "select * from rosetta_data";
     $sql .= " where CONCAT_WS('',$cat) like '%" . $_POST["search"] . "%' ";
 
+    //Variable, um Resultat in Ausgabe Tabelle (view_table) zu highlighten
+    $searchWord = $_POST["search"] ;
+
+
+
 
 
 

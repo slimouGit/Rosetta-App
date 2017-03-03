@@ -18,21 +18,26 @@
     <tbody class="results">
 
 <?php
+
+//$falls nicht ueber die Suchfunktion auf die Daten zugegriffen wird,
+//ist $searchWord nicht initialisiert und die Daten werden nicht ausgegeben
+if(empty($searchWord)){$searchWord="";};
+
+
 /* Datensaetze aus Ergebnis ermitteln, */
 /* in Array speichern und ausgeben    */
 while ($dsatz = mysqli_fetch_assoc($res))
 {
 
-
     echo   "<tr>".
 
         "<td>" . $dsatz["id"]        . "</td>".
-        "<td>" . $dsatz["de"]        . "</td>".
-        "<td>" . $dsatz["fr"]        . "</td>".
-        "<td>" . $dsatz["it"]        . "</td>".
-        "<td>" . $dsatz["en"]        . "</td>".
-        "<td>" . $dsatz["rubrik"]    . "</td>".
-        "<td>" . $dsatz["info"]      . "</td>".
+        "<td>" . preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"])       . "</td>".
+        "<td>" . preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"])        . "</td>".
+        "<td>" . preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"])       . "</td>".
+        "<td>" . preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["en"])       . "</td>".
+        "<td>" . preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"])    . "</td>".
+        "<td>" . preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"])      . "</td>".
         "<td class='columnCarline'>" . $dsatz["carline"]   . "</td>".
         "<td>" .  "</td>".
         //"<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
