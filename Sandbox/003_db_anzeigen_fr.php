@@ -105,6 +105,7 @@ echo "\n\n<tr>"
     . "</tr>";
 
 /* Anzeigen */
+//$res = mysqli_query($con, "select * from rosetta_data where id = 136");
 $res = mysqli_query($con, "select * from rosetta_data");
 
 /* Alle vorhandenen Datens�tze */
