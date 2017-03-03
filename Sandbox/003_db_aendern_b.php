@@ -147,7 +147,7 @@ include "include/db_connect.php";
                             <input type=\"submit\" class=\"btn btn-primary\" value=\"Eintragen\" name=\"gesendet\"></input>
                         </div>
                         <div class=\"col-sm-1\">
-                            <button type=\"reset\" class=\"btn btn-primary\" value=\"\"\">Zurueckstezen</button>
+                            <button type=\"reset\" class=\"btn btn-primary\" value=\"\"\">Zuruecksetzen</button>
                         </div>
                     </div>
                 </div>

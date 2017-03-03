@@ -34,4 +34,9 @@
 
 .highlight{background-color: yellow; }
 
-.columnCarline{font-size: .75em;color:red;}
+.columnCarline{font-size: .75em;}
+
+.toEdit{
+    border: none;
+    background-color: none;
+}
