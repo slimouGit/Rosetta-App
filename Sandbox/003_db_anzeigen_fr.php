@@ -56,9 +56,16 @@ if(isset($_POST["ak"]))
     {
         $id_nr = $_POST["id"];
 
-        $sql = "UPDATE rosetta_data SET fr='" . $_POST["frz"][$id_nr] . "' WHERE id=$id_nr";
+        $sql = "
+                UPDATE rosetta_data SET 
+                fr= '" . $_POST["frz"][$id_nr] . "',"
+                . "comment_fr = '" . $_POST["com"][$id_nr] . "'"
+                . " WHERE id=$id_nr
+                ";
 
         mysqli_query($con, $sql);
+
+
 
     }
 
