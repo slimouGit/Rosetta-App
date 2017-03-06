@@ -97,7 +97,8 @@ echo "\n\n<table class=\"table table-hover table-responsive table-striped\">"
 
 /* Neuer Eintrag */
 echo "\n\n<tr>"
-    . "<td><input class='toEdit' name='ident[0]' size='3' /></td>"
+    //. "<td><input class='toEdit' name='ident[0]' size='3' /></td>"
+    . "<td size='3' /></td>"
     . "<td><input class='toEdit' name='dts[0]' size='40' /></td>"
     . "<td><input class='toEdit' name='frz[0]' size='40' /></td>"
     . "<td><input class='toEdit' name='com[0]' size='40' /></td>"
