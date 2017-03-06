@@ -3,8 +3,13 @@
 include "elements/header.php";
 ?>
 
+<?php
+//include db connection
+include "include/db_connect.php";
+?>
+
 <h2>Ausgabe aller Datensätze</h2>
-<p>Dieser Bereich wird später nicht sichtbar sein, weil unübersichtlich (zu viele Daten) und man gelangt ja zu dem relevanten Eintrag über die Suchfunktion</p>
+<p></p>
 
 
 <script type="text/javascript">
@@ -17,7 +22,7 @@ include "elements/header.php";
         else if(ak==2)
         {
             if (confirm("Datensatz mit id " + id + " löschen?"))
-                document.f.ak.value = "de";
+                document.f.ak.value = "del";
             else
                 return;
         }
@@ -29,8 +34,7 @@ include "elements/header.php";
 
 
 <?php
-$con = mysqli_connect("","root");
-mysqli_select_db($con, "rosetta-app");
+
 
 /* Aktion ausf�hren */
 if(isset($_POST["ak"]))
@@ -42,8 +46,8 @@ if(isset($_POST["ak"]))
             . "(id, de, fr) values ('"
             . "('" . $_POST["ident"][0] . "', '" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "')";
         */
-        $sql = "INSERT INTO rosetta_data (de, fr)
-          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "')";
+        $sql = "INSERT INTO rosetta_data (de, fr, it)
+          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "', '"  . $_POST["itl"][0] . "')";
         mysqli_query($con, $sql);
     }
 
@@ -52,14 +56,23 @@ if(isset($_POST["ak"]))
     {
         $id_nr = $_POST["id"];
 
-        $sql = "UPDATE rosetta_data SET fr='" . $_POST["frz"][$id_nr]. "'," . "' WHERE id=$id_nr";
+        $sql = "
+                UPDATE rosetta_data SET 
+               de = '" . $_POST["dts"][$id_nr] . "',"
+            . "fr = '" . $_POST["frz"][$id_nr] . "',"
+            . "it = '" . $_POST["itl"][$id_nr] . "'"
+            //. "comment_it = '" . $_POST["com"][$id_nr] . "'"
+            . " WHERE id=$id_nr
+                ";
 
         mysqli_query($con, $sql);
+
+
 
     }
 
     /* l�schen */
-    else if($_POST["ak"]=="de")
+    else if($_POST["ak"]=="del")
     {
         $sql = "delete from rosetta_data where id = " . $_POST["id"];
         mysqli_query($con, $sql);
@@ -67,7 +80,7 @@ if(isset($_POST["ak"]))
 }
 
 /* Formular-Beginn */
-echo "<form name='f' action='003_db_anzeigen_fr.php'
+echo "<form name='f' action='003_db_anzeigen_gesamt.php'
                method='post'>";
 echo "<input name='ak' type='hidden' />";
 echo "<input name='id' type='hidden' />";
@@ -75,23 +88,27 @@ echo "<input name='id' type='hidden' />";
 /* Tabellen-Beginn */
 echo "\n\n<table class=\"table table-hover table-responsive table-striped\">"
     . "<thead>"
-        . "<tr>"
-            . "<th class=\"col-sm-1\">ID</th>"
-            . "<th class=\"col-sm-4\">DE</th>"
-            . "<th class=\"col-sm-4\">FR</th>"
-            . "<th class=\"col-sm-1\">Aktion</th>"
-        . "</tr>"
+    . "<tr>"
+    . "<th class=\"col-sm-1\">ID</th>"
+    . "<th class=\"col-sm-4\">DE</th>"
+    . "<th class=\"col-sm-4\">FR</th>"
+    . "<th class=\"col-sm-4\">IT</th>"
+    . "<th class=\"col-sm-1\"></th>"
+    . "</tr>"
     . "</thead>";
 
 /* Neuer Eintrag */
 echo "\n\n<tr>"
-    . "<td><input class='toEdit' name='ident[0]' size='3' /></td>"
+    //. "<td><input class='toEdit' name='ident[0]' size='3' /></td>"
+    . "<td size='3' /></td>"
     . "<td><input class='toEdit' name='dts[0]' size='40' /></td>"
     . "<td><input class='toEdit' name='frz[0]' size='40' /></td>"
+    . "<td><input class='toEdit' name='itl[0]' size='40' /></td>"
     . "<td><a href='javascript:send(0,0);'>neu eintragen</a></td>"
     . "</tr>";
 
 /* Anzeigen */
+//$res = mysqli_query($con, "select * from rosetta_data where id = 136");
 $res = mysqli_query($con, "select * from rosetta_data");
 
 /* Alle vorhandenen Datens�tze */
@@ -99,11 +116,12 @@ while ($dsatz = mysqli_fetch_assoc($res))
 {
     $id_nr = $dsatz["id"];
     echo "\n\n<tr>"
-        . "<td><input class='toEdit' name='ident[$id_nr]' value='" . $dsatz["id"] . "' size='3' /></td>"
-        . "<td><input class='toEdit' name='dts[$id_nr]' value='" . $dsatz["de"] . "' size='40' /></td>"
-        . "<td><input class='toEdit' name='frz[$id_nr]' value='" . $dsatz["fr"] . "' size='40' /></td>"
-        . "<td><a href='javascript:send(1,$id_nr);'>ändern</a>"
-        . " <a href='javascript:send(2,$id_nr);'>löschen</a></td>"
+        . "<td>" . $dsatz["id"] . "</td>"
+        . "<td><input class='toEdit' name='dts[$id_nr]' value='" . utf8_encode( $dsatz["de"] ) . "' size='40' /></td>"
+        . "<td><input class='toEdit' name='frz[$id_nr]' value='" . utf8_encode( $dsatz["fr"] ) . "' size='40' /></td>"
+        . "<td><input class='toEdit' name='itl[$id_nr]' value='" . utf8_encode( $dsatz["it"] ) . "' size='40' /></td>"
+        . "<td><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a>"
+        . " <a href='javascript:send(2,$id_nr);'><img src=\"img/button_delete.png\"></a></td>"
         . "</tr>";
 }
 echo "</table>";
