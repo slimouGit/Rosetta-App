@@ -1,6 +1,7 @@
 <?php
 //offline
 
+
 $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '';
@@ -16,6 +17,7 @@ $dbName = 'DB2881460';
 
 //connect with the database
 $db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+
 
 //get search term
 $searchTerm = $_GET['term'];
