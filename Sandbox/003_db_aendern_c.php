@@ -24,7 +24,7 @@ if(empty($car)) {
         . " de = '" . $_POST["dts"] . "',"
         . " fr = '" . $_POST["frz"] . "',"
         . " it = '" . $_POST["itl"] . "',"
-        . " en = '" . $_POST["eng"] . "',"
+        //. " en = '" . $_POST["eng"] . "',"
         . " rubrik = '" . $_POST["rub"] . "',"
         . " info = '" . $_POST["inf"] . "',"
         . " carline = '" . $car . "'"

@@ -70,7 +70,7 @@ echo "before isset";
                     </div>
             
                     ";
-
+            /**
             echo "
                     <div class=\"row\">
                         <div class=\"form-group\">
@@ -83,6 +83,7 @@ echo "before isset";
                     </div>
             
                     ";
+            **/
             echo "
                     <div class=\"row\">
                         <div class=\"form-group\">

@@ -44,7 +44,7 @@ include "include/db_connect.php";
             <div class="col-sm-4 errorContainer"></div>
         </div>
     </div>
-
+    <!--
     <div class="row">
         <div class="form-group">
             <label class="col-sm-2 control-label">Englisch</label>
@@ -54,7 +54,7 @@ include "include/db_connect.php";
             <div class="col-sm-4 errorContainer"></div>
         </div>
     </div>
-
+    -->
     <div class="row">
         <div class="form-group">
             <label class="col-sm-2 control-label">Rubrik</label>

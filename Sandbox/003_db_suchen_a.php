@@ -56,9 +56,11 @@ include "include/input_check.php";
             <label class="checkbox-inline">
                 <input name="category[]" type="checkbox" value="it">italienisch
             </label>
+            <!--
             <label class="checkbox-inline">
                 <input name="category[]" type="checkbox" value="en">englisch
             </label>
+            -->
             <label class="checkbox-inline">
                 <input name="category[]" type="checkbox" value="rubrik">Rubrik
             </label>
@@ -97,7 +99,7 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
     }
     //falls keine checkbox aktiv, wird in allen Spalten gesucht
     if(empty($cat)) {
-        $cat = 'de, fr, it, en, rubrik, info, carline';
+        $cat = 'de, fr, it, rubrik, info, carline';
     }
 
     $sql = "select * from rosetta_data";

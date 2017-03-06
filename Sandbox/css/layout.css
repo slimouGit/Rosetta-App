@@ -40,3 +40,11 @@
     border: none;
     background-color: none;
 }
+
+.columnCommentTranslator{font-size: .75em;color:#ff0000;}
+
+.headerTr {
+    font-size: .75em;
+    color: white;
+    background-color: #000;
+}
