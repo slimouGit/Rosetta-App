@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Erstellungszeit: 06. Mrz 2017 um 15:02
+-- Erstellungszeit: 06. Mrz 2017 um 16:53
 -- Server-Version: 10.1.21-MariaDB
 -- PHP-Version: 7.1.1
 
@@ -46,8 +46,8 @@ CREATE TABLE `rosetta_data` (
 --
 
 INSERT INTO `rosetta_data` (`token`, `id`, `date`, `de`, `fr`, `comment_fr`, `it`, `comment_it`, `en`, `rubrik`, `info`, `carline`) VALUES
-('5143c0a53f9b43e4b4f03f24e816396d', 104, '2017-03-06 13:45:28', 'Ausstattungen und Preise', 'Equipements et prix', 'Kommentar des Übersetzers', 'Equipaggiamenti e prezzi', '', '', 'Titel', '', 'General, Astra ST, Corsa'),
-('3281c5e256c1af611fdf9f63e4288385', 105, '2017-03-06 10:54:47', 'Adaptives Bremslicht', 'Feux de stop adaptatifs', 'ja, das ist so in Ordnung!!', 'Luce di stop adattiva', '', '', 'Serienausstattung', 'Sicherheit', 'General'),
+('5143c0a53f9b43e4b4f03f24e816396d', 104, '2017-03-06 14:42:01', 'Ausstattungen und Preise', 'Equipements et prix', 'Kommentar des Übersetzers', 'Equipaggiamenti e prezzi', 'kann man so sagen', '', 'Titel', '', 'General, Astra ST, Corsa'),
+('3281c5e256c1af611fdf9f63e4288385', 105, '2017-03-06 14:51:32', 'Adaptives Bremslicht', 'Feux de stop adaptatifs', 'ja, das ist so in Ordnung!!', 'Luce di stop adattiva', 'passt', '', 'Serienausstattung', 'Sicherheit', 'General'),
 ('36073aa967e78f9963b02938ce17a5c6', 106, '2017-03-06 11:46:23', 'Serienausstattung', 'Equipaggiamento di serie', '', 'Equipement de série', '', '', '', 'Header', 'ADAM, Astra ST, MokkaX'),
 ('87dc17b8ed30a1d9e8a5e75f3640414d', 127, '2017-03-06 09:46:40', 'Opel Original Zubehör', 'Accessoires d`origine Opel', '', 'Accessori originali Opel', '', '', 'Angebote', '', 'General'),
 ('2946e1f4febce6e96e0aa8c4a0851ebf', 128, '2017-03-06 09:40:54', 'Aluminium-Basisträger', 'Galerie de base en aluminium', NULL, 'Portapacchi base in alluminio', '', '', 'Angebote', '', 'General'),
@@ -65,7 +65,9 @@ INSERT INTO `rosetta_data` (`token`, `id`, `date`, `de`, `fr`, `comment_fr`, `it
 ('4150c0393147354d01822c393ad4b385', 146, '2017-02-27 12:55:15', 'Einparkhilfe', 'aide au stationnement', NULL, 'assistenza al parcheggio', '', '', '', '', 'General'),
 ('c3c89da4a0f62c2a463fd9cc4db1809b', 147, '2017-03-03 06:19:41', 'Metallic-Lackierung', 'Peinture métallisée', '', 'Verniciatura metallizzata', '', '', '', '', 'General'),
 ('4da358934457df2dddec332ee5ccfb05', 148, '2017-02-27 13:06:57', 'Perleffekt-Lackierung', 'Peinture effet perle', NULL, 'Verniciatura ad effetto perlato', '', '', '', '', 'General'),
-('81e0463ece383944b1b99ab2050d80fb', 155, '2017-03-06 13:46:35', 'Ausstattungen und Preise', 'Equipements et prix', NULL, 'Equipaggiamenti e prezzi', '', '', '', '', 'General');
+('81e0463ece383944b1b99ab2050d80fb', 155, '2017-03-06 13:46:35', 'Ausstattungen und Preise', 'Equipements et prix', NULL, 'Equipaggiamenti e prezzi', '', '', '', '', 'General'),
+('4c9008129ac58e735cb78e1de50f2f8d', 161, '2017-03-06 14:54:39', 'lalala', 'louloulou', NULL, 'lilililli', '\"lalala\" scheint ein Eigenname zu sein und kann nicht übersetzt werden', '', '', '', 'ADAM'),
+('8a633229b65e6d9ce83be7ece9a411d2', 162, '2017-03-06 14:58:42', 'Modellübersicht', 'Modèles', 'vereinfacht', 'Panoramica dei modelli', NULL, '', '', 'Header', 'General');
 
 --
 -- Indizes der exportierten Tabellen
@@ -85,7 +87,7 @@ ALTER TABLE `rosetta_data`
 -- AUTO_INCREMENT für Tabelle `rosetta_data`
 --
 ALTER TABLE `rosetta_data`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
