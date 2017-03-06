@@ -20,11 +20,12 @@ $db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 //get search term
 $searchTerm = $_GET['term'];
 
+
 //Pruefung, ob checkboxen ausgewaehlt wurden
 if(!empty($_POST['category'])) {
     //das Array carline wird ueber implode in $car gespeichert
-    //$cat = implode(',  ', $_POST['category']);
-    $cat = 'de, fr, it';
+    $cat = implode(',  ', $_POST['category']);
+    //$cat = 'de, fr, it';
 }
 //falls keine checkbox aktiv, wird in allen Spalten gesucht
 if(empty($cat)) {
