@@ -79,7 +79,7 @@ if(isset($_POST["ak"]))
                         
             echo "<td class=\"verbindlichkeit\" id=\"Verb_ID_$verbindlichkeit_ID\">" . $row["verbindlichkeit"] . "</td>";
             echo "<td class=\"id\">" . $row["id"] . "</td>";
-            echo "<td class=\"datum\">" . $row["datum"] . "</td>";
+            echo "<td class=\"datum\">" . date('d.m.y H:i:s', strtotime($row["datum"])) . "</td>";
             echo "<td class=\"author\">" . $row["author"] . "</td>";
             echo "<td class=\"titel\">" . $row["titel"] . "</td>";
             echo "<td class=\"beschreibung\">" . $row["beschreibung"] . "</td>";
