@@ -9,7 +9,7 @@ include "include/db_connect.php";
 ?>
 
 <h2>Ausgabe aller Datensätze auf Deutsch und Französisch</h2>
-<p>Die französische Übersetzung kann vom Übersetzer eingetragen werden.</p>
+<p>Es werden alle Datensätze angezeigt, die bei der Erstellung mit der entsprechenden Option versehen wurden.</p>
 
 
 <script type="text/javascript">
