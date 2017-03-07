@@ -1,22 +1,14 @@
 <?php
-//offline
+//include db connection
+include "include/db_connect.php";
+?>
 
 
-$dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'rosetta-app';
+<?php
 
-//online
-/*
-$dbHost = 'rdbms.strato.de';
-$dbUsername = 'U2881460';
-$dbPassword = 'Rosetta-App_1';
-$dbName = 'DB2881460';
-*/
 
 //connect with the database
-$db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+$con = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
 
 //get search term
@@ -36,7 +28,7 @@ if(empty($cat)) {
 
 
 //get matched data from skills table
-$query = $db->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%".$searchTerm."%' ORDER BY de ASC");
+$query = $con->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%".$searchTerm."%' ORDER BY de ASC");
 while ($row = $query->fetch_assoc()) {
     $data[] = $row['de'];
     $data[] = $row['fr'];

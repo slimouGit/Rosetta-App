@@ -4,7 +4,7 @@ include "elements/header.php";
 ?>
 
 <h2>Ausgabe aller Datensätze</h2>
-<p>Dieser Bereich wird später nicht sichtbar sein, weil unübersichtlich (zu viele Daten) und man gelangt ja zu dem relevanten Eintrag über die Suchfunktion</p>
+<p class="error">Voller Funktionsumfang zur Zeit in Google Chrome bzw. Safari</p>
 
 <?php
 //include db connection
