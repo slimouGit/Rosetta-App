@@ -23,6 +23,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="003_db_anzeigen.php">alle Daten</a></li>
                         <li><a href="003_db_anzeigen_fr.php">Französisch</a></li>
+                        <li><a href="003_db_anzeigen_fr_relevant.php">zu übersetzen in frz</a></li>
                         <li><a href="003_db_anzeigen_it.php">Italienisch</a></li>
                     </ul>
                 </li>

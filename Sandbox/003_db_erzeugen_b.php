@@ -22,7 +22,19 @@ if(!empty($_POST['carline'])) {
 if(empty($car)) {
     $car = 'General';
 }
-
+/*
+if(!empty($_POST['translate'])) {
+    $translate = $_POST['translate'];
+}else{
+    $translate = "false";
+}
+*/
+if(isset($_POST['translate'])) {
+    $translate = "true";
+}else{
+    $translate = "false";
+}
+//echo $_POST['translate'];
 //Erstellen eines einzigartigen tokens
 //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
 //da hier noch nicht mit der ID gearbeitet werden kann
@@ -34,8 +46,8 @@ if (isset($_POST["gesendet"]))
 {
 
     $sql = "insert rosetta_data"
-        . "(token, de, fr, it, rubrik, info, carline) values "
-        . "('" . $token . "', "  .  "'" . $_POST["dts"] . "', " .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "')";
+        . "(token, de, fr, it, rubrik, info, carline, toTranslate) values "
+        . "('" . $token . "', "  .  "'" . $_POST["dts"] . "', " .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "', " .  "'" . $_POST['translate'] . "')";
 
     mysqli_query($con, $sql);
 

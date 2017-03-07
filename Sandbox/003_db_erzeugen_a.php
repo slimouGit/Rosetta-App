@@ -129,6 +129,19 @@ include "include/db_connect.php";
     </div>
     </div>
 
+    <br>
+
+    <div class="row">
+        <label class="col-sm-2 control-label">an Übersetzer übergeben</label>
+        <div class="col-sm-6">
+            <label class="checkbox-inline">
+                <input name="translate" type="hidden" value="false">
+                <input name="translate" type="checkbox" value="true">
+            </label>
+        </div>
+    </div>
+
+
     <div class="row">
         <div class="form-group">
             <div class="col-sm-2"></div>
@@ -140,6 +153,9 @@ include "include/db_connect.php";
             </div>
         </div>
     </div>
+
+
+
 
 </form>
 
