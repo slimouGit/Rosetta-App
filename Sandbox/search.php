@@ -30,9 +30,9 @@ if(empty($cat)) {
 //get matched data from skills table
 $query = $con->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%".$searchTerm."%' ORDER BY de ASC");
 while ($row = $query->fetch_assoc()) {
-    $data[] = $row['de'];
-    $data[] = $row['fr'];
-    $data[] = $row['it'];
+    $data[] = utf8_encode($row['de']);
+    $data[] = utf8_encode($row['fr']);
+    $data[] = utf8_encode($row['it']);
     //$data[] = $row['en'];
     //$data[] = $row['rubrik'];
     //$data[] = $row['info'];
