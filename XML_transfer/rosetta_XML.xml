@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.5.2
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Erstellungszeit: 08. Mrz 2017 um 11:19
+- Server-Version: 10.1.21-MariaDB
+- PHP-Version: 7.1.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="rosetta-app" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="rosetta_XML">
+                CREATE TABLE `rosetta_XML` (
+                  `testInput` varchar(5) CHARACTER SET utf8 DEFAULT NULL
+                ) ENGINE=InnoDB AUTO_INCREMENT=210 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Datenbank: 'rosetta-app'
+    -->
+    <database name="rosetta-app">
+        <!-- Tabelle rosetta_data -->
+        <item>
+            <column name="testInput ">Hallo</column>
+        </item>
+        <item>
+            <column name="testInput ">Mimi</column>
+        </item>
+        
+    </database>
+</pma_xml_export>
