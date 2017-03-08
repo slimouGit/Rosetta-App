@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<row>
+    <field name="de">Benzin</field>
+    <field name="fr">Essence</field>
+    <field name="it">Benzina</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">Motor</field>
+    <field name="fr">Moteur</field>
+    <field name="it">Motore</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">Getriebe</field>
+    <field name="fr">Boîte</field>
+    <field name="it">Cambio</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">5-Gang manuell</field>
+    <field name="fr">manuelle  5 vitesses </field>
+    <field name="it">manuale 5 marce</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 PS</field>
+    <field name="fr">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 ch </field>
+    <field name="it">1.0 Direct Injection Turbo ecoFLEX  Start/Stop 77 kW/105 CV </field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">5-Gang Easytronic® 3.0</field>
+    <field name="fr">Easytronic® 3.0  5 vitesses </field>
+    <field name="it">Easytronic® 3.0  5 marce</field>
+    <field name="carline">AstraST</field>
+</row>
+
+
+<row>
+    <field name="de">6-Gang manuell</field>
+    <field name="fr">manuelle  6 vitesses </field>
+    <field name="it">manuale 6 marce</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">6-Gang manuell</field>
+    <field name="fr">manuelle  6 vitesses </field>
+    <field name="it">manuale 6 marce</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">6-Stufen- Automatik</field>
+    <field name="fr">automatique  6 rapports </field>
+    <field name="it">automatico 6 rapporti</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">6-Gang manuell</field>
+    <field name="fr">manuelle  6 vitesses </field>
+    <field name="it">manuale 6 marce</field>
+    <field name="carline">AstraST</field>
+</row>
+
+<row>
+    <field name="de">Empfohlene Nettopreise in CHF</field>
+    <field name="fr">Prix nets conseillés en CHF</field>
+    <field name="it">Prezzi netti consigliati in CHF</field>
+    <field name="carline">AstraST</field>
+</row>
