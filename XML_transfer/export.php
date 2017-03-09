@@ -17,7 +17,6 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } else {
-    echo "funzte";
 }
 
 $xmlObject = $xmlDoc->getElementsByTagName('item');
@@ -30,11 +29,8 @@ for ($i=0; $i < $itemCount; $i++){
     $carline  = $xmlObject->item($i)->getElementsByTagName('carline')->item(0)->childNodes->item(0)->nodeValue;
     $sql   = "INSERT INTO `rosetta_data` (de, fr, it, carline) VALUES ('$de', '$fr','$it', '$carline')";
     mysqli_query($conn, $sql);
-    print "Finished Item $de n<br/>";
+    print "Added Item $i: <br/> $de <br/> $fr<br/> $it<br/> $carline<br/> <br/> ";
 }
 
-var_dump($xmlObject);
-echo "<br/>";
-var_dump($itemCount);
 
 ?>
