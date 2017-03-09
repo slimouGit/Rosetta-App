@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: text/html; charset=utf-8');
+
 $xmlDoc = new DOMDocument();
 $xmlDoc->load("AstraST_001_DFI.xml");
 $servername = "localhost";
@@ -9,6 +11,13 @@ $dbname = "rosetta-app";
 
 
 $con = mysqli_connect($servername, $username, $password, $dbname);
+
+mysqli_query($con, "SET NAMES SET 'utf8'");
+mysqli_query($con, "SET character_set_client = 'utf8'");
+mysqli_query($con, "SET character_set_connection = 'utf8'");
+mysqli_select_db($con, $dbname);
+
+
 if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     } else {
