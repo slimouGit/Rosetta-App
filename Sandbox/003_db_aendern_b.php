@@ -37,7 +37,7 @@ echo "before isset";
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Deutsch</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"dts\" value='" . $dsatz["de"] . "'>
+                                <input class=\"form-control\" name=\"dts\" value='" . utf8_encode($dsatz["de"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -50,7 +50,7 @@ echo "before isset";
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Französisch</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"frz\" value='" . $dsatz["fr"] . "'>
+                                <input class=\"form-control\" name=\"frz\" value='" . utf8_encode($dsatz["fr"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -63,7 +63,7 @@ echo "before isset";
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Italienisch</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"itl\" value='" . $dsatz["it"] . "'>
+                                <input class=\"form-control\" name=\"itl\" value='" . utf8_encode($dsatz["it"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -89,7 +89,7 @@ echo "before isset";
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Rubrik</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"rub\" value='" . $dsatz["rubrik"] . "'>
+                                <input class=\"form-control\" name=\"rub\" value='" . utf8_encode($dsatz["rubrik"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -102,7 +102,7 @@ echo "before isset";
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Info</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"inf\" value='" . $dsatz["info"] . "'>
+                                <input class=\"form-control\" name=\"inf\" value='" . utf8_encode($dsatz["info"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
