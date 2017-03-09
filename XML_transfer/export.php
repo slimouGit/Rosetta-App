@@ -26,7 +26,9 @@ $itemCount = $xmlObject->length;
 for ($i=0; $i < $itemCount; $i++){
     $de = $xmlObject->item($i)->getElementsByTagName('de')->item(0)->childNodes->item(0)->nodeValue;
     $fr  = $xmlObject->item($i)->getElementsByTagName('fr')->item(0)->childNodes->item(0)->nodeValue;
-    $sql   = "INSERT INTO `rosetta_data` (de, fr) VALUES ('$de', '$fr')";
+    $it  = $xmlObject->item($i)->getElementsByTagName('it')->item(0)->childNodes->item(0)->nodeValue;
+    $carline  = $xmlObject->item($i)->getElementsByTagName('carline')->item(0)->childNodes->item(0)->nodeValue;
+    $sql   = "INSERT INTO `rosetta_data` (de, fr, it, carline) VALUES ('$de', '$fr','$it', '$carline')";
     mysqli_query($conn, $sql);
     print "Finished Item $de n<br/>";
 }
