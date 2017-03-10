@@ -41,18 +41,13 @@ for ($i=0; $i < $itemCount; $i++){
     $de = $xmlObject->item($i)->getElementsByTagName('de')->item(0)->childNodes->item(0)->nodeValue;
     $fr  = $xmlObject->item($i)->getElementsByTagName('fr')->item(0)->childNodes->item(0)->nodeValue;
     $it  = $xmlObject->item($i)->getElementsByTagName('it')->item(0)->childNodes->item(0)->nodeValue;
+    $rubrik  = $xmlObject->item($i)->getElementsByTagName('rubrik')->item(0)->childNodes->item(0)->nodeValue;
+    $info  = $xmlObject->item($i)->getElementsByTagName('info')->item(0)->childNodes->item(0)->nodeValue;
     $carline  = $xmlObject->item($i)->getElementsByTagName('carline')->item(0)->childNodes->item(0)->nodeValue;
 
-    var_dump($de);
 
-    $de = (string)$de;
-    $fr = (string)$fr;
-    $it = (string)$it;
-    $carline = (string)$carline;
 
-    var_dump($de);
-
-    $sql   = "INSERT INTO `rosetta_data` (token, de, fr, it, carline) VALUES ('$token', '$de', '$fr','$it', '$carline')";
+    $sql   = "INSERT INTO `rosetta_data` (token, de, fr, it, rubrik, info, carline) VALUES ('$token', '$de', '$fr','$it','$rubrik', '$info' , '$carline')";
 
     mysqli_query($con, $sql);
 
