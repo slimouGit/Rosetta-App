@@ -29,841 +29,733 @@
 </item>
 
 <item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.4 Turbo  ECOTEC® Start/Stop 103 kW/140 PS</entry>
-<entry align="left" valign="middle">6-Gang manuell</entry>
-<entry align="left" valign="middle">1.4 Turbo  ECOTEC® Start/Stop 103 kW/140 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">manuale 6 marce</entry>
+<de>1.4 Turbo  ECOTEC® Start/Stop 103 kW/140 PS</de>
+<de>6-Gang manuell</de>
+<it>1.4 Turbo  ECOTEC® Start/Stop 103 kW/140 CV</it>
+<it>manuale 6 marce</it>
 </item>
 
-<item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.4 Turbo  ECOTEC® 103 kW/140 PS</entry>
-<entry align="left" valign="middle">6-Stufen-Automatik</entry>
-<entry align="left" valign="middle">1.4 Turbo ECOTEC® 103 kW/140 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">automatico 6 rapporti</entry>
-</item>
 
+
 <item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.4 Turbo 4x4  ECOTEC® Start/Stop 103 kW/140 PS</entry>
-<entry align="left" valign="middle">6-Gang manuell 4x4 Allradantrieb</entry>
-<entry align="left" valign="middle">1.4 Turbo 4x4 ECOTEC® Start/Stop 103 kW/140 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">manuale 6 marce trazione integrale 4x4</entry>
+<de>1.4 Turbo  ECOTEC® 103 kW/140 PS</de>
+<de>6-Stufen-Automatik</de>
+<it>1.4 Turbo ECOTEC® 103 kW/140 CV</it>
+<it>automatico 6 rapporti</it>
 </item>
+
 
+
 <item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.4 Turbo 4x4  ECOTEC® Start/Stop 112 kW/152 PS </entry>
-<entry align="left" valign="middle">6-Stufen-Automatik 4x4 Allradantrieb</entry>
-<entry align="left" valign="middle">1.4 Turbo 4x4 ECOTEC® Start/Stop 112 kW/152 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">automatico 6 rapporti trazione integrale 4x4</entry>
+<de>1.4 Turbo 4x4  ECOTEC® Start/Stop 112 kW/152 PS </de>
+<de>6-Stufen-Automatik 4x4 Allradantrieb</de>
+<it>1.4 Turbo 4x4 ECOTEC® Start/Stop 112 kW/152 CV</it>
+<it>automatico 6 rapporti trazione integrale 4x4</it>
 </item>
 
 
 <item>
-<entry morerows="2" rowsep="0" align="center" valign="middle">Diesel</entry>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.6 CDTI DPF1 ecoFlex Start/Stop 100 kW/136 PS</entry>
-<entry align="left" valign="middle">6-Gang manuell</entry>
-<entry align="left" valign="middle">1.6 CDTI DPF1 ecoFlex  Start/Stop 100 kW/136 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">manuale 6 marce</entry>
+<de>1.6 CDTI DPF1 ecoFlex Start/Stop 100 kW/136 PS</de>
+<de>6-Gang manuell</de>
+<it>1.6 CDTI DPF1 ecoFlex  Start/Stop 100 kW/136 CV</it>
+<it>manuale 6 marce</it>
 </item>
 
 <item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.6 CDTI DPF1 ECOTEC® 100 kW/136 PS</entry>
-<entry align="left" valign="middle">6-Stufen-Automatik</entry>
-<entry align="left" valign="middle">1.6 CDTI DPF1 ECOTEC® 100 kW/136 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">automatico 6 rapporti</entry>
+<de>1.6 CDTI DPF1 ECOTEC® 100 kW/136 PS</de>
+<de>6-Stufen-Automatik</de>
+<it>1.6 CDTI DPF1 ECOTEC® 100 kW/136 CV</it>
+<it>automatico 6 rapporti</it>
 </item>
 
 <item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.6 CDTI DPF1 4x4 ECOTEC® Start/Stop 100 kW/136 PS</entry>
-<entry align="left" valign="middle">6-Gang manuell 4x4 Allradantrieb</entry>
-<entry align="left" valign="middle">1.6 CDTI DPF1 4x4 ECOTEC® Start/Stop 100 kW/136 CV</entry>
-<entry namest="c9" nameend="c10" align="left" valign="middle">manuale 6 marce trazione integrale 4x4</entry>
+<de>1.6 CDTI DPF1 4x4 ECOTEC® Start/Stop 100 kW/136 PS</de>
+<de>6-Gang manuell 4x4 Allradantrieb</de>
+<it>1.6 CDTI DPF1 4x4 ECOTEC® Start/Stop 100 kW/136 CV</it>
+<it>manuale 6 marce trazione integrale 4x4</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c10" colsep="0" rowsep="0" align="left" valign="middle">Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
+    <de>Empfohlene Nettopreise in CHF</de>
+    <it>Prezzi netti consigliati in CHF</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c10" colsep="0" rowsep="0" align="left" valign="middle">1 Wartungsfreier Dieselpartikelfilter (DPF) serienmässig. / Filtro antiparticolato senza manutenzione (DPF) di serie.</entry>
+    <de>1 Wartungsfreier Dieselpartikelfilter (DPF) serienmässig.</de>
+    <it>1 Filtro antiparticolato senza manutenzione (DPF) di serie.</it>
 </item>
 
 
 <item>
-<entry namest="c1" nameend="c3" colsep="0" align="center" valign="middle">Wesentliche Serienausstattung</entry>
+<de>Wesentliche Serienausstattung</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Fensterzierleiste verchromt</entry>
+<de>Fensterzierleiste verchromt</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">«Keyless Open» – schlüsselloses Öffnen und Starten</entry>
+<de>«Keyless Open» – schlüsselloses Öffnen und Starten</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Solar Protect®-Wärmeschutzverglasung,  im Fond, stark getönt</entry>
+<de>Solar Protect®-Wärmeschutzverglasung,  im Fond, stark getönt</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Elektro-Paket: –  Park-Pilot, Einparkhilfe vorn und hinten –  Aussenspiegel, elektrisch einstell-, anklapp- und beheizbar –  Steckdose, 12 Volt, an der Rückseite der Mittelkonsole</entry>
+<de>Elektro-Paket: –  Park-Pilot, Einparkhilfe vorn und hinten –  Aussenspiegel, elektrisch einstell-, anklapp- und beheizbar –  Steckdose, 12 Volt, an der Rückseite der Mittelkonsole</de>
 </item>
 
 <item>
-<entry morerows="1" colsep="0" align="left" valign="middle">Komfort-Paket: –  Zwei-Zonen-Klimaautomatik –  Armlehne, Fahrer –  Ablagefach, unter dem Beifahrersitz</entry>
+<de>Komfort-Paket: –  Zwei-Zonen-Klimaautomatik –  Armlehne, Fahrer –  Ablagefach, unter dem Beifahrersitz</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Sicht-Paket:  –  Regensensor –  Innenspiegel, automatisch abblendend mit  –  Konsolenbeleuchtung –  Make-up-Spiegel, beleuchtet –  Automatisches Abblendlicht mit Tunnelerkennung –  Automatische Leuchtweitenregulierung</entry>
+<de>Sicht-Paket:  –  Regensensor –  Innenspiegel, automatisch abblendend mit  –  Konsolenbeleuchtung –  Make-up-Spiegel, beleuchtet –  Automatisches Abblendlicht mit Tunnelerkennung –  Automatische Leuchtweitenregulierung</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">3. Kopfstütze hinten</entry>
+<de>3. Kopfstütze hinten</de>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Mittelarmlehne hinten</entry>
+<de>Mittelarmlehne hinten</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Nebelscheinwerfer </entry>
-<entry colsep="0" align="left" valign="middle">Nebelscheinwerfer </entry>
+<de>Nebelscheinwerfer </de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Klimaanlage </entry>
-<entry colsep="0" align="left" valign="middle">Zwei-Zonen-Klimaautomatik</entry>
+<de>Klimaanlage </de>
+<de>Zwei-Zonen-Klimaautomatik</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Radio R300: –  6 Lautsprecher –  Graphic Info Display –  Fernbedienung am Lenkrad –  USB-Anschluss –  Inkl. Bluetooth®-Schnittstelle</entry>
-<entry align="left" valign="middle">Radio R300: –  6 Lautsprecher –  Graphic Info Display –  Fernbedienung am Lenkrad –  USB-Anschluss –  Inkl. Bluetooth®-Schnittstelle</entry>
-<entry colsep="0" align="left" valign="middle">Kommunikationspaket R 4.0 IntelliLink: –  Radio –  6 Lautsprecher –  Farbdisplay in der Mittelkonsole –  Fernbedienung am Lenkrad –  Bluetooth®-Mobiltelefon-Anschluss –  Audiostreaming  –  USB-Anschluss –  Bordcomputer erweitert –  DAB+ Empfänger –  Kompatibel mit Apple CarPlayTM  und Android AutoTM</entry>
+<de>Radio R300: –  6 Lautsprecher –  Graphic Info Display –  Fernbedienung am Lenkrad –  USB-Anschluss –  Inkl. Bluetooth®-Schnittstelle</de>
+<de>Kommunikationspaket R 4.0 IntelliLink: –  Radio –  6 Lautsprecher –  Farbdisplay in der Mittelkonsole –  Fernbedienung am Lenkrad –  Bluetooth®-Mobiltelefon-Anschluss –  Audiostreaming  –  USB-Anschluss –  Bordcomputer erweitert –  DAB+ Empfänger –  Kompatibel mit Apple CarPlayTM  und Android AutoTM</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Fernlicht-Assistent</entry>
-<entry align="left" valign="middle">Fernlicht-Assistent</entry>
-<entry colsep="0" align="left" valign="middle">Fernlicht-Assistent</entry>
+<de>Fernlicht-Assistent</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Fensterheber, elektrisch, vorn</entry>
-<entry align="left" valign="middle">Fensterheber, elektrisch, vorn und hinten</entry>
-<entry colsep="0" align="left" valign="middle">Fensterheber, elektrisch, vorn und hinten</entry>
+<de>Fensterheber, elektrisch, vorn</de>
+<de>Fensterheber, elektrisch, vorn und hinten</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">3-Speichen-Lenkrad</entry>
-<entry align="left" valign="middle">Lederlenkrad, inkl. Fernbedienung</entry>
-<entry colsep="0" align="left" valign="middle">Lederlenkrad, inkl. Fernbedienung</entry>
+<de>3-Speichen-Lenkrad</de>
+<de>Lederlenkrad, inkl. Fernbedienung</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Türaussengriffe in Wagenfarbe</entry>
-<entry align="left" valign="middle">Türaussengriffe in Wagenfarbe</entry>
-<entry colsep="0" align="left" valign="middle">Türaussengriffe in Wagenfarbe</entry>
+<de>Türaussengriffe in Wagenfarbe</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Stoffpolster</entry>
-<entry align="left" valign="middle">Stoffpolster</entry>
-<entry colsep="0" align="left" valign="middle">Polster-Kombination Stoff/Ledernachbildung Morrocana</entry>
+<de>Stoffpolster</de>
+<de>Polster-Kombination Stoff/Ledernachbildung Morrocana</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">4 Stahlfelgen 6½ J x 16  mit Reifen 205/70 R16 </entry>
-<entry align="left" valign="middle">4 Leichtmetallfelgen 7 J x 17  im 5-Speichen-Design  mit Reifen 215/60 R17 (Sterling Silber)</entry>
-<entry colsep="0" align="left" valign="middle">4 Leichtmetallfelgen 7 J x 17  im 5-Speichen-Design  mit Reifen 215/60 R17 (Sterling Silber)</entry>
+<de>4 Stahlfelgen 6½ J x 16  mit Reifen 205/70 R16 </de>
+<de>4 Leichtmetallfelgen 7 J x 17  im 5-Speichen-Design  mit Reifen 215/60 R17 (Sterling Silber)</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Airbagsystem: –  Frontairbags, Fahrer und Beifahrer –  Brust-Becken-Seitenairbags, Fahrer und Beifahrer –  Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</entry>
-<entry align="left" valign="middle">Airbagsystem: –  Frontairbags, Fahrer und Beifahrer –  Brust-Becken-Seitenairbags, Fahrer und Beifahrer –  Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</entry>
-<entry colsep="0" align="left" valign="middle">Airbagsystem: –  Frontairbags, Fahrer und Beifahrer –  Brust-Becken-Seitenairbags, Fahrer und Beifahrer –  Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</entry>
+<de>Airbagsystem: –  Frontairbags, Fahrer und Beifahrer –  Brust-Becken-Seitenairbags, Fahrer und Beifahrer –  Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</entry>
-<entry align="left" valign="middle">Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</entry>
-<entry colsep="0" align="left" valign="middle">Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</entry>
+<de>Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Berg-Abfahr- (nur 4x4-Varianten) und  Berg-Anfahr-Assistent</entry>
-<entry align="left" valign="middle">Berg-Abfahr- (nur 4x4-Varianten) und  Berg-Anfahr-Assistent</entry>
-<entry colsep="0" align="left" valign="middle">Berg-Abfahr- (nur 4x4-Varianten) und  Berg-Anfahr-Assistent</entry>
+<de>Berg-Abfahr- (nur 4x4-Varianten) und  Berg-Anfahr-Assistent</de>
 </item>
 
 <item>
-<entry rowsep="0" align="left" valign="middle">Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</entry>
-<entry rowsep="0" align="left" valign="middle">Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</entry>
+<de>Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</de>
 </item>
 
 <item>
-<entry namest="c1" nameend="c3" colsep="0" rowsep="0" align="left" valign="middle">1 OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfallservice, Fahrzeug-Diagnose, automatische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</entry>
+<de>1 OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfallservice, Fahrzeug-Diagnose, automatische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
 </item>
 
 <item>
-<entry namest="c1" nameend="c3" colsep="0" align="center" valign="middle">Wesentliche Serienausstattung</entry>
+<de>Wesentliche Serienausstattung</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Geschwindigkeitsregler</entry>
-<entry align="left" valign="middle">Geschwindigkeitsregler</entry>
-<entry colsep="0" align="left" valign="middle">Geschwindigkeitsregler</entry>
+<de>Geschwindigkeitsregler</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Seitenaufprallschutz</entry>
-<entry align="left" valign="middle">Seitenaufprallschutz</entry>
-<entry colsep="0" align="left" valign="middle">Seitenaufprallschutz</entry>
+<de>Seitenaufprallschutz</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">LED-Tagfahrlicht</entry>
-<entry align="left" valign="middle">LED-Tagfahrlicht</entry>
-<entry colsep="0" align="left" valign="middle">LED-Tagfahrlicht</entry>
+<de>LED-Tagfahrlicht</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</entry>
-<entry align="left" valign="middle">Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</entry>
-<entry colsep="0" align="left" valign="middle">Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</entry>
+<de>Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, hinten aussen</entry>
-<entry align="left" valign="middle">Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, hinten aussen</entry>
-<entry colsep="0" align="left" valign="middle">Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, hinten aussen</entry>
+<de>Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, hinten aussen</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Aussenspiegel: –  Elektrisch einstell- und beheizbar –  Aussenspiegelgehäuse in Wagenfarbe</entry>
-<entry align="left" valign="middle">Aussenspiegel: –  Elektrisch einstell- und beheizbar –  Aussenspiegelgehäuse in Wagenfarbe</entry>
-<entry colsep="0" align="left" valign="middle">Aussenspiegel: –  Elektrisch einstell- und beheizbar –  Aussenspiegelgehäuse in Wagenfarbe</entry>
+<de>Aussenspiegel: –  Elektrisch einstell- und beheizbar –  Aussenspiegelgehäuse in Wagenfarbe</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Bordcomputer</entry>
-<entry align="left" valign="middle">Bordcomputer</entry>
-<entry colsep="0" align="left" valign="middle">Bordcomputer</entry>
+<de>Bordcomputer</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</entry>
-<entry align="left" valign="middle">Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</entry>
-<entry colsep="0" align="left" valign="middle">Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</entry>
+<de>Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Drehzahlmesser</entry>
-<entry align="left" valign="middle">Drehzahlmesser</entry>
-<entry colsep="0" align="left" valign="middle">Drehzahlmesser</entry>
+<de>Drehzahlmesser</de>
 </item>
 
 <item>
-<entry morerows="1" align="left" valign="middle">Hochschaltempfehlung im Drehzahlmesser (nur in Verbindung mit manuellem Schaltgetriebe)</entry>
-<entry morerows="1" align="left" valign="middle">Hochschaltempfehlung im Drehzahlmesser (nur in Verbindung mit manuellem Schaltgetriebe)</entry>
-<entry morerows="1" colsep="0" align="left" valign="middle">Hochschaltempfehlung im Drehzahlmesser (nur in Verbindung mit manuellem Schaltgetriebe)</entry>
+<de>Hochschaltempfehlung im Drehzahlmesser (nur in Verbindung mit manuellem Schaltgetriebe)</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Lenksäule, höhen- und längseinstellbar</entry>
-<entry align="left" valign="middle">Lenksäule, höhen- und längseinstellbar</entry>
-<entry colsep="0" align="left" valign="middle">Lenksäule, höhen- und längseinstellbar</entry>
+<de>Lenksäule, höhen- und längseinstellbar</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Reifen-Reparatur-Set, mit Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</entry>
-<entry align="left" valign="middle">Reifen-Reparatur-Set, mit Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</entry>
-<entry colsep="0" align="left" valign="middle">Reifen-Reparatur-Set, mit Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</entry>
+<de>Reifen-Reparatur-Set, mit Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Servolenkung, geschwindigkeitsabhängig</entry>
-<entry align="left" valign="middle">Servolenkung, geschwindigkeitsabhängig</entry>
-<entry colsep="0" align="left" valign="middle">Servolenkung, geschwindigkeitsabhängig</entry>
+<de>Servolenkung, geschwindigkeitsabhängig</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Sitze: –  Rücksitzlehne im Verhältnis 60:40 vorklappbar –  Sitzhöheneinstellung, Fahrer</entry>
-<entry align="left" valign="middle">Sitze: –  Rücksitzlehne im Verhältnis 60:40 vorklappbar –  Sitzhöheneinstellung, Fahrer</entry>
-<entry colsep="0" align="left" valign="middle">Sitze: –  Rücksitzlehne im Verhältnis 60:40 vorklappbar –  Sitzhöheneinstellung, Fahrer</entry>
+<de>Sitze: –  Rücksitzlehne im Verhältnis 60:40 vorklappbar –  Sitzhöheneinstellung, Fahrer</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Zentralverriegelung, inkl. Heckklappen- und Tankdeckelentriegelung</entry>
-<entry align="left" valign="middle">Zentralverriegelung, inkl. Heckklappen- und Tankdeckelentriegelung</entry>
-<entry colsep="0" align="left" valign="middle">Zentralverriegelung, inkl. Heckklappen- und Tankdeckelentriegelung</entry>
+<de>Zentralverriegelung, inkl. Heckklappen- und Tankdeckelentriegelung</de>
 </item>
 
 <item>
-<entry align="left" valign="middle">Zündschlüssel mit Einsatz in Schwarz, Weiss, Grau oder Rot (von der Aussenfarbe abhängig)1</entry>
-<entry align="left" valign="middle">Zündschlüssel mit Einsatz in Schwarz, Weiss, Grau oder Rot (von der Aussenfarbe abhängig)1</entry>
-<entry colsep="0" align="left" valign="middle">Zündschlüssel mit Einsatz in Schwarz, Weiss, Grau oder Rot (von der Aussenfarbe abhängig)1</entry>
+<de>Zündschlüssel mit Einsatz in Schwarz, Weiss, Grau oder Rot (von der Aussenfarbe abhängig)1</de>
 </item>
 
 <item>
-<entry rowsep="0" align="left" valign="middle">Reifendruck-Kontrollsystem</entry>
-<entry rowsep="0" align="left" valign="middle">Reifendruck-Kontrollsystem</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Reifendruck-Kontrollsystem</entry>
+<de>Reifendruck-Kontrollsystem</de>
 </item>
+
 
+
 <item>
-<entry namest="c1" nameend="c3" colsep="0" rowsep="0" align="left" valign="middle">1 Für nähere Informationen wenden Sie sich bitte an Ihren Opel Partner.</entry>
+<de>1 Für nähere Informationen wenden Sie sich bitte an Ihren Opel Partner.</de>
 </item>
+
 
 
+
 <item>
-<entry namest="c1" nameend="c3" colsep="0" align="center" valign="middle">Equipaggiamento di serie essenziale</entry>
+<it>Equipaggiamento di serie essenziale</it>
 </item>
+
 <item>
-<entry colsep="0" align="left" valign="middle">Modanature finestrini cromate</entry>
+<it>Modanature finestrini cromate</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">«Keyless Open» – apertura e avvio senza chiave</entry>
+<it>«Keyless Open» – apertura e avvio senza chiave</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Vetri atermici Solar Protect®, posteriori oscurati</entry>
+<it>Vetri atermici Solar Protect®, posteriori oscurati</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Pacchetto elettro: –  Park-Pilot, assistenza al parcheggio anteriore e posteriore  –  retrovisori esterni, regolabili, ripiegabili  e riscaldabili elettricamente  –  presa 12 Volt, parte posteriore console centrale</entry>
+<it>Pacchetto elettro: –  Park-Pilot, assistenza al parcheggio anteriore e posteriore  –  retrovisori esterni, regolabili, ripiegabili  e riscaldabili elettricamente  –  presa 12 Volt, parte posteriore console centrale</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Pacchetto comfort: –  climatizzatore automatico bizona  –  bracciolo per conducente  –  vano portaoggetti sotto il sedile passeggero anteriore</entry>
+<it>Pacchetto comfort: –  climatizzatore automatico bizona  –  bracciolo per conducente  –  vano portaoggetti sotto il sedile passeggero anteriore</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Pacchetto visibilità:  –  sensore pioggia –  retrovisore interno, anabbagliante automatico con illuminazione console –  specchietto di cortesia illuminato –  fari anabbaglianti automatici con riconoscimento galleria –  regolazione automatica portata fari</entry>
+<it>Pacchetto visibilità:  –  sensore pioggia –  retrovisore interno, anabbagliante automatico con illuminazione console –  specchietto di cortesia illuminato –  fari anabbaglianti automatici con riconoscimento galleria –  regolazione automatica portata fari</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">3° poggiatesta centrale posteriore</entry>
+<it>3° poggiatesta centrale posteriore</it>
 </item>
 
 <item>
-<entry colsep="0" align="left" valign="middle">Bracciolo centrale posteriore</entry>
+<it>Bracciolo centrale posteriore</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Fari fendinebbia </entry>
-<entry colsep="0" align="left" valign="middle">Fari fendinebbia </entry>
+<it>Fari fendinebbia </it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Climatizzatore </entry>
-<entry colsep="0" align="left" valign="middle">Climatizzatore automatico bizona</entry>
+<it>Climatizzatore </it>
+<it>Climatizzatore automatico bizona</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Radio R300 –  6 altoparlanti –  Graphic Info Display –  comandi al volante –  presa USB –  incl. interfaccia Bluetooth®</entry>
-<entry align="left" valign="middle">Radio R300 –  6 altoparlanti –  Graphic Info Display –  comandi al volante –  presa USB –  incl. interfaccia Bluetooth®</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto comunicazione IntelliLink 600: –  radio –  6 altoparlanti –  schermo a colori nella console centrale –  comandi al volante –  connessione Bluetooth® per cellulare –  streaming audio –  presa USB –  computer di bordo,  funzionalità estesa –  ricezione DAB+ –  compatibile con Apple CarPlayTM  e Android AutoTM</entry>
+<it>Radio R300 –  6 altoparlanti –  Graphic Info Display –  comandi al volante –  presa USB –  incl. interfaccia Bluetooth®</it>
+<it>Pacchetto comunicazione IntelliLink 600: –  radio –  6 altoparlanti –  schermo a colori nella console centrale –  comandi al volante –  connessione Bluetooth® per cellulare –  streaming audio –  presa USB –  computer di bordo,  funzionalità estesa –  ricezione DAB+ –  compatibile con Apple CarPlayTM  e Android AutoTM</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Fari abbaglianti automatici</entry>
-<entry align="left" valign="middle">Fari abbaglianti automatici</entry>
-<entry colsep="0" align="left" valign="middle">Fari abbaglianti automatici</entry>
+<it>Fari abbaglianti automatici</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Alzacristalli, elettrici, anteriori</entry>
-<entry align="left" valign="middle">Alzacristalli, elettrici, anteriori e posteriori</entry>
-<entry colsep="0" align="left" valign="middle">Alzacristalli, elettrici, anteriori e posteriori</entry>
+<it>Alzacristalli, elettrici, anteriori</it>
+<it>Alzacristalli, elettrici, anteriori e posteriori</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Volante a 3 razze</entry>
-<entry align="left" valign="middle">Volante in pelle, con comandi al volante</entry>
-<entry colsep="0" align="left" valign="middle">Volante in pelle, con comandi al volante</entry>
+<it>Volante a 3 razze</it>
+<it>Volante in pelle, con comandi al volante</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Maniglie esterne delle porte in tinta carrozzeria</entry>
-<entry align="left" valign="middle">Maniglie esterne delle porte in tinta carrozzeria</entry>
-<entry colsep="0" align="left" valign="middle">Maniglie esterne delle porte in tinta carrozzeria</entry>
+<it>Maniglie esterne delle porte in tinta carrozzeria</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Rivestimento in tessuto</entry>
-<entry align="left" valign="middle">Rivestimento in tessuto</entry>
-<entry colsep="0" align="left" valign="middle">Rivestimento in tessuto/similpelle Morrocana</entry>
+<it>Rivestimento in tessuto</it>
+<it>Rivestimento in tessuto/similpelle Morrocana</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">4 cerchi in acciaio 6½ J x 16  con pneumatici 205/70 R16</entry>
-<entry align="left" valign="middle">4 cerchi in lega leggera 7 J x 17  in design a 5 razze con pneumatici  215/60 R17 (argento Sterling)</entry>
-<entry colsep="0" align="left" valign="middle">4 cerchi in lega leggera 7 J x 17  in design a 5 razze con pneumatici  215/60 R17 (argento Sterling)</entry>
+<it>4 cerchi in acciaio 6½ J x 16  con pneumatici 205/70 R16</it>
+<it>4 cerchi in lega leggera 7 J x 17  in design a 5 razze con pneumatici  215/60 R17 (argento Sterling)</it>
 </item>
 
 <item>
-<entry morerows="3" align="left" valign="middle">Sistema di airbag: –  airbag frontali, conducente e passeggero –  airbag laterali torace-bacino, conducente e passeggero –  airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero anteriore disattivabile manualmente)</entry>
-<entry morerows="3" align="left" valign="middle">Sistema di airbag: –  airbag frontali, conducente e passeggero –  airbag laterali torace-bacino, conducente e passeggero –  airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero anteriore disattivabile manualmente)</entry>
-<entry morerows="3" colsep="0" align="left" valign="middle">Sistema di airbag: –  airbag frontali, conducente e passeggero –  airbag laterali torace-bacino, conducente e passeggero –  airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero anteriore disattivabile manualmente)</entry>
+<it>Sistema di airbag: –  airbag frontali, conducente e passeggero –  airbag laterali torace-bacino, conducente e passeggero –  airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero anteriore disattivabile manualmente)</it>
 </item>
 
 
 <item>
-<entry align="left" valign="middle">Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</entry>
-<entry align="left" valign="middle">Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</entry>
-<entry colsep="0" align="left" valign="middle">Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</entry>
+<it>Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Assistenza in discesa (solo varianti 4x4) e assistenza alla partenza in salita</entry>
-<entry align="left" valign="middle">Assistenza in discesa (solo varianti 4x4) e assistenza alla partenza in salita</entry>
-<entry colsep="0" align="left" valign="middle">Assistenza in discesa (solo varianti 4x4) e assistenza alla partenza in salita</entry>
+<it>Assistenza in discesa (solo varianti 4x4) e assistenza alla partenza in salita</it>
 </item>
 
 <item>
-<entry rowsep="0" align="left" valign="middle">Controllo elettronico della stabilità Plus (ESP®Plus)</entry>
-<entry rowsep="0" align="left" valign="middle">Controllo elettronico della stabilità Plus (ESP®Plus)</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Controllo elettronico della stabilità Plus (ESP®Plus)</entry>
+<it>Controllo elettronico della stabilità Plus (ESP®Plus)</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c3" colsep="0" rowsep="0" align="left" valign="middle">1 OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d’incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all’anno a un servizio di prim’ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</entry>
+<it>1 OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d’incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all’anno a un servizio di prim’ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c3" colsep="0" align="center" valign="middle">Equipaggiamento di serie essenziale</entry>
+<it>Equipaggiamento di serie essenziale</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Regolatore di velocità</entry>
-<entry align="left" valign="middle">Regolatore di velocità</entry>
-<entry colsep="0" align="left" valign="middle">Regolatore di velocità</entry>
+<it>Regolatore di velocità</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Protezione anticollisione laterale</entry>
-<entry align="left" valign="middle">Protezione anticollisione laterale</entry>
-<entry colsep="0" align="left" valign="middle">Protezione anticollisione laterale</entry>
+<it>Protezione anticollisione laterale</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Luci di marcia diurna a LED</entry>
-<entry align="left" valign="middle">Luci di marcia diurna a LED</entry>
-<entry colsep="0" align="left" valign="middle">Luci di marcia diurna a LED</entry>
+<it>Luci di marcia diurna a LED</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Controllo della trazione con intervento di motore  e freni (TCPlus)</entry>
-<entry align="left" valign="middle">Controllo della trazione con intervento di motore  e freni (TCPlus)</entry>
-<entry align="left" valign="middle">Controllo della trazione con intervento di motore  e freni (TCPlus)</entry>
+<it>Controllo della trazione con intervento di motore  e freni (TCPlus)</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX, sedili laterali posteriori</entry>
-<entry align="left" valign="middle">Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX, sedili laterali posteriori</entry>
-<entry align="left" valign="middle">Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX, sedili laterali posteriori</entry>
+<it>Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX, sedili laterali posteriori</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Retrovisori esterni: –  regolabili e riscaldabili elettricamente  –  alloggiamenti retrovisori in tinta carrozzeria</entry>
-<entry align="left" valign="middle">Retrovisori esterni: –  regolabili e riscaldabili elettricamente  –  alloggiamenti retrovisori in tinta carrozzeria</entry>
-<entry align="left" valign="middle">Retrovisori esterni: –  regolabili e riscaldabili elettricamente  –  alloggiamenti retrovisori in tinta carrozzeria</entry>
+<it>Retrovisori esterni: –  regolabili e riscaldabili elettricamente  –  alloggiamenti retrovisori in tinta carrozzeria</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Computer di bordo</entry>
-<entry align="left" valign="middle">Computer di bordo</entry>
-<entry align="left" valign="middle">Computer di bordo</entry>
+<it>Computer di bordo</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Filtro antiparticolato (DPF), privo di manutenzione  (per tutte le motorizzazioni diesel)</entry>
-<entry align="left" valign="middle">Filtro antiparticolato (DPF), privo di manutenzione  (per tutte le motorizzazioni diesel)</entry>
-<entry align="left" valign="middle">Filtro antiparticolato (DPF), privo di manutenzione  (per tutte le motorizzazioni diesel)</entry>
+<it>Filtro antiparticolato (DPF), privo di manutenzione  (per tutte le motorizzazioni diesel)</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Contagiri</entry>
-<entry align="left" valign="middle">Contagiri</entry>
-<entry align="left" valign="middle">Contagiri</entry>
+<it>Contagiri</it>
 </item>
 
 <item>
-<entry morerows="1" align="left" valign="middle">Spia cambio marcia nel contagiri (solo con cambio manuale)</entry>
-<entry morerows="1" align="left" valign="middle">Spia cambio marcia nel contagiri (solo con cambio manuale)</entry>
-<entry morerows="1" align="left" valign="middle">Spia cambio marcia nel contagiri (solo con cambio manuale)</entry>
+<it>Spia cambio marcia nel contagiri (solo con cambio manuale)</it>
 </item>
 
 
 <item>
-<entry align="left" valign="middle">Piantone dello sterzo, regolabile in altezza e profondità</entry>
-<entry align="left" valign="middle">Piantone dello sterzo, regolabile in altezza e profondità</entry>
-<entry align="left" valign="middle">Piantone dello sterzo, regolabile in altezza e profondità</entry>
+<it>Piantone dello sterzo, regolabile in altezza e profondità</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Set di riparazione pneumatici, con sigillante  e compressore 12 volt (senza cric)</entry>
-<entry align="left" valign="middle">Set di riparazione pneumatici, con sigillante  e compressore 12 volt (senza cric)</entry>
-<entry align="left" valign="middle">Set di riparazione pneumatici, con sigillante  e compressore 12 volt (senza cric)</entry>
+<it>Set di riparazione pneumatici, con sigillante  e compressore 12 volt (senza cric)</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Servosterzo, in funzione della velocità</entry>
-<entry align="left" valign="middle">Servosterzo, in funzione della velocità</entry>
-<entry align="left" valign="middle">Servosterzo, in funzione della velocità</entry>
+<it>Servosterzo, in funzione della velocità</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Sedili: –  schienali sedili posteriori ribaltabili in avanti 60:40  –  sedile conducente regolabile in altezza</entry>
-<entry align="left" valign="middle">Sedili: –  schienali sedili posteriori ribaltabili in avanti 60:40  –  sedile conducente regolabile in altezza</entry>
-<entry align="left" valign="middle">Sedili: –  schienali sedili posteriori ribaltabili in avanti 60:40  –  sedile conducente regolabile in altezza</entry>
+<it>Sedili: –  schienali sedili posteriori ribaltabili in avanti 60:40  –  sedile conducente regolabile in altezza</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Chiusura centralizzata, incl. sbloccaggio portellone  e portello serbatoio</entry>
-<entry align="left" valign="middle">Chiusura centralizzata, incl. sbloccaggio portellone  e portello serbatoio</entry>
-<entry align="left" valign="middle">Chiusura centralizzata, incl. sbloccaggio portellone  e portello serbatoio</entry>
+<it>Chiusura centralizzata, incl. sbloccaggio portellone  e portello serbatoio</it>
 </item>
 
 <item>
-<entry align="left" valign="middle">Chiave di accensione con inserto nero, bianco, grigio o rosso (a seconda del colore esterno)1</entry>
-<entry align="left" valign="middle">Chiave di accensione con inserto nero, bianco, grigio o rosso (a seconda del colore esterno)1</entry>
-<entry align="left" valign="middle">Chiave di accensione con inserto nero, bianco, grigio o rosso (a seconda del colore esterno)1</entry>
+<it>Chiave di accensione con inserto nero, bianco, grigio o rosso (a seconda del colore esterno)1</it>
 </item>
 
 <item>
-<entry rowsep="0" align="left" valign="middle">Sistema di controllo pressione pneumatici</entry>
-<entry rowsep="0" align="left" valign="middle">Sistema di controllo pressione pneumatici</entry>
-<entry rowsep="0" align="left" valign="middle">Sistema di controllo pressione pneumatici</entry>
+<it>Sistema di controllo pressione pneumatici</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c3" colsep="0" rowsep="0" align="left" valign="top">1 Rivolgetevi al vostro partner Opel per ulteriori informazioni.</entry>
+<it>1 Rivolgetevi al vostro partner Opel per ulteriori informazioni.</it>
 </item>
+
+
 
+<item>
+<de>Pakete</de>
+<it>Pacchetti</it>
+</item>
 
 
 <item>
-entry namest="c1" nameend="c3" align="center" valign="middle">Pakete</item>
-<entry namest="c4" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Pacchetti</entry>
-</row>
+<de>Enjoy Komfort-Paket  im Wert von CHF 2’050.00  Sicht-Paket, Komfort-Paket, Winter-Paket,  Elektro-Paket</de>
+<info>LP42</info>
+<it>Pacchetto comfort Enjoy  del valore di CHF 2’050.00 Pacchetto visibilità, pacchetto comfort, pacchetto inverno,  pacchetto elettro</it>
+</item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" rowsep="0" align="left" valign="middle">Enjoy Komfort-Paket  im Wert von CHF 2’050.00  Sicht-Paket, Komfort-Paket, Winter-Paket,  Elektro-Paket</entry>
-<entry morerows="1" align="center" valign="middle">LP42</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Pacchetto comfort Enjoy  del valore di CHF 2’050.00 Pacchetto visibilità, pacchetto comfort, pacchetto inverno,  pacchetto elettro</entry>
-<entry morerows="1" colsep="0" align="center" valign="middle">LP42</entry>
+<de>in Verbindung mit Kommunikations- und Parkpaket  IntelliLink 950</de>
+<it>abbinato a pacchetto comunicazione e parcheggio IntelliLink 950</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">in Verbindung mit Kommunikations- und Parkpaket  IntelliLink 950</entry>
-<entry colsep="0" align="left" valign="middle">abbinato a pacchetto comunicazione e parcheggio IntelliLink 950</entry>
+<de>Excellence Premium-Paket  im Wert von CHF 2’500.00 Ergonomiesitz mit Gütesiegel AGR Fahrer- und Beifahrerseite,  Winter-Paket, adaptives Sicherheitslichtsystem AFL mit LED-Technik</de>
+<info>LP44</info>
+<it>Pacchetto Excellence Premium  del valore di CHF 2’500.00 Sedile conducente e passeggero ergonomico con sigillo di qualità AGR, pacchetto inverno, sistema di fari adattivi AFL con tecnica a LED</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" rowsep="0" align="left" valign="middle">Excellence Premium-Paket  im Wert von CHF 2’500.00 Ergonomiesitz mit Gütesiegel AGR Fahrer- und Beifahrerseite,  Winter-Paket, adaptives Sicherheitslichtsystem AFL mit LED-Technik</entry>
-<entry rowsep="0" align="center" valign="middle">LP44</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Pacchetto Excellence Premium  del valore di CHF 2’500.00 Sedile conducente e passeggero ergonomico con sigillo di qualità AGR, pacchetto inverno, sistema di fari adattivi AFL con tecnica a LED</entry>
-<entry colsep="0" rowsep="0" align="center" valign="middle">LP44</entry>
+<de>Mit Lederausstattung </de>
+<it>con rivestimento in pelle</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Mit Lederausstattung </entry>
-<entry colsep="0" align="left" valign="middle">con rivestimento in pelle</entry>
+<de>Elektro-Paket Park-Pilot, Einparkhilfe vorn und hinten, Aussenspiegel  elektrisch einstell-, anklapp- und beheizbar, Steckdose,  12 Volt, an der Rückseite der Mittelkonsole</de>
+<info>oGD</info>
+<it>Pacchetto elettro Park-Pilot, assistenza al parcheggio anteriore e posteriore, retrovisori esterni regolabili, ripiegabili e riscaldabili elettricamente, presa 12 volt nella parte posteriore della console centrale</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Elektro-Paket Park-Pilot, Einparkhilfe vorn und hinten, Aussenspiegel  elektrisch einstell-, anklapp- und beheizbar, Steckdose,  12 Volt, an der Rückseite der Mittelkonsole</entry>
-<entry align="center" valign="middle">oGD</entry>
-<entry align="center" valign="middle">Enjoy  Komfort-Paket Pacchetto comfort Enjoy Rückfahrkamera  Telecamera  di retromarcia</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto elettro Park-Pilot, assistenza al parcheggio anteriore e posteriore, retrovisori esterni regolabili, ripiegabili e riscaldabili elettricamente, presa 12 volt nella parte posteriore della console centrale</entry>
-<entry colsep="0" align="center" valign="middle">oGD</entry>
+<de>Rückfahrkamera  Caméra de recul </de>
+<it> Telecamera  di retromarcia</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Komfort-Paket   Ablagefach unter Beifahrersitz  (nicht mit Lederausstattung), Armlehne Fahrersitz,  Zwei-Zonen-Klimaautomatik</entry>
-<entry align="center" valign="middle">oBY</entry>
-<entry align="center" valign="middle">Enjoy  Komfort-Paket Pacchetto comfort Enjoy</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto comfort  Cassetto portaoggetti sotto il sedile passeggero anteriore (non con equipaggiamento in pelle), bracciolo per sedile conducente, climatizzatore automatico bizona</entry>
-<entry colsep="0" align="center" valign="middle">oBY</entry>
+<de>Komfort-Paket   Ablagefach unter Beifahrersitz  (nicht mit Lederausstattung), Armlehne Fahrersitz,  Zwei-Zonen-Klimaautomatik</de>
+<info>oBY</info>
+<it>Pacchetto comfort  Cassetto portaoggetti sotto il sedile passeggero anteriore (non con equipaggiamento in pelle), bracciolo per sedile conducente, climatizzatore automatico bizona</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Winter-Paket Sitzheizung vorn, Lenkradheizung</entry>
-<entry align="center" valign="middle">oCK</entry>
-<entry align="center" valign="middle">Lederausstattung  Equipaggiamento  in pelle</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto inverno Sedili anteriori e volante riscaldabili</entry>
-<entry colsep="0" align="center" valign="middle">oCK</entry>
+<de>Winter-Paket Sitzheizung vorn, Lenkradheizung</de>
+<info>oCK</info>
+<it>Pacchetto inverno Sedili anteriori e volante riscaldabili</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Sicht-Paket Regensensor für Frontscheibenwischer, automatisch abblendbarer Innenspiegel, indirekte Beleuchtung der Mittelkonsole,  Make-up-Spiegel beleuchtet, automatisches Abblendlicht mit Tunnelerkennung, automatische Leuchtweitenregulierung</entry>
-<entry align="center" valign="middle">oCP</entry>
-<entry align="center" valign="middle">Enjoy Komfort-  Paket Pacchetto comfort Enjoy Adaptives  Sicherheitslicht­system AFL mit  LED-Technik  Sistema di fari adattivi AFL con tecnica a LED</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto visibilità  Sensore pioggia per tergicristalli anteriori, retrovisore interno anabbagliante, illuminazione indiretta console centrale, specchietto di cortesia illuminato, fari anabbaglianti automatici  con riconoscimento galleria, regolazione automatica portata fari</entry>
-<entry colsep="0" align="center" valign="middle">oCP</entry>
+<de>Sicht-Paket Regensensor für Frontscheibenwischer, automatisch abblendbarer Innenspiegel, indirekte Beleuchtung der Mittelkonsole,  Make-up-Spiegel beleuchtet, automatisches Abblendlicht mit Tunnelerkennung, automatische Leuchtweitenregulierung</de>
+<info>oCP</info>
+<it>Pacchetto visibilità  Sensore pioggia per tergicristalli anteriori, retrovisore interno anabbagliante, illuminazione indiretta console centrale, specchietto di cortesia illuminato, fari anabbaglianti automatici  con riconoscimento galleria, regolazione automatica portata fari</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Lederausstattung Dunkelgrau/Kaffeebraun, Ergonomiesitz mit Gütesiegel AGR  Fahrer- und Beifahrerseite, Sitzheizung vorn, Lenkradheizung</entry>
-<entry align="center" valign="middle">TAJQ/TAR5</entry>
-<entry colsep="0" align="left" valign="middle">Equipaggiamento in pelle  Grigio scuro/Marrone Caffè, sedile conducente e passeggero ergonomico con sigillo di qualità AGR, sedili anteriori e volante riscaldabili </entry>
-<entry colsep="0" align="center" valign="middle">TAJQ/TAR5</entry>
+<de>Enjoy Komfort-  Paket </de>
+<fr>Pacchetto comfort Enjoy </fr>
 </item>
 
+<item>
+<de>Adaptives  Sicherheitslicht­system AFL mit  LED-Technik</de>
+<fr> Sistema di fari adattivi AFL con tecnica a LED</fr>
+</item>
 
 <item>
-<entry namest="c1" nameend="c3" align="center" valign="middle">Sicherheit</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Sicurezza</entry>
+<de>Lederausstattung Dunkelgrau/Kaffeebraun, Ergonomiesitz mit Gütesiegel AGR  Fahrer- und Beifahrerseite, Sitzheizung vorn, Lenkradheizung</de>
+<info>TAJQ/TAR5</info>
+<it>Equipaggiamento in pelle  Grigio scuro/Marrone Caffè, sedile conducente e passeggero ergonomico con sigillo di qualità AGR, sedili anteriori e volante riscaldabili </it>
 </item>
 
+
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Adaptives Sicherheitslichtsystem AFL mit  LED-Technik LED-Scheinwerfer mit variabler Lichtverteilung für Stadt,  Spielstrasse, Landstrasse, Autobahn und Schlechtwetter, inkl.  aktiver Kurvenlichtfunktion, Abbiegelichtfunktion, Fernlicht­assistent, Tag­fahrlicht mit LED-Technik, Scheinwerfer-Reinigungsanlage, LED-Heckleuchten, Sicht-Paket </entry>
-<entry align="center" valign="middle">OBJ</entry>
-<entry align="center" valign="middle">Cosmo Premium- Paket  Pacchetto Cosmo Premium</entry>
-<entry colsep="0" align="left" valign="middle">Sistema di fari adattivi AFL con tecnica a LED Fari LED con proiezione variabile del fascio luminoso, differenziata per città, strada di quartiere, fuori località, autostrada e maltempo, incl. illuminazione dinamica della curva, luce statica di svolta, fari abbaglianti automatici, luci di marcia diurna con tecnica a LED, impianto lavafari, luci posteriori a LED, pacchetto visibilità </entry>
-<entry colsep="0" align="center" valign="middle">OBJ</entry>
+<de>Sicherheit</de>
+<it>Sicurezza</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Opel Eye Frontkamera, inkl. Abstandswarner, Kollisionswarner vorn,  Verkehrsschilderkennung, Spurhalteassistent,  Fahrer-Instrumentendisplay (nur mit T95 oder LP44)</entry>
-<entry align="center" valign="middle">oBT</entry>
-<entry colsep="0" align="left" valign="middle">Telecamera frontale Opel Eye, incl.  avvisatore di distanza e allerta collisione frontale con rico­nosci- ­mento segnali stradali e assistenza al mantenimento di corsia,  visualizzazione nel display quadro strumenti (solo con T95 o LP44)</entry>
-<entry colsep="0" align="center" valign="middle">oBT</entry>
+<de>Adaptives Sicherheitslichtsystem AFL mit  LED-Technik LED-Scheinwerfer mit variabler Lichtverteilung für Stadt,  Spielstrasse, Landstrasse, Autobahn und Schlechtwetter, inkl.  aktiver Kurvenlichtfunktion, Abbiegelichtfunktion, Fernlicht­assistent, Tag­fahrlicht mit LED-Technik, Scheinwerfer-Reinigungsanlage, LED-Heckleuchten, Sicht-Paket </de>
+<info>OBJ</info>
+<it>Sistema di fari adattivi AFL con tecnica a LED Fari LED con proiezione variabile del fascio luminoso, differenziata per città, strada di quartiere, fuori località, autostrada e maltempo, incl. illuminazione dinamica della curva, luce statica di svolta, fari abbaglianti automatici, luci di marcia diurna con tecnica a LED, impianto lavafari, luci posteriori a LED, pacchetto visibilità </it>
 </item>
 
+<item>
+<de>Cosmo Premium- Paket  Pacchetto Cosmo Premium</de>
+<it>Cosmo Premium- Paket  Pacchetto Cosmo Premium</it>
+</item>
 
 <item>
-<entry namest="c1" nameend="c3" align="center" valign="middle">Fahrwerk und Felgen</entry>
-<entry namest="c4" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Autotelaio e cerchi</entry>
+<de>Opel Eye Frontkamera, inkl. Abstandswarner, Kollisionswarner vorn,  Verkehrsschilderkennung, Spurhalteassistent,  Fahrer-Instrumentendisplay (nur mit T95 oder LP44)</de>
+<info>oBT</info>
+<it>Telecamera frontale Opel Eye, incl.  avvisatore di distanza e allerta collisione frontale con rico­nosci- ­mento segnali stradali e assistenza al mantenimento di corsia,  visualizzazione nel display quadro strumenti (solo con T95 o LP44)</it>
 </item>
+
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Reserverad 16˝, Stahl, inkl. Wagenheber (nicht mit FlexFix®-Fahrradträgersystem)</entry>
-<entry align="center" valign="middle">RVZ</entry>
-<entry align="left" valign="middle"></entry>
-<entry colsep="0" align="left" valign="middle">Ruota di scorta 16˝, in acciaio, cric incl. (non con portabici FlexFix®)</entry>
-<entry colsep="0" align="center" valign="middle">RVZ</entry>
+<ede>Fahrwerk und Felgen</de>
+<it>Autotelaio e cerchi</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Leichtmetallfelgen 7 J x 18,  im 5-Speichen-Design,  mit Reifen 215/55 R18</entry>
-<entry align="center" valign="middle">Ri6</entry>
-<entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7 J x 18,  in design a 5 razze, con pneumatici 215/55 R18</entry>
-<entry colsep="0" align="center" valign="middle">Ri6</entry>
+<de>Reserverad 16˝, Stahl, inkl. Wagenheber (nicht mit FlexFix®-Fahrradträgersystem)</de>
+<info>RVZ</info>
+<it>Ruota di scorta 16˝, in acciaio, cric incl. (non con portabici FlexFix®)</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Leichtmetallfelgen 7 J x 18,  im Vielspeichen-Design,  mit Reifen 215/55 R18</entry>
-<entry align="center" valign="middle">RV8</entry>
-<entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7 J x 18,  in design multirazze, con pneumatici 215/55 R18</entry>
-<entry colsep="0" align="center" valign="middle">RV8</entry>
+<de>Leichtmetallfelgen 7 J x 18,  im 5-Speichen-Design,  mit Reifen 215/55 R18</de>
+<info>Ri6</info>
+<it>Cerchi in lega leggera 7 J x 18,  in design a 5 razze, con pneumatici 215/55 R18</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Leichtmetallfelgen 7 J x 18,  im Vielspeichen-Design,  mit Reifen 215/55 R18</entry>
-<entry align="center" valign="middle">RRU</entry>
-<entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7 J x 18,  in design multirazze, con pneumatici 215/55 R18</entry>
-<entry colsep="0" align="center" valign="middle">RRU</entry>
+<de>Leichtmetallfelgen 7 J x 18,  im Vielspeichen-Design,  mit Reifen 215/55 R18</de>
+<info>RV8</info>
+<it>Cerchi in lega leggera 7 J x 18,  in design multirazze, con pneumatici 215/55 R18</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" rowsep="0" align="left" valign="middle">Leichtmetallfelgen 7½ J x 19,  im 5-Doppelspeichen-Design mit Reifen 225/45 R19</entry>
-<entry rowsep="0" align="center" valign="middle">RT7</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Cerchi in lega leggera 7½ J x 19, in design a 5 razze doppie  con pneumatici 225/45 R19</entry>
-<entry colsep="0" rowsep="0" align="center" valign="middle">RT7</entry>
+<de>Leichtmetallfelgen 7 J x 18,  im Vielspeichen-Design,  mit Reifen 215/55 R18</de>
+<info>RRU</info>
+<it>Cerchi in lega leggera 7 J x 18,  in design multirazze, con pneumatici 215/55 R18</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">  –   nicht erhältlich / non disponibile	  S   Standard / di serie	Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
+<de>Leichtmetallfelgen 7½ J x 19,  im 5-Doppelspeichen-Design mit Reifen 225/45 R19</de>
+<info>RT7</info>
+<it>Cerchi in lega leggera 7½ J x 19, in design a 5 razze doppie  con pneumatici 225/45 R19</it>
 </item>
 
 
+
+<item>
+<de>Infotainment</de>
+<it>Infotainment</it>
+</item>
+
 <item>
-<entry namest="c1" nameend="c3" align="center" valign="middle">Infotainment</entry>
-<entry namest="c4" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Infotainment</entry>
+<de>Infotainment-Systeme allgemein: Dachantenne, geschwindigkeitsabhängige Lautstärke- und  Bassregelung, UKW/MW, Auto Store, RDS-EON</de>
+<it>Sistemi di Infotainment in generale:  antenna sul tetto, regolazione del volume e dei bassi in funzione  della velocità, FM/MW, Auto Store, RDS-EON</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Infotainment-Systeme allgemein: Dachantenne, geschwindigkeitsabhängige Lautstärke- und  Bassregelung, UKW/MW, Auto Store, RDS-EON</entry>
-<entry colsep="0" align="left" valign="middle">Sistemi di Infotainment in generale:  antenna sul tetto, regolazione del volume e dei bassi in funzione  della velocità, FM/MW, Auto Store, RDS-EON</entry>
+<de>Radio R300 6 Lautsprecher, Fernbedienung am Lenkrad,  Graphic Info Display, USB-Anschluss, Bluetooth®-Schnittstelle</de>
+<info>iP1</info>
+<it>Radio R300 6 altoparlanti, comandi al volante, Graphic  Info Display, presa USB, interfaccia Bluetooth®</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Radio R300 6 Lautsprecher, Fernbedienung am Lenkrad,  Graphic Info Display, USB-Anschluss, Bluetooth®-Schnittstelle</entry>
-<entry align="center" valign="middle">iP1</entry>
-<entry colsep="0" align="left" valign="middle">Radio R300 6 altoparlanti, comandi al volante, Graphic  Info Display, presa USB, interfaccia Bluetooth®</entry>
-<entry colsep="0" align="center" valign="middle">iP1</entry>
+<de>Kommunikationspaket IntelliLink R 4.0  –  Radio –  6 Lautsprecher –  Farbdisplay in der Mittelkonsole –  Fernbedienung am Lenkrad –  Bluetooth®-Mobiltelefon-Anschluss –  Audiostreaming  –  USB-Anschluss –  Bordcomputer erweitert –  DAB+ Empfänger –  Inkl. Smartphone-Integration via Apple CarPlayTM1 und Android  AutoTM1: –  Anzeige und Bedienung ausgewählter Apps2 und Funktionen über das Touchscreen-Farbdisplay oder per Sprach­bedienung, z. B. –  Navigation (Google Maps, Apple Karten) –  Musik (z. B. Playlists, Google Play Music, Spotify, Stitcher) –  Telefon –  Vorlesen und Diktieren von Textnachrichten</de>
+<info>iOA</info>
+<it>Pacchetto comunicazione IntelliLink R 4.0 –  radio –  6 altoparlanti –  schermo a colori nella console centrale –  comandi al volante –  connessione Bluetooth® per cellulare –  streaming audio –  presa USB –  computer di bordo, funzionalità estesa –  ricezione DAB+ –  Incl. integrazione smartphone tramite Apple CarPlay™1 e  Android Auto™1: –  visualizzazione e gestione di determinate app2 e funzioni  tramite schermo tattile a colori 7˝ o comandi vocali, ad es. –  navigazione (Google Maps, Mappe Apple) –  musica (ad es. playlist, Google Play Music, Spotify, Stitcher) –  telefono –  leggere e dettare messaggi di testo </it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Kommunikationspaket IntelliLink R 4.0  –  Radio –  6 Lautsprecher –  Farbdisplay in der Mittelkonsole –  Fernbedienung am Lenkrad –  Bluetooth®-Mobiltelefon-Anschluss –  Audiostreaming  –  USB-Anschluss –  Bordcomputer erweitert –  DAB+ Empfänger –  Inkl. Smartphone-Integration via Apple CarPlayTM1 und Android  AutoTM1: –  Anzeige und Bedienung ausgewählter Apps2 und Funktionen über das Touchscreen-Farbdisplay oder per Sprach­bedienung, z. B. –  Navigation (Google Maps, Apple Karten) –  Musik (z. B. Playlists, Google Play Music, Spotify, Stitcher) –  Telefon –  Vorlesen und Diktieren von Textnachrichten</entry>
-<entry align="center" valign="middle">iOA</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto comunicazione IntelliLink R 4.0 –  radio –  6 altoparlanti –  schermo a colori nella console centrale –  comandi al volante –  connessione Bluetooth® per cellulare –  streaming audio –  presa USB –  computer di bordo, funzionalità estesa –  ricezione DAB+ –  Incl. integrazione smartphone tramite Apple CarPlay™1 e  Android Auto™1: –  visualizzazione e gestione di determinate app2 e funzioni  tramite schermo tattile a colori 7˝ o comandi vocali, ad es. –  navigazione (Google Maps, Mappe Apple) –  musica (ad es. playlist, Google Play Music, Spotify, Stitcher) –  telefono –  leggere e dettare messaggi di testo </entry>
-<entry colsep="0" align="center" valign="middle">iOA</entry>
+<de>Kommunikations- und Parkpaket  IntelliLink 900 Navigation –  Radio –  6 Lautsprecher –  Farbdisplay in der Mittelkonsole –  Fernbedienung am Lenkrad –  Bluetooth®-Mobiltelefon-Anschluss –  Audiostreaming  –  USB-Anschluss –  Bordcomputer erweitert –  Navigationssystem mit integriertem Speicher, Kartendarstellung  in 2D oder 3D, Strassenkarte Europa, GPS-Modul, dynamische Routenführung über Karten- und/oder Pfeildarstellung und Ansage, Kartenanzeige von TMC-Meldungen –  Rückfahrkamera inkl. Hilfslinien –  Elektro-Paket –  DAB+ Empfänger –  OnStar1 inkl. automatischer Zieleingabe –  Multifunktionsdisplay im Instrumententräger, farbig  –  Inkl. Smartphone-Integration via Apple CarPlayTM1 und  Android AutoTM1: –  Anzeige und Bedienung ausgewählter Apps2 und Funktionen über das Touchscreen-Farbdisplay oder per Sprachbedienung, z. B. –  Navigation (Google Maps, Apple Karten) –  Musik (z. B. Playlists, Google Play Music, Spotify, Stitcher) –  Telefon –  Vorlesen und Diktieren von Textnachrichten </de>
+<info>iO6</info>
+<it>–  Pacchetto comunicazione, parcheggio  e navigazione IntelliLink 900 –  radio –  6 altoparlanti –  schermo a colori nella console centrale –  comandi al volante –  connessione Bluetooth® per cellulare –  streaming audio –  presa USB –  computer di bordo, funzionalità estesa –  sistema di navigazione con memoria integrata, visualizzazione mappe in 2D o 3D, mappe Europa, modulo GPS, guida stradale dinamica tramite indicazione su mappae/o frecce e annunci  vocali, segnalazioni TMC visualizzate sulla mappa –  telecamera di retromarcia con linee guida –  pacchetto Elettro –  ricezione DAB+ –  OnStar1 incl. download dell’itinerario –  schermo multinformazioni a colori nel quadro strumenti –  Incl. integrazione smartphone tramite Apple CarPlay™1 e Android Auto™1: –  visualizzazione e gestione di determinate app2 e funzioni  tramite schermo tattile a colori o comandi vocali, ad es. –  navigazione (Google Maps, Mappe Apple) –  musica (ad es. playlist, Google Play Music, Spotify, Stitcher) –  telefono –  leggere e dettare messaggi di testo </it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Kommunikations- und Parkpaket  IntelliLink 900 Navigation –  Radio –  6 Lautsprecher –  Farbdisplay in der Mittelkonsole –  Fernbedienung am Lenkrad –  Bluetooth®-Mobiltelefon-Anschluss –  Audiostreaming  –  USB-Anschluss –  Bordcomputer erweitert –  Navigationssystem mit integriertem Speicher, Kartendarstellung  in 2D oder 3D, Strassenkarte Europa, GPS-Modul, dynamische Routenführung über Karten- und/oder Pfeildarstellung und Ansage, Kartenanzeige von TMC-Meldungen –  Rückfahrkamera inkl. Hilfslinien –  Elektro-Paket –  DAB+ Empfänger –  OnStar1 inkl. automatischer Zieleingabe –  Multifunktionsdisplay im Instrumententräger, farbig  –  Inkl. Smartphone-Integration via Apple CarPlayTM1 und  Android AutoTM1: –  Anzeige und Bedienung ausgewählter Apps2 und Funktionen über das Touchscreen-Farbdisplay oder per Sprachbedienung, z. B. –  Navigation (Google Maps, Apple Karten) –  Musik (z. B. Playlists, Google Play Music, Spotify, Stitcher) –  Telefon –  Vorlesen und Diktieren von Textnachrichten </entry>
-<entry align="center" valign="middle">iO6</entry>
-<entry colsep="0" align="left" valign="middle">–  Pacchetto comunicazione, parcheggio  e navigazione IntelliLink 900 –  radio –  6 altoparlanti –  schermo a colori nella console centrale –  comandi al volante –  connessione Bluetooth® per cellulare –  streaming audio –  presa USB –  computer di bordo, funzionalità estesa –  sistema di navigazione con memoria integrata, visualizzazione mappe in 2D o 3D, mappe Europa, modulo GPS, guida stradale dinamica tramite indicazione su mappae/o frecce e annunci  vocali, segnalazioni TMC visualizzate sulla mappa –  telecamera di retromarcia con linee guida –  pacchetto Elettro –  ricezione DAB+ –  OnStar1 incl. download dell’itinerario –  schermo multinformazioni a colori nel quadro strumenti –  Incl. integrazione smartphone tramite Apple CarPlay™1 e Android Auto™1: –  visualizzazione e gestione di determinate app2 e funzioni  tramite schermo tattile a colori o comandi vocali, ad es. –  navigazione (Google Maps, Mappe Apple) –  musica (ad es. playlist, Google Play Music, Spotify, Stitcher) –  telefono –  leggere e dettare messaggi di testo </entry>
-<entry colsep="0" align="center" valign="middle">iO6</entry>
+<de>Bose® Sound System, inkl. 2 Lautsprecher in der A-Säule, 2 Lautsprecher in den Vordertüren, 2 Breitbandlautsprecher in den Hintertüren, 1 Subwoofer  unter der Gepäckraumabdeckung, 1 digitaler Soundprozessor (nur mit Navigationssystem 950 IntelliLink &amp; DAB+ und Reserve­rad)</de>
+<info>UQA</info>
+<it>Sistema audio Bose®, incl. 2 altoparlanti nel montante A, 2 altoparlanti nelle portiere anteriori, 2 altoparlanti a banda larga nelle portiere posteriori, 1 subwoofer sotto la copertura del bagagliaio, 1 processore audio digitale  (solo con sistema di navigazione 950 IntelliLink e DAB+ e ruota  di scorta)</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Bose® Sound System, inkl. 2 Lautsprecher in der A-Säule, 2 Lautsprecher in den Vordertüren, 2 Breitbandlautsprecher in den Hintertüren, 1 Subwoofer  unter der Gepäckraumabdeckung, 1 digitaler Soundprozessor (nur mit Navigationssystem 950 IntelliLink &amp; DAB+ und Reserve­rad)</entry>
-<entry align="center" valign="middle">UQA</entry>
-<entry colsep="0" align="left" valign="middle">Sistema audio Bose®, incl. 2 altoparlanti nel montante A, 2 altoparlanti nelle portiere anteriori, 2 altoparlanti a banda larga nelle portiere posteriori, 1 subwoofer sotto la copertura del bagagliaio, 1 processore audio digitale  (solo con sistema di navigazione 950 IntelliLink e DAB+ e ruota  di scorta)</entry>
-<entry colsep="0" align="center" valign="middle">UQA</entry>
+<de>Digitaler Radioempfang DAB+</de>
+<info>U4D</info>
+<it>Ricezione radio digitale DAB+</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Digitaler Radioempfang DAB+</entry>
-<entry align="center" valign="middle">U4D</entry>
-<entry align="center" valign="middle">In IntelliLink enthalten Compreso in IntelliLink</entry>
-<entry align="center" valign="middle">Kommunikationspaket IntelliLink  R 4.0  Pacchetto comunica­zione  IntelliLink R 4.0 Kommunikations-  und Parkpaket  IntelliLink 900   Pacchetto  comunicazione  e parcheggio  IntelliLink 900</entry>
-<entry colsep="0" align="left" valign="middle">Ricezione radio digitale DAB+</entry>
-<entry colsep="0" align="center" valign="middle">U4D</entry>
+<de>In IntelliLink enthalten </de>
+<it> Compreso in IntelliLink</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" rowsep="0" align="left" valign="top">OnStar1 Nur in Verbindung mit IntelliLink  1 OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfallservice, Fahrzeug-Diagnose, automatische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</entry>
-<entry rowsep="0" align="center" valign="middle">UE1</entry>
-<entry rowsep="0" align="center" valign="middle">Kommunikationspaket IntelliLink  R 4.0  Pacchetto comunica­zione  IntelliLink R 4.0 Kommunikations-  und Parkpaket  IntelliLink 900   Pacchetto  comunicazione  e parcheggio  IntelliLink 900</entry>
-<entry colsep="0" rowsep="0" align="left" valign="top"> OnStar1 Solo abbinato a IntelliLink  1 OnStar. Il vostro assistente personale di servizio online  con le seguenti prestazioni: risposta automatica in  caso d’incidente, hotspot Wi-Fi, app per smartphone,  assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al  giorno e 365 giorni all’anno a un servizio di prim’ordine  quasi ovunque in Europa. I servizi OnStar sono gratuiti  per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate  ulteriori informazioni sulla disponibilità e sul periodo di  prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch    </entry>
-<entry colsep="0" rowsep="0" align="center" valign="middle">UE1 </entry>
+<de>OnStar1 Nur in Verbindung mit IntelliLink  1 OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfallservice, Fahrzeug-Diagnose, automatische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
+<info>UE1</info>
+<it> OnStar1 Solo abbinato a IntelliLink  1 OnStar. Il vostro assistente personale di servizio online  con le seguenti prestazioni: risposta automatica in  caso d’incidente, hotspot Wi-Fi, app per smartphone,  assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al  giorno e 365 giorni all’anno a un servizio di prim’ordine  quasi ovunque in Europa. I servizi OnStar sono gratuiti  per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate  ulteriori informazioni sulla disponibilità e sul periodo di  prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch    </it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="top">2  Kompatibel mit folgenden Apple Produkten: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3. und 4. Generation) sowie iPad mini und Apple iPod touch (4. Generation). / Compatibile con  i seguenti prodotti Apple: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3a e 4a generazione) nonché iPad mini e Apple iPod touch (4a generazione).</entry>
+<de>Kommunikationspaket IntelliLink  R 4.0 </de>
+<it>Pacchetto comunica­zione  IntelliLink R 4.0 </it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">  –   nicht erhältlich / non disponibile	  S   Standard / di serie	Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
+<de>Kompatibel mit folgenden Apple Produkten: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3. und 4. Generation) sowie iPad mini und Apple iPod touch (4. Generation).</de>
+<it>Compatibile con  i seguenti prodotti Apple: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3a e 4a generazione) nonché iPad mini e Apple iPod touch (4a generazione).</it>
 </item>
+
 
 
 
 <item>
-<entry namest="c1" nameend="c3" align="center" valign="middle">Komfort- und sonstige Ausstattung</entry>
-<entry namest="c4" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Comfort e altro equipaggiamento</entry>
+<de>Komfort- und sonstige Ausstattung</de>
+<it>Comfort e altro equipaggiamento</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Abnehmbare Anhängerzugvorrichtung (nicht in Verbindung mit FlexFix®-Fahrradträgersystem)</entry>
-<entry align="center" valign="middle">SDE</entry>
-<entry colsep="0" align="left" valign="middle">Gancio di traino amovibile (non con portabici FlexFix®)</entry>
-<entry colsep="0" align="center" valign="middle">SDE</entry>
+<de>Abnehmbare Anhängerzugvorrichtung (nicht in Verbindung mit FlexFix®-Fahrradträgersystem)</de>
+<info>SDE</info>
+<fr>Gancio di traino amovibile (non con portabici FlexFix®)</fr>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="top">FlexFix®-Fahrradträgersystem  in Heckstossfänger integriert, für 1 Fahrrad mit einem Gewicht von max. 30 kg (nicht mit abnehmbarer Anhängerzugvorrichtung,  Bose® Sound System und Reserverad)</entry>
-<entry align="center" valign="middle">D7D</entry>
-<entry colsep="0" align="left" valign="top">Portabici FlexFix®  integrato nel paraurti, per 1 bicicletta di max. 30 kg (non con gancio di traino amovibile, sistema audio Bose®  e ruota di scorta)</entry>
-<entry colsep="0" align="center" valign="middle">D7D</entry>
+<de>FlexFix®-Fahrradträgersystem  in Heckstossfänger integriert, für 1 Fahrrad mit einem Gewicht von max. 30 kg (nicht mit abnehmbarer Anhängerzugvorrichtung,  Bose® Sound System und Reserverad)</de>
+<info>D7D</info>
+<it>Portabici FlexFix®  integrato nel paraurti, per 1 bicicletta di max. 30 kg (non con gancio di traino amovibile, sistema audio Bose®  e ruota di scorta)</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Manuelle Klimaanlage</entry>
-<entry align="center" valign="middle">C67</entry>
-<entry colsep="0" align="left" valign="middle">Climatizzatore manuale</entry>
-<entry colsep="0" align="center" valign="middle">C67</entry>
+<de>Manuelle Klimaanlage</de>
+<info>C67</info>
+<it>Climatizzatore manuale</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" morerows="1" colsep="0" align="left" valign="middle">Zwei-Zonen-Komfort-Paket  in Verbindung mit Komfort-Paket</entry>
-<entry morerows="1" align="center" valign="middle">CJ2</entry>
-<entry morerows="1" colsep="0" align="left" valign="middle">Pacchetto comfort bizona  abbinato a pacchetto comfort</entry>
-<entry morerows="1" colsep="0" align="center" valign="middle">CJ2</entry>
+<de>Zwei-Zonen-Komfort-Paket  in Verbindung mit Komfort-Paket</de>
+<info>CJ2</info>
+<it>Pacchetto comfort bizona  abbinato a pacchetto comfort</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" morerows="1" colsep="0" align="left" valign="middle">Rückfahrkamera, inkl.  Elektro-Paket (nur mit Kommunikationspaket IntelliLink R 4.0)  in Verbindung mit Enjoy Komfort-Paket </entry>
-<entry morerows="1" align="center" valign="middle">UVC</entry>
-<entry morerows="1" align="center" valign="middle">Kommunikations-  und Parkpaket  IntelliLink 900  Pacchetto  comunicazione  e parcheggio  IntelliLink 900</entry>
-<entry morerows="1" colsep="0" align="left" valign="middle">Telecamera di retromarcia, incl.  pacchetto elettro (solo con pacchetto comunicazione IntelliLink R 4.0)  abbinato a pacchetto comfort Enjoy</entry>
-<entry morerows="1" colsep="0" align="center" valign="middle">UVC</entry>
+<de>Rückfahrkamera, inkl.  Elektro-Paket (nur mit Kommunikationspaket IntelliLink R 4.0)  in Verbindung mit Enjoy Komfort-Paket </de>
+<info>UVC</info>
+<it>Telecamera di retromarcia, incl.  pacchetto elettro (solo con pacchetto comunicazione IntelliLink R 4.0)  abbinato a pacchetto comfort Enjoy</it>
 </item>
 
+<item>
+<de>Kommunikations-  und Parkpaket  IntelliLink 900</de>
+<it>Pacchetto  comunicazione  e parcheggio  IntelliLink 900</it>
+</item>
+
+
+<item>
+<de>Schiebe-/Ausstelldach, elektrisch betätigt</de>
+<info>CF5</info>
+<it>Tetto scorrevole/sollevabile, elettrico</it>
+</item>
+
+<item>
+<de>Quickheat-Heizsystem</de>
+<info>C32</info>
+<it>Riscaldamento rapido Quickheat</it>
+</item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Schiebe-/Ausstelldach, elektrisch betätigt</entry>
-<entry align="center" valign="middle">CF5</entry>
-<entry colsep="0" align="left" valign="middle">Tetto scorrevole/sollevabile, elettrico</entry>
-<entry colsep="0" align="center" valign="middle">CF5</entry>
+<de>Dieselmotoren  152 PS-Version </de>
+<it>Motori diesel  versione 152 CV </it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Quickheat-Heizsystem</entry>
-<entry align="center" valign="middle">C32</entry>
-<entry align="center" valign="middle">Dieselmotoren  152 PS-Version Motori diesel  versione 152 CV </entry>
-<entry colsep="0" align="left" valign="middle">Riscaldamento rapido Quickheat</entry>
-<entry colsep="0" align="center" valign="middle">C32</entry>
+<de>Standheizung (nur mit Komfort-Paket und Winter-Paket oder Lederausstattung oder Enjoy Komfort-Paket oder Cosmo Premium-Paket)</de>
+<info>K07</info>
+<it>Riscaldamento autonomo (solo con pacchetto comfort e pacchetto inverno o equipaggiamento in pelle o pacchetto comfort Enjoy o pacchetto Cosmo  Premium) </it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Standheizung (nur mit Komfort-Paket und Winter-Paket oder Lederausstattung oder Enjoy Komfort-Paket oder Cosmo Premium-Paket)</entry>
-<entry align="center" valign="middle">K07</entry>
-<entry colsep="0" align="left" valign="middle">Riscaldamento autonomo (solo con pacchetto comfort e pacchetto inverno o equipaggiamento in pelle o pacchetto comfort Enjoy o pacchetto Cosmo  Premium) </entry>
-<entry colsep="0" align="center" valign="middle">K07</entry>
+<de>Ergonomiesitz, Fahrerseite  mit Gütesiegel AGR (Aktion Gesunder Rücken e.V.), 6-fach manuell einstellbar, Höheneinstellung elektrisch, Lendenwirbelstütze, ausziehbare Oberschenkelauflage, Kopfstützen (Enjoy: nur mit Polsterung TAHT)</de>
+<info>AUS</info>
+<it>Sedile ergonomico sedile conducente  con sigillo di qualità AGR (Azione schiena sana), regolabile manualmente su 6 posizioni, regolazione elettrica in  altezza, sostegno lombare, supporto coscia estraibile, poggiatesta (Enjoy: solo con rivestimento TAHT)</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Ergonomiesitz, Fahrerseite  mit Gütesiegel AGR (Aktion Gesunder Rücken e.V.), 6-fach manuell einstellbar, Höheneinstellung elektrisch, Lendenwirbelstütze, ausziehbare Oberschenkelauflage, Kopfstützen (Enjoy: nur mit Polsterung TAHT)</entry>
-<entry align="center" valign="middle">AUS</entry>
-<entry colsep="0" align="left" valign="middle">Sedile ergonomico sedile conducente  con sigillo di qualità AGR (Azione schiena sana), regolabile manualmente su 6 posizioni, regolazione elettrica in  altezza, sostegno lombare, supporto coscia estraibile, poggiatesta (Enjoy: solo con rivestimento TAHT)</entry>
-<entry colsep="0" align="center" valign="middle">AUS</entry>
+<de>Ergonomiesitz, Fahrer- und Beifahrerseite mit Gütesiegel AGR (Aktion Gesunder Rücken e.V.), 6-fach manuell einstellbar, Höheneinstellung elektrisch, Lendenwirbelstütze, ausziehbare Oberschenkelauflage, Kopfstützen (Enjoy: nur mit Polsterung TAHT)</de>
+<info>AE4</info>
+<it>Sedile ergonomico sedili anteriori  con sigillo di qualità AGR (Azione schiena sana), regolabile manualmente su 6 posizioni, regolazione elettrica in  altezza, sostegno lombare, supporto coscia estraibile, poggiatesta  (Enjoy: solo con rivestimento TAHT)</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Ergonomiesitz, Fahrer- und Beifahrerseite mit Gütesiegel AGR (Aktion Gesunder Rücken e.V.), 6-fach manuell einstellbar, Höheneinstellung elektrisch, Lendenwirbelstütze, ausziehbare Oberschenkelauflage, Kopfstützen (Enjoy: nur mit Polsterung TAHT)</entry>
-<entry align="center" valign="middle">AE4</entry>
-<entry align="center" valign="middle">Lederausstattung Equipaggiamento  in pelle</entry>
-<entry colsep="0" align="left" valign="middle">Sedile ergonomico sedili anteriori  con sigillo di qualità AGR (Azione schiena sana), regolabile manualmente su 6 posizioni, regolazione elettrica in  altezza, sostegno lombare, supporto coscia estraibile, poggiatesta  (Enjoy: solo con rivestimento TAHT)</entry>
-<entry colsep="0" align="center" valign="middle">AE4</entry>
+<de>Lederausstattung</de>
+<it> Equipaggiamento  in pelle</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">3. Kopfstütze hinten</entry>
-<entry align="center" valign="middle">AQP</entry>
-<entry colsep="0" align="left" valign="middle">3o poggiatesta centrale posteriore</entry>
-<entry colsep="0" align="center" valign="middle">AQP</entry>
+<de>3. Kopfstütze hinten</de>
+<info>AQP</info>
+<it>3o poggiatesta centrale posteriore</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">OPC Line Sport-Paket mit Front-, Heck- und Seitenschürzen</entry>
-<entry align="center" valign="middle">WHT</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto sport OPC Line con spoiler sottoparaurti anteriore e posteriore e minigonne laterali</entry>
-<entry colsep="0" align="center" valign="middle">WHT</entry>
+<de>OPC Line Sport-Paket mit Front-, Heck- und Seitenschürzen</de>
+<info>WHT</info>
+<it>Pacchetto sport OPC Line con spoiler sottoparaurti anteriore e posteriore e minigonne laterali</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Dunkle Heck- und Seitenscheiben</entry>
-<entry align="center" valign="middle">AKo</entry>
-<entry colsep="0" align="left" valign="middle">Vetri posteriori e lunotto oscurati</entry>
-<entry colsep="0" align="center" valign="middle">AKo</entry>
+<de>Dunkle Heck- und Seitenscheiben</de>
+<info>AKo</info>
+<it>Vetri posteriori e lunotto oscurati</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Metallic-Lackierung</entry>
-<entry colsep="0" align="left" valign="middle">Verniciatura metallizzata</entry>
+<de>Metallic-Lackierung</de>
+<it>Verniciatura metallizzata</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" align="left" valign="middle">Brillant-Lackierung</entry>
-<entry colsep="0" align="left" valign="middle">Verniciatura lucida</entry>
+<de>Brillant-Lackierung</de>
+<it>Verniciatura lucida</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c2" colsep="0" rowsep="0" align="left" valign="middle">Perleffekt-Lackierung</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Verniciatura a effetto perlato</entry>
+<de>Perleffekt-Lackierung</de>
+<it>Verniciatura a effetto perlato</it>
 </item>
 
 <item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">  –   nicht erhältlich / non disponibile	  S   Standard / di serie	Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
+<de>nicht erhältlich</de>
+<it>non disponibile</it>
 </item>
