@@ -22,7 +22,7 @@
 <colspec colname="c10" colwidth="65.19685039370079pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry colsep="0" align="left" valign="bottom"></entry>
 <entry namest="c2" nameend="c3" colsep="0" align="left" valign="bottom"></entry>
 <entry align="left" valign="bottom"></entry>
@@ -32,20 +32,20 @@
 <entry morerows="1" align="center" valign="middle">Excellence</entry>
 <entry colsep="0" align="left" valign="bottom"></entry>
 <entry colsep="0" align="left" valign="bottom"></entry>
-</row>
-<row>
+</item>
+<item>
 <entry morerows="8" rowsep="0" align="center" valign="middle">Benzin  Benzina</entry>
 <entry namest="c2" nameend="c4" align="center" valign="middle">Astra Sports Tourer</entry>
 <entry namest="c9" nameend="c10" colsep="0" align="center" valign="middle">Astra Sports Tourer</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="center" valign="middle">Motor</entry>
 <entry align="center" valign="middle">Getriebe</entry>
 <entry namest="c5" nameend="c8" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
 <entry align="center" valign="middle">Motore</entry>
 <entry colsep="0" align="center" valign="middle">Cambio</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.4 74 kW/100 PS</entry>
 <entry align="left" valign="middle">5-Gang manuell</entry>
 <entry align="center" valign="middle">22’100.00</entry>
@@ -54,8 +54,8 @@
 <entry align="center" valign="middle">–</entry>
 <entry align="left" valign="middle">1.4    74 kW/100 CV</entry>
 <entry colsep="0" align="left" valign="middle">manuale 5 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 PS</entry>
 <entry align="left" valign="middle">5-Gang manuell </entry>
 <entry align="center" valign="middle">23’100.00</entry>
@@ -64,8 +64,8 @@
 <entry align="center" valign="middle">27’700.00</entry>
 <entry align="left" valign="middle">1.0 Direct Injection Turbo ecoFLEX  Start/Stop 77 kW/105 CV </entry>
 <entry colsep="0" align="left" valign="middle">manuale 5 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 PS</entry>
 <entry align="left" valign="middle">5-Gang Easytronic® 3.0</entry>
 <entry align="center" valign="middle">24’100.00</entry>
@@ -74,8 +74,8 @@
 <entry align="center" valign="middle">28’700.00</entry>
 <entry align="left" valign="middle">1.0 Direct Injection Turbo ecoFLEX  Start/Stop 77 kW/105 CV</entry>
 <entry colsep="0" align="left" valign="middle">Easytronic® 3.0  5 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 92 kW/125 PS  </entry>
 <entry align="left" valign="middle">6-Gang manuell </entry>
 <entry align="center" valign="middle">–</entry>
@@ -84,8 +84,8 @@
 <entry align="center" valign="middle">29’100.00</entry>
 <entry align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo Start/Stop 92 kW/125 CV</entry>
 <entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 110 kW/150 PS </entry>
 <entry align="left" valign="middle">6-Gang manuell </entry>
 <entry align="center" valign="middle">–</entry>
@@ -94,8 +94,8 @@
 <entry align="center" valign="middle">30’100.00</entry>
 <entry align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo Start/Stop 110 kW/150 CV </entry>
 <entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 110 kW/150 PS </entry>
 <entry align="left" valign="middle">6-Stufen- Automatik</entry>
 <entry align="center" valign="middle">–</entry>
@@ -104,8 +104,8 @@
 <entry align="center" valign="middle">32’100.00</entry>
 <entry align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo Start/Stop 110 kW/150 CV</entry>
 <entry colsep="0" align="left" valign="middle">automatico 6 rapporti</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.6 ECOTEC® Direct Injection Turbo  Start/Stop 147 kW/200 PS </entry>
 <entry align="left" valign="middle">6-Gang manuell</entry>
 <entry align="center" valign="middle">–</entry>
@@ -114,8 +114,8 @@
 <entry align="center" valign="middle">32’800.00</entry>
 <entry align="left" valign="middle">1.6 ECOTEC® Direct Injection Turbo Start/Stop 147 kW/200 CV</entry>
 <entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" rowsep="0" align="left" valign="bottom"></entry>
 <entry colsep="0" align="left" valign="bottom"></entry>
 <entry colsep="0" align="left" valign="bottom"></entry>
@@ -126,8 +126,8 @@
 <entry colsep="0" align="left" valign="middle"></entry>
 <entry colsep="0" align="left" valign="bottom"></entry>
 <entry colsep="0" align="left" valign="bottom"></entry>
-</row>
-<row>
+</item>
+<item>
 <entry morerows="3" rowsep="0" align="center" valign="middle">Diesel</entry>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.6 CDTI  ecoFLEX  Start/Stop 81 kW/110 PS</entry>
 <entry align="left" valign="middle">6-Gang manuell</entry>
@@ -137,8 +137,8 @@
 <entry align="center" valign="middle">31’200.00</entry>
 <entry align="left" valign="middle">1.6 CDTI  ecoFLEX  Start/Stop 81 kW/110 CV</entry>
 <entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.6 CDTI  Start/Stop 100 kW/136 PS</entry>
 <entry align="left" valign="middle">6-Gang manuell</entry>
 <entry align="center" valign="middle">–</entry>
@@ -147,8 +147,8 @@
 <entry align="center" valign="middle">32’700.00</entry>
 <entry align="left" valign="middle">1.6 CDTI Start/Stop 100 kW/136 CV</entry>
 <entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.6 CDTI 100 kW/136 PS</entry>
 <entry align="left" valign="middle">6-Stufen- Automatik</entry>
 <entry align="center" valign="middle">–</entry>
@@ -157,8 +157,8 @@
 <entry align="center" valign="middle">34’700.00</entry>
 <entry align="left" valign="middle">1.6 CDTI 100 kW/136 CV</entry>
 <entry colsep="0" align="left" valign="middle">automatico 6 rapporti</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c2" nameend="c3" align="left" valign="middle">1.6 BiTurbo CDTI Start/Stop 118 kW/160 PS</entry>
 <entry align="left" valign="middle">6-Gang manuell</entry>
 <entry align="center" valign="middle">–</entry>
@@ -167,10 +167,10 @@
 <entry align="center" valign="middle">34’200.00</entry>
 <entry align="left" valign="middle">1.6 BiTurbo CDTI Start/Stop 118 kW/160 CV</entry>
 <entry colsep="0" rowsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c10" colsep="0" rowsep="0" align="left" valign="bottom">Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table> </Root><Root><table frame="bottom">
@@ -180,126 +180,126 @@
 <colspec colname="c2" colwidth="263.62204724409446pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry align="center" valign="middle">Sicherheit </entry>
 <entry colsep="0" align="center" valign="middle">Sicurezza</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Adaptives Bremslicht</entry>
 <entry colsep="0" align="left" valign="middle">Luce di stop adattiva</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Airbagsystem, inkl.  –  Frontairbags, Fahrer und Beifahrer –  Brust-Becken-Seitenairbags, Fahrer und Beifahrer –  Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</entry>
 <entry colsep="0" align="left" valign="middle">Sistema di airbag, incl.  –  airbag frontali, conducente e passeggero –  airbag laterali torace-bacino, conducente e passeggero –  airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero disattivabile manualmente)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</entry>
 <entry colsep="0" align="left" valign="middle">Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Automatische Aktivierung des Warnblinkers und Entriegelung der Türen nach Auslösung von Airbag oder Gurtstraffer</entry>
 <entry colsep="0" align="left" valign="middle">Attivazione automatica dei lampeggiatori d’emergenza e sbloccaggio delle portiere in seguito all’attivazione degli airbag o del pretensionatore</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Berg-Anfahr-Assistent</entry>
 <entry colsep="0" align="left" valign="middle">Assistenza alla partenza in salita</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</entry>
 <entry colsep="0" align="left" valign="middle">Controllo elettronico della stabilità Plus (ESP®Plus)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Fussgängerschutz</entry>
 <entry colsep="0" align="left" valign="middle">Protezione pedoni</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Dreipunkt-Sicherheitsgurte auf allen Plätzen, Gurtkraftbegrenzer, pyrotechnische Gurtschlossstraffer, vorn, doppelter Gurtstraffer, vorn und hinten, sowie Gurtwarner, vorn und hinten</entry>
 <entry colsep="0" align="left" valign="middle">Cintura di sicurezza a 3 punti per tutti i posti, limitatore di carico e pretensionatore pirotecnico, anteriore, nonché doppio pretensionatore, anteriore e posteriore e spia cintura non allacciata, anteriore e posteriore</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Kindersicherung in den hinteren Türen, manuell</entry>
 <entry colsep="0" align="left" valign="middle">Sicurezza bambini nelle portiere posteriori, manuale</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Passive 2-Wege-Kopfstützen, vorn, höheneinstellbar, 3 Kopfstützen, hinten,  höheneinstellbar</entry>
 <entry colsep="0" align="left" valign="middle">Poggiatesta anteriori passivi a 2 regolazioni, regolabili in altezza, 3 poggiatesta posteriori, regolabili in altezza</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Reifendruck-Kontrollsystem</entry>
 <entry colsep="0" align="left" valign="middle">Sistema di controllo pressione pneumatici</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Reifen-Reparatur-Set, inkl. Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</entry>
 <entry colsep="0" align="left" valign="middle">Set di riparazione pneumatici, incl. sigillante e compressore 12 Volt (senza cric)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Seitenaufprallschutz</entry>
 <entry colsep="0" align="left" valign="middle">Protezione anticollisione laterale</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Sicherheitslenksäule</entry>
 <entry colsep="0" align="left" valign="middle">Piantone dello sterzo collassabile</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Auskuppelnde Sicherheitspedale PRS (Pedal Release System)</entry>
 <entry colsep="0" align="left" valign="middle">Sistema di sganciamento dei pedali PRS (Pedal Release System)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Sporttaste (nur für Dynamic)</entry>
 <entry colsep="0" align="left" valign="middle">Tasto sport (solo per Dynamic)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">LED-Tagfahrlicht inkl. LED-Blinker, vorn, manuelle Scheinwerferleuchtweiten­regulierung</entry>
 <entry colsep="0" align="left" valign="middle">Luci di marcia diurna a LED incl. indicatori di direzione a LED, anteriori, regolazione manuale portata fari</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</entry>
 <entry colsep="0" align="left" valign="middle">Controllo della trazione con intervento di motore e freni (TCPlus)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">4 Verzurrösen im Gepäckraum</entry>
 <entry colsep="0" align="left" valign="middle">4 anelli di ancoraggio nel bagagliaio</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, inkl. Top Tether Befestigungsösen, hinten aussen</entry>
 <entry colsep="0" align="left" valign="middle">Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX con fissaggio Top Tether, posteriore laterale</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="center" valign="middle">Komfort- und sonstige Ausstattung</entry>
 <entry colsep="0" align="center" valign="middle">Comfort e ulteriori equipaggiamenti</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Ablagefächer: –  Ablagefach, in der Mittelkonsole –  Ablagefach, in Instrumententafel, Fahrerseite –  Handschuhfach –  Getränkehalter, in der Mittelkonsole –  Ablagefach in den vorderen Türen, geeignet für 1,5-Liter-Getränkeflaschen –  Ablagefach in den hinteren Türen, geeignet für 0,5-Liter-Getränkeflaschen –  Taschen an den Vordersitzrücken (nur für Dynamic und Excellence)</entry>
 <entry colsep="0" align="left" valign="middle">Vani portaoggetti: –  vano portaoggetti nella console centrale –  vano portaoggetti nella plancia degli strumenti, lato guida –  cassetto portaoggetti  –  portabibite nella console centrale –  vano nelle portiere anteriori, idoneo per bottiglie di 1,5 litri –  vano nelle portiere posteriori, idoneo per bottiglie di 0,5 litri –  tasche negli schienali dei sedili anteriori (solo per Dynamic ed Excellence)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Aussenspiegel: –  Elektrisch einstell- und beheizbar –  Manuell anklappbar –  Aussenspiegelgehäuse in Wagenfarbe</entry>
 <entry colsep="0" align="left" valign="middle">Retrovisori estern: –  regolabili e riscaldabili elettricamente –  ripiegabili manualmente –  alloggiamenti retrovisori in tinta carrozzeria</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Batterieentladeschutz</entry>
 <entry colsep="0" align="left" valign="middle">Dispositivo salvabatteria</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Dekorleisten, Sand, matt</entry>
 <entry colsep="0" align="left" valign="middle">Liste decorative, Sabbia, opaco</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</entry>
 <entry colsep="0" align="left" valign="middle">Filtro antiparticolato  (DPF), privo di manutenzione (per tutti i motori diesel)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Drehzahlmesser</entry>
 <entry colsep="0" align="left" valign="middle">Contagiri</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Elektrische Fensterheber vorn mit –  Tippfunktion –  Einklemmschutz</entry>
 <entry colsep="0" align="left" valign="middle">Alzacristalli, anteriori, elettrici, con –  funzione a impulso –  protezione antincastro</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Hochschaltempfehlung über Anzeige im Instrumentendisplay (nur in Verbindung mit manuellem Schaltgetriebe und Automatikgetriebe im manuellen Schaltmodus) </entry>
 <entry colsep="0" align="left" valign="middle">Spia cambio marcia nel quadro strumenti (solo con cambio manuale e cambio automatico in modalità manuale)</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table></Root><Root><table frame="topbot">
@@ -309,102 +309,102 @@
 <colspec colname="c2" colwidth="263.6220472440945pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry align="left" valign="middle">Innenraumbeleuchtung, vorn und hinten</entry>
 <entry colsep="0" align="left" valign="middle">Illuminazione abitacolo, anteriore e posteriore</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Instrumente, schwarz, mit Hochglanzchromringen, 3,5˝-Instrumentendisplay</entry>
 <entry colsep="0" align="left" valign="middle">Strumentazione, nera, con cornici cromate lucide, display 3,5˝ nel quadro strumenti</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Karosserie mit Vollverzinkung aller korrosionsgefährdeten Teile</entry>
 <entry colsep="0" align="left" valign="middle">Carrozzeria con zincatura di tutti i pezzi soggetti a corrosione </entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Klimaanlage mit –  Umluftschaltung, manuell –  Partikel- und Pollenfilter</entry>
 <entry colsep="0" align="left" valign="middle">Climatizzatore con –  funzione ricircolo dell’aria manuale –  filtro antipolline e antipolvere</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Komfortlenkrad</entry>
 <entry colsep="0" align="left" valign="middle">Volante comfort</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Komfortsitze mit Stoffpolster, Schwarz</entry>
 <entry colsep="0" align="left" valign="middle">Sedili comfort con rivestimento in tessuto, nero</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Lenksäule, höhen- und längseinstellbar</entry>
 <entry colsep="0" align="left" valign="middle">Piantone dello sterzo, regolabile in altezza e profondità</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Laderaumabdeckung</entry>
 <entry colsep="0" align="left" valign="middle">Copertura vano di carico</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Quickheat-Heizsystem (Serie für Dieselmotoren)</entry>
 <entry colsep="0" align="left" valign="middle">Sistema di riscaldamento rapido Quickheat (di serie per i motori diesel)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Scheinwerfer in Hochglanz-Chromoptik</entry>
 <entry colsep="0" align="left" valign="middle">Fari in look cromato lucido</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Service-Intervall-Anzeige</entry>
 <entry colsep="0" align="left" valign="middle">Indicatore intervallo di servizio</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Servolenkung, geschwindigkeitsabhängig</entry>
 <entry colsep="0" align="left" valign="middle">Servosterzo, in funzione della velocità </entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Sitze: –  Fahrersitz 6-fach einstellbar (Länge, Höhe) –  Beifahrersitz 4-fach einstellbar (Länge) –  Rücksitzlehne im Verhältnis 60:40 vorklappbar</entry>
 <entry colsep="0" align="left" valign="middle">Sedili: –  sedile conducente regolabile su 6 posizioni (lunghezza, altezza) –  sedile passeggero anteriore regolabile su 4 posizioni (lunghezza) –  schienali dei sedili posteriori ribaltabili in avanti 60:40</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Stahlfelgen 6 J x 15 mit Reifen 195/65 R15 (für 1.6 CDTI ecoFLEX [81 kW]  Stahlfelgen 6½ J x 16 mit Reifen 205/55 R16)</entry>
 <entry colsep="0" align="left" valign="middle">Cerchi in acciaio 6 J x 15 con pneumatici 195/65 R15 (per 1.6 CDTI ecoFLEX  [81 kW] cerchi in acciaio 6½ J x 16 con pneumatici 205/55 R16)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Steckdose, 12 Volt, in der Mittelkonsole und im Gepäckraum</entry>
 <entry colsep="0" align="left" valign="middle">Presa, 12 Volt nella console centrale e nel bagagliaio</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Make-up-Spiegel in Sonnenblende, nur Beifahrer</entry>
 <entry colsep="0" align="left" valign="middle">Specchietto di cortesia nell’aletta parasole, solo lato passeggero </entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Türaussengriffe in Wagenfarbe</entry>
 <entry colsep="0" align="left" valign="middle">Maniglie esterne delle portiere in tinta carrozzeria</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Dachreling, Schwarz</entry>
 <entry colsep="0" align="left" valign="middle">Barre tetto nere</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Auspuffendrohr, sichtbar, einfach für 1.6 BiTurbo CDTI, doppelt für 1.6 ECOTEC® Direct Injection Turbo</entry>
 <entry colsep="0" align="left" valign="middle">1 terminale di scarico, visibile, per 1.6 BiTurbo CDTI, 2 terminali di scarico, visibili, per 1.6 ECOTEC®  Direct Injection Turbo</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Wärmeschutzverglasung, grün getönt</entry>
 <entry colsep="0" align="left" valign="middle">Vetri atermici con sfumatura verde</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">Zentralverriegelung, inkl. Funkfernbedienung und Innenschalter</entry>
 <entry colsep="0" align="left" valign="middle">Chiusura centralizzata con telecomando e interruttore interno</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">2 Zündschlüssel, ein Zündschlüssel auf Aussenfarbe abgestimmt und klappbar</entry>
 <entry colsep="0" align="left" valign="middle">2 chiavi di accensione, una in tinta carrozzeria e ripiegabile</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="center" valign="middle">ecoFLEX-Motorisierung mit Start/Stop System</entry>
 <entry colsep="0" align="center" valign="middle">Motorizzazione ecoFLEX con sistema Start/Stop</entry>
-</row>
-<row>
+</item>
+<item>
 <entry align="left" valign="middle">–  ecoFLEX-Fahrassistent für 1.0 Direct Injection Turbo ecoFLEX und  1.6 CDTI ecoFLEX (81 kW) –  Verstärkter Anlasser  –  AGM-Hochleistungsbatterie  –  Reifen mit geringerem Rollwiderstand für 1.0 Direct Injection Turbo ecoFLEX (nur bei 15˝- und 16˝-Felgen) –  eco-Schalter zur Bedienung der Start/Stop-Funktion –  ecoFLEX-Emblem für 1.0 Direct Injection Turbo ecoFLEX –  Bremsenergie-Rückgewinnung –  Active Aero Shutter, Aerofinnen auf Heckklappe und Aerolippe am Frontstossfänger für 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</entry>
 <entry colsep="0" align="left" valign="middle">–  assistenza alla guida ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX e 1.6 CDTI ecoFLEX (81 kW) –  motorino davviamento rinforzato –  batteria ad alto rendimento AGM –  pneumatici a bassa resistenza al rotolamento per 1.0 Direct Injection Turbo ecoFLEX (solo per cerchi di 15˝ e 16˝) –  interruttore eco di comando della funzione Start/Stop –  logo ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX –  recupero dell’energia in frenata –  Active Aero Shutter, alette aerodinamiche sul portellone e spoiler aerodinamico sottoparaurti anteriore per 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table></Root></Root>

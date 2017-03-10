@@ -20,7 +20,7 @@
 <colspec colname="c9" colwidth="28.34645669291339pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry colsep="0" align="left" valign="middle"></entry>
 <entry align="left" valign="middle"></entry>
 <entry align="center" valign="middle">Astra</entry>
@@ -30,13 +30,13 @@
 <entry morerows="1" align="center" valign="middle">Paket-  Bestandteil Parte del  pacchetto</entry>
 <entry colsep="0" align="left" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle"></entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c2" align="center" valign="middle">Sicherheit</entry>
 <entry namest="c3" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
 <entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Sicurezza</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Diebstahlwarnanlage, inkl. –  Mechanische Verriegelung der Türen –  Ultraschall-Innenraumüberwachung –  Neigungsüberwachung zur Verhinderung von  Räder- und Fahrzeugdiebstahl –  Überwachung von Kofferraum, Türen und  Motorhaube –  Licht-Paket</entry>
 <entry align="center" valign="middle">UTJ</entry>
 <entry align="center" valign="middle">500.00</entry>
@@ -46,8 +46,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Impianto antifurto, incl. –  chiusura meccanica delle portiere –  sorveglianza dell’abitacolo a ultrasuoni –  sorveglianza dell’inclinazione per impedire il furto delle ruote e della vettura –  sorveglianza del bagagliaio, delle portiere e del cofano motore –  pacchetto luci</entry>
 <entry colsep="0" align="center" valign="middle">UTJ</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Nebelscheinwerfer</entry>
 <entry align="center" valign="middle">T3U</entry>
 <entry align="center" valign="middle">250.00</entry>
@@ -57,8 +57,8 @@
 <entry align="center" valign="middle">Business Pack  Connect 2 Pacchetto Business  Connect 2 Plus Pack Enjoy 1 Pacchetto Plus Enjoy 1</entry>
 <entry colsep="0" align="left" valign="middle">Fari fendinebbia</entry>
 <entry colsep="0" align="center" valign="middle">T3U</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Sicherheitsnetz für Gepäckraum, inkl. Vorrüstungen</entry>
 <entry align="center" valign="middle">AP9</entry>
 <entry align="center" valign="middle">170.00</entry>
@@ -68,14 +68,14 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Rete di sicurezza per il bagagliaio, incl. predisposizione</entry>
 <entry colsep="0" align="center" valign="middle">AP9</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c2" align="center" valign="middle">Felgen, Reifen, Fahrwerk</entry>
 <entry namest="c3" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
 <entry align="left" valign="middle"></entry>
 <entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Cerchi, pneumatici, telaio</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Stahlfelgen 6 J x 15  mit Reifen 195/65 R15 (nicht in Verbindung mit 1.6 CDTI ecoFLEX 81 kW  [110 PS])</entry>
 <entry align="center" valign="middle">RRL</entry>
 <entry align="center" valign="middle">S</entry>
@@ -85,8 +85,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Cerchi in acciaio 6 J x 15  con pneumatici 195/65 R15 (non con 1.6 CDTI ecoFLEX 81 kW [110 CV])</entry>
 <entry colsep="0" align="center" valign="middle">RRL</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" rowsep="0" align="left" valign="middle">Stahlfelgen 6½ J x 16  mit Reifen 205/55 R16</entry>
 <entry morerows="1" align="center" valign="middle">RRY</entry>
 <entry align="center" valign="middle">200.00</entry>
@@ -96,8 +96,8 @@
 <entry rowsep="0" align="center" valign="middle"></entry>
 <entry colsep="0" rowsep="0" align="left" valign="middle">Cerchi in acciaio 6½ J x 16  con pneumatici 205/55 R16</entry>
 <entry morerows="1" colsep="0" align="center" valign="middle">RRY</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">in Verbindung mit 1.6 CDTI ecoFLEX 81 kW (110 PS)</entry>
 <entry align="center" valign="middle">S</entry>
 <entry align="center" valign="middle">–</entry>
@@ -105,8 +105,8 @@
 <entry align="center" valign="middle">–</entry>
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">abbinati a 1.6 CDTI ecoFLEX 81 kW (110 CV)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" rowsep="0" align="left" valign="middle">Designfelgen 6½ J x 16  mit Reifen 205/55 R16</entry>
 <entry morerows="1" align="center" valign="middle">PWN</entry>
 <entry align="center" valign="middle">400.00</entry>
@@ -116,8 +116,8 @@
 <entry rowsep="0" align="center" valign="middle"></entry>
 <entry colsep="0" rowsep="0" align="left" valign="middle">Cerchi design 6½ J x 16  mit Reifen 205/55 R16</entry>
 <entry morerows="1" colsep="0" align="center" valign="middle">PWN</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">in Verbindung mit 1.6 CDTI ecoFLEX 81 kW (110 PS)</entry>
 <entry align="center" valign="middle">200.00</entry>
 <entry align="center" valign="middle">–</entry>
@@ -125,8 +125,8 @@
 <entry align="center" valign="middle">–</entry>
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">abbinati a 1.6 CDTI ecoFLEX 81 kW (110 CV)</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Leichtmetallfelgen 7 J x 16 mit Reifen 205/55 R16</entry>
 <entry align="center" valign="middle">Q03</entry>
 <entry align="center" valign="middle">–</entry>
@@ -136,8 +136,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7 J x 16 con pneumatici 205/55 R16</entry>
 <entry colsep="0" align="center" valign="middle">Q03</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Leichtmetallfelgen 7½ J x 17 mit Reifen 225/45 R17</entry>
 <entry align="center" valign="middle">RM5/SBo</entry>
 <entry align="center" valign="middle">–</entry>
@@ -147,8 +147,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7½ J x 17 con pneumatici 225/45 R17</entry>
 <entry colsep="0" align="center" valign="middle">RM5/ SBo</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Leichtmetallfelgen 7½ J x 17,  10 Speichen mit Reifen 225/45 R17</entry>
 <entry align="center" valign="middle">RM6</entry>
 <entry align="center" valign="middle">–</entry>
@@ -158,8 +158,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7½ J x 17,  10 razze con pneumatici 225/45 R17</entry>
 <entry colsep="0" align="center" valign="middle">RM6</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Leichtmetallfelgen 7½ J x 18,  10 Doppelspeichen mit Reifen 225/40 R18  (nicht in Verbindung mit 1.0 Direct Injection Turbo ecoFLEX/1.6 CDTI ecoFLEX 81 kW [110 PS])</entry>
 <entry align="center" valign="middle">5PC/ 5PB</entry>
 <entry align="center" valign="middle">–</entry>
@@ -169,8 +169,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Cerchi in lega leggera 7½ J x 18,  10 razze doppie con pneumatici 225/40 R18  (non con 1.0 Direct Injection Turbo ecoFLEX/1.6 CDTI ecoFLEX 81 kW [110 CV])</entry>
 <entry colsep="0" align="center" valign="middle">5PC/ 5PB</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">16˝-Reifen  mit geringem Rollwiderstand 205/55 R16 (nur in Verbindung mit 16˝-Felgen)</entry>
 <entry align="center" valign="middle">RLK</entry>
 <entry align="center" valign="middle">S</entry>
@@ -180,8 +180,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Pneumatici 16˝  a bassa resistenza al rotolamento 205/55 R16 (solo con cerchi da 16˝)</entry>
 <entry colsep="0" align="center" valign="middle">RLK</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Notlaufrad, Stahl, 4 J x 16</entry>
 <entry align="center" valign="middle">SJQ</entry>
 <entry align="center" valign="middle">100.00</entry>
@@ -191,8 +191,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Ruotino di scorta, acciaio, 4 J x 16</entry>
 <entry colsep="0" align="center" valign="middle">SJQ</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Reserverad vollwertig, Stahl, 6½ J x 16 (nur in Verbindung mit 16˝-Rädern)</entry>
 <entry align="center" valign="middle">RU9</entry>
 <entry align="center" valign="middle">100.00</entry>
@@ -202,14 +202,14 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Ruota di scorta, normale, acciaio,  6½ J x 16 (solo con ruote 16˝) </entry>
 <entry colsep="0" align="center" valign="middle">RU9</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c2" align="center" valign="middle">Infotainment</entry>
 <entry namest="c3" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
 <entry align="left" valign="middle"></entry>
 <entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Infotainment </entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Infotainment-Systeme allgemein: 4 x 20 Watt, 6 x 6 Senderspeicher, Dachantenne,  geschwindigkeitsabhängige Lautstärke- und Bass­regelung, UKW/MW, Autostore, RDS-EON, Stereo- Eingang für externe Audiogeräte (AUX-IN, Klinken­stecker 3,5 mm) sowie USB-Schnittstelle, Instrumentendisplay einfarbig grafisch</entry>
 <entry align="center" valign="middle"></entry>
 <entry align="center" valign="middle"></entry>
@@ -219,8 +219,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Sistemi d’infotainment in generale: 4 x 20 Watt, 6 x 6 emittenti programmabili, antenna sul tetto, regolazione volume e bassi in funzione della velocità, FM/MW, autostore, RDS-EON, entrata stereo per dispositivi audio esterni (AUX-IN, presa cinch  3,5 mm) e interfaccia USB, schermo nel quadro strumenti monocromatico, grafico</entry>
 <entry colsep="0" align="center" valign="middle"></entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Radio R 300 BT Graphic Info Display, 3-zeilig, 4 Lautsprecher  Bluetooth®-Konnektivität:  –  Freisprecheinrichtung mittels Mobiltelefon- kompatibler Bluetooth®-Schnittstelle –  Audiostreaming –  Nutzung der Sprachsteuerung des verbundenen Smartphones möglich</entry>
 <entry align="center" valign="middle">iP1</entry>
 <entry align="center" valign="middle">450.00</entry>
@@ -230,10 +230,10 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Radio R 300 BT Graphic Info Display su 3 righe, 4 altoparlanti  Connettività Bluetooth®: –  dispositivo viva voce tramite interfaccia Bluetooth® compatibile con il cellulare –  streaming audio –  possibilità di utilizzare i comandi vocali dello smartphone connesso</entry>
 <entry colsep="0" align="center" valign="middle">iP1</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">  –   nicht erhältlich / non disponibile	  S   Standard / di serie	Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table></Root><Root><table frame="none">
@@ -243,10 +243,10 @@
 <colspec colname="c2" colwidth="487.5590551181103pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry rowsep="0" align="center" valign="middle">3</entry>
 <entry colsep="0" rowsep="0" align="left" valign="middle">Pakete und Sonderausstattungen Pacchetti e opzioni</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table> </Root><Root><table frame="none">
@@ -256,10 +256,10 @@
 <colspec colname="c2" colwidth="39.68503937007874pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry rowsep="0" align="right" valign="middle">Pakete und Sonderausstattungen Pacchetti e opzioni</entry>
 <entry colsep="0" rowsep="0" align="center" valign="middle">3</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table> </Root><Root><table frame="none">
@@ -283,7 +283,7 @@
 <colspec colname="c9" colwidth="28.34645669291339pt">
 </colspec>
 <tbody>
-<row>
+<item>
 <entry colsep="0" align="left" valign="middle"></entry>
 <entry align="left" valign="middle"></entry>
 <entry align="center" valign="middle">Astra</entry>
@@ -293,13 +293,13 @@
 <entry morerows="1" align="center" valign="middle">Paket-  Bestandteil Parte del  pacchetto</entry>
 <entry colsep="0" align="left" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle"></entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c2" align="center" valign="middle">Infotainment</entry>
 <entry namest="c3" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
 <entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Infotainment </entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Radio R 4.0 IntelliLink 7˝-Touchscreen, Colour Info Display, Lenkradfernbedienung, 4 Lautsprecher (6 Lautsprecher bei Dynamic/Excellence), Doppeltuner  Bluetooth®-Konnektivität: –  Verbindung von mobilen Endgeräten (z. B.  Smartphone, Tablet-Computer, iPod, MP3-Player) –  Freisprecheinrichtung mittels Mobiltelefon- kompatibler Bluetooth®-Schnittstelle –  Audiostreaming –  Nutzung der Sprachsteuerung des verbundenen Smartphones möglich Bilder/Filme/Videos: –  AUX-IN und USB-Unterstützung für Audio- und  Videowiedergabe –  Darstellung von Videos per USB-Schnittstelle –  Filme/Videos und Bildschirmpräsentationen werden während der Fahrt abgeschaltet Smartphone-Integration via Apple CarPlay und  Android Auto: –  Anzeige und Bedienung ausgewählter Apps für Apple iPhones und Android Smartphones über  den Touchscreen</entry>
 <entry align="center" valign="middle">iOB</entry>
 <entry align="center" valign="middle">650.00</entry>
@@ -309,8 +309,8 @@
 <entry align="center" valign="middle">Business Pack  Connect 1  Pacchetto Business Connect 1</entry>
 <entry colsep="0" align="left" valign="middle">Radio R 4.0 IntelliLink Colour Info Display con schermo tattile 7˝, comandi  al volante, 4 altoparlanti (6 altoparlanti per Dynamic/ Excellence), doppio tuner  Connettività Bluetooth®: –  connessione con dispositivi portatili (ad es. smartphone, tablet, iPod, lettori MP3) –  dispositivo viva voce tramite interfaccia Bluetooth® compatibile con il cellulare –  streaming audio –  possibilità di utilizzare i comandi vocali dello smartphone connesso Foto/film/video: –  compatibilità AUX-IN e USB per la riproduzione audio e video –  riproduzione di video tramite interfaccia USB –  filmati, video e presentazioni sullo schermo vengono oscurati durante la guida Integrazione smartphone tramite Apple CarPlay  e Android Auto: –  visualizzazione e gestione di determinate app  per Apple iPhone e smartphone Android tramite schermo tattile</entry>
 <entry colsep="0" align="center" valign="middle">iOB</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Navi 900 IntelliLink (Generation 2)  mit 8˝-Touchscreen, Colour Info Display, Lenkradfernbedienung und Sprachsteuerung, 6 Lautsprechern,  4 x 20 Watt, Doppeltuner, USB-Schnittstelle, AUX-IN, individuellem Favoritenkonzept mit 60 Speicher­plätzen (z. B. Telefonnummern, Adressen, Radiosender), Videoübertragung per USB, Lederlenkrad, Dachantenne im Haifischflossendesign, unlackiert  (in Verb. mit OnStar in Wagenfarbe), Instrumentendisplay farbig 4,2˝ (für Motor 1.0 ECOTEC® Direct  Injection Turbo Easytronic® 3.0 sowie für Astra Basis und Enjoy einfarbig) Bluetooth®-Konnektivität: –  Verbindung von mobilen Endgeräten (z. B.  Smartphone, Tablet-Computer, iPod, MP3-Player) –  Freisprecheinrichtung mittels Mobiltelefon- kompatibler Bluetooth®-Schnittstelle –  SMS-Vorlesefunktion –  Audiostreaming –  Nutzung der Sprachsteuerung des verbundenen Smartphones möglich  Navigation: –  Navigationssystem mit integriertem Speicher –  Strassenkarte für über 30 europäische Länder –  Kartendarstellung in 2-D und 3-D –  GPS-Modul –  Dynamische Routenführung über Karten- und/oder Pfeildarstellung und Ansage –  Kartenanzeige von TMC-Meldungen –  Digitaler Reiseführer Filme/Videos: –  AUX-IN und USB-Unterstützung für Audio- und  Videowiedergabe –  Darstellung von Videos per USB-Schnittstelle –  Filme/Videos und Bildschirmpräsentationen werden während der Fahrt abgeschaltet Smartphone-Integration via Apple CarPlay und  Android Auto: –  Anzeige und Bedienung ausgewählter Apps für Apple iPhones und Android Smartphones über  den Touchscreen</entry>
 <entry align="center" valign="middle">i06</entry>
 <entry align="center" valign="middle">1’ 500.00</entry>
@@ -320,8 +320,8 @@
 <entry align="center" valign="middle">Plus Pack Enjoy 2  Pacchetto Plus Enjoy 2 Plus Pack Dynamic  &amp; Excellence  Pacchetto Plus  Dynamic &amp; Excellence</entry>
 <entry colsep="0" align="left" valign="middle">Navi 900 IntelliLink (2a generazione) Colour Info Display con schermo tattile 8˝, comandi al volante e comandi vocali, 6 altoparlanti, 4 x 20 Watt, doppio tuner, interfaccia USB, AUX-IN, impostazione personalizzata dei preferiti con 60 posizioni di memoria (ad es. numeri di telefono, indirizzi, emittenti radiofoniche), riproduzione video tramite USB, volante in pelle, antenna a pinna di squalo sul tetto, non verniciata (con OnStar in tinta carrozzeria), display a colori 4,2˝ nel quadro strumenti (per motore 1.0 ECOTEC® Direct Injection Turbo Easytronic® 3.0 e per Astra versione base e Enjoy monocromatico) Connettività Bluetooth®: –  connessione con dispositivi portatili (ad es. smartphone, tablet, iPod, lettori MP3) –  dispositivo viva voce tramite interfaccia Bluetooth® compatibile con il cellulare –  funzione lettura SMS –  streaming audio –  possibilità di utilizzare i comandi vocali dello smartphone connesso  Navigazione: –  sistema di navigazione con memoria integrata –  mappe per oltre 30 paesi europei –  visualizzazione mappe in 2D e 3D –  modulo GPS –  guida stradale dinamica tramite indicazione su mappa e/o con frecce e annunci vocali –  indicazioni sulla mappa delle segnalazioni TMC –  guida di viaggio digitale Film/video: –  compatibilità AUX-IN e USB per la riproduzione audio e video –  riproduzione di video tramite interfaccia USB –  filmati, video e presentazioni sullo schermo vengono oscurati durante la guida Integrazione smartphone tramite Apple CarPlay  e Android Auto: –  visualizzazione e gestione di determinate app  per Apple iPhone e smartphone Android tramite schermo tattile</entry>
 <entry colsep="0" align="center" valign="middle">i06</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">CD-Player  (nur in Verbindung mit Navi 900 IntelliLink) </entry>
 <entry align="center" valign="middle">TG5</entry>
 <entry align="center" valign="middle">150.00</entry>
@@ -331,8 +331,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Lettore CD  (solo con Navi 900 IntelliLink)</entry>
 <entry colsep="0" align="center" valign="middle">TG5</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Digitaler Radioempfang DAB/DAB+/DMB-R (Digital Audio System)  (nur in Verbindung mit Infotainment-Systemen)</entry>
 <entry align="center" valign="middle">U2Q</entry>
 <entry align="center" valign="middle">90.00</entry>
@@ -342,8 +342,8 @@
 <entry align="center" valign="middle">Business Pack  Connect 1  Pacchetto Business Connect 1</entry>
 <entry colsep="0" align="left" valign="middle">Ricezione radio digitale DAB/DAB+/DMB-R (sistema audio digitale)  (solo con sistemi d’infotainment)</entry>
 <entry colsep="0" align="center" valign="middle">U2Q</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">2 USB-Schnittstellen, hinten (nur Ladefunktion) (nur in Verbindung mit elektrischer Parkbremse)</entry>
 <entry align="center" valign="middle">USS</entry>
 <entry align="center" valign="middle">–</entry>
@@ -353,14 +353,14 @@
 <entry align="center" valign="middle">Leder-Paket  Pacchetto pelle Premium Leder-Paket  Pacchetto pelle  Premium Winter-Paket Premium Pacchetto inverno Premium</entry>
 <entry colsep="0" align="left" valign="middle">2 prese USB, dietro (solo funzione  ricarica) (solo con freno di stazionamento elettrico)</entry>
 <entry colsep="0" align="center" valign="middle">USS</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c2" align="center" valign="middle">Komfort- und sonstige Ausstattung</entry>
 <entry namest="c3" nameend="c6" align="center" valign="middle">mit MwSt. / IVA incl.</entry>
 <entry align="left" valign="middle"></entry>
 <entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Comfort e ulteriori equipaggiamenti</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Anhängerzugvorrichtung, abnehmbar, inkl. –  Anhänger-Stabilitätsprogramm </entry>
 <entry align="center" valign="middle">VQ9</entry>
 <entry align="center" valign="middle">800.00</entry>
@@ -370,8 +370,8 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Gancio di traino, amovibile incl. –  stabilizzatore del rimorchio</entry>
 <entry colsep="0" align="center" valign="middle">VQ9</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Aussenspiegel, elektrisch anklappbar</entry>
 <entry align="center" valign="middle">DWF</entry>
 <entry align="center" valign="middle">–</entry>
@@ -381,8 +381,8 @@
 <entry align="center" valign="middle">Assistenz-Paket  Pacchetto assistenza</entry>
 <entry colsep="0" align="left" valign="middle">Retrovisori esterni, ripiegabili elettricamente</entry>
 <entry colsep="0" align="center" valign="middle">DWF</entry>
-</row>
-<row>
+</item>
+<item>
 <entry colsep="0" align="left" valign="middle">Bordcomputer mit Check-Control System </entry>
 <entry align="center" valign="middle">Y67</entry>
 <entry align="center" valign="middle">150.00</entry>
@@ -392,10 +392,10 @@
 <entry align="center" valign="middle"></entry>
 <entry colsep="0" align="left" valign="middle">Computer di bordo con sistema Check Control</entry>
 <entry colsep="0" align="center" valign="middle">Y67</entry>
-</row>
-<row>
+</item>
+<item>
 <entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">  –   nicht erhältlich / non disponibile	  S   Standard / di serie	Empfohlene Nettopreise in CHF / Prezzi netti consigliati in CHF</entry>
-</row>
+</item>
 </tbody>
 </tgroup>
 </table></Root><Root>Opel Astra Sports Tourer </Root><Root>Opel Astra Sports Tourer </Root></Root>
