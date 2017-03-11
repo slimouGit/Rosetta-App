@@ -111,5 +111,7 @@ echo "</form>";
 
 mysqli_close($con);
 ?>
-</body>
-</html>
+<?php
+//include footer
+include "elements/footer.html";
+?>

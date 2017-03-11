@@ -31,7 +31,7 @@ include "include/db_connect.php";
     }
 </script>
 
-
+<div class='results'><!--in diesem container werden die Fragezeichen geloescht -->
 
 <?php
 
@@ -131,3 +131,5 @@ mysqli_close($con);
 //include footer
 include "elements/footer.html";
 ?>
+
+</div>
