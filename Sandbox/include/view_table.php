@@ -41,11 +41,19 @@ while ($dsatz = mysqli_fetch_assoc($res))
     "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</td>".
     "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</td>".
 
-    "<td class='columnCarline'>" .
-        "<a href='pl/".$dsatz["carline"]."_df.pdf' target='_blank'>" . $dsatz["carline"] . " (DF)" . "</a> <br/>" .
-        "<a href='pl/".$dsatz["carline"]."_di.pdf' target='_blank'>" . $dsatz["carline"] . " (DI)" ."</a> "
+    "<td class='columnCarline'>";
 
-        . "</td>".
+    $carlineArray = $_POST['carline'];
+
+    foreach ($carlineArray as $carKey){
+        echo $carKey;
+    }
+
+    echo
+        "<a href='pl/".$dsatz["carline"]."_df.pdf' target='_blank'>" . $dsatz["carline"] . " (DF)" . "</a> <br/>" .
+        "<a href='pl/".$dsatz["carline"]."_di.pdf' target='_blank'>" . $dsatz["carline"] . " (DI)" ."</a> ";
+
+     echo    "</td>".
     "<td>" .  "</td>".
     //"<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
     //$id = $dsatz["id"];
