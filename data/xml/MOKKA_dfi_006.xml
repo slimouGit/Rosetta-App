@@ -1106,9 +1106,9 @@
 
 
 <item>
-<de>Airbagsystem: Frontairbags, Fahrer und Beifahrer, Brust-Becken-Seitenairbags, Fahrer und Beifahrer, Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</de>
-<fr>Système d’airbags: Airbags frontaux conducteur et passager avant, Airbags latéraux thorax/bassin conducteur et passager avant, Airbags rideaux à l’avant et à l’arrière (airbag frontal et airbag latéral du passager avant désactivables manuellement) </fr>
-<it>Sistema di airbag: airbag frontali, conducente e passeggero, airbag laterali torace-bacino, conducente e passeggero, airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero anteriore disattivabile manualmente)</it>
+<de>Airbagsystem</de>       <de>Frontairbags Fahrer und Beifahrer</de>              <de> Brust-Becken-Seitenairbags</de>                                    <de>Fahrer und Beifahrer Kopfairbags, vorn und hinten aussen</de>                       <de>Front- und Seitenairbag, Beifahrer, manuell deaktivierbar</de>
+<fr>Système d’airbags</fr>  <fr>Airbags frontaux conducteur et passager avant</fr>  <fr>Airbags latéraux thorax/bassin conducteur et passager avant</fr>    <fr>Airbags rideaux à l’avant et à l’arrière</fr>                                       <fr>airbag frontal et airbag latéral du passager avant désactivables manuellement</fr>
+<it>Sistema di airbag</it>  <it>airbag frontali conducente e passeggero</it>        <it>airbag laterali torace-bacino</it>                                  <it>conducente e passeggero, airbag a tendina, anteriori e posteriori laterali</it>     <it>airbag frontale e laterale passeggero anteriore disattivabile manualmente</it>
 <rubrik>-</rubrik>
 <info>-</info>
 <carline>-</carline>
@@ -1116,9 +1116,9 @@
 
 
 <item>
-<de>Radio R300: 6 Lautsprecher, Graphic Info Display, Fernbedienung am Lenkrad, USB-Anschluss , Inkl. Bluetooth®-Schnittstelle</de>
-<fr>Radio R300: 6 haut-parleurs, Graphic Info Display, Commandes au volant, Port USB, Avec interface Bluetooth®</fr>
-<it>Radio R300: 6 altoparlanti, Graphic Info Display, comandi al volante, presa USB, incl. interfaccia Bluetooth®</it>
+    <de>Radio R300</de> <de>6 Lautsprecher</de>     <de>Graphic Info Display</de>   <de>Fernbedienung am Lenkrad</de>   <de>USB-Anschluss</de>  <de>Inkl. Bluetooth®-Schnittstelle</de>
+    <fr>Radio R300</fr> <fr>6 haut-parleurs</fr>    <fr>Graphic Info Display</fr>   <fr>Commandes au volant</fr>        <fr>Port USB</fr>       <fr>Avec interface Bluetooth®</fr>
+    <it>Radio R300</it> <it>6 altoparlanti</it>     <it>Graphic Info Display</it>   <it>comandi al volante</it>         <it>presa USB</it>      <it>incl. interfaccia Bluetooth®</it>
 <rubrik>-</rubrik>
 <info>-</info>
 <carline>-</carline>
@@ -1126,9 +1126,9 @@
 
 
 <item>
-<de>Komfort-Paket: Zwei-Zonen-Klimaautomatik, Armlehne, Fahrer, Ablagefach, unter dem Beifahrersitz</de>
-<fr>Pack Confort: Climatisation automatique bizone, Accoudoir côté conducteur, Rangement sous le siège du passager avant</fr>
-<it>Pacchetto comfort: climatizzatore automatico bizona, bracciolo per conducente, vano portaoggetti sotto il sedile passeggero anteriore</it>
+<de>Komfort-Paket</de>      <de>Zwei-Zonen-Klimaautomatik</de>          <de>Armlehne, Fahrer, Ablagefacht, unter dem Beifahrersitz</de>
+<fr>Pack Confort</fr>       <fr>Climatisation automatique bizone</fr>   <fr>Accoudoir côté conducteur, Rangement sous le siège du passager avant</fr>
+<it>Pacchetto comfort</it>  <it>climatizzatore automatico bizona</it>   <it>bracciolo per conducente, vano portaoggetti sotto il sedile passeggero anteriore</it>
 <rubrik>-</rubrik>
 <info>-</info>
 <carline>-</carline>
@@ -1136,9 +1136,9 @@
 
 
 <item>
-<de>Sicht-Paket: Regensensor, Innenspiegel, automatisch abblendend mit, Konsolenbeleuchtung, Make-up-Spiegel, beleuchtet, Automatisches Abblendlicht mit Tunnelerkennung, Automatische Leuchtweitenregulierung</de>
-<fr>Pack Visibilité: Capteur de pluie, Rétroviseur intérieur avec dispositif antiéblouissement, console éclairée, Miroir de courtoisie éclairé, Feux de route automatiques avec reconnaissance des tunnels, Ajustement automatique de la portée des phares</fr>
-<it>Pacchetto visibilità: sensore pioggia, retrovisore interno, anabbagliante automatico con illuminazione console, specchietto di cortesia illuminato, fari anabbaglianti automatici con riconoscimento galleria, regolazione automatica portata fari</it>
+<de>Sicht-Paket</de>            <de>Regensensor</de>        <de>Innenspiegel, automatisch abblendend mit, Konsolenbeleuchtung, Make-up-Spiegel, beleuchtet, Automatisches Abblendlicht mit Tunnelerkennung</de><de>Automatische Leuchtweitenregulierung</de>
+<fr>Pack Visibilité</fr>        <fr>Capteur de pluie</fr>   <fr>Rétroviseur intérieur avec dispositif antiéblouissement, console éclairée, Miroir de courtoisie éclairé, Feux de route automatiques avec reconnaissance des tunnels</fr><fr>Ajustement automatique de la portée des phares</fr>
+<it>Pacchetto visibilità</it>   <it>sensore pioggia</it>    <it>retrovisore interno, anabbagliante automatico con illuminazione console, specchietto di cortesia illuminato, fari anabbaglianti automatici con riconoscimento galleria</it><it>regolazione automatica portata fari</it>
 <rubrik>-</rubrik>
 <info>-</info>
 <carline>-</carline>
@@ -1146,9 +1146,9 @@
 
 
 <item>
-<de>Kommunikationspaket R 4.0 IntelliLink: Radio, 6 Lautsprecher, Farbdisplay in der Mittelkonsole, Fernbedienung am Lenkrad, Bluetooth®-Mobiltelefon-Anschluss, Audiostreaming, USB-Anschluss, Bordcomputer erweitert, DAB+ Empfänger, Kompatibel mit Apple CarPlayTM  und Android AutoTM</de>
-<fr>Pack Communication R 4.0 IntelliLink: Radio, 6 haut-parleurs, Ecran couleur dans la console centrale, Commandes au volant, Raccordement Bluetooth® pour téléphone mobile, Audiostreaming, Port USB, Ordinateur de bord étendu, Récepteur DAB+, Compatible avec Apple CarPlayTM  et Android AutoTM</fr>
-<it>Pacchetto comunicazione IntelliLink 600: radio, 6 altoparlanti, schermo a colori nella console centrale, comandi al volante, connessione Bluetooth® per cellulare, streaming audio, presa USB, computer di bordo,  funzionalità estesa, ricezione DAB+, compatibile con Apple CarPlayTM  e Android AutoTM</it>
+    <de>Kommunikationspaket R 4.0 IntelliLink</de>      <de>Radio</de>  <de>6 Lautsprecher</de>     <de>Farbdisplay in der Mittelkonsole</de>           <de>Fernbedienung am Lenkrad, Bluetooth®-Mobiltelefon-Anschluss, Audiostreaming, USB-Anschluss, Bordcomputer erweitert, DAB+ Empfänger, Kompatibel mit Apple CarPlayTM  und Android AutoTM</de>
+    <fr>Pack Communication R 4.0 IntelliLink</fr>       <fr>Radio</fr>  <fr>6 haut-parleurs</fr>    <fr>Ecran couleur dans la console centrale</fr>     <fr>Commandes au volant, Raccordement Bluetooth® pour téléphone mobile, Audiostreaming, Port USB, Ordinateur de bord étendu, Récepteur DAB+, Compatible avec Apple CarPlayTM  et Android AutoTM</fr>
+    <it>Pacchetto comunicazione IntelliLink 600</it>    <it>radio</it>  <it>6 altoparlanti</it>     <it>schermo a colori nella console centrale</it>    <it>comandi al volante, connessione Bluetooth® per cellulare, streaming audio, presa USB, computer di bordo,  funzionalità estesa, ricezione DAB+, compatibile con Apple CarPlayTM  e Android AutoTM</it>
 <rubrik>-</rubrik>
 <info>-</info>
 <carline>-</carline>
