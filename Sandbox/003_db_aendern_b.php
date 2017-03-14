@@ -118,8 +118,8 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
     //print_r( $carline);
     if (in_array("General", $carline)) { ?> <input type="checkbox" value="General" name="carline[]" checked >General<?php }  else { ?> <input type="checkbox" value="General" name="carline[]"> <span class="carline">General</span><?php }
     if (in_array("ADAM", $carline)) { ?> <input type="checkbox" value="ADAM" name="carline[]" checked >ADAM<?php }  else { ?> <input type="checkbox" value="ADAM" name="carline[]"> ADAM<?php }
-    if (in_array("Astra HB5", $carline)) { ?> <input type="checkbox" value="Astra HB5" name="carline[]" checked >Astra HB5<?php }  else { ?> <input type="checkbox" value="Astra HB5" name="carline[]"> Astra HB5<?php }
-    if (in_array("Astra ST", $carline)) { ?> <input type="checkbox" value="Astra ST" name="carline[]" checked >Astra ST<?php }  else { ?> <input type="checkbox" value="Astra ST" name="carline[]"> Astra ST<?php }
+    if (in_array("AstraHB5", $carline)) { ?> <input type="checkbox" value="AstraHB5" name="carline[]" checked >AstraHB5<?php }  else { ?> <input type="checkbox" value="AstraHB5" name="carline[]"> AstraHB5<?php }
+    if (in_array("AstraST", $carline)) { ?> <input type="checkbox" value="AstraST" name="carline[]" checked >AstraST<?php }  else { ?> <input type="checkbox" value="AstraST" name="carline[]"> AstraST<?php }
     if (in_array("Corsa", $carline)) { ?> <input type="checkbox" value="Corsa" name="carline[]" checked > Corsa<?php }  else { ?> <input type="checkbox" value="Corsa" name="carline[]">  Corsa<?php }
     if (in_array("GTC/OPC", $carline)) { ?> <input type="checkbox" value="GTC/OPC" name="carline[]" checked > GTC/OPC <?php }  else { ?> <input type="checkbox" value="GTC/OPC" name="carline[]">  GTC/OPC <?php }
     if (in_array("KARL", $carline)) { ?> <input type="checkbox" value="Karl" name="carline[]" checked >KARL<?php }  else { ?> <input type="checkbox" value="Karl" name="carline[]"> KARL<?php }

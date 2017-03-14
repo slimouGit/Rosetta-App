@@ -86,10 +86,10 @@ include "include/db_connect.php";
         <input name="carline[]" type="checkbox" value="ADAM">ADAM
     </label>
     <label class="checkbox-inline">
-        <input name="carline[]" type="checkbox" value="Astra HB5">Astra HB5
+        <input name="carline[]" type="checkbox" value="AstraHB5">AstraHB5
     </label>
     <label class="checkbox-inline">
-        <input name="carline[]" type="checkbox" value="Astra ST">Astra ST
+        <input name="carline[]" type="checkbox" value="AstraST">AstraST
     </label>
     <label class="checkbox-inline">
         <input name="carline[]" type="checkbox" value="Corsa">Corsa

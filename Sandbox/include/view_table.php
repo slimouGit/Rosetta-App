@@ -43,15 +43,17 @@ while ($dsatz = mysqli_fetch_assoc($res))
 
     "<td class='columnCarline'>";
 
-    $carlineArray = $_POST['carline'];
+    //$carlineArray = $_POST['carline'];
+    $carlineArray = $dsatz["carline"];
+    //var_dump($carlineArray);
+    $carlineArray = explode(', ',$carlineArray);
+    //var_dump($carlineArray);
 
     foreach ($carlineArray as $carKey){
-        echo $carKey;
+        echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
+        echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
     }
 
-    echo
-        "<a href='pl/".$dsatz["carline"]."_df.pdf' target='_blank'>" . $dsatz["carline"] . " (DF)" . "</a> <br/>" .
-        "<a href='pl/".$dsatz["carline"]."_di.pdf' target='_blank'>" . $dsatz["carline"] . " (DI)" ."</a> ";
 
      echo    "</td>".
     "<td>" .  "</td>".
