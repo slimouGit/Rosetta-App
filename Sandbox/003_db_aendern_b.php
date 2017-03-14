@@ -29,13 +29,15 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
 
     echo "<form action = '003_db_aendern_c.php' method = 'post'>";
 
+    echo "<div class='results'><!--in diesem container werden die Fragezeichen geloescht -->";
+
     echo "<p><input type='hidden' name='id' value='" . $_POST['update'] . "' /> </p>";
     echo "
                     <div class=\"row\">
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Deutsch</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"dts\" value='" . utf8_encode($dsatz["de"]) . "'>
+                                <input class=\"form-control \" name=\"dts\" value='" . utf8_encode($dsatz["de"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -157,6 +159,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                 
                 ";
 
+    echo "</div>";
 
     echo "</form>";
 
