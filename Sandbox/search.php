@@ -42,4 +42,6 @@ while ($row = $query->fetch_assoc()) {
 
 //return json data
 echo json_encode($data);
+
+
 ?>

@@ -19,7 +19,8 @@ include "include/input_check.php";
 <script>
     $(function() {
         $( "#skills" ).autocomplete({
-            source: 'search.php'
+            source: 'search.php',
+            minLength:3
         });
     });
 </script>
@@ -33,7 +34,7 @@ include "include/input_check.php";
 
 <!--Suchformular-->
 <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post">
-
+    <div class='results'><!--in diesem container werden die Fragezeichen geloescht -->
     <div class="row">
         <div class="form-group "> <!--ui-widget-->
             <label for="skills" class="col-sm-2 control-label">Was soll gesucht werden</label>
@@ -42,6 +43,7 @@ include "include/input_check.php";
             </div>
             <div class="col-sm-4 errorContainer"><span class="error"><?php echo $search_Err;?></span></div>
         </div>
+    </div>
     </div>
 
     <div class="row">
@@ -102,11 +104,17 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
         $cat = 'de, fr, it, rubrik, info, carline';
     }
 
+    $searchWord = str_replace("\n", "XXXX", $_POST["search"]);
+
+    var_dump($searchWord);
+
     $sql = "select * from rosetta_data";
-    $sql .= " where CONCAT_WS('',$cat) like '%" . $_POST["search"] . "%' ";
+    $sql .= " where CONCAT_WS('',$cat) like '%" . $searchWord . "%' ";
+
+
 
     //Variable, um Resultat in Ausgabe Tabelle (view_table) zu highlighten
-    $searchWord = $_POST["search"] ;
+    //$searchWord = $_POST["search"] ;
 
 
 
