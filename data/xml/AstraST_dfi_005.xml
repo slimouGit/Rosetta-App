@@ -1,4 +1,4 @@
-<?xml version=“1.0“ encoding=“UTF-8“ standalone=“yes“?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <items>
     <item>
@@ -608,6 +608,9 @@
         <de>Dachreling, Schwarz</de>
         <fr>Barres de toit, noires</fr>
         <it>Barre tetto nere</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>AstraST</carline>
     </item>
 
     <item>
@@ -658,7 +661,7 @@
     <item>
         <de>ecoFLEX-Fahrassistent für 1.0 Direct Injection Turbo ecoFLEX und  1.6 CDTI ecoFLEX (81 kW)</de>
         <fr>Assistant ecoFLEX sur les modèles 1.0 Direct Injection Turbo ecoFLEX et  1.6 CDTI ecoFLEX (81 kW)</fr>
-        <it>assistenza alla guida ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX e 1.6 CDTI ecoFLEX (81 kW)</fr>
+        <it>assistenza alla guida ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX e 1.6 CDTI ecoFLEX (81 kW)</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
@@ -810,7 +813,7 @@
 
     <item>
         <de>Sicht-Paket, u. a. mit Regensensor</de>
-        <de>Pack Visibilité, entre autres avec capteur de pluie</de>
+        <fr>Pack Visibilité, entre autres avec capteur de pluie</fr>
         <it>Pacchetto visibilità, ad es. con sensore pioggia</it>
         <rubrik>-</rubrik>
         <info>-</info>
