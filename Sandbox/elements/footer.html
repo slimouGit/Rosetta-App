@@ -12,10 +12,10 @@
     function deleteQuestionMarks() {
         //Script sorgt dafuer, dass alle Fragezeichen auf der Seite geloescht werden
         $('.results').each(function() {
-            setInterval(function(){
+            //setInterval(function(){
                 this.innerHTML= this.innerHTML.replace(/\?/g, ' ');
                 this.innerHTML= this.innerHTML.replace( /\s\s+/g, ' ');
-            }, 1000);
+            //}, 1000);
         });
     }
 
