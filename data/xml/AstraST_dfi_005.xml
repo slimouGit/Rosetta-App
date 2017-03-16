@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
 
 <items>
     <item>
@@ -119,8 +120,8 @@
     </item>
 
     <item>
-        <de>Passive 2-Wege-Kopfstützen, vorn, höheneinstellbar, 3 Kopfstützen, hinten,  höheneinstellbar</de>
-        <fr>Appuis-tête passifs à 2 voies à l’avant, réglables en hauteur, 3 appuis-tête  à l’arrière, réglables en hauteur</fr>
+        <de>Passive 2-Wege-Kopfstützen, vorn, höheneinstellbar, 3 Kopfstützen, hinten, höheneinstellbar</de>
+        <fr>Appuis-tête passifs à 2 voies à l’avant, réglables en hauteur, 3 appuis-tête à l’arrière, réglables en hauteur</fr>
         <it>Poggiatesta anteriori passivi a 2 regolazioni, regolabili in altezza, 3 poggiatesta posteriori, regolabili in altezza</it>
         <rubrik>-</rubrik>
         <info>-</info>
@@ -416,9 +417,9 @@
     </item>
 
     <item>
-        <de>Instrumente, schwarz, mit Hochglanzchromringen, 3,5˝-Instrumentendisplay</de>
-        <fr>Instruments noirs, bordés de cercles en chrome brillant, avec écran 3,5˝</fr>
-        <it>Strumentazione, nera, con cornici cromate lucide, display 3,5˝ nel quadro strumenti</it>
+        <de>Instrumente, schwarz, mit Hochglanzchromringen, 3,5”-Instrumentendisplay</de>
+        <fr>Instruments noirs, bordés de cercles en chrome brillant, avec écran 3,5”</fr>
+        <it>Strumentazione, nera, con cornici cromate lucide, display 3,5” nel quadro strumenti</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
@@ -568,10 +569,11 @@
         <carline>AstraST</carline>
     </item>
 
+
     <item>
-        <de>Stahlfelgen 6 J x 15 mit Reifen 195/65 R15 (für 1.6 CDTI ecoFLEX [81 kW]  Stahlfelgen 6½ J x 16 mit Reifen 205/55 R16)</de>
-        <fr>Jantes en acier 6 J x 15 avec pneus 195/65 R15 (jantes en acier 6½ J x 16 avec pneus 205/55 R16 sur les modèles 1.6 CDTI ecoFLEX [81 kW])</fr>
-        <it>Cerchi in acciaio 6 J x 15 con pneumatici 195/65 R15 (per 1.6 CDTI ecoFLEX  [81 kW] cerchi in acciaio 6½ J x 16 con pneumatici 205/55 R16)</it>
+        <de>Stahlfelgen 6 J x 15 mit Reifen 195/65 R15 (für 1.6 CDTI ecoFLEX [81 kW] Stahlfelgen 6½ J x 16 mit Reifen 205/55 R16)</de>
+        <fr>Jantes en acier 6 J x 15 avec pneus 195/65 R15 (jantes en acier 6½ J x 16 avec pneus 205/55 R16 sur les modèles 1.6 CDTI ecoFLEX [81 kW])</fr>
+        <it>Cerchi in acciaio 6 J x 15 con pneumatici 195/65 R15 (per 1.6 CDTI ecoFLEX [81 kW] cerchi in acciaio 6½ J x 16 con pneumatici 205/55 R16)</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
@@ -659,8 +661,8 @@
     </item>
 
     <item>
-        <de>ecoFLEX-Fahrassistent für 1.0 Direct Injection Turbo ecoFLEX und  1.6 CDTI ecoFLEX (81 kW)</de>
-        <fr>Assistant ecoFLEX sur les modèles 1.0 Direct Injection Turbo ecoFLEX et  1.6 CDTI ecoFLEX (81 kW)</fr>
+        <de>ecoFLEX-Fahrassistent für 1.0 Direct Injection Turbo ecoFLEX und 1.6 CDTI ecoFLEX (81 kW)</de>
+        <fr>Assistant ecoFLEX sur les modèles 1.0 Direct Injection Turbo ecoFLEX et 1.6 CDTI ecoFLEX (81 kW)</fr>
         <it>assistenza alla guida ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX e 1.6 CDTI ecoFLEX (81 kW)</it>
         <rubrik>-</rubrik>
         <info>-</info>
@@ -686,9 +688,9 @@
     </item>
 
     <item>
-        <de>Reifen mit geringerem Rollwiderstand für 1.0 Direct Injection Turbo ecoFLEX (nur bei 15˝- und 16˝-Felgen)</de>
-        <fr>Pneus avec faible résistance au roulement sur les modèles 1.0  Direct Injection Turbo ecoFLEX (seulement avec jantes 15˝ et 16˝) </fr>
-        <it>pneumatici a bassa resistenza al rotolamento per 1.0 Direct Injection Turbo ecoFLEX (solo per cerchi di 15˝ e 16˝)</it>
+        <de>Reifen mit geringerem Rollwiderstand für 1.0 Direct Injection Turbo ecoFLEX (nur bei 15”- und 16”-Felgen)</de>
+        <fr>Pneus avec faible résistance au roulement sur les modèles 1.0 Direct Injection Turbo ecoFLEX (seulement avec jantes 15” et 16”) </fr>
+        <it>pneumatici a bassa resistenza al rotolamento per 1.0 Direct Injection Turbo ecoFLEX (solo per cerchi di 15” e 16”)</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
@@ -723,7 +725,7 @@
 
     <item>
         <de>Active Aero Shutter, Aerofinnen auf Heckklappe und Aerolippe am Frontstossfänger für 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</de>
-        <fr>Active Aero Shutter, éléments aérodynamiques sur le hayon et lèvre aérodynamique sur le pare-chocs avant sur les modèles  1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</fr>
+        <fr>Active Aero Shutter, éléments aérodynamiques sur le hayon et lèvre aérodynamique sur le pare-chocs avant sur les modèles 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</fr>
         <it>Active Aero Shutter, alette aerodinamiche sul portellone e spoiler aerodinamico sottoparaurti anteriore per 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</it>
         <rubrik>-</rubrik>
         <info>-</info>
@@ -740,18 +742,18 @@
     </item>
 
     <item>
-        <de>Sensorgesteuerte Heckklappe, elektrisch,  per Fussgeste</de>
+        <de>Sensorgesteuerte Heckklappe, elektrisch, per Fussgeste</de>
         <fr>Hayon commandé par capteur et geste du pied, électrique</fr>
-        <it>Portellone posteriore comandato mediante  sensore</it>
+        <it>Portellone posteriore comandato mediante sensore</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
     </item>
 
     <item>
-        <de>Schlüsselloses Schliess- und Startsystem  «Keyless Open»</de>
+        <de>Schlüsselloses Schliess- und Startsystem «Keyless Open»</de>
         <fr>Système «Keyless Open» de verrouillage et de démarrage sans clé</fr>
-        <it>Sistema di apertura e avvio senza chiave  «Keyless Open»</it>
+        <it>Sistema di apertura e avvio senza chiave «Keyless Open»</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
@@ -812,8 +814,8 @@
     </item>
 
     <item>
-        <de>Sicht-Paket, u. a. mit Regensensor</de>
-        <fr>Pack Visibilité, entre autres avec capteur de pluie</fr>
+        <de>Sicht-Paket, u. a. mit Regensensor</de>
+        <de>Pack Visibilité, entre autres avec capteur de pluie</de>
         <it>Pacchetto visibilità, ad es. con sensore pioggia</it>
         <rubrik>-</rubrik>
         <info>-</info>
@@ -821,7 +823,7 @@
     </item>
 
     <item>
-        <de>Fensterzierleisten, oberhalb Chrom,  B-Säule in Hochglanzschwarz</de>
+        <de>Fensterzierleisten, oberhalb Chrom, B-Säule in Hochglanzschwarz</de>
         <fr>Baguettes décoratives chromées en dessus des vitres, montant B en noir brillant</fr>
         <it>Modanature decorative finestrini, profilo superiore cromato, montanti B in nero lucido</it>
         <rubrik>-</rubrik>
@@ -884,9 +886,9 @@
     </item>
 
     <item>
-        <de>Radio R 4.0 IntelliLink, 7˝-Touchscreen, Colour Info Display, Freisprecheinrichtung via Bluetooth®-Schnittstelle, DAB+</de>
-        <fr>Radio R 4.0 IntelliLink, écran tactile Colour Info Display 7˝, kit mains-libres via interface Bluetooth®, DAB+</fr>
-        <it>Radio R 4.0 IntelliLink, schermo tattile 7˝, Colour Info Display, dispositivo vivavoce tramite interfaccia Bluetooth®, DAB+</it>
+        <de>Radio R 4.0 IntelliLink, 7”-Touchscreen, Colour Info Display, Freisprecheinrichtung via Bluetooth®-Schnittstelle, DAB+</de>
+        <fr>Radio R 4.0 IntelliLink, écran tactile Colour Info Display 7”, kit mains-libres via interface Bluetooth®, DAB+</fr>
+        <it>Radio R 4.0 IntelliLink, schermo tattile 7”, Colour Info Display, dispositivo vivavoce tramite interfaccia Bluetooth®, DAB+</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
@@ -966,7 +968,7 @@
 
     <item>
         <de>Klimaanlage, inkl. Fussraumheizung, hinten</de>
-        <fr>Climatisation avec chauffage pour les pieds  à l’arrière</fr>
+        <fr>Climatisation avec chauffage pour les pieds à l’arrière</fr>
         <it>Climatizzatore con riscaldamento pozzetto piedi posteriore</it>
         <rubrik>-</rubrik>
         <info>-</info>
@@ -983,27 +985,27 @@
     </item>
 
     <item>
-        <de>Designfelgen 6½ J x 16 mit Reifen 205/55 R16</de>
-        <fr>Jantes design 6½ J x 16 avec pneus  205/55 R16</fr>
-        <it>Cerchi design 6½ J x 16 con pneumatici 205/55 R16</it>
+        <de>Designfelgen 6½ J x 16 mit Reifen 205/55 R16</de>
+        <fr>Jantes design 6½ J x 16 avec pneus 205/55 R16</fr>
+        <it>Cerchi design 6½ J x 16 con pneumatici 205/55 R16</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
     </item>
 
     <item>
-        <de>Leichtmetallfelgen 7½ J x 17 mit Reifen 225/45 R17</de>
-        <fr>Jantes en alliage léger 7½ J x 17 avec pneus  225/45 R17</fr>
-        <it>Cerchi in lega leggera 7½ J x 17 con pneumatici 225/45 R17</it>
+        <de>Leichtmetallfelgen 7½ J x 17 mit Reifen 225/45 R17</de>
+        <fr>Jantes en alliage léger 7½ J x 17 avec pneus 225/45 R17</fr>
+        <it>Cerchi in lega leggera 7½ J x 17 con pneumatici 225/45 R17</it>
         <rubrik>-</rubrik>
         <info>-</info>
         <carline>AstraST</carline>
     </item>
 
     <item>
-        <de>OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfall­service, Fahrzeug-Diagnose,  auto­matische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem  einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur  kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
-        <fr>OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d’assistance automatique en cas d’accident, point d’accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d’itinéraire (disponible uniquement sur les véhicules équipés d’un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l’Europe, Opel OnStar vous permet d’accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les  12 premiers mois. A l’exception des prestations liées au point d’accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d’accès Wi-Fi, veuillez  consulter le site www.opel-onstar.ch</fr>
-        <it>OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d’incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo,  diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all’anno a un servizio di prim’ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</it>
+        <de>OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfall­service, Fahrzeug-Diagnose, auto­matische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
+        <fr>OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d’assistance automatique en cas d’accident, point d’accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d’itinéraire (disponible uniquement sur les véhicules équipés d’un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l’Europe, Opel OnStar vous permet d’accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les 12 premiers mois. A l’exception des prestations liées au point d’accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d’accès Wi-Fi, veuillez consulter le site www.opel-onstar.ch</fr>
+        <it>OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d’incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all’anno a un servizio di prim’ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</it>
         <rubrik>-</rubrik>
         <info>Fußnote</info>
         <carline>AstraST</carline>
