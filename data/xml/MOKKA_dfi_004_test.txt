@@ -1,0 +1,1970 @@
+﻿<?xml version=“1.0“ encoding=“UTF-8“ standalone=“yes“?>
+
+<items>
+
+    <item>
+        <de>Benzin</de>
+        <fr>Essence</fr>
+        <it>Benzina</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Motor</de>
+        <fr>Moteur</fr>
+        <it>Motore</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Getriebe</de>
+        <fr>Boîte</fr>
+        <it>Cambio</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>mit MwSt.</de>
+        <fr>TVA incl.</fr>
+        <it>IVA incl.</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.6  ECOTEC® Start/Stop 85 kW/115 PS</de>
+        <fr>1.6  ECOTEC® Start/Stop 85 kW/115 ch</fr>
+        <it>1.6  ECOTEC® Start/Stop 85 kW/115 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>5-Gang manuell</de>
+        <fr>manuelle 5 vitesses</fr>
+        <it>manuale 5 marce</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.4 Turbo ECOTEC® Start/Stop 103 kW/140 PS</de>
+        <fr>1.4 Turbo ECOTEC® Start/Stop 103 kW/140 ch</fr>
+        <it>1.4 Turbo ECOTEC® Start/Stop 103 kW/140 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Gang manuell</de>
+        <fr>manuelle 6 vitesses</fr>
+        <it>manuale 6 marce</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.4 Turbo ECOTEC® 103 kW/140 PS</de>
+        <fr>1.4 Turbo ECOTEC® 103 kW/140 ch</fr>
+        <it>1.4 Turbo ECOTEC® 103 kW/140 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Stufen-Automatik</de>
+        <fr>automatique 6 rapports</fr>
+        <it>automatico 6 rapporti</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.4 Turbo 4x4 ECOTEC® Start/Stop 103 kW/140 PS</de>
+        <fr>1.4 Turbo 4x4 ECOTEC® Start/Stop 103 kW/140 ch</fr>
+        <it>1.4 Turbo 4x4 ECOTEC® Start/Stop 103 kW/140 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Gang manuell  4x4 Allradantrieb</de>
+        <fr>manuelle 6 vitesses traction intégrale 4x4</fr>
+        <it>manuale 6 marce trazione integrale 4x4</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.4 Turbo 4x4 ECOTEC® Start/Stop 112 kW/152 PS</de>
+        <fr>1.4 Turbo 4x4 ECOTEC® Start/Stop 112 kW/152 ch</fr>
+        <it>1.4 Turbo 4x4 ECOTEC® Start/Stop 112 kW/152 CV</it>
+        <it>1.4 Turbo 4x4 ECOTEC® Start/Stop 112 kW/152 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Stufen-Automatik 4x4 Allradantrieb</de>
+        <fr>automatique 6 rapports traction intégrale 4x4</fr>
+        <it>automatico 6 rapporti trazione integrale 4x4</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.6 CDTI DPF ecoFlex Start/Stop 100 kW/136 PS</de>
+        <fr>1.6 CDTI DPF ecoFlex Start/Stop 100 kW/136 ch</fr>
+        <it>1.6 CDTI DPF ecoFlex Start/Stop 100 kW/136 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Gang manuell</de>
+        <fr>manuelle 6 vitesses</fr>
+        <it>manuale 6 marce</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+    <item>
+        <de>1.6 CDTI DPF ECOTEC® 100 kW/136 PS</de>
+        <fr>1.6 CDTI DPF ECOTEC® 100 kW/136 ch</fr>
+        <it>1.6 CDTI DPF ECOTEC® 100 kW/136 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Stufen-Automatik</de>
+        <fr>automatique 6 rapports</fr>
+        <it>automatico 6 rapporti</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1.6 CDTI DPF 4x4 ECOTEC® Start/Stop 100 kW/136 PS</de>
+        <fr>1.6 CDTI DPF 4x4 ECOTEC® Start/Stop 100 kW/136 ch</fr>
+        <it>1.6 CDTI DPF 4x4 ECOTEC® Start/Stop 100 kW/136 CV</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6-Gang manuell 4x4 Allradantrieb</de>
+        <fr>manuelle 6 vitesses traction intégrale 4x4</fr>
+        <it>manuale 6 marce trazione integrale 4x4</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Empfohlene Nettopreise in CHF</de>
+        <fr>Prix nets conseillés en CHF</fr>
+        <it>Prezzi netti consigliati in CHF</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Wartungsfreier Dieselpartikelfilter (DPF) serienmässig.</de>
+        <fr>De série, filtre à particules diesel (DPF) sans entretien.</fr>
+        <it>Filtro antiparticolato senza manutenzione (DPF) di serie.</it>
+        <rubrik>Benzin Motor</rubrik>
+        <info>Fußnote</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Serienausstattung</de>
+        <fr> Principaux équipements de série</fr>
+        <it>Equipaggiamento di serie essenziale</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fensterzierleiste verchromt</de>
+        <fr>Baguettes décoratives de vitres chromées</fr>
+        <it>Modanature finestrini cromate</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>«Keyless Open» – schlüsselloses Öffnen und Starten</de>
+        <fr>«Keyless Open» – déverrouillage et démarrage sans clé</fr>
+        <it>«Keyless Open» – apertura e avvio senza chiave</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Solar Protect®-Wärmeschutzverglasung,  im Fond, stark getönt</de>
+        <fr>Vitres athermiques Solar Protect® à l’arrière, foncées</fr>
+        <it>Vetri atermici Solar Protect®, posteriori oscurati</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Elektro-Paket</de>
+        <fr>Pack Electro</fr>
+        <it>Pacchetto elettro</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Park-Pilot, Einparkhilfe vorn und hinten</de>
+        <fr>Aide au stationnement Park-Pilot à l’avant et à l’arrière</fr>
+        <it>Park-Pilot, assistenza al parcheggio anteriore e posteriore</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Elektro-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Aussenspiegel, elektrisch einstell-, anklapp- und beheizbar</de>
+        <fr>Rétroviseurs extérieurs chauffants, réglables et rabattables électriquement</fr>
+        <it>retrovisori esterni, regolabili, ripiegabili  e riscaldabili elettricamente</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Elektro-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Steckdose, 12 Volt, an der Rückseite der Mittelkonsole</de>
+        <fr>Prise 12 V à l’arrière de la console centrale</fr>
+        <it>presa 12 Volt, parte posteriore console centrale</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Elektro-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Komfort-Paket</de>
+        <fr>Pack Confort</fr>
+        <it>Pacchetto comfort</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Komfort-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Zwei-Zonen-Klimaautomatik</de>
+        <fr>Climatisation automatique bizone</fr>
+        <it>climatizzatore automatico bizona</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Komfort-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Armlehne, Fahrer</de>
+        <fr>Accoudoir côté conducteur</fr>
+        <it>bracciolo per conducente</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Komfort-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Ablagefach, unter dem Beifahrersitz</de>
+        <fr>Rangement sous le siège du passager avant</fr>
+        <it>vano portaoggetti sotto il sedile passeggero anteriore</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Komfort-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Sicht-Paket</de>
+        <fr>Pack Visibilité</fr>
+        <it>Pacchetto visibilità</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sicht-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Regensensor</de>
+        <fr>Capteur de pluie</fr>
+        <it>sensore pioggia</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sicht-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Innenspiegel, automatisch abblendend mit Konsolenbeleuchtung</de>
+        <fr>Rétroviseur intérieur avec dispositif antiéblouissement, console éclairée</fr>
+        <it>retrovisore interno, anabbagliante automatico con illuminazione console</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sicht-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Make-up-Spiegel, beleuchtet </de>
+        <fr>Miroir de courtoisie éclairé</fr>
+        <it>specchietto di cortesia illuminato</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sicht-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Automatisches Abblendlicht mit Tunnelerkennung</de>
+        <fr>Feux de route automatiques avec reconnaissance des tunnels</fr>
+        <it>fari anabbaglianti automatici con riconoscimento galleria</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sicht-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Automatische Leuchtweitenregulierung</de>
+        <fr>Ajustement automatique de la portée des phares</fr>
+        <it>regolazione automatica portata fari</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sicht-Paket</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>3. Kopfstütze hinten</de>
+        <fr>3e appui-tête réglable à l’arrière</fr>
+        <it>3° poggiatesta centrale posteriore</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Mittelarmlehne hinten</de>
+        <fr>Accoudoir central arrière</fr>
+        <it>Bracciolo centrale posteriore</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Klimaanlage</de>
+        <fr>Climatisation</fr>
+        <it>Climatizzatore</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Zwei-Zonen-Klimaautomatik</de>
+        <fr>Climatisation automatique bizone</fr>
+        <it>Climatizzatore automatico bizona</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Radio R300</de>
+        <fr>Radio R300</fr>
+        <it>Radio R300</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Radio R300</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6 Lautsprecher</de>
+        <fr>6 haut-parleurs</fr>
+        <it>6 altoparlanti</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Radio R300</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Graphic Info Display</de>
+        <fr>Graphic Info Display</fr>
+        <it>Graphic Info Display</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Radio R300</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fernbedienung am Lenkrad</de>
+        <fr>Commandes au volant</fr>
+        <it>comandi al volante</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Radio R300</info>
+        <carline>MokkaX</carline>-</item>
+
+    <item>
+        <de>USB-Anschluss</de>
+        <fr>Port USB</fr>
+        <it>presa USB</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Radio R300</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Inkl. Bluetooth®-Schnittstelle</de>
+        <fr>Avec interface Bluetooth®</fr>
+        <it>incl. interfaccia Bluetooth®</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Radio R300</info>
+        <carline>MokkaX</carline>-</item>
+
+    <item>
+        <de>Kommunikationspaket R 4.0 IntelliLink</de>
+        <fr>Pack Communication R 4.0 IntelliLink</fr>
+        <it>Pacchetto comunicazione IntelliLink 600</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Radio</de>
+        <fr>Radio</fr>
+        <it>radio</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>6 Lautsprecher </de>
+        <fr>6 haut-parleurs</fr>
+        <it>6 altoparlanti</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Farbdisplay in der Mittelkonsole</de>
+        <fr>Ecran couleur dans la console centrale</fr>
+        <it>schermo a colori nella console centrale </it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fernbedienung am Lenkrad</de>
+        <fr>Commandes au volant</fr>
+        <it>comandi al volante</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bluetooth®-Mobiltelefon-Anschluss</de>
+        <fr>Raccordement Bluetooth® pour téléphone mobile</fr>
+        <it>connessione Bluetooth® per cellulare</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Audiostreaming</de>
+        <fr>Audiostreaming</fr>
+        <it>streaming audio </it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+    <item>
+        <de>USB-Anschluss</de>
+        <fr>Port USB</fr>
+        <it>presa USB</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bordcomputer erweitert </de>
+        <fr>Ordinateur de bord étendu</fr>
+        <it>computer di bordo,  funzionalità estesa</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>DAB+ Empfänger</de>
+        <fr>Récepteur DAB+</fr>
+        <it>ricezione DAB+</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kompatibel mit Apple CarPlayTM  und Android AutoTM</de>
+        <fr>Compatible avec Apple CarPlayTM  et Android AutoTM</fr>
+        <it>compatibile con Apple CarPlayTM  e Android AutoTM</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Kommunikationspaket R 4.0 IntelliLink</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+    <item>
+        <de>Fernlicht-Assistent</de>
+        <fr>Assistant feux de route</fr>
+        <it>Fari abbaglianti automatici</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fensterheber, elektrisch, vorn</de>
+        <fr>Lève-glaces, électriques à l’avant</fr>
+        <it>Alzacristalli, elettrici, anteriori</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fensterheber, elektrisch, vorn und hinten</de>
+        <fr>Lève-glaces, électriques à l’avant et à l’arrière</fr>
+        <it>Alzacristalli, elettrici, anteriori e posteriori</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>3-Speichen-Lenkrad</de>
+        <fr>Volant à 3 branches</fr>
+        <it>Volante a 3 razze</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+    <item>
+        <de>Lederlenkrad, inkl. Fernbedienung</de>
+        <fr>Volant gainé cuir, avec commandes audio</fr>
+        <it>Volante in pelle, con comandi al volante</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Türaussengriffe in Wagenfarbe</de>
+        <fr>Poignées extérieures, couleur carrosserie</fr>
+        <it>Maniglie esterne delle porte in tinta carrozzeria</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Stoffpolster</de>
+        <fr>Sièges habillés de tissu</fr>
+        <it>Rivestimento in tessuto</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Polster-Kombination Stoff/Ledernachbildung Morrocana</de>
+        <fr>Sièges habillés d’une combinaison tissu/Morrocana (simili cuir)</fr>
+        <it>Rivestimento in tessuto/similpelle Morrocana</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>4 Stahlfelgen 6½ J x 16  mit Reifen 205/70 R16</de>
+        <fr>4 jantes en acier 6½ J x 16  avec pneus 205/70 R16</fr>
+        <it>4 cerchi in acciaio 6½ J x 16  con pneumatici 205/70 R16</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>4 Leichtmetallfelgen 7 J x 17  im 5-Speichen-Design  mit Reifen 215/60 R17 (Sterling Silber)</de>
+        <fr>4 jantes en alliage léger 7 J x 17 à 5 branches avec pneus 215/60 R17  (Argent Sterling)</fr>
+        <it>4 cerchi in lega leggera 7 J x 17  in design a 5 razze con pneumatici  215/60 R17 (argento Sterling)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Airbagsystem</de>
+        <fr>Système d’airbags</fr>
+        <it>Sistema di airbag</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Airbagsystem</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Frontairbags, Fahrer und Beifahrer</de>
+        <fr>Airbags frontaux conducteur et passager avant</fr>
+        <it>airbag frontali, conducente e passeggero</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Airbagsystem</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>Brust-Becken-Seitenairbags, Fahrer und Beifahrer </de>
+        <fr>Airbags latéraux thorax/bassin conducteur et passager avant</fr>
+        <it>airbag laterali torace-bacino, conducente e passeggero</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Airbagsystem</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kopfairbags, vorn und hinten aussen (Front- und Seitenairbag, Beifahrer, manuell deaktivierbar)</de>
+        <fr>Airbags rideaux à l’avant et à l’arrière (airbag frontal et airbag latéral du passager avant désactivables manuellement)</fr>
+        <it>airbag a tendina, anteriori e posteriori laterali (airbag frontale e laterale passeggero anteriore disattivabile manualmente)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Airbagsystem</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</de>
+        <fr>Système antiblocage (ABS) avec contrôle du freinage en courbe et assistant de freinage</fr>
+        <it>Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Berg-Abfahr- (nur 4x4-Varianten) und  Berg-Anfahr-Assistent</de>
+        <fr>Assistant de descente (versions 4x4 uniquement)  et assistant de démarrage en côte</fr>
+        <it>Assistenza in discesa (solo varianti 4x4) e assistenza alla partenza in salita</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</de>
+        <fr>Programme électronique de stabilité Plus (ESP®Plus)</fr>
+        <it>Controllo elettronico della stabilità Plus (ESP®Plus)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfallservice, Fahrzeug-Diagnose, automatische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
+        <fr>OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d’assistance automatique en cas d’accident, point d’accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d’itinéraire (disponible uniquement sur les véhicules équipés d’un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l’Europe, Opel OnStar vous permet d’accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les 12 premiers mois. A l’exception des prestations liées au point d’accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d’accès Wi-Fi, veuillez consulter le site www.opel-onstar.ch</fr>
+        <it>OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d’incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all’anno a un servizio di prim’ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Fusßnote</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Serienausstattung</de>
+        <fr> Principaux équipements de série</fr>
+        <it>Equipaggiamento di serie essenziale</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+    <item>
+        <de>Geschwindigkeitsregler</de>
+        <fr>Régulateur de vitesse</fr>
+        <it>Regolatore di velocità</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Seitenaufprallschutz</de>
+        <fr>Renforts de protection latérale</fr>
+        <it>Protezione anticollisione laterale</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>LED-Tagfahrlicht</de>
+        <fr>Eclairage de jour LED</fr>
+        <it>Luci di marcia diurna a LED</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</de>
+        <fr>Contrôle de la traction intervenant sur le moteur et les freins (TCPlus)</fr>
+        <it>Controllo della trazione con intervento di motore  e freni (TCPlus)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, hinten aussen</de>
+        <fr>Pré-équipement pour système ISOFIX de fixation des sièges enfant, places arrière extérieures</fr>
+        <it>Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX, sedili laterali posteriori</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Aussenspiegel</de>
+        <fr>Rétroviseurs extérieurs</fr>
+        <it>Retrovisori esterni</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Aussenspiegel</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Elektrisch einstell- und beheizbar</de>
+        <fr>Chauffants et réglables électriquement</fr>
+        <it>regolabili e riscaldabili elettricamente</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Aussenspiegel</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Aussenspiegelgehäuse in Wagenfarbe</de>
+        <fr>Boîtiers couleur carrosserie</fr>
+        <it>alloggiamenti retrovisori in tinta carrozzeria</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Aussenspiegel</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>Bordcomputer</de>
+        <fr>Ordinateur de bord</fr>
+        <it>Computer di bordo</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</de>
+        <fr>Filtre à particules diesel (DPF), sans entretien  (sur tous les moteurs diesel)</fr>
+        <it>Filtro antiparticolato (DPF), privo di manutenzione  (per tutte le motorizzazioni diesel)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Drehzahlmesser</de>
+        <fr>Compte-tours</fr>
+        <it>Contagiri</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Hochschaltempfehlung im Drehzahlmesser (nur in Verbindung mit manuellem Schaltgetriebe)</de>
+        <fr>Indicateur de changement de rapport dans  le compte-tours (seulement pour boîtes manuelles)</fr>
+        <it>Spia cambio marcia nel contagiri (solo con cambio manuale)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Lenksäule, höhen- und längseinstellbar</de>
+        <fr>Colonne de direction, réglable en hauteur et  en profondeur</fr>
+        <it>Piantone dello sterzo, regolabile in altezza e profondità</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Reifen-Reparatur-Set, mit Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</de>
+        <fr>Kit de réparation des pneus, avec produit d’étanchéité et compresseur 12 V (sans cric)</fr>
+        <it>Set di riparazione pneumatici, con sigillante  e compressore 12 volt (senza cric)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Servolenkung, geschwindigkeitsabhängig</de>
+        <fr>Direction assistée, asservie à la vitesse</fr>
+        <it>Servosterzo, in funzione della velocità</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Sitze</de>
+        <fr>Sièges</fr>
+        <it>Sedili</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sitze</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>Rücksitzlehne im Verhältnis 60:40 vorklappbar</de>
+        <fr>Dossier arrière rabattable en deux parties asymétriques (60:40)</fr>
+        <it>schienali sedili posteriori ribaltabili in avanti 60:40</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sitze</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Sitzhöheneinstellung, Fahrer</de>
+        <fr>Siège conducteur réglable en hauteur</fr>
+        <it>sedile conducente regolabile in altezza</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>Sitze</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Zentralverriegelung, inkl. Heckklappen- und Tankdeckelentriegelung</de>
+        <fr>Verrouillage central, avec déverrouillage du hayon et de la trappe à carburant</fr>
+        <it>Chiusura centralizzata, incl. sbloccaggio portellone  e portello serbatoio</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Zündschlüssel mit Einsatz in Schwarz, Weiss, Grau oder Rot (von der Aussenfarbe abhängig)</de>
+        <fr>Clé de contact avec insert en noir, blanc, gris ou rouge (selon la couleur extérieure)1</fr>
+        <it>Chiave di accensione con inserto nero, bianco, grigio o rosso (a seconda del colore esterno)</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Reifendruck-Kontrollsystem</de>
+        <fr>Système de contrôle de la pression des pneus</fr>
+        <it>Sistema di controllo pressione pneumatici</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Für nähere Informationen wenden Sie sich bitte an Ihren Opel Partner.</de>
+        <fr> Pour plus d’informations, veuillez contacter votre partenaire Opel.</fr>
+        <it>Rivolgetevi al vostro partner Opel per ulteriori informazioni.</it>
+        <rubrik>Serienausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Pakete</de>
+        <fr>Packs</fr>
+        <it>Pacchetti</it>
+        <rubrik>Pakete</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Enjoy Komfort-Paket  im Wert von CHF 2’050.00  Sicht-Paket, Komfort-Paket, Winter-Paket,  Elektro-Paket</de>
+        <fr>Pack Enjoy Confort  d’une valeur de CHF 2’050.00 Pack Visibilité, Pack Confort, Pack Hiver, Pack Electro</fr>
+        <it>Pacchetto comfort Enjoy  del valore di CHF 2’050.00 Pacchetto visibilità, pacchetto comfort, pacchetto inverno,  pacchetto elettro</it>
+        <rubrik>Pakete</rubrik>
+        <info>LP42</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>in Verbindung mit Kommunikations- und Parkpaket  IntelliLink 950</de>
+        <fr>en combinaison avec le Pack Communication et Stationnement  IntelliLink 950</fr>
+        <it>abbinato a pacchetto comunicazione e parcheggio IntelliLink 950</it>
+        <rubrik>Pakete</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Excellence Premium-Paket  im Wert von CHF 2’500.00 Ergonomiesitz mit Gütesiegel AGR Fahrer- und Beifahrerseite,  Winter-Paket, adaptives Sicherheitslichtsystem AFL mit LED-Technik</de>
+        <fr>Pack Excellence Premium d’une valeur  de CHF 2’500.00 Sièges ergonomiques labellisés AGR à l’avant, Pack Hiver, système d’éclairage adaptatif AFL avec technique LED</fr>
+        <it>Pacchetto Excellence Premium  del valore di CHF 2’500.00 Sedile conducente e passeggero ergonomico con sigillo di qualità AGR, pacchetto inverno, sistema di fari adattivi AFL con tecnica a LED</it>
+        <rubrik>Pakete</rubrik>
+        <info>LP44</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Mit Lederausstattung</de>
+        <fr>avec intérieur cuir</fr>
+        <it>con rivestimento in pelle</it>
+        <rubrik>Pakete</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Elektro-Paket Park-Pilot, Einparkhilfe vorn und hinten, Aussenspiegel  elektrisch einstell-, anklapp- und beheizbar, Steckdose,  12 Volt, an der Rückseite der Mittelkonsole</de>
+        <fr>Pack Electro Aide au stationnement Park-Pilot à l’avant et à l’arrière, rétroviseurs extérieurs chauffants, réglables et rabattables électriquement, prise 12 V à l’arrière de la console centrale</fr>
+        <it>Pacchetto elettro Park-Pilot, assistenza al parcheggio anteriore e posteriore, retrovisori esterni regolabili, ripiegabili e riscaldabili elettricamente, presa 12 volt nella parte posteriore della console centrale</it>
+        <rubrik>Pakete</rubrik>
+        <info>oGD</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Komfort-Paket  Ablagefach unter Beifahrersitz  (nicht mit Lederausstattung), Armlehne Fahrersitz,  Zwei-Zonen-Klimaautomatik</de>
+        <fr>Pack Confort  Rangement sous le siège du passager avant (sauf avec intérieur cuir), accoudoir côté conducteur, climatisation automatique bizone</fr>
+        <it>Pacchetto comfort  Cassetto portaoggetti sotto il sedile passeggero anteriore (non con equipaggiamento in pelle), bracciolo per sedile conducente, climatizzatore automatico bizona</it>
+        <rubrik>Pakete</rubrik>
+        <info>oBY</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Enjoy  Komfort-Paket</de>
+        <fr>Pack Enjoy  Confort</fr>
+        <it>Pacchetto comfort Enjoy</it>
+        <rubrik>Pakete</rubrik>
+        <info>oBY</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Winter-Paket Sitzheizung vorn, Lenkradheizung</de>
+        <fr>Pack Hiver Sièges avant chauffants, volant chauffant</fr>
+        <it>Pacchetto inverno Sedili anteriori e volante riscaldabili</it>
+        <rubrik>Pakete</rubrik>
+        <info>oCK</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Lederausstattung</de>
+        <fr>Intérieur cuir</fr>
+        <it>Equipaggiamento  in pelle</it>
+        <rubrik>Pakete</rubrik>
+        <info>oCK</info>
+        <carline>MokkaX</carline>
+    </item>
+    <item>
+        <de>Sicht-Paket Regensensor für Frontscheibenwischer, automatisch abblendbarer Innenspiegel, indirekte Beleuchtung der Mittelkonsole,  Make-up-Spiegel beleuchtet, automatisches Abblendlicht mit Tunnelerkennung, automatische Leuchtweitenregulierung</de>
+        <fr>Pack Visibilité Capteur de pluie à l’avant, rétroviseur intérieur avec dispositif  antiéblouissement, éclairage indirect de la console centrale, miroir de courtoisie éclairé, feux de route automatiques avec reconnaissance des tunnels, ajustement automatique de la portée des phares</fr>
+        <it>Pacchetto visibilità  Sensore pioggia per tergicristalli anteriori, retrovisore interno anabbagliante, illuminazione indiretta console centrale, specchietto di cortesia illuminato, fari anabbaglianti automatici  con riconoscimento galleria, regolazione automatica portata fari</it>
+        <rubrik>Pakete</rubrik>
+        <info>oCP</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Adaptives  Sicherheitslicht­system AFL mit  LED-Technik</de>
+        <fr>Système d’éclairage adaptatif AFL avec  technique LED</fr>
+        <it>Sistema di fari adattivi AFL con tecnica a LED</it>
+        <rubrik>Pakete</rubrik>
+        <info>oCP</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Lederausstattung Dunkelgrau/Kaffeebraun, Ergonomiesitz mit Gütesiegel AGR  Fahrer- und Beifahrerseite, Sitzheizung vorn, Lenkradheizung</de>
+        <fr>Intérieur cuir  Gris foncé/Brun Café, sièges ergonomiques labellisés AGR  à l’avant, chauffants, volant chauffant</fr>
+        <it>Equipaggiamento in pelle  Grigio scuro/Marrone Caffè, sedile conducente e passeggero ergonomico con sigillo di qualità AGR, sedili anteriori e volante riscaldabili</it>
+        <rubrik>Pakete</rubrik>
+        <info>TAJQ/TAR5</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Sicherheit</de>
+        <fr>Sécurité</fr>
+        <it>Sicurezza</it>
+        <rubrik>Sicherheit</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Adaptives Sicherheitslichtsystem AFL mit  LED-Technik LED-Scheinwerfer mit variabler Lichtverteilung für Stadt,  Spielstrasse, Landstrasse, Autobahn und Schlechtwetter, inkl.  aktiver Kurvenlichtfunktion, Abbiegelichtfunktion, Fernlicht­assistent, Tag­fahrlicht mit LED-Technik, Scheinwerfer-Reinigungsanlage, LED-Heckleuchten, Sicht-Paket</de>
+        <fr>Système d’éclairage adaptatif AFL avec technique LED Phares au LED avec répartition variable de la lumière pour  la ville, les zones de rencontre, la campagne, les autoroutes et  le mauvais temps, éclairage dynamique des virages, éclairage statique des carrefours, assistant feux de route, éclairage de jour à LED, lave-phares, feux arrière LED, Pack Visibilité</fr>
+        <it>Sistema di fari adattivi AFL con tecnica a LED Fari LED con proiezione variabile del fascio luminoso, differenziata per città, strada di quartiere, fuori località, autostrada e maltempo, incl. illuminazione dinamica della curva, luce statica di svolta, fari abbaglianti automatici, luci di marcia diurna con tecnica a LED, impianto lavafari, luci posteriori a LED, pacchetto visibilità</it>
+        <rubrik>Sicherheit</rubrik>
+        <info>OBJ</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Cosmo Premium- Paket</de>
+        <fr>Pack Cosmo  Premium</fr>
+        <it>Pacchetto Cosmo Premium</it>
+        <rubrik>Sicherheit</rubrik>
+        <info>OBJ</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Opel Eye Frontkamera, inkl. Abstandswarner, Kollisionswarner vorn,  Verkehrsschilderkennung, Spurhalteassistent,  Fahrer-Instrumentendisplay (nur mit T95 oder LP44)</de>
+        <fr>Caméra avant Opel Eye, incl. indicateur de distance, avertisseur de collision frontale,  reconnaissance des panneaux de signalisation, assistant de maintien de voie, écran entre les instruments (seulement avec T95 ou LP44)</fr>
+        <it>Telecamera frontale Opel Eye, incl.  avvisatore di distanza e allerta collisione frontale con rico­nosci- ­mento segnali stradali e assistenza al mantenimento di corsia,  visualizzazione nel display quadro strumenti (solo con T95 o LP44)</it>
+        <rubrik>Sicherheit</rubrik>
+        <info>oBT</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+    <item>
+        <de>Fahrwerk und Felgen</de>
+        <fr>Train de roulement et jantes</fr>
+        <it>Autotelaio e cerchi</it>
+        <rubrik>Fahrwerk und Felgen</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Reserverad 16˝, Stahl, inkl. Wagenheber (nicht mit FlexFix®-Fahrradträgersystem)</de>
+        <fr>Roue de secours 16˝, en acier, avec cric (pas avec porte-vélo FlexFix®)</fr>
+        <it>Ruota di scorta 16˝, in acciaio, cric incl. (non con portabici FlexFix®)</it>
+        <rubrik>Fahrwerk und Felgen</rubrik>
+        <info>RVZ</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Leichtmetallfelgen 7 J x 18,  im 5-Speichen-Design,  mit Reifen 215/55 R18</de>
+        <fr>Jantes en alliage léger 7 J x 18  à 5 branches avec pneus 215/55 R18</fr>
+        <it>Cerchi in lega leggera 7 J x 18,  in design a 5 razze, con pneumatici 215/55 R18</it>
+        <rubrik>Fahrwerk und Felgen</rubrik>
+        <info>Ri6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Leichtmetallfelgen 7 J x 18,  im Vielspeichen-Design,  mit Reifen 215/55 R18</de>
+        <fr>Jantes en alliage léger 7 J x 18  à branches multiples avec pneus 215/55 R18</fr>
+        <it>Cerchi in lega leggera 7 J x 18,  in design multirazze, con pneumatici 215/55 R18</it>
+        <rubrik>Fahrwerk und Felgen</rubrik>
+        <info>RV8</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Leichtmetallfelgen 7 J x 18,  im Vielspeichen-Design,  mit Reifen 215/55 R18</de>
+        <fr>Jantes en alliage léger 7 J x 18  à branches multiples avec pneus 215/55 R18</fr>
+        <it>Cerchi in lega leggera 7 J x 18,  in design multirazze, con pneumatici 215/55 R18</it>
+        <rubrik>Fahrwerk und Felgen</rubrik>
+        <info>RRU</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Leichtmetallfelgen 7½ J x 19,  im 5-Doppelspeichen-Design mit Reifen 225/45 R19</de>
+        <fr>Jantes en alliage léger 7½ J x 19  à 5 branches doubles avec pneus 225/45 R19</fr>
+        <it>Cerchi in lega leggera 7½ J x 19, in design a 5 razze doppie  con pneumatici 225/45 R19</it>
+        <rubrik>Fahrwerk und Felgen</rubrik>
+        <info>RT7</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>nicht erhältlich</de>
+        <fr>non disponible</fr>
+        <it>non disponibile</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Standard</de>
+        <fr>de série</fr>
+        <it>di serie</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>Empfohlene Nettopreise in CHF</de>
+        <fr>Prix nets conseillés en CHF</fr>
+        <it>Prezzi netti consigliati in CHF</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Paket-  Bestandteil</de>
+        <fr>Compris  dans le Pack</fr>
+        <it>Parte del  pacchetto</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Infotainment</de>
+        <fr>Infotainment</fr>
+        <it>Infotainment</it>
+        <rubrik>Infotainment</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Infotainment-Systeme allgemein</de>
+        <fr>Tous systèmes d’Infotainment</fr>
+        <it>Sistemi di Infotainment in generale</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Infotainment-Systeme allgemein</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Dachantenne</de>
+        <fr>Antenne de toit</fr>
+        <it>antenna sul tetto</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Infotainment-Systeme allgemein</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>geschwindigkeitsabhängige Lautstärke- und  Bassregelung</de>
+        <fr>réglage du volume et des basses en fonction  de la vitesse</fr>
+        <it>regolazione del volume e dei bassi in funzione  della velocità</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Infotainment-Systeme allgemein</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>UKW/MW</de>
+        <fr>OUC/OM</fr>
+        <it>FM/MW</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Infotainment-Systeme allgemein</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Auto Store</de>
+        <fr>Auto Store</fr>
+        <it>Auto Store</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Infotainment-Systeme allgemein</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>RDS-EON</de>
+        <fr>RDS-EON</fr>
+        <it>RDS-EON</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Infotainment-Systeme allgemein</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Radio R300 6 Lautsprecher</de>
+        <fr>Radio R300 6 haut-parleurs</fr>
+        <it>Radio R300 6 altoparlanti</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iP1</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fernbedienung am Lenkrad</de>
+        <fr>commandes au volant</fr>
+        <it>comandi al volante</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iP1</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Graphic Info Display</de>
+        <fr>Graphic Info Display</fr>
+        <it>Graphic  Info Display</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iP1</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>USB-Anschluss</de>
+        <fr>port USB</fr>
+        <it>presa USB</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iP1</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bluetooth®-Schnittstelle</de>
+        <fr>interface Bluetooth®</fr>
+        <it>interfaccia Bluetooth®</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iP1</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kommunikationspaket IntelliLink R 4.0</de>
+        <fr>Pack Communication IntelliLink R 4.0</fr>
+        <it>Pacchetto comunicazione IntelliLink R 4.0</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Radio</de>
+        <fr>Radio</fr>
+        <it>radio</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>6 Lautsprecher</de>
+        <fr>6 haut-parleurs</fr>
+        <it>6 altoparlanti</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Farbdisplay in der Mittelkonsole</de>
+        <fr>Ecran couleur dans la console centrale</fr>
+        <it>schermo a colori nella console centrale</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fernbedienung am Lenkrad</de>
+        <fr>Commandes au volant</fr>
+        <it>comandi al volante</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bluetooth®-Mobiltelefon-Anschluss</de>
+        <fr>Raccordement Bluetooth® pour téléphone mobile</fr>
+        <it>connessione Bluetooth® per cellulare</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Audiostreaming</de>
+        <fr>Audiostreaming</fr>
+        <it>streaming audio</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>USB-Anschluss</de>
+        <fr>Port USB</fr>
+        <it>presa USB</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bordcomputer erweitert</de>
+        <fr>Ordinateur de bord étendu</fr>
+        <it>computer di bordo, funzionalità estesa</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>DAB+ Empfänger</de>
+        <fr>Récepteur DAB+</fr>
+        <it>ricezione DAB+</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>Inkl. Smartphone-Integration via Apple CarPlayTM1 und Android  AutoTM</de>
+        <fr>Incl. intégration d’un smartphone via Apple CarPlayTM1 et  Android AutoTM</fr>
+        <it>Incl. integrazione smartphone tramite Apple CarPlay™1 e  Android Auto™</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Anzeige und Bedienung ausgewählter Apps und Funktionen über das Touchscreen-Farbdisplay oder per Sprach­bedienung</de>
+        <fr>Affichage et pilotage d’une sélection d’applis2 et de fonctions via l’écran tactile couleur ou la commande vocale</fr>
+        <it>visualizzazione e gestione di determinate app2 e funzioni  tramite schermo tattile a colori 7˝ o comandi vocali</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Navigation (Google Maps, Apple Karten)</de>
+        <fr>navigation (Google Maps, Apple Plans)</fr>
+        <it>navigazione (Google Maps, Mappe Apple)</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Musik (z. B. Playlists, Google Play Music, Spotify, Stitcher)</de>
+        <fr>musique (par ex. Playlists, Google Play Music, Spotify, Stitcher)</fr>
+        <it>musica (ad es. playlist, Google Play Music, Spotify, Stitcher)</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Telefon</de>
+        <fr>téléphone</fr>
+        <it>telefono</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Vorlesen und Diktieren von Textnachrichten</de>
+        <fr>lecture par voix de synthèse et dictée de messages texte</fr>
+        <it>leggere e dettare messaggi di testo</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iOA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kommunikations- und Parkpaket IntelliLink 900 Navigation</de>
+        <fr>Pack Communication et Stationnement  IntelliLink 900 Navigation</fr>
+        <it>Pacchetto comunicazione, parcheggio  e navigazione IntelliLink 900</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Radio</de>
+        <fr>Radio</fr>
+        <it>radio</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>6 Lautsprecher</de>
+        <fr>6 haut-parleurs</fr>
+        <it>6 altoparlanti</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Farbdisplay in der Mittelkonsole</de>
+        <fr>Ecran couleur dans la console centrale</fr>
+        <it>schermo a colori nella console centrale</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Fernbedienung am Lenkrad</de>
+        <fr>Commandes au volant</fr>
+        <it>comandi al volante</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bluetooth®-Mobiltelefon-Anschluss</de>
+        <fr>Raccordement Bluetooth® pour téléphone mobile</fr>
+        <it>connessione Bluetooth® per cellulare</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Audiostreaming</de>
+        <fr>Audiostreaming</fr>
+        <it>streaming audio</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>USB-Anschluss</de>
+        <fr>Port USB</fr>
+        <it>presa USB</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bordcomputer erweitert </de>
+        <fr>Ordinateur de bord étendu</fr>
+        <it>computer di bordo, funzionalità estesa</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Navigationssystem mit integriertem Speicher, Kartendarstellung  in 2D oder 3D, Strassenkarte Europa, GPS-Modul, dynamische Routenführung über Karten- und/oder Pfeildarstellung und Ansage, Kartenanzeige von TMC-Meldungen</de>
+        <fr>Système de navigation avec mémoire intégrée, affichage des  cartes en 2D ou 3D, cartes routières pour l’Europe, module GPS, guidage dynamique sur la carte et/ou par flèches et synthèse  vocale, affichage sur la carte des messages TMC </fr>
+        <it>sistema di navigazione con memoria integrata, visualizzazione mappe in 2D o 3D, mappe Europa, modulo GPS, guida stradale dinamica tramite indicazione su mappae/o frecce e annunci  vocali, segnalazioni TMC visualizzate sulla mappa</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+    <item>
+        <de>Rückfahrkamera inkl. Hilfslinien</de>
+        <fr>Caméra de recul avec lignes d’aide</fr>
+        <it>telecamera di retromarcia con linee guida</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Elektro-Paket</de>
+        <fr>Pack Electro</fr>
+        <it>pacchetto Elettro</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>DAB+ Empfänger</de>
+        <fr>Récepteur DAB+</fr>
+        <it>ricezione DAB+</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>OnStar inkl. automatischer Zieleingabe</de>
+        <fr>OnStar avec téléchargement d’itinéraire</fr>
+        <it>OnStar incl. download dell’itinerario</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Multifunktionsdisplay im Instrumententräger, farbig</de>
+        <fr>Ecran multifonction dans le combiné d’instruments, couleur</fr>
+        <it>schermo multinformazioni a colori nel quadro strumenti</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Inkl. Smartphone-Integration via Apple CarPlayTM1 und  Android AutoTM</de>
+        <fr>Incl. intégration d’un smartphone via Apple CarPlayTM1 et  Android AutoTM</fr>
+        <it>Incl. integrazione smartphone tramite Apple CarPlay™1 e Android Auto™</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Anzeige und Bedienung ausgewählter Apps und Funktionen über das Touchscreen-Farbdisplay oder per Sprachbedienung</de>
+        <fr>Affichage et pilotage d’une sélection d’applis et de fonctions via l’écran tactile couleur ou la commande vocale</fr>
+        <it>visualizzazione e gestione di determinate app e funzioni  tramite schermo tattile a colori o comandi vocali</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Navigation (Google Maps, Apple Karten)</de>
+        <fr>navigation (Google Maps, Apple Plans)</fr>
+        <it>navigazione (Google Maps, Mappe Apple)</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>Musik (z. B. Playlists, Google Play Music, Spotify, Stitcher)</de>
+        <fr>musique (par ex. Playlists, Google Play Music, Spotify, Stitcher)</fr>
+        <it>musica (ad es. playlist, Google Play Music, Spotify, Stitcher)</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Telefon</de>
+        <fr>téléphone</fr>
+        <it>telefono</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>orlesen und Diktieren von Textnachrichten</de>
+        <fr>lecture par voix de synthèse et dictée de messages texte</fr>
+        <it>leggere e dettare messaggi di testo</it>
+        <rubrik>Infotainment</rubrik>
+        <info>iO6</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Bose® Sound System</de>
+        <fr>Système audio Bose®</fr>
+        <it>Sistema audio Bose®</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>inkl. 2 Lautsprecher in der A-Säule</de>
+        <fr>incl.  2 haut-parleurs dans le montant A</fr>
+        <it>incl. 2 altoparlanti nel montante A</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>2 Lautsprecher in den Vordertüren</de>
+        <fr>2 haut-parleurs dans les portières avant</fr>
+        <it>2 altoparlanti nelle portiere anterior</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>2 Breitbandlautsprecher in den Hintertüren,</de>
+        <fr>2 haut-parleurs large bande dans les portières arrière</fr>
+        <it>2 altoparlanti a banda larga nelle portiere posteriori</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>1 Subwoofer  unter der Gepäckraumabdeckung</de>
+        <fr>1 subwoofer sous le cache-coffre</fr>
+        <it>1 subwoofer sotto la copertura del bagagliaio</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+
+
+    <item>
+        <de>1 digitaler Soundprozessor (nur mit Navigationssystem 950 IntelliLink &amp; DAB+ und Reserve­rad)</de>
+        <fr>1 processeur audio numérique (seulement avec système de navigation 950 IntelliLink &amp; DAB+ et roue de secours)</fr>
+        <it>1 processore audio digitale (solo con sistema di navigazione 950 IntelliLink e DAB+ e ruota  di scorta)</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Digitaler Radioempfang DAB+</de>
+        <fr>Réception radio numérique DAB+</fr>
+        <it>Ricezione radio digitale DAB+</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kommunikationspaket IntelliLink  R 4.0</de>
+        <fr>Communication IntelliLink R 4.0</fr>
+        <it>Pacchetto comunica­zione  IntelliLink R 4.0</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UQA</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kommunikations-  und Parkpaket  IntelliLink 900</de>
+        <fr>Pack  Communication et  Stationnement  IntelliLink 900</fr>
+        <it>Pacchetto  comunicazione  e parcheggio  IntelliLink 900</it>
+        <rubrik>Infotainment</rubrik>
+        <info>U4D</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>In IntelliLink enthalten</de>
+        <fr>Compris dans IntelliLink</fr>
+        <it>Compreso in IntelliLink</it>
+        <rubrik>Infotainment</rubrik>
+        <info>U4D</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Nur in Verbindung mit IntelliLink  OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfallservice, Fahrzeug-Diagnose, automatische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
+        <fr>Uniquement en combinaison avec IntelliLink  OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d’assistance automatique en cas d’accident, point d’accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d’itinéraire (disponible uniquement sur les véhicules équipés d’un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l’Europe, Opel OnStar vous permet d’accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les 12 premiers mois. A l’exception des prestations liées au point d’accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d’accès Wi-Fi, veuillez consulter le site www.opel-onstar.ch  </fr>
+        <it>Solo abbinato a IntelliLink  OnStar. Il vostro assistente personale di servizio online  con le seguenti prestazioni: risposta automatica in  caso d’incidente, hotspot Wi-Fi, app per smartphone,  assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al  giorno e 365 giorni all’anno a un servizio di prim’ordine  quasi ovunque in Europa. I servizi OnStar sono gratuiti  per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate  ulteriori informazioni sulla disponibilità e sul periodo di  prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</it>
+        <rubrik>Infotainment</rubrik>
+        <info>UE1 Fußnote</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Kompatibel mit folgenden Apple Produkten: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3. und 4. Generation) sowie iPad mini und Apple iPod touch (4. Generation).</de>
+        <fr>Compatible avec les produits Apple suivants: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3e et 4e génération), iPad mini et Apple iPod touch (4e génération).</fr>
+        <it>Compatibile con  i seguenti prodotti Apple: Apple iPhone 4S, 5, 5C, 5S, 6 &amp; 6 Plus, Apple iPad (3a e 4a generazione) nonché iPad mini e Apple iPod touch (4a generazione).</it>
+        <rubrik>Infotainment</rubrik>
+        <info>Fußnote</info>
+        <carline>MokkaX</carline>
+    </item>
+    <item>
+        <de>Komfort- und sonstige Ausstattung</de>
+        <fr>Confort et autres équipements</fr>
+        <it>Comfort e altro equipaggiamento</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Abnehmbare Anhängerzugvorrichtung (nicht in Verbindung mit FlexFix®-Fahrradträgersystem)</de>
+        <fr>Dispositif d’attelage amovible (pas en combinaison avec le porte-vélo FlexFix®)</fr>
+        <it>Gancio di traino amovibile (non con portabici FlexFix®)</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>SDE</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>FlexFix®-Fahrradträgersystem  in Heckstossfänger integriert, für 1 Fahrrad mit einem Gewicht von max. 30 kg (nicht mit abnehmbarer Anhängerzugvorrichtung,  Bose® Sound System und Reserverad)</de>
+        <fr>Porte-vélo FlexFix®  intégré au pare-chocs arrière, pour 1 vélo de max. 30 kg  (pas avec dispositif d’attelage amovible, Bose® Sound System  et roue de secours)</fr>
+        <it>Portabici FlexFix®  integrato nel paraurti, per 1 bicicletta di max. 30 kg (non con gancio di traino amovibile, sistema audio Bose®  e ruota di scorta)</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>D7D</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Manuelle Klimaanlage</de>
+        <fr>Climatisation manuelle</fr>
+        <it>Climatizzatore manuale</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>C67</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Zwei-Zonen-Komfort-Paket  in Verbindung mit Komfort-Paket</de>
+        <fr>Pack Confort Bizone  en combinaison avec Pack Confort</fr>
+        <it>Pacchetto comfort bizona  abbinato a pacchetto comfort</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>CJ2</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Rückfahrkamera, inkl.  Elektro-Paket (nur mit Kommunikationspaket IntelliLink R 4.0)  in Verbindung mit Enjoy Komfort-Paket</de>
+        <fr>Caméra de recul, incl. Pack Electro (seulement avec Pack Communication IntelliLink R 4.0)   en combinaison avec Pack Enjoy Confort</fr>
+        <it>Telecamera di retromarcia, incl.  pacchetto elettro (solo con pacchetto comunicazione IntelliLink R 4.0)  abbinato a pacchetto comfort Enjoy</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>UVC</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Schiebe-/Ausstelldach, elektrisch betätigt</de>
+        <fr>Toit ouvrant relevable, à commande électrique</fr>
+        <it>Tetto scorrevole/sollevabile, elettrico</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>CF5</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Quickheat-Heizsystem</de>
+        <fr>Chauffage rapide Quickheat</fr>
+        <it>Riscaldamento rapido Quickheat</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>C32</info>
+        <carline>MokkaX</carline>
+    </item>
+
+
+
+
+
+    <item>
+        <de>Dieselmotoren  152 PS-Version</de>
+        <fr>Moteurs diesel  version 152 ch</fr>
+        <it>Motori diesel  versione 152 CV</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>C32</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Standheizung (nur mit Komfort-Paket und Winter-Paket oder Lederausstattung oder Enjoy Komfort-Paket oder Cosmo Premium-Paket)</de>
+        <fr>Chauffage auxiliaire (seulement avec Pack Confort et Pack Hiver ou intérieur  cuir ou Pack Enjoy Confort ou Pack Cosmo Premium)</fr>
+        <it>Riscaldamento autonomo (solo con pacchetto comfort e pacchetto inverno o equipaggiamento in pelle o pacchetto comfort Enjoy o pacchetto Cosmo  Premium)</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>K07</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Ergonomiesitz, Fahrerseite  mit Gütesiegel AGR (Aktion Gesunder Rücken e.V.), 6-fach manuell einstellbar, Höheneinstellung elektrisch, Lendenwirbelstütze, ausziehbare Oberschenkelauflage, Kopfstützen (Enjoy: nur mit Polsterung TAHT)</de>
+        <fr>Siège ergonomique côté conducteur labellisé AGR (Action Dos Sain),  6 réglages manuels, réglage en hauteur électrique,  appui lombaire, repose-cuisses coulissant, appui-tête  (Enjoy: uniquement avec intérieur TAHT)</fr>
+        <it>Sedile ergonomico sedile conducente  con sigillo di qualità AGR (Azione schiena sana), regolabile manualmente su 6 posizioni, regolazione elettrica in  altezza, sostegno lombare, supporto coscia estraibile, poggiatesta (Enjoy: solo con rivestimento TAHT)</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>AUS</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Ergonomiesitz, Fahrer- und Beifahrerseite mit Gütesiegel AGR (Aktion Gesunder Rücken e.V.), 6-fach manuell einstellbar, Höheneinstellung elektrisch, Lendenwirbelstütze, ausziehbare Oberschenkelauflage, Kopfstützen (Enjoy: nur mit Polsterung TAHT)</de>
+        <fr>Siège ergonomique à l’avant labellisé AGR (Action Dos Sain),  6 réglages manuels, réglage en hauteur électrique,  appui lombaire, repose-cuisses coulissant, appui-tête  (Enjoy: uniquement avec intérieur TAHT)</fr>
+        <it>Sedile ergonomico sedili anteriori  con sigillo di qualità AGR (Azione schiena sana), regolabile manualmente su 6 posizioni, regolazione elettrica in  altezza, sostegno lombare, supporto coscia estraibile, poggiatesta  (Enjoy: solo con rivestimento TAHT)</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>AE4</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>3. Kopfstütze hinten</de>
+        <fr>3e appui-tête réglable à l’arrière</fr>
+        <it>3o poggiatesta centrale posteriore</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>AQP</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>OPC Line Sport-Paket mit Front-, Heck- und Seitenschürzen</de>
+        <fr>Pack Sport OPC Line avec jupes avant, arrière et latérales</fr>
+        <it>Pacchetto sport OPC Line con spoiler sottoparaurti anteriore e posteriore e minigonne laterali</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>WHT</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Dunkle Heck- und Seitenscheiben</de>
+        <fr>Vitres arrière et lunette arrière foncées</fr>
+        <it>Vetri posteriori e lunotto oscurati</it>
+        <rubrik>Komfort- und sonstige Ausstattung</rubrik>
+        <info>AKo</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Metallic-Lackierung</de>
+        <fr>Peinture métallisée</fr>
+        <it>Verniciatura metallizzata</it>
+        <rubrik>Lackierung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+    <item>
+        <de>Brillant-Lackierung</de>
+        <fr>Peinture brillante</fr>
+        <it>Verniciatura lucida</it>
+        <rubrik>Lackierung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+    <item>
+        <de>Perleffekt-Lackierung</de>
+        <fr>Peinture à effet perlé</fr>
+        <it>Verniciatura a effetto perlato</it>
+        <rubrik>Lackierung</rubrik>
+        <info>-</info>
+        <carline>MokkaX</carline>
+    </item>
+
+</items>
+
