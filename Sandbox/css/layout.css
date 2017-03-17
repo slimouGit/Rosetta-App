@@ -50,8 +50,10 @@
 }
 
 .filterLink {
+
     background: none;
     border: none;
+
     display: inline;
     font: inherit;
     margin: 0;
@@ -59,11 +61,16 @@
     outline: none;
     outline-offset: 0;
     /* Additional styles to look like a link */
-    color: blue;
+    color:#23527c;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.filterLink:hover, .filterLink:focus, .filterLink:active, .filterLink.active {
+.filterLink:hover, filterLink:focus, filterLink:active {
+    color: #000;
+}
+
+.filter{
+    font-size: .75em;
     color: #000;
 }
