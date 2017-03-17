@@ -92,8 +92,6 @@ include "include/input_check.php";
 
 if(isset($_POST['Suchen']) && (!$fehler)) {
 
-
-
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {
         //das Array carline wird ueber implode in $car gespeichert
@@ -104,23 +102,11 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
         $cat = 'de, fr, it, rubrik, info, carline';
     }
 
-    $searchWord = str_replace("\n", "XXXX", $_POST["search"]);
-
-    var_dump($searchWord);
+    //die Eingabe aus dem Inputfeld wird in $searchWord gespeichert
+    $searchWord = $_POST["search"];
 
     $sql = "select * from rosetta_data";
     $sql .= " where CONCAT_WS('',$cat) like '%" . $searchWord . "%' ";
-
-
-
-    //Variable, um Resultat in Ausgabe Tabelle (view_table) zu highlighten
-    //$searchWord = $_POST["search"] ;
-
-
-
-
-
-
 
     $res = mysqli_query($con, $sql);
     $num = mysqli_num_rows($res);
