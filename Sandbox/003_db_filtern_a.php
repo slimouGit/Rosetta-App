@@ -27,13 +27,12 @@ include "include/input_check.php";
 
 
 
-<h2>Suche</h2>
-<p>Volltextsuche (evtl. später mit Autovervollständigung)</p>
-<p>Die Suche kann eingeschränkt werden nach bestehenden Rubriken. Gibt man keine Rubrik an, wird in allen gesucht</p>
+<h2>Filtern</h2>
+<p>Das Inputfield wied mit dem ausgewaehletn Wert belegt</p>
 
 
 <!--Suchformular-->
-<form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post">
+<form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  method = "post">
     <div class='results'><!--in diesem container werden die Fragezeichen geloescht -->
         <div class="row">
             <div class="form-group "> <!--ui-widget-->
@@ -45,7 +44,7 @@ include "include/input_check.php";
             </div>
         </div>
     </div>
-
+    <!--
     <div class="row">
         <label class="col-sm-2 control-label">in welcher Kategorie</label>
         <div class="col-sm-6">
@@ -62,7 +61,7 @@ include "include/input_check.php";
             <label class="checkbox-inline">
                 <input name="category[]" type="checkbox" value="en">englisch
             </label>
-            -->
+
             <label class="checkbox-inline">
                 <input name="category[]" type="checkbox" value="rubrik">Rubrik
             </label>
@@ -74,12 +73,12 @@ include "include/input_check.php";
             </label>
         </div>
     </div>
-
+    -->
     <div class="row">
         <div class="form-group">
             <div class="col-sm-2"></div>
             <div class="col-sm-1">
-                <input type="submit" class="btn btn-primary" name="Suchen" value="Suchen">
+                <input type="submit" class="btn btn-primary" id="clickButton" name="Suchen" value="Suchen">
             </div>
         </div>
     </div>
@@ -141,3 +140,34 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 include "elements/footer.html";
 ?>
 
+<script>
+    /*
+    clickButton();
+    function clickButton(){
+                document.getElementById('clickButton').click();
+            //
+              setTimeout(function(){
+                    clickButton();
+                    clickButtonStop();
+                        setTimeout(fuction(){
+                          window.stop();
+                        },200);
+                }, 500);
+        };
+
+
+
+
+    function clickButtonStop() {
+        //alert("Stop Button");
+
+        $(document).ready(function () {
+            $("#filterForm").submit(function () {
+                $(".clickButton").attr("disabled", true);
+                return true;
+            });
+
+        });
+    }
+*/
+</script>

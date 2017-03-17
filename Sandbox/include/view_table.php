@@ -50,8 +50,8 @@ function viewWithSlash($res)
             "<td>" . utf8_encode($dsatz["de"]) . "</td>" .
             "<td>" . utf8_encode($dsatz["fr"]) . "</td>" .
             "<td>" . utf8_encode($dsatz["it"]) . "</td>" .
-            "<td><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
-            "<td><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+            "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+            "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
         "<td class='columnCarline'>";
 
         $carlineArray = $dsatz["carline"];
@@ -88,10 +88,10 @@ function viewWithOutSlash($searchWord, $res)
             "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
             "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
             "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
-            "<td><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["rubrik"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+            "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["rubrik"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
             //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
             //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
-            "<td><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["info"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+            "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["info"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
         "<td class='columnCarline'>";
 
         $carlineArray = $dsatz["carline"];

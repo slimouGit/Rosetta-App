@@ -28,7 +28,6 @@ include "include/input_check.php";
 
 
 <h2>Suche</h2>
-<p>Volltextsuche (evtl. später mit Autovervollständigung)</p>
 <p>Die Suche kann eingeschränkt werden nach bestehenden Rubriken. Gibt man keine Rubrik an, wird in allen gesucht</p>
 
 
