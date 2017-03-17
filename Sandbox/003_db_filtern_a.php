@@ -12,7 +12,7 @@ include "include/db_connect.php";
 
 <?php
 //include input_check
-include "include/input_check.php";
+//include "include/input_check.php";
 ?>
 
 <!--Script Autovervollstaendigung-->
@@ -35,15 +35,15 @@ include "include/input_check.php";
 <!--Suchformular-->
 <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post">
     <div class='results'><!--in diesem container werden die Fragezeichen geloescht -->
-    <div class="row">
-        <div class="form-group "> <!--ui-widget-->
-            <label for="skills" class="col-sm-2 control-label">Was soll gesucht werden</label>
-            <div class="col-sm-6">
-                <input type="text" class="form-control" value="<?php echo $_GET['rubrik'] ?>">
-            </div>
+        <div class="row">
+            <div class="form-group "> <!--ui-widget-->
+                <label for="skills" class="col-sm-2 control-label">Was soll gesucht werden</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" value=" <?php echo $_POST["filterRubrik"]; ?> ">
+                </div>
 
+            </div>
         </div>
-    </div>
     </div>
 
     <div class="row">
@@ -90,9 +90,7 @@ include "include/input_check.php";
 <!--Code, sobald auf Button gedrueckt wurde-->
 <?php
 
-if(isset($_POST['Suchen']) && (!$fehler)) {
-
-
+if(isset($_POST['Suchen'])) {
 
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {
@@ -104,23 +102,11 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
         $cat = 'de, fr, it, rubrik, info, carline';
     }
 
-    $searchWord = str_replace("\n", "XXXX", $_POST["search"]);
-
-    var_dump($searchWord);
+    //die Eingabe aus dem Inputfeld wird in $searchWord gespeichert
+    $searchWord = $_POST["filterRubrik"];
 
     $sql = "select * from rosetta_data";
     $sql .= " where CONCAT_WS('',$cat) like '%" . $searchWord . "%' ";
-
-
-
-    //Variable, um Resultat in Ausgabe Tabelle (view_table) zu highlighten
-    //$searchWord = $_POST["search"] ;
-
-
-
-
-
-
 
     $res = mysqli_query($con, $sql);
     $num = mysqli_num_rows($res);
