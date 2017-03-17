@@ -25,67 +25,105 @@
 //ist $searchWord nicht initialisiert und die Daten werden nicht ausgegeben
 if(empty($searchWord)){$searchWord="";};
 
+$slash = "/";
+if(strstr($searchWord, $slash)){
+    echo "<br/>"."Slash inside query";
+    viewWithSlash($res);
+}else{
+    viewWithOutSlash($searchWord, $res);
+}
 
-/* Datensaetze aus Ergebnis ermitteln, */
-/* in Array speichern und ausgeben    */
-while ($dsatz = mysqli_fetch_assoc($res))
+//Falls im Datensatz Slash enthalten, wier diese Funktion aufgerufen
+function viewWithSlash($res)
 {
+    echo "Funktion läuft";
+    /* Datensaetze aus Ergebnis ermitteln, */
+    /* in Array speichern und ausgeben    */
+    while ($dsatz = mysqli_fetch_assoc($res))
+    {
 
-    echo   "<tr>".
+        echo   "<tr>";
 
-    "<td>" . $dsatz["id"]        . "</td>".
-    "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
-    "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
-    "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
-    //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["en"]))      . "</td>".
-    "<td><a href='003_db_filtern_a.php' name='rubrik' method='post'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
-    "<td><a href='#'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
+         echo "<td>" . $dsatz["id"] . "</td>" .
+            "<td>" . utf8_encode($dsatz["de"]) . "</td>" .
+            "<td>" . utf8_encode($dsatz["fr"]) . "</td>" .
+            "<td>" . utf8_encode($dsatz["it"]) . "</td>" .
+            "<td><a href='003_db_filtern_a.php' name='rubrik' method='post'>" . utf8_encode($dsatz["rubrik"]) . "</a></td>" .
+            "<td><a href='#'>" . utf8_encode($dsatz["info"]) . "</a></td>";
 
-    "<td class='columnCarline'>";
+        echo "<td class='columnCarline'>";
 
-    //$carlineArray = $_POST['carline'];
-    $carlineArray = $dsatz["carline"];
-    //var_dump($carlineArray);
-    $carlineArray = explode(', ',$carlineArray);
-    //var_dump($carlineArray);
+        //$carlineArray = $_POST['carline'];
+        $carlineArray = $dsatz["carline"];
+        //var_dump($carlineArray);
+        $carlineArray = explode(', ',$carlineArray);
+        //var_dump($carlineArray);
 
-    foreach ($carlineArray as $carKey){
-        echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
-        echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
-    }
+        foreach ($carlineArray as $carKey){
+            echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
+            echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
+        }
 
 
-     echo    "</td>".
-    "<td>" .  "</td>".
-    //"<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
-    //$id = $dsatz["id"];
-    "<td >
+        echo    "</td>".
+            "<td>" .  "</td>".
+            "<td >
             <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
         </td>".
-    "<td >
+            "<td >
             <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
         </td>";
 
-    echo    "</tr>";
-    echo   "<tr>".
+        echo    "</tr>";
+    }//ENDE WHILE
+}//ENDE viewWithSlash
 
-        "<td></td>".
-        //"<td>".date('d.m.y H:i:s', strtotime($dsatz["date"]))."</td>".
-        "<td></td>".
-        "<td class='columnCommentTranslator'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["comment_fr"]))      . "</td>".
-        "<td class='columnCommentTranslator'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["comment_it"]))       . "</td>".
-        "<td></td>".
-        "<td></td>".
-        "<td></td>".
-        "<td>" .  "</td>".
-        //"<td ><input type='radio' name='auswahl' class=\"radioButton\" onchange=\"testFunction();\" value='" . $dsatz["id"] . "' /></td>".
-        //$id = $dsatz["id"];
-        "<td ></td>".
-        "<td ></td>";
 
-    echo    "</tr>";
+//Falls im Datensatz KEIN Slash enthalten, wier diese Funktion aufgerufen
+function viewWithOutSlash($searchWord, $res)
+{
+    echo "Funktion läuft";
+    /* Datensaetze aus Ergebnis ermitteln, */
+    /* in Array speichern und ausgeben    */
+    while ($dsatz = mysqli_fetch_assoc($res))
+    {
 
-}
+        echo   "<tr>".
+
+        "<td>" . $dsatz["id"]        . "</td>".
+        "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
+        "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
+        "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
+        "<td><a href='003_db_filtern_a.php' name='rubrik' method='post'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
+        "<td><a href='#'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
+
+
+        "<td class='columnCarline'>";
+
+        //$carlineArray = $_POST['carline'];
+        $carlineArray = $dsatz["carline"];
+        //var_dump($carlineArray);
+        $carlineArray = explode(', ',$carlineArray);
+        //var_dump($carlineArray);
+
+        foreach ($carlineArray as $carKey){
+            echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
+            echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
+        }
+
+
+        echo    "</td>".
+            "<td>" .  "</td>".
+            "<td >
+            <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
+        </td>".
+            "<td >
+            <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
+        </td>";
+
+        echo    "</tr>";
+    }//ENDE WHILE
+}//ENDE viewWithoutSlash
 ?>
 
 </tbody>
