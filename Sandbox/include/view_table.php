@@ -21,11 +21,15 @@
 
 <?php
 
-//$falls nicht ueber die Suchfunktion auf die Daten zugegriffen wird,
+//falls nicht ueber die Suchfunktion auf die Daten zugegriffen wird,
 //ist $searchWord nicht initialisiert und die Daten werden nicht ausgegeben
 if(empty($searchWord)){$searchWord="";};
 
+//Slash wird in Variable $slash gespeichert
 $slash = "/";
+
+//es wird getestet, ob der Datensatz einen Slash enthaellt
+//je nach Ergebnis werden die Daten in seperater Funktion ausgegeben
 if(strstr($searchWord, $slash)){
     echo "<br/>"."Slash inside query";
     viewWithSlash($res);
@@ -36,94 +40,78 @@ if(strstr($searchWord, $slash)){
 //Falls im Datensatz Slash enthalten, wier diese Funktion aufgerufen
 function viewWithSlash($res)
 {
-    echo "Funktion läuft";
     /* Datensaetze aus Ergebnis ermitteln, */
     /* in Array speichern und ausgeben    */
     while ($dsatz = mysqli_fetch_assoc($res))
     {
-
-        echo   "<tr>";
-
-         echo "<td>" . $dsatz["id"] . "</td>" .
+        echo
+        "<tr>".
+            "<td>" . $dsatz["id"] . "</td>" .
             "<td>" . utf8_encode($dsatz["de"]) . "</td>" .
             "<td>" . utf8_encode($dsatz["fr"]) . "</td>" .
             "<td>" . utf8_encode($dsatz["it"]) . "</td>" .
             "<td><a href='003_db_filtern_a.php' name='rubrik' method='post'>" . utf8_encode($dsatz["rubrik"]) . "</a></td>" .
-            "<td><a href='#'>" . utf8_encode($dsatz["info"]) . "</a></td>";
+            "<td><a href='#'>" . utf8_encode($dsatz["info"]) . "</a></td>".
+        "<td class='columnCarline'>";
 
-        echo "<td class='columnCarline'>";
-
-        //$carlineArray = $_POST['carline'];
         $carlineArray = $dsatz["carline"];
-        //var_dump($carlineArray);
         $carlineArray = explode(', ',$carlineArray);
-        //var_dump($carlineArray);
 
+        //alle referenzierten Carlines werden mit jeweiligem Preislisten-PDF verlinkt
         foreach ($carlineArray as $carKey){
             echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
             echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
         }
+        echo    "</td>";
 
-
-        echo    "</td>".
-            "<td>" .  "</td>".
-            "<td >
-            <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
-        </td>".
-            "<td >
-            <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
-        </td>";
-
-        echo    "</tr>";
-    }//ENDE WHILE
-}//ENDE viewWithSlash
+        echo    "<td >
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
+                </td>".
+                "<td >
+                    <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
+                </td>".
+                "</tr>";
+        }//ENDE WHILE
+    }//ENDE viewWithSlash
 
 
 //Falls im Datensatz KEIN Slash enthalten, wier diese Funktion aufgerufen
 function viewWithOutSlash($searchWord, $res)
 {
-    echo "Funktion läuft";
     /* Datensaetze aus Ergebnis ermitteln, */
     /* in Array speichern und ausgeben    */
     while ($dsatz = mysqli_fetch_assoc($res))
     {
-
-        echo   "<tr>".
-
-        "<td>" . $dsatz["id"]        . "</td>".
-        "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
-        "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
-        "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
-        "<td><a href='003_db_filtern_a.php' name='rubrik' method='post'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
-        "<td><a href='#'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
-
-
+        echo
+        "<tr>".
+            "<td>" . $dsatz["id"] . "</td>".
+            "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
+            "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
+            "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
+            "<td><a href='003_db_filtern_a.php' name='rubrik' method='post'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
+            "<td><a href='#'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
         "<td class='columnCarline'>";
 
-        //$carlineArray = $_POST['carline'];
         $carlineArray = $dsatz["carline"];
-        //var_dump($carlineArray);
         $carlineArray = explode(', ',$carlineArray);
-        //var_dump($carlineArray);
 
+        //alle referenzierten Carlines werden mit jeweiligem Preislisten-PDF verlinkt
         foreach ($carlineArray as $carKey){
             echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
             echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
         }
 
+        echo    "</td>";
 
-        echo    "</td>".
-            "<td>" .  "</td>".
-            "<td >
-            <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
-        </td>".
-            "<td >
-            <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
-        </td>";
-
-        echo    "</tr>";
-    }//ENDE WHILE
-}//ENDE viewWithoutSlash
+        echo    "<td >
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
+                </td>".
+                "<td >
+                    <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
+                </td>".
+                "</tr>";
+        }//ENDE WHILE
+    }//ENDE viewWithoutSlash
 ?>
 
 </tbody>
