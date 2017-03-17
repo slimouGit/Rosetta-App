@@ -12,7 +12,7 @@ include "include/db_connect.php";
 
 <?php
 //include input_check
-//include "include/input_check.php";
+include "include/input_check.php";
 ?>
 
 <!--Script Autovervollstaendigung-->
@@ -27,7 +27,7 @@ include "include/db_connect.php";
 
 
 
-<h2>Filtern</h2>
+<h2>Suche</h2>
 <p>Volltextsuche (evtl. später mit Autovervollständigung)</p>
 <p>Die Suche kann eingeschränkt werden nach bestehenden Rubriken. Gibt man keine Rubrik an, wird in allen gesucht</p>
 
@@ -39,9 +39,9 @@ include "include/db_connect.php";
             <div class="form-group "> <!--ui-widget-->
                 <label for="skills" class="col-sm-2 control-label">Was soll gesucht werden</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" value=" <?php echo $_POST["filterRubrik"]; ?> ">
+                    <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
                 </div>
-
+                <div class="col-sm-4 errorContainer"><span class="error"><?php echo $search_Err;?></span></div>
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@ include "include/db_connect.php";
 <!--Code, sobald auf Button gedrueckt wurde-->
 <?php
 
-if(isset($_POST['Suchen'])) {
+if(isset($_POST['Suchen']) && (!$fehler)) {
 
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {
@@ -99,11 +99,11 @@ if(isset($_POST['Suchen'])) {
     }
     //falls keine checkbox aktiv, wird in allen Spalten gesucht
     if(empty($cat)) {
-        $cat = 'de, fr, it, rubrik, info, carline';
+        $cat = ' rubrik, info';
     }
 
     //die Eingabe aus dem Inputfeld wird in $searchWord gespeichert
-    $searchWord = $_POST["filterRubrik"];
+    $searchWord = $_POST["search"];
 
     $sql = "select * from rosetta_data";
     $sql .= " where CONCAT_WS('',$cat) like '%" . $searchWord . "%' ";
