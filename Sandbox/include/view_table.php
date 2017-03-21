@@ -1,6 +1,6 @@
 
 
-<table class="table table-hover table-responsive table-striped">
+<table class="table table-hover table-responsive">
     <thead>
         <tr>
             <th class="col-sm-1">Id</th>
@@ -44,6 +44,25 @@ function viewWithSlash($res)
     /* in Array speichern und ausgeben    */
     while ($dsatz = mysqli_fetch_assoc($res))
     {
+
+        $dsatz['date'] = date("d.m.Y H:i");
+        //Benutzer Zeile
+        echo "<tr class='timeRow'>"
+            ."<td></td>"
+            ."<td class='columnDateTime'>" . $dsatz['date'] . " Uhr" . "</td>"
+
+            ."<td class='columnCommentTranslator'></td>"
+
+            ."<td class='columnCommentTranslator'></td>"
+
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."</tr>";
+
+        //Daten Zeile
         echo
         "<tr>".
             "<td>" . $dsatz["id"] . "</td>" .
@@ -72,14 +91,14 @@ function viewWithSlash($res)
                 </td>".
                 "</tr>";
 
-        //untere Zeile
-        echo "<tr>"
+        //Kommentar Zeile
+        echo "<tr class='commentRow'>"
             ."<td></td>"
-            ."<td class='columnCommentTranslator'>Kommentar Deutsch</td>"
+            ."<td class='cellComment'>Kommentar Deutsch</td>"
 
-            ."<td class='columnCommentTranslator'>Kommentar Französisch</td>"
+            ."<td class='cellComment'>Kommentar Französisch</td>"
 
-            ."<td class='columnCommentTranslator'>Kommentar Italienisch</td>"
+            ."<td class='cellComment'>Kommentar Italienisch</td>"
 
             ."<td></td>"
             ."<td></td>"
@@ -87,6 +106,8 @@ function viewWithSlash($res)
             ."<td></td>"
             ."<td></td>"
             ."</tr>";
+
+        echo "<tr><td colspan='9'></td></tr>";
 
 
         }//ENDE WHILE
@@ -100,6 +121,24 @@ function viewWithOutSlash($searchWord, $res)
     /* in Array speichern und ausgeben    */
     while ($dsatz = mysqli_fetch_assoc($res))
     {
+        $dsatz['date'] = date("d.m.Y H:i");
+        //Benutzer Zeile
+        echo "<tr class='timeRow'>"
+            ."<td></td>"
+            ."<td class='columnDateTime'>" . $dsatz['date'] . " Uhr" . "</td>"
+
+            ."<td class='columnCommentTranslator'></td>"
+
+            ."<td class='columnCommentTranslator'></td>"
+
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."</tr>";
+
+        //Daten Zeile
         echo
         "<tr>".
             "<td>" . $dsatz["id"] . "</td>".
@@ -131,21 +170,23 @@ function viewWithOutSlash($searchWord, $res)
                 </td>".
                 "</tr>";
 
-        //untere Zeile
-        echo "<tr>"
-                    ."<td></td>"
-                    ."<td class='columnCommentTranslator'>Kommentar Deutsch</td>"
+        //Kommentar Zeile
+        echo "<tr class='commentRow'>"
+            ."<td></td>"
+            ."<td class='cellComment'>Kommentar Deutsch</td>"
 
-                    ."<td class='columnCommentTranslator'>Kommentar Französisch</td>"
+            ."<td class='cellComment'>Kommentar Französisch</td>"
 
-                    ."<td class='columnCommentTranslator'>Kommentar Italienisch</td>"
+            ."<td class='cellComment'>Kommentar Italienisch</td>"
 
-                    ."<td></td>"
-                    ."<td></td>"
-                    ."<td></td>"
-                    ."<td></td>"
-                    ."<td></td>"
-                ."</tr>";
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."</tr>";
+
+        echo "<tr><td colspan='9'></td></tr>";
 
 
         }//ENDE WHILE

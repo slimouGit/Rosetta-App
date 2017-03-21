@@ -41,7 +41,15 @@
     background-color: none;
 }
 
-.columnCommentTranslator{font-size: .75em;color:#ff0000;}
+.commentRow{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.cellComment{font-size: .75em;color:#ff0000;}
+
+.columnDateTime{font-size: .75em;color:#fff;}
+
+.timeRow{background-color: #000; height:10px; margin-bottom:50px; padding:0px;}
 
 .headerTr {
     font-size: .75em;
