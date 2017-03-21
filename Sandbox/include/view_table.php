@@ -71,6 +71,24 @@ function viewWithSlash($res)
                     <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
                 </td>".
                 "</tr>";
+
+        //untere Zeile
+        echo "<tr>"
+            ."<td></td>"
+            ."<td class='columnCommentTranslator'>Kommentar Deutsch</td>"
+
+            ."<td class='columnCommentTranslator'>Kommentar Französisch</td>"
+
+            ."<td class='columnCommentTranslator'>Kommentar Italienisch</td>"
+
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."<td></td>"
+            ."</tr>";
+
+
         }//ENDE WHILE
     }//ENDE viewWithSlash
 
@@ -112,6 +130,24 @@ function viewWithOutSlash($searchWord, $res)
                     <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
                 </td>".
                 "</tr>";
+
+        //untere Zeile
+        echo "<tr>"
+                    ."<td></td>"
+                    ."<td class='columnCommentTranslator'>Kommentar Deutsch</td>"
+
+                    ."<td class='columnCommentTranslator'>Kommentar Französisch</td>"
+
+                    ."<td class='columnCommentTranslator'>Kommentar Italienisch</td>"
+
+                    ."<td></td>"
+                    ."<td></td>"
+                    ."<td></td>"
+                    ."<td></td>"
+                    ."<td></td>"
+                ."</tr>";
+
+
         }//ENDE WHILE
     }//ENDE viewWithoutSlash
 ?>
