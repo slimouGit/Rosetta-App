@@ -45,11 +45,10 @@ function viewWithSlash($res)
     while ($dsatz = mysqli_fetch_assoc($res))
     {
 
-        $dsatz['date'] = date("d.m.Y H:i");
         //Benutzer Zeile
         echo "<tr class='timeRow'>"
             ."<td></td>"
-            ."<td class='columnDateTime'>" . $dsatz['date'] . " Uhr" . "</td>"
+            ."<td class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr" . "</td>"
 
             ."<td class='columnCommentTranslator'></td>"
 
@@ -121,11 +120,10 @@ function viewWithOutSlash($searchWord, $res)
     /* in Array speichern und ausgeben    */
     while ($dsatz = mysqli_fetch_assoc($res))
     {
-        $dsatz['date'] = date("d.m.Y H:i");
         //Benutzer Zeile
         echo "<tr class='timeRow'>"
             ."<td></td>"
-            ."<td class='columnDateTime'>" . $dsatz['date'] . " Uhr" . "</td>"
+            ."<td class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr" . "</td>"
 
             ."<td class='columnCommentTranslator'></td>"
 
