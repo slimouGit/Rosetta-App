@@ -26,6 +26,7 @@
                         <li><a href="003_db_anzeigen_fr_relevant.php">zu übersetzen in frz</a></li>
                         <li><a href="003_db_anzeigen_it.php">Italienisch</a></li>
                         <li><a href="003_db_anzeigen_it_relevant.php">zu übersetzen in itl</a></li>
+                        <li><a href="003_db_anzeigen_gesamt.php">Gesamt</a></li>
                     </ul>
                 </li>
             </ul>

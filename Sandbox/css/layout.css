@@ -39,6 +39,8 @@
 .toEdit{
     border: none;
     background-color: none;
+    height: auto;
+
 }
 
 .commentRow{
@@ -81,4 +83,11 @@
 .filter{
     font-size: .75em;
     color: #000;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    max-height: 100px;
 }

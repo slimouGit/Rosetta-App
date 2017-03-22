@@ -93,11 +93,11 @@ function viewWithSlash($res)
         //Kommentar Zeile
         echo "<tr class='commentRow'>"
             ."<td></td>"
-            ."<td class='cellComment'>Kommentar Deutsch</td>"
+            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
 
-            ."<td class='cellComment'>Kommentar Französisch</td>"
+            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
-            ."<td class='cellComment'>Kommentar Italienisch</td>"
+            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
 
             ."<td></td>"
             ."<td></td>"
@@ -171,11 +171,11 @@ function viewWithOutSlash($searchWord, $res)
         //Kommentar Zeile
         echo "<tr class='commentRow'>"
             ."<td></td>"
-            ."<td class='cellComment'>Kommentar Deutsch</td>"
+            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
 
-            ."<td class='cellComment'>Kommentar Französisch</td>"
+            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
-            ."<td class='cellComment'>Kommentar Italienisch</td>"
+            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
 
             ."<td></td>"
             ."<td></td>"

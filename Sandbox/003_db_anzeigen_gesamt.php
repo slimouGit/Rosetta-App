@@ -46,8 +46,8 @@ if(isset($_POST["ak"]))
             . "(id, de, fr) values ('"
             . "('" . $_POST["ident"][0] . "', '" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "')";
         */
-        $sql = "INSERT INTO rosetta_data (de, fr, it)
-          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "', '"  . $_POST["itl"][0] . "')";
+        $sql = "INSERT INTO rosetta_data (de, fr, it, comment_de, comment_fr, comment_it)
+          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "', '"  . $_POST["itl"][0] . "', '"  . $_POST["com_de"][0] . "', '"  . $_POST["com_fr"][0] . "', '"  . $_POST["com_it"][0] . "')";
         mysqli_query($con, $sql);
     }
 
@@ -60,8 +60,10 @@ if(isset($_POST["ak"]))
                 UPDATE rosetta_data SET 
                de = '" . $_POST["dts"][$id_nr] . "',"
             . "fr = '" . $_POST["frz"][$id_nr] . "',"
-            . "it = '" . $_POST["itl"][$id_nr] . "'"
-            //. "comment_it = '" . $_POST["com"][$id_nr] . "'"
+            . "it = '" . $_POST["itl"][$id_nr] . "',"
+            . "comment_de = '" . $_POST["com_de"][$id_nr] . "',"
+            . "comment_fr = '" . $_POST["com_fr"][$id_nr] . "',"
+            . "comment_it = '" . $_POST["com_it"][$id_nr] . "'"
             . " WHERE id=$id_nr
                 ";
 
@@ -116,13 +118,19 @@ while ($dsatz = mysqli_fetch_assoc($res))
 {
     $id_nr = $dsatz["id"];
     echo "\n\n<tr>"
-        . "<td>" . $dsatz["id"] . "</td>"
-        . "<td><input class='toEdit' name='dts[$id_nr]' value='" . utf8_encode( $dsatz["de"] ) . "' size='40' /></td>"
-        . "<td><input class='toEdit' name='frz[$id_nr]' value='" . utf8_encode( $dsatz["fr"] ) . "' size='40' /></td>"
-        . "<td><input class='toEdit' name='itl[$id_nr]' value='" . utf8_encode( $dsatz["it"] ) . "' size='40' /></td>"
-        . "<td><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a>"
+        . "<td rowspan='2'>" . $dsatz["id"] . "</td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='dts[$id_nr]' >" . utf8_encode( $dsatz["de"] ) . "</textarea></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='frz[$id_nr]' >" . utf8_encode( $dsatz["fr"] ) . "</textarea></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='itl[$id_nr]' >" . utf8_encode( $dsatz["it"] ) . "</textarea></td>"
+        . "<td rowspan='2'><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a>"
         . " <a href='javascript:send(2,$id_nr);'><img src=\"img/button_delete.png\"></a></td>"
-        . "</tr>";
+        . "</tr>"
+        ."<tr>"
+        ."<td><input class='form-control cellComment' name='com_de[$id_nr]' value='" . utf8_encode( $dsatz["comment_de"] ) . "' size='40' /></td>"
+        ."<td><input class='form-control cellComment' name='com_fr[$id_nr]' value='" . utf8_encode( $dsatz["comment_fr"] ) . "' size='40' /></td>"
+        ."<td><input class='form-control cellComment' name='com_it[$id_nr]' value='" . utf8_encode( $dsatz["comment_it"] ) . "' size='40' /></td>"
+        ."</tr>";
+
 }
 echo "</table>";
 echo "</form>";
@@ -131,3 +139,10 @@ mysqli_close($con);
 ?>
 </body>
 </html>
+
+<script>
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+    }
+</script>
