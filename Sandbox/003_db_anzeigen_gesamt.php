@@ -55,7 +55,7 @@ if(isset($_POST["ak"]))
     else if($_POST["ak"]=="up")
     {
         $id_nr = $_POST["id"];
-
+        /*
         $sql = "
                 UPDATE rosetta_data SET 
                de = '" . $_POST["dts"][$id_nr] . "',"
@@ -66,7 +66,8 @@ if(isset($_POST["ak"]))
             . "comment_it = '" . $_POST["com_it"][$id_nr] . "'"
             . " WHERE id=$id_nr
                 ";
-
+        */
+        $sql = "UPDATE rosetta_data SET * WHERE id=$id_nr";
         mysqli_query($con, $sql);
 
 
