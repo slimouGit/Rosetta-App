@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
           $titel = test_input($_POST["titel"]);
       }
-
+  
     if (empty($_POST["beschreibung"])) {
       $beschreibung_Err = "Eine ausfuehrliche Beschreibung fehlt";
       $fehler = true;

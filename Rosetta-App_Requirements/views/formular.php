@@ -6,6 +6,8 @@
     <!--author-->
     <div class="row"><br></div>
     <div class="form-group">
+        <input name='ak' type='hidden' />
+        <input name='id' type='hidden' />
         <label for="select" class="col-sm-2 control-label">Author</label>
         <div class="col-sm-6">
             <select name="author" class="form-control">
@@ -85,3 +87,5 @@
     <!--------------------------------------------------------------------------------------->
 
 </form>
+
+
