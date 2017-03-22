@@ -88,6 +88,6 @@
 textarea {
     resize: none;
     overflow: hidden;
-    min-height: 50px;
+    min-height: 10px;
     max-height: 500px;
 }
