@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
+
 <items>
     <item>
         <de>Adaptives Bremslicht</de>
@@ -12,7 +13,7 @@
 
     <item>
         <de>Airbagsystem</de>
-        <fr>Système d’airbags</fr>
+        <fr>Système d`airbags</fr>
         <it>Sistema di airbag</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -39,7 +40,7 @@
 
     <item>
         <de>Kopfairbags, vorn und hinten aussen</de>
-        <fr>airbags rideaux, à l’avant et à l’arrière (places extérieures)</fr>
+        <fr>airbags rideaux, à l`avant et à l`arrière (places extérieures)</fr>
         <it>airbag a tendina, anteriori e posteriori laterali</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -66,8 +67,8 @@
 
     <item>
         <de>Automatische Aktivierung des Warnblinkers und Entriegelung der Türen nach Auslösung von Airbag oder Gurtstraffer</de>
-        <fr>Activation automatique des feux de détresse et déverrouillage des portes en cas de déclenchement d’un airbag ou d’un prétensionneur de ceinture</fr>
-        <it>Attivazione automatica dei lampeggiatori d’emergenza e sbloccaggio delle portiere in seguito all’attivazione degli airbag o del pretensionatore</it>
+        <fr>Activation automatique des feux de détresse et déverrouillage des portes en cas de déclenchement d`un airbag ou d`un prétensionneur de ceinture</fr>
+        <it>Attivazione automatica dei lampeggiatori d`emergenza e sbloccaggio delle portiere in seguito all`attivazione degli airbag o del pretensionatore</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
         <carline>AstraST</carline>
@@ -102,7 +103,7 @@
 
     <item>
         <de>Dreipunkt-Sicherheitsgurte auf allen Plätzen, Gurtkraftbegrenzer, pyrotechnische Gurtschlossstraffer, vorn, doppelter Gurtstraffer, vorn und hinten, sowie Gurtwarner, vorn und hinten</de>
-        <fr>Ceintures de sécurité à trois points d’ancrage pour tous les passagers, avec limiteur d’effort, prétensionneur pyrotechnique agissant sur la boucle à l’avant, double prétensionneur, à l’avant et à l’arrière et avertisseur de ceinture non attachée à l’avant et à l’arrière</fr>
+        <fr>Ceintures de sécurité à trois points d`ancrage pour tous les passagers, avec limiteur d`effort, prétensionneur pyrotechnique agissant sur la boucle à l`avant, double prétensionneur, à l`avant et à l`arrière et avertisseur de ceinture non attachée à l`avant et à l`arrière</fr>
         <it>Cintura di sicurezza a 3 punti per tutti i posti, limitatore di carico e pretensionatore pirotecnico, anteriore, nonché doppio pretensionatore, anteriore e posteriore e spia cintura non allacciata, anteriore e posteriore</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -120,7 +121,7 @@
 
     <item>
         <de>Passive 2-Wege-Kopfstützen, vorn, höheneinstellbar, 3 Kopfstützen, hinten, höheneinstellbar</de>
-        <fr>Appuis-tête passifs à 2 voies à l’avant, réglables en hauteur, 3 appuis-tête à l’arrière, réglables en hauteur</fr>
+        <fr>Appuis-tête passifs à 2 voies à l`avant, réglables en hauteur, 3 appuis-tête à l`arrière, réglables en hauteur</fr>
         <it>Poggiatesta anteriori passivi a 2 regolazioni, regolabili in altezza, 3 poggiatesta posteriori, regolabili in altezza</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -138,7 +139,7 @@
 
     <item>
         <de>Reifen-Reparatur-Set, inkl. Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</de>
-        <fr>Kit de réparation des pneumatiques, avec produit d’étanchéité et compresseur 12 V (sans cric)</fr>
+        <fr>Kit de réparation des pneumatiques, avec produit d`étanchéité et compresseur 12 V (sans cric)</fr>
         <it>Set di riparazione pneumatici, incl. sigillante e compressore 12 Volt (senza cric)</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -183,7 +184,7 @@
 
     <item>
         <de>LED-Tagfahrlicht inkl. LED-Blinker, vorn, manuelle Scheinwerferleuchtweiten­regulierung</de>
-        <fr>Eclairage de jour à LED et clignotants à LED à l’avant, réglage manuel de la portée des feux de route</fr>
+        <fr>Eclairage de jour à LED et clignotants à LED à l`avant, réglage manuel de la portée des feux de route</fr>
         <it>Luci di marcia diurna a LED incl. indicatori di direzione a LED, anteriori, regolazione manuale portata fari</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -201,7 +202,7 @@
 
     <item>
         <de>4 Verzurrösen im Gepäckraum</de>
-        <fr>4 anneaux d’arrimage dans le coffre</fr>
+        <fr>4 anneaux d`arrimage dans le coffre</fr>
         <it>4 anelli di ancoraggio nel bagagliaio</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -210,7 +211,7 @@
 
     <item>
         <de>Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, inkl. Top Tether Befestigungsösen, hinten aussen</de>
-        <fr>Pré-équipement pour système ISOFIX de fixation des sièges enfant, avec anneaux d’arrimage Top Tether sur les sièges arrière extérieurs</fr>
+        <fr>Pré-équipement pour système ISOFIX de fixation des sièges enfant, avec anneaux d`arrimage Top Tether sur les sièges arrière extérieurs</fr>
         <it>Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX con fissaggio Top Tether, posteriore laterale</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Sicherheit</info>
@@ -372,7 +373,7 @@
 
     <item>
         <de>Elektrische Fensterheber vorn</de>
-        <fr>Lève-glaces électriques à l’avant</fr>
+        <fr>Lève-glaces électriques à l`avant</fr>
         <it>Alzacristalli, anteriori, elettrici</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Elektrische Fensterheber</info>
@@ -399,7 +400,7 @@
 
     <item>
         <de>Hochschaltempfehlung über Anzeige im Instrumentendisplay (nur in Verbindung mit manuellem Schaltgetriebe und Automatikgetriebe im manuellen Schaltmodus)</de>
-        <fr>Indicateur de changement de rapport via un témoin dans le combiné d’instruments (fonctionne uniquement sur les boîtes manuelles ou en mode manuel sur les boîtes automatiques)</fr>
+        <fr>Indicateur de changement de rapport via un témoin dans le combiné d`instruments (fonctionne uniquement sur les boîtes manuelles ou en mode manuel sur les boîtes automatiques)</fr>
         <it>Spia cambio marcia nel quadro strumenti (solo con cambio manuale e cambio automatico in modalità manuale)</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Hochschaltempfehlung</info>
@@ -408,7 +409,7 @@
 
     <item>
         <de>Innenraumbeleuchtung, vorn und hinten</de>
-        <fr>Eclairage intérieur à l’avant et à l’arrière</fr>
+        <fr>Eclairage intérieur à l`avant et à l`arrière</fr>
         <it>Illuminazione abitacolo, anteriore e posteriore</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Innenraumbeleuchtung</info>
@@ -444,8 +445,8 @@
 
     <item>
         <de>Umluftschaltung, manuell</de>
-        <fr>fonction recirculation de l’air, manuelle</fr>
-        <it>funzione ricircolo dell’aria manuale</it>
+        <fr>fonction recirculation de l`air, manuelle</fr>
+        <it>funzione ricircolo dell`aria manuale</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Klimaanlage</info>
         <carline>AstraST</carline>
@@ -516,7 +517,7 @@
 
     <item>
         <de>Service-Intervall-Anzeige</de>
-        <fr>Affichage de l’intervalle entre les services</fr>
+        <fr>Affichage de l`intervalle entre les services</fr>
         <it>Indicatore intervallo di servizio</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Service-Intervall-Anzeige</info>
@@ -590,7 +591,7 @@
     <item>
         <de>Make-up-Spiegel in Sonnenblende, nur Beifahrer</de>
         <fr>Miroir de courtoisie dans le pare-soleil, passager avant seulement</fr>
-        <it>Specchietto di cortesia nell’aletta parasole, solo lato passeggero</it>
+        <it>Specchietto di cortesia nell`aletta parasole, solo lato passeggero</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Spiegel</info>
         <carline>AstraST</carline>
@@ -616,7 +617,7 @@
 
     <item>
         <de>Auspuffendrohr, sichtbar, einfach für 1.6 BiTurbo CDTI, doppelt für 1.6 ECOTEC® Direct Injection Turbo</de>
-        <fr>Sortie d’échappement, visible, simple pour le 1.6 BiTurbo CDTI, double pour le 1.6 ECOTEC® Direct Injection Turbo</fr>
+        <fr>Sortie d`échappement, visible, simple pour le 1.6 BiTurbo CDTI, double pour le 1.6 ECOTEC® Direct Injection Turbo</fr>
         <it>1 terminale di scarico, visibile, per 1.6 BiTurbo CDTI, 2 terminali di scarico, visibili, per 1.6 ECOTEC®  Direct Injection Turbo</it>
         <rubrik>Serienausstattung</rubrik>
         <info>Auspuff</info>
@@ -715,8 +716,8 @@
 
     <item>
         <de>Bremsenergie-Rückgewinnung</de>
-        <fr>Récupération de l’énergie de freinage</fr>
-        <it>recupero dell’energia in frenata</it>
+        <fr>Récupération de l`énergie de freinage</fr>
+        <it>recupero dell`energia in frenata</it>
         <rubrik>Serienausstattung</rubrik>
         <info>ecoFLEX-Motorisierung</info>
         <carline>AstraST</carline>
@@ -769,7 +770,7 @@
 
     <item>
         <de>Türeinstiegsleisten mit Schriftzug OPEL, vorn</de>
-        <fr>Seuils de portes avec inscription OPEL à l’avant</fr>
+        <fr>Seuils de portes avec inscription OPEL à l`avant</fr>
         <it>Battitacchi con scritta OPEL, anteriori</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Türeinstiegsleisten</info>
@@ -778,7 +779,7 @@
 
     <item>
         <de>Ambientebeleuchtung in den Türen vorn</de>
-        <fr>Eclairage d’ambiance dans les portes avant</fr>
+        <fr>Eclairage d`ambiance dans les portes avant</fr>
         <it>Illuminazione dambiente, portiere anteriori</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Ambientebeleuchtung</info>
@@ -850,7 +851,7 @@
 
     <item>
         <de>Mittelarmlehne, vorn, verschiebbar, inkl. Staufächer und Getränkehalter</de>
-        <fr>Accoudoir central, coulissant à l’avant, avec compartiments de rangement et porte-boisson</fr>
+        <fr>Accoudoir central, coulissant à l`avant, avec compartiments de rangement et porte-boisson</fr>
         <it>Bracciolo centrale scorrevole, anteriore, con vani portaoggetti e portabibite</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Mittelarmlehne</info>
@@ -859,7 +860,7 @@
 
     <item>
         <de>Mittelarmlehne, vorn, verschiebbar, inkl. Staufächer, Getränkehalter und elektrische Parkbremse</de>
-        <fr>Accoudoir central coulissant à l’avant, avec compartiments de rangement, porte-boisson et frein de parking électrique</fr>
+        <fr>Accoudoir central coulissant à l`avant, avec compartiments de rangement, porte-boisson et frein de parking électrique</fr>
         <it>Bracciolo centrale scorrevole, anteriore, con vani portaoggetti, portabibite e freno di parcheggio elettrico</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Mittelarmlehne</info>
@@ -868,7 +869,7 @@
 
     <item>
         <de>Fensterheber, elektrisch, vorn und hinten</de>
-        <fr>Lève-glaces électriques à l’avant et à l’arrière</fr>
+        <fr>Lève-glaces électriques à l`avant et à l`arrière</fr>
         <it>Alzacristalli elettrici anteriori e posteriori</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Fensterheber</info>
@@ -931,7 +932,7 @@
 
     <item>
         <de>Komfortsitze, vorn, mit Stoffpolster, Dekorleisten Sand, matt</de>
-        <fr>Sièges confort à l’avant, avec sellerie tissu, baguettes décoratives sable mat</fr>
+        <fr>Sièges confort à l`avant, avec sellerie tissu, baguettes décoratives sable mat</fr>
         <it>Sedili anteriori comfort con rivestimento in tessuto, liste decorative Sabbia, opaco</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Sitze</info>
@@ -940,7 +941,7 @@
 
     <item>
         <de>Komfortsitze, vorn, mit Stoffpolster, mit sportlicher Stilistik, Dekorleisten Klavierlack</de>
-        <fr>Sièges confort au look sport à l’avant, avec sellerie tissu, baguettes décoratives couleur vernis de piano</fr>
+        <fr>Sièges confort au look sport à l`avant, avec sellerie tissu, baguettes décoratives couleur vernis de piano</fr>
         <it>Sedili anteriori comfort con rivestimento in tessuto e stile sportivo, liste decorative in lacca pianoforte</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Sitze</info>
@@ -949,7 +950,7 @@
 
     <item>
         <de>Komfortsitze, vorn, mit Polster-Kombination Stoff/Ledernachbildung Morrocana, Dekorleisten Klavierlack</de>
-        <fr>Sièges confort à l’avant, avec sellerie combinée tissu/imitation cuir Morrocana, baguettes décoratives couleur vernis de piano</fr>
+        <fr>Sièges confort à l`avant, avec sellerie combinée tissu/imitation cuir Morrocana, baguettes décoratives couleur vernis de piano</fr>
         <it>Sedili anteriori comfort con rivestimento combinato tessuto/similpelle Morrocana, liste decorative in lacca pianoforte</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Sitze</info>
@@ -967,7 +968,7 @@
 
     <item>
         <de>Klimaanlage, inkl. Fussraumheizung, hinten</de>
-        <fr>Climatisation avec chauffage pour les pieds à l’arrière</fr>
+        <fr>Climatisation avec chauffage pour les pieds à l`arrière</fr>
         <it>Climatizzatore con riscaldamento pozzetto piedi posteriore</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Klimaanlage</info>
@@ -976,7 +977,7 @@
 
     <item>
         <de>Zweizonen-Klimaautomatik, inkl. Fussraum­heizung, hinten</de>
-        <fr>Climatisation automatique bizone avec chauffage pour les pieds à l’arrière</fr>
+        <fr>Climatisation automatique bizone avec chauffage pour les pieds à l`arrière</fr>
         <it>Climatizzatore automatico bizona con riscaldamento pozzetto piedi posteriore</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Klimaanlage</info>
@@ -1003,8 +1004,8 @@
 
     <item>
         <de>OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfall­service, Fahrzeug-Diagnose, auto­matische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</de>
-        <fr>OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d’assistance automatique en cas d’accident, point d’accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d’itinéraire (disponible uniquement sur les véhicules équipés d’un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l’Europe, Opel OnStar vous permet d’accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les 12 premiers mois. A l’exception des prestations liées au point d’accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d’accès Wi-Fi, veuillez consulter le site www.opel-onstar.ch</fr>
-        <it>OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d’incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell’itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all’anno a un servizio di prim’ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l’hotspot Wi-Fi su www.opel-onstar.ch</it>
+        <fr>OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d`assistance automatique en cas d`accident, point d`accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d`itinéraire (disponible uniquement sur les véhicules équipés d`un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l`Europe, Opel OnStar vous permet d`accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les 12 premiers mois. A l`exception des prestations liées au point d`accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d`accès Wi-Fi, veuillez consulter le site www.opel-onstar.ch</fr>
+        <it>OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d`incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell`itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all`anno a un servizio di prim`ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l`hotspot Wi-Fi su www.opel-onstar.ch</it>
         <rubrik>Modellbezogene Serienausstattung</rubrik>
         <info>Fußnote</info>
         <carline>AstraST</carline>
