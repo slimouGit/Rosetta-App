@@ -75,10 +75,38 @@ include "include/db_connect.php";
         </div>
     </div>
 
+    
 
     <div class="row">
+        <div class="form-group">
     <label class="col-sm-2 control-label">Carline</label>
         <div class="col-sm-6">
+
+            <select name="carline[]" id="example-getting-started" multiple="multiple" class="checkbox-inline">
+                <option name="carline[]" type="checkbox" title="ADAM" value="ADAM">ADAM</option>
+                <option name="carline[]" type="checkbox" title="Ampera" value="Ampera">Ampera</option>
+                <option name="carline[]" type="checkbox" value="Antara">Antara</option>
+                <option name="carline[]" type="checkbox" value="AstraST">AstraST</option>
+                <option name="carline[]" type="checkbox" value="AstraNG">AstraNG</option>
+                <option name="carline[]" type="checkbox" value="Cascada">Cascada</option>
+                <option name="carline[]" type="checkbox" value="ComboKastenwagen">ComboKastenwagen</option>
+                <option name="carline[]" type="checkbox" value="ComboPassenger">ComboPassenger</option>
+                <option name="carline[]" type="checkbox" value="Corsa">Corsa</option>
+                <option name="carline[]" type="checkbox" value="Crossland">Crossland</option>
+                <option name="carline[]" type="checkbox" value="GTC_OPC">GTC_OPC</option>
+                <option name="carline[]" type="checkbox" value="InsigniaLimousine">InsigniaLimousine</option>
+                <option name="carline[]" type="checkbox" value="InsigniaOPC">InsigniaOPC</option>
+                <option name="carline[]" type="checkbox" value="InsigniaST">InsigniaST</option>
+                <option name="carline[]" type="checkbox" value="KARL">KARL</option>
+                <option name="carline[]" type="checkbox" value="Meriva">Meriva</option>
+                <option name="carline[]" type="checkbox" value="MokkaX">MokkaX</option>
+                <option name="carline[]" type="checkbox" value="MovanoCombiBus">MovanoCombiBus</option>
+                <option name="carline[]" type="checkbox" value="MovanoFahrgestell">MovanoFahrgestell</option>
+                <option name="carline[]" type="checkbox" value="MovanoVan">MovanoVan</option>
+                <option name="carline[]" type="checkbox" value="Zafira">Zafira</option>
+            </select>
+
+            <!--
     <label class="checkbox-inline">
         <input name="carline[]" type="checkbox" value="General">General
     </label>
@@ -126,7 +154,9 @@ include "include/db_connect.php";
     <label class="checkbox-inline">
         <input name="carline[]" type="checkbox" value="Zafira">Zafira
     </label>
-    </div>
+    -->
+        </div>
+        </div>
     </div>
 
     <br>
@@ -163,3 +193,10 @@ include "include/db_connect.php";
 //include footer
 include "elements/footer.html";
 ?>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-getting-started').multiselect();
+    });
+</script>
