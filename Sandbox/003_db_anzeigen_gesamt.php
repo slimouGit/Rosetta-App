@@ -72,7 +72,8 @@ if(isset($_POST["ak"]))
             . "comment_fr = '" . $_POST["com_fr"][$id_nr] . "',"
             . "comment_it = '" . $_POST["com_it"][$id_nr] . "',"
             . "rubrik = '" . $_POST["rub"][$id_nr] . "',"
-            . "info = '" . $_POST["inf"][$id_nr] . "'"
+            . "info = '" . $_POST["inf"][$id_nr] . "',"
+            . "carline = '" . $_POST["car"][$id_nr] . "'"
             . " WHERE id=$id_nr
                 ";
 
