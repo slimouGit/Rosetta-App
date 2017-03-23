@@ -4,7 +4,7 @@
 header('Content-Type: text/html; charset=utf-8');
 
 $xmlDoc = new DOMDocument();
-$xmlDoc->load("MOKKA_dfi_004.xml");
+$xmlDoc->load("AstraST_dfi_005.xml");
 $servername = "localhost";
 $username     = "root";
 $password = "";
