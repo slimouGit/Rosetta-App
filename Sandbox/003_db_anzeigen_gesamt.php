@@ -46,8 +46,15 @@ if(isset($_POST["ak"]))
             . "(id, de, fr) values ('"
             . "('" . $_POST["ident"][0] . "', '" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "')";
         */
-        $sql = "INSERT INTO rosetta_data (de, fr, it, comment_de, comment_fr, comment_it)
-          VALUES ('" . $_POST["dts"][0] . "', '"  . $_POST["frz"][0] . "', '"  . $_POST["itl"][0] . "', '"  . $_POST["com_de"][0] . "', '"  . $_POST["com_fr"][0] . "', '"  . $_POST["com_it"][0] . "')";
+        $sql = "INSERT INTO rosetta_data (de, fr, it, comment_de, comment_fr, comment_it, rubrik, info)
+          VALUES ('"    . $_POST["dts"][0] . "', '"
+                        . $_POST["frz"][0] . "', '"
+                        . $_POST["itl"][0] . "', '"
+                        . $_POST["com_de"][0] . "', '"
+                        . $_POST["com_fr"][0] . "', '"
+                        . $_POST["com_it"][0] . "', '"
+                        . $_POST["rub"][0] . "', '"
+                        . $_POST["inf"][0] . "')";
         mysqli_query($con, $sql);
     }
 
@@ -63,7 +70,9 @@ if(isset($_POST["ak"]))
             . "it = '" . $_POST["itl"][$id_nr] . "',"
             . "comment_de = '" . $_POST["com_de"][$id_nr] . "',"
             . "comment_fr = '" . $_POST["com_fr"][$id_nr] . "',"
-            . "comment_it = '" . $_POST["com_it"][$id_nr] . "'"
+            . "comment_it = '" . $_POST["com_it"][$id_nr] . "',"
+            . "rubrik = '" . $_POST["rub"][$id_nr] . "',"
+            . "info = '" . $_POST["inf"][$id_nr] . "'"
             . " WHERE id=$id_nr
                 ";
 
@@ -88,24 +97,28 @@ echo "<input name='ak' type='hidden' />";
 echo "<input name='id' type='hidden' />";
 
 /* Tabellen-Beginn */
-echo "\n\n<table class=\"table table-hover table-responsive table-striped\">"
+echo "<table class='table table-hover table-responsive table-striped'>"
     . "<thead>"
     . "<tr>"
-    . "<th class=\"col-sm-1\">ID</th>"
+    //. "<th class=\"col-sm-1\">ID</th>"
     . "<th class=\"col-sm-4\">DE</th>"
     . "<th class=\"col-sm-4\">FR</th>"
     . "<th class=\"col-sm-4\">IT</th>"
+    . "<th class=\"col-sm-4\">Rubrik</th>"
+    . "<th class=\"col-sm-4\">Info/Code</th>"
     . "<th class=\"col-sm-1\"></th>"
     . "</tr>"
     . "</thead>";
 
 /* Neuer Eintrag */
-echo "\n\n<tr>"
+echo "<tr>"
     //. "<td><input class='toEdit' name='ident[0]' size='3' /></td>"
-    . "<td size='3' /></td>"
+    //. "<td size='3' /></td>"
     . "<td><input class='toEdit' name='dts[0]' size='40' /></td>"
     . "<td><input class='toEdit' name='frz[0]' size='40' /></td>"
     . "<td><input class='toEdit' name='itl[0]' size='40' /></td>"
+    . "<td><input class='toEdit' name='rub[0]' size='40' /></td>"
+    . "<td><input class='toEdit' name='inf[0]' size='40' /></td>"
     . "<td><a href='javascript:send(0,0);'>neu eintragen</a></td>"
     . "</tr>";
 
@@ -118,10 +131,12 @@ while ($dsatz = mysqli_fetch_assoc($res))
 {
     $id_nr = $dsatz["id"];
     echo "\n\n<tr>"
-        . "<td rowspan='2'>" . $dsatz["id"] . "</td>"
+        //. "<td rowspan='2'>" . $dsatz["id"] . "</td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='dts[$id_nr]' >" . utf8_encode( $dsatz["de"] ) . "</textarea></td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='frz[$id_nr]' >" . utf8_encode( $dsatz["fr"] ) . "</textarea></td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='itl[$id_nr]' >" . utf8_encode( $dsatz["it"] ) . "</textarea></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='rub[$id_nr]' >" . utf8_encode( $dsatz["rubrik"] ) . "</textarea></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='inf[$id_nr]' >" . utf8_encode( $dsatz["info"] ) . "</textarea></td>"
         . "<td rowspan='2'><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a>"
         . " <a href='javascript:send(2,$id_nr);'><img src=\"img/button_delete.png\"></a></td>"
         . "</tr>"
