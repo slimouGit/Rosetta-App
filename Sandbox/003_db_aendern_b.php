@@ -112,12 +112,14 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
 
     echo "
                     <div class=\"row\">
+                    <div class=\"form-group\"> 
                         <label class=\"col-sm-2 control-label\">Carline</label>
                     <div class=\"col-sm-6\">";
 
 
     $carline = array_map('trim', explode(", ", $dsatz['carline']));
     //print_r( $carline);
+    /*
     if (in_array("General", $carline)) { ?> <input type="checkbox" value="General" name="carline[]" checked >General<?php }  else { ?> <input type="checkbox" value="General" name="carline[]"> <span class="carline">General</span><?php }
     if (in_array("ADAM", $carline)) { ?> <input type="checkbox" value="ADAM" name="carline[]" checked >ADAM<?php }  else { ?> <input type="checkbox" value="ADAM" name="carline[]"> ADAM<?php }
     if (in_array("AstraHB5", $carline)) { ?> <input type="checkbox" value="AstraHB5" name="carline[]" checked >AstraHB5<?php }  else { ?> <input type="checkbox" value="AstraHB5" name="carline[]"> AstraHB5<?php }
@@ -133,9 +135,38 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
     if (in_array("Vivaro", $carline)) { ?> <input type="checkbox" value="Vivaro" name="carline[]" checked >Vivaro<?php }  else { ?> <input type="checkbox" value="Vivaro" name="carline[]"> Vivaro<?php }
     if (in_array("Zafira", $carline)) { ?> <input type="checkbox" value="Zafira" name="carline[]" checked >Zafira<?php }  else { ?> <input type="checkbox" value="Zafira" name="carline[]"> Zafira<?php }
 
+    var_dump($carline);
+    */
+    echo "
+        <select name='carline[]' id='example-getting-started' multiple='multiple' class='checkbox-inline'>";
+            if (in_array('ADAM', $carline)) { ?><option type='checkbox' selected title='ADAM' value='ADAM'>ADAM</option>    <?php } else { ?> <option  type='checkbox' title='ADAM' value='ADAM'>ADAM</option> <?php }
+            if (in_array('Ampera', $carline)) { ?><option type='checkbox' selected title='Ampera' value='ADAM'>Ampera</option>    <?php } else { ?> <option  type='checkbox' title='Ampera' value='Ampera'>Ampera</option> <?php }
+            if (in_array('Antara', $carline)) { ?><option type='checkbox' selected title='Antara' value='ADAM'>Antara</option>    <?php } else { ?> <option type='checkbox' title='Antara' value='Antara'>Antara</option> <?php }
+            if (in_array('AstraST', $carline)) { ?><option type='checkbox' selected title='AstraST' value='AstraST'>AstraST</option>    <?php } else { ?> <option type='checkbox' title='AstraST' value='AstraST'>AstraST</option> <?php }
+            if (in_array('AstraNG', $carline)) { ?><option type='checkbox' selected title='AstraNG' value='AstraNG'>AstraNG</option>    <?php } else { ?> <option  type='checkbox' title='AstraNG' value='AstraNG'>AstraNG</option> <?php }
+            if (in_array('Cascada', $carline)) { ?><option type='checkbox' selected title='Cascada' value='Cascada'>Cascada</option>    <?php } else { ?> <option  type='checkbox' title='Cascada' value='Cascada'>Cascada</option> <?php }
+            if (in_array('ComboKastenwagen', $carline)) { ?><option type='checkbox' selected title='ComboKastenwagen' value='ComboKastenwagen'>ComboKastenwagen</option>    <?php } else { ?> <option type='checkbox' title='ComboKastenwagen' value='ComboKastenwagen'>ComboKastenwagen</option> <?php }
+            if (in_array('ComboPassenger', $carline)) { ?><option type='checkbox' selected title='ComboPassenger' value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option  type='checkbox' title='ComboPassenger' value='ComboPassenger'>ComboPassenger</option> <?php }
+            if (in_array('ComboPassenger', $carline)) { ?><option type='checkbox' selected title='ComboPassenger' value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option  type='checkbox'  title='ComboPassenger' value='ComboPassenger'>ComboPassenger</option> <?php }
+            if (in_array('Crossland', $carline)) { ?><option type='checkbox' selected title='Crossland' value='Crossland'>Crossland</option>    <?php } else { ?> <option  type='checkbox'  title='Crossland' value='Crossland'>Crossland</option> <?php }
+            if (in_array('GTC_OPC', $carline)) { ?><option type='checkbox' selected title='GTC_OPC' value='GTC_OPC'>GTC_OPC</option>    <?php } else { ?> <option  type='checkbox'  title='GTC_OPC' value='GTC_OPC'>GTC_OPC</option> <?php }
+            if (in_array('InsigniaLimousine', $carline)) { ?><option type='checkbox' selected title='InsigniaLimousine' value='InsigniaLimousine'>InsigniaLimousine</option>    <?php } else { ?> <option  type='checkbox'  title='InsigniaLimousine' value='InsigniaLimousine'>InsigniaLimousine</option> <?php }
+            if (in_array('InsigniaOPC', $carline)) { ?><option type='checkbox' selected title='InsigniaOPC' value='InsigniaOPC'>InsigniaOPC</option>    <?php } else { ?> <option  type='checkbox'  title='InsigniaOPC' value='InsigniaOPC'>InsigniaOPC</option> <?php }
+            if (in_array('InsigniaST', $carline)) { ?><option type='checkbox' selected title='InsigniaST' value='InsigniaST'>InsigniaST</option>    <?php } else { ?> <option  type='checkbox'  title='InsigniaST' value='InsigniaST'>InsigniaST</option> <?php }
+            if (in_array('KARL', $carline)) { ?><option type='checkbox' selected title='KARL' value='KARL'>KARL</option>    <?php } else { ?> <option  type='checkbox'  title='KARL' value='KARL'>KARL</option> <?php }
+            if (in_array('Meriva', $carline)) { ?><option type='checkbox' selected title='Meriva' value='Meriva'>Meriva</option>    <?php } else { ?> <option  type='checkbox'  title='Meriva' value='Meriva'>Meriva</option> <?php }
+            if (in_array('MokkaX', $carline)) { ?><option type='checkbox' selected title='MokkaX' value='MokkaX'>MokkaX</option>    <?php } else { ?> <option  type='checkbox'  title='MokkaX' value='MokkaX'>MokkaX</option> <?php }
+            if (in_array('MovanoCombiBus', $carline)) { ?><option type='checkbox' selected title='MovanoCombiBus' value='MovanoCombiBus'>InsigniMovanoCombiBusaOPC</option>    <?php } else { ?> <option  type='checkbox'  title='MovanoCombiBus' value='MovanoCombiBus'>MovanoCombiBus</option> <?php }
+            if (in_array('MovanoFahrgestell', $carline)) { ?><option type='checkbox' selected title='MovanoFahrgestell' value='MovanoFahrgestell'>MovanoFahrgestell</option>    <?php } else { ?> <option  type='checkbox'  title='MovanoFahrgestell' value='MovanoFahrgestell'>MovanoFahrgestell</option> <?php }
+            if (in_array('MovanoVan', $carline)) { ?><option type='checkbox' selected title='MovanoVan' value='MovanoVan'>MovanoVan</option>    <?php } else { ?> <option  type='checkbox' checked title='MovanoVan' value='MovanoVan'>MovanoVan</option> <?php }
+            if (in_array('Zafira', $carline)) { ?><option type='checkbox' selected title='Zafira' value='Zafira'>Zafira</option>    <?php } else { ?> <option  type='checkbox' checked title='Zafira' value='Zafira'>Zafira</option> <?php }
+                     
+    echo "</select>";
+
     echo "
                     </div>
                         <div class=\"col-sm-4 errorContainer\"></div>
+                    </div>
                     </div>
                     </div>
    
