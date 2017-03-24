@@ -1,15 +1,4 @@
-<?php
-//include header
-include "elements/header.php";
-?>
 
-<?php
-//include db connection
-include "include/db_connect.php";
-?>
-
-<h2>Ausgabe aller Datensätze</h2>
-<p></p>
 
 
 <script type="text/javascript">
@@ -131,8 +120,6 @@ $res = mysqli_query($con, "select * from rosetta_data");
 /* Alle vorhandenen Datens�tze */
 while ($dsatz = mysqli_fetch_assoc($res))
 {
-    $result_array[] = $dsatz;
-    //var_dump($result_array);
     $id_nr = $dsatz["id"];
     echo "\n\n<tr>"
         //. "<td rowspan='2'>" . $dsatz["id"] . "</td>"
@@ -141,24 +128,7 @@ while ($dsatz = mysqli_fetch_assoc($res))
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='itl[$id_nr]' >" . utf8_encode( $dsatz["it"] ) . "</textarea></td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='rub[$id_nr]' >" . utf8_encode( $dsatz["rubrik"] ) . "</textarea></td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='inf[$id_nr]' >" . utf8_encode( $dsatz["info"] ) . "</textarea></td>"
-        . "<td>";
-        //<textarea onkeyup='auto_grow(this)' class='form-control' name='car[$id_nr]' >" . utf8_encode( $dsatz["carline"] ) . "</textarea>
-    $carline = array_map('trim', explode(", ", $dsatz['carline']));
-
-        echo "<select name='carline[]' id='example-getting-started' multiple='multiple' class='checkbox-inline'>";
-
-
-        if (in_array('ADAM', $carline)) { ?><option type='checkbox' name='car[$id_nr]' selected title='ADAM' value='ADAM'>ADAM</option>    <?php } else { ?> <option  type='checkbox' name='car[$id_nr]' title='ADAM' value='ADAM'>ADAM</option> <?php };
-        if (in_array('Ampera', $carline)) { ?><option type='checkbox' name='car[$id_nr]' selected title='Ampera' value='ADAM'>Ampera</option>    <?php } else { ?> <option  type='checkbox' name='car[$id_nr]' title='Ampera' value='Ampera'>Ampera</option> <?php }
-        if (in_array('Antara', $carline)) { ?><option type='checkbox' name='car[$id_nr]' selected title='Antara' value='ADAM'>Antara</option>    <?php } else { ?> <option type='checkbox' name='car[$id_nr]' title='Antara' value='Antara'>Antara</option> <?php }
-        if (in_array('AstraST', $carline)) { ?><option type='checkbox' name='car[$id_nr]' selected title='AstraST' value='AstraST'>AstraST</option>    <?php } else { ?> <option type='checkbox' name='car[$id_nr]' title='AstraST' value='AstraST'>AstraST</option> <?php }
-        if (in_array('AstraNG', $carline)) { ?><option type='checkbox' name='car[$id_nr]' selected title='AstraNG' value='AstraNG'>AstraNG</option>    <?php } else { ?> <option  type='checkbox' name='car[$id_nr]' title='AstraNG' value='AstraNG'>AstraNG</option> <?php }
-        if (in_array('Cascada', $carline)) { ?><option type='checkbox' name='car[$id_nr]' selected title='Cascada' value='Cascada'>Cascada</option>    <?php } else { ?> <option  type='checkbox' name='car[$id_nr]' title='Cascada' value='Cascada'>Cascada</option> <?php }
-        if (in_array('ComboKastenwagen', $carline)) { ?><option type='checkbox' selected title='ComboKastenwagen' value='ComboKastenwagen'>ComboKastenwagen</option>    <?php } else { ?> <option type='checkbox' title='ComboKastenwagen' value='ComboKastenwagen'>ComboKastenwagen</option> <?php }
-        if (in_array('ComboPassenger', $carline)) { ?><option type='checkbox' selected title='ComboPassenger' value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option  type='checkbox' title='ComboPassenger' value='ComboPassenger'>ComboPassenger</option> <?php }
-        echo "</select>";
-
-        echo "</td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='car[$id_nr]' >" . utf8_encode( $dsatz["carline"] ) . "</textarea></td>"
         . "<td rowspan='2'><a href='javascript:send(1,$id_nr);'><img src=\"img/button_agree.png\"></a>"
         . " <a href='javascript:send(2,$id_nr);'><img src=\"img/button_delete.png\"></a></td>"
         . "</tr>"
@@ -183,7 +153,3 @@ mysqli_close($con);
         element.style.height = (element.scrollHeight)+"px";
     }
 </script>
-<?php
-//include footer
-include "elements/footer.html";
-?>
