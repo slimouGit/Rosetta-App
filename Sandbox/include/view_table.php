@@ -65,10 +65,31 @@ function viewWithSlash($res)
         echo
         "<tr>".
             "<td>" . $dsatz["id"] . "</td>" .
-            "<td>" . utf8_encode($dsatz["de"]) . "</td>" .
-            "<td>" . utf8_encode($dsatz["fr"]) . "</td>" .
-            "<td>" . utf8_encode($dsatz["it"]) . "</td>" .
-            "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+            "<td>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
+                    </div>
+                    <div class='commentValue'>"  . utf8_encode($dsatz["de"]) . "</div>            
+                </div>
+            </td>".
+        "<td>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
+                    </div>
+                    <div class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "</div>            
+                </div>
+            </td>".
+        "<td>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
+                    </div>
+                    <div class='commentValue'>"  . utf8_encode($dsatz["it"]) . "</div>            
+                </div>
+            </td>".
+        "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
             "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
         "<td class='columnCarline'>";
 
@@ -93,10 +114,34 @@ function viewWithSlash($res)
         //Kommentar Zeile
         echo "<tr class='commentRow'>"
             ."<td></td>"
-            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
-            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
-            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
+            ."<td class='cellComment'>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>            
+                </div>
+            </td>"
+
+            ."<td class='cellComment'>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
+                </div>
+            </td>"
+            //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
+
+            ."<td class='cellComment'>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
+                </div>
+            </td>"
 
             ."<td></td>"
             ."<td></td>"
@@ -107,8 +152,9 @@ function viewWithSlash($res)
 
         echo "<tr><td colspan='9'></td></tr>";
 
+        //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
 
-        }//ENDE WHILE
+    }//ENDE WHILE
     }//ENDE viewWithSlash
 
 
@@ -139,9 +185,33 @@ function viewWithOutSlash($searchWord, $res)
         echo
         "<tr>".
             "<td>" . $dsatz["id"] . "</td>".
-            "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
-            "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
-            "<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
+            "<td>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</div>            
+                </div>
+            </td>".
+            //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
+            "<td>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))       . "</div>            
+                </div>
+            </td>".
+            //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
+            "<td>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</div>            
+                </div>
+            </td>".
+            //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
             "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["rubrik"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
             //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
             //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
@@ -174,7 +244,7 @@ function viewWithOutSlash($searchWord, $res)
             ."<td class='cellComment'>
                 <div class='commentContainer'>
                     <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
                     </div>
                     <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>            
                 </div>
@@ -183,7 +253,7 @@ function viewWithOutSlash($searchWord, $res)
             ."<td class='cellComment'>
                 <div class='commentContainer'>
                     <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
                     </div>
                     <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
                 </div>
@@ -193,7 +263,7 @@ function viewWithOutSlash($searchWord, $res)
             ."<td class='cellComment'>
                 <div class='commentContainer'>
                     <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
                     </div>
                     <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
                 </div>
