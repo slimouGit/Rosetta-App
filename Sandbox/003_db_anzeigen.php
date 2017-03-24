@@ -11,7 +11,7 @@ include "elements/header.php";
 include "include/db_connect.php";
 ?>
 
-    <form action = "003_db_aendern_b.php" method = "post">
+    <form method = "post">
         <?php
 
         /* SQL-Abfrage ausfuehren */
