@@ -37,7 +37,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Deutsch</label>
                             <div class=\"col-sm-6\">
-                                <textarea onkeyup='auto_grow(this)' class=\"form-control \" name=\"dts\" value='" . utf8_encode($dsatz["de"]) . "'></textarea>
+                                <textarea onkeyup='auto_grow(this)' class=\"form-control \" name=\"dts\" >". utf8_encode($dsatz["de"]) ."</textarea>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -50,7 +50,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Französisch</label>
                             <div class=\"col-sm-6\">
-                                <textarea onkeyup='auto_grow(this)' class=\"form-control\" name=\"frz\" value='" . utf8_encode($dsatz["fr"]) . "'></textarea>
+                                <textarea onkeyup='auto_grow(this)' class=\"form-control\" name=\"frz\" >". utf8_encode($dsatz["fr"]) ."</textarea>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -63,7 +63,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Italienisch</label>
                             <div class=\"col-sm-6\">
-                                <textarea onkeyup='auto_grow(this)' class=\"form-control\" name=\"itl\" value='" . utf8_encode($dsatz["it"]) . "'></textarea>
+                                <textarea onkeyup='auto_grow(this)' class=\"form-control\" name=\"itl\" >". utf8_encode($dsatz["it"]) ."</textarea>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
