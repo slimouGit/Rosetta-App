@@ -19,7 +19,7 @@ include "include/db_connect.php";
         <div class="form-group">
             <label class="col-sm-2 control-label">Deutsch</label>
             <div class="col-sm-6">
-                <input class="form-control" name="dts">
+                <textarea onkeyup='auto_grow(this)' class="form-control" name="dts"></textarea>
             </div>
             <div class="col-sm-4 errorContainer"></div>
         </div>
@@ -29,7 +29,7 @@ include "include/db_connect.php";
         <div class="form-group">
             <label class="col-sm-2 control-label">Französisch</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" name="frz">
+                <textarea onkeyup='auto_grow(this)' type="text" class="form-control" name="frz"></textarea>
             </div>
             <div class="col-sm-4 errorContainer"></div>
         </div>
@@ -39,7 +39,7 @@ include "include/db_connect.php";
         <div class="form-group">
             <label class="col-sm-2 control-label">Italienisch</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" name="itl">
+                <textarea onkeyup='auto_grow(this)' type="text" class="form-control" name="itl"></textarea>
             </div>
             <div class="col-sm-4 errorContainer"></div>
         </div>
@@ -158,7 +158,7 @@ include "include/db_connect.php";
         </div>
         </div>
     </div>
-
+    <!--
     <br>
 
     <div class="row">
@@ -170,7 +170,7 @@ include "include/db_connect.php";
             </label>
         </div>
     </div>
-
+    -->
 
     <div class="row">
         <div class="form-group">
@@ -178,9 +178,11 @@ include "include/db_connect.php";
             <div class="col-sm-1">
                 <input type="submit" class="btn btn-primary" value="Eintragen" name="gesendet"></input>
             </div>
+            <!--
             <div class="col-sm-1">
                 <button type="reset" class="btn btn-primary" value=""">Zuruecksetzen</button>
             </div>
+            -->
         </div>
     </div>
 
@@ -194,6 +196,12 @@ include "include/db_connect.php";
 include "elements/footer.html";
 ?>
 
+<script>
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+    }
+</script>
 
 <script type="text/javascript">
     $(document).ready(function() {
