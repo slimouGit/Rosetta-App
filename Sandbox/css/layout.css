@@ -91,3 +91,7 @@ textarea {
     min-height: 10px;
     max-height: 500px;
 }
+
+.commentContainer{background-color: red}
+.commentValue{float:left}
+.commentIcon{float:right}

@@ -172,7 +172,13 @@ function viewWithOutSlash($searchWord, $res)
             ."<td></td>"
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
 
-            ."<td class='cellComment'><input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button></td>"
+            ."<td class='cellComment'><div class='commentContainer'>
+            <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>
+            <div class='commentIcon'>
+            <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
+            </div>
+            </div>
+            </td>"
             //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
