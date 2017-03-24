@@ -93,5 +93,5 @@ textarea {
 }
 
 .commentContainer{background-color: red}
-.commentValue{float:left}
-.commentIcon{float:right}
+.commentIcon{float:left;}
+.commentValue{float:left;margin-left:10px;}

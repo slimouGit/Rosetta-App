@@ -170,18 +170,34 @@ function viewWithOutSlash($searchWord, $res)
         //Kommentar Zeile
         echo "<tr class='commentRow'>"
             ."<td></td>"
-            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
 
-            ."<td class='cellComment'><div class='commentContainer'>
-            <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>
-            <div class='commentIcon'>
-            <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
-            </div>
-            </div>
+            ."<td class='cellComment'>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>            
+                </div>
+            </td>"
+
+            ."<td class='cellComment'>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
+                </div>
             </td>"
             //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
-            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
+            ."<td class='cellComment'>
+                <div class='commentContainer'>
+                    <div class='commentIcon'>
+                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
+                    </div>
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
+                </div>
+            </td>"
 
             ."<td></td>"
             ."<td></td>"
