@@ -94,7 +94,6 @@ function viewWithSlash($res)
         echo "<tr class='commentRow'>"
             ."<td></td>"
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
-
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
@@ -173,7 +172,8 @@ function viewWithOutSlash($searchWord, $res)
             ."<td></td>"
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_de"]) . "</td>"
 
-            ."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
+            ."<td class='cellComment'><input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button></td>"
+            //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
 
             ."<td class='cellComment'>" . utf8_encode($dsatz["comment_it"]) . "</td>"
 
@@ -186,6 +186,7 @@ function viewWithOutSlash($searchWord, $res)
 
         echo "<tr><td colspan='9'></td></tr>";
 
+        //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
 
         }//ENDE WHILE
     }//ENDE viewWithoutSlash
