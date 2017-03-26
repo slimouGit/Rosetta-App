@@ -29,8 +29,10 @@ header('Content-Type: text/html; charset=utf-8');
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css"
               rel="stylesheet" type="text/css" />
-        <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
-                type="text/javascript"></script>
+        <!--<script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
+                type="text/javascript"></script>-->
+        <!--bootstrap-multiselect lokal-->
+        <script src="lib/bootstrap-multiselect.js" type="text/javascript"></script>
 
         <!-- Bootstrap -->
         <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
