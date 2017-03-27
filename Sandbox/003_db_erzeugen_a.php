@@ -83,27 +83,27 @@ include "include/db_connect.php";
         <div class="col-sm-6">
 
             <select name="carline[]" id="example-getting-started" multiple="multiple" class="checkbox-inline">
-                <option name="carline[]" type="checkbox" title="ADAM" value="ADAM">ADAM</option>
-                <option name="carline[]" type="checkbox" title="Ampera" value="Ampera">Ampera</option>
-                <option name="carline[]" type="checkbox" value="Antara">Antara</option>
-                <option name="carline[]" type="checkbox" value="AstraST">AstraST</option>
-                <option name="carline[]" type="checkbox" value="AstraNG">AstraNG</option>
-                <option name="carline[]" type="checkbox" value="Cascada">Cascada</option>
-                <option name="carline[]" type="checkbox" value="ComboKastenwagen">ComboKastenwagen</option>
-                <option name="carline[]" type="checkbox" value="ComboPassenger">ComboPassenger</option>
-                <option name="carline[]" type="checkbox" value="Corsa">Corsa</option>
-                <option name="carline[]" type="checkbox" value="Crossland">Crossland</option>
-                <option name="carline[]" type="checkbox" value="GTC_OPC">GTC_OPC</option>
-                <option name="carline[]" type="checkbox" value="InsigniaLimousine">InsigniaLimousine</option>
-                <option name="carline[]" type="checkbox" value="InsigniaOPC">InsigniaOPC</option>
-                <option name="carline[]" type="checkbox" value="InsigniaST">InsigniaST</option>
-                <option name="carline[]" type="checkbox" value="KARL">KARL</option>
-                <option name="carline[]" type="checkbox" value="Meriva">Meriva</option>
-                <option name="carline[]" type="checkbox" value="MokkaX">MokkaX</option>
-                <option name="carline[]" type="checkbox" value="MovanoCombiBus">MovanoCombiBus</option>
-                <option name="carline[]" type="checkbox" value="MovanoFahrgestell">MovanoFahrgestell</option>
-                <option name="carline[]" type="checkbox" value="MovanoVan">MovanoVan</option>
-                <option name="carline[]" type="checkbox" value="Zafira">Zafira</option>
+                <option title="ADAM" value="ADAM">ADAM</option>
+                <option title="Ampera" value="Ampera">Ampera</option>
+                <option value="Antara">Antara</option>
+                <option value="AstraST">AstraST</option>
+                <option value="AstraNG">AstraNG</option>
+                <option value="Cascada">Cascada</option>
+                <option value="ComboKastenwagen">ComboKastenwagen</option>
+                <option value="ComboPassenger">ComboPassenger</option>
+                <option value="Corsa">Corsa</option>
+                <option value="Crossland">Crossland</option>
+                <option value="GTC_OPC">GTC_OPC</option>
+                <option value="InsigniaLimousine">InsigniaLimousine</option>
+                <option value="InsigniaOPC">InsigniaOPC</option>
+                <option value="InsigniaST">InsigniaST</option>
+                <option value="KARL">KARL</option>
+                <option value="Meriva">Meriva</option>
+                <option value="MokkaX">MokkaX</option>
+                <option value="MovanoCombiBus">MovanoCombiBus</option>
+                <option value="MovanoFahrgestell">MovanoFahrgestell</option>
+                <option value="MovanoVan">MovanoVan</option>
+                <option value="Zafira">Zafira</option>
             </select>
 
             <!--
