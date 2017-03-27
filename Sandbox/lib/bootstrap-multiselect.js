@@ -416,7 +416,7 @@
             includeFilterClearBtn: true,
             preventInputChangeEvent: false,
             nonSelectedText: 'keine Auswahl',
-            nSelectedText: 'ausgewaehlt',
+            nSelectedText: 'Carlines wurden ausgewaehlt',
             allSelectedText: 'Alles ausgewaehlt',
             numberDisplayed: 3,
             disableIfEmpty: false,
