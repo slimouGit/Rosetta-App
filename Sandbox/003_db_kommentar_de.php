@@ -20,6 +20,8 @@ include "include/db_connect.php";
 
 if (isset($_POST['update']) ? $_POST['update'] : '')
 {
+
+
     $sql = "select * from rosetta_data where id = '" . $_POST['update'] . "'";
     $res = mysqli_query($con, $sql);
     $dsatz = mysqli_fetch_assoc($res);
@@ -82,7 +84,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
     mysqli_close($con);
 }
 else
-    //echo "<p>Es wurde kein Datensatz ausgewaehlt</p>";
+    echo "<p>Es wurde kein Datensatz uebergeben, bitte folgende Browser verwenden: Google Chrome, Safari</p>";
 ?>
 
 <?php
