@@ -65,16 +65,16 @@ if(isset($_POST["ak"]))
         $id_nr = $_POST["id"];
 
         //Pruefung, ob checkboxen ausgewaehlt wurden
-        if(!empty($_POST['carline'])) {
+        if(!empty($carline)) {
             //das Array carline wird ueber implode in $car gespeichert
-            $car = implode(', ', $_POST['carline']);
+            $car = implode(', ', $carline);
         }
 //
         if(empty($car)) {
             $car = 'General';
         }
 
-/*
+
         $sql = "
                 UPDATE rosetta_data SET 
                de = '" . $_POST["dts"][$id_nr] . "',"
@@ -88,10 +88,10 @@ if(isset($_POST["ak"]))
             . " carline = '" . $car . "'"
             . " WHERE id=$id_nr
                 ";
-*/
+/*
 
         $sql = "UPDATE rosetta_data SET * WHERE id=$id_nr";
-
+*/
         mysqli_query($con, $sql);
 
 
@@ -165,37 +165,29 @@ $counter = count($carline);
 //alle referenzierten Carlines werden mit jeweiligem Preislisten-PDF verlinkt
 //for ($i = 0; $i < $counter;$i++) {
     echo "<select name='carline[]' class='example-getting-started' multiple='multiple' class='checkbox-inline'>";
-    //echo "<option name='carline[]' type='checkbox' title='ADAM' value='ADAM'>ADAM</option>";
-    //echo "<option name='carline[]' type='checkbox' title='Ampera' value='Ampera'>Ampera</option>";
-     //foreach ($carline as $carKey){
-    if (in_array('ADAM', $carline)) { ?><option selected value='ADAM'>ADAM</option>    <?php } else { ?> <option value='ADAM'>ADAM</option> <?php }
-    if (in_array('Ampera', $carline)) { ?><option selected value='ADAM'>Ampera</option>    <?php } else { ?> <option value='Ampera'>Ampera</option> <?php }
-    if (in_array('Antara', $carline)) { ?><option selected value='ADAM'>Antara</option>    <?php } else { ?> <option value='Antara'>Antara</option> <?php }
-    if (in_array('AstraST', $carline)) { ?><option selected value='AstraST'>AstraST</option>    <?php } else { ?> <option value='AstraST'>AstraST</option> <?php }
-    if (in_array('AstraNG', $carline)) { ?><option selected value='AstraNG'>AstraNG</option>    <?php } else { ?> <option value='AstraNG'>AstraNG</option> <?php }
-    if (in_array('Cascada', $carline)) { ?><option selected value='Cascada'>Cascada</option>    <?php } else { ?> <option value='Cascada'>Cascada</option> <?php }
-    if (in_array('ComboKastenwagen', $carline)) { ?><option selected value='ComboKastenwagen'>ComboKastenwagen</option>    <?php } else { ?> <option value='ComboKastenwagen'>ComboKastenwagen</option> <?php }
-    if (in_array('ComboPassenger', $carline)) { ?><option selected value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option value='ComboPassenger'>ComboPassenger</option> <?php }
-    if (in_array('ComboPassenger', $carline)) { ?><option selected value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option value='ComboPassenger'>ComboPassenger</option> <?php }
-    if (in_array('Crossland', $carline)) { ?><option selected value='Crossland'>Crossland</option>    <?php } else { ?> <option value='Crossland'>Crossland</option> <?php }
-    if (in_array('GTC_OPC', $carline)) { ?><option selected value='GTC_OPC'>GTC_OPC</option>    <?php } else { ?> <option value='GTC_OPC'>GTC_OPC</option> <?php }
-    if (in_array('InsigniaLimousine', $carline)) { ?><option selected value='InsigniaLimousine'>InsigniaLimousine</option>    <?php } else { ?> <option value='InsigniaLimousine'>InsigniaLimousine</option> <?php }
-    if (in_array('InsigniaOPC', $carline)) { ?><option selected value='InsigniaOPC'>InsigniaOPC</option>    <?php } else { ?> <option value='InsigniaOPC'>InsigniaOPC</option> <?php }
-    if (in_array('InsigniaST', $carline)) { ?><option selected value='InsigniaST'>InsigniaST</option>    <?php } else { ?> <option value='InsigniaST'>InsigniaST</option> <?php }
-    if (in_array('KARL', $carline)) { ?><option selected value='KARL'>KARL</option>    <?php } else { ?> <option value='KARL'>KARL</option> <?php }
-    if (in_array('Meriva', $carline)) { ?><option selected value='Meriva'>Meriva</option>    <?php } else { ?> <option value='Meriva'>Meriva</option> <?php }
-    if (in_array('MokkaX', $carline)) { ?><option selected value='MokkaX'>MokkaX</option>    <?php } else { ?> <option value='MokkaX'>MokkaX</option> <?php }
-    if (in_array('MovanoCombiBus', $carline)) { ?><option selected value='MovanoCombiBus'>InsigniMovanoCombiBusaOPC</option>    <?php } else { ?> <option value='MovanoCombiBus'>MovanoCombiBus</option> <?php }
-    if (in_array('MovanoFahrgestell', $carline)) { ?><option selected value='MovanoFahrgestell'>MovanoFahrgestell</option>    <?php } else { ?> <option value='MovanoFahrgestell'>MovanoFahrgestell</option> <?php }
-    if (in_array('MovanoVan', $carline)) { ?><option selected value='MovanoVan'>MovanoVan</option>    <?php } else { ?> <option value='MovanoVan'>MovanoVan</option> <?php }
-    if (in_array('Zafira', $carline)) { ?><option selected value='Zafira'>Zafira</option>    <?php } else { ?> <option value='Zafira'>Zafira</option> <?php }
-    // echo "<option type='checkbox' name='car[$id_nr]' selected title='$carKey' value='$carKey'>$carKey</option>";
-   // }
-
-    //   echo "<a href='pl/" . $carKey . "_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
-   // echo "<a href='pl/" . $carKey . "_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
+        if (in_array('ADAM', $carline)) { $dsatz["de"] ?><option selected value='ADAM'>ADAM</option>    <?php } else { ?> <option value='ADAM'>ADAM</option> <?php }
+        if (in_array('Ampera', $carline)) { ?><option selected value='ADAM'>Ampera</option>    <?php } else { ?> <option value='Ampera'>Ampera</option> <?php }
+        if (in_array('Antara', $carline)) { ?><option selected value='ADAM'>Antara</option>    <?php } else { ?> <option value='Antara'>Antara</option> <?php }
+        if (in_array('AstraST', $carline)) { ?><option selected value='AstraST'>AstraST</option>    <?php } else { ?> <option value='AstraST'>AstraST</option> <?php }
+        if (in_array('AstraNG', $carline)) { ?><option selected value='AstraNG'>AstraNG</option>    <?php } else { ?> <option value='AstraNG'>AstraNG</option> <?php }
+        if (in_array('Cascada', $carline)) { ?><option selected value='Cascada'>Cascada</option>    <?php } else { ?> <option value='Cascada'>Cascada</option> <?php }
+        if (in_array('ComboKastenwagen', $carline)) { ?><option selected value='ComboKastenwagen'>ComboKastenwagen</option>    <?php } else { ?> <option value='ComboKastenwagen'>ComboKastenwagen</option> <?php }
+        if (in_array('ComboPassenger', $carline)) { ?><option selected value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option value='ComboPassenger'>ComboPassenger</option> <?php }
+        if (in_array('ComboPassenger', $carline)) { ?><option selected value='ComboPassenger'>ComboPassenger</option>    <?php } else { ?> <option value='ComboPassenger'>ComboPassenger</option> <?php }
+        if (in_array('Crossland', $carline)) { ?><option selected value='Crossland'>Crossland</option>    <?php } else { ?> <option value='Crossland'>Crossland</option> <?php }
+        if (in_array('GTC_OPC', $carline)) { ?><option selected value='GTC_OPC'>GTC_OPC</option>    <?php } else { ?> <option value='GTC_OPC'>GTC_OPC</option> <?php }
+        if (in_array('InsigniaLimousine', $carline)) { ?><option selected value='InsigniaLimousine'>InsigniaLimousine</option>    <?php } else { ?> <option value='InsigniaLimousine'>InsigniaLimousine</option> <?php }
+        if (in_array('InsigniaOPC', $carline)) { ?><option selected value='InsigniaOPC'>InsigniaOPC</option>    <?php } else { ?> <option value='InsigniaOPC'>InsigniaOPC</option> <?php }
+        if (in_array('InsigniaST', $carline)) { ?><option selected value='InsigniaST'>InsigniaST</option>    <?php } else { ?> <option value='InsigniaST'>InsigniaST</option> <?php }
+        if (in_array('KARL', $carline)) { ?><option selected value='KARL'>KARL</option>    <?php } else { ?> <option value='KARL'>KARL</option> <?php }
+        if (in_array('Meriva', $carline)) { ?><option selected value='Meriva'>Meriva</option>    <?php } else { ?> <option value='Meriva'>Meriva</option> <?php }
+        if (in_array('MokkaX', $carline)) { ?><option selected value='MokkaX'>MokkaX</option>    <?php } else { ?> <option value='MokkaX'>MokkaX</option> <?php }
+        if (in_array('MovanoCombiBus', $carline)) { ?><option selected value='MovanoCombiBus'>InsigniMovanoCombiBusaOPC</option>    <?php } else { ?> <option value='MovanoCombiBus'>MovanoCombiBus</option> <?php }
+        if (in_array('MovanoFahrgestell', $carline)) { ?><option selected value='MovanoFahrgestell'>MovanoFahrgestell</option>    <?php } else { ?> <option value='MovanoFahrgestell'>MovanoFahrgestell</option> <?php }
+        if (in_array('MovanoVan', $carline)) { ?><option selected value='MovanoVan'>MovanoVan</option>    <?php } else { ?> <option value='MovanoVan'>MovanoVan</option> <?php }
+        if (in_array('Zafira', $carline)) { ?><option selected value='Zafira'>Zafira</option>    <?php } else { ?> <option value='Zafira'>Zafira</option> <?php }
     echo "</select>";
-
+//var_dump($carline);
 //}
         //<textarea onkeyup='auto_grow(this)' class='form-control' name='car[$id_nr]' >" . utf8_encode( $dsatz["carline"] ) . "</textarea>
 

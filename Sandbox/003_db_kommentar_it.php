@@ -82,7 +82,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
     mysqli_close($con);
 }
 else
-    //echo "<p>Es wurde kein Datensatz ausgewaehlt</p>";
+    echo "<p>Es wurde kein Datensatz uebergeben, bitte folgende Browser verwenden: Google Chrome, Safari</p>";
 ?>
 
 <?php
