@@ -50,7 +50,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Kommentar</label>
                             <div class=\"col-sm-6\">
-                                <input class=\"form-control\" name=\"com_fr\" value='" . utf8_encode($dsatz["comment_fr"]) . "'>
+                                 <textarea onkeyup='auto_grow(this)' type='text' class='form-control' name='com_fr'>". utf8_encode($dsatz["comment_fr"]) ."</textarea>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -126,3 +126,9 @@ if (isset($_POST["kommentar"])) {
 include "elements/footer.html";
 ?>
 
+<script>
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+    }
+</script>
