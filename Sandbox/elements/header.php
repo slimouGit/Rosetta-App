@@ -1,4 +1,13 @@
 <?php
+
+session_start();
+if(!isset($_SESSION["username"])) {
+
+}
+
+?>
+
+<?php
 header('Content-Type: text/html; charset=utf-8');
 ?>
 <html>
