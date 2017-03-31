@@ -29,6 +29,7 @@
                         <li><a href="003_db_anzeigen_gesamt.php">Gesamt</a></li>
                     </ul>
                 </li>
+                <li><a href="index.php">logout</a></li>
             </ul>
         </div>
 

@@ -1,93 +1,60 @@
 <?php
-
+/* Vor Beenden der Session wieder aufnehmen */
 session_start();
 
+/* Beenden der Session */
+session_destroy();
+$_SESSION = array();
+?>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Salim Oussayfi">
+    <meta name="description" content="Praxis-Projekt Beuth-Hochschule/Medieninformatik B.Sc.">
+    <title>Rosetta-App</title>
 
-//http://www.tonylea.com/2011/creating-a-simple-php-login-without-a-database/
-
-
-// ***************************************** //
-// **********	DECLARE VARIABLES  ********** //
-// ***************************************** //
-
-$username = 'admin';
-$password = 'password';
-
-$random1 = 'secret_key1';
-$random2 = 'secret_key2';
-
-$hash = md5($random1.$pass.$random2);
-
-$self = $_SERVER['REQUEST_URI'];
-
-
-// ************************************ //
-// **********	USER LOGOUT  ********** //
-// ************************************ //
-
-if(isset($_GET['logout']))
-{
-    unset($_SESSION['login']);
-}
+    <!-- Bootstrap -->
+    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class='row'>
+    <h3>Login-Seite</h3>
+</div>
+<form action="check_login.php" method="post">
 
 
-// ******************************************* //
-// **********	USER IS LOGGED IN	********** //
-// ******************************************* //
+<div class="row">
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Name</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="n" /></input>
+        </div>
+    </div>
+</div>
 
-if (isset($_SESSION['login']) && $_SESSION['login'] == $hash) {
+<div class="row">
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Passwort</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" name="p" /></input>
+        </div>
+    </div>
+</div>
 
-    ?>
+<div class="row button">
+    <div class="form-group">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1">
+            <input type="submit" class="btn btn-primary" value="Login"></input>
+        </div>
+    </div>
+</div>
 
-    <p>Hello <?php echo $username; ?>, you have successfully logged in!</p>
-    <a href="?logout=true">Logout?</a>
-    <meta http-equiv="refresh" content="5; URL=rosetta-app.php">
-    <?php
-}
-
-
-// *********************************************** //
-// **********	FORM HAS BEEN SUBMITTED	********** //
-// *********************************************** //
-
-else if (isset($_POST['submit'])) {
-
-    if ($_POST['username'] == $username && $_POST['password'] == $password){
-
-        //IF USERNAME AND PASSWORD ARE CORRECT SET THE LOG-IN SESSION
-        $_SESSION["login"] = $hash;
-        //header("Location: $_SERVER[PHP_SELF]");
-
-    } else {
-
-        // DISPLAY FORM WITH ERROR
-        display_login_form();
-        echo '<p>Username or password is invalid</p>';
-
-    }
-}
-
-
-// *********************************************** //
-// **********	SHOW THE LOG-IN FORM	********** //
-// *********************************************** //
-
-else {
-
-    display_login_form();
-
-}
-
-
-function display_login_form(){ ?>
-
-    <form action="<?php echo $self; ?>" method='post'>
-        <label for="username">username</label>
-        <input type="text" name="username" id="username">
-        <label for="password">password</label>
-        <input type="password" name="password" id="password">
-        <input type="submit" name="submit" value="submit">
-    </form>
-
-<?php } ?>
-
+</form>
+</div>
+</body>
+</html>

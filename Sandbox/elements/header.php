@@ -1,14 +1,10 @@
 <?php
+/* Session wieder aufnehmen */
 session_start();
-if(!(isset($_SESSION['login']))) {
 
-    echo "nicht eingeloggt";
-    ?>
-    <meta http-equiv="refresh" content="5000; URL=index.php">
-    <?php
-}
-
-
+/* Kontrolle, ob innerhalb der Session */
+if (!isset($_SESSION["n"]))
+    exit("<p>Kein Zugang<br /><a href='index.php'>Zum Login</a></p>");
 ?>
 
 <?php
