@@ -1,9 +1,13 @@
 <?php
-
 session_start();
-if(!isset($_SESSION["username"])) {
+if(!(isset($_SESSION['login']))) {
 
+    echo "nicht eingeloggt";
+    ?>
+    <meta http-equiv="refresh" content="5000; URL=index.php">
+    <?php
 }
+
 
 ?>
 
