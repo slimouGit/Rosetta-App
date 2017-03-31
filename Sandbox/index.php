@@ -22,7 +22,7 @@ $_SESSION = array();
 <body>
 <div class="container">
 <div class='row'>
-    <h3>Login-Seite</h3>
+    <h3>Rosetta-App</h3>
 </div>
 <form action="check_login.php" method="post">
 
