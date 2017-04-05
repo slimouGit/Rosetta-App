@@ -29,6 +29,15 @@
                         <li><a href="003_db_anzeigen_gesamt.php">Gesamt</a></li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daten-Center
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="003_db_upload_pdf.php">Preisliste hochladen</a></li>
+                        <li><a href="003_db_upload_xml.php">XML hochladen</a></li>
+                    </ul>
+                </li>
                 <li><a href="index.php">logout</a></li>
             </ul>
         </div>
