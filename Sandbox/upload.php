@@ -29,11 +29,6 @@ echo "Dateiendung: $ext<br />";
 echo "Temporaerer Dateiname: "
     . $_FILES["upfile"]["tmp_name"] . "</p>";
 
-//uploadFile($fileName, $new_path);
-
-/* Temporaere Datei dauerhaft an gewuenschten
-   Ort kopieren, falls sie vorhanden ist und
-   die richtige Endung besitzt */
 
 if($_FILES["upfile"]["size"]>0)
 {
