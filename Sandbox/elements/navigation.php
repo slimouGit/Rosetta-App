@@ -34,8 +34,8 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="003_db_upload_pdf.php">Preisliste hochladen</a></li>
-                        <li><a href="003_db_upload_xml.php">XML hochladen</a></li>
+                        <li><a href="003_db_upload_pdf_01.php">Preisliste hochladen</a></li>
+                        <li><a href="003_db_upload_xml_01.php">XML hochladen</a></li>
                     </ul>
                 </li>
                 <li><a href="index.php">logout</a></li>
