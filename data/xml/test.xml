@@ -1,0 +1,13 @@
+<?xml version=“1.0“ encoding=“UTF-8“ standalone=“yes“?>
+
+<items>
+
+    <item>
+        <de>Deutsch</de>
+        <fr>Französisch</fr>
+        <it>Italienisch</it>
+        <rubrik>Rubrik</rubrik>
+        <info>Info</info>
+        <carline>Carline</carline>
+    </item>
+</items>
