@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Erstellungszeit: 11. Apr 2017 um 17:07
+-- Erstellungszeit: 11. Apr 2017 um 17:19
 -- Server-Version: 10.1.21-MariaDB
 -- PHP-Version: 7.1.1
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `rosetta_user` (
   `id` int(5) NOT NULL,
+  `rights` varchar(20) NOT NULL DEFAULT 'admin',
   `vorname` varchar(40) CHARACTER SET utf8 NOT NULL,
   `nachname` varchar(40) CHARACTER SET utf8 NOT NULL,
   `passwort` varchar(40) CHARACTER SET utf8 NOT NULL
@@ -37,9 +38,8 @@ CREATE TABLE `rosetta_user` (
 -- Daten für Tabelle `rosetta_user`
 --
 
-INSERT INTO `rosetta_user` (`id`, `vorname`, `nachname`, `passwort`) VALUES
-(1, 'Salim', 'Oussayfi', '26041980'),
-(2, 'Salim', 'Oussayfi', '26041980');
+INSERT INTO `rosetta_user` (`id`, `rights`, `vorname`, `nachname`, `passwort`) VALUES
+(1, 'admin', 'Salim', 'Oussayfi', '26041980');
 
 --
 -- Indizes der exportierten Tabellen
