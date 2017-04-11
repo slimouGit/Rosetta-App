@@ -1,34 +1,19 @@
 <?php
-
-$xmlDoc = new DOMDocument();
-//$xmlFile = $_POST["xmlFile"];
-//$xmlDoc->load($xmlFile);
-
-
 //include header
 include "elements/header.php";
 ?>
 
 <?php
-//include db connection
-include "include/db_connect.php";
+
 ?>
 
     <h2>XML mit Datensätzen hochladen</h2>
     <p>XML-Struktur muss eingehalten werden, d.h. evtl. Erklär-Funktion integrieren</p>
 
 <?php
-//echo var_dump($xmlFile);
-
-$target_dir = __DIR__."/data/xml";
+$target_dir = __DIR__."/";
 $fileName = $_FILES["xmlFile"]["name"];
 $new_path = $target_dir . $fileName;
-
-echo $new_path;
-
-
-echo $target_dir;
-echo "<br/>";
 
 echo "Originaldateiname: "
     . $fileName."<br />";
@@ -40,47 +25,31 @@ echo "Temporaerer Dateiname: "
 copy($_FILES["xmlFile"]["tmp_name"],$new_path);
 echo "<p>Datei wurde kopiert in {$target_dir}<br />";
 
+echo "Der neue Pfad lautet: ".$new_path. "<br/>";
+
+
+
 importXML($fileName);
+
 
 
 function importXML($fileName){
 
-    echo $fileName . " in fileName()";
-
-    /*
     $xmlDoc = new DOMDocument();
     $xmlDoc->load($fileName);
-    $servername = "localhost";
-    $username     = "root";
-    $password = "";
-    $dbname = "rosetta-app";
+
+    //include db connection
+    include "include/db_connect.php";
 
 
-    $con = mysqli_connect($servername, $username, $password, $dbname);
-
-    mysqli_query($con, "SET NAMES SET 'utf8'");
-    mysqli_query($con, "SET character_set_client = 'utf8'");
-    mysqli_query($con, "SET character_set_connection = 'utf8'");
-    mysqli_select_db($con, $dbname);
-
-
-    if ($con->connect_error) {
-        die("Connection failed: " . $con->connect_error);
-    } else {
-    }
-
-//Erstellen eines einzigartigen tokens
-//dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
-//da hier noch nicht mit der ID gearbeitet werden kann
+    //Erstellen eines einzigartigen tokens SOLLTE SPAETER GLOBAL LAUFEN!!!
+    //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
+    //da hier noch nicht mit der ID gearbeitet werden kann
     $token = bin2hex(openssl_random_pseudo_bytes(16));
     $token = (string)$token;
 
-
-
-
     $xmlObject = $xmlDoc->getElementsByTagName('item');
     $itemCount = $xmlObject->length;
-
 
 
     for ($i=0; $i < $itemCount; $i++){
@@ -92,13 +61,12 @@ function importXML($fileName){
         $carline  = $xmlObject->item($i)->getElementsByTagName('carline')->item(0)->childNodes->item(0)->nodeValue;
 
 
-
         $sql   = "INSERT INTO `rosetta_data` (token, de, fr, it, rubrik, info, carline) VALUES ('$token', '$de', '$fr','$it','$rubrik', '$info' , '$carline')";
 
         mysqli_query($con, $sql);
 
         print "Added Item $i: <br/> $de <br/> $fr<br/> $it<br/> $carline<br/> <br/> ";
     }
-    */
+
 }
 ?>
