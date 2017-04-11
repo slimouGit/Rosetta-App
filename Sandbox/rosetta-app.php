@@ -10,7 +10,7 @@ include "elements/header.php";
 <h2>Startseite</h2>
 <p>Man kann direkt wechseln zum Suchen oder Erstellen eines Datensatzes</p>
 
-
+<!--
     <div class="row">
         <div class="form-group">
             <div class="col-sm-3">
@@ -21,6 +21,11 @@ include "elements/header.php";
             </div>
         </div>
     </div>
+-->
+<?php
+//include dashboard
+include "elements/dashboard.php";
+?>
 
 
 <?php
