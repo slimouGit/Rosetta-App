@@ -3,7 +3,7 @@
 session_start();
 
 //include db connection
-include "db_connect.php";
+include "db_connect_PDO.php";
 //$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
 
 ?>
