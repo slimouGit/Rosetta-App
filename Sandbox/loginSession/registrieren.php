@@ -1,7 +1,11 @@
 <?php
 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
+
+//include db connection
+include "db_connect.php";
+//$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +19,8 @@ $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden s
 
 if(isset($_GET['register'])) {
     $error = false;
+    $vorname = $_POST['vorname'];
+    $nachname = $_POST['nachname'];
     $email = $_POST['email'];
     $passwort = $_POST['passwort'];
     $passwort2 = $_POST['passwort2'];
@@ -34,7 +40,7 @@ if(isset($_GET['register'])) {
 
     //Überprüfe, dass die E-Mail-Adresse noch nicht registriert wurde
     if(!$error) {
-        $statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
+        $statement = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
         $result = $statement->execute(array('email' => $email));
         $user = $statement->fetch();
 
@@ -48,8 +54,8 @@ if(isset($_GET['register'])) {
     if(!$error) {
         $passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
 
-        $statement = $pdo->prepare("INSERT INTO users (email, passwort) VALUES (:email, :passwort)");
-        $result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash));
+        $statement = $pdo->prepare("INSERT INTO rosetta_users (vorname, nachname, email, passwort) VALUES (:vorname, :nachname, :email, :passwort)");
+        $result = $statement->execute(array('vorname' => $vorname, 'nachname' => $nachname, 'email' => $email, 'passwort' => $passwort_hash));
 
         if($result) {
             echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
@@ -64,6 +70,12 @@ if($showFormular) {
     ?>
 
     <form action="?register=1" method="post">
+        Vorname:<br>
+        <input type="text" size="40" maxlength="250" name="vorname"><br><br>
+
+        Nachname:<br>
+        <input type="text" size="40" maxlength="250" name="nachname"><br><br>
+
         E-Mail:<br>
         <input type="email" size="40" maxlength="250" name="email"><br><br>
 
