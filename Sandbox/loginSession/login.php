@@ -15,7 +15,7 @@ if(isset($_GET['login'])) {
 
     //Überprüfung des Passworts
     if ($user !== false && password_verify($passwort, $user['passwort'])) {
-        //$_SESSION['userid'] = $user['id'];
+        $_SESSION['userid'] = $user['id'];
         $_SESSION['username'] = $user['vorname'] . " " . $user['nachname'];
         die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a><meta http-equiv="refresh" content="3; URL=geheim.php">');
     } else {
