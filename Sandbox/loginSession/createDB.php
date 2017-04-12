@@ -9,7 +9,7 @@ mysqli_query($con, $sql);
 
 mysqli_select_db($con, "rosetta-app");
 
-$sql = "CREATE TABLE `users` (
+$sql = "CREATE TABLE `rosetta_users` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `passwort` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
