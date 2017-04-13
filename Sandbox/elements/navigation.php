@@ -38,7 +38,7 @@
                         <li><a href="003_db_upload_xml_01.php">XML hochladen</a></li>
                     </ul>
                 </li>
-                <li><a href="index.php">logout</a></li>
+                <li><a href="logout.php">logout</a></li>
             </ul>
         </div>
 

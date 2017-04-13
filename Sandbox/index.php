@@ -22,39 +22,85 @@ $_SESSION = array();
 <body>
 <div class="container">
 <div class='row'>
-    <h3>Rosetta-App</h3>
+    <h3>Rosetta-App Prototype</h3>
 </div>
-<form action="check_login.php" method="post">
+    <?php
+    session_start();
 
+    //include db connection
+    include "include/db_connect_PDO.php";
+    //$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
 
-<div class="row">
-    <div class="form-group">
-        <label class="col-sm-1 control-label">Name</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" name="n" /></input>
+    if(isset($_GET['login'])) {
+        $email = $_POST['email'];
+        $passwort = $_POST['passwort'];
+
+        $statement = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
+        $result = $statement->execute(array('email' => $email));
+        $user = $statement->fetch();
+
+        //Überprüfung des Passworts
+        if ($user !== false && password_verify($passwort, $user['passwort'])) {
+            $_SESSION['userid'] = $user['id'];
+            $_SESSION['username'] = $user['vorname'] . " " . $user['nachname'];
+            die('Login erfolgreich. Weiter zu <a href="rosetta-app.php">internen Bereich</a><meta http-equiv="refresh" content="3; URL=rosetta-app.php">');
+        } else {
+            $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+        }
+
+    }
+    ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+
+    <?php
+    if(isset($errorMessage)) {
+        echo $errorMessage;
+    }
+    ?>
+
+    <form action="?login=1" method="post">
+
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">E-Mail</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" size="40" maxlength="250" name="email">
+                </div>
+                <div class="col-sm-4 errorContainer"></div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="row">
-    <div class="form-group">
-        <label class="col-sm-1 control-label">Passwort</label>
-        <div class="col-sm-4">
-            <input type="password" class="form-control" name="p" /></input>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Passwort</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" size="40"  maxlength="250" name="passwort">
+                </div>
+                <div class="col-sm-4 errorContainer"></div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="row button">
-    <div class="form-group">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1">
-            <input type="submit" class="btn btn-primary" value="Login"></input>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-1">
+                    <input type="submit" class="btn btn-primary" value="Abschicken"></input>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-</form>
-</div>
+        <div class="row"><br>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <p><a href="registrieren.php">keine Zugangsdaten?</a></p>
+            </div>
+        </div>
+
+    </form>
 </body>
 </html>
