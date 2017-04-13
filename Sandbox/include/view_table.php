@@ -41,7 +41,7 @@
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
-                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - erstellt von: " . $dsatz['user'] . " / geändert von: " . $dsatz['updateBy'] ."</td>"
+                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $dsatz['user'] . " / " . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $dsatz['updateBy'] . testFunction() . "</td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td></td>"
@@ -144,7 +144,7 @@
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
-                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - erstellt von: " . $dsatz['user'] . " / geändert von: " . $dsatz['updateBy'] . testFunction() . "</td>"
+                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $dsatz['user'] . " / " . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $dsatz['updateBy'] . testFunction() . "</td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td></td>"
