@@ -27,7 +27,8 @@ if(empty($car)) {
         //. " en = '" . $_POST["eng"] . "',"
         . " rubrik = '" . $_POST["rub"] . "',"
         . " info = '" . $_POST["inf"] . "',"
-        . " carline = '" . $car . "'"
+        . " carline = '" . $car . "',"
+        . " updateBy = '" . $username . "'"
         . " where id = '" . $_POST["orianr"] . "'";
 
     mysqli_query($con, $sql);

@@ -46,8 +46,8 @@ if (isset($_POST["gesendet"]))
 {
 
     $sql = "insert rosetta_data"
-        . "(token, de, fr, it, rubrik, info, carline, toTranslate) values "
-        . "('" . $token . "', "  .  "'" . $_POST["dts"] . "', " .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "', " .  "'" . $_POST['translate'] . "')";
+        . "(token, de, fr, it, rubrik, info, carline, user) values "
+        . "('" . $token . "', "  .  "'" . $_POST["dts"] . "', " .  "'" . $_POST["frz"] . "', " .  "'" . $_POST["itl"] . "', " .  "'" . $_POST["rub"] . "', " .  "'" . $_POST["inf"] . "', " .  "'" . $car . "', " .  "'" . $username . "')";
 
     mysqli_query($con, $sql);
 
