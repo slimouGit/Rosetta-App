@@ -46,6 +46,8 @@ if(isset($errorMessage)) {
 
     <input type="submit" value="Abschicken">
     <p><a href="registrieren.php">keine Zugangsdaten?</a></p>
+
+    <p><a href="createDB.php">Datenbank erstellen</a></p>
 </form>
 </body>
 </html>
