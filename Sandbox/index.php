@@ -97,7 +97,7 @@ $_SESSION = array();
         <div class="row"><br>
             <div class="col-sm-2"></div>
             <div class="col-sm-6">
-                <p><a href="registrieren.php">keine Zugangsdaten?</a></p>
+                <!--<p><a href="registrieren.php">keine Zugangsdaten?</a></p>-->
             </div>
         </div>
 
