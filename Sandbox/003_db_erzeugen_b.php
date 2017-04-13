@@ -34,6 +34,14 @@ if(isset($_POST['translate'])) {
 }else{
     $translate = "false";
 }
+
+//Datum
+$datum = date("d.m.Y");
+$uhrzeit = date("H:i");
+$create = $datum . " " . $uhrzeit . " Uhr";
+echo $create;
+
+
 //echo $_POST['translate'];
 //Erstellen eines einzigartigen tokens
 //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
