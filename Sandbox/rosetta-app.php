@@ -7,8 +7,8 @@ include "elements/header.php";
 
 
 
-<h2>Startseite</h2>
-<p>Man kann direkt wechseln zum Suchen oder Erstellen eines Datensatzes</p>
+<h2>Rosetta-App</h2>
+<p>Digitaler Glossar OPEL Schweiz</p>
 
 <!--
     <div class="row">
