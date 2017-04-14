@@ -130,7 +130,12 @@
                 ."<td></td>"
                 ."<td></td>"
                 ."</tr>";
-            echo "<tr><td colspan='9'></td></tr>";
+            echo "<tr>"
+                ."<td></td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_user"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_user"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_user"]) . "</div> </td>"
+                ."</tr>";
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
     }//ENDE viewWithSlash
@@ -238,7 +243,12 @@
                 ."<td></td>"
                 ."<td></td>"
                 ."</tr>";
-            echo "<tr><td colspan='9'></td></tr>";
+            echo "<tr>"
+                ."<td></td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_user"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_user"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_user"]) . "</div> </td>"
+                ."</tr>";
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
     }//ENDE viewWithoutSlash
@@ -248,7 +258,7 @@
 </table>
 <?php
 
-
+/*
 
 isUpdated();
 
@@ -267,4 +277,5 @@ function isUpdated()
 function testFunction(){
     echo "testFunction";
 }
+*/
 ?>

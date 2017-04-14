@@ -90,7 +90,8 @@ else
 if (isset($_POST["kommentar"])) {
 
     $sql = "update rosetta_data set id = '" . $_POST["id"] . "',"
-        . " comment_it = '" . $_POST["com_it"] . "'"
+        . " comment_it = '" . $_POST["com_it"] . "',"
+        . " comment_it_user = '" . $username . "'"
         . " where id = '" . $_POST["orianr"] . "'";
 
     mysqli_query($con, $sql);
