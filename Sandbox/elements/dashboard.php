@@ -27,7 +27,7 @@
                     <a href="003_db_erzeugen_a.php">Eintrag erstellen</a>
                 </h3>
                 <p>
-                    Neuen Eintrag erstellen
+                    <a href="003_db_erzeugen_a.php">Neuen Eintrag erstellen</a>
                 </p>
             </div>
         </div>
@@ -43,7 +43,7 @@
                     <a href="003_db_upload_pdf_01.php">Preisliste hochladen</a>
                 </h3>
                 <p>
-                    PDF hochladen
+                    <a href="003_db_upload_pdf_01.php">PDF hochladen</a>
                 </p>
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <a href="003_db_upload_xml_01.php">XML hochladen</a>
                 </h3>
                 <p>
-                    XML Datei in Datenbank importieren
+                    <a href="003_db_upload_xml_01.php">XML Datei in Datenbank importieren</a>
                 </p>
             </div>
         </div>
