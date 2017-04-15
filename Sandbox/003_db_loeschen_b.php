@@ -27,8 +27,24 @@ include "include/db_connect.php";
         include "include/view_table_withoutEdit.php";
         //---------------------------------------------------
 
+        //Daten werden in Tabelle rosetta_data_deleted gespecihert
+        $switch = "select * from rosetta_data where id = '" . $_POST['delete'] . "'";
+        $res = mysqli_query($con, $switch);
+        $dsatz = mysqli_fetch_assoc($res);
 
-       $sql = "delete from rosetta_data where id = '" . $_POST["delete"] . "'";
+        var_dump($dsatz);
+        echo "Hahaha". $dsatz['token'];
+
+        $switch = "insert rosetta_data_deleted"
+            . "(token, de, comment_de, comment_de_user, fr, comment_fr, comment_fr_user, it, comment_it, comment_it_user, rubrik, info, carline, user, updateBy) values "
+            . "('" . $dsatz['token'] . "', "  .  "'" . $dsatz['de'] . "', " .  "'" . $dsatz['comment_de'] . "', " .  "'" . $dsatz['comment_de_user'] . "', " .  "'" . $dsatz['fr'] . "', "  .  "'" . $dsatz['comment_fr'] . "', "  .  "'" . $dsatz['comment_fr_user'] . "', " .  "'" . $dsatz['it'] . "', " .  "'" . $dsatz['comment_it'] . "', " .  "'" . $dsatz['comment_it_user'] . "', " .  "'" . $dsatz['rubrik'] . "', " .  "'" . $dsatz['info'] . "', " .  "'" . $dsatz['carline'] . "', " .  "'" . $dsatz['user'] . "', " .  "'" . $dsatz['updateBy'] . "')";
+
+        mysqli_query($con, $switch);
+
+        //---------------------------------------------------------
+        //Daten werden aus Tabelle rosetta_data geloescht
+
+        $sql = "delete from rosetta_data where id = '" . $_POST["delete"] . "'";
        mysqli_query($con, $sql);
 
        $num = mysqli_affected_rows($con);
