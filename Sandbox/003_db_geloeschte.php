@@ -22,7 +22,7 @@ include "include/db_connect.php";
     $num = mysqli_num_rows($res);
 
     //include table
-    include "include/view_table_withoutEdit.php";
+    include "include/view_table_deleted.php";
     //---------------------------------------------------
 
 

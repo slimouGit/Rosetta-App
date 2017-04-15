@@ -36,8 +36,8 @@ include "include/db_connect.php";
         echo "Hahaha". $dsatz['token'];
 
         $switch = "insert rosetta_data_deleted"
-            . "(token, de, comment_de, comment_de_user, fr, comment_fr, comment_fr_user, it, comment_it, comment_it_user, rubrik, info, carline, user, updateBy) values "
-            . "('" . $dsatz['token'] . "', "  .  "'" . $dsatz['de'] . "', " .  "'" . $dsatz['comment_de'] . "', " .  "'" . $dsatz['comment_de_user'] . "', " .  "'" . $dsatz['fr'] . "', "  .  "'" . $dsatz['comment_fr'] . "', "  .  "'" . $dsatz['comment_fr_user'] . "', " .  "'" . $dsatz['it'] . "', " .  "'" . $dsatz['comment_it'] . "', " .  "'" . $dsatz['comment_it_user'] . "', " .  "'" . $dsatz['rubrik'] . "', " .  "'" . $dsatz['info'] . "', " .  "'" . $dsatz['carline'] . "', " .  "'" . $dsatz['user'] . "', " .  "'" . $dsatz['updateBy'] . "')";
+            . "(token, de, comment_de, comment_de_user, fr, comment_fr, comment_fr_user, it, comment_it, comment_it_user, rubrik, info, carline, user, updateBy, deleted_by) values "
+            . "('" . $dsatz['token'] . "', "  .  "'" . $dsatz['de'] . "', " .  "'" . $dsatz['comment_de'] . "', " .  "'" . $dsatz['comment_de_user'] . "', " .  "'" . $dsatz['fr'] . "', "  .  "'" . $dsatz['comment_fr'] . "', "  .  "'" . $dsatz['comment_fr_user'] . "', " .  "'" . $dsatz['it'] . "', " .  "'" . $dsatz['comment_it'] . "', " .  "'" . $dsatz['comment_it_user'] . "', " .  "'" . $dsatz['rubrik'] . "', " .  "'" . $dsatz['info'] . "', " .  "'" . $dsatz['carline'] . "', " .  "'" . $dsatz['user'] . "', " .  "'" . $dsatz['updateBy'] . "', " .  "'" . $username . "')";
 
         mysqli_query($con, $switch);
 
