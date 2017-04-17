@@ -32,8 +32,6 @@ include "include/db_connect.php";
         $res = mysqli_query($con, $switch);
         $dsatz = mysqli_fetch_assoc($res);
 
-        var_dump($dsatz);
-        echo "Hahaha". $dsatz['token'];
 
         $switch = "insert rosetta_data_deleted"
             . "(token, de, comment_de, comment_de_user, fr, comment_fr, comment_fr_user, it, comment_it, comment_it_user, rubrik, info, carline, user, updateBy, deleted_by) values "
