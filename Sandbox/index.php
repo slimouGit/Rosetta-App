@@ -102,5 +102,6 @@ $_SESSION = array();
         </div>
 
     </form>
+    <p><a href="passwortvergessen.php">Passwort vergessen</a></p>
 </body>
 </html>
