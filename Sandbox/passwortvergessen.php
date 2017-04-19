@@ -60,8 +60,8 @@ if(isset($_GET['send']) ) {
             $empfaenger = $user['email'];
             $betreff = "Neues Passwort für deinen Account auf www.rosetta-app.de"; //Ersetzt hier den Domain-Namen
             $from = "From: Admin <admin@rosetta-app.de>"; //Ersetzt hier euren Name und E-Mail-Adresse
-            $url_passwortcode = 'http://prototype.rosetta-app.de/passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode;
-            //$url_passwortcode = 'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode;
+            //$url_passwortcode = 'http://prototype.rosetta-app.de/passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode;
+            $url_passwortcode = 'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode;
 
             $text = 'Hallo '.$user['vorname'].',
 für deinen Account auf www.rosetta-app.de wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der nächsten 24 Stunden die folgende Website auf:
@@ -70,9 +70,12 @@ für deinen Account auf www.rosetta-app.de wurde nach einem neuen Passwort gefra
 Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.';
             mail($empfaenger, $betreff, $text, $from);
 
-            echo $url_passwortcode;
+            //echo $url_passwortcode;
 
-            echo "<br/><a href='".$url_passworcode."'>Link</a><br/>";
+            //echo "<br/><a href='".$url_passworcode."'>Link</a><br/>";
+            $test = 'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode;
+            echo "<br/><a href='".$test."'>Passwort zuruecksetzen</a><br/>";
+
 
             echo "Ein Link um dein Passwort zurückzusetzen wurde an deine E-Mail-Adresse gesendet.";
             $showForm = false;
