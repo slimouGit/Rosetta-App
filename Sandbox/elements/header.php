@@ -8,6 +8,8 @@ if(!isset($_SESSION['username'])) {
 $userid = $_SESSION['userid'];
 //Abfrage der Nutzer Name vom Login
 $username = $_SESSION['username'];
+//Abfrage der Rechte
+$authorizations = $_SESSION['authorizations'];
 
 echo "Hallo User {$userid}: ".$username;
 ?>
