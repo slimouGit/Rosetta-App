@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.12
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
--- Host: rdbms
--- Erstellungszeit: 19. Apr 2017 um 16:56
--- Server Version: 5.6.36-log
--- PHP-Version: 5.5.38
+-- Host: 127.0.0.1
+-- Erstellungszeit: 20. Apr 2017 um 06:59
+-- Server-Version: 10.1.21-MariaDB
+-- PHP-Version: 7.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,10 +14,10 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `DB2881460`
+-- Datenbank: `rosetta-app`
 --
 
 -- --------------------------------------------------------
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- Tabellenstruktur für Tabelle `rosetta_users`
 --
 
-CREATE TABLE IF NOT EXISTS `rosetta_users` (
-`id` int(10) unsigned NOT NULL,
+CREATE TABLE `rosetta_users` (
+  `id` int(10) UNSIGNED NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `passwort` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `vorname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -35,19 +35,20 @@ CREATE TABLE IF NOT EXISTS `rosetta_users` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL,
   `passwortcode` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `passwortcode_time` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `passwortcode_time` timestamp NULL DEFAULT NULL,
+  `authorizations` varchar(5) COLLATE utf8_unicode_ci DEFAULT 'user'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Daten für Tabelle `rosetta_users`
 --
 
-INSERT INTO `rosetta_users` (`id`, `email`, `passwort`, `vorname`, `nachname`, `created_at`, `updated_at`, `passwortcode`, `passwortcode_time`) VALUES
-(2, 'smartillmer@gmail.com', '$2y$10$z4korBc14LQfo2T7fgal5uilTdsRoIa81egrS13QpnT0mRLkCfAPC', 'Michaela', 'Illmer', '2017-04-12 07:31:01', NULL, NULL, NULL),
-(4, 'c.fritz@typodrom.de', '$2y$10$LKucixdMxu2zQAgbx19X0.to42bSykzSDPnBFl77fJCufYXb5GOKi', 'Claudia', 'Fritz', '2017-04-12 08:44:21', NULL, NULL, NULL),
-(5, 'oussayfi@gmail.com', '$2y$10$lZiQKnLYRT0GfanFzP.BWuQQ.lJ9wlUt4VsRlK/cw6OGr.hUD3yqG', 'Salim', 'Oussayfi', '2017-04-13 07:43:03', NULL, '64e94162e7ba1de151cb192535b9e2f849a02fea', '2017-04-19 14:54:06'),
-(7, 'George@Orwell.net', '$2y$10$3k.bfNwAcN9RSPFK1n6ZkOVJofeqj4gJ0vZMDh7gY3VJBlVzOCxie', 'George', 'Orwell', '2017-04-14 12:59:27', NULL, NULL, NULL),
-(8, 'max@mustermann.de', '$2y$10$KeMnc2xeZqEGl1wL8uZrCuUseBc0ct9./QsDSzdAAmSnB8BVFskgm', 'Max', 'Mustermann', '2017-04-18 05:03:57', NULL, NULL, NULL);
+INSERT INTO `rosetta_users` (`id`, `email`, `passwort`, `vorname`, `nachname`, `created_at`, `updated_at`, `passwortcode`, `passwortcode_time`, `authorizations`) VALUES
+(2, 'smartillmer@gmail.com', '$2y$10$z4korBc14LQfo2T7fgal5uilTdsRoIa81egrS13QpnT0mRLkCfAPC', 'Michaela', 'Illmer', '2017-04-12 07:31:01', NULL, NULL, NULL, 'user'),
+(4, 'c.fritz@typodrom.de', '$2y$10$LKucixdMxu2zQAgbx19X0.to42bSykzSDPnBFl77fJCufYXb5GOKi', 'Claudia', 'Fritz', '2017-04-12 08:44:21', NULL, NULL, NULL, 'user'),
+(5, 'oussayfi@gmail.com', '$2y$10$lZiQKnLYRT0GfanFzP.BWuQQ.lJ9wlUt4VsRlK/cw6OGr.hUD3yqG', 'Salim', 'Oussayfi', '2017-04-13 07:43:03', NULL, '7294e0ba0ac6bc22f1b6ce1934c0822d12a4c60b', '2017-04-20 04:49:29', 'admin'),
+(7, 'George@Orwell.net', '$2y$10$3k.bfNwAcN9RSPFK1n6ZkOVJofeqj4gJ0vZMDh7gY3VJBlVzOCxie', 'George', 'Orwell', '2017-04-14 12:59:27', NULL, NULL, NULL, 'user'),
+(8, 'max@mustermann.de', '$2y$10$KeMnc2xeZqEGl1wL8uZrCuUseBc0ct9./QsDSzdAAmSnB8BVFskgm', 'Max', 'Mustermann', '2017-04-18 05:03:57', NULL, NULL, NULL, 'user');
 
 --
 -- Indizes der exportierten Tabellen
@@ -57,7 +58,8 @@ INSERT INTO `rosetta_users` (`id`, `email`, `passwort`, `vorname`, `nachname`, `
 -- Indizes für die Tabelle `rosetta_users`
 --
 ALTER TABLE `rosetta_users`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `email` (`email`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT für exportierte Tabellen
@@ -67,7 +69,7 @@ ALTER TABLE `rosetta_users`
 -- AUTO_INCREMENT für Tabelle `rosetta_users`
 --
 ALTER TABLE `rosetta_users`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
