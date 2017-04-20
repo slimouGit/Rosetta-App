@@ -1,10 +1,12 @@
 <?php
-/* Vor Beenden der Session wieder aufnehmen */
+
 session_start();
 
-/* Beenden der Session */
-session_destroy();
-$_SESSION = array();
+//include db connection
+include "include/db_connect_PDO.php";
+//$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
+
+
 ?>
 <html>
 <head>
@@ -25,11 +27,6 @@ $_SESSION = array();
     <h3>Rosetta-App Prototype</h3>
 </div>
     <?php
-    session_start();
-
-    //include db connection
-    include "include/db_connect_PDO.php";
-    //$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
 
     if(isset($_GET['login'])) {
         $email = $_POST['email'];
@@ -42,12 +39,14 @@ $_SESSION = array();
 
         //Überprüfung des Passworts
         if ($user !== false && password_verify($passwort, $user['passwort'])) {
-            $_SESSION[''] = $user['id'];
+            //var_dump($user);
+            $_SESSION['userid'] = $user['id'];
             $_SESSION['username'] = $user['vorname'] . " " . $user['nachname'];
             $_SESSION['authorizations'] = $user['authorizations'];
             die('Login erfolgreich. Weiter zu <a href="rosetta-app.php">internen Bereich</a><meta http-equiv="refresh" content="3; URL=rosetta-app.php">');
         } else {
             $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+
         }
 
     }
