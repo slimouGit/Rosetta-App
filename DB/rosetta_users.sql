@@ -2,8 +2,8 @@
 -- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Erstellungszeit: 20. Apr 2017 um 06:59
+-- Host: localhost
+-- Erstellungszeit: 20. Apr 2017 um 16:23
 -- Server-Version: 10.1.21-MariaDB
 -- PHP-Version: 7.1.1
 
@@ -33,7 +33,7 @@ CREATE TABLE `rosetta_users` (
   `vorname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `nachname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `passwortcode` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `passwortcode_time` timestamp NULL DEFAULT NULL,
   `authorizations` varchar(5) COLLATE utf8_unicode_ci DEFAULT 'user'
@@ -46,7 +46,7 @@ CREATE TABLE `rosetta_users` (
 INSERT INTO `rosetta_users` (`id`, `email`, `passwort`, `vorname`, `nachname`, `created_at`, `updated_at`, `passwortcode`, `passwortcode_time`, `authorizations`) VALUES
 (2, 'smartillmer@gmail.com', '$2y$10$z4korBc14LQfo2T7fgal5uilTdsRoIa81egrS13QpnT0mRLkCfAPC', 'Michaela', 'Illmer', '2017-04-12 07:31:01', NULL, NULL, NULL, 'user'),
 (4, 'c.fritz@typodrom.de', '$2y$10$LKucixdMxu2zQAgbx19X0.to42bSykzSDPnBFl77fJCufYXb5GOKi', 'Claudia', 'Fritz', '2017-04-12 08:44:21', NULL, NULL, NULL, 'user'),
-(5, 'oussayfi@gmail.com', '$2y$10$lZiQKnLYRT0GfanFzP.BWuQQ.lJ9wlUt4VsRlK/cw6OGr.hUD3yqG', 'Salim', 'Oussayfi', '2017-04-13 07:43:03', NULL, '7294e0ba0ac6bc22f1b6ce1934c0822d12a4c60b', '2017-04-20 04:49:29', 'admin'),
+(5, 'oussayfi@gmail.com', '$2y$10$TMuMECagaNEeMcc5HSddz.PBWuymc1vx9QOwc5eCqRGzJW1M0RYT2', 'Salim', 'Oussayfi', '2017-04-13 07:43:03', '2017-04-20 14:17:18', NULL, NULL, 'admin'),
 (7, 'George@Orwell.net', '$2y$10$3k.bfNwAcN9RSPFK1n6ZkOVJofeqj4gJ0vZMDh7gY3VJBlVzOCxie', 'George', 'Orwell', '2017-04-14 12:59:27', NULL, NULL, NULL, 'user'),
 (8, 'max@mustermann.de', '$2y$10$KeMnc2xeZqEGl1wL8uZrCuUseBc0ct9./QsDSzdAAmSnB8BVFskgm', 'Max', 'Mustermann', '2017-04-18 05:03:57', NULL, NULL, NULL, 'user');
 
