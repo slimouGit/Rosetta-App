@@ -111,6 +111,23 @@ if($authorizations=="admin"){
         </div>
     </div>
 </div>
+<div class=\"row\">
+    <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\">
+        <div class=\"offer offer-radius offer-primary\">
+
+            <div class=\"offer-content\">
+                <h3 class=\"lead\">
+                    <a href=\"passwortvergessen.php\">Passwort ändern</a>
+                </h3>
+                <p>
+                    <a href=\"passwortvergessen.php\">Passwort eines Nutzers ändern</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
     ";
 
 };

@@ -1,4 +1,10 @@
 <?php
+//include header
+include "elements/header.php";
+?>
+
+
+<?php
 //include db connection
 include "include/db_connect_PDO.php";
 ?>

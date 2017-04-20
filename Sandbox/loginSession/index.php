@@ -45,6 +45,7 @@ if(isset($errorMessage)) {
     <input type="password" size="40"  maxlength="250" name="passwort"><br>
 
     <input type="submit" value="Abschicken">
+
     <p><a href="registrieren.php">keine Zugangsdaten?</a></p>
 
     <p><a href="createDB.php">Datenbank erstellen</a></p>

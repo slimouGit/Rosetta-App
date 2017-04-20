@@ -103,6 +103,8 @@ include "include/db_connect_PDO.php";
         </div>
 
     </form>
+    <!--
     <p><a href="passwortvergessen.php">Passwort vergessen</a></p>
+    -->
 </body>
 </html>
