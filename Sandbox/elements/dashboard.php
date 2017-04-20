@@ -62,6 +62,7 @@
         </div>
     </div>
 </div>
+<!--
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div class="offer offer-radius offer-primary">
@@ -76,8 +77,41 @@
             </div>
         </div>
     </div>
-    <?php
-    if($username=="Salim Oussayfi"){echo "Hallo " . $username . " Du bist " . $authorizations;};
-    ?>
-
 </div>
+-->
+<?php
+if($authorizations=="admin"){
+    echo "
+        <div class=\"row\">
+    <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\">
+        <div class=\"offer offer-radius offer-primary\">
+
+            <div class=\"offer-content\">
+                <h3 class=\"lead\">
+                    <a href=\"registrieren.php\">Nutzer registrieren</a>
+                </h3>
+                <p>
+                    <a href=\"registrieren.php\">Einen neuen nutzer registrieren</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\">
+        <div class=\"offer offer-radius offer-primary\">
+
+            <div class=\"offer-content\">
+                <h3 class=\"lead\">
+                    <a href=\"003_db_geloeschte.php\">Gelöschte Datensätze</a>
+                </h3>
+                <p>
+                    <a href=\"003_db_geloeschte.php\">Gelöschte Datensätze anzeigen</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    ";
+
+};
+?>

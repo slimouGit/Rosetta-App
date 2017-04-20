@@ -41,8 +41,9 @@ $_SESSION = array();
 
         //Überprüfung des Passworts
         if ($user !== false && password_verify($passwort, $user['passwort'])) {
-            $_SESSION['userid'] = $user['id'];
+            $_SESSION[''] = $user['id'];
             $_SESSION['username'] = $user['vorname'] . " " . $user['nachname'];
+            $_SESSION['authorizations'] = $user['authorizations'];
             die('Login erfolgreich. Weiter zu <a href="rosetta-app.php">internen Bereich</a><meta http-equiv="refresh" content="3; URL=rosetta-app.php">');
         } else {
             $errorMessage = "E-Mail oder Passwort war ungültig<br>";
