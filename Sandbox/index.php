@@ -35,6 +35,7 @@ $_SESSION = array();
         $email = $_POST['email'];
         $passwort = $_POST['passwort'];
 
+
         $statement = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
         $result = $statement->execute(array('email' => $email));
         $user = $statement->fetch();
