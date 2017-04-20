@@ -39,6 +39,7 @@
                     </ul>
                 </li>
                 <li><a href="logout.php">logout</a></li>
+                <li><a href="neuesPasswort.php">Passwort ändern</a></li>
             </ul>
         </div>
 
