@@ -1,6 +1,11 @@
+
 <?php
 //include header
 include "elements/header.php";
+?>
+
+<?php
+$id=0;
 ?>
 
 <?php
@@ -151,9 +156,9 @@ while ($dsatz = mysqli_fetch_assoc($res))
     $id_nr = $dsatz["id"];
     echo "\n\n<tr>"
         //. "<td rowspan='2'>" . $dsatz["id"] . "</td>"
-        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='dts[$id_nr]' >" . utf8_encode( $dsatz["de"] ) . "</textarea></td>"
-        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='frz[$id_nr]' >" . utf8_encode( $dsatz["fr"] ) . "</textarea></td>"
-        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='itl[$id_nr]' >" . utf8_encode( $dsatz["it"] ) . "</textarea></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='dts[$id_nr]' id=\"de_$id\">" . utf8_encode( $dsatz["de"] ) . "</textarea><button data-copytarget=\"#de_$id\">copy</button></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='frz[$id_nr]' id=\"fr_$id\">" . utf8_encode( $dsatz["fr"] ) . "</textarea><button data-copytarget=\"#fr_$id\">copy</button></td>"
+        . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='itl[$id_nr]' id=\"it_$id\">" . utf8_encode( $dsatz["it"] ) . "</textarea><button data-copytarget=\"#it_$id\">copy</button></td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='rub[$id_nr]' >" . utf8_encode( $dsatz["rubrik"] ) . "</textarea></td>"
         . "<td><textarea onkeyup='auto_grow(this)' class='form-control' name='inf[$id_nr]' >" . utf8_encode( $dsatz["info"] ) . "</textarea></td>"
         . "<td>";
@@ -216,7 +221,7 @@ $counter = count($carline);
         ."<td><input class='form-control cellComment' name='com_fr[$id_nr]' value='" . utf8_encode( $dsatz["comment_fr"] ) . "' size='40' /></td>"
         ."<td><input class='form-control cellComment' name='com_it[$id_nr]' value='" . utf8_encode( $dsatz["comment_it"] ) . "' size='40' /></td>"
         ."</tr>";
-
+$id +=1;
 }
 echo "</table>";
 echo "</form>";
@@ -236,3 +241,45 @@ mysqli_close($con);
 //include footer
 include "elements/footer.html";
 ?>
+<script>
+    (function() {
+
+        'use strict';
+
+        // click events
+        document.body.addEventListener('click', copy, true);
+
+        // event handler
+        function copy(e) {
+
+            // find target element
+            var
+                t = e.target,
+                c = t.dataset.copytarget,
+                inp = (c ? document.querySelector(c) : null);
+
+            // is element selectable?
+            if (inp && inp.select) {
+
+                // select text
+                inp.select();
+
+                try {
+                    // copy text
+                    document.execCommand('copy');
+                    inp.focus();
+
+                    // copied animation
+                    t.classList.add('copied');
+                    setTimeout(function() { t.classList.remove('copied'); }, 1500);
+                }
+                catch (err) {
+                    alert('please press Ctrl/Cmd+C to copy');
+                }
+
+            }
+
+        }
+
+    })();
+</script>
