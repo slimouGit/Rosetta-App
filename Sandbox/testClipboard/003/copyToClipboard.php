@@ -1,3 +1,6 @@
+<?php
+$id = 0;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,29 +20,33 @@
         <td>FR</td>
         <td>IT</td>
     </tr>
+
+    <?php
+    echo "
     <tr>
-        <td>
-            <textarea onkeyup='auto_grow(this)' class='form-control' type="text" id="de">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
-            <div class="buttonRow">
+        <td>            
+            <textarea onkeyup=\"auto_grow(this)\" class=\"form-control\" type=\"text\" id=\"de_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
+            <div class=\"buttonRow\">
                 <button>comment</button>
-                <button data-copytarget="#de">copy</button>
+                <button data-copytarget=\"#de_$id\">copy</button>
             </div>
         </td>
         <td>
-            <textarea onkeyup='auto_grow(this)' class='form-control' type="text" id="fr">Prise 12 V dans la console centrale et dans le coffre</textarea>
-            <div class="buttonRow">
+            <textarea onkeyup=\"auto_grow(this)\" class=\"form - control\" type=\"text\" id=\"fr_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
+            <div class=\"buttonRow\">
                 <button>comment</button>
-                <button data-copytarget="#fr">copy</button>
+                <button data-copytarget=\"#fr_$id\">copy</button>
             </div>
         </td>
         <td>
-            <textarea onkeyup='auto_grow(this)' class='form-control' type="text" id="it">Presa, 12 Volt nella console centrale e nel bagagliaio </textarea>
-            <div class="buttonRow">
+            <textarea onkeyup=\"auto_grow(this)\" class=\"form-control\" type=\"text\" id=\"it_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
+            <div class=\"buttonRow\">
                 <button>comment</button>
-                <button data-copytarget="#it">copy</button>
+                <button data-copytarget=\"#it_$id\">copy</button>
             </div>
         </td>
     </tr>
+    "?>
 </table>
 </container>
 
