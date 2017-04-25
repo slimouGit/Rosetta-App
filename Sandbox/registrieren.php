@@ -68,7 +68,7 @@ if(isset($_GET['register'])) {
         $result = $statement->execute(array('vorname' => $vorname, 'nachname' => $nachname, 'email' => $email, 'passwort' => $passwort_hash));
 
         if($result) {
-            echo 'Du wurdest erfolgreich registriert. <a href="index.php">Zum Login</a>';
+            echo 'Der Nutzer wurde erfolgreich registriert. <meta http-equiv="refresh" content="3; URL=rosetta-app.php">';
             $showFormular = false;
         } else {
             echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
