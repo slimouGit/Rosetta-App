@@ -3,7 +3,12 @@
  */
 
 (function() {
-
+    /*
+    document.getElementById("de_0").onfocus = function() {
+        alert('focused');
+        copy(e);
+    };
+    */
     'use strict';
 
     // click events
@@ -11,7 +16,7 @@
 
     // event handler
     function copy(e) {
-
+        //alert("Klick");
         // find target element
         var
             t = e.target,
@@ -27,7 +32,7 @@
             try {
                 // copy text
                 document.execCommand('copy');
-                inp.focus();
+                inp.blur();
 
                 // copied animation
                 t.classList.add('copied');

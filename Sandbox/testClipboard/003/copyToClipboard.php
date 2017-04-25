@@ -25,14 +25,14 @@ $id = 0;
     echo "
     <tr>
         <td>            
-            <textarea onkeyup=\"auto_grow(this)\" class=\"form-control\" type=\"text\" id=\"de_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
+            <div class=\"form-control\" contenteditable=\"true\" onclick=\"document.execCommand('selectAll',false,null)\" type=\"text\" id=\"de_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </div>
             <div class=\"buttonRow\">
                 <button>comment</button>
                 <button data-copytarget=\"#de_$id\">copy</button>
             </div>
         </td>
         <td>
-            <textarea onkeyup=\"auto_grow(this)\" class=\"form - control\" type=\"text\" id=\"fr_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
+            <textarea onkeyup=\"auto_grow(this)\" class=\"form-control\" type=\"text\" id=\"fr_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </textarea>
             <div class=\"buttonRow\">
                 <button>comment</button>
                 <button data-copytarget=\"#fr_$id\">copy</button>
