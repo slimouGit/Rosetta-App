@@ -25,7 +25,7 @@ $id = 0;
     echo "
     <tr>
         <td>            
-            <div class=\"form-control\" contenteditable=\"true\" onclick=\"document.execCommand('selectAll',false,null)\" type=\"text\" id=\"de_$id\">Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </div>
+            <a class=\"form-control\" contenteditable=\"true\" onclick=\"document.execCommand('selectAll',false,null)\" type=\"text\" id=\"de_$id\">Test Steckdose, 12 Volt, an der Rückseite der Mittelkonsole </a>
             <div class=\"buttonRow\">
                 <button>comment</button>
                 <button data-copytarget=\"#de_$id\">copy</button>
