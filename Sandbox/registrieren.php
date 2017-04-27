@@ -7,12 +7,12 @@ include "include/db_connect_PDO.php";
 
 ?>
 
-
+<div class="container">
 <h2>Rosetta-App</h2>
 <p>Neuen Nutzer registrieren.</p>
 
 
-<div class="container">
+
 
 <?php
 $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
