@@ -31,6 +31,7 @@ if(isset($_GET['register'])) {
     $error = false;
     $vorname = $_POST['vorname'];
     $nachname = $_POST['nachname'];
+    $authorizations = $_POST['authorizations'];
     $email = $_POST['email'];
     $passwort = $_POST['passwort'];
     $passwort2 = $_POST['passwort2'];
@@ -64,8 +65,8 @@ if(isset($_GET['register'])) {
     if(!$error) {
         $passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
 
-        $statement = $pdo->prepare("INSERT INTO rosetta_users (vorname, nachname, email, passwort) VALUES (:vorname, :nachname, :email, :passwort)");
-        $result = $statement->execute(array('vorname' => $vorname, 'nachname' => $nachname, 'email' => $email, 'passwort' => $passwort_hash));
+        $statement = $pdo->prepare("INSERT INTO rosetta_users (vorname, nachname, authorizations, email, passwort) VALUES (:vorname, :nachname, :authorizations, :email, :passwort)");
+        $result = $statement->execute(array('vorname' => $vorname, 'nachname' => $nachname, 'authorizations' => $authorizations, 'email' => $email, 'passwort' => $passwort_hash));
 
         if($result) {
             echo 'Der Nutzer wurde erfolgreich registriert. <meta http-equiv="refresh" content="3; URL=rosetta-app.php">';
@@ -106,6 +107,19 @@ if($showFormular) {
                 <label class="col-sm-2 control-label">E-Mail</label>
                 <div class="col-sm-6">
                     <input type="email" class="form-control" size="40" maxlength="250" name="email">
+                </div>
+                <div class="col-sm-4 errorContainer"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Authorisation</label>
+                <div class="col-sm-6">
+                    <select class="form-control" name="authorizations">
+                        <option selected value="user" name="authorizations">User</option>
+                        <option value="admin" name="authorizations">Admin</option>
+                    </select>
                 </div>
                 <div class="col-sm-4 errorContainer"></div>
             </div>
