@@ -1,27 +1,17 @@
 <?php
-
-session_start();
-
+//include header
+include "elements/header.php";
 //include db connection
 include "include/db_connect_PDO.php";
 //$pdo = new PDO('mysql:host=localhost;dbname=rosetta-app', 'root', '');
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Salim Oussayfi">
-    <meta name="description" content="Praxis-Projekt Beuth-Hochschule/Medieninformatik B.Sc.">
-    <title>Rosetta-App</title>
 
-    <!-- Bootstrap -->
-    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/layout.css" rel="stylesheet">
-</head>
-<body>
+
+<h2>Rosetta-App</h2>
+<p>Neuen Nutzer registrieren.</p>
+
+
 <div class="container">
 
 <?php
