@@ -98,7 +98,7 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
     }
     //falls keine checkbox aktiv, wird in allen Spalten gesucht
     if(empty($cat)) {
-        $cat = ' rubrik, info';
+        $cat = ' rubrik, info, de, fr, it';
     }
 
     //die Eingabe aus dem Inputfeld wird in $searchWord gespeichert
