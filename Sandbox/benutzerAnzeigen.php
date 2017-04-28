@@ -24,7 +24,8 @@ include "include/db_connect_PDO.php";
         <th class="col-sm-2">Nachname</th>
         <th class="col-sm-2">Email</th>
         <th class="col-sm-2">Authorisation</th>
-        <th class="col-sm-2" colspan="3">Edit</th>
+        <th class="col-sm-1">Edit</th>
+        <th class="col-sm-1">Passwort</th>
     </tr>
     </thead>
     <tbody>
@@ -45,7 +46,7 @@ foreach ($pdo->query($sql) as $row) {
            </td>";
     echo "<td><form method='post' action='passwortvergessen.php'>
                 <input type='image' name='passwort' value='" . utf8_encode($row["email"]) . "' src='img/button_search.png' class='editButton'  formaction='passwortvergessen.php'></button>
-                <input  type=\"image\" name='delete' value='" . $row["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"></button>
+                <!--<input  type=\"image\" name='delete' value='" . $row["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"></button>-->
                 </form>
                 </td>";
     echo "</tr>";
