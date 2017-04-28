@@ -114,8 +114,9 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
     }
     else{
         ?>
-
+        <!--
         <form action = "003_db_aendern_b.php" method = "post">
+        -->
             <?php
 
             //include table
@@ -127,9 +128,9 @@ if(isset($_POST['Suchen']) && (!$fehler)) {
 
             <!--
             <p><input type="submit" value="anzeigen" /></p>
-            -->
-        </form>
 
+        </form>
+-->
         <?php
     }
 }

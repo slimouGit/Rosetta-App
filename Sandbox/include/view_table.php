@@ -1,3 +1,6 @@
+<?php
+$id=0;
+?>
 <table class="table table-hover table-responsive">
     <thead>
     <tr>
@@ -18,6 +21,7 @@
     <tbody class="results">
 
     <?php
+
     //falls nicht ueber die Suchfunktion auf die Daten zugegriffen wird,
     //ist $searchWord nicht initialisiert und die Daten werden nicht ausgegeben
     if(empty($searchWord)){$searchWord="";};
@@ -27,17 +31,18 @@
     //je nach Ergebnis werden die Daten in seperater Funktion ausgegeben
     if(strstr($searchWord, $slash)){
         echo "<br/>"."Slash inside query";
-        viewWithSlash($res);
+        viewWithSlash($res, $id);
     }else{
-        viewWithOutSlash($searchWord, $res);
+        viewWithOutSlash($searchWord, $res, $id);
     }
     //Falls im Datensatz Slash enthalten, wier diese Funktion aufgerufen
-    function viewWithSlash($res)
+    function viewWithSlash($res, $id)
     {
         /* Datensaetze aus Ergebnis ermitteln, */
         /* in Array speichern und ausgeben    */
         while ($dsatz = mysqli_fetch_assoc($res))
         {
+            $id++;
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
@@ -55,33 +60,34 @@
                 "<tr>".
                 "<td>" . $dsatz["id"] . "</td>" .
                 "<td>
-                <div class='commentContainer'>
+                <div >
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
                     </div>
-                    <div class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
+                    <div id=\"de_$id\" class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
                     <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
-
+                    <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_edit.png' class='editButton'></div>
                 </div>
             </td>".
                 "<td>
-                <div class='commentContainer'>
+                <div >
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
                     </div>
-                    <div class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
+                    <div id=\"fr_$id\" class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
                     <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
-
+                    <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_edit.png' class='editButton'></div>
                 </div>
             </td>".
                 "<td>
-                <div class='commentContainer'>
+                <div >
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
                     </div>
-                    <!--<div class='commentValue'>"  . utf8_encode($dsatz["it"]) . "</div>   -->
-                             <div><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
-                </div>
+                    <div id=\"it_$id\" class='commentValue'>"  . utf8_encode($dsatz["it"]) . "
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                    <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_edit.png' class='editButton'></div>
+            </div>
             </td>".
                 "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
                 "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
@@ -143,14 +149,16 @@
                 ."</tr>";
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
+
     }//ENDE viewWithSlash
     //Falls im Datensatz KEIN Slash enthalten, wier diese Funktion aufgerufen
-    function viewWithOutSlash($searchWord, $res)
+    function viewWithOutSlash($searchWord, $res, $id)
     {
         /* Datensaetze aus Ergebnis ermitteln, */
         /* in Array speichern und ausgeben    */
         while ($dsatz = mysqli_fetch_assoc($res))
         {
+            $id++;
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
@@ -168,35 +176,37 @@
                 "<tr>".
                 "<td>" . $dsatz["id"] . "</td>".
                 "<td>
-                <div class='commentContainer'>
+                <div>
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
                     </div>
-                    <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "
-                                                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
-
+                    <div id=\"de_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "
+                     <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                     <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_edit.png' class='editButton'></div>
+                     <!--<button onclick=\"copyToClipboard('#de_$id')\">copy</button>    -->       
                 </div>
             </td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
                 "<td>
-                <div class='commentContainer'>
+                <div>
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
+           
                     </div>
-                    <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))       . "
-                                                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
-
+                    <div id=\"fr_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))       . "
+                     <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                       <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_edit.png' class='editButton'></div>
                 </div>
             </td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
                 "<td>
-                <div class='commentContainer'>
+                <div>
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
                     </div>
-                    <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "           
-                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
-
+                    <div id=\"it_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "           
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                    <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_edit.png' class='editButton'></div>
                 </div>
             </td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
@@ -290,3 +300,13 @@ function testFunction(){
 }
 */
 ?>
+<!--Copy to clipboard-->
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+</script>
