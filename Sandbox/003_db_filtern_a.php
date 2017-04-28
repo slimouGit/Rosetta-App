@@ -28,7 +28,7 @@ include "include/input_check.php";
 
 
 <h2>Filtern</h2>
-<p>Das Inputfield wied mit dem ausgewaehletn Wert belegt</p>
+<p>Das Inputfield wird mit dem ausgewaehletn Wert belegt</p>
 
 
 <!--Suchformular-->
@@ -44,36 +44,7 @@ include "include/input_check.php";
             </div>
         </div>
     </div>
-    <!--
-    <div class="row">
-        <label class="col-sm-2 control-label">in welcher Kategorie</label>
-        <div class="col-sm-6">
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="de">deutsch
-            </label>
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="fr">französisch
-            </label>
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="it">italienisch
-            </label>
-            <!--
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="en">englisch
-            </label>
 
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="rubrik">Rubrik
-            </label>
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="info">Info
-            </label>
-            <label class="checkbox-inline">
-                <input name="category[]" type="checkbox" value="carline">Carline
-            </label>
-        </div>
-    </div>
-    -->
     <div class="row">
         <div class="form-group">
             <div class="col-sm-2"></div>
@@ -89,7 +60,7 @@ include "include/input_check.php";
 <!--Code, sobald auf Button gedrueckt wurde-->
 <?php
 
-if(isset($_POST['Suchen']) && (!$fehler)) {
+if(isset($_POST['search']) && (!$fehler)) {
 
     //Pruefung, ob checkboxen ausgewaehlt wurden
     if(!empty($_POST['category'])) {

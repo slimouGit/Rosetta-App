@@ -60,7 +60,7 @@
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
                     </div>
                     <div class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
 
                 </div>
             </td>".
@@ -70,7 +70,7 @@
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
                     </div>
                     <div class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
 
                 </div>
             </td>".
@@ -80,11 +80,11 @@
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
                     </div>
                     <!--<div class='commentValue'>"  . utf8_encode($dsatz["it"]) . "</div>   -->
-                             <div><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                             <div><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
                 </div>
             </td>".
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
+                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></td>".
                 "<td class='columnCarline'>";
             $carlineArray = $dsatz["carline"];
             $carlineArray = explode(', ',$carlineArray);
@@ -173,7 +173,7 @@
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_de.php\"></button>
                     </div>
                     <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "
-                                                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                                                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
 
                 </div>
             </td>".
@@ -184,7 +184,7 @@
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_fr.php\"></button>
                     </div>
                     <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))       . "
-                                                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                                                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
 
                 </div>
             </td>".
@@ -195,7 +195,7 @@
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"003_db_kommentar_it.php\"></button>
                     </div>
                     <div class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "           
-                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_edit.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
+                                                 <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='003_db_filtern_a.php'></button></div>
 
                 </div>
             </td>".
