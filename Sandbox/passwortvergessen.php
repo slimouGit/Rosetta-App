@@ -103,7 +103,9 @@ if($showForm):
 
     <form action="?send=1" method="post">
         E-Mail:<br>
-        <input type="email" name="email" value="<?php echo isset($_POST['email']) ? htmlentities($_POST['email']) : ''; ?>"><br>
+        <!--<input type="email" name="email" value="<?php echo isset($_POST['email']) ? htmlentities($_POST['email']) : ''; ?>"><br>-->
+        <input type="email" name="email" value="<?php echo isset($_POST['passwort']) ? $_POST['passwort'] : ''; ?>"><br>
+
         <input type="submit" value="Neues Passwort">
     </form>
 
