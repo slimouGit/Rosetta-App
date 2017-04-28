@@ -23,21 +23,21 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
 {
     $sql = "select * from rosetta_users where id = '" . $_POST['update'] . "'";
     $res = mysqli_query($con, $sql);
-    $row = mysqli_fetch_assoc($res);
+    $dsatz = mysqli_fetch_assoc($res);
 
-    echo $row['vorname']."</br>";
-    $authorizations = $row['authorizations'];
-    $id = $row['id'];
+    echo $dsatz['vorname']."</br>";
+    $authorizations = $dsatz['authorizations'];
+    $id = $dsatz['id'];
     var_dump($authorizations);
 
     echo "
         <form action=\"?update=1\" method=\"post\">
-        <input type='hidden' name='id' value='" . $row["id"] . "'>
+        <input type='hidden' name='id' value='" . $dsatz["id"] . "'>
         <div class=\"row\">
             <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\">Vorname</label>
                 <div class=\"col-sm-6\">
-                    <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"vorname\" value='" . utf8_encode($row["vorname"]) . "'>
+                    <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"vorname\" value='" . utf8_encode($dsatz["vorname"]) . "'>
                 </div>
                 <div class=\"col-sm-4 errorContainer\"></div>
             </div>
@@ -48,7 +48,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
             <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\">Nachname</label>
                 <div class=\"col-sm-6\">
-                    <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"nachname\" value='" . utf8_encode($row["nachname"]) . "'>
+                    <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"nachname\" value='" . utf8_encode($dsatz["nachname"]) . "'>
                 </div>
                 <div class=\"col-sm-4 errorContainer\"></div>
             </div>
@@ -60,7 +60,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
             <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\">E-Mail</label>
                 <div class=\"col-sm-6\">
-                    <input type=\"email\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"email\" value='" . utf8_encode($row["email"]) . "'>
+                    <input type=\"email\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"email\" value='" . utf8_encode($dsatz["email"]) . "'>
                 </div>
                 <div class=\"col-sm-4 errorContainer\"></div>
             </div>
@@ -72,19 +72,24 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
             <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\">Autorisation</label>
                 <div class=\"col-sm-6\">
-                    <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"authorizations\" value='" . utf8_encode($row["authorizations"]) . "'>
+                    <input list=\"authorizationsOptions\" type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"authorizations\" value='" . utf8_encode($dsatz["authorizations"]) . "'>
+                    <datalist id=\"authorizationsOptions\">
+                        <option value=\"user\">
+                        <option value=\"admin\">
+                        <option value=\"invalid\">
+                    </datalist>
                 </div>
                 <div class=\"col-sm-4 errorContainer\"></div>
             </div>
         </div>";
-
+/*
     echo "
 
         <div class=\"row\">
             <div class=\"form-group\">
                 <label class=\"col-sm-2 control-label\">Passwort</label>
                 <div class=\"col-sm-6\">
-                    <input type=\"password\" class=\"form-control\" size=\"40\"  maxlength=\"250\" name=\"passwort\" value='" . utf8_encode($row["passwort"]) . "'>
+                    <input type=\"password\" class=\"form-control\" size=\"40\"  maxlength=\"250\" name=\"passwort\" value='" . utf8_encode($dsatz["passwort"]) . "'>
                 </div>
                 <div class=\"col-sm-4 errorContainer\"></div>
             </div>
@@ -101,7 +106,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                 <div class=\"col-sm-4 errorContainer\"></div>
             </div>
         </div>";
-
+*/
     echo "
 
         <div class=\"row\">
@@ -123,15 +128,29 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
     //close connection
     mysqli_close($con);
 }
-else
-    echo "<p>Es wurde kein Datensatz ausgewaehlt</p>";
+
 ?>
 
 <?php
 if(isset($_GET['update'])) {
-    echo $_POST['id'] . " Kommt an";
+    //echo $_POST['id'] . " Kommt an";
     $id = $_POST['id'];
 
+    $sql = "update rosetta_users set id = '" . $_POST["id"] . "',"
+        . " vorname = '" . $_POST["vorname"] . "',"
+        . " nachname = '" . $_POST["nachname"] . "',"
+        . " email = '" . $_POST["email"] . "',"
+        . " authorizations = '" . $_POST["authorizations"] . "'"
+        . " where id = '" . $_POST["id"] . "'";
+
+    mysqli_query($con, $sql);
+
+    $num = mysqli_affected_rows($con);
+
+    if ($num>0)
+        echo "<p>Der Datensatz wurde geaendert</p>";
+    else
+        echo "<p>Der Datensatz wurde nicht geaendert</p>";
 
 }
 ?>

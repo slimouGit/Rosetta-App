@@ -39,11 +39,11 @@ foreach ($pdo->query($sql) as $row) {
     echo "<td>" . $row['email']."</td>";
     echo "<td>" . $row['authorizations']."</td>";
     echo "<td>
-            <form method='post' action='benutzeraendern.php'>
+            <form method='post' action='benutzerAendern.php'>
             <input  type=\"image\" name='update' value='" . $row["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"></button>
             </form>
            </td>";
-    echo "<td><form method='post' action='benutzeraendern.php'>
+    echo "<td><form method='post' action='benutzerAendern.php'>
                 <input  type=\"image\" name='delete' value='" . $row["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"></button>
                 </form>
                 </td>";
