@@ -125,7 +125,6 @@ if($authorizations=="admin"){
             </div>
         </div>
     </div>
-    <div class=\"row\">
     <div class=\"col-xs-12 col-sm-6 col-md-4 col-lg-3\">
         <div class=\"offer offer-radius offer-primary\">
 
