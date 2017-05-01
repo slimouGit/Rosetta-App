@@ -85,9 +85,9 @@ if(isset($_POST['search']) && (!$fehler)) {
     }
     else{
         ?>
-        <!--
-        <form action = "003_db_aendern_b.php" method = "post">
-        -->
+
+
+
             <?php
 
             //include table
@@ -99,9 +99,9 @@ if(isset($_POST['search']) && (!$fehler)) {
 
             <!--
             <p><input type="submit" value="anzeigen" /></p>
-
-        </form>
 -->
+
+
         <?php
     }
 }
