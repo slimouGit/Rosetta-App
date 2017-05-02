@@ -109,12 +109,12 @@ $id=0;
                 echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
             }
             echo    "</td>";
-            echo    "<td >
+            echo    "<form  method = \"post\"><td >
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
-                </td>".
-                "<td >
+                </td></form>".
+                "<form  method = \"post\"><td >
                     <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
-                </td>".
+                </td></form>".
                 "</tr>";
             //Kommentar Zeile
             echo "<tr class='commentRow'>"
@@ -240,12 +240,13 @@ $id=0;
                 echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
             }
             echo    "</td>";
-            echo    "<td >
+            echo    "<form  method = \"post\"><td >
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"003_db_aendern_b.php\"></button>
-                </td>".
-                "<td >
+                </td></form>".
+                "<form  method = \"post\"><td >
                     <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"003_db_loeschen_b.php\"></button>
-                </td>".
+                   
+                </td></form>".
                 "</tr>";
             //Kommentar Zeile
             echo "<tr class='commentRow'>"
