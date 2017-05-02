@@ -12,6 +12,7 @@ include "include/db_connect.php";
 ?>
 
     <form method = "post">
+
         <?php
 
         /* SQL-Abfrage ausfuehren */
@@ -38,6 +39,7 @@ include "include/db_connect.php";
         <input  type="submit" value="Ändern" formaction="003_db_aendern_b.php"></button>
         <input  type="submit" value="Löschen" formaction="003_db_loeschen_b.php"></button>
         -->
+
     </form>
 
 <?php
