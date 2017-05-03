@@ -1,6 +1,4 @@
-<?php
 
-?>
 
 <?php
 $id=0;
@@ -53,7 +51,6 @@ $id=0;
             }
 
             $updateUser = $dsatz['updateBy'];
-            echo $updateUser;
             if(!empty($updateUser)){
                 $showUpdateData =" / " .  (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $updateUser;
             }else{
@@ -192,7 +189,6 @@ $id=0;
             }
 
             $updateUser = $dsatz['updateBy'];
-            echo $updateUser;
             if(!empty($updateUser)){
                 $showUpdateData =" / " .  (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $updateUser;
             }else{
