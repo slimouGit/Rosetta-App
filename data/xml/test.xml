@@ -3,11 +3,11 @@
 <items>
 
     <item>
-        <de>Deutsch</de>
-        <fr>Französisch</fr>
-        <it>Italienisch</it>
-        <rubrik>Rubrik</rubrik>
-        <info>Info</info>
-        <carline>Carline</carline>
+        <de>Mai</de>
+        <fr>Mai</fr>
+        <it>Mai</it>
+        <rubrik>-</rubrik>
+        <info>Monat</info>
+        <carline>General</carline>
     </item>
 </items>
