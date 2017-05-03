@@ -4,7 +4,7 @@
 header('Content-Type: text/html; charset=utf-8');
 
 $xmlDoc = new DOMDocument();
-$xmlDoc->load("AstraST_dfi_005.xml");
+$xmlDoc->load("Mokka_dfi_004.xml");
 $servername = "localhost";
 $username     = "root";
 $password = "";
@@ -48,7 +48,9 @@ for ($i=0; $i < $itemCount; $i++){
 
 
 
-    $sql   = "INSERT INTO `rosetta_data` (token, de, fr, it, rubrik, info, carline) VALUES ('$token', '$de', '$fr','$it','$rubrik', '$info' , '$carline')";
+    $sql = "insert rosetta_data"
+        . "(token, de, fr, it, rubrik, info, carline, user) values "
+        . "('" . $token . "', "  .  "'" . $de . "', " .  "'" . $fr . "', " .  "'" . $it . "', " .  "'" . $rubrik . "', " .  "'" . $info . "', " .  "'" . $carline . "', " .  "'" . $username . "')";
 
     mysqli_query($con, $sql);
 
