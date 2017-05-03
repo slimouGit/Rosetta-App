@@ -3,6 +3,8 @@
 include "elements/header.php";
 ?>
 
+
+
 <?php
 
 ?>
@@ -29,11 +31,11 @@ echo "Der neue Pfad lautet: ".$new_path. "<br/>";
 
 
 
-importXML($fileName);
+importXML($fileName, $username);
 
 
 
-function importXML($fileName){
+function importXML($fileName, $username){
 
     $xmlDoc = new DOMDocument();
     $xmlDoc->load($fileName);
@@ -47,6 +49,7 @@ function importXML($fileName){
     //da hier noch nicht mit der ID gearbeitet werden kann
     $token = bin2hex(openssl_random_pseudo_bytes(16));
     $token = (string)$token;
+    $username = $username;
 
     $xmlObject = $xmlDoc->getElementsByTagName('item');
     $itemCount = $xmlObject->length;
@@ -61,7 +64,13 @@ function importXML($fileName){
         $carline  = $xmlObject->item($i)->getElementsByTagName('carline')->item(0)->childNodes->item(0)->nodeValue;
 
 
-        $sql   = "INSERT INTO `rosetta_data` (token, de, fr, it, rubrik, info, carline) VALUES ('$token', '$de', '$fr','$it','$rubrik', '$info' , '$carline')";
+
+        //$sql   = "INSERT INTO `rosetta_data` (token, de, fr, it, rubrik, info, carline, user) VALUES ('$token', '$de', '$fr','$it','$rubrik', '$info' , '$carline', '$username')";
+
+        $sql = "insert rosetta_data"
+            . "(token, de, fr, it, rubrik, info, carline, user) values "
+            . "('" . $token . "', "  .  "'" . $de . "', " .  "'" . $fr . "', " .  "'" . $it . "', " .  "'" . $rubrik . "', " .  "'" . $info . "', " .  "'" . $carline . "', " .  "'" . $username . "')";
+
 
         mysqli_query($con, $sql);
 
