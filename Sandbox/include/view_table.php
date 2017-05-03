@@ -1,3 +1,5 @@
+
+
 <?php
 $id=0;
 ?>
@@ -42,11 +44,24 @@ $id=0;
         /* in Array speichern und ausgeben    */
         while ($dsatz = mysqli_fetch_assoc($res))
         {
+
+            $generateUser = $dsatz['user'];
+            if($generateUser=="default"){
+                $generateUser = "uploaded data";
+            }
+
+            $updateUser = $dsatz['updateBy'];
+            if(!empty($updateUser)){
+                $showUpdateData =" / " .  (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $updateUser;
+            }else{
+                $showUpdateData = "";
+            }
+
             $id++;
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
-                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $dsatz['user'] . " / " . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $dsatz['updateBy'] . "</td>"
+                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $generateUser . $showUpdateData . "</td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td></td>"
@@ -167,11 +182,24 @@ $id=0;
         /* in Array speichern und ausgeben    */
         while ($dsatz = mysqli_fetch_assoc($res))
         {
+
+            $generateUser = $dsatz['user'];
+            if($generateUser=="default"){
+                $generateUser = "uploaded data";
+            }
+
+            $updateUser = $dsatz['updateBy'];
+            if(!empty($updateUser)){
+                $showUpdateData =" / " .  (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $updateUser;
+            }else{
+                $showUpdateData = "";
+            }
+
             $id++;
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
-                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $dsatz['user'] . " / " . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $dsatz['updateBy'] . "</td>"
+                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $generateUser . $showUpdateData . "</td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td class='columnCommentTranslator'></td>"
                 ."<td></td>"
