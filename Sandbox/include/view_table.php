@@ -351,8 +351,18 @@ function testFunction(){
     function copyToClipboard(element) {
         var $temp = $("<input>");
         $("body").append($temp);
-        $temp.val($(element).text()).select();
+
+        //kopierten Text in copiedValue speichern
+        var copiedValue = $(element).text();
+        //Leerzeichen ind copiedValue entfernen
+        while (copiedValue.indexOf('  ') > 0) {
+            copiedValue = copiedValue.replace('  ', '');
+        }
+
+        $temp.val(copiedValue).select();
         document.execCommand("copy");
+
+        console.log(copiedValue.length);
         $temp.remove();
     }
 </script>
