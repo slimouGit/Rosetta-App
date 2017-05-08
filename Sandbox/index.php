@@ -106,5 +106,15 @@ include "include/db_connect_PDO.php";
     <!--
     <p><a href="passwortvergessen.php">Passwort vergessen</a></p>
     -->
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-2">Vorschau:</div>
+            <div class="col-sm-1">
+                <a href="http://sidemap.rosetta-app.de/sidemap_Rosetta-App.pdf" target="_blank">Struktur/Sidemap</a><br>
+                <a href="http://screendesign.rosetta-app.de/screendesign_Rosetta-App.pdf" target="_blank">Screendesign</a><br>
+                <a href="https://projects.invisionapp.com/share/TWBLP57BR#/screens" target="_blank">ClickDummy</a><br>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
