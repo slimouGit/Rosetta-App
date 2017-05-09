@@ -45,7 +45,7 @@ foreach ($pdo->query($sql) as $row) {
             </form>
            </td>";
     echo "<td><form method='post' action='passwortvergessen.php'>
-                <input type='image' name='passwort' value='" . utf8_encode($row["email"]) . "' src='img/button_search.png' class='editButton'  formaction='passwortvergessen.php'></button>
+                <input type='image' name='passwort' value='" . utf8_encode($row["email"]) . "' src='img/button_pwd.png' class='editButton'  formaction='passwortvergessen.php'></button>
                 <!--<input  type=\"image\" name='delete' value='" . $row["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"></button>-->
                 </form>
                 </td>";
