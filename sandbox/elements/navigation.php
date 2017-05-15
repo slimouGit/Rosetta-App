@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <!--<li><a href="index.php">Start</a></li>-->
-                <li><a href="suchen_a.php">Suchen</a></li>
+                <li><a href="suchen.php">Suchen</a></li>
                 <li><a href="erzeugen_a.php">Erstellen</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daten

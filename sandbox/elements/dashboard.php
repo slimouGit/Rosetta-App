@@ -11,10 +11,10 @@
         <div class="offer offer-radius offer-primary">
             <div class="offer-content">
                 <h3 class="lead">
-                    <a href="suchen_a.php">Eintrag suchen</a>
+                    <a href="suchen.php">Eintrag suchen</a>
                 </h3>
                 <p>
-                    <a href="suchen_a.php">Eintrag suchen</a>
+                    <a href="suchen.php">Eintrag suchen</a>
                 </p>
             </div>
         </div>

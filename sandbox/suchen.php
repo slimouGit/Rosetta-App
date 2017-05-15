@@ -19,7 +19,7 @@ include "include/input_check.php";
 <script>
     $(function() {
         $( "#skills" ).autocomplete({
-            source: 'search.php',
+            source: 'search_script.php',
             minLength:3
         });
     });
