@@ -81,7 +81,7 @@ $id=0;
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
                     </div>
                     <div id=\"de_$id\" class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></div>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                    </form>
                     <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'></div>
                 </div>
@@ -93,7 +93,7 @@ $id=0;
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
                     </div>
                     <div id=\"fr_$id\" class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></div>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                     </form>
                     <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'></div>
                 </div>
@@ -105,15 +105,15 @@ $id=0;
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
                     </div>
                     <div id=\"it_$id\" class='commentValue'>"  . utf8_encode($dsatz["it"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></div>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                    </form>
                     <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'></div>
             </div>
             </td>".
                 "<form  method = \"post\">".
 
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></td>".
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></td>".
+                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></td>".
+                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></td>".
                 "</form>".
                 "<td class='columnCarline'>";
             $carlineArray = $dsatz["carline"];
@@ -219,7 +219,7 @@ $id=0;
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
                     </div>
                     <div id=\"de_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "
-                     <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></div>
+                     <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                      </form>
                      <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'></div>
                      <!--<button onclick=\"copyToClipboard('#de_$id')\">copy</button>    -->       
@@ -234,7 +234,7 @@ $id=0;
            
                     </div>
                     <div id=\"fr_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))       . "
-                     <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></div>
+                     <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                       </form>
                        <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'></div>
                 </div>
@@ -247,17 +247,17 @@ $id=0;
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
                     </div>
                     <div id=\"it_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "           
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern_a.php'></button></div>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                     </form>
                     <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'></div>
                 </div>
             </td>".
                 "<form  method = \"post\">".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "</td>".
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["rubrik"]) . "' src='img/button_edit.png' class='editButton'  formaction='filtern_a.php'></button></td>".
+                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["rubrik"]) . "' src='img/button_edit.png' class='editButton'  formaction='filtern.php'></button></td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["rubrik"]))    . "</a></td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["info"]))      . "</a></td>".
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["info"]) . "' src='img/button_edit.png' class='editButton'  formaction='filtern_a.php'></button></td>".
+                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . utf8_encode($dsatz["info"]) . "' src='img/button_edit.png' class='editButton'  formaction='filtern.php'></button></td>".
                 "</form>".
                 "<td class='columnCarline'>";
             $carlineArray = $dsatz["carline"];
