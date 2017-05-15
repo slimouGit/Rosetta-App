@@ -11,7 +11,7 @@ include "elements/header.php";
 include "include/db_connect.php";
 ?>
 
-    <form action = "003_db_loeschen_b.php" method = "post">
+    <form action = "loeschen_b.php" method = "post">
         <?php
 
             $res = mysqli_query($con, "select * from rosetta_data");

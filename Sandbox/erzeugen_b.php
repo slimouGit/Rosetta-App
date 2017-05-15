@@ -66,7 +66,7 @@ if (isset($_POST["gesendet"]))
         echo "Es wurde 1 Datensatz hinzugefuegt";
         echo "</font></p>";
 
-        echo "<form action = \"003_db_aendern_b.php\" method = \"post\">";
+        echo ">";
 
             //---------------------------------------------------
             //Den Datensatz, der ertsellt wurde, anzeigen

@@ -13,7 +13,7 @@ include "include/db_connect.php";
 <p>Verschieden Parameter stehen zur Auswahl, kann beliebig erweitert werden</p>
 <p>wird keine Carline ausgewählt, wird der Wert mit "General" initialisiert</p>
 
-<form action = "003_db_erzeugen_b.php" method = "post">
+<form action = "erzeugen_b.php" method = "post">
 
     <div class="row">
         <div class="form-group">

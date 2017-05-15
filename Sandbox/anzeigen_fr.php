@@ -78,7 +78,7 @@ if(isset($_POST["ak"]))
 }
 
 /* Formular-Beginn */
-echo "<form name='f' action='003_db_anzeigen_fr.php'
+echo "<form name='f' action='anzeigen_fr.php'
                method='post'>";
 echo "<input name='ak' type='hidden' />";
 echo "<input name='id' type='hidden' />";

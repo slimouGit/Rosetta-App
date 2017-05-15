@@ -27,7 +27,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
 
 
 
-    echo "<form action = '003_db_aendern_c.php' method = 'post'>";
+    echo "<form action = 'aendern_c.php' method = 'post'>";
 
     echo "<div class='results'><!--in diesem container werden die Fragezeichen geloescht -->";
 

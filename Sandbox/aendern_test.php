@@ -29,7 +29,7 @@ echo "before isset";
 
 
 
-        echo "<form action = '003_db_aendern_c.php' method = 'post'>";
+        echo "<form action = 'aendern_c.php' method = 'post'>";
 
             echo "<p><input type='hidden' name='id' value='" . $_POST['update'] . "' /> </p>";
             echo "

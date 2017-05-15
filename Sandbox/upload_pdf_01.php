@@ -11,7 +11,7 @@ include "include/db_connect.php";
     <h2>Preislisten-PDFs hochladen</h2>
     <p>Schreibweise muss eingehalten werden, d.h. evtl. Erklär-Funktion integrieren</p>
 
-<form enctype="multipart/form-data" action="003_db_upload_pdf_02.php" method="post">
+<form enctype="multipart/form-data" action="upload_pdf_02.php" method="post">
 <div class="row">
     <div class="form-group">
         <label class="col-sm-1 control-label">Datei</label>

@@ -24,7 +24,7 @@ if (isset($_POST["edit"])) {
         $res = mysqli_query($con, $sql);
         $dsatz = mysqli_fetch_assoc($res);
 
-        echo "<form action = '003_db_aendern_c.php' method = 'post'>";
+        echo "<form action = 'aendern_c.php' method = 'post'>";
 
         echo "<p><input type='hidden' name='id' value='" . $_POST["edit"] . "' /> </p>";
         echo "<p><input name='dts' value='" . $dsatz["de"] . "' /> Deutsch</p>";

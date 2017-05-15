@@ -40,7 +40,7 @@ if(empty($car)) {
     else
         echo "<p>Der Datensatz wurde nicht geaendert</p>";
 
-    echo "<form action = \"003_db_aendern_b.php\" method = \"post\">";
+    echo ">";
 
     //---------------------------------------------------
     //Den Datensatz, der gesucht wurde, anzeigen

@@ -12,7 +12,7 @@ include "include/db_connect.php";
     <h2>XML mit Datensätzen hochladen</h2>
     <p>XML-Struktur muss eingehalten werden, d.h. evtl. Erklär-Funktion integrieren</p>
 
-<form enctype="multipart/form-data" action="003_db_upload_xml_02.php" method="post">
+<form enctype="multipart/form-data" action="upload_xml_02.php" method="post">
     <div class="row">
         <div class="form-group">
             <label class="col-sm-1 control-label">Datei</label>

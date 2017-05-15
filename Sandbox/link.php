@@ -70,7 +70,7 @@ function send(ak,id)
    }
 
    /* Formular-Beginn */
-   echo "<form name='f' action='003_db_link.php'
+   echo "<form name='f' action='link.php'
                method='post'>";
    echo "<input name='ak' type='hidden' />";
    echo "<input name='id' type='hidden' />";

@@ -20,15 +20,13 @@ include "include/db_connect.php";
 
 if (isset($_POST['update']) ? $_POST['update'] : '')
 {
-
-
     $sql = "select * from rosetta_data where id = '" . $_POST['update'] . "'";
     $res = mysqli_query($con, $sql);
     $dsatz = mysqli_fetch_assoc($res);
 
 
 
-    echo "<form action = '003_db_kommentar_de.php' method = 'post'>";
+    echo "<form action = 'kommentar_it.php' method = 'post'>";
 
     echo "<div class='results'><!--in diesem container werden die Fragezeichen geloescht -->";
 
@@ -36,10 +34,10 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
     echo "
                     <div class=\"row\">
                         <div class=\"form-group\">
-                            <label class=\"col-sm-2 control-label\">Deutsch</label>
+                            <label class=\"col-sm-2 control-label\">Italienisch</label>
                             <div class=\"col-sm-6\">
                                 
-                                <input disabled class=\"form-control\" name=\"dts\" value='" . utf8_encode($dsatz["de"]) . "'>
+                                <input disabled class=\"form-control\" name=\"itl\" value='" . utf8_encode($dsatz["it"]) . "'>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -52,8 +50,7 @@ if (isset($_POST['update']) ? $_POST['update'] : '')
                         <div class=\"form-group\">
                             <label class=\"col-sm-2 control-label\">Kommentar</label>
                             <div class=\"col-sm-6\">
-                               <!-- <input class=\"form-control\" name=\"com_de\" value='" . utf8_encode($dsatz["comment_de"]) . "'>-->
-                                <textarea onkeyup='auto_grow(this)' type='text' class='form-control' name='com_de'>". utf8_encode($dsatz["comment_de"]) ."</textarea>
+                                 <textarea onkeyup='auto_grow(this)' type='text' class='form-control' name='com_it'>". utf8_encode($dsatz["comment_it"]) ."</textarea>
                             </div>
                             <div class=\"col-sm-4 errorContainer\"></div>
                         </div>
@@ -93,11 +90,9 @@ else
 if (isset($_POST["kommentar"])) {
 
     $sql = "update rosetta_data set id = '" . $_POST["id"] . "',"
-        . " comment_de = '" . $_POST["com_de"] . "',"
-        . " comment_de_user = '" . $username . "'"
+        . " comment_it = '" . $_POST["com_it"] . "',"
+        . " comment_it_user = '" . $username . "'"
         . " where id = '" . $_POST["orianr"] . "'";
-
-
 
     mysqli_query($con, $sql);
 
@@ -108,7 +103,7 @@ if (isset($_POST["kommentar"])) {
     else
         echo "<p>Der Datensatz wurde nicht geaendert</p>";
 
-    echo "<form action = \"003_db_aendern_b.php\" method = \"post\">";
+    echo ">";
 
     //---------------------------------------------------
     //Den Datensatz, der gesucht wurde, anzeigen

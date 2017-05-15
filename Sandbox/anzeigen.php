@@ -21,7 +21,7 @@ include "include/db_connect.php";
 
         //include table
         include "include/view_table.php";
-        //include "003_db_anzeigen_gesamt_old.php";
+        //include "anzeigen_gesamt_old.php";
 
 
         //close connection

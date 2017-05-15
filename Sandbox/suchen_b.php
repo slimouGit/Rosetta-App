@@ -33,7 +33,7 @@ include "include/db_connect.php";
         else{
         ?>
 
-        <form action = "003_db_aendern_b.php" method = "post">
+        <form action = "aendern_b.php" method = "post">
 
         <?php
 

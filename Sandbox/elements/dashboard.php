@@ -11,10 +11,10 @@
         <div class="offer offer-radius offer-primary">
             <div class="offer-content">
                 <h3 class="lead">
-                    <a href="003_db_suchen_a.php">Eintrag suchen</a>
+                    <a href="suchen_a.php">Eintrag suchen</a>
                 </h3>
                 <p>
-                    <a href="003_db_suchen_a.php">Eintrag suchen</a>
+                    <a href="suchen_a.php">Eintrag suchen</a>
                 </p>
             </div>
         </div>
@@ -24,10 +24,10 @@
 
             <div class="offer-content">
                 <h3 class="lead">
-                    <a href="003_db_erzeugen_a.php">Eintrag erstellen</a>
+                    <a href="erzeugen_a.php">Eintrag erstellen</a>
                 </h3>
                 <p>
-                    <a href="003_db_erzeugen_a.php">Neuen Eintrag erstellen</a>
+                    <a href="erzeugen_a.php">Neuen Eintrag erstellen</a>
                 </p>
             </div>
         </div>
@@ -40,10 +40,10 @@
 
             <div class="offer-content">
                 <h3 class="lead">
-                    <a href="003_db_upload_pdf_01.php">Preisliste hochladen</a>
+                    <a href="upload_pdf_01.php">Preisliste hochladen</a>
                 </h3>
                 <p>
-                    <a href="003_db_upload_pdf_01.php">PDF hochladen</a>
+                    <a href="upload_pdf_01.php">PDF hochladen</a>
                 </p>
             </div>
         </div>
@@ -53,10 +53,10 @@
 
             <div class="offer-content">
                 <h3 class="lead">
-                    <a href="003_db_upload_xml_01.php">XML hochladen</a>
+                    <a href="upload_xml_01.php">XML hochladen</a>
                 </h3>
                 <p>
-                    <a href="003_db_upload_xml_01.php">XML Datei in Datenbank importieren</a>
+                    <a href="upload_xml_01.php">XML Datei in Datenbank importieren</a>
                 </p>
             </div>
         </div>
@@ -117,10 +117,10 @@ if($authorizations=="admin"){
 
             <div class=\"offer-content\">
                 <h3 class=\"lead\">
-                    <a href=\"003_db_anzeigen.php\">Daten gesamt</a>
+                    <a href=\"anzeigen.php\">Daten gesamt</a>
                 </h3>
                 <p>
-                    <a href=\"003_db_anzeigen.php\">Gesamten Datenbestand anzeigen.</a>
+                    <a href=\"anzeigen.php\">Gesamten Datenbestand anzeigen.</a>
                 </p>
             </div>
         </div>
@@ -131,10 +131,10 @@ if($authorizations=="admin"){
 
             <div class=\"offer-content\">
                 <h3 class=\"lead\">
-                    <a href=\"003_db_geloeschte.php\">Gelöschte Datensätze</a>
+                    <a href=\"geloeschte.php\">Gelöschte Datensätze</a>
                 </h3>
                 <p>
-                    <a href=\"003_db_geloeschte.php\">Gelöschte Datensätze anzeigen</a>
+                    <a href=\"geloeschte.php\">Gelöschte Datensätze anzeigen</a>
                 </p>
             </div>
         </div>

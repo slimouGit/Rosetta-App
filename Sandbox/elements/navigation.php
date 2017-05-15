@@ -14,19 +14,19 @@
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <!--<li><a href="index.php">Start</a></li>-->
-                <li><a href="003_db_suchen_a.php">Suchen</a></li>
-                <li><a href="003_db_erzeugen_a.php">Erstellen</a></li>
+                <li><a href="suchen_a.php">Suchen</a></li>
+                <li><a href="erzeugen_a.php">Erstellen</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daten
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="003_db_anzeigen.php">alle Daten</a></li>
-                        <li><a href="003_db_anzeigen_fr.php">Französisch</a></li>
-                        <li><a href="003_db_anzeigen_fr_relevant.php">zu übersetzen in frz</a></li>
-                        <li><a href="003_db_anzeigen_it.php">Italienisch</a></li>
-                        <li><a href="003_db_anzeigen_it_relevant.php">zu übersetzen in itl</a></li>
-                        <li><a href="003_db_anzeigen_gesamt.php">Gesamt</a></li>
+                        <li><a href="anzeigen.php">alle Daten</a></li>
+                        <li><a href="anzeigen_fr.php">Französisch</a></li>
+                        <li><a href="anzeigen_fr_relevant.php">zu übersetzen in frz</a></li>
+                        <li><a href="anzeigen_it.php">Italienisch</a></li>
+                        <li><a href="anzeigen_it_relevant.php">zu übersetzen in itl</a></li>
+                        <li><a href="anzeigen_gesamt.php">Gesamt</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -34,8 +34,8 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="003_db_upload_pdf_01.php">Preisliste hochladen</a></li>
-                        <li><a href="003_db_upload_xml_01.php">XML hochladen</a></li>
+                        <li><a href="upload_pdf_01.php">Preisliste hochladen</a></li>
+                        <li><a href="upload_xml_01.php">XML hochladen</a></li>
                     </ul>
                 </li>
                 <li><a href="logout.php">logout</a></li>
