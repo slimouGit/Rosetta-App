@@ -128,7 +128,7 @@ $id=0;
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"aendern_b.php\"></button>
                 </td></form>".
                 "<form  method = \"post\"><td >
-                    <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"loeschen_b.php\"></button>
+                    <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"loeschen.php\"></button>
                 </td></form>".
                 "</tr>";
             //Kommentar Zeile
@@ -272,7 +272,7 @@ $id=0;
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"aendern_b.php\"></button>
                 </td></form>".
                 "<form  method = \"post\"><td >
-                    <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"loeschen_b.php\"></button>
+                    <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"loeschen.php\"></button>
                    
                 </td></form>".
                 "</tr>";
