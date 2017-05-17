@@ -76,39 +76,19 @@ $id=0;
                 "<td>" . $dsatz["id"] . "</td>" .
                 "<td>
                 <div >
-                <form  method = \"post\">
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
-                    </div>
-                    <div id=\"de_$id\" class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
-                   </form>
-                    <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'></div>
+                  <div id=\"de_$id\" class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
+                   </div>
+            </td>".
+                "<td>
+                <div >
+                <div id=\"fr_$id\" class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
+                    
                 </div>
             </td>".
                 "<td>
                 <div >
-                <form  method = \"post\">
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
-                    </div>
-                    <div id=\"fr_$id\" class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
-                    </form>
-                    <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'></div>
-                </div>
-            </td>".
-                "<td>
-                <div >
-                <form  method = \"post\">
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
-                    </div>
-                    <div id=\"it_$id\" class='commentValue'>"  . utf8_encode($dsatz["it"]) . "
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
-                   </form>
-                    <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'></div>
-            </div>
+                <div id=\"it_$id\" class='commentValue'>"  . utf8_encode($dsatz["it"]) . "
+                 </div>
             </td>".
                 "<form  method = \"post\">".
 
@@ -131,32 +111,53 @@ $id=0;
                     <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"loeschen.php\"></button>
                 </td></form>".
                 "</tr>";
+
+            //Editierzeile
+            echo "<tr>"
+                ."<td></td>"
+                ."<td>
+                <form method='post'>
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
+                 </form>
+                    <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'>
+                 </td>"
+                ."<td>
+                <form method='post'>
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
+                 </form>
+                    <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'>
+                 </td>"
+                ."<td>
+                <form method='post'>
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
+                 </form>
+                    <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'>
+                 </td>"
+                ."<td></td>"
+                ."<td></td>"
+                ."</tr>";
+
+
             //Kommentar Zeile
             echo "<tr class='commentRow'>"
                 ."<td></td>"
                 ."<td class='cellComment'>
                 <div class='commentContainer'>
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
-                    </div>
-                    <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>
+                  <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>
                 </div>
             </td>"
                 ."<td class='cellComment'>
                 <div class='commentContainer'>
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
-                    </div>
-                    <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
+                   <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
                 </div>
             </td>"
                 //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
                 ."<td class='cellComment'>
                 <div class='commentContainer'>
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
-                    </div>
-                    <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
+                   <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
                 </div>
             </td>"
                 ."<td></td>"
@@ -220,42 +221,19 @@ $id=0;
                 "<td>" . $dsatz["id"] . "</td>".
                 "<td>
                 <div>
-                    <form  method = \"post\">
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
-                    </div>
-                    <div id=\"de_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "
-                     <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
-                     </form>
-                     <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'></div>
-                     <!--<button onclick=\"copyToClipboard('#de_$id')\">copy</button>    -->       
-                </div>
+                  <div id=\"de_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "
+                 </div>
             </td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["de"]))       . "</td>".
                 "<td>
                 <div>
-                <form  method = \"post\">
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
-           
-                    </div>
                     <div id=\"fr_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))       . "
-                     <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
-                      </form>
-                       <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'></div>
-                </div>
+                 </div>
             </td>".
                 //"<td>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["fr"]))      . "</td>".
                 "<td>
                 <div>
-                <form  method = \"post\">
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
-                    </div>
                     <div id=\"it_$id\" class='commentValue'>" . utf8_encode(preg_replace("/" . $searchWord. "/", "<span class='highlight'>" . $searchWord . "</span>",$dsatz["it"]))       . "           
-                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
-                    </form>
-                    <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'></div>
                 </div>
             </td>".
                 "<form  method = \"post\">".
@@ -282,31 +260,51 @@ $id=0;
                    
                 </td></form>".
                 "</tr>";
+            //Editierzeile
+            echo "<tr>"
+                ."<td></td>"
+                ."<td>                
+                <form method='post'>
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
+                 </form>
+                    <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'>
+                 </td>"
+
+                ."<td>
+                <form method='post'>
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
+                 </form>
+                    <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'>
+                 </td>"
+                ."<td>
+                <form method='post'>
+                    <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
+                    <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
+                 </form>
+                    <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'>
+                 </td>"
+                ."<td></td>"
+                ."<td></td>"
+                ."</tr>";
+
             //Kommentar Zeile
             echo "<tr class='commentRow'>"
                 ."<td></td>"
                 ."<td class='cellComment'>
                 <div class='commentContainer'>
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
-                    </div>
                     <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>            
                 </div>
             </td>"
                 ."<td class='cellComment'>
                 <div class='commentContainer'>
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
-                    </div>
                     <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
                 </div>
             </td>"
                 //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
                 ."<td class='cellComment'>
                 <div class='commentContainer'>
-                    <div class='commentIcon'>
-                        <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
-                    </div>
                     <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
                 </div>
             </td>"
