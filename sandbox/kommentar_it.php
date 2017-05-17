@@ -86,12 +86,13 @@ else
 ?>
 
 <?php
-
+$commentDate = date('d.m.Y H:i') . " Uhr";
 if (isset($_POST["kommentar"])) {
 
     $sql = "update rosetta_data set id = '" . $_POST["id"] . "',"
         . " comment_it = '" . $_POST["com_it"] . "',"
-        . " comment_it_user = '" . $username . "'"
+        . " comment_it_user = '" . $username . "',"
+        . " comment_it_date = '" . $commentDate . "'"
         . " where id = '" . $_POST["orianr"] . "'";
 
     mysqli_query($con, $sql);
