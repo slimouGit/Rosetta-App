@@ -86,6 +86,9 @@
     font-size: .75em;
     color: #000;
 }
+form {
+    display: inline;
+}
 
 textarea {
     resize: none;
