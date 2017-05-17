@@ -44,140 +44,141 @@ $id=0;
         /* in Array speichern und ausgeben    */
         while ($dsatz = mysqli_fetch_assoc($res))
         {
+            if($dsatz["state"]=="active") {
+                $generateUser = $dsatz['user'];
+                if ($generateUser == "default") {
+                    $generateUser = "uploaded data";
+                }
 
-            $generateUser = $dsatz['user'];
-            if($generateUser=="default"){
-                $generateUser = "uploaded data";
-            }
+                $updateUser = $dsatz['updateBy'];
+                if (!empty($updateUser)) {
+                    $showUpdateData = " / " . (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $updateUser;
+                } else {
+                    $showUpdateData = "";
+                }
 
-            $updateUser = $dsatz['updateBy'];
-            if(!empty($updateUser)){
-                $showUpdateData =" / " .  (date('d.m.Y H:i', strtotime($dsatz['date']))) . " Uhr - geändert von: " . $updateUser;
-            }else{
-                $showUpdateData = "";
-            }
-
-            $id++;
-            //Benutzer Zeile
-            echo "<tr class='timeRow'>"
-                ."<td></td>"
-                ."<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $generateUser . $showUpdateData . "</td>"
-                ."<td class='columnCommentTranslator'></td>"
-                ."<td class='columnCommentTranslator'></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."</tr>";
-            //Daten Zeile
-            echo
-                "<tr>".
-                "<td>" . $dsatz["id"] . "</td>" .
-                "<td>
+                $id++;
+                //Benutzer Zeile
+                echo "<tr class='timeRow'>"
+                    . "<td></td>"
+                    . "<td colspan='3' class='columnDateTime'>" . (date('d.m.Y H:i', strtotime($dsatz['create']))) . " Uhr - erstellt von: " . $generateUser . $showUpdateData . "</td>"
+                    . "<td class='columnCommentTranslator'></td>"
+                    . "<td class='columnCommentTranslator'></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "</tr>";
+                //Daten Zeile
+                echo
+                    "<tr>" .
+                    "<td>" . $dsatz["id"] . "</td>" .
+                    "<td>
                 <div >
-                  <div id=\"de_$id\" class='commentValue'>"  . utf8_encode($dsatz["de"]) . "
+                  <div id=\"de_$id\" class='commentValue'>" . utf8_encode($dsatz["de"]) . "
                    </div>
-            </td>".
-                "<td>
+            </td>" .
+                    "<td>
                 <div >
-                <div id=\"fr_$id\" class='commentValue'>"  . utf8_encode($dsatz["fr"]) . "
+                <div id=\"fr_$id\" class='commentValue'>" . utf8_encode($dsatz["fr"]) . "
                     
                 </div>
-            </td>".
-                "<td>
+            </td>" .
+                    "<td>
                 <div >
-                <div id=\"it_$id\" class='commentValue'>"  . utf8_encode($dsatz["it"]) . "
+                <div id=\"it_$id\" class='commentValue'>" . utf8_encode($dsatz["it"]) . "
                  </div>
-            </td>".
-                "<form  method = \"post\">".
+            </td>" .
+                    "<form  method = \"post\">" .
 
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></td>".
-                "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></td>".
-                "</form>".
-                "<td class='columnCarline'>";
-            $carlineArray = $dsatz["carline"];
-            $carlineArray = explode(', ',$carlineArray);
-            //alle referenzierten Carlines werden mit jeweiligem Preislisten-PDF verlinkt
-            foreach ($carlineArray as $carKey){
-                echo "<a href='pl/".$carKey."_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
-                echo "<a href='pl/".$carKey."_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
-            }
-            echo    "</td>";
-            echo    "<form  method = \"post\"><td >
+                    "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["rubrik"] . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></td>" .
+                    "<td class='filter columnCarline'><input type='submit' class='filterLink' name='search' value='" . $dsatz["info"] . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></td>" .
+                    "</form>" .
+                    "<td class='columnCarline'>";
+                $carlineArray = $dsatz["carline"];
+                $carlineArray = explode(', ', $carlineArray);
+                //alle referenzierten Carlines werden mit jeweiligem Preislisten-PDF verlinkt
+                foreach ($carlineArray as $carKey) {
+                    echo "<a href='pl/" . $carKey . "_df.pdf' target='_blank'>" . $carKey . " (DF)" . "</a><br/>";
+                    echo "<a href='pl/" . $carKey . "_di.pdf' target='_blank'>" . $carKey . " (DI)" . "</a><br/>";
+                }
+                echo "</td>";
+                echo "<form  method = \"post\"><td >
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_edit.png\" class=\"editButton\"  formaction=\"aendern_b.php\"></button>
-                </td></form>".
-                "<form  method = \"post\"><td >
+                </td></form>" .
+                    "<form  method = \"post\"><td >
                     <input  type=\"image\" name='delete' value='" . $dsatz["id"] . "' src=\"img/button_delete.png\" class=\"editButton\"   formaction=\"loeschen.php\"></button>
-                </td></form>".
-                "</tr>";
+                </td></form>" .
+                    "</tr>";
 
-            //Editierzeile
-            echo "<tr>"
-                ."<td></td>"
-                ."<td>
+                //Editierzeile
+                echo "<tr>"
+                    . "<td></td>"
+                    . "<td>
                 <form method='post'>
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
                     <input type='image' name='search' value='" . utf8_encode($dsatz["de"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                  </form>
                     <input type='image' onclick=\"copyToClipboard('#de_$id')\" src='img/button_copy.png' class='editButton'>
                  </td>"
-                ."<td>
+                    . "<td>
                 <form method='post'>
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_fr.php\"></button>
                     <input type='image' name='search' value='" . utf8_encode($dsatz["fr"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                  </form>
                     <input type='image' onclick=\"copyToClipboard('#fr_$id')\" src='img/button_copy.png' class='editButton'>
                  </td>"
-                ."<td>
+                    . "<td>
                 <form method='post'>
                     <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_comment.png\" class=\"editButton\"  formaction=\"kommentar_it.php\"></button>
                     <input type='image' name='search' value='" . utf8_encode($dsatz["it"]) . "' src='img/button_search.png' class='editButton'  formaction='filtern.php'></button></div>
                  </form>
                     <input type='image' onclick=\"copyToClipboard('#it_$id')\" src='img/button_copy.png' class='editButton'>
                  </td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."</tr>";
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "</tr>";
 
 
-            //Kommentar Zeile
-            echo "<tr class='commentRow'>"
-                ."<td></td>"
-                ."<td class='cellComment'>
+                //Kommentar Zeile
+                echo "<tr class='commentRow'>"
+                    . "<td></td>"
+                    . "<td class='cellComment'>
                 <div class='commentContainer'>
                   <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>
                 </div>
             </td>"
-                ."<td class='cellComment'>
+                    . "<td class='cellComment'>
                 <div class='commentContainer'>
                    <div class='commentValue'>" . utf8_encode($dsatz["comment_fr"]) . "</div>            
                 </div>
             </td>"
-                //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
-                ."<td class='cellComment'>
+                    //."<td class='cellComment'>" . utf8_encode($dsatz["comment_fr"]) . "</td>"
+                    . "<td class='cellComment'>
                 <div class='commentContainer'>
                    <div class='commentValue'>" . utf8_encode($dsatz["comment_it"]) . "</div>            
                 </div>
             </td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."<td></td>"
-                ."</tr>";
-            echo "<tr>"
-                ."<td></td>"
-                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_user"]) . "</div> </td>"
-                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_user"]) . "</div> </td>"
-                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_user"]) . "</div> </td>"
-                ."</tr>";
-            echo "<tr>"
-                ."<td></td>"
-                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_date"]) . "</div> </td>"
-                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_date"]) . "</div> </td>"
-                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_date"]) . "</div> </td>"
-                ."</tr>";
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "<td></td>"
+                    . "</tr>";
+                echo "<tr>"
+                    . "<td></td>"
+                    . "<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_user"]) . "</div> </td>"
+                    . "<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_user"]) . "</div> </td>"
+                    . "<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_user"]) . "</div> </td>"
+                    . "</tr>";
+                echo "<tr>"
+                    . "<td></td>"
+                    . "<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_date"]) . "</div> </td>"
+                    . "<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_date"]) . "</div> </td>"
+                    . "<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_date"]) . "</div> </td>"
+                    . "</tr>";
+            }//ENDE if state
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
 
@@ -189,7 +190,7 @@ $id=0;
         /* in Array speichern und ausgeben    */
         while ($dsatz = mysqli_fetch_assoc($res))
         {
-
+            if($dsatz["state"]=="active"){
             $generateUser = $dsatz['user'];
             if($generateUser=="default"){
                 $generateUser = "uploaded data";
@@ -203,6 +204,7 @@ $id=0;
             }
 
             $id++;
+
             //Benutzer Zeile
             echo "<tr class='timeRow'>"
                 ."<td></td>"
@@ -326,6 +328,8 @@ $id=0;
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_date"]) . "</div> </td>"
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_date"]) . "</div> </td>"
                 ."</tr>";
+
+            }//ENDE if state
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
     }//ENDE viewWithoutSlash
