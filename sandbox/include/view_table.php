@@ -139,7 +139,7 @@ $id=0;
                     <div class='commentIcon'>
                         <input  type=\"image\" name='update' value='" . $dsatz["id"] . "' src=\"img/button_editComment.png\" class=\"editButton\"  formaction=\"kommentar_de.php\"></button>
                     </div>
-                    <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>            
+                    <div class='commentValue'>" . utf8_encode($dsatz["comment_de"]) . "</div>
                 </div>
             </td>"
                 ."<td class='cellComment'>
@@ -170,6 +170,12 @@ $id=0;
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_user"]) . "</div> </td>"
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_user"]) . "</div> </td>"
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_user"]) . "</div> </td>"
+                ."</tr>";
+            echo "<tr>"
+                ."<td></td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_date"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_date"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_date"]) . "</div> </td>"
                 ."</tr>";
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
@@ -315,6 +321,12 @@ $id=0;
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_user"]) . "</div> </td>"
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_user"]) . "</div> </td>"
                 ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_user"]) . "</div> </td>"
+                ."</tr>";
+            echo "<tr>"
+                ."<td></td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_de_date"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_fr_date"]) . "</div> </td>"
+                ."<td><div class='commentUser'>" . utf8_encode($dsatz["comment_it_date"]) . "</div> </td>"
                 ."</tr>";
             //http://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form
         }//ENDE WHILE
