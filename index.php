@@ -1,4 +1,8 @@
 <?php
+//Startseite -> login
+?>
+
+<?php
 //include header
 include "rosetta_app/lib/elements/header.php";
 ?>

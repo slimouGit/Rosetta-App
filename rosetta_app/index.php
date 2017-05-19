@@ -1,4 +1,9 @@
 <?php
+//Startseite -> logged in
+?>
+
+
+<?php
 //include header
 include "lib/elements/header.php";
 ?>
