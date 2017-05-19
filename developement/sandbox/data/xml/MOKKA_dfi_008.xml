@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<items>
+
+    <item>
+        <de>Benzin</de>
+        <fr>Essence</fr>
+        <it>Benzina</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>General</carline>
+    </item>
+
+    <item>
+        <de>6-Gang manuell 4x4 Allradantrieb</de>
+        <fr>manuelle 6 vitesses traction intégrale 4x4</fr>
+        <it>manuale 6 marce trazione integrale 4x4</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>General</carline>
+    </item>
+
+    <item>
+        <de>6-Stufen-Automatik 4x4 Allradantrieb</de>
+        <fr>automatique 6 rapports traction intégrale 4x4</fr>
+        <it>automatico 6 rapporti trazione integrale 4x4</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>General</carline>
+    </item>
+
+    <item>
+        <de>Empfohlene Nettopreise in CHF</de>
+        <fr>Prix nets conseillés en CHF</fr>
+        <it>Prezzi netti consigliati in CHF</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>General</carline>
+    </item>
+
+    <item>
+        <de>Wartungsfreier Dieselpartikelfilter (DPF) serienmässig.</de>
+        <fr>De série, filtre à particules diesel (DPF) sans entretien</fr>
+        <it>Filtro antiparticolato senza manutenzione (DPF) di serie.</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>General</carline>
+    </item>
+
+    <item>
+        <de>Wesentliche Serienausstattung</de>
+        <fr>Principaux équipements de série</fr>
+        <it>Equipaggiamento di serie essenziale</it>
+        <rubrik>-</rubrik>
+        <info>-</info>
+        <carline>General</carline>
+    </item>
+
+</items>

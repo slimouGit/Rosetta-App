@@ -1,448 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-<item>
-    <entry morerows="1" align="center" valign="middle">Paket-  Bestandteil </entry>
-    <entry morerows="1" align="center" valign="middle">Parte del  pacchetto</entry>
-</item>
-
-<item>
-    <entry namest="c1" nameend="c2" align="center" valign="middle">Komfort- und sonstige Ausstattung</entry>
-    <entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Comfort e ulteriori equipaggiamenti</entry>
-</item>
-
-<item>
-    <entry colsep="0" align="left" valign="middle">Fussraumteppiche, Velours, vorn und hinten</entry>
-    <entry colsep="0" align="left" valign="middle">Tappetini in velluto, anteriori e posteriori</entry>
-    <entry colsep="0" align="center" valign="middle">B34</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">PowerFlex Adapter auf Mittelkonsole, mit integrierter 5-V-Versorgung, Vorbereitung für Smartphone-Halterung oder AirWellness Duftzerstäuber</entry>
-<entry colsep="0" align="left" valign="middle">Adattatore PowerFlex  nella console centrale con alimentazione 5 V integrata, predisposizione per supporto smartphone o diffusore di fragranze AirWellness</entry>
-<entry align="center" valign="middle">WLI</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Leder-Paket</entry>
-<entry align="center" valign="middle"> Pacchetto pelle </entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Premium Leder-Paket</entry>
-<entry align="center" valign="middle">Pacchetto pelle  Premium</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Smartphone-Halterung für  PowerFlex Adapter universal für Smartphones mit Abmessungen von max. 150 x 73,5 x 11 mm, inkl. Ladekabel für Micro-USB (nur in Verbindung mit PowerFlex Adapter)</entry>
-<entry colsep="0" align="left" valign="middle">Supporto per smartphone per  adattatore PowerFlex  universale per smartphone di max 150 x 73,5 x 11 mm incl. cavo di ricarica per Micro USB (solo con adattatore PowerFlex)</entry>
-<entry colsep="0" align="center" valign="middle">WLQ</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">AirWellness Duftzerstäuber  (nur in Verbindung mit PowerFlex Adapter)</entry>
-<entry colsep="0" align="left" valign="middle">Diffusore di fragranze AirWellness  (solo con adattatore PowerFlex)</entry>
-<entry colsep="0" align="center" valign="middle">BDP</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Geschwindigkeitsregler mit Geschwindigkeitsbegrenzer –  Fernbedienung für Infotainment-System am Lenkrad</entry>
-<entry colsep="0" align="left" valign="middle">Regolatore e limitatore di velocità, incl. –  comandi al volante per sistema dinfotainment</entry>
-<entry colsep="0" align="center" valign="middle">UC3</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Winter-Paket</entry>
-<entry align="center" valign="middle"> Pacchetto inverno</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Zweizonen-Klimaautomatik  mit getrennter Temperaturregelung für Fahrer und Beifahrer, inkl. –  Umluftschaltung, manuell –  Partikel-/Aktivkohlefilter –  Automatische Luftverteilung –  Sonnenstandssensor –  Feuchtigkeitssensor</entry>
-<entry colsep="0" align="left" valign="middle">Climatizzatore automatico bizona automatik  con regolazione separata della temperatura per  conducente e passeggero incl. –  funzione ricircolo dell’aria manuale –  filtro al carbone attivo e antipolvere –  distribuzione automatica del flusso daria –  sensore dirraggiamento solare –  sensore di umidità</entry>
-<entry colsep="0" align="center" valign="middle">CJ2</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Plus Pack Enjoy 1</entry>
-<entry align="center" valign="middle"> Pacchetto Plus Enjoy 1</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Parkbremse, elektrisch </entry>
-<entry colsep="0" align="left" valign="middle">Freno di stazionamento elettrico </entry>
-<entry align="center" valign="middle">J71</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Winter-Paket Premium </entry>
-<entry align="center" valign="middle">Pacchetto inverno Premium </entry>
-</item>
-
-<item>
-<entry align="center" valign="middle"> Leder-Paket </entry>
-<entry align="center" valign="middle">Pacchetto pelle </entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Premium Leder-Paket</entry>
-<entry align="center" valign="middle">Pacchetto pelle  Premium </entry>
-</item>
-
-<item>
-<entry align="center" valign="middle"> Sensorgesteuerte Heckklappe </entry>
-<entry align="center" valign="middle"> Portellone posteriore comandato mediante sensore</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Park-Pilot, Einparkhilfe hinten, mit akustischem Warnsignal beim Rückwärtseinparken</entry>
-<entry colsep="0" align="left" valign="middle">Park-Pilot, assistenza al parcheggio posteriore, con spia acustica per le manovre in retromarcia</entry>
-<entry colsep="0" align="center" valign="middle">UD7</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Park-Pilot, Einparkhilfe vorn und hinten, mit akustischem Warnsignal beim Vorwärts- und Rückwärtseinparken</entry>
-<entry colsep="0" align="left" valign="middle">Park-Pilot, assistenza al parcheggio anteriore e posteriore, con spia acustica per le manovre in avanti e in  retromarcia</entry>
-<entry colsep="0" align="center" valign="middle">UD5</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Business Pack  Connect 2 </entry>
-<entry align="center" valign="middle">Pacchetto Business Connect  2 </entry>
-</item>
-
-<item>
-<entry align="center" valign="middle"> Plus Pack Enjoy 1 &amp; 2 </entry>
-<entry align="center" valign="middle">Pacchetto Plus  Enjoy 1 &amp; 2</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Raucher-Paket –  Tonnenascher –  Zigarettenanzünder</entry>
-<entry colsep="0" align="left" valign="middle">Pacchetto fumatore –  posacenere –  accendisigari</entry>
-<entry colsep="0" align="center" valign="middle">DT4</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Schiebe-/Ausstelldach, elektrisch, mit Vorwahlfunktion und Spoilerposition, inkl. –  Einklemmschutz –  Komfortschliessfunktion über Funkfernbedienung der Zentralverriegelung  –  Sonnenschutzrollo, manuell bedienbar (Entfall Dachhimmel, schwarz, in Dynamic)</entry>
-<entry colsep="0" align="left" valign="middle">Tetto scorrevole/sollevabile, elettrico, con funzione preselezione e posizione spoiler, incl. –  protezione antincastro –  funzione chiusura comfort con il telecomando della chiusura centralizzata –  tendina parasole avvolgibile manuale (senza padiglione nero in Dynamic)</entry>
-<entry colsep="0" align="center" valign="middle">CF5</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Solar Protect®-Wärmeschutz­verglasung,  im Fond, stark getönt</entry>
-<entry colsep="0" align="left" valign="middle">Vetri atermici Solar Protect®,  posteriori, molto oscurati</entry>
-<entry colsep="0" align="center" valign="middle">AKo</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Standheizung, inkl. –  Funkfernbedienung –  Aktivierung zeitgesteuert über Zeitschaltuhr (Bedienelement in Funkfernbedienung integriert), wahlweise automatische Berechnung der Betriebsdauer über Temperaturfühler –  Automatische Aktivierung von Zuheizfunktion im Fahrbetrieb</entry>
-<entry colsep="0" align="left" valign="middle">Riscaldamento autonomo, incl. –  telecomando –  attivazione a tempo tramite timer (comando integrato nel telecomando), a scelta con calcolo automatico della durata di funzionamento tramite  sonda termica –  attivazione automatica della funzione di riscaldamento aggiuntivo in marcia</entry>
-<entry colsep="0" align="center" valign="middle">K07</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Design</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Design</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Fensterzierleisten, seitlich, in Chrom</entry>
-<entry colsep="0" align="left" valign="middle">Modanature decorative finestrini, lateralmente, cromate</entry>
-<entry colsep="0" align="center" valign="middle">MDQ</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Dachreling, Schwarz</entry>
-<entry colsep="0" align="left" valign="middle">Barre tetto nere</entry>
-<entry colsep="0" align="center" valign="middle">V6C</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Dachreling, Silber  (nur in Verbindung mit Fensterzierleisten, seitlich,  in Chrom)</entry>
-<entry colsep="0" align="left" valign="middle">Barre tetto argento (solo con modanature decorative finestrini lateralmente cromate)</entry>
-<entry colsep="0" align="center" valign="middle">V6D</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Brillant-Lackierung</entry>
-<entry colsep="0" align="left" valign="middle">Verniciatura lucida</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Metallic-Lackierung</entry>
-<entry colsep="0" align="left" valign="middle">Verniciatura metallizzata</entry>
-</item>
-
-<item>
-<entry colsep="0" align="left" valign="middle">Perleffekt-Lackierung</entry>
-<entry colsep="0" align="left" valign="middle">Verniciatura a effetto perlato</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">nicht erhältlich</entry>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">non disponibile</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Empfohlene Nettopreise in CHF</entry>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Prezzi netti consigliati in CHF</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c6" colsep="0" align="center" valign="middle">Masse und Gewichte</entry>
-<entry namest="c1" nameend="c6" colsep="0" align="center" valign="middle">Dimensioni e pesi</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Abmessungen in mm</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Dimensioni in mm</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Länge</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Lunghezza</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Breite mit aus-/eingeklappten Aussenspiegeln</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Larghezza retrovisori esterni spiegati/ripiegati</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe (bei Leergewicht) </entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Altezza (a vuoto)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Radstand</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Passo</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Spurweite vorn</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Carreggiata anteriore</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Spurweite hinten</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Carreggiata posteriore</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Wendekreis (m)</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Diametro di sterzata (m)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Wand zu Wand</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Da muro a muro</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Gepäckraumabmessungen nach ECIE/GM (mm)</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Dimensioni del bagagliaio secondo ECIE/GM (mm)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Länge am Boden bis Rücksitzlehne </entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Lunghezza sul pavimento fino agli schienali posteriori</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Länge am Boden bei vorgeklappter Rücksitzlehne</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Lunghezza sul pavimento con schienali posteriori ribaltati</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Breite maximal</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Larghezza max</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Breite am Radeinbau</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Larghezza tra copertura ruote</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe bis Oberkante Rücksitzlehne/unter Hutablage</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Altezza fino al bordo superiore degli schienali dei sedili posteriori/fino alla cappelliera</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe bis Dach (über Hinterachse)</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Altezza al tetto (sull’asse posteriore)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe der Ladekante</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Altezza del bordo di carico</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungshöhe</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Altezza d’apertura</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungsbreite oben</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Larghezza superiore dell’apertura</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungsbreite maximal</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Larghezza dell’apertura max</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungsbreite unten</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Larghezza inferiore dell’apertura </entry>
-</item>
-
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Gepäckrauminhalt nach ECIE-Messmethode (l)</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Capienza del bagagliaio, metodo di misurazione ECIE (l)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Gepäckraumvolumen</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Volume del bagagliaio</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" rowsep="0" align="left" valign="middle">Reduzierung Gepäckraumvolumen mit Notlaufrad/Reserverad</entry>
-<entry namest="c5" nameend="c6" colsep="0" rowsep="0" align="left" valign="middle">Riduzione del volume del bagagliaio con ruotino di scorta/ruota di scorta normale</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Tankinhalt (l)</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Capacità del serbatoio (l)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" rowsep="0" align="left" valign="middle">Tankinhalt</entry>
-<entry namest="c5" nameend="c6" colsep="0" rowsep="0" align="left" valign="middle">Capacità del serbatoio</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Benzinmotoren</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Motori a benzina</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Abgasnorm</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Norma sui gas di scarico</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Treibstoff</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Carburante</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Benzina senza piombo</entry>
-<entry align="center" valign="middle">Benzin bleifrei </entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Anzahl der Zylinder</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Numero cilindri</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Bohrung (mm)</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Alesaggio (mm)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Hub (mm)</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Corsa (mm)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Hubraum (cm3)</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Cilindrata (cm3)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Maximale Leistung (kW/PS) bei min–1</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Potenza massima (kW/CV) a min–1</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Maximales Drehmoment (Nm) bei min–1</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Coppia massima (Nm) a min–1</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Verdichtungsverhältnis</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Rapporto di compressione</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Gewichte und Achslasten in kg1</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Pesi e carichi sugli assi in kg1 </entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Leergewicht inkl. Fahrer (nach 70/156/EWG)</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Peso a vuoto conducente incl. (secondo 70/156/CEE)</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Zulässiges Gesamtgewicht</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Peso totale ammesso</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Zuladung</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Carico utile</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Zulässige Achslast, vorn</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Carico ammesso sull’asse anteriore</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Zulässige Achslast, hinten</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Carico ammesso sull’asse posteriore</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Zulässige Dachlast</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Carico ammesso sul tetto</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Anhängelast (kg)</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="center" valign="middle">Carico rimorchiato (kg)</entry>
-</item>
-
-<item>
-<entry namest="c3" nameend="c7" align="center" valign="middle">Cambio manuale/automatico</entry>
-<entry namest="c3" nameend="c7" align="center" valign="middle">Schaltgetriebe/Automatik</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Ungebremst</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Non frenato</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Gebremst bei  12% Prüfsteigung</entry>
-<entry namest="c8" nameend="c9" colsep="0" align="left" valign="middle">Frenato con prova in salita  del 12%</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Vorläufige Daten</entry>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Dati provvisori</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Angaben für das Basismodell. Je nach Ausstattung und Motorisierung ergeben sich andere Werte.</entry>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">I dati si riferiscono al modello base e possono variare in base all’equipaggiamento e alla  motorizzazione. </entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Easytronic® 3.0. 3 6-Stufen-Automatik.</entry>
-<entry namest="c1" nameend="c9" colsep="0" rowsep="0" align="left" valign="middle">Automatico 6 rapporti.</entry>
-</item>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<items>
+
+    <item>
+        <de>März</de>
+        <fr>Mars</fr>
+        <it>Marzo</it>
+        <carline>General</carline>
+    </item>
+
+    <item>
+        <de>Benzin</de>
+        <fr>Essence</fr>
+        <it>Benzina</it>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <de>Motor</de>
+        <fr>Moteur</fr>
+        <it>Motore</it>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <de>Getriebe</de>
+        <fr>Boîte</fr>
+        <it>Cambio</it>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <de>5-Gang manuell</de>
+        <fr>manuelle  5 vitesses </fr>
+        <it>manuale 5 marce</it>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <de>1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 PS</de>
+        <fr>1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 ch </fr>
+        <it>1.0 Direct Injection Turbo ecoFLEX  Start/Stop 77 kW/105 CV </it>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <de>5-Gang Easytronic® 3.0</de>
+        <fr>Easytronic® 3.0  5 vitesses</fr>
+        <it>Easytronic® 3.0  5 marce</it>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <de>Empfohlene Nettopreise in CHF</de>
+        <fr>Prix nets conseillés en CHF</fr>
+        <it>Prezzi netti consigliati in CHF</it>
+        <carline>AstraST</carline>
+    </item>
+
+</items>

@@ -1,462 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Root><Root><table frame="none">
-<tgroup cols="6">
-<colspec colname="c1" colwidth="42.51968503937008pt">
-</colspec>
-<colspec colname="c2" colwidth="162.9752568486806pt">
-</colspec>
-<colspec colname="c3" colwidth="43.581302874114904pt">
-</colspec>
-<colspec colname="c4" colwidth="43.581302874114904pt">
-</colspec>
-<colspec colname="c5" colwidth="65.02706438915301pt">
-</colspec>
-<colspec colname="c6" colwidth="169.5594824627555pt">
-</colspec>
-<tbody>
-<item>
-<entry namest="c1" nameend="c6" colsep="0" align="center" valign="middle">Astra – Masse und Gewichte   Dimensions et poids</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Abmessungen in mm</entry>
-<entry colsep="0" align="center" valign="middle"></entry>
-<entry align="center" valign="middle"></entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Dimensions en mm </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Länge</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">4702</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Longueur</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Breite mit aus-/eingeklappten Aussenspiegeln</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">2042/1871</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Largeur rétroviseurs extérieurs déployés/rabattus</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe (bei Leergewicht) </entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1510</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Hauteur (à vide) </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Radstand</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">2662</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Empattement</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Spurweite vorn</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1544</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Voie avant</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Spurweite hinten</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1558</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Voie arrière</entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Wendekreis (m)</entry>
-<entry colsep="0" align="center" valign="middle"></entry>
-<entry align="center" valign="middle"></entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Diamètre de braquage (m)</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Wand zu Wand</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">11,05</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Entre 2 murs</entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Gepäckraumabmessungen nach ECIE/GM (mm)</entry>
-<entry colsep="0" align="center" valign="middle"></entry>
-<entry align="center" valign="middle"></entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Dimensions du coffre selon ECIE/GM (mm)</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Länge am Boden bis Rücksitzlehne </entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1065</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Longueur au plancher jusqu’au dossier arrière</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Länge am Boden bei vorgeklappter Rücksitzlehne</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1872</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Longueur au plancher, dossier arrière rabattu</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Breite maximal</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1050</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Largeur maximale </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Breite am Radeinbau</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1028</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Largeur entre les passages de roues</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe bis Oberkante Rücksitzlehne/unter Hutablage</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">430/399</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Hauteur jusqu’au bord supérieur des dossiers arrière/sous le cache-coffre </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe bis Dach (über Hinterachse)</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">822</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Hauteur jusqu’au toit (sur l’essieu arrière) </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Höhe der Ladekante</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">619</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Hauteur du seuil de chargement</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungshöhe</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">747</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Hauteur d’ouverture du hayon</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungsbreite oben</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">917</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Largeur d’ouverture en haut </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungsbreite maximal</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1032</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Largeur d’ouverture maximale </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Öffnungsbreite unten</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">1029</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Largeur d’ouverture en bas </entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Gepäckrauminhalt nach ECIE-Messmethode (l)</entry>
-<entry colsep="0" align="center" valign="middle">   </entry>
-<entry align="center" valign="middle">   </entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Capacité du coffre selon la méthode de mesure ECIE (l)</entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="left" valign="middle">Gepäckraumvolumen</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle">540–1630</entry>
-<entry namest="c5" nameend="c6" colsep="0" align="left" valign="middle">Volume du coffre </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" rowsep="0" align="left" valign="middle">Reduzierung Gepäckraumvolumen mit Notlaufrad/Reserverad</entry>
-<entry namest="c3" nameend="c4" rowsep="0" align="center" valign="middle">35/65</entry>
-<entry namest="c5" nameend="c6" colsep="0" rowsep="0" align="left" valign="middle">Réducti on du volume du coffre avec roue d’urgence/de secours normale </entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="center" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" align="center" valign="middle">Tankinhalt (l)</entry>
-<entry namest="c3" nameend="c4" align="center" valign="middle"></entry>
-<entry namest="c5" nameend="c6" colsep="0" align="center" valign="middle">Capacité du réservoir de carburant (l) </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c2" rowsep="0" align="left" valign="middle">Tankinhalt</entry>
-<entry namest="c3" nameend="c4" rowsep="0" align="center" valign="middle">48</entry>
-<entry namest="c5" nameend="c6" colsep="0" rowsep="0" align="left" valign="middle">Capacité du réservoir de carburant </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c6" colsep="0" rowsep="0" align="left" valign="middle"></entry>
-</item>
-</tbody>
-</tgroup>
-</table> </Root><Root><table frame="none">
-<tgroup cols="10">
-<colspec colname="c1" colwidth="94.96062992125985pt">
-</colspec>
-<colspec colname="c2" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c3" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c4" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c5" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c6" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c7" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c8" colwidth="48.188976377952756pt">
-</colspec>
-<colspec colname="c9" colwidth="58.633355042580384pt">
-</colspec>
-<colspec colname="c10" colwidth="36.327274878679475pt">
-</colspec>
-<tbody>
-<item>
-<entry namest="c1" nameend="c10" colsep="0" align="center" valign="middle">Motoren   Moteurs</entry>
-</item>
-<item>
-<entry morerows="2" align="center" valign="middle">5-Gang manuell</entry>
-<entry morerows="1" align="center" valign="middle">Höchst- geschwindigkeit Vitesse maximale</entry>
-<entry morerows="1" align="center" valign="middle">Beschleunigung  von 0 auf  100 km/h Accélération  de 0 à 100 km/h </entry>
-<entry namest="c4" nameend="c6" align="center" valign="middle">Treibstoffverbrauch Consommation de carburant</entry>
-<entry morerows="1" align="center" valign="middle">CO2-Emissionen kombiniert  Emissions de CO2 mixtes</entry>
-<entry morerows="1" align="center" valign="middle">Energie-Effizienz Rendement  énergétique</entry>
-<entry namest="c9" nameend="c10" morerows="2" colsep="0" align="center" valign="middle">Manuelle 5 vitesses</entry>
-</item>
-<item>
-<entry align="center" valign="middle">Innerorts Urbaine</entry>
-<entry align="center" valign="middle">Ausserorts Extraurbaine </entry>
-<entry align="center" valign="middle">Kombiniert Mixte </entry>
-</item>
-<item>
-<entry align="center" valign="middle">(km/h)</entry>
-<entry align="center" valign="middle">(s)</entry>
-<entry namest="c4" nameend="c6" align="center" valign="middle">(l/100 km)</entry>
-<entry align="center" valign="middle">(g/km)</entry>
-<entry align="center" valign="middle">     </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.4  74 kW/100 PS</entry>
-<entry align="center" valign="middle">185</entry>
-<entry align="center" valign="middle">13,9</entry>
-<entry align="center" valign="middle">7,8–7,51</entry>
-<entry align="center" valign="middle">4,5–4,31</entry>
-<entry align="center" valign="middle">5,7–5,51</entry>
-<entry align="center" valign="middle">131–1271</entry>
-<entry align="center" valign="middle">D</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.4  74 kW/100 ch</entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop  77 kW/105 PS </entry>
-<entry align="center" valign="middle">195</entry>
-<entry align="center" valign="middle">11,7</entry>
-<entry align="center" valign="middle">5,3–5,21</entry>
-<entry align="center" valign="middle">4,0–3,91</entry>
-<entry align="center" valign="middle">4,5–4,31</entry>
-<entry align="center" valign="middle">103–1001</entry>
-<entry align="center" valign="middle">B–A1</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop  77 kW/105 ch </entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry align="center" valign="middle">6-Gang manuell</entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry namest="c9" nameend="c10" colsep="0" align="center" valign="middle">Manuelle 6 vitesses</entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop  92 kW/125 PS</entry>
-<entry align="center" valign="middle">205</entry>
-<entry align="center" valign="middle">9,9</entry>
-<entry align="center" valign="middle">6,3–6,21</entry>
-<entry align="center" valign="middle">4,3–4,21</entry>
-<entry align="center" valign="middle">5,1–4,91</entry>
-<entry align="center" valign="middle">117–1141</entry>
-<entry align="center" valign="middle">C–B1</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop  92 kW/125 ch </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 110 kW/150 PS</entry>
-<entry align="center" valign="middle">215</entry>
-<entry align="center" valign="middle">8,9</entry>
-<entry align="center" valign="middle">6,3–6,21</entry>
-<entry align="center" valign="middle">4,3–4,21</entry>
-<entry align="center" valign="middle">5,1–4,91</entry>
-<entry align="center" valign="middle">117–1141</entry>
-<entry align="center" valign="middle">C–B1</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 110 kW/150 ch </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.6 ECOTEC® Direct Injection Turbo  Start/Stop 147 kW/200 PS</entry>
-<entry align="center" valign="middle">235</entry>
-<entry align="center" valign="middle">7,7</entry>
-<entry align="center" valign="middle">8,0</entry>
-<entry align="center" valign="middle">5,1–4,91</entry>
-<entry align="center" valign="middle">6,2–6,01</entry>
-<entry align="center" valign="middle">142–1391</entry>
-<entry align="center" valign="middle">E</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.6 ECOTEC® Direct Injection Turbo  Start/Stop 147 kW/200 ch  </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.6 CDTI  ecoFLEX  Start/Stop 81 kW/110 PS</entry>
-<entry align="center" valign="middle">195</entry>
-<entry align="center" valign="middle">11,3</entry>
-<entry align="center" valign="middle">3,9–3,81</entry>
-<entry align="center" valign="middle">3,2–3,11</entry>
-<entry align="center" valign="middle">3,5–3,41 3,9–3,82</entry>
-<entry align="center" valign="middle">92–891</entry>
-<entry align="center" valign="middle">A</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.6 CDTI  ecoFLEX  Start/Stop 81 kW/110 ch </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.6 CDTI  Start/Stop 100 kW/136 PS</entry>
-<entry align="center" valign="middle">205</entry>
-<entry align="center" valign="middle">10,1</entry>
-<entry align="center" valign="middle">4,7–4,51</entry>
-<entry align="center" valign="middle">3,5–3,41</entry>
-<entry align="center" valign="middle">3,9–3,81 4,4–4,32</entry>
-<entry align="center" valign="middle">104–1011</entry>
-<entry align="center" valign="middle">A</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.6 CDTI  Start/Stop 100 kW/136 ch </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.6 BiTurbo CDTI  Start/Stop 118 kW/160 PS</entry>
-<entry align="center" valign="middle">220</entry>
-<entry align="center" valign="middle">8,9</entry>
-<entry align="center" valign="middle">5,1–5,01</entry>
-<entry align="center" valign="middle">3,6–3,41</entry>
-<entry align="center" valign="middle">4,1–4,01 4,6–4,52</entry>
-<entry align="center" valign="middle">109–1061</entry>
-<entry align="center" valign="middle">A</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.6 BiTurbo CDTI  Start/Stop 118 kW/160 ch </entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry align="left" valign="middle">5-Gang-Easytronic® 3.0</entry>
-<entry align="center" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="center" valign="middle"></entry>
-<entry namest="c9" nameend="c10" colsep="0" align="center" valign="middle">Easytronic® 3.0 5 vitesses </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop  77 kW/105 PS</entry>
-<entry align="center" valign="middle">200</entry>
-<entry align="center" valign="middle">12,9</entry>
-<entry align="center" valign="middle">5,2–5,11</entry>
-<entry align="center" valign="middle">3,8–3,71</entry>
-<entry align="center" valign="middle">4,3–4,21</entry>
-<entry align="center" valign="middle">100–971</entry>
-<entry align="center" valign="middle">A</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/ Stop 77 kW/105 ch </entry>
-</item>
-<item>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-<entry colsep="0" align="left" valign="bottom"></entry>
-</item>
-<item>
-<entry align="center" valign="middle">6-Stufen-Automatik</entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry align="left" valign="middle"></entry>
-<entry namest="c9" nameend="c10" colsep="0" align="center" valign="middle">Automatique  6 rapports</entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 110 kW/150 PS</entry>
-<entry align="center" valign="middle">210</entry>
-<entry align="center" valign="middle">9,4</entry>
-<entry align="center" valign="middle">7,3–7,11</entry>
-<entry align="center" valign="middle">4,5–4,41</entry>
-<entry align="center" valign="middle">5,6–5,41</entry>
-<entry align="center" valign="middle">128–1251</entry>
-<entry align="center" valign="middle">D</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.4 ECOTEC® Direct Injection Turbo  Start/Stop 110 kW/150 ch </entry>
-</item>
-<item>
-<entry align="left" valign="middle">1.6 CDTI 100 kW/136 PS</entry>
-<entry align="center" valign="middle">200</entry>
-<entry align="center" valign="middle">10,1</entry>
-<entry align="center" valign="middle">5,8–5,71</entry>
-<entry align="center" valign="middle">3,9–3,81</entry>
-<entry align="center" valign="middle">4,6–4,51 5,2–5,12</entry>
-<entry align="center" valign="middle">122–1191</entry>
-<entry align="center" valign="middle">B</entry>
-<entry namest="c9" nameend="c10" colsep="0" align="left" valign="middle">1.6 CDTI 100 kW/136 ch </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c10" colsep="0" align="left" valign="middle">Vorläufige Werte. Homologation bei Drucklegung noch nicht abgeschlossen. / Données provisoires. Le processus d’homologation n’était pas terminé au moment de la mise sous presse. </entry>
-</item>
-<item>
-<entry namest="c1" nameend="c10" colsep="0" rowsep="0" align="left" valign="middle">1 Mit rollwiderstandsarmen Reifen. / Avec pneus avec faible résistance au roulement.  2 Benzinäquivalent / Equivalents essence (l/100 km). </entry>
-</item>
-</tbody>
-</tgroup>
-</table></Root><Root>  Die Angaben bezüglich Verbrauch, CO2-Emissionen und Energie-Effizienz beziehen sich  gemäss Energie-Verordnung (EnV) auf die Typengenehmigung.  Treibstoff-Normverbrauch gefahren nach 715/2007/EG (l/100 km). Die Verbrauchs­angaben sind europäische Treibstoff-Normverbrauchs-Angaben, die zum Vergleich  der Fahrzeuge dienen. In der Praxis können diese je nach Fahrstil, Zuladung, Topo­graphie und Jahreszeit teilweise deutlich abweichen. Wir empfehlen ausserdem den eco-drive-Fahrstil zur Schonung der Ressourcen. CO2-Emissionen 134 g/km: Durchschnitt ­aller verkauften Neuwagen.</Root><Root>  Les indications concernant la consommation, les émissions de CO2 et le rendement énergétique  se réfèrent, selon l’Ordonnance sur l’énergie (OEne), à la réception par type.  Consommation normalisée de carburant selon 715/2007/CE (l/100 km). Les données de consommation sont basées sur le cycle européen de consommation normalisée qui a pour objectif de permettre  une comparaison entre les véhicules. En usage quotidien, la consommation peut varier sensiblement en fonction du style de conduite, de la charge, de la topographie et des conditions climatiques.  Nous recommandons par ailleurs le mode de conduite eco-drive respectueux de l’environnement. Emissions de CO2 134 g/km: moyenne de toutes les voitures neuves vendues. </Root><Root>Alle Masse in mm / Toutes les dimensions en mm</Root><Root><table frame="none">
-<tgroup cols="2">
-<colspec colname="c1" colwidth="484.72440944881873pt">
-</colspec>
-<colspec colname="c2" colwidth="42.51968503937008pt">
-</colspec>
-<tbody>
-<item>
-<entry rowsep="0" align="right" valign="middle">Technische Daten   Caractéristiques techniques</entry>
-<entry colsep="0" rowsep="0" align="center" valign="middle">7</entry>
-</item>
-</tbody>
-</tgroup>
-</table> </Root><Root><table frame="none">
-<tgroup cols="2">
-<colspec colname="c1" colwidth="42.51968503937008pt">
-</colspec>
-<colspec colname="c2" colwidth="484.7244094488189pt">
-</colspec>
-<tbody>
-<item>
-<entry rowsep="0" align="center" valign="middle">7</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">Technische Daten   Caractéristiques techniques</entry>
-</item>
-</tbody>
-</tgroup>
-</table> </Root><Root href="file:///service/assets/asset/id/12278619/version/1/storage/master/file/12278619.tif"></Root><Root href="file:///service/assets/asset/id/12278619/version/1/storage/master/file/12278619.tif"></Root></Root>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Checkbox</title>
+    <!-- Include Twitter Bootstrap and jQuery: -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css"
+          rel="stylesheet" type="text/css" />
+    <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"
+            type="text/javascript"></script>
+</head>
+<body>
+
+<select id="example-getting-started" multiple="multiple">
+    <option name="carline[]" value="ADAM">ADAM</option>
+    <option name="carline[]" value="Ampera">Ampera</option>
+    <option name="carline[]" value="Antara">Antara</option>
+    <option name="carline[]" value="AstraST">AstraST</option>
+    <option name="carline[]" value="AstraNG">AstraNG</option>
+    <option name="carline[]" value="Cascada">Cascada</option>
+    <option name="carline[]" value="ComboKastenwagen">ComboKastenwagen</option>
+    <option name="carline[]" value="ComboPassenger">ComboPassenger</option>
+    <option name="carline[]" value="Corsa">Corsa</option>
+    <option name="carline[]" value="Crossland">Crossland</option>
+    <option name="carline[]" value="GTC_OPC">GTC_OPC</option>
+    <option name="carline[]" value="InsigniaLimousine">InsigniaLimousine</option>
+    <option name="carline[]" value="InsigniaOPC">InsigniaOPC</option>
+    <option name="carline[]" value="InsigniaST">InsigniaST</option>
+    <option name="carline[]" value="KARL">KARL</option>
+    <option name="carline[]" value="Meriva">Meriva</option>
+    <option name="carline[]" value="MokkaX">MokkaX</option>
+    <option name="carline[]" value="MovanoCombiBus">MovanoCombiBus</option>
+    <option name="carline[]" value="MovanoFahrgestell">MovanoFahrgestell</option>
+    <option name="carline[]" value="MovanoVan">MovanoVan</option>
+    <option name="carline[]" value="Zafira">Zafira</option>
+</select>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-getting-started').multiselect();
+    });
+</script>
+
+
+</body>
+</html>
+
+

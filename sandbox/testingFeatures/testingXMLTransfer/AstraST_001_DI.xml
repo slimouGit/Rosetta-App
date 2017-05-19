@@ -1,56 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-<item>
-<entry morerows="8" rowsep="0" align="center" valign="middle">Benzin  Benzina</entry>
-</item>
-
-<item>
-<entry namest="c2" nameend="c3" align="center" valign="middle">Motor</entry>
-<entry align="center" valign="middle">Motore</entry>
-</item>
-
-<item>
-<entry align="center" valign="middle">Getriebe</entry>
-<entry colsep="0" align="center" valign="middle">Cambio</entry>
-</item>
-
-<item>
-<entry align="left" valign="middle">5-Gang manuell</entry>
-<entry colsep="0" align="left" valign="middle">manuale 5 marce</entry>
-</item>
-
-<item>
-<entry namest="c2" nameend="c3" align="left" valign="middle">1.0 Direct Injection Turbo  ecoFLEX  Start/Stop 77 kW/105 PS</entry>
-<entry align="left" valign="middle">1.0 Direct Injection Turbo ecoFLEX  Start/Stop 77 kW/105 CV </entry>
-</item>
-
-<item>
-<entry align="left" valign="middle">5-Gang Easytronic® 3.0</entry>
-<entry colsep="0" align="left" valign="middle">Easytronic® 3.0  5 marce</entry>
-</item>
-
-
-<item>
-<entry align="left" valign="middle">6-Gang manuell</entry>
-<entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</item>
-
-<item>
-<entry align="left" valign="middle">6-Gang manuell</entry>
-<entry colsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</item>
-
-<item>
-<entry align="left" valign="middle">6-Stufen- Automatik</entry>
-<entry colsep="0" align="left" valign="middle">automatico 6 rapporti</entry>
-</item>
-
-<item>
-<entry align="left" valign="middle">6-Gang manuell</entry>
-<entry colsep="0" rowsep="0" align="left" valign="middle">manuale 6 marce</entry>
-</item>
-
-<item>
-<entry namest="c1" nameend="c10" colsep="0" rowsep="0" align="left" valign="bottom">Empfohlene Nettopreise in CHF</entry>
-<entry namest="c1" nameend="c10" colsep="0" rowsep="0" align="left" valign="bottom">Prezzi netti consigliati in CHF</entry>
-</item>
