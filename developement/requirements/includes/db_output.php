@@ -32,7 +32,7 @@
 
 <?php
 function updateData() {
-    echo "Funzt" ;
+
 }
 
 ?>
@@ -50,7 +50,7 @@ function updateData() {
         $order = $_GET['orderBy'];
     }
 
-    $sql = 'SELECT * FROM `rosetta_requirements` ORDER BY '.$order;
+    $sql = 'SELECT * FROM `rosetta_ret` ORDER BY '.$order;
 
     $result = $conn->query($sql);
     
@@ -75,8 +75,7 @@ function updateData() {
             echo "<td class=\"titel\">" . $row["titel"] . "</td>";
             echo "<td class=\"beschreibung\">" . $row["beschreibung"] . "</td>";
 
-            echo "' method='POST'>";
-            echo "<td><input name='erledigt' type=\"checkbox\" value=\"checked\" onClick='markChecked(this.value, $id_nr)'></td>";
+            //echo "<td><input name='erledigt' type=\"checkbox\" value=\"checked\" onClick='markChecked(this.value, $id_nr)'></td>";
             echo "</form";
 
             echo "</td>";
