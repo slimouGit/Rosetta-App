@@ -31,7 +31,7 @@
         <script src="http://rosetta-app.de/rosetta_app/lib/js/script_preLoaded.js"></script>
         <!-- css online -->
         <!--
-       <link rel="stylesheet" href="http://rosetta-app.de/rosetta_app/lib/css/layout.css">
+        <link rel="stylesheet" href="http://rosetta-app.de/rosetta_app/lib/css/layout.css">
 
     </head>
     <body>
