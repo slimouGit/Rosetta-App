@@ -8,21 +8,15 @@ include "../../lib/elements/header.php";
 include "../../mc/controller/db_connect.php";
 ?>
 
-<div class="container">
+    <div class="container">
         <div class='row'>
             <h1>Rosetta-Data complete</h1>
             <?php
-            //include table_items
-            //include "../../mc/model/table_items.php";
-            ?>
-            <?php
-            //require "../../mc/controller/connectData.class.php";
-            require "../../mc/controller/connectData.class.php";
-            connectData::showActiveData();
+            require "../../mc/model/table_items.class.php";
+            table_items::showActiveData();
             ?>
         </div>
     </div>
-
 
 
 <?php
