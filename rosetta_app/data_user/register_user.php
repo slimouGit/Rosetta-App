@@ -4,7 +4,7 @@ include "../lib/elements/header.php";
 ?>
 
 <?php
-//include connection database
+//include connection to database
 include "../mvc/controller/db_connect.php";
 ?>
 
