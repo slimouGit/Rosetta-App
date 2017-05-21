@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: salim
- * Date: 21.05.2017
- * Time: 08:24
- */
-//include "../controller/db_connect.php";
 
+//query
+$res = $pdo->query("SELECT * FROM `rosetta_data`");
 
 foreach ($res AS $row){
     var_dump($row);
