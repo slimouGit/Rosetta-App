@@ -15,8 +15,15 @@ include "../../mc/controller/db_connect.php";
             //include table_items
             include "../../mc/model/table_items.php";
             ?>
+            <?php
+            //require "../../mc/controller/connectData.class.php";
+            require "../../mc/controller/connectData.class.php";
+            connectData::showCompleteData();
+            ?>
         </div>
     </div>
+
+
 
 <?php
 //include header
