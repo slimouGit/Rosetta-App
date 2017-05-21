@@ -1,9 +1,24 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: salim
- * Date: 21.05.2017
- * Time: 07:55
- */
+//include header
+include "../../lib/elements/header.php";
+?>
+
+<?php
+//include connection database
 include "../../mvc/controller/db_connect.php";
-include "../../mvc/view/table_items.php";
+?>
+
+<div class="container">
+        <div class='row'>
+            <h1>Rosetta-Data complete</h1>
+            <?php
+            //include table_items
+            include "../../mvc/view/table_items.php";
+            ?>
+        </div>
+    </div>
+
+<?php
+//include header
+include "../../lib/elements/footer.php";
+?>
