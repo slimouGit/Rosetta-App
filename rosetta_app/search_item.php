@@ -1,11 +1,11 @@
 <?php
 //include header
-include "../../lib/elements/header.php";
+include "lib/elements/header.php";
 ?>
 
 <?php
 //include connection to database
-include "../../mc/controller/db_connect.php";
+include "mc/controller/db_connect.php";
 ?>
 
 
@@ -46,7 +46,7 @@ if(isset($_GET['search_item'])) {
                 echo "Kein Ergebnis für " . $_POST['search'];
             }
             else{
-                require "../../mc/model/table_items.class.php";
+                require "mc/model/table_items.class.php";
                 table_items::showData();
             }
             ?>
@@ -62,5 +62,5 @@ if(isset($_GET['search_item'])) {
 
 <?php
 //include header
-include "../../lib/elements/footer.php";
+include "lib/elements/footer.php";
 ?>

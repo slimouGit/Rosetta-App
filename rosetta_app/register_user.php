@@ -1,11 +1,11 @@
 <?php
 //include header
-include "../lib/elements/header.php";
+include "lib/elements/header.php";
 ?>
 
 <?php
 //include connection to database
-include "../mc/controller/db_connect.php";
+include "mc/controller/db_connect.php";
 ?>
 
     <div class="container">
@@ -17,5 +17,5 @@ include "../mc/controller/db_connect.php";
 
 <?php
 //include header
-include "../lib/elements/footer.php";
+include "lib/elements/footer.php";
 ?>

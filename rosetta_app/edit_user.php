@@ -1,11 +1,11 @@
 <?php
 //include header
-include "../lib/elements/header.php";
+include "lib/elements/header.php";
 ?>
 
 <?php
 //include connection to database
-include "../mc/controller/db_connect.php";
+include "mc/controller/db_connect.php";
 ?>
 
     <div class="container">
@@ -13,12 +13,12 @@ include "../mc/controller/db_connect.php";
             <h1>Rosetta-Data complete</h1>
             <?php
             //include table_items
-            include "../mc/model/table_user.php";
+            include "mc/model/table_user.php";
             ?>
         </div>
     </div>
 
 <?php
 //include header
-include "../lib/elements/footer.php";
+include "lib/elements/footer.php";
 ?>

@@ -13,19 +13,19 @@
         </div>
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="http://localhost/Rosetta-App/rosetta_app/data_center/data_handling/search_item.php">Suchen</a></li>
-                <li><a href="http://localhost/Rosetta-App/rosetta_app/data_center/data_handling/create_item.php"">Erstellen</a></li>
-                <li><a href="http://localhost/Rosetta-App/rosetta_app/data_center/data_upload/upload_pdf.php">PDF hochladen</a></li>
-                <li><a href="http://localhost/Rosetta-App/rosetta_app/data_center/data_upload/upload_xml.php">XML hochladen</a></li>
+                <li><a href="search_item.php">Suchen</a></li>
+                <li><a href="create_item.php"">Erstellen</a></li>
+                <li><a href="upload_pdf.php">PDF hochladen</a></li>
+                <li><a href="upload_xml.php">XML hochladen</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://localhost/Rosetta-App/rosetta_app/data_user/register_user.php">Nutzer registrieren</a></li>
-                        <li><a href="http://localhost/Rosetta-App/rosetta_app/data_user/edit_user.php">Benutzer verwalten</a></li>
-                        <li><a href="http://localhost/Rosetta-App/rosetta_app/data_center/data_handling/data_complete.php">Daten gesamt</a></li>
-                        <li><a href="http://localhost/Rosetta-App/rosetta_app/data_center/data_deleted/deleted_item.php">Daten gelöscht</a></li>
+                        <li><a href="register_user.php">Nutzer registrieren</a></li>
+                        <li><a href="edit_user.php">Benutzer verwalten</a></li>
+                        <li><a href="data_complete.php">Daten gesamt</a></li>
+                        <li><a href="deleted_item.php">Daten gelöscht</a></li>
                     </ul>
                 </li>
                 <li><a href="logout.php">logout</a></li>

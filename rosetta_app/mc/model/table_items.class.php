@@ -33,9 +33,9 @@ class table_items
         <table class="table table-hover table-responsive">
             <thead>
             <tr>
-                <th class="col-sm-3"><img src="../../lib/img/de.jpg"/></th>
-                <th class="col-sm-3"><img src="../../lib/img/fr.jpg"/></th>
-                <th class="col-sm-3"><img src="../../lib/img/it.jpg"/></th>
+                <th class="col-sm-3"><img src="lib/img/de.jpg"/></th>
+                <th class="col-sm-3"><img src="lib/img/fr.jpg"/></th>
+                <th class="col-sm-3"><img src="lib/img/it.jpg"/></th>
                 <th class="col-sm-2">Rubrik</th>
                 <th class="col-sm-2">Info/Code</th>
                 <th class="col-sm-1">Edit</th>
@@ -100,8 +100,8 @@ class table_items
                         ?>
                     </td>
                     <td>
-                        <img src="../../lib/img/button_edit.png"/>
-                        <img src="../../lib/img/button_delete.png"/>
+                        <a href="edit_item.php?data_id=<?php echo $row['data_id']?>"><img src="lib/img/button_edit.png"/></a>
+                        <img src="lib/img/button_delete.png"/>
                     </td>
                 </tr>
                 <!-- Ende 1. Zeile (Inhalt Daten) -->
@@ -110,19 +110,19 @@ class table_items
                 <!-- Start 2. Zeile (Bedienfelder) -->
                 <tr>
                     <td>
-                        <img src="../../lib/img/button_comment.png"/>
-                        <img src="../../lib/img/button_search.png"/>
-                        <img src="../../lib/img/button_copy.png"/>
+                        <img src="lib/img/button_comment.png"/>
+                        <img src="lib/img/button_search.png"/>
+                        <img src="lib/img/button_copy.png"/>
                     </td>
                     <td>
-                        <img src="../../lib/img/button_comment.png"/>
-                        <img src="../../lib/img/button_search.png"/>
-                        <img src="../../lib/img/button_copy.png"/>
+                        <img src="lib/img/button_comment.png"/>
+                        <img src="lib/img/button_search.png"/>
+                        <img src="lib/img/button_copy.png"/>
                     </td>
                     <td>
-                        <img src="../../lib/img/button_comment.png"/>
-                        <img src="../../lib/img/button_search.png"/>
-                        <img src="../../lib/img/button_copy.png"/>
+                        <img src="lib/img/button_comment.png"/>
+                        <img src="lib/img/button_search.png"/>
+                        <img src="lib/img/button_copy.png"/>
                     </td>
                     <td></td>
                     <td></td>

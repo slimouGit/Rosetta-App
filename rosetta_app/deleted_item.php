@@ -1,11 +1,11 @@
 <?php
 //include header
-include "../../lib/elements/header.php";
+include "lib/elements/header.php";
 ?>
 
 <?php
 //include connection to database
-include "../../mc/controller/db_connect.php";
+include "mc/controller/db_connect.php";
 ?>
 
     <div class="container">
@@ -13,7 +13,7 @@ include "../../mc/controller/db_connect.php";
             <h1>Rosetta-Data deleted data</h1>
             <?php
             $res = $pdo->query("SELECT * FROM `rosetta_data`");
-            require "../../mc/model/table_items.class.php";
+            require "mc/model/table_items.class.php";
             table_items::showDeletedData();
             ?>
         </div>
@@ -22,5 +22,5 @@ include "../../mc/controller/db_connect.php";
 
 <?php
 //include header
-include "../../lib/elements/footer.php";
+include "lib/elements/footer.php";
 ?>

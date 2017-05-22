@@ -54,7 +54,7 @@
     <body>
     <?php
     //include navigation lokal
-    include 'navigation_local.php';
+    include 'navigation.php';
 
     //include navigation online
     //include 'navigation_online.php';
