@@ -37,10 +37,11 @@ class table_items
             </tr>
             </thead>
 
+            <tbody class="itemRow">
 
         <?php foreach ($res AS $row): ?>
 
-            <tbody class="itemRow">
+
 
             <!-- Start 1. Zeile (Inhalt Daten) -->
             <tr>
@@ -127,9 +128,11 @@ class table_items
             </tr>
             <!-- Ende 5. Zeile (Kommentare) -->
 
-            </tbody>
+
 
         <?php endforeach ?>
+
+            </tbody>
         </table>
 <?php
 
