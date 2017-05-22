@@ -37,6 +37,7 @@ if(isset($_GET['search_item'])) {
     <div class="container">
         <div class='row'>
             <?php
+
             $res = $pdo->query("SELECT * FROM rosetta_data WHERE item_fr LIKE '%" . $_POST['search'] . "%'");
 
             //pruefen, ob Suche ein Resultat ergibt
