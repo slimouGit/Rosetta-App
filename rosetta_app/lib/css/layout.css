@@ -2,3 +2,8 @@ body{margin:0px;padding:0px;}
 
 /*Highlighting der Suchfunktion*/
 .highlight{background-color: yellow; }
+
+/*Item-Container*/
+.itemRow{
+    margin: 20px; border: 1px solid #ff0000; padding-bottom: 30px;
+}

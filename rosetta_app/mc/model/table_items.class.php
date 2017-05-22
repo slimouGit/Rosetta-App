@@ -36,8 +36,12 @@ class table_items
                 <th class="col-sm-2">Edit</th>
             </tr>
             </thead>
+
+
         <?php foreach ($res AS $row): ?>
-            <div>
+
+            <tbody class="itemRow">
+
             <!-- Start 1. Zeile (Inhalt Daten) -->
             <tr>
                 <td>
@@ -122,7 +126,9 @@ class table_items
                 <td>ID</td>
             </tr>
             <!-- Ende 5. Zeile (Kommentare) -->
-            </div>
+
+            </tbody>
+
         <?php endforeach ?>
         </table>
 <?php
