@@ -37,8 +37,17 @@ if(isset($_GET['search_item'])) {
     <div class="container">
         <div class='row'>
             <?php
-            require "../../mc/model/table_items.class.php";
-            table_items::showSearchData($_POST["search"]);
+            $res = $pdo->query("SELECT * FROM rosetta_data WHERE item_fr LIKE '%" . $_POST['search'] . "%'");
+
+            //pruefen, ob Suche ein Resultat ergibt
+            $count = $res->rowCount();
+            if($count == 0){
+                echo "Kein Ergebnis für " . $_POST['search'];
+            }
+            else{
+                require "../../mc/model/table_items.class.php";
+                table_items::showData();
+            }
             ?>
         </div>
     </div>

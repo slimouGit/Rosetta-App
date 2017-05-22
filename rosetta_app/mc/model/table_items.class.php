@@ -5,19 +5,23 @@ class table_items
 {
     public static function showData()
     {
-        echo "FUNZT";
         self::printData();
     }
 
 
 
     function printData(){
-        echo "FUNZT AUCH";
-        $path = str_replace("model","controller",__DIR__);
-        include $path."/db_connect.php";
+        global $res;
 
-        //$res = $pdo->query("SELECT * FROM `rosetta_data`");
-        $res = showCompleteData();
+        //---------------------------------------
+        //Pruefung, ob etwas gesucht wurde
+        if(empty($_POST['search'])){
+            $_POST['search']="";
+            $tempSearch = false;
+        }else {
+            $tempSearch = true;
+        }
+        //---------------------------------------
 
        ?>
 
@@ -33,25 +37,92 @@ class table_items
             </tr>
             </thead>
         <?php foreach ($res AS $row): ?>
+            <div>
+            <!-- Start 1. Zeile (Inhalt Daten) -->
             <tr>
                 <td>
-                    <?php echo $row["item_de"];?>
+                    <?php
+                        if($tempSearch == false){echo $row["item_de"];}
+                        else{echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>",$row["item_de"]);}
+                    ?>
                 </td>
                 <td>
-                    <?php echo $row["item_fr"];?>
+                    <?php
+                        if($tempSearch == false){echo $row["item_fr"];}
+                        else{echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>",$row["item_fr"]);}
+                    ?>
                 </td>
                 <td>
-                    <?php echo $row["item_it"];?>
+                    <?php
+                        if($tempSearch == false){echo $row["item_it"];}
+                        else{echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>",$row["item_it"]);}
+                    ?>
                 </td>
                 <td>
-                    <?php echo $row["category"];?>
+                    <?php
+                        if($tempSearch == false){echo $row["category"];}
+                        else{echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>",$row["category"]);}
+                    ?>
                 </td>
                 <td>
-                    <?php echo $row["info"];?>
+                    <?php
+                        if($tempSearch == false){echo $row["info"];}
+                        else{echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>",$row["info"]);}
+                    ?>
                 </td>
                 <td>
                 </td>
             </tr>
+            <!-- Ende 1. Zeile (Inhalt Daten) -->
+
+
+            <!-- Start 2. Zeile (Bedienfelder) -->
+            <tr>
+                <td>comment/filter/clipboard</td>
+                <td>comment/filter/clipboard</td>
+                <td>comment/filter/clipboard</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Ende 2. Zeile (Bedienfelder) -->
+
+
+            <!-- Start 3. Zeile (Kommentare) -->
+            <tr>
+                <td>Kommentar</td>
+                <td>Kommentar</td>
+                <td>Kommentar</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Ende 3. Zeile (Kommentare) -->
+
+
+            <!-- Start 4. Zeile (Kommentar-Info) -->
+            <tr>
+                <td>User (Kommentar/Datum)</td>
+                <td>User (Kommentar/Datum)</td>
+                <td>User (Kommentar/Datum)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Ende 4. Zeile (Kommentar-Info) -->
+
+
+            <!-- Start 5. Zeile (Kommentare) -->
+            <tr>
+                <td>User (Erstellt/Datum)</td>
+                <td>User (geändert/Datum)</td>
+                <td>User (geändert/Datum)</td>
+                <td></td>
+                <td></td>
+                <td>ID</td>
+            </tr>
+            <!-- Ende 5. Zeile (Kommentare) -->
+            </div>
         <?php endforeach ?>
         </table>
 <?php
