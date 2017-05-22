@@ -13,7 +13,7 @@ include "../../mc/controller/db_connect.php";
             <h1>Rosetta-Data complete</h1>
             <?php
             require "../../mc/model/table_items.class.php";
-            table_items::showActiveData();
+            table_items::showData();
             ?>
         </div>
     </div>
