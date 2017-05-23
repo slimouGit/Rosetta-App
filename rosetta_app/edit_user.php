@@ -10,7 +10,7 @@ include "mc/controller/db_connect.php";
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-Data complete</h1>
+            <h1>Rosetta-Data edit user</h1>
             <?php
             //include table_items
             include "mc/model/table_user.php";

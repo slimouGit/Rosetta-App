@@ -12,7 +12,7 @@ include "mc/controller/db_connect.php";
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-Data search data</h1>
+            <h1>Rosetta-Data edit data</h1>
             <form action="?search_item=1" method = "post">
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">

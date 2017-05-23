@@ -10,10 +10,10 @@ include "mc/controller/db_connect.php";
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-Data register user</h1>
-
+            <h1>Rosetta-Data upload XML</h1>
         </div>
     </div>
+
 
 <?php
 //include header
