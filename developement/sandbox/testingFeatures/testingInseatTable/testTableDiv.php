@@ -49,15 +49,17 @@ include "mc/controller/db_connect.php";
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4 white col bottomLine">comment german</div>
-                        <div class="col-md-4 white col bottomLine">comment french</div>
-                        <div class="col-md-4 white col bottomLine">comment italien</div>
+                        <div class="col-md-4 white col bottomLine comment">comment german</div>
+                        <div class="col-md-4 white col bottomLine comment">comment french</div>
+                        <div class="col-md-4 white col bottomLine comment">comment italien</div>
                     </div>
 
                      <div class="row">
-                        <div class="col-md-4 white col bottomLine">
-                            <div class="col-md-6 userComment">Salim</div>
+                         <div class="col-md-4 white col">
+                             <div class="col-md-12 white col">
+                            <div class="col-md-8 userComment">Salim</div>
                             <div class="col-md-4 dateComment">heute</div>
+                             </div>
                         </div>
                         <div class="col-md-4 white col bottomLine">user comment french</div>
                         <div class="col-md-4 white col bottomLine">user comment italien</div>
