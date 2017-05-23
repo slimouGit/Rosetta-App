@@ -14,20 +14,30 @@ body{margin:0px;padding:0px;}
 }
 
 .row .bottomLine {
-    border-bottom: 1px dashed #000;
+    border-bottom: 1px dashed #888888;
 }
 
-.row .itemBottom {
-    background-color: #2e6da4;
-    color: white;
+.row .topLine {
+    border-top: 1px dashed #888888;
 }
 
-.borderRoundBottomLeft {
+/*Feld enthaelt .itemField mit Daten*/
+.itemFieldWrapper{
+    padding: 0px 10px;
+}
+
+/*Felder mit Daten*/
+.itemField{
+    background-color: #dcedef;
+    padding: 5px 5px 10px 10px;
     border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
 }
 
-.borderRoundBottomRight {
-    border-bottom-right-radius: 1em;
+/*Felder mit Icons*/
+.row .editLine {
+    padding: 10px 0px;
 }
 
 .itemWrapper{
@@ -60,7 +70,49 @@ body{margin:0px;padding:0px;}
     display: block;
 }
 
-/******************************************/
+/*Kommentarzeile*/
+.comment {
+    color: #ff0000;
+    font-size: .75em;
+}
+.userComment{
+    font-weight: bold;
+    color: #8c8c8c;
+    font-size: .75em;
+}
+
+.dateComment{
+    font-size: .75em;
+}
+
+.commentInfo {
+    margin-top: 5px;
+    padding: 5px 0px;
+}
+
+/*Zeile mit Daten zum Eintrag => userCreate, userUpdate, userDelete, data_id*/
+.itemInfo {
+    margin-top: 5px;
+}
+
+.row .itemBottom {
+    background-color: #2e6da4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: .75em;
+}
+
+
+.borderRoundBottomLeft {
+    border-bottom-left-radius: 1em;
+}
+
+.borderRoundBottomRight {
+    border-bottom-right-radius: 1em;
+}
+
+    /******************************************/
 
 
 /*Highlighting der Suchfunktion*/
