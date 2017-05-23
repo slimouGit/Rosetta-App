@@ -31,11 +31,13 @@ include "mc/controller/db_connect.php";
 
         <div class='row'>
             <?php
-            echo "Gesuchte ID ist " . $_GET["data_id"];
+
             $tempId = $_GET["data_id"];
             echo $tempId;
             $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
-
+            //foreach ($res AS $row){
+                echo "Gesuchte ID ist " . $_GET["data_id"];
+            //};
             //pruefen, ob Suche ein Resultat ergibt
             $count = $res->rowCount();
             if($count == 0){
