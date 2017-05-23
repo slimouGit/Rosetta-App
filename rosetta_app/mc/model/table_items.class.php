@@ -30,19 +30,21 @@ class table_items
 
        ?>
 
-        <table class="table table-hover table-responsive">
-            <thead>
-            <tr>
-                <th class="col-sm-3"><img src="lib/img/de.jpg"/></th>
-                <th class="col-sm-3"><img src="lib/img/fr.jpg"/></th>
-                <th class="col-sm-3"><img src="lib/img/it.jpg"/></th>
-                <th class="col-sm-2">Rubrik</th>
-                <th class="col-sm-2">Info/Code</th>
-                <th class="col-sm-1">Edit</th>
-            </tr>
-            </thead>
 
-            <tbody class="itemRow">
+        <div class="row">
+            <div class="col-md-12 col itemHeader">
+                <div class="row">
+                    <div class="col-md-3 col"><img src="lib/img/de.jpg"/></div>
+                    <div class="col-md-3 col"><img src="lib/img/fr.jpg"/></div>
+                    <div class="col-md-3 col"><img src="lib/img/it.jpg"/></div>
+                    <div class="col-md-1 col">Rubrik</div>
+                    <div class="col-md-1 col">Info</div>
+                    <div class="col-md-1 col">Edit</div>
+                </div>
+            </div>
+        </div>
+
+
 
         <?php
             foreach ($res AS $row):
@@ -52,119 +54,140 @@ class table_items
         ?>
 
 
-                <!-- Start 1. Zeile (Inhalt Daten) -->
-                <tr>
-                    <td>
-                        <?php
-                        if ($tempSearch == false) {
-                            echo $row["item_de"];
-                        } else {
-                            echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_de"]);
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                        if ($tempSearch == false) {
-                            echo $row["item_fr"];
-                        } else {
-                            echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_fr"]);
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                        if ($tempSearch == false) {
-                            echo $row["item_it"];
-                        } else {
-                            echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_it"]);
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                        if ($tempSearch == false) {
-                            echo $row["category"];
-                        } else {
-                            echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["category"]);
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <?php
-                        if ($tempSearch == false) {
-                            echo $row["info"];
-                        } else {
-                            echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["info"]);
-                        }
-                        ?>
-                    </td>
-                    <td>
-                        <a href="edit_item.php?data_id=<?php echo $row['data_id']?>"><img src="lib/img/button_edit.png"/></a>
-                        <img src="lib/img/button_delete.png"/>
-                    </td>
-                </tr>
-                <!-- Ende 1. Zeile (Inhalt Daten) -->
+                <div class="row">
 
+                <div class="col-md-12 col itemWrapper">
 
-                <!-- Start 2. Zeile (Bedienfelder) -->
-                <tr>
-                    <td>
-                        <img src="lib/img/button_comment.png"/>
-                        <img src="lib/img/button_search.png"/>
-                        <img src="lib/img/button_copy.png"/>
-                    </td>
-                    <td>
-                        <img src="lib/img/button_comment.png"/>
-                        <img src="lib/img/button_search.png"/>
-                        <img src="lib/img/button_copy.png"/>
-                    </td>
-                    <td>
-                        <img src="lib/img/button_comment.png"/>
-                        <img src="lib/img/button_search.png"/>
-                        <img src="lib/img/button_copy.png"/>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <!-- Ende 2. Zeile (Bedienfelder) -->
+                    <div class="row ">
 
+                        <div class="col-md-9 bottomLine">
 
-                <!-- Start 3. Zeile (Kommentare) -->
-                <tr>
-                    <td>Kommentar</td>
-                    <td>Kommentar</td>
-                    <td>Kommentar</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <!-- Ende 3. Zeile (Kommentare) -->
+                            <div class="row">
 
+                                <div class="col-md-4 white col bottomLine">
+                                    <?php
+                                    if ($tempSearch == false) {
+                                        echo $row["item_de"];
+                                    } else {
+                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_de"]);
+                                    }
+                                    ?>
+                                </div>
 
-                <!-- Start 4. Zeile (Kommentar-Info) -->
-                <tr>
-                    <td>User (Kommentar/Datum)</td>
-                    <td>User (Kommentar/Datum)</td>
-                    <td>User (Kommentar/Datum)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <!-- Ende 4. Zeile (Kommentar-Info) -->
+                                <div class="col-md-4 white col bottomLine">
+                                    <?php
+                                    if ($tempSearch == false) {
+                                        echo $row["item_fr"];
+                                    } else {
+                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_fr"]);
+                                    }
+                                    ?>
+                                </div>
 
+                                <div class="col-md-4 white col bottomLine">
+                                    <?php
+                                    if ($tempSearch == false) {
+                                        echo $row["item_it"];
+                                    } else {
+                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_it"]);
+                                    }
+                                    ?>
+                                </div>
+                            </div>
 
-                <!-- Start 5. Zeile (Kommentare) -->
-                <tr class="userRow">
-                    <td>User (Erstellt/Datum)</td>
-                    <td>User (geändert/Datum)</td>
-                    <td>User (geändert/Datum)</td>
-                    <td></td>
-                    <td></td>
-                    <td>ID</td>
-                </tr>
-                <!-- Ende 5. Zeile (Kommentare) -->
+                            <!----------------------------------------------->
+                            <!-- Kommentieren/Filtern/Kopieren -->
+                            <div class="row">
+
+                                <div class="col-md-4 white col bottomLine">
+                                    <img src="lib/img/button_comment.png"/>
+                                    <img src="lib/img/button_search.png"/>
+                                    <img src="lib/img/button_copy.png"/>
+                                </div>
+                                <div class="col-md-4 white col bottomLine">
+                                    <img src="lib/img/button_comment.png"/>
+                                    <img src="lib/img/button_search.png"/>
+                                    <img src="lib/img/button_copy.png"/>
+                                </div>
+                                <div class="col-md-4 white col bottomLine">
+                                    <img src="lib/img/button_comment.png"/>
+                                    <img src="lib/img/button_search.png"/>
+                                    <img src="lib/img/button_copy.png"/>
+                                </div>
+
+                            </div>
+
+                            <!----------------------------------------------->
+                            <!-- Kommentiere -->
+                            <div class="row">
+                                <div class="col-md-4 white col bottomLine">comment german</div>
+                                <div class="col-md-4 white col bottomLine">comment french</div>
+                                <div class="col-md-4 white col bottomLine">comment italien</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 white col bottomLine">user comment german</div>
+                                <div class="col-md-4 white col bottomLine">user comment french</div>
+                                <div class="col-md-4 white col bottomLine">user comment italien</div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <div class="row">
+                                <!-- Rubrik -->
+                                <div class="col-md-4 white col ">
+                                    <?php
+                                    if ($tempSearch == false) {
+                                        echo $row["category"];
+                                    } else {
+                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["category"]);
+                                    }
+                                    ?>
+                                </div>
+                                <!-- Info -->
+                                <div class="col-md-4 white col ">
+                                    <?php
+                                    if ($tempSearch == false) {
+                                        echo $row["info"];
+                                    } else {
+                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["info"]);
+                                    }
+                                    ?>
+                                </div>
+
+                                <!-- Edit -->
+                                <div class="col-md-4 white col">
+                                    <a href="edit_item.php?data_id=<?php echo $row['data_id']?>"><img src="lib/img/button_edit.png"/></a>
+                                    <img src="lib/img/button_delete.png"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 white ">
+                                    <span class="carlineHeadline">Enthalten in:</span>
+                                    <?php
+                                        echo $row["carline"];
+                                    ?>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="row ">
+                                <div class="col-md-3 itemBottom col borderRoundBottomLeft">user created</div>
+                                <div class="col-md-3 itemBottom col">user upated</div>
+                                <div class="col-md-3 itemBottom col">user deleted</div>
+                                <div class="col-md-3 itemBottom col borderRoundBottomRight">data_id</div>
+                            </div>
+                        </div>
+
+                    </div><!-- row -->
+
+                </div><!-- wrapper -->
+                </div>
 
 
                 <?php
@@ -172,9 +195,7 @@ class table_items
                     endforeach
                 ?>
 
-            </tbody>
 
-        </table>
 <?php
 
 }
