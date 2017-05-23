@@ -36,7 +36,7 @@ include "mc/controller/db_connect.php";
             echo $tempId;
             $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
             //foreach ($res AS $row){
-                echo "Gesuchte ID ist " . $_GET["data_id"];
+               // echo "Gesuchte ID ist " . $_GET["data_id"];
             //};
             //pruefen, ob Suche ein Resultat ergibt
             $count = $res->rowCount();
@@ -44,8 +44,8 @@ include "mc/controller/db_connect.php";
                 echo "Kein Ergebnis für " . $_POST['search'];
             }
             else{
-                require "mc/model/table_items.class.php";
-                table_items::showData();
+                require "mc/model/change_item.class.php";
+                change_item::modifyData($tempId);
             }
             ?>
         </div>
