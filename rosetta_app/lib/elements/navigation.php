@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://localhost/Rosetta-App/">Rosetta-App</a>
+            <a class="navbar-brand" href="http://localhost/Rosetta-App/rosetta_app">Rosetta-App</a>
         </div>
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -29,10 +29,12 @@
                     </ul>
                 </li>
                 <li><a href="logout.php">logout</a></li>
-                <li><a href="neuesPasswort.php">Passwort ändern</a></li>
+                <li><a href="change_pwd.php">Passwort ändern</a></li>
             </ul>
         </div>
 
     </div>
+
 </nav>
+
 
