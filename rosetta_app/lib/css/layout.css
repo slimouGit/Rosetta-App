@@ -1,12 +1,79 @@
 body{margin:0px;padding:0px;}
+/******************************************/
+
+
+/*Container fuer Datenausgabe*/
+.col {
+    background: none;
+    height: auto;
+}
+
+.row .white {
+    background: white;
+    color: black;
+}
+
+.row .bottomLine {
+    border-bottom: 1px dashed #000;
+}
+
+.row .itemBottom {
+    background-color: #2e6da4;
+    color: white;
+}
+
+.borderRoundBottomLeft {
+    border-bottom-left-radius: 1em;
+}
+
+.borderRoundBottomRight {
+    border-bottom-right-radius: 1em;
+}
+
+.itemWrapper{
+    margin: 10px 0px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.itemHeader {
+    margin: 10px 0px;
+    padding: 10px ;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.topLineDashed{
+    border-top: 1px dashed #2aabd2;
+}
+
+/*Feld mit Carline-Angaben*/
+.carlineHeadline {
+    margin-top:10px;
+    padding-top:10px;
+    border-top: 1px dashed #2aabd2;
+    font-size: .75em;
+    font-weight: bold;
+    color: #1b6d85;
+    display: block;
+}
+
+/******************************************/
+
 
 /*Highlighting der Suchfunktion*/
 .highlight{background-color: yellow; }
+/******************************************/
+
 
 /*Item-Container*/
 .itemRow{
     margin: 20px; padding-bottom: 30px;
 }
+/******************************************/
+
 
 /**/
 .navbar{
@@ -19,6 +86,8 @@ body{margin:0px;padding:0px;}
     position: relative;
     top: 50px;
 }
+/******************************************/
+
 
 /**/
 .userRow {
@@ -27,3 +96,4 @@ body{margin:0px;padding:0px;}
     margin-bottom: 20px;
     border-radius: 5px;
 }
+/******************************************/
