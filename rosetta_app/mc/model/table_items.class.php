@@ -173,6 +173,7 @@ class table_items
                 ?>
 
             </tbody>
+
         </table>
 <?php
 
