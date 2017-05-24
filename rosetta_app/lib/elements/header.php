@@ -29,7 +29,7 @@
         <script src="http://localhost/Rosetta-App/rosetta_app/lib/js/script_preLoaded.js"></script>
         <!-- css local --
         <link rel="stylesheet" href="http://localhost/Rosetta-App/rosetta_app/lib/css/layout.css">
-
+        -->
 
         <!-- ONLINE -->
         <!-- Bootstrap online -->
@@ -53,11 +53,4 @@
 
     </head>
     <body>
-    <?php
-    //include navigation lokal
-    include 'navigation.php';
 
-    //include navigation online
-    //include 'navigation_online.php';
-    ?>
-    <div class="container-fluid content">
