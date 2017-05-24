@@ -24,10 +24,10 @@ include 'lib/elements/navigation.php';
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
                 </div>
+        </div>
 
             <div class="row">
                 <div class="form-group">
-                    <div class="col-sm-2"></div>
                     <div class="col-sm-1">
                         <input type="submit" class="btn btn-primary" value="Abschicken">
                     </div>
