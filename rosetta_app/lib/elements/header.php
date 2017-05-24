@@ -16,16 +16,17 @@
         <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
               rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <!--
         <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
-
+        -->
         <!--bootstrap-multiselect lokal-->
-        <script src="http://localhost/Rosetta-App/rosetta_app/lib/bootstrap-multiselect.js" type="text/javascript"></script>
+        <script src="lib/js/bootstrap-multiselect.js" type="text/javascript"></script>
 
 
         <!-- LOCAL -->
         <!-- Bootstrap local --
          <link href="http://localhost/Rosetta-App/rosetta_app/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- script local --
+        <!-- script local -->
         <script src="http://localhost/Rosetta-App/rosetta_app/lib/js/script_preLoaded.js"></script>
         <!-- css local --
         <link rel="stylesheet" href="http://localhost/Rosetta-App/rosetta_app/lib/css/layout.css">
@@ -34,7 +35,7 @@
         <!-- ONLINE -->
         <!-- Bootstrap online -->
         <link href="http://rosetta-app.de/rosetta_app/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- script online -->
+        <!-- script online
         <script src="http://rosetta-app.de/rosetta_app/lib/js/script_preLoaded.js"></script>
         <!-- css online -->
         <link rel="stylesheet" href="http://rosetta-app.de/rosetta_app/lib/css/layout.css">
