@@ -3,6 +3,7 @@
     <head>
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Rosetta-App</title>
+        <meta charset="utf-8"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <!--Autocomplete-->
@@ -22,22 +23,22 @@
 
 
         <!-- LOCAL -->
-        <!-- Bootstrap local -->
+        <!-- Bootstrap local --
          <link href="http://localhost/Rosetta-App/rosetta_app/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- script local -->
+        <!-- script local --
         <script src="http://localhost/Rosetta-App/rosetta_app/lib/js/script_preLoaded.js"></script>
-        <!-- css local -->
+        <!-- css local --
         <link rel="stylesheet" href="http://localhost/Rosetta-App/rosetta_app/lib/css/layout.css">
 
 
         <!-- ONLINE -->
-        <!-- Bootstrap online --
+        <!-- Bootstrap online -->
         <link href="http://rosetta-app.de/rosetta_app/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- script online --
+        <!-- script online -->
         <script src="http://rosetta-app.de/rosetta_app/lib/js/script_preLoaded.js"></script>
-        <!-- css online --
+        <!-- css online -->
         <link rel="stylesheet" href="http://rosetta-app.de/rosetta_app/lib/css/layout.css">
-        -->
+
 
 
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
