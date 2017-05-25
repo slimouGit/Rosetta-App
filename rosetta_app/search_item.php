@@ -15,25 +15,25 @@ include 'lib/elements/navigation.php';
 
     <div class="container-fluid content">
 
-
-
     <div class="container">
         <div class='row'>
+
             <h1>Rosetta-Data search data</h1>
+
             <form action="?search_item=1" method = "post">
                 <div class="col-sm-6">
                     <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
                 </div>
-        </div>
 
-            <div class="row">
-                <div class="form-group">
-                    <div class="col-sm-1">
-                        <input type="submit" class="btn btn-primary" value="Abschicken">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            <input type="submit" class="btn btn-primary" value="Suchen">
+                        </div>
                     </div>
                 </div>
-            </div>
             </form>
+
         </div>
     </div>
 
