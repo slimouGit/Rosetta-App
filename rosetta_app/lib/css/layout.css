@@ -26,15 +26,31 @@ body{margin:0px;padding:0px;}
     padding: 0px 10px;
 }
 
+/*FormularWrapper*/
+.formWrapper{
+    padding: 10px 0px;
+}
+
 /*Felder mit Daten*/
 .itemField{
     background-color: #dcedef;
     padding: 5px 5px 10px 10px;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-
 }
 
+/*Felder mit Daten*/
+.formField{
+    background-color: #e6fbff;
+    padding: 20px 5px 10px 10px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.formMarginBottom{
+    margin-bottom:20px;
+}
 /*Felder mit Icons*/
 .row .editLine {
     padding: 10px 0px;
@@ -112,7 +128,7 @@ body{margin:0px;padding:0px;}
     border-bottom-right-radius: 1em;
 }
 
-    /******************************************/
+/******************************************/
 
 
 /*Highlighting der Suchfunktion*/
@@ -150,10 +166,7 @@ body{margin:0px;padding:0px;}
 }
 /******************************************/
 
-/*FormularWrapper*/
-.formWrapper{
-    background-color: #a6e1ec;
-}
+
 
 /******************************************************************/
 
