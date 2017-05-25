@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <title></title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="layout.css" rel="stylesheet">
+
+    <script src="script.js"></script>
 </head>
 <body>
 <div class="form-group">
     <label class="col-md-4 control-label" for="rolename">Role Name</label>
     <div class="col-md-4">
-        <select id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
+        <select hidden id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
             <option value="cheese">Cheese</option>
             <option value="tomatoes">Tomatoes</option>
             <option value="mozarella">Mozzarella</option>
@@ -21,7 +32,8 @@
     </div>
 </div>
 </body>
-<script src="script.js"/>
+
+
 <script type="text/javascript">
     $(function() {
         $('.multiselect-ui').multiselect({
@@ -29,4 +41,5 @@
         });
     });
 </script>
+
 </html>

@@ -1,3 +1,5 @@
+console.log("TEST");
+
 /**
  * Bootstrap Multiselect (https://github.com/davidstutz/bootstrap-multiselect)
  *
