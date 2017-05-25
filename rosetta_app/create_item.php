@@ -83,8 +83,8 @@ include 'lib/elements/navigation.php';
                 }
                 //------------------------------------------------------------------------------------------
 
-                $res = $pdo->prepare("INSERT INTO rosetta_data (token, item_de, item_fr, item_it, category, info, carline) VALUES (:token, :item_de, :item_fr, :item_it, :category, :info, :carline)");
-                $result = $res->execute(array('token' => $token, 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'category' => $category, 'info' => $info, 'carline' => $car));
+                $res = $pdo->prepare("INSERT INTO rosetta_data (token, item_de, item_fr, item_it, category, info, carline, user_create) VALUES (:token, :item_de, :item_fr, :item_it, :category, :info, :carline, :user_create)");
+                $result = $res->execute(array('token' => $token, 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'category' => $category, 'info' => $info, 'carline' => $car, 'user_create' => $username));
 
                 //------------------------------------------------------------------------------------------
 

@@ -2,6 +2,11 @@
 //include header
 include "lib/elements/header.php";
 ?>
+<?php
+session_start();
+session_destroy();
+
+?>
 
 <?php
 //include connection to database
@@ -19,6 +24,7 @@ include 'lib/elements/navigation.php';
         <div class='row'>
             <h1>Rosetta-Data logged out</h1>
 
+            <p><a href="../index.php">login</a></p>
         </div>
     </div>
 

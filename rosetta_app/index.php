@@ -19,7 +19,10 @@ include 'lib/elements/navigation.php';
     <div class="container">
         <div class='row'>
             <h1>Rosetta-App</h1>
-            <p>logged in</p>
+            <p>logged in as</p>
+            <?php
+            echo $username;
+            ?>
         </div>
     </div>
 

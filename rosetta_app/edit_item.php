@@ -130,13 +130,13 @@ include 'lib/elements/navigation.php';
                 //------------------------------------------------------------------------------------------
 
                 //Daten werden aktualisiert
-                $res = $pdo->prepare("UPDATE rosetta_data SET item_de = :item_de, item_fr = :item_fr, item_it = :item_it, category = :category, info = :info, carline = :carline WHERE data_id = :data_id");
-                $result = $res->execute(array('item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'data_id'=> $data_id, 'category' => $category, 'info'=> $info, 'carline' => $car ));
+                $res = $pdo->prepare("UPDATE rosetta_data SET item_de = :item_de, item_fr = :item_fr, item_it = :item_it, category = :category, info = :info, carline = :carline, user_update = :user_update WHERE data_id = :data_id");
+                $result = $res->execute(array('item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'data_id'=> $data_id, 'category' => $category, 'info'=> $info, 'carline' => $car, 'user_update' => $username ));
 
                 //------------------------------------------------------------------------------------------
 
                 //Meldung wird ausgegeben
-                require_once "mc/model/responseText.class.php";
+                require_once "mc/model/responseObject.class.php";
                 $response = new responseText();
                 $response->success("FUNZT");
 

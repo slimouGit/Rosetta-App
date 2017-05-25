@@ -22,7 +22,7 @@ class deactivate_item
         include "mc/controller/db_connect.php";
 
 
-        $res = $pdo->prepare("UPDATE rosetta_data SET state = :state_neu WHERE data_id = $tempId");
-        $res->execute(array('state_neu' => 'deleted'));
+        $res = $pdo->prepare("UPDATE rosetta_data SET state = :state_neu, user_deleted = :user_deleted WHERE data_id = $tempId");
+        $res->execute(array('state_neu' => 'deleted', 'user_deleted' => $username));
     }
 }

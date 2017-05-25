@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -17,6 +15,11 @@
                 <li><a href="create_item.php"">Erstellen</a></li>
                 <li><a href="upload_pdf.php">PDF hochladen</a></li>
                 <li><a href="upload_xml.php">XML hochladen</a></li>
+
+                <?php
+                    if($authorization=="admin"){
+                ?>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration
                         <span class="caret"></span>
@@ -28,13 +31,16 @@
                         <li><a href="deleted_item.php">Daten gelöscht</a></li>
                     </ul>
                 </li>
+
+                <?php
+                    }
+                ?>
+
                 <li><a href="logout.php">logout</a></li>
                 <li><a href="change_pwd.php">Passwort ändern</a></li>
             </ul>
         </div>
-
     </div>
-
 </nav>
 
 

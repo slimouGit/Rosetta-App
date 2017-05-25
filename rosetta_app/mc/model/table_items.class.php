@@ -189,7 +189,15 @@ class table_items
                         <div class="col-md-12">
                             <div class="row itemInfo">
                                 <div class="col-md-3 itemBottom col borderRoundBottomLeft">Erstellt von <?php echo $row['user_create']?> am <?php echo date('d.m.Y H:i', strtotime($row['date_create']))?></div>
-                                <div class="col-md-3 itemBottom col">Geändert von <?php echo $row['user_update']?> am <?php echo date('d.m.Y H:i', strtotime($row['date_update']))?></div>
+
+                                <div class="col-md-3 itemBottom col">
+                                    <?php
+                                    //Feld wird erst angezeigt, wenn Datum > 1970 ist
+                                    $updateYear = date('Y', strtotime($row['date_update']));
+                                    if($updateYear>1970){ ?>
+                                        Geändert von <?php echo $row['user_update']?> am <?php echo date('d.m.Y H:i', strtotime($row['date_update']));
+                                    }else { ?>&nbsp;<?php } ?>
+                                </div>
 
                                 <!-- Feld fuer geloeschte Eintraege-->
                                 <div class="col-md-3 itemBottom col">
