@@ -22,8 +22,8 @@ include 'lib/elements/navigation.php';
         </div>
 
         <div class='row'>
-            <div class="formWrapper">
-
+            <div class="formWrapper col-lg-8">
+                <div class="formField">
             <form action="?insert_item=1" method = "post">
 
                 <?php
@@ -32,11 +32,11 @@ include 'lib/elements/navigation.php';
 
                 // Objekt erzeugen
                 $form = new formular();
-                $form->inputField("Deutsch", "item_de");
-                $form->inputField("Französisch", "item_fr");
-                $form->inputField("Italienisch", "item_it");
-                $form->inputField("Rubrik", "category");
-                $form->inputField("Info", "info");
+                $form->inputField("Deutsch", "item_de", "", "", "");
+                $form->inputField("Französisch", "item_fr", "", "", "");
+                $form->inputField("Italienisch", "item_it", "", "", "");
+                $form->inputField("Rubrik", "category", "", "", "");
+                $form->inputField("Info", "info", "", "", "");
 
                 $form->selectStart("Carline");
                 $form->checkBox("ADAM");
@@ -49,7 +49,7 @@ include 'lib/elements/navigation.php';
                 $form->submitButton("Eintragen");
                 ?>
             </form>
-
+                </div>
             </div>
         </div>
     </div>
