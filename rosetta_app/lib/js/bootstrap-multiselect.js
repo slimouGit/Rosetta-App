@@ -1,4 +1,5 @@
-/**
+
+console.log("FICKEN");/**
  * Bootstrap Multiselect (https://github.com/davidstutz/bootstrap-multiselect)
  *
  * Apache License, Version 2.0:
@@ -391,7 +392,7 @@
             buttonClass: 'btn btn-default',
             inheritClass: false,
             buttonWidth: 'auto',
-            buttonContainer: '<div class="" />',
+            buttonContainer: '<div class="btn-group" />',
             dropRight: false,
             dropUp: false,
             selectedClass: 'active',
@@ -400,7 +401,7 @@
             maxHeight: false,
             includeSelectAllOption: false,
             includeSelectAllIfMoreThan: 0,
-            selectAllText: ' Select all',
+            selectAllText: ' alles waehlen',
             selectAllValue: 'multiselect-all',
             selectAllName: false,
             selectAllNumber: true,
@@ -415,15 +416,15 @@
             filterBehavior: 'text',
             includeFilterClearBtn: true,
             preventInputChangeEvent: false,
-            nonSelectedText: 'None selected',
-            nSelectedText: 'selected',
-            allSelectedText: 'All selected',
+            nonSelectedText: 'keine Auswahl',
+            nSelectedText: 'Carlines wurden ausgewaehlt',
+            allSelectedText: 'Alles ausgewaehlt',
             numberDisplayed: 3,
             disableIfEmpty: false,
             disabledText: '',
             delimiterText: ', ',
             templates: {
-                button: '<button type="button" class="multiselect dropdown-toggle btn-block text-left" data-toggle="dropdown"><span class="multiselect-selected-text"></span> <b class="caret"></b></button>',
+                button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text"></span> <b class="caret"></b></button>',
                 ul: '<ul class="multiselect-container dropdown-menu"></ul>',
                 filter: '<li class="multiselect-item multiselect-filter"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
                 filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span>',
