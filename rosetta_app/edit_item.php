@@ -43,7 +43,13 @@ include 'lib/elements/navigation.php';
             $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
 
             foreach ($res AS $row):
-            ?>
+
+                //$carline mit Werten aus carline-array belegen zum pruefen in der Klasse formularFields,
+                //ob Index im Array vorhanden ist
+                $carline =  $row['carline'];
+                $carline = array_map('trim', explode(", ", $row['carline']));
+
+                ?>
 
             <form action="?change_item=1" method = "post">
 
@@ -51,7 +57,6 @@ include 'lib/elements/navigation.php';
 
                 require_once "mc/model/formularFields.class.php";
 
-                //if(empty($hideForm)){$hideForm="false"};
                 if(!$hideForm=="true"){
 
                     $form = new formular();
@@ -62,6 +67,33 @@ include 'lib/elements/navigation.php';
                     $form->inputField("Italienisch", "item_it", "" . $row["item_it"] . "", "", "");
                     $form->inputField("Rubrik", "category", "" . $row["category"] . "", "", "");
                     $form->inputField("Info", "info", "" . $row["info"] . "", "", "");
+
+                    $form->selectStart("Carline");
+
+
+                    $form->carlineCheck("ADAM", $carline);
+                    $form->carlineCheck("Ampera", $carline);
+                    $form->carlineCheck("Antara", $carline);
+                    $form->carlineCheck("AstraST", $carline);
+                    $form->carlineCheck("AstraNG", $carline);
+                    $form->carlineCheck("Cascada", $carline);
+                    $form->carlineCheck("ComboKastenwagen", $carline);
+                    $form->carlineCheck("ComboPassenger", $carline);
+                    $form->carlineCheck("Corsa", $carline);
+                    $form->carlineCheck("Crossland", $carline);
+                    $form->carlineCheck("GTC_OPC", $carline);
+                    $form->carlineCheck("InsigniaLimousine", $carline);
+                    $form->carlineCheck("InsigniaOPC", $carline);
+                    $form->carlineCheck("InsigniaST", $carline);
+                    $form->carlineCheck("KARL", $carline);
+                    $form->carlineCheck("Meriva", $carline);
+                    $form->carlineCheck("MokkaX", $carline);
+                    $form->carlineCheck("MovanoCombiBus", $carline);
+                    $form->carlineCheck("MovanoFahrgestell", $carline);
+                    $form->carlineCheck("MovanoVan", $carline);
+                    $form->carlineCheck("Zafira", $carline);
+
+                    $form->selectFinish();
 
                     $form->submitButton("Ändern");
                 }
@@ -79,6 +111,16 @@ include 'lib/elements/navigation.php';
             if(isset($_GET['change_item'])) {
                 $submitted = "true";
                 $data_id = $_POST['data_id'];
+
+                //------------------------------------------------------------------------------------------
+
+                //Pruefung, ob checkboxen ausgewaehlt wurden
+                if(!empty($_POST['carline'])) {$car = implode(', ', $_POST['carline']);}
+                //das Array carline wird ueber implode in $car gespeichert
+                if(empty($car)) {$car = 'General';}
+
+                //------------------------------------------------------------------------------------------
+
                 $item_de = $_POST['item_de'];
                 $item_fr = $_POST['item_fr'];
                 $item_it = $_POST['item_it'];
@@ -88,8 +130,8 @@ include 'lib/elements/navigation.php';
                 //------------------------------------------------------------------------------------------
 
                 //Daten werden aktualisiert
-                $res = $pdo->prepare("UPDATE rosetta_data SET item_de = :item_de, item_fr = :item_fr, item_it = :item_it, category = :category, info = :info WHERE data_id = :data_id");
-                $result = $res->execute(array('item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'data_id'=> $data_id, 'category' => $category, 'info'=> $info ));
+                $res = $pdo->prepare("UPDATE rosetta_data SET item_de = :item_de, item_fr = :item_fr, item_it = :item_it, category = :category, info = :info, carline = :carline WHERE data_id = :data_id");
+                $result = $res->execute(array('item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'data_id'=> $data_id, 'category' => $category, 'info'=> $info, 'carline' => $car ));
 
                 //------------------------------------------------------------------------------------------
 

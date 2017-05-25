@@ -76,7 +76,6 @@ include 'lib/elements/navigation.php';
                 if(!empty($_POST['carline'])) {
                     //das Array carline wird ueber implode in $car gespeichert
                     $car = implode(', ', $_POST['carline']);
-                    echo $car;
                 }
                 //falls keine Carline genannt wurde, wird die Variable mit General belegt
                 if(empty($car)) {
@@ -107,10 +106,3 @@ include 'lib/elements/navigation.php';
 include "lib/elements/footer.php";
 ?>
 
-        <script type="text/javascript">
-            $(function() {
-                $('.multiselect-ui').multiselect({
-                    includeSelectAllOption: true
-                });
-            });
-        </script>
