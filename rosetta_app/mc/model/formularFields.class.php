@@ -19,6 +19,10 @@ class formular
                 </div>";
     }
 
+    public function hiddenField($name, $text){
+        echo "<input type=\"hidden\" name=\"$name\" value=\"$text\">";
+    }
+
     public function submitButton($text){
         echo "<div class=\"row formMarginBottom\">
                         <div class=\"col-sm-2\"></div>
