@@ -147,6 +147,7 @@ body{margin:0px;padding:0px;}
 .navbar{
     color: #fff;
     background-color: #2e6da4;
+    box-shadow: 2px 2px 2px #888888;
 }
 
 /**/
