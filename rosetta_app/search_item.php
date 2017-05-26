@@ -3,22 +3,12 @@
 include "lib/elements/header.php";
 ?>
 
-<?php
-//include connection to database
-include "mc/controller/db_connect.php";
-?>
-
-<?php
-//include navigation
-include 'lib/elements/navigation.php';
-?>
-
     <div class="container-fluid content">
 
     <div class="container">
         <div class='row'>
 
-            <h1>Rosetta-Data search data</h1>
+            <h1>Rosetta-App search data</h1>
 
             <form action="?search_item=1" method = "post">
                 <div class="col-sm-6">

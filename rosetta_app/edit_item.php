@@ -3,15 +3,6 @@
 include "lib/elements/header.php";
 ?>
 
-<?php
-//include connection to database
-include "mc/controller/db_connect.php";
-?>
-
-<?php
-//include navigation
-include 'lib/elements/navigation.php';
-?>
 
     <div class="container-fluid content">
 
@@ -19,7 +10,7 @@ include 'lib/elements/navigation.php';
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-Data edit data</h1>
+            <h1>Rosetta-App edit data</h1>
         </div>
 
         <div class='row'>
@@ -138,7 +129,7 @@ include 'lib/elements/navigation.php';
                 //Meldung wird ausgegeben
                 require_once "mc/model/responseObject.class.php";
                 $response = new responseText();
-                $response->success("FUNZT");
+                $response->success("Der Eintrag mit der ID {$tempId} wurde erfolgreich aktualisiert");
 
                 //------------------------------------------------------------------------------------------
 

@@ -10,6 +10,18 @@ class formular
 {
     //------------------------------------------------------
 
+    //label
+    public function labelField($value){
+        echo "<div class=\"row formMarginBottom\">
+                    <div class=\"form-group\">
+                        <div class=\"col-sm-2 control-label\"></div>
+                        <div class=\"col-sm-8\">
+                            <div class=\"itemField col-sm-8 control-label\">".$value."</div>
+                        </div>
+                    </div>
+                </div>";
+    }
+
     //input field
     public function inputField($label,$name, $value, $placeholder, $id){
         echo "<div class=\"row formMarginBottom\">

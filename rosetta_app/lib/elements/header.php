@@ -11,7 +11,11 @@ $username = $_SESSION['username'];
 //Abfrage der Rechte
 $authorization = $_SESSION['authorization'];
 
-echo "Hallo User {$userid}: ".$username;
+?>
+
+<?php
+//include connection to database
+include "mc/controller/db_connect.php";
 ?>
 
 <!DOCTYPE HTML>
@@ -78,4 +82,9 @@ echo "Hallo User {$userid}: ".$username;
 
 </head>
 <body>
+
+<?php
+//include navigation
+include 'lib/elements/navigation.php';
+?>
 
