@@ -110,7 +110,9 @@ class table_items
                                     <a name="comment_de" title="Eintrag kommentieren" href="comment_item_de.php?data_id=<?php echo $row['data_id']?>">
                                         <img src="lib/img/button_comment.png"/>
                                     </a>
-                                    <img src="lib/img/button_search.png"/>
+                                    <a name="comment_de" title="Eintrag filtern" href="filter_item.php?data_id=<?php echo $row['data_id']?>">
+                                        <img src="lib/img/button_search.png"/>
+                                    </a>
                                     <img src="lib/img/button_copy.png"/>
                                 </div>
                                 <div class="col-md-4 white col">
