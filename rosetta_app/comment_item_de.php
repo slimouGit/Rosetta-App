@@ -51,7 +51,7 @@ include "lib/elements/header.php";
                         $form->labelField($row["item_de"]);
                         $form->inputField("Kommentar", "item_de_comment", "" . $row["item_de_comment"] . "", "", "");
 
-                        $form->submitButton("Kommentieren");
+                        $form->submitButton("2","Kommentieren");
                     }
                     ?>
                 </form>
