@@ -48,8 +48,8 @@ include "lib/elements/header.php";
                         $form = new formular();
 
                         $form->hiddenField("data_id", "" . $row["data_id"] . "");
-                        $form->labelField($row["item_de"]);
-                        $form->inputField("Kommentar", "item_de_comment", "" . $row["item_de_comment"] . "", "", "");
+                        $form->labelField($row["item_it"]);
+                        $form->inputField("Kommentar", "item_it_comment", "" . $row["item_it_comment"] . "", "", "");
 
                         $form->submitButton("Kommentieren");
                     }
@@ -70,7 +70,7 @@ include "lib/elements/header.php";
 
                 //------------------------------------------------------------------------------------------
 
-                $item_de_comment = $_POST['item_de_comment'];
+                $item_it_comment = $_POST['item_it_comment'];
 
 
                 //------------------------------------------------------------------------------------------
@@ -78,8 +78,8 @@ include "lib/elements/header.php";
                 $currentDate = date('d.m.Y H:i');
 
                 //Kommentar wird aktualisiert
-                $res = $pdo->prepare("UPDATE rosetta_data SET item_de_comment = :item_de_comment, user_de_comment = :user_de_comment, date_de_comment = :date_de_comment WHERE data_id = :data_id");
-                $result = $res->execute(array('item_de_comment' => $item_de_comment,  'data_id'=> $data_id, 'user_de_comment'=> $username, 'date_de_comment' => $currentDate ));
+                $res = $pdo->prepare("UPDATE rosetta_data SET item_it_comment = :item_it_comment, user_it_comment = :user_it_comment, date_it_comment = :date_it_comment WHERE data_id = :data_id");
+                $result = $res->execute(array('item_it_comment' => $item_it_comment,  'data_id'=> $data_id, 'user_it_comment'=> $username, 'date_it_comment' => $currentDate ));
 
                 //------------------------------------------------------------------------------------------
 
