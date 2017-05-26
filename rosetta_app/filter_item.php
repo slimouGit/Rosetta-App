@@ -21,55 +21,28 @@ include "mc/controller/db_connect.php";
 
 $hideForm ="";
 
-//
-if(empty($_GET["data_id"])){
-    $_GET["data_id"] = $_POST['data_id'];
-    $hideForm = "true";
-};
-
-//------------------------------------------------------------------------------------------
-
-//
-$tempId = $_GET["data_id"];
-
-//------------------------------------------------------------------------------------------
-
-$res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
-
-//Abfrage, damit
-if(!$hideForm=="true"){
-
-foreach ($res AS $row):
-?>
-    <form action="?filter_item=1" method = "post">
-        <?php
-
-        require_once "mc/model/formularFields.class.php";
-
-        $form = new formular();
-        $form->hiddenField("data_id", "" . $row["item_de"] . "");
-        $form->inputField("Deutsch", "item_de", "" . $row["item_de"] . "", "", "");
-        $form->submitButton("2","Filtern");
-
-    ?>
-    </form>
-<?php
-
-endforeach;
-
+if(!empty($_GET["item_de"])&&$_GET["item_de"]){
+    $tempItem = $_GET["item_de"];
 }
+if(!empty($_GET["item_fr"])&&$_GET["item_fr"]){
+    $tempItem = $_GET["item_fr"];
+}
+if(!empty($_GET["item_it"])&&$_GET["item_it"]){
+    $tempItem = $_GET["item_it"];
+}
+//else($tempItem = $_GET["item_it"]="");
+
+echo $tempItem;
 ?>
-<?php
-if(isset($_GET['filter_item'])) {
-    $hideForm = "true";
-    ?>
+
+
     <div class="container">
         <div class='row'>
             <?php
 
             //$cat wir mit Spalten definiert, in denen gesucht werden soll
             $cat = 'item_de, item_fr, item_it, category, info, carline';
-            $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $_POST['item_de'] . "%'");
+            $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $tempItem . "%'");
 
             //pruefen, ob Suche ein Resultat ergibt
             $count = $res->rowCount();
@@ -83,9 +56,7 @@ if(isset($_GET['filter_item'])) {
             ?>
         </div>
     </div>
-    <?php
-}
-?>
+
 
 
 
