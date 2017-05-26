@@ -86,7 +86,7 @@ include "lib/elements/header.php";
 
                     $form->selectFinish();
 
-                    $form->submitButton("Ändern");
+                    $form->submitButton("2","Ändern");
                 }
                 ?>
             </form>

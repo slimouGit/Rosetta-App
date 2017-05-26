@@ -28,11 +28,13 @@ if(empty($_GET["data_id"])){
 
         <div class="container">
 
-        <div class='row'>
+            <div class='row'>
 
-            <h1>Rosetta-Data delete data</h1>
-        </div>
-
+                <h1>Rosetta-Data delete data</h1>
+            </div>
+            <div>
+                <p>Soll dieser Datensatz wirklich gelöscht werden?</p>
+            </div>
         <form action="?delete_item=1" method = "post">
 
             <?php
@@ -41,7 +43,7 @@ if(empty($_GET["data_id"])){
                 if(!$hideForm=="true") {
                     $form = new formular();
                     $form->hiddenField("data_id", "" . $_GET["data_id"] . "");
-                    $form->submitButton("endgültig löschen");
+                    $form->submitButton("0","endgültig löschen");
                 }
             ?>
         </form>
@@ -54,7 +56,7 @@ if(empty($_GET["data_id"])){
             <?php
 
             $tempId = $_GET["data_id"];
-            echo "id: ". $tempId;
+
             $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
 
             if(!$hideForm=="true") {

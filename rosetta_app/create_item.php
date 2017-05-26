@@ -46,7 +46,7 @@ include 'lib/elements/navigation.php';
                 $form->checkBox("AstraNG");
                 $form->selectFinish();
 
-                $form->submitButton("Eintragen");
+                $form->submitButton("2","Eintragen");
                 ?>
             </form>
                 </div>

@@ -85,7 +85,7 @@ if($tempFormular) {
         $form->optionField("Authorisation", "User", "Admin");
         $form->passwordField("Passwort", "password", "", "", "");
         $form->passwordField("Passwort wiederholen", "password2", "", "", "");
-        $form->submitButton("Registrieren");
+        $form->submitButton("2","Registrieren");
         ?>
 
     </form>

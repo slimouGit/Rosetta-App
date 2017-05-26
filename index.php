@@ -67,7 +67,7 @@ include 'rosetta_app/lib/elements/navigationStart.php';
         $form = new formular();
         $form->inputField("E-Mail", "email", "", "", "");
         $form->passwordField("Passwort", "password", "", "", "");
-        $form->submitButton("Login");
+        $form->submitButton("2","Login");
         ?>
 
 

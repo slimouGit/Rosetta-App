@@ -68,9 +68,9 @@ class formular
     }
 
     //button
-    public function submitButton($text){
+    public function submitButton($col, $text){
         echo "<div class=\"row formMarginBottom\">
-                        <div class=\"col-sm-2\"></div>
+                        <div class=\"col-sm-$col\"></div>
                         <div class=\"col-sm-1\">
                             <input type=\"submit\" class=\"btn btn-primary\" value=\"$text\">
                         </div>
