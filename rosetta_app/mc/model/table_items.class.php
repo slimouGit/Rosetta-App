@@ -107,7 +107,9 @@ class table_items
                             <div class="row editLine">
 
                                 <div class="col-md-4 white col">
-                                    <img src="lib/img/button_comment.png"/>
+                                    <a name="comment_de" href="comment_item_de.php?data_id=<?php echo $row['data_id']?>">
+                                        <img src="lib/img/button_comment.png"/>
+                                    </a>
                                     <img src="lib/img/button_search.png"/>
                                     <img src="lib/img/button_copy.png"/>
                                 </div>
