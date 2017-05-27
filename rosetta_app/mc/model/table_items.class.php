@@ -119,7 +119,7 @@ class table_items
                                     <a name="comment_fr" title="Eintrag kommentieren" href="comment_item_fr.php?data_id=<?php echo $row['data_id']?>">
                                         <img src="lib/img/button_comment.png"/>
                                     </a>
-                                    <a name="comment_de" title="Eintrag filtern" href="filter_item.php?item_fr=<?php echo $row['item_fr']?>">
+                                    <a name="comment_de" title="Eintrag filtern" href="filter_item.php?item_fr  =<?php echo $row['item_fr']?>">
                                         <img src="lib/img/button_search.png"/>
                                     </a>
                                     <img src="lib/img/button_copy.png"/>
