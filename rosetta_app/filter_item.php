@@ -31,7 +31,6 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
     $tempItem = $_GET["item_it"];
 }
 //else($tempItem = $_GET["item_it"]="");
-
 echo $tempItem;
 ?>
 
