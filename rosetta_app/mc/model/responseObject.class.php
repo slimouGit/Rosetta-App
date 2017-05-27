@@ -6,7 +6,7 @@
  * Date: 25.05.2017
  * Time: 11:51
  */
-class responseText
+class responseObject
 {
     public function success($response){
         echo "<div class=\"row formMarginBottom\">

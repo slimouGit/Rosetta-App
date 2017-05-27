@@ -128,7 +128,7 @@ include "lib/elements/header.php";
 
                 //Meldung wird ausgegeben
                 require_once "mc/model/responseObject.class.php";
-                $response = new responseText();
+                $response = new responseObject();
                 $response->success("Der Eintrag mit der ID {$tempId} wurde erfolgreich aktualisiert");
 
                 //------------------------------------------------------------------------------------------
