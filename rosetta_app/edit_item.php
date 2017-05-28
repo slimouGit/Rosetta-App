@@ -1,4 +1,5 @@
 <?php
+
 //include header
 include "lib/elements/header.php";
 ?>
@@ -6,12 +7,15 @@ include "lib/elements/header.php";
 
     <div class="container-fluid content">
 
-
-
     <div class="container">
+
+        <!------------------------------------------------------------->
+
         <div class='row'>
             <h1>Rosetta-App edit data</h1>
         </div>
+
+        <!------------------------------------------------------------->
 
         <div class='row'>
             <?php
@@ -35,8 +39,7 @@ include "lib/elements/header.php";
 
             foreach ($res AS $row):
 
-                //$carline mit Werten aus carline-array belegen zum pruefen in der Klasse formularFields,
-                //ob Index im Array vorhanden ist
+                //$carline mit Werten aus carline-array belegen zum pruefen in der Klasse formularFields, ob Index im Array vorhanden ist
                 $carline =  $row['carline'];
                 $carline = array_map('trim', explode(", ", $row['carline']));
 
@@ -91,7 +94,7 @@ include "lib/elements/header.php";
                 ?>
             </form>
             <?php
-            endforeach;
+                endforeach;
             ?>
         </div>
     </div>
@@ -120,23 +123,9 @@ include "lib/elements/header.php";
 
                 //------------------------------------------------------------------------------------------
 
-                //Daten werden aktualisiert
-                $res = $pdo->prepare("UPDATE rosetta_data SET state = :state_neu, item_de = :item_de, item_fr = :item_fr, item_it = :item_it, category = :category, info = :info, carline = :carline, user_update = :user_update WHERE data_id = :data_id");
-                $result = $res->execute(array('state_neu' => 'active', 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'data_id'=> $data_id, 'category' => $category, 'info'=> $info, 'carline' => $car, 'user_update' => $username ));
-
-                //------------------------------------------------------------------------------------------
-
-                //Meldung wird ausgegeben
-                require_once "mc/model/responseObject.class.php";
-                $response = new responseObject();
-                $response->success("Der Eintrag mit der ID {$tempId} wurde erfolgreich aktualisiert");
-
-                //------------------------------------------------------------------------------------------
-
-                //aktualisierter Datensatz wird ausgegeben
-                $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $data_id");
-                require "mc/model/table_items.class.php";
-                table_items::showData();
+                //Daten aendern ueber Controller edit_item
+                require "mc/controller/edit_item.class.php";
+                edit_item::editData($item_de,$item_fr,$item_it,$category,$info,$car,$username,$data_id);
 
                 //------------------------------------------------------------------------------------------
 

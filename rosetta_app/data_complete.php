@@ -3,17 +3,9 @@
 include "lib/elements/header.php";
 ?>
 
-<?php
-//include connection to database
-include "mc/controller/db_connect.php";
-?>
-
-<?php
-//include navigation
-include 'lib/elements/navigation.php';
-?>
-
 <div class="container-fluid content">
+
+    <!------------------------------------------------------------->
 
     <div class="container">
         <div class='row'>
@@ -26,6 +18,9 @@ include 'lib/elements/navigation.php';
         </div>
     </div>
 
+    <!------------------------------------------------------------->
+
+</div>
 
 <?php
 //include header

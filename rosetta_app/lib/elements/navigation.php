@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="search_item.php">Suchen</a></li>
-                <li><a href="create_item.php"">Erstellen</a></li>
+                <li><a href="insert_item.php"">Erstellen</a></li>
                 <li><a href="upload_pdf.php">PDF hochladen</a></li>
                 <li><a href="upload_xml.php">XML hochladen</a></li>
 
