@@ -47,7 +47,12 @@ class table_items
 
 
         <?php
+            //$id fuer Zwischenspeicherung wird initialisiert
+            $id = 0;
             foreach ($res AS $row):
+
+            //in jeder Zeile wird $id inkrementiert
+            $id++;
 
             //Pruefung, ob Datensatz aktiv oder geloescht wurde
             if($row["state"]==$temp) {
@@ -64,9 +69,14 @@ class table_items
 
                             <div class="row">
 
+                                <!--Deutscher Text-->
                                 <div class="col-md-4 col itemFieldWrapper">
-                                    <div id="de_" class="itemField">
-                                        <?php
+
+                                    <?php
+                                    //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
+                                    echo "
+                                    <div id=\"de_$id\" class=\"itemField\">";
+
                                         if ($tempSearch == false) {
                                             echo $row["item_de"];
                                         } else {
@@ -76,9 +86,14 @@ class table_items
                                     </div>
                                 </div>
 
+                                <!--Franzoesischer Text-->
                                 <div class="col-md-4 col itemFieldWrapper">
-                                    <div class="itemField">
+
                                     <?php
+                                    //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
+                                    echo "
+                                    <div id=\"fr_$id\" class=\"itemField\">";
+
                                     if ($tempSearch == false) {
                                         echo $row["item_fr"];
                                     } else {
@@ -88,9 +103,14 @@ class table_items
                                     </div>
                                 </div>
 
+                                <!--Italienischer Text-->
                                 <div class="col-md-4 col itemFieldWrapper">
-                                   <div class="itemField">
+
                                     <?php
+                                    //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
+                                    echo "
+                                    <div id=\"it_$id\" class=\"itemField\">";
+
                                     if ($tempSearch == false) {
                                         echo $row["item_it"];
                                     } else {
@@ -106,6 +126,7 @@ class table_items
                             <!-- Kommentieren/Filtern/Kopieren -->
                             <div class="row editLine">
 
+                                <!--Icons fuer Deutsch-->
                                 <div class="col-md-4 white col">
                                     <a name="comment_de" title="Eintrag kommentieren" href="comment_item_de.php?data_id=<?php echo $row['data_id']?>">
                                         <img src="lib/img/button_comment.png"/>
@@ -113,10 +134,10 @@ class table_items
                                     <a name="comment_de" title="Eintrag filtern" href="filter_item.php?item_de=<?php echo $row['item_de']?>">
                                         <img src="lib/img/button_search.png"/>
                                     </a>
-                                    <a>
-                                        <img onclick="copyToClipboard('#de_')" src="lib/img/button_copy.png" class="editButton">
-                                    </a>
+                                    <?php echo "<img onclick=\"copyToClipboard('#de_$id')\" src=\"lib/img/button_copy.png\" class=\"editButton\">"; ?>
                                 </div>
+
+                                <!--Icons fuer Franzoesisch-->
                                 <div class="col-md-4 white col">
                                     <a name="comment_fr" title="Eintrag kommentieren" href="comment_item_fr.php?data_id=<?php echo $row['data_id']?>">
                                         <img src="lib/img/button_comment.png"/>
@@ -124,8 +145,10 @@ class table_items
                                     <a name="comment_de" title="Eintrag filtern" href="filter_item.php?item_fr=<?php echo $row['item_fr']?>">
                                         <img src="lib/img/button_search.png"/>
                                     </a>
-                                    <img src="lib/img/button_copy.png"/>
+                                    <?php echo "<img onclick=\"copyToClipboard('#fr_$id')\" src=\"lib/img/button_copy.png\" class=\"editButton\">"; ?>
                                 </div>
+
+                                <!--Icons fuer Italienisch-->
                                 <div class="col-md-4 white col">
                                     <a name="comment_it" title="Eintrag kommentieren" href="comment_item_it.php?data_id=<?php echo $row['data_id']?>">
                                         <img src="lib/img/button_comment.png"/>
@@ -133,7 +156,7 @@ class table_items
                                     <a name="comment_de" title="Eintrag filtern" href="filter_item.php?item_it=<?php echo $row['item_it']?>">
                                         <img src="lib/img/button_search.png"/>
                                     </a>
-                                    <img src="lib/img/button_copy.png"/>
+                                    <?php echo "<img onclick=\"copyToClipboard('#it_$id')\" src=\"lib/img/button_copy.png\" class=\"editButton\">"; ?>
                                 </div>
 
                             </div>
@@ -161,6 +184,7 @@ class table_items
                         <div class="col-md-3">
 
                             <div class="row">
+
                                 <!-- Rubrik -->
                                 <div class="col-md-4 white col ">
                                     <?php
@@ -171,6 +195,7 @@ class table_items
                                     }
                                     ?>
                                 </div>
+
                                 <!-- Info -->
                                 <div class="col-md-4 white col ">
                                     <?php
@@ -189,6 +214,7 @@ class table_items
                                 </div>
                             </div>
 
+                            <!--Carlines-->
                             <div class="row">
                                 <div class="col-md-12 white ">
                                     <span class="carlineHeadline">Enthalten in:</span>
@@ -200,8 +226,10 @@ class table_items
 
                         </div>
 
+                        <!--unterer Info-Bereich-->
                         <div class="col-md-12">
                             <div class="row itemInfo">
+
                                 <div class="col-md-3 itemBottom col borderRoundBottomLeft">Erstellt von <?php echo $row['user_create']?> am <?php echo date('d.m.Y H:i', strtotime($row['date_create']))?></div>
 
                                 <div class="col-md-3 itemBottom col">
@@ -235,6 +263,7 @@ class table_items
                 <?php
                     }//ENDE if($row["state"]==$temp)
                     endforeach
+
                 ?>
 
 
