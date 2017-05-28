@@ -65,7 +65,7 @@ class table_items
                             <div class="row">
 
                                 <div class="col-md-4 col itemFieldWrapper">
-                                    <div class="itemField">
+                                    <div id="de_" class="itemField">
                                         <?php
                                         if ($tempSearch == false) {
                                             echo $row["item_de"];
@@ -113,7 +113,9 @@ class table_items
                                     <a name="comment_de" title="Eintrag filtern" href="filter_item.php?item_de=<?php echo $row['item_de']?>">
                                         <img src="lib/img/button_search.png"/>
                                     </a>
-                                    <img src="lib/img/button_copy.png"/>
+                                    <a>
+                                        <img onclick="copyToClipboard('#de_')" src="lib/img/button_copy.png" class="editButton">
+                                    </a>
                                 </div>
                                 <div class="col-md-4 white col">
                                     <a name="comment_fr" title="Eintrag kommentieren" href="comment_item_fr.php?data_id=<?php echo $row['data_id']?>">
@@ -240,4 +242,28 @@ class table_items
 
 }
 }
+?>
+<!--Copy to clipboard-->
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
 
+        //kopierten Text in copiedValue speichern
+        var copiedValue = $(element).text();
+        //Leerzeichen ind copiedValue entfernen
+        while (copiedValue.indexOf('  ') > 0) {
+            copiedValue = copiedValue.replace('  ', '');
+            if(copiedValue.slice(-1)==' '){
+                //var deleteSpace = copiedValue.length-1;
+                copiedValue = copiedValue.slice(0, copiedValue.length-1);
+            }
+        }
+
+        $temp.val(copiedValue).select();
+        document.execCommand("copy");
+
+        console.log(copiedValue.length-1);
+        $temp.remove();
+    }
+</script>
