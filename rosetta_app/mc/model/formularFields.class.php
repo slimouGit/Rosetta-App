@@ -23,11 +23,11 @@ class formular
     }
 
     //input field
-    public function inputField($label,$name, $value, $placeholder, $id){
+    public function inputField($label,$name, $value, $placeholder, $id, $labelSize, $size){
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
-                        <label class=\"col-sm-2 control-label\">".$label."</label>
-                        <div class=\"col-sm-8\">
+                        <label class=\"col-sm-$labelSize control-label\">".$label."</label>
+                        <div class=\"col-sm-$size\">
                             <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"$name\" value=\"$value\" placeholder=\"$placeholder\" id=\"$id\">
                         </div>
                     </div>
@@ -35,11 +35,11 @@ class formular
     }
 
     //password field
-    public function passwordField($label,$name, $value, $placeholder, $id){
+    public function passwordField($label,$name, $value, $placeholder, $id, $labelSize, $size){
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
-                        <label class=\"col-sm-2 control-label\">".$label."</label>
-                        <div class=\"col-sm-8\">
+                        <label class=\"col-sm-$labelSize control-label\">".$label."</label>
+                        <div class=\"col-sm-$size\">
                             <input type=\"password\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"$name\" value=\"$value\" placeholder=\"$placeholder\" id=\"$id\">
                         </div>
                     </div>

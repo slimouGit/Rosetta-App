@@ -23,11 +23,11 @@ include "lib/elements/header.php";
 
                             // Objekt erzeugen
                             $form = new formular();
-                            $form->inputField("Deutsch", "item_de", "", "", "");
-                            $form->inputField("Französisch", "item_fr", "", "", "");
-                            $form->inputField("Italienisch", "item_it", "", "", "");
-                            $form->inputField("Rubrik", "category", "", "", "");
-                            $form->inputField("Info", "info", "", "", "");
+                            $form->inputField("Deutsch", "item_de", "", "", "", 2,  8);
+                            $form->inputField("Französisch", "item_fr", "", "", "", 2,  8);
+                            $form->inputField("Italienisch", "item_it", "", "", "", 2,  8);
+                            $form->inputField("Rubrik", "category", "", "", "", 2,  8);
+                            $form->inputField("Info", "info", "", "", "", 2,  8);
 
                             $form->selectStart("Carline");
                             $form->checkBox("ADAM");

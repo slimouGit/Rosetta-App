@@ -79,12 +79,12 @@ if($tempFormular) {
         <?php
         require_once "mc/model/formularFields.class.php";
         $form = new formular();
-        $form->inputField("Vorname", "forename", "", "", "");
-        $form->inputField("Nachname", "surname", "", "", "");
-        $form->inputField("Email", "email", "", "", "");
+        $form->inputField("Vorname", "forename", "", "", "", 2, 8);
+        $form->inputField("Nachname", "surname", "", "", "", 2,  8);
+        $form->inputField("Email", "email", "", "", "", 2,  8);
         $form->optionField("Authorisation", "User", "Admin");
-        $form->passwordField("Passwort", "password", "", "", "");
-        $form->passwordField("Passwort wiederholen", "password2", "", "", "");
+        $form->passwordField("Passwort", "password", "", "", "",2, 8);
+        $form->passwordField("Passwort wiederholen", "password2", "", "", "", 2,  8);
         $form->submitButton("2","Registrieren");
         ?>
 

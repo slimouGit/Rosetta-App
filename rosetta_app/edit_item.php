@@ -56,11 +56,11 @@ include "lib/elements/header.php";
                     $form = new formular();
 
                     $form->hiddenField("data_id", "" . $row["data_id"] . "");
-                    $form->inputField("Deutsch", "item_de", "" . $row["item_de"] . "", "", "");
-                    $form->inputField("Französisch", "item_fr", "" . $row["item_fr"] . "", "", "");
-                    $form->inputField("Italienisch", "item_it", "" . $row["item_it"] . "", "", "");
-                    $form->inputField("Rubrik", "category", "" . $row["category"] . "", "", "");
-                    $form->inputField("Info", "info", "" . $row["info"] . "", "", "");
+                    $form->inputField("Deutsch", "item_de", "" . $row["item_de"] . "", "", "", 2,  8);
+                    $form->inputField("Französisch", "item_fr", "" . $row["item_fr"] . "", "", "", 2,  8);
+                    $form->inputField("Italienisch", "item_it", "" . $row["item_it"] . "", "", "", 2,  8);
+                    $form->inputField("Rubrik", "category", "" . $row["category"] . "", "", "", 2,  8);
+                    $form->inputField("Info", "info", "" . $row["info"] . "", "", "", 2,  8);
 
                     $form->selectStart("Carline");
 

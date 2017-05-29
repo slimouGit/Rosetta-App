@@ -49,7 +49,7 @@ include "lib/elements/header.php";
 
                         $form->hiddenField("data_id", "" . $row["data_id"] . "");
                         $form->labelField($row["item_fr"]);
-                        $form->inputField("Kommentar", "item_fr_comment", "" . $row["item_fr_comment"] . "", "", "");
+                        $form->inputField("Kommentar", "item_fr_comment", "" . $row["item_fr_comment"] . "", "", "", 2,  8);
 
                         $form->submitButton("2","Kommentieren");
                     }
