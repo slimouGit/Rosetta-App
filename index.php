@@ -16,9 +16,10 @@ include "rosetta_app/mc/controller/db_connect.php";
 include 'rosetta_app/lib/elements/navigationStart.php';
 ?>
 
+
 <div class="container-fluid content">
 
-    <div class="container">
+    <div class="col-lg-12">
         <div class='row'>
             <h1>Rosetta-App welcome</h1>
         </div>
@@ -47,12 +48,7 @@ include 'rosetta_app/lib/elements/navigationStart.php';
 
     }
     ?>
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Login</title>
-    </head>
-    <body>
+
 
     <?php
     if(isset($errorMessage)) {
@@ -60,18 +56,22 @@ include 'rosetta_app/lib/elements/navigationStart.php';
     }
     ?>
 
-    <form action="?login=1" method="post">
+    <div class="formWrapper col-lg-3">
+        <div class="formField">
+            <form action="?login=1" method="post">
 
-        <?php
-        require_once "rosetta_app/mc/model/formularFields.class.php";
-        $form = new formular();
-        $form->inputField("E-Mail", "email", "", "", "");
-        $form->passwordField("Passwort", "password", "", "", "");
-        $form->submitButton("2","Login");
-        ?>
+                <?php
+                require_once "rosetta_app/mc/model/formularFields.class.php";
+                $form = new formular();
+                $form->inputField("", "email", "", "Email", "", 0,  11);
+                $form->passwordField("", "password", "Passwort", "", "", 0,  11);
+                $form->submitButton("0","Login");
+                ?>
 
 
-    </form>
+            </form>
+        </div>
+    </div>
 
     </body>
     </html>
