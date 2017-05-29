@@ -11,7 +11,7 @@ include "lib/elements/header.php";
             <h1>Rosetta-App edit user</h1>
             <?php
             //include table_items
-            include "mc/model/table_user.php";
+            include "mc/model/table_user.class.php";
             ?>
         </div>
     </div>
