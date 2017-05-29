@@ -61,7 +61,7 @@ if(isset($_GET['register'])) {
 
             //Meldung wird ausgegeben
             require_once "mc/model/responseObject.class.php";
-            $response = new responseText();
+            $response = new responseObject();
             $response->success("Der Nutzer wurde erfolgreich registriert");
 
             $tempFormular = false;
