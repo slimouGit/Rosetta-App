@@ -1,9 +1,17 @@
 <?php
 
-//query
-$res = $pdo->query("SELECT * FROM `rosetta_users`");
+class table_user
+{
 
-?>
+    public static function showUser()
+    {
+        self::printUser("active");
+    }
+
+    function printUser(){
+        global $res;
+
+        ?>
 
         <div class="row">
             <div class="col-md-12 col itemHeader">
@@ -15,9 +23,9 @@ $res = $pdo->query("SELECT * FROM `rosetta_users`");
                 <div class="col-md-2 col">Bearbeiten</div>
             </div>
         </div>
-<?php
+    <?php
 
-foreach ($res AS $row){
+        foreach ($res AS $row):
     ?>
 
         <div class="row ">
@@ -35,5 +43,10 @@ foreach ($res AS $row){
             </div>
         </div>
 
+
     <?php
-};
+        endforeach;
+
+    }//ENDE printUser
+}//ENDE class table_user
+?>

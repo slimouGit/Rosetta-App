@@ -10,8 +10,9 @@ include "lib/elements/header.php";
         <div class='row'>
             <h1>Rosetta-App edit user</h1>
             <?php
-            //include table_items
-            include "mc/model/table_user.class.php";
+            $res = $pdo->query("SELECT * FROM `rosetta_users`");
+            require "mc/model/table_user.class.php";
+            table_user::showUser();
             ?>
         </div>
     </div>
