@@ -38,7 +38,7 @@ class table_user
                 <div class="col-md-2 col">
                     <a href="edit_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_edit.png"/></a>
                     <a href="edit_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_pwd.png"/></a>
-                    <a href="edit_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_delete.png"/></a>
+                    <a href="delete_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_delete.png"/></a>
                 </div>
             </div>
         </div>
