@@ -17,7 +17,7 @@ class edit_user
     function editUser($forename,$surname,$email,$authorization,$user_id){
 
         global $res;
-
+        $currentDate = date('d.m.Y H:i');
         //---------------------------------------------------------------------------------------
 
         //include connection to database
@@ -26,8 +26,8 @@ class edit_user
         //---------------------------------------------------------------------------------------
 
         //Daten werden aktualisiert
-        $res = $pdo->prepare("UPDATE rosetta_users SET forename = :forename, surname = :surname, email = :email, authorization = :authorization WHERE user_id = :user_id");
-        $res->execute(array('forename' => $forename, 'surname' => $surname, 'email' => $email, 'authorization'=> $authorization, 'user_id'=> $user_id));
+        $res = $pdo->prepare("UPDATE rosetta_users SET forename = :forename, surname = :surname, email = :email, authorization = :authorization, update_user = :update_user WHERE user_id = :user_id");
+        $res->execute(array('forename' => $forename, 'surname' => $surname, 'email' => $email, 'authorization'=> $authorization, 'update_user'=> $currentDate, 'user_id'=> $user_id));
 
         //------------------------------------------------------------------------------------------
 
