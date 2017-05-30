@@ -66,6 +66,7 @@ include 'rosetta_app/lib/elements/navigationStart.php';
                 $form->inputField("", "email", "", "Email", "", 0,  11);
                 $form->passwordField("", "password", "Passwort", "", "", 0,  11);
                 $form->submitButton("0","Login");
+                $form->ahref("#","Passwort vergessen");
                 ?>
 
 
