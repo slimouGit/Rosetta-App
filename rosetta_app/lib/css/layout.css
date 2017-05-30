@@ -169,6 +169,17 @@ body{margin:0px;padding:0px;}
 
 
 
+
+/*User Tabelle*/
+.userTableRow{
+    border-bottom: 1px dashed #2aabd2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
 /******************************************************************/
 
 span.multiselect-native-select {

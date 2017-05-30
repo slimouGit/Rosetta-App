@@ -3,7 +3,37 @@
 //query
 $res = $pdo->query("SELECT * FROM `rosetta_users`");
 
+?>
+
+        <div class="row">
+            <div class="col-md-12 col itemHeader">
+                <div class="col-md-1 col">User ID</div>
+                <div class="col-md-2 col">Vorname</div>
+                <div class="col-md-2 col">Nachname</div>
+                <div class="col-md-3 col">Email</div>
+                <div class="col-md-2 col">Authorisation</div>
+                <div class="col-md-2 col">Bearbeiten</div>
+            </div>
+        </div>
+<?php
+
 foreach ($res AS $row){
-    var_dump($row);
-    echo "<br/><br/>";
+    ?>
+
+        <div class="row ">
+            <div class="col-md-12 col userTableRow">
+                <div class="col-md-1 col"><?php echo $row["user_id"]; ?></div>
+                <div class="col-md-2 col"><?php echo $row["forename"]; ?></div>
+                <div class="col-md-2 col"><?php echo $row["surname"]; ?></div>
+                <div class="col-md-3 col"><?php echo $row["email"]; ?></div>
+                <div class="col-md-2 col"><?php echo $row["authorization"]; ?></div>
+                <div class="col-md-2 col">
+                    <a href="edit_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_edit.png"/></a>
+                    <a href="edit_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_pwd.png"/></a>
+                    <a href="edit_user.php?user_id=<?php echo $row['user_id']?>"><img src="lib/img/button_delete.png"/></a>
+                </div>
+            </div>
+        </div>
+
+    <?php
 };

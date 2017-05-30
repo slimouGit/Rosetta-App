@@ -1,5 +1,4 @@
 <?php
-
 //include header
 include "lib/elements/header.php";
 ?>
@@ -8,28 +7,14 @@ include "lib/elements/header.php";
     <div class="container-fluid content">
 
     <div class="container">
-
-        <!------------------------------------------------------------->
-
         <div class='row'>
             <h1>Rosetta-App edit user</h1>
-        </div>
-
-        <!------------------------------------------------------------->
-
-        <div class='row'>
-            <p>Kommt an</p>
-
             <?php
-            $tempId = $_GET["user_id"];
-            echo $tempId;
+            //include table_items
+            include "mc/model/table_user.class.php";
             ?>
         </div>
     </div>
-
-
-    </div>
-
 
 <?php
 //include header
