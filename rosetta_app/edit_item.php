@@ -17,7 +17,6 @@ include "lib/elements/header.php";
 
         <!------------------------------------------------------------->
 
-        <div class='row'>
             <?php
 
             $hideForm ="";
@@ -27,6 +26,11 @@ include "lib/elements/header.php";
                 $_GET["data_id"] = $_POST['data_id'];
                 $hideForm = "true";
             };
+
+            //------------------------------------------------------------------------------------------
+
+            //
+            if(!$hideForm=="true") {
 
             //------------------------------------------------------------------------------------------
 
@@ -43,61 +47,63 @@ include "lib/elements/header.php";
                 $carline =  $row['carline'];
                 $carline = array_map('trim', explode(", ", $row['carline']));
 
-                ?>
+            ?>
 
-            <form action="?change_item=1" method = "post">
+            <div class='row'>
+                <div class="formField">
 
-                <?php
+                    <form action="?change_item=1" method = "post">
 
-                require_once "mc/model/formularFields.class.php";
+                        <?php
 
-                if(!$hideForm=="true"){
+                        require_once "mc/model/formularFields.class.php";
 
-                    $form = new formular();
+                            $form = new formular();
 
-                    $form->hiddenField("data_id", "" . $row["data_id"] . "");
-                    $form->inputField("Deutsch", "item_de", "" . $row["item_de"] . "", "", "", 2,  8);
-                    $form->inputField("Französisch", "item_fr", "" . $row["item_fr"] . "", "", "", 2,  8);
-                    $form->inputField("Italienisch", "item_it", "" . $row["item_it"] . "", "", "", 2,  8);
-                    $form->inputField("Rubrik", "category", "" . $row["category"] . "", "", "", 2,  8);
-                    $form->inputField("Info", "info", "" . $row["info"] . "", "", "", 2,  8);
+                            $form->hiddenField("data_id", "" . $row["data_id"] . "");
+                            $form->inputField("Deutsch", "item_de", "" . $row["item_de"] . "", "", "", 2,  8);
+                            $form->inputField("Französisch", "item_fr", "" . $row["item_fr"] . "", "", "", 2,  8);
+                            $form->inputField("Italienisch", "item_it", "" . $row["item_it"] . "", "", "", 2,  8);
+                            $form->inputField("Rubrik", "category", "" . $row["category"] . "", "", "", 2,  8);
+                            $form->inputField("Info", "info", "" . $row["info"] . "", "", "", 2,  8);
 
-                    $form->selectStart("Carline");
+                            $form->selectStart("Carline");
 
 
-                    $form->carlineCheck("ADAM", $carline);
-                    $form->carlineCheck("Ampera", $carline);
-                    $form->carlineCheck("Antara", $carline);
-                    $form->carlineCheck("AstraST", $carline);
-                    $form->carlineCheck("AstraNG", $carline);
-                    $form->carlineCheck("Cascada", $carline);
-                    $form->carlineCheck("ComboKastenwagen", $carline);
-                    $form->carlineCheck("ComboPassenger", $carline);
-                    $form->carlineCheck("Corsa", $carline);
-                    $form->carlineCheck("Crossland", $carline);
-                    $form->carlineCheck("GTC_OPC", $carline);
-                    $form->carlineCheck("InsigniaLimousine", $carline);
-                    $form->carlineCheck("InsigniaOPC", $carline);
-                    $form->carlineCheck("InsigniaST", $carline);
-                    $form->carlineCheck("KARL", $carline);
-                    $form->carlineCheck("Meriva", $carline);
-                    $form->carlineCheck("MokkaX", $carline);
-                    $form->carlineCheck("MovanoCombiBus", $carline);
-                    $form->carlineCheck("MovanoFahrgestell", $carline);
-                    $form->carlineCheck("MovanoVan", $carline);
-                    $form->carlineCheck("Zafira", $carline);
+                            $form->carlineCheck("ADAM", $carline);
+                            $form->carlineCheck("Ampera", $carline);
+                            $form->carlineCheck("Antara", $carline);
+                            $form->carlineCheck("AstraST", $carline);
+                            $form->carlineCheck("AstraNG", $carline);
+                            $form->carlineCheck("Cascada", $carline);
+                            $form->carlineCheck("ComboKastenwagen", $carline);
+                            $form->carlineCheck("ComboPassenger", $carline);
+                            $form->carlineCheck("Corsa", $carline);
+                            $form->carlineCheck("Crossland", $carline);
+                            $form->carlineCheck("GTC_OPC", $carline);
+                            $form->carlineCheck("InsigniaLimousine", $carline);
+                            $form->carlineCheck("InsigniaOPC", $carline);
+                            $form->carlineCheck("InsigniaST", $carline);
+                            $form->carlineCheck("KARL", $carline);
+                            $form->carlineCheck("Meriva", $carline);
+                            $form->carlineCheck("MokkaX", $carline);
+                            $form->carlineCheck("MovanoCombiBus", $carline);
+                            $form->carlineCheck("MovanoFahrgestell", $carline);
+                            $form->carlineCheck("MovanoVan", $carline);
+                            $form->carlineCheck("Zafira", $carline);
 
-                    $form->selectFinish();
+                            $form->selectFinish();
 
-                    $form->submitButton("2","Ändern");
-                }
-                ?>
-            </form>
+                            $form->submitButton("2","Ändern");
+                        ?>
+                    </form>
+                </div>
+            </div>
             <?php
                 endforeach;
+                }//Ende if(!$hideForm=="true")
             ?>
-        </div>
-    </div>
+
 
     <div class="container">
         <div class='row'>

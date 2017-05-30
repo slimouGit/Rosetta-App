@@ -4,7 +4,7 @@
 include "lib/elements/header.php";
 ?>
 
-    //------------------------------------------------------------------------------------------
+    <!------------------------------------------------------------------------------------------>
 
     <div class="container-fluid content">
 
@@ -18,59 +18,55 @@ include "lib/elements/header.php";
 
         <!------------------------------------------------------------->
 
-        <div class='row'>
-            <div class="formField">
-
-            <?php
+        <?php
 
             $hideForm ="";
 
-            //nachdem der Button geklicktwurde
+            //
             if(empty($_GET["user_id"])){
                 $_GET["user_id"] = $_POST['user_id'];
                 $hideForm = "true";
             };
+
+            //
+            if(!$hideForm=="true") {
 
             //------------------------------------------------------------------------------------------
 
             //
             $tempId = $_GET["user_id"];
 
+            //
             $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
 
+            //
             foreach ($res AS $row):
 
                 ?>
 
-                 <form action="?change_user=1" method = "post">
+            <div class='row'>
+                <div class="formField">
 
-                    <?php
-
-                    require_once "mc/model/formularFields.class.php";
-
-                        if(!$hideForm=="true") {
-
+                     <form action="?change_user=1" method = "post">
+                        <?php
+                        require_once "mc/model/formularFields.class.php";
                             $form = new formular();
-
                             $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->inputField("Vorname", "forename", "" . $row["forename"] . "", "", "", 2, 8);
                             $form->inputField("Nachname", "surname", "" . $row["surname"] . "", "", "", 2, 8);
                             $form->inputField("Email", "email", "" . $row["email"] . "", "", "", 2, 8);
                             $form->inputField("Authorisation", "authorization", "" . $row["authorization"] . "", "", "", 2, 8);
-
                             $form->submitButton("2", "Ändern");
+                        ?>
+                    </form>
+                </div><!--ENDE class="formField"-->
+            </div><!--ENDE class='row' -->
 
-                        }
-                    ?>
 
-                </form>
-
-                 <?php
+                <?php
             endforeach;
+            }//Ende if(!$hideForm=="true")
             ?>
-
-            </div>
-        </div>
 
         <!------------------------------------------------------>
 
