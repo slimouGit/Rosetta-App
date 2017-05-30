@@ -78,6 +78,11 @@ class formular
                 </div>";
     }
 
+    //link
+    public function ahref($target,$title){
+        echo "<a href=\"$target\">$title</a>";
+    }
+
     //------------------------------------------------------
 
     //start multiselect
