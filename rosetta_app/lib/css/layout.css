@@ -178,6 +178,21 @@ body{margin:0px;padding:0px;}
 }
 
 
+/******************************************************************/
+
+
+
+/*Daeshboard*/
+.daeshbordIcon{
+    width: 45%;
+    height:150px;
+    color: #fff;
+    margin:10px;
+    background-color: #2e6da4;
+    box-shadow: 2px 2px 2px #888888;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
 
 
 /******************************************************************/

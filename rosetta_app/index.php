@@ -10,9 +10,13 @@ include "lib/elements/header.php";
     <div class="container">
         <div class='row'>
             <h1>Rosetta-App</h1>
-            <p>logged in as</p>
             <?php
-            echo $username;
+            echo "Hallo " . $username;
+            ?>
+        </div>
+        <div class="row">
+            <?php
+            include "mc/model/daeshboard.php";
             ?>
         </div>
     </div>
