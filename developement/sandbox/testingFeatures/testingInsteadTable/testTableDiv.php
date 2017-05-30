@@ -1,17 +1,194 @@
+<head>
+    <link href="https://slimou.de/___Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <style>
 
+    body{margin:0px;padding:0px;}
+    /******************************************/
 
+
+    /*Container fuer Datenausgabe*/
+    .col {
+        background: none;
+        height: auto;
+    }
+
+    .row .white {
+        background: white;
+        color: black;
+    }
+
+    .row .bottomLine {
+        border-bottom: 1px dashed #888888;
+    }
+
+    .row .topLine {
+        border-top: 1px dashed #888888;
+    }
+
+    /*Feld enthaelt .itemField mit Daten*/
+    .itemFieldWrapper{
+        padding: 0px 10px;
+    }
+
+    /*FormularWrapper*/
+    .formWrapper{
+        padding: 10px 0px;
+    }
+
+    /*Felder mit Daten*/
+    .itemField{
+        background-color: #dcedef;
+        padding: 5px 5px 10px 10px;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+
+    /*Felder mit Daten*/
+    .formField{
+        background-color: #ddeff2;
+        padding: 20px 5px 10px 10px;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        box-shadow: 2px 2px 2px #888888;
+    }
+
+    .formMarginBottom{
+        margin-bottom:20px;
+    }
+    /*Felder mit Icons*/
+    .row .editLine {
+        padding: 10px 0px;
+    }
+
+    .itemWrapper{
+        margin: 10px 0px;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        box-shadow: 2px 2px 2px #888888;
+    }
+
+    .itemHeader {
+        margin: 10px 0px;
+        padding: 10px ;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        box-shadow: 2px 2px 2px #888888;
+    }
+
+    .topLineDashed{
+        border-top: 1px dashed #2aabd2;
+    }
+
+    /*Feld mit Carline-Angaben*/
+    .carlineHeadline {
+        margin-top:10px;
+        padding-top:10px;
+        border-top: 1px dashed #2aabd2;
+        font-size: .75em;
+        font-weight: bold;
+        color: #1b6d85;
+        display: block;
+    }
+
+    /*Kommentarzeile*/
+    .comment {
+        color: #ff0000;
+        font-size: .75em;
+    }
+    .userComment{
+        font-weight: bold;
+        color: #8c8c8c;
+        font-size: .75em;
+    }
+
+    .dateComment{
+        font-size: .75em;
+    }
+
+    .commentInfo {
+        margin-top: 5px;
+        padding: 5px 0px;
+    }
+
+    /*Zeile mit Daten zum Eintrag => userCreate, userUpdate, userDelete, data_id*/
+    .itemInfo {
+        margin-top: 5px;
+    }
+
+    .row .itemBottom {
+        background-color: #2e6da4;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        font-size: .75em;
+    }
+
+
+    .borderRoundBottomLeft {
+        border-bottom-left-radius: 1em;
+    }
+
+    .borderRoundBottomRight {
+        border-bottom-right-radius: 1em;
+    }
+
+    /******************************************/
+
+
+    /*Highlighting der Suchfunktion*/
+    .highlight{background-color: yellow; }
+    /******************************************/
+
+
+    /*Item-Container*/
+    .itemRow{
+        margin: 20px; padding-bottom: 30px;
+    }
+    /******************************************/
+
+
+    /**/
+    .navbar{
+        color: #fff;
+        background-color: #2e6da4;
+        box-shadow: 2px 2px 2px #888888;
+    }
+
+    /**/
+    .content {
+        position: relative;
+        top: 50px;
+    }
+    /******************************************/
+
+
+    /**/
+    .userRow {
+        color: #fff;
+        background-color: #2e6da4;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    /******************************************/
+
+
+
+
+    /*User Tabelle*/
+    .userTableRow{
+        border-bottom: 1px dashed #2aabd2;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    /******************************************************************/
 
 </style>
-<?php
-//include header
-include "lib/elements/header.php";
-?>
+</head>
 
-<?php
-//include connection to database
-include "mc/controller/db_connect.php";
-?>
+
+
 
 <div class="container">
 
@@ -97,8 +274,3 @@ include "mc/controller/db_connect.php";
     </div><!-- wrapper -->
 
 </div><!-- container -->
-
-<?php
-//include header
-include "lib/elements/footer.php";
-?>
