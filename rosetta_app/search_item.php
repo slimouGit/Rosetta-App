@@ -3,14 +3,6 @@
 include "lib/elements/header.php";
 ?>
 
-    <script>
-        $(function() {
-            $( "#skills" ).autocomplete({
-                source: 'mc/controller/autocomplete.php'
-            });
-        });
-    </script>
-
     <div class="container-fluid content">
 
     <div class="container">
