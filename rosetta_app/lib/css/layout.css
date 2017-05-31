@@ -282,3 +282,16 @@ span.multiselect-native-select select {
     margin-left: -20px;
     margin-right: 0
 }
+
+/****************************************************/
+
+/*textarea*/
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 10px;
+    max-height: 500px;
+}
+
+/****************************************************/

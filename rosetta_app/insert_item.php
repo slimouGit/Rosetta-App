@@ -23,9 +23,9 @@ include "lib/elements/header.php";
 
                             // Objekt erzeugen
                             $form = new formular();
-                            $form->inputField("Deutsch", "item_de", "", "", "", 2,  8);
-                            $form->inputField("Französisch", "item_fr", "", "", "", 2,  8);
-                            $form->inputField("Italienisch", "item_it", "", "", "", 2,  8);
+                            $form->textareaField("Deutsch", "item_de", "",2,  8);
+                            $form->textareaField("Französisch", "item_fr", "",2,  8);
+                            $form->textareaField("Italienisch", "item_it", "",2,  8);
                             $form->inputField("Rubrik", "category", "", "", "", 2,  8);
                             $form->inputField("Info", "info", "", "", "", 2,  8);
 

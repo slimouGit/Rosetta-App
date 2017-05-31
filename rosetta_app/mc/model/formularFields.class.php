@@ -27,11 +27,23 @@ class formular
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
                         <label class=\"col-sm-$labelSize control-label\">".$label."</label>
-                        <div class=\"col-sm-$size\">
-                            <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"$name\" value=\"$value\" placeholder=\"$placeholder\" id=\"$id\">
-                        </div>
+                    <div class=\"col-sm-$size\">
+                        <input type=\"text\" class=\"form-control\" size=\"40\" maxlength=\"250\" name=\"$name\" value=\"$value\" placeholder=\"$placeholder\" id=\"$id\">
                     </div>
-                </div>";
+                    </div>
+            </div>";
+    }
+
+    //textarea
+    public function textareaField($label,$name,$value, $labelSize, $size){
+        echo "<div class=\"row formMarginBottom\">
+                    <div class=\"form-group\">
+                        <label class=\"col-sm-$labelSize control-label\">".$label."</label>
+                    <div class=\"col-sm-$size\">
+                        <textarea onkeyup='auto_grow(this)' class=\"form-control\" name=\"$name\">$value</textarea>
+                    </div>
+                </div>
+            </div>";
     }
 
     //password field
