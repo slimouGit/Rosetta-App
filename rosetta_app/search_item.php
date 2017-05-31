@@ -51,13 +51,19 @@ include "lib/elements/header.php";
                 }
                 if (!$error) {
                     //$cat wir mit Spalten definiert, in denen gesucht werden soll
+                    //der Eintrag muss auf 'active' gesetzt sein
                     $cat = 'item_de, item_fr, item_it, category, info, carline';
-                    $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $_POST['search'] . "%'");
+                    $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $_POST['search'] . "%' AND state LIKE 'active'");
 
                     //pruefen, ob Suche ein Resultat ergibt
                     $count = $res->rowCount();
                     if ($count == 0) {
-                        echo "Kein Ergebnis für " . $_POST['search'];
+
+                        //Meldung wird ausgegeben
+                        require_once "mc/model/responseObject.class.php";
+                        $response = new responseObject();
+                        $response->response("Kein Ergebnis für {$_POST['search']} verfügbar","6","responseFalse");
+
                     } else {
                         require "mc/model/table_items.class.php";
                         table_items::showData();
