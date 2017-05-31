@@ -6,8 +6,7 @@ include "lib/elements/header.php";
     <script>
         $(function() {
             $( "#skills" ).autocomplete({
-                source: 'autocomplete.php',
-                minLength:3
+                source: 'mc/controller/autocomplete.php'
             });
         });
     </script>
@@ -27,9 +26,7 @@ include "lib/elements/header.php";
     <div class='row'>
         <div class="formWrapper col-lg-8">
             <div class="formField">
-
                 <form action="?search_item=1" method = "post">
-                    <label for="skills" class="col-sm-2 control-label">Was soll gesucht werden</label>
                     <div class="col-sm-6 ui-widget">
                         <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
                     </div>
