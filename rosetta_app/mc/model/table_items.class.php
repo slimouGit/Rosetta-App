@@ -165,25 +165,5 @@ class table_items
 
 <!--Script zum Kopieren in die Zwischenablage-->
 <script>
-    function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
 
-        //kopierten Text in copiedValue speichern
-        var copiedValue = $(element).text();
-        //Leerzeichen ind copiedValue entfernen
-        while (copiedValue.indexOf('  ') > 0) {
-            copiedValue = copiedValue.replace('  ', '');
-            if(copiedValue.slice(-1)==' '){
-                //var deleteSpace = copiedValue.length-1;
-                copiedValue = copiedValue.slice(0, copiedValue.length-1);
-            }
-        }
-
-        $temp.val(copiedValue).select();
-        document.execCommand("copy");
-
-        console.log(copiedValue.length-1);
-        $temp.remove();
-    }
 </script>
