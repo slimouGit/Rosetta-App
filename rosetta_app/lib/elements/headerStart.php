@@ -38,7 +38,7 @@
     <script src="http://localhost/Rosetta-App/rosetta_app/lib/js/script_preLoaded.js"></script>
     <!-- css local -->
     <link rel="stylesheet" href="http://localhost/Rosetta-App/rosetta_app/lib/css/layout.css">
-    -->
+
 
     <!-- ONLINE -->
     <!-- Bootstrap online --
