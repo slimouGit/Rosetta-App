@@ -34,7 +34,7 @@ class edit_user
         //Meldung wird ausgegeben
         require_once "mc/model/responseObject.class.php";
         $response = new responseObject();
-        $response->success("Der Nutzer mit der ID {$user_id} wurde erfolgreich aktualisiert");
+        $response->response("Der Benutzer mit der ID {$user_id} wurde erfolgreich geändert","6","responseSuccess");
 
         //------------------------------------------------------------------------------------------
 

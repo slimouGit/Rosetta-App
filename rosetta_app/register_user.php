@@ -48,6 +48,12 @@ include "lib/elements/header.php";
             <?php
 
             if(isset($_GET['register'])) {
+
+                //Response-Objekt erzeugen
+                require_once "mc/model/responseObject.class.php";
+                $response = new responseObject();
+                //------------------------------------------------------
+
                 $error = false;
                 $forename = $_POST['forename'];
                 $surname = $_POST['surname'];
@@ -57,15 +63,16 @@ include "lib/elements/header.php";
                 $password2 = $_POST['password2'];
 
                 if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
+                    $response->response("Bitte eine gültige Email-Adresse eingeben","6","responseFalse");
+
                     $error = true;
                 }
                 if(strlen($password) == 0) {
-                    echo 'Bitte ein Passwort angeben<br>';
+                    $response->response("Bitte ein Passwort eingeben","6","responseFalse");
                     $error = true;
                 }
                 if($password != $password2) {
-                    echo 'Die Passwörter müssen übereinstimmen<br>';
+                    $response->response("Die Passwörter müssen übereinstimmen","6","responseFalse");
                     $error = true;
                 }
 
@@ -76,7 +83,7 @@ include "lib/elements/header.php";
                     $user = $res->fetch();
 
                     if($user !== false) {
-                        echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+                        $response->response("Diese Email-Adresse ist bereits vergeben","6","responseFalse");
                         $error = true;
                     }
                 }
@@ -90,14 +97,11 @@ include "lib/elements/header.php";
 
                     if($result) {
 
-                        //Meldung wird ausgegeben
-                        require_once "mc/model/responseObject.class.php";
-                        $response = new responseObject();
-                        $response->success("Der Nutzer wurde erfolgreich registriert");
+                        $response->response("Der Nutzer wurde erfolgreich registriert","6","responseSuccess");
 
                         $tempFormular = false;
                     } else {
-                        echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+                        $response->response("Beim Speichern ist ein Fehler aufgetreten","6","responseFalse");
                     }
                 }
             }

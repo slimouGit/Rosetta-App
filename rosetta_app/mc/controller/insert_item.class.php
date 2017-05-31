@@ -31,7 +31,7 @@ class insert_item
         //Meldung wird ausgegeben
         require_once "mc/model/responseObject.class.php";
         $response = new responseObject();
-        $response->success("Der Eintrag wurde erfolgreich erstellt");
+        $response->response("Der Eintrag wurde erfolgreich erstellt","6","responseSuccess");
 
         //------------------------------------------------------------------------------------------
 

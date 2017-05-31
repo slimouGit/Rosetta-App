@@ -86,7 +86,7 @@ include "lib/elements/header.php";
                 //Meldung wird ausgegeben
                 require_once "mc/model/responseObject.class.php";
                 $response = new responseObject();
-                $response->success("Der Eintrag mit der ID {$tempId} wurde erfolgreich kommentiert");
+                $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich kommentiert","6","responseSuccess");
 
                 //------------------------------------------------------------------------------------------
 

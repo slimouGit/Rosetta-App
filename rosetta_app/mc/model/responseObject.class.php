@@ -30,9 +30,11 @@ class responseObject
      * @param $class
      */
     public function response($response, $size, $class){
-        echo "<div class=\"row formMarginBottom $class\">
-                    <div class=\"col-sm-$size\">
-                            <p>$response</p>
+        echo "<div class='container'>
+                <div class=\"container row formMarginBottom col-sm-$size response $class\">
+                    <div class=\"\">
+                            $response
+                    </div>
                     </div>
                 </div>";
     }

@@ -34,7 +34,7 @@ class delete_item
         //Meldung wird ausgegeben
         require_once "mc/model/responseObject.class.php";
         $response = new responseObject();
-        $response->success("Der Eintrag mit der ID {$tempId} wurde erfolgreich gelöscht");
+        $response->response("Der Eintrag mit der ID {$tempId} wurde erfolgreich gelöscht","6","responseSuccess");
 
         //------------------------------------------------------------------------------------------
 
