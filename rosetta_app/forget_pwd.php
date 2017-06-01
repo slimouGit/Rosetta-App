@@ -21,7 +21,6 @@ include 'lib/elements/navigationStart.php';
     <div class="col-lg-12">
         <div class='row'>
             <h1>Passwort vergessen</h1>
-            <p>Bitte die Email-Adresse angeben, an die das neue Passwort gesendet werden soll.</p>
         </div>
     </div>
 
@@ -84,8 +83,22 @@ include 'lib/elements/navigationStart.php';
                     Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.';
 
                 mail($empfaenger, $betreff, $text, $from);
+                ?>
+                <div class="col-lg-12">
+                    <div class='row'>
+                        <div class="formWrapper col-lg-3">
+                            <?php
+                            //Meldung wird ausgegeben
+                            require_once "mc/model/responseObject.class.php";
+                            $response = new responseObject();
+                            $response->response("Ein Link wurde an Deine Email geschickt","6","responseSuccess");
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <?php
 
-                echo "Es wurde ein Link an Deine Email gesendet.";
+
                 $showForm = false;
             }
         }
