@@ -13,24 +13,29 @@ include "lib/elements/header.php";
         <div class='row'>
             <h1>Rosetta-App change password</h1>
         </div>
-        <?php
-        echo $userid;
-        ?>
+
         <!------------------------------------------------------------->
         <?php
 
+        //--------------------------------------------------------------------
+        //es wird unterschieden, ob der Nutzer ueber die Navigation oder aus "table_user.class" kommt,
+        //also, ob er sein eigenes Passwort oder als Administrator das eines Nutzers aendern will
+
+        //$_GET["user_id"] ist leer, wenn ueber Navigation "Passwort ändern" auf Seite gewechselt wird
         if(empty($_GET["user_id"])){
+                //$_POST["user_id"] ist leer, wenn nicht ueber hidden-field im Formular uebergeben wurde
+                //dann wird $_POST["user_id"] mit der ID des aktuellen Nutzers initialisiert,
+                //er aendert also sein eigenes Passwort
                 if(empty($_POST['user_id'])){
-                    echo "Post_id is empty";
                     $_POST['user_id'] = $userid;
                 }
-                echo "User ID is empty";
                 $_GET["user_id"] = $_POST['user_id'];
             };
 
             //$tempId wird mit der uebergebenen ID aus table_user.class initialisiert
             $tempId = $_GET["user_id"];
-            echo $tempId;
+
+        //--------------------------------------------------------------------
 
             $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
 
