@@ -35,6 +35,7 @@ include "lib/elements/header.php";
 
             //
             $tempId = $_GET["user_id"];
+            echo $tempId;
 
             //
             $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");

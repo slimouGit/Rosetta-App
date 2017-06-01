@@ -11,12 +11,35 @@ include "lib/elements/header.php";
         <!-------------------------------------------------------------->
 
         <div class='row'>
-            <h1>Rosetta-App change own password</h1>
+            <h1>Rosetta-App change password</h1>
         </div>
-
+        <?php
+        echo $userid;
+        ?>
         <!------------------------------------------------------------->
+        <?php
 
-        <div class='row'>
+        if(empty($_GET["user_id"])){
+                if(empty($_POST['user_id'])){
+                    echo "Post_id is empty";
+                    $_POST['user_id'] = $userid;
+                }
+                echo "User ID is empty";
+                $_GET["user_id"] = $_POST['user_id'];
+            };
+
+            //$tempId wird mit der uebergebenen ID aus table_user.class initialisiert
+            $tempId = $_GET["user_id"];
+            echo $tempId;
+
+            $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
+
+            //
+            foreach ($res AS $row):
+
+                ?>
+
+                <div class='row'>
             <div class="formWrapper col-lg-8">
                 <div class="formField">
 
@@ -25,6 +48,7 @@ include "lib/elements/header.php";
                         <?php
                             require_once "mc/model/formularFields.class.php";
                             $form = new formular();
+                            $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->passwordField("Passwort", "password", "", "", "", 2, 8);
                             $form->passwordField("Passwort wiederholen", "password2", "", "", "", 2, 8);
                             $form->submitButton("2", "Registrieren");
@@ -35,11 +59,21 @@ include "lib/elements/header.php";
             </div>
         </div>
 
+        <?php
+            endforeach;
+            ?>
+
         <!------------------------------------------------------------->
 
         <div class="container">
             <div class='row'>
             <?php
+
+            //----------------------------------------------------------------
+
+
+
+            //----------------------------------------------------------------
 
             if(isset($_GET['change_pwd'])) {
                 $error = false;
@@ -60,8 +94,8 @@ include "lib/elements/header.php";
 
                     $passwordhash = password_hash($password, PASSWORD_DEFAULT);
 
-                    $statement = $pdo->prepare("UPDATE rosetta_users SET password = :passwordhash WHERE user_id = :user_id");
-                    $result = $statement->execute(array('passwordhash' => $passwordhash, 'user_id'=> $userid ));
+                    $res = $pdo->prepare("UPDATE rosetta_users SET password = :passwordhash WHERE user_id = :user_id");
+                    $result = $res->execute(array('passwordhash' => $passwordhash, 'user_id'=> $tempId ));
 
                     if($result) {
 
