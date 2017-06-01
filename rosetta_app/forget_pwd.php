@@ -57,14 +57,16 @@ if(isset($_GET['send']) ) {
         } else {
             //Überprüfe, ob der User schon einen Passwortcode hat oder ob dieser abgelaufen ist
             $passwordcode = random_string();
-            $res = $pdo->prepare("UPDATE rosetta_users SET passwordcode = :passwordcode, passwordcode_date = NOW() WHERE user_id = :user_id");
-            $result = $res->execute(array('passwordcode' => sha1($passwordcode), 'user_id' => $user['user_id']));
+
+            $currentDate = date('Y-m-d H:i:s');
+
+            $res = $pdo->prepare("UPDATE rosetta_users SET password_code = :password_code, password_date = :password_date WHERE user_id = :user_id");
+            $result = $res->execute(array('password_code' => sha1($passwordcode), 'password_date' => $currentDate, 'user_id' => $user['user_id']));
 
             $empfaenger = $user['email'];
-            $betreff = "Neues Passwort für deinen Account auf www.rosetta-app.de"; //Ersetzt hier den Domain-Namen
-            $from = "From: Admin <admin@rosetta-app.de>"; //Ersetzt hier euren Name und E-Mail-Adresse
-            $url_passwordcode = 'http://prototype.rosetta-app.de/passwortzuruecksetzen.php?userid='.$user['user_id'].'&code='.$passwordcode;
-            //$url_passwortcode = 'passwortzuruecksetzen.php?userid='.$user['id'].'&code='.$passwortcode;
+            $betreff = "Neues Passwort für deinen Account auf www.rosetta-app.de";
+            $from = "From: Admin <admin@rosetta-app.de>";
+            $url_passwordcode = 'http://rosetta-app.de/rosetta_app/forget_pwd_reset.php?user_id='.$user['user_id'].'&code='.$passwordcode;
 
             $text = 'Hallo '.$user['forename'].',
 für deinen Account auf www.rosetta-app.de wurde nach einem neuen Passwort gefragt. Um ein neues Passwort zu vergeben, rufe innerhalb der nächsten 24 Stunden die folgende Website auf:
