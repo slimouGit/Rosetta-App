@@ -16,20 +16,23 @@ include "rosetta_app/mc/controller/db_connect.php";
 include 'rosetta_app/lib/elements/navigationStart.php';
 ?>
 
+    <!------------------------------------------>
 
-<div class="container-fluid content">
+    <div class="container-fluid content">
 
-    <div class="col-lg-12">
-        <div class='row'>
-            <h1>Rosetta-App welcome</h1>
+        <div class="col-lg-12">
+            <div class='row'>
+                <h1>Rosetta-App welcome</h1>
+            </div>
         </div>
-    </div>
+
+    <!------------------------------------------>
+
     <?php
 
     if(isset($_GET['login'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-
 
         $res = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
         $result = $res->execute(array('email' => $email));
@@ -43,18 +46,31 @@ include 'rosetta_app/lib/elements/navigationStart.php';
             $_SESSION['authorization'] = $user['authorization'];
             die('Login erfolgreich. Weiter zu <a href="rosetta_app/index.php">internen Bereich</a><meta http-equiv="refresh" content="3; URL=rosetta_app/index.php">');
         } else {
-            $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+            $error = "E-Mail oder Passwort war ungültig<br>";
         }
-
     }
     ?>
 
+    <!------------------------------------------>
 
     <?php
-    if(isset($errorMessage)) {
-        echo $errorMessage;
+    //Fehlermeldung
+    if(isset($error)) {
+        ?>
+        <div class="col-lg-12">
+            <div class='row'>
+                <div class="formWrapper col-lg-3 response responseFalse">
+                    <?php
+                    echo $error;
+                    ?>
+                </div>
+            </div>
+        </div>
+        <?php
     }
     ?>
+
+    <!------------------------------------------>
 
     <div class="formWrapper col-lg-3">
         <div class="formField">
@@ -69,9 +85,12 @@ include 'rosetta_app/lib/elements/navigationStart.php';
                 $form->ahref("rosetta_app/forget_pwd.php","Passwort vergessen");
                 ?>
 
-
             </form>
         </div>
+    </div>
+
+    <!------------------------------------------>
+
     </div>
 
     </body>
