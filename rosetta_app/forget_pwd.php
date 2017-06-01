@@ -29,6 +29,7 @@ include 'lib/elements/navigationStart.php';
 
     <?php
 
+    //Funktion generiert einen "zufaelligen" Wert fuer den Passwortcode
     function random_string() {
         if(function_exists('random_bytes')) {
             $bytes = random_bytes(16);
@@ -41,7 +42,6 @@ include 'lib/elements/navigationStart.php';
             $bytes = bin2hex(openssl_random_pseudo_bytes(16));
             $str = bin2hex($bytes);
         } else {
-            //Bitte euer_geheim_string durch einen zufälligen String mit >12 Zeichen austauschen
             $str = md5(uniqid('rosetta-app', true));
         }
         return $str;
