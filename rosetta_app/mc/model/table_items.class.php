@@ -44,6 +44,12 @@ class table_items
         </div>
 
 
+        <?php
+        //Slash wird in Variable $slash gespeichert, dient dazu, nicht mit preg_replace zu arbeiten,
+        // sobald ein Slash im gesuchten Wort enthalten ist, da dadurch ein Fehler geworfen wird (Stand: 170602)
+        $slash = "/";
+        ?>
+
 
         <?php
             //$id fuer Zwischenspeicherung wird initialisiert
@@ -97,7 +103,7 @@ class table_items
                                 <!-- Rubrik -->
                                 <div class="col-md-4 white col ">
                                     <?php
-                                    if ($tempSearch == false) {
+                                    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
                                         echo $row["category"];
                                     } else {
                                         echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["category"]);
@@ -108,7 +114,7 @@ class table_items
                                 <!-- Info -->
                                 <div class="col-md-4 white col ">
                                     <?php
-                                    if ($tempSearch == false) {
+                                    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
                                         echo $row["info"];
                                     } else {
                                         echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["info"]);

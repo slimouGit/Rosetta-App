@@ -7,7 +7,7 @@
     //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
     echo "<div id=\"de_$id\" class=\"itemField\">";
 
-    if ($tempSearch == false) {
+    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["item_de"];
     } else {
         echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_de"]);
@@ -24,7 +24,7 @@
     //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
     echo "<div id=\"fr_$id\" class=\"itemField\">";
 
-    if ($tempSearch == false) {
+    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["item_fr"];
     } else {
         echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_fr"]);
@@ -41,7 +41,7 @@
     //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
     echo "<div id=\"it_$id\" class=\"itemField\">";
 
-    if ($tempSearch == false) {
+    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["item_it"];
     } else {
         echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["item_it"]);
