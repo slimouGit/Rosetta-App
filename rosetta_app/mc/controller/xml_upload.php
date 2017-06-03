@@ -1,6 +1,6 @@
 <?php
-//include header
-//include "lib/elements/header.php";
+include header
+include "lib/elements/header.php";
 ?>
 
 
@@ -26,26 +26,26 @@ echo "<p>Datei wurde kopiert in {$target_dir}<br />";
 
 echo "Der neue Pfad lautet: ".$new_path. "<br/>";
 
+$username = "Hans";
 
+importXML($fileName, $username);
 
-importXML($fileName);
+echo "Username: " .$username;
 
-
-
-function importXML($fileName){
+function importXML($fileName, $username){
 
     $xmlDoc = new DOMDocument();
     $xmlDoc->load($fileName);
 
     //include connection to database
-    include "db_connect.php";
+    //include "db_connect.php";
 
     //Erstellen eines einzigartigen tokens SOLLTE SPAETER GLOBAL LAUFEN!!!
     //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
     //da hier noch nicht mit der ID gearbeitet werden kann
     $token = bin2hex(openssl_random_pseudo_bytes(16));
     $token = (string)$token;
-    $username = "Hans";
+    $username = $username;
 
     global $res;
 
@@ -59,14 +59,14 @@ function importXML($fileName){
     }
     */
     for ($i=0; $i < $itemCount; $i++){
-        $item_de = $xmlObject->data($i)->getElementsByTagName('item_de')->data(0)->childNodes->data(0)->nodeValue;
-        $item_fr  = $xmlObject->data($i)->getElementsByTagName('item_fr')->data(0)->childNodes->data(0)->nodeValue;
-        $item_it  = $xmlObject->data($i)->getElementsByTagName('item_it')->data(0)->childNodes->data(0)->nodeValue;
-        $category  = $xmlObject->data($i)->getElementsByTagName('category')->data(0)->childNodes->data(0)->nodeValue;
-        $info  = $xmlObject->data($i)->getElementsByTagName('info')->data(0)->childNodes->data(0)->nodeValue;
-        $carline  = $xmlObject->data($i)->getElementsByTagName('carline')->data(0)->childNodes->data(0)->nodeValue;
+        $item_de = $xmlObject->item($i)->getElementsByTagName('item_de')->item(0)->childNodes->item(0)->nodeValue;
+        $item_fr  = $xmlObject->item($i)->getElementsByTagName('item_fr')->item(0)->childNodes->item(0)->nodeValue;
+        $item_it  = $xmlObject->item($i)->getElementsByTagName('item_it')->item(0)->childNodes->item(0)->nodeValue;
+        $category  = $xmlObject->item($i)->getElementsByTagName('category')->item(0)->childNodes->item(0)->nodeValue;
+        $info  = $xmlObject->item($i)->getElementsByTagName('info')->item(0)->childNodes->item(0)->nodeValue;
+        $carline  = $xmlObject->item($i)->getElementsByTagName('carline')->item(0)->childNodes->item(0)->nodeValue;
 
-        global $res;
+        //global $res;
 
         //---------------------------------------------------------------------------------------
 
