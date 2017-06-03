@@ -28,6 +28,7 @@ class insert_item
 
         //------------------------------------------------------------------------------------------
 
+        //CONTROLLER
         //Meldung wird ausgegeben
         require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
@@ -37,6 +38,8 @@ class insert_item
 
         //Eintrag anzeigen
         $res = $pdo->query("SELECT * FROM rosetta_data WHERE token LIKE '" . $token . "' ");
+
+        //CONTROLLER
         require "mvc/view/table_items.class.php";
         table_items::showData();
 

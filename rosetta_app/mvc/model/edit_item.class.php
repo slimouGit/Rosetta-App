@@ -31,6 +31,7 @@ class edit_item
 
         //------------------------------------------------------------------------------------------
 
+        //CONTROLLER
         //Meldung wird ausgegeben
         require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
@@ -40,6 +41,8 @@ class edit_item
 
         //aktualisierter Datensatz wird ausgegeben
         $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $data_id");
+
+        //CONTROLLER
         require "mvc/view/table_items.class.php";
         table_items::showData();
 

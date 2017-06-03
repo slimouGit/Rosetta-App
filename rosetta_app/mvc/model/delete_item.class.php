@@ -32,6 +32,8 @@ class delete_item
         //------------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
+
+        //CONTROLLER
         require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
         $response->response("Der Eintrag mit der ID {$tempId} wurde erfolgreich gelöscht","6","responseSuccess");
