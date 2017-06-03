@@ -14,7 +14,7 @@
 
     <item>
         <item_de>Airbagsystem</item_de>
-        <item_fr>Système d`airbags</item_fr>
+        <item_fr>Système d’airbags</item_fr>
         <item_it>Sistema di airbag</item_it>
         <category>Serienausstattung</category>
         <info>Sicherheit</info>
@@ -31,4 +31,3 @@
     </item>
 
 </items>
-
