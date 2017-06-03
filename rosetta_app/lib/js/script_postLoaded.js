@@ -10,22 +10,25 @@ console.log("Test");
     });
 
 
+
     //Funktion zur automatischen Groessenanpassung der TExtarea
-    function auto_grow(element) {
-        element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
+    function auto_grow(e) {
+        e.style.height = "5px";
+        e.style.height = (e.scrollHeight)+"px";
     };
+
+
 
     //Funktion zum Speichern in die Zwischenablage
     //ueber temporaer hinzugefuegtes input-Feld
     //gleichzeitig werden alle Leerzeichen geloescht,
     //die dem Wert anhaengen
-    function copyToClipboard(element) {
+    function copyToClipboard(e) {
         var $temp = $("<input>");
         $("body").append($temp);
 
         //kopierten Text in copiedValue speichern
-        var copiedValue = $(element).text();
+        var copiedValue = $(e).text();
         //Leerzeichen ind copiedValue entfernen
         while (copiedValue.indexOf('  ') > 0) {
             copiedValue = copiedValue.replace('  ', '');
