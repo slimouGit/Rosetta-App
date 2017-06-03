@@ -48,7 +48,7 @@ include "mc/controller/db_connect.php";
                 <div class='row'>
                 <?php
                 if(isset($_GET['upload_pdf'])) {
-                    include "mc/controller/pdf_upload.php";
+                    include "mc/controller/upload_pdf_controller.php";
                 }
                 ?>
                 </div>
