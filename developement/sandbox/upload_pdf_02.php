@@ -34,7 +34,7 @@ include "include/db_connect.php";
         "Antara",
         "AstraST",
         "AstraNG",
-        "Cascada",
+        "Cascada.xml",
         "ComboKastenwagen",
         "ComboPassenger",
         "Corsa",
@@ -63,7 +63,7 @@ include "include/db_connect.php";
     if (preg_match('/antara/', $fileName)) {$carline = "Antara";}
     if (preg_match('/astrast/', $fileName)) {$carline = "AstraST";}
     if (preg_match('/astrang/', $fileName)) {$carline = "AstraNG";}
-    if (preg_match('/cascada/', $fileName)) {$carline = "Cascada";}
+    if (preg_match('/cascada/', $fileName)) {$carline = "Cascada.xml";}
     if (preg_match('/kastenwagen/', $fileName)) {$carline = "ComboKastenwagen";}
     if (preg_match('/passenger/', $fileName)) {$carline = "ComboPassenger";}
     if (preg_match('/corsa/', $fileName)) {$carline = "Corsa";}

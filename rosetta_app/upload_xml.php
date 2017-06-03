@@ -8,9 +8,9 @@ include "lib/elements/header.php";
 include "mvc/model/db_connect.php";
 ?>
 
-    <!---------------------------------------------->
+<!---------------------------------------------->
 
-    <div class="container-fluid content">
+<div class="container-fluid content">
 
     <!---------------------------------------------->
 
@@ -44,19 +44,14 @@ include "mvc/model/db_connect.php";
 
     <!---------------------------------------------->
 
-        <div class="container">
-            <div class='row'>
+    <div class="container">
+        <div class='row'>
 
-<?php
+            <?php
+            if(isset($_GET['upload_xml'])) {
+                include "mvc/model/upload_xml_model.php";
+            }
+            ?>
 
-    //CONTROLLER
-    if(isset($_GET['upload_xml'])) {
-
-
-    include "mvc/model/upload_xml_controller.php";
-
-}
-?>
-
-            </div>
         </div>
+    </div>
