@@ -1,64 +1,72 @@
 <?php
 //include header
-include "elements/header.php";
+include "lib/elements/header.php";
 ?>
 
 <?php
-//include db connection
+//include connection to database
 include "mc/controller/db_connect.php";
 ?>
 
-    <h2>XML mit Datensätzen hochladen</h2>
-    <p>XML-Struktur muss eingehalten werden, d.h. evtl. Erklär-Funktion integrieren</p>
+    <!---------------------------------------------->
 
-    <form enctype="multipart/form-data" action="?upload_xml=1" method="post">
-        <div class="row">
-            <div class="form-group">
-                <label class="col-sm-1 control-label">Datei</label>
-                <div class="col-sm-4">
-                    <input type="file" class="form-control" name="xmlFile" /></input>
-                </div>
-            </div>
+    <div class="container-fluid content">
+
+    <!---------------------------------------------->
+
+    <div class="container">
+        <div class='row'>
+            <h1>Rosetta-App upload XML</h1>
         </div>
+    </div>
 
-        <div class="row button">
-            <div class="form-group">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-1">
-                    <input type="submit" class="btn btn-primary" value="Senden"></input>
-                </div>
+    <!---------------------------------------------->
+
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <h4>XML-Datei wählen</h4>
+                <form action="?upload_xml=1" method="post" enctype="multipart/form-data" id="js-upload-form">
+                    <div class="input-group image-preview">
+                        <input placeholder="XML wählen" type="button" class="form-control image-preview-filename" >
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default image-preview-clear" style="display:none;"> <span class="glyphicon glyphicon-remove"></span> Clear </button>
+                            <div class="btn btn-default image-preview-input"> <span class="glyphicon glyphicon-folder-open"></span> <span class="image-preview-input-title">Browse</span>
+                                <input type="file" class="form-control" name="xmlFile"/>
+                            </div>
+                            <button type="submit" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Hochladen</button>
+                            </span> </div>
             </div>
+            </form>
         </div>
+    </div>
 
-    </form>
+    <!---------------------------------------------->
+
+        <div class="container">
+            <div class='row'>
 
 <?php
 
-?>
-
-    <h2>XML mit Datensätzen hochladen</h2>
-    <p>XML-Struktur muss eingehalten werden, d.h. evtl. Erklär-Funktion integrieren</p>
-
-<?php
-
-if(isset($_GET['upload_xml'])) {
+    if(isset($_GET['upload_xml'])) {
 
 
-$target_dir = __DIR__."/";
-$fileName = $_FILES["xmlFile"]["name"];
-$new_path = $target_dir . $fileName;
+    $target_dir = __DIR__."/";
+    $fileName = $_FILES["xmlFile"]["name"];
+    $new_path = $target_dir . $fileName;
 
-echo "Originaldateiname: "
-    . $fileName."<br />";
+    echo "Originaldateiname: "
+        . $fileName."<br />";
 
-/* Temporaerer Dateiname auf dem Server */
-echo "Temporaerer Dateiname: "
-    . $_FILES["xmlFile"]["tmp_name"] . "</p>";
+    /* Temporaerer Dateiname auf dem Server */
+    echo "Temporaerer Dateiname: "
+        . $_FILES["xmlFile"]["tmp_name"] . "</p>";
 
-copy($_FILES["xmlFile"]["tmp_name"],$new_path);
-echo "<p>Datei wurde kopiert in {$target_dir}<br />";
+    copy($_FILES["xmlFile"]["tmp_name"],$new_path);
+    echo "<p>Datei wurde kopiert in {$target_dir}<br />";
 
-echo "Der neue Pfad lautet: ".$new_path. "<br/>";
+    echo "Der neue Pfad lautet: ".$new_path. "<br/>";
 
 
 
@@ -84,12 +92,6 @@ echo "Der neue Pfad lautet: ".$new_path. "<br/>";
     $itemCount = $xmlObject->length;
 
 
-    echo "ANGEKOMMEN";
-    /*
-    foreach ($res AS $row){
-        echo "Data: " . $row;
-    }
-    */
     for ($i=0; $i < $itemCount; $i++){
         $item_de = $xmlObject->item($i)->getElementsByTagName('item_de')->item(0)->childNodes->item(0)->nodeValue;
         $item_fr  = $xmlObject->item($i)->getElementsByTagName('item_fr')->item(0)->childNodes->item(0)->nodeValue;
@@ -108,12 +110,11 @@ echo "Der neue Pfad lautet: ".$new_path. "<br/>";
         $res = $pdo->prepare("INSERT INTO rosetta_data (token, item_de, item_fr, item_it, category, info, carline, user_create) VALUES (:token, :item_de, :item_fr, :item_it, :category, :info, :carline, :user_create)");
         $res->execute(array('token' => $token, 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'category' => $category, 'info' => $info, 'carline' => $carline, 'user_create' => $username));
 
-        echo "In SCHLEIFE";
-
-        //mysqli_query($con, $sql);
-
         print "Added Data $i: <br/> $item_de <br/> $item_fr<br/> $item_it<br/> $carline<br/> <br/> ";
     }
 
 }
 ?>
+
+            </div>
+        </div>
