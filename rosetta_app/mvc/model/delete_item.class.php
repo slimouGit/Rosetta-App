@@ -22,7 +22,7 @@ class delete_item
         //---------------------------------------------------------------------------------------
 
         //include connection to database
-        include "mc/controller/db_connect.php";
+        include "mvc/model/db_connect.php";
 
         //---------------------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ class delete_item
         //------------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
-        require_once "mc/model/responseObject.class.php";
+        require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
         $response->response("Der Eintrag mit der ID {$tempId} wurde erfolgreich gelöscht","6","responseSuccess");
 

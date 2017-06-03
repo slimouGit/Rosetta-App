@@ -22,7 +22,7 @@ include "lib/elements/header.php";
 
             $hideForm ="";
 
-            //
+            //CONTROLLER
             if(empty($_GET["user_id"])){
                 $_GET["user_id"] = $_POST['user_id'];
                 $hideForm = "true";
@@ -50,7 +50,7 @@ include "lib/elements/header.php";
 
                      <form action="?change_user=1" method = "post">
                         <?php
-                        require_once "mc/model/formularFields.class.php";
+                        require_once "mvc/view/formularFields.class.php";
                             $form = new formular();
                             $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->inputField("Vorname", "forename", "" . $row["forename"] . "", "", "", 2, 8);
@@ -75,6 +75,7 @@ include "lib/elements/header.php";
             <div class='row'>
                 <?php
 
+                //CONTROLLER
                 if(isset($_GET['change_user'])) {
                     //------------------------------------------------------------------------------------------
 
@@ -87,7 +88,7 @@ include "lib/elements/header.php";
                     //------------------------------------------------------------------------------------------
 
                     //Daten aendern ueber Controller edit_item
-                    require "mc/controller/edit_user.class.php";
+                    require "mvc/model/edit_user.class.php";
                     edit_user::editUserData($forename,$surname,$email,$authorization,$user_id);
 
                     //------------------------------------------------------------------------------------------

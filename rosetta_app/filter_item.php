@@ -7,7 +7,7 @@ include "lib/elements/header.php";
 
 <?php
 //include connection to database
-include "mc/controller/db_connect.php";
+include "mvc/model/db_connect.php";
 ?>
 
     <div class="container">
@@ -44,11 +44,13 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
 
             //pruefen, ob Suche ein Resultat ergibt
             $count = $res->rowCount();
+
+            //CONTROLLER
             if($count == 0){
                 echo "Kein Ergebnis für " . $_POST['search'];
             }
             else{
-                require "mc/model/table_items.class.php";
+                require "mvc/view/table_items.class.php";
                 table_items::showData();
             }
             ?>

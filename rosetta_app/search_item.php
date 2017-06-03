@@ -43,6 +43,7 @@ include "lib/elements/header.php";
         <div class='row'>
             <?php
 
+            //CONTROLLER
             if(isset($_GET['search_item'])) {
                 $error = false;
                 if (strlen($_POST['search']) == 0) {
@@ -60,12 +61,12 @@ include "lib/elements/header.php";
                     if ($count == 0) {
 
                         //Meldung wird ausgegeben
-                        require_once "mc/model/responseObject.class.php";
+                        require_once "mvc/view/responseObject.class.php";
                         $response = new responseObject();
                         $response->response("Kein Ergebnis für {$_POST['search']} verfügbar","6","responseFalse");
 
                     } else {
-                        require "mc/model/table_items.class.php";
+                        require "mvc/view/table_items.class.php";
                         table_items::showData();
                     }
                 }

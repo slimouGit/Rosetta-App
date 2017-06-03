@@ -22,6 +22,7 @@ include "lib/elements/header.php";
         //also, ob er sein eigenes Passwort oder als Administrator das eines Nutzers aendern will
 
         //$_GET["user_id"] ist leer, wenn ueber Navigation "Passwort ändern" auf Seite gewechselt wird
+        //CONTROLLER
         if(empty($_GET["user_id"])){
                 //$_POST["user_id"] ist leer, wenn nicht ueber hidden-field im Formular uebergeben wurde
                 //dann wird $_POST["user_id"] mit der ID des aktuellen Nutzers initialisiert,
@@ -51,7 +52,7 @@ include "lib/elements/header.php";
                     <form action="?change_pwd=1" method="post">
 
                         <?php
-                            require_once "mc/model/formularFields.class.php";
+                            require_once "mvc/view/formularFields.class.php";
                             $form = new formular();
                             $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->passwordField("Passwort", "password", "", "", "", 2, 8);
@@ -80,6 +81,7 @@ include "lib/elements/header.php";
 
             //----------------------------------------------------------------
 
+            //CONTROLLER
             if(isset($_GET['change_pwd'])) {
                 $error = false;
                 $password = $_POST['password'];
@@ -105,7 +107,7 @@ include "lib/elements/header.php";
                     if($result) {
 
                         //Meldung wird ausgegeben
-                        require_once "mc/model/responseObject.class.php";
+                        require_once "mvc/view/responseObject.class.php";
                         $response = new responseObject();
                         $response->response("Das Passwort wurde erfolgreich geändert.", "4", "");
                     }

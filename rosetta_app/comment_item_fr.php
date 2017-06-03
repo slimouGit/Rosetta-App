@@ -19,7 +19,7 @@ include "lib/elements/header.php";
 
             $hideForm ="";
 
-            //
+            //CONTROLLER
             if(empty($_GET["data_id"])){
                 $_GET["data_id"] = $_POST['data_id'];
                 $hideForm = "true";
@@ -41,8 +41,9 @@ include "lib/elements/header.php";
 
                     <?php
 
-                    require_once "mc/model/formularFields.class.php";
+                    require_once "mvc/view/formularFields.class.php";
 
+                    //CONTROLLER
                     if(!$hideForm=="true"){
 
                         $form = new formular();
@@ -64,6 +65,7 @@ include "lib/elements/header.php";
     <div class="container">
         <div class='row'>
             <?php
+            //CONTROLLER
             if(isset($_GET['change_item'])) {
                 $submitted = "true";
                 $data_id = $_POST['data_id'];
@@ -84,7 +86,7 @@ include "lib/elements/header.php";
                 //------------------------------------------------------------------------------------------
 
                 //Meldung wird ausgegeben
-                require_once "mc/model/responseObject.class.php";
+                require_once "mvc/view/responseObject.class.php";
                 $response = new responseObject();
                 $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich kommentiert","6","responseSuccess");
 
@@ -92,7 +94,7 @@ include "lib/elements/header.php";
 
                 //aktualisierter Datensatz wird ausgegeben
                 $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $data_id");
-                require "mc/model/table_items.class.php";
+                require "mvc/view/table_items.class.php";
                 table_items::showData();
 
                 //------------------------------------------------------------------------------------------

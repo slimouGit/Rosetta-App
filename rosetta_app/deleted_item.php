@@ -11,7 +11,7 @@ include "lib/elements/header.php";
             <h1>Rosetta-App deleted data</h1>
             <?php
             $res = $pdo->query("SELECT * FROM `rosetta_data`");
-            require "mc/model/table_items.class.php";
+            require "mvc/view/table_items.class.php";
             table_items::showDeletedData();
             ?>
         </div>

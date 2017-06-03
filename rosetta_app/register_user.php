@@ -23,7 +23,7 @@ include "lib/elements/header.php";
                 <form action="?register=1" method="post">
 
                     <?php
-                    require_once "mc/model/formularFields.class.php";
+                    require_once "mvc/view/formularFields.class.php";
                     $form = new formular();
                     $form->inputField("Vorname", "forename", "", "", "", 2, 8);
                     $form->inputField("Nachname", "surname", "", "", "", 2,  8);
@@ -47,10 +47,11 @@ include "lib/elements/header.php";
 
             <?php
 
+            //CONTROLLER
             if(isset($_GET['register'])) {
 
                 //Response-Objekt erzeugen
-                require_once "mc/model/responseObject.class.php";
+                require_once "mvc/view/responseObject.class.php";
                 $response = new responseObject();
                 //------------------------------------------------------
 

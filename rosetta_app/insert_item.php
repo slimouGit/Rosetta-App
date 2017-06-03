@@ -19,7 +19,7 @@ include "lib/elements/header.php";
 
                             <?php
                             // EINBINDEN PHP-Klasse mit Formlar-Objekten
-                            require_once "mc/model/formularFields.class.php";
+                            require_once "mvc/view/formularFields.class.php";
 
                             // Objekt erzeugen
                             $form = new formular();
@@ -49,6 +49,8 @@ include "lib/elements/header.php";
         <div class="container">
             <div class='row'>
                 <?php
+
+                //CONTROLLER
                 if(isset($_GET['insert_item'])) {
 
                     //Erstellen eines einzigartigen tokens dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
@@ -77,7 +79,7 @@ include "lib/elements/header.php";
                     //------------------------------------------------------------------------------------------
 
                     //Daten eintragen ueber Controller insert_item
-                    require "mc/controller/insert_item.class.php";
+                    require "mvc/model/insert_item.class.php";
                     insert_item::insertData($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username);
 
                     //------------------------------------------------------------------------------------------

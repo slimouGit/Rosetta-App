@@ -21,7 +21,7 @@ include "lib/elements/header.php";
 
             $hideForm ="";
 
-            //
+            //CONTROLLER
             if(empty($_GET["data_id"])){
                 $_GET["data_id"] = $_POST['data_id'];
                 $hideForm = "true";
@@ -29,7 +29,7 @@ include "lib/elements/header.php";
 
             //------------------------------------------------------------------------------------------
 
-            //
+            //CONTROLLER
             if(!$hideForm=="true") {
 
             //------------------------------------------------------------------------------------------
@@ -56,7 +56,7 @@ include "lib/elements/header.php";
 
                         <?php
 
-                        require_once "mc/model/formularFields.class.php";
+                        require_once "mvc/view/formularFields.class.php";
 
                             $form = new formular();
 
@@ -108,12 +108,14 @@ include "lib/elements/header.php";
     <div class="container">
         <div class='row'>
             <?php
+            //CONTROLLER
             if(isset($_GET['change_item'])) {
                 $submitted = "true";
                 $data_id = $_POST['data_id'];
 
                 //------------------------------------------------------------------------------------------
 
+                //CONTROLLER
                 //Pruefung, ob checkboxen ausgewaehlt wurden
                 if(!empty($_POST['carline'])) {$car = implode(', ', $_POST['carline']);}
                 //das Array carline wird ueber implode in $car gespeichert
@@ -130,7 +132,7 @@ include "lib/elements/header.php";
                 //------------------------------------------------------------------------------------------
 
                 //Daten aendern ueber Controller edit_item
-                require "mc/controller/edit_item.class.php";
+                require "mvc/model/edit_item.class.php";
                 edit_item::editData($item_de,$item_fr,$item_it,$category,$info,$car,$username,$data_id);
 
                 //------------------------------------------------------------------------------------------

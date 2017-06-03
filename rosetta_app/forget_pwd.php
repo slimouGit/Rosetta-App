@@ -6,7 +6,7 @@ include "lib/elements/headerStart.php";
 
 <?php
 //include db connection
-include "mc/controller/db_connect.php";
+include "mvc/model/db_connect.php";
 ?>
 
 <?php
@@ -52,6 +52,7 @@ include 'lib/elements/navigationStart.php';
 
     //-------------------------------------------------
 
+    //CONTROLLER
     if(isset($_GET['send']) ) {
         if(!isset($_POST['email']) || empty($_POST['email'])) {
             $error = "Bitte eine E-Mail-Adresse eintragen";
@@ -60,6 +61,7 @@ include 'lib/elements/navigationStart.php';
             $result = $statement->execute(array('email' => $_POST['email']));
             $user = $statement->fetch();
 
+            //CONTROLLER
             if($user === false) {
                 $error = "Kein Benutzer gefunden";
             } else {
@@ -89,7 +91,7 @@ include 'lib/elements/navigationStart.php';
                         <div class="formWrapper col-lg-3">
                             <?php
                             //Meldung wird ausgegeben
-                            require_once "mc/model/responseObject.class.php";
+                            require_once "mvc/view/responseObject.class.php";
                             $response = new responseObject();
                             $response->response("Ein Link wurde an Deine Email geschickt","6","responseSuccess");
                             ?>
@@ -106,8 +108,10 @@ include 'lib/elements/navigationStart.php';
 
     //------------------------------------------------------
 
+    //CONTROLLER
     if($showForm){
 
+        //CONTROLLER
     //Fehlermeldung
     if(isset($error) && !empty($error)) {
         ?>

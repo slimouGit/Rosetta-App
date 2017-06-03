@@ -11,7 +11,7 @@ include "lib/elements/header.php";
             <h1>Rosetta-App edit user</h1>
             <?php
             $res = $pdo->query("SELECT * FROM `rosetta_users`");
-            require "mc/model/table_user.class.php";
+            require "mvc/view/table_user.class.php";
             table_user::showUser();
             ?>
         </div>

@@ -21,7 +21,7 @@ class edit_user
         //---------------------------------------------------------------------------------------
 
         //include connection to database
-        include "mc/controller/db_connect.php";
+        include "mvc/model/db_connect.php";
 
         //---------------------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ class edit_user
         //------------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
-        require_once "mc/model/responseObject.class.php";
+        require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
         $response->response("Der Benutzer mit der ID {$user_id} wurde erfolgreich geändert","6","responseSuccess");
 
@@ -40,7 +40,7 @@ class edit_user
 
         //aktualisierter Datensatz wird ausgegeben
         $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $user_id");
-        require "mc/model/table_user.class.php";
+        require "mvc/view/table_user.class.php";
         table_user::showUser();
 
         //---------------------------------------------------------------------------------------

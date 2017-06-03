@@ -16,7 +16,7 @@ include "lib/elements/header.php";
         </div>
         <div class="row">
             <?php
-            include "mc/model/daeshboard.php";
+            include "mvc/view/daeshboard.php";
             ?>
         </div>
     </div>

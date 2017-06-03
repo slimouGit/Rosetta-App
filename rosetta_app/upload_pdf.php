@@ -5,7 +5,7 @@ include "lib/elements/header.php";
 
 <?php
 //include connection to database
-include "mc/controller/db_connect.php";
+include "mvc/model/db_connect.php";
 ?>
 
         <!---------------------------------------------->
@@ -47,8 +47,10 @@ include "mc/controller/db_connect.php";
             <div class="container">
                 <div class='row'>
                 <?php
+
+                //CONTROLLER
                 if(isset($_GET['upload_pdf'])) {
-                    include "mc/controller/upload_pdf_controller.php";
+                    include "mvc/model/upload_pdf_controller.php";
                 }
                 ?>
                 </div>

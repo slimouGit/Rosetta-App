@@ -7,6 +7,7 @@
     //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
     echo "<div id=\"de_$id\" class=\"itemField\">";
 
+    //CONTROLLER
     if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["item_de"];
     } else {
@@ -24,6 +25,7 @@
     //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
     echo "<div id=\"fr_$id\" class=\"itemField\">";
 
+    //CONTROLLER
     if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["item_fr"];
     } else {
@@ -41,6 +43,7 @@
     //Konstrukt, um Datensatz mit individueller ID versehen zu koennen
     echo "<div id=\"it_$id\" class=\"itemField\">";
 
+    //CONTROLLER
     if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["item_it"];
     } else {

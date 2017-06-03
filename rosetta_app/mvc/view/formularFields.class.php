@@ -118,7 +118,7 @@ class formular
 
     //carline mit Pruefung, ob carline in array vorhanden
     public function carlineCheck($carName, $temp){
-
+        //CONTROLLER
         if (in_array($carName, $temp)) {
             echo "<option type='checkbox' selected title=$carName value=\"$carName\">$carName</option>";
         }else {

@@ -21,7 +21,7 @@ class edit_item
         //---------------------------------------------------------------------------------------
 
         //include connection to database
-        include "mc/controller/db_connect.php";
+        include "mvc/model/db_connect.php";
 
         //---------------------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ class edit_item
         //------------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
-        require_once "mc/model/responseObject.class.php";
+        require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
         $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich aktualisiert","6","responseSuccess");
 
@@ -40,7 +40,7 @@ class edit_item
 
         //aktualisierter Datensatz wird ausgegeben
         $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $data_id");
-        require "mc/model/table_items.class.php";
+        require "mvc/view/table_items.class.php";
         table_items::showData();
 
         //---------------------------------------------------------------------------------------

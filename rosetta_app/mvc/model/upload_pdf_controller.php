@@ -21,8 +21,6 @@ $fileName = $_FILES["upfile"]["name"];
 $fileName = strtolower($fileName);
 
 
-
-
 /* Kontrolldaten */
 echo "<p>Zur Kontrolle:<br />";
 echo "Originaldateiname: "

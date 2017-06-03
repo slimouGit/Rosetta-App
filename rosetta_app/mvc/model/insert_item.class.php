@@ -18,7 +18,7 @@ class insert_item
         //---------------------------------------------------------------------------------------
 
         //include connection to database
-        include "mc/controller/db_connect.php";
+        include "mvc/model/db_connect.php";
 
         //---------------------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ class insert_item
         //------------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
-        require_once "mc/model/responseObject.class.php";
+        require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
         $response->response("Der Eintrag wurde erfolgreich erstellt","6","responseSuccess");
 
@@ -37,7 +37,7 @@ class insert_item
 
         //Eintrag anzeigen
         $res = $pdo->query("SELECT * FROM rosetta_data WHERE token LIKE '" . $token . "' ");
-        require "mc/model/table_items.class.php";
+        require "mvc/view/table_items.class.php";
         table_items::showData();
 
         //---------------------------------------------------------------------------------------

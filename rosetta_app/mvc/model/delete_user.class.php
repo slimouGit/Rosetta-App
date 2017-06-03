@@ -21,7 +21,7 @@ class delete_user
         //---------------------------------------------------------------------------------------
 
         //include connection to database
-        include "mc/controller/db_connect.php";
+        include "mvc/model/db_connect.php";
 
         //---------------------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ class delete_user
         //------------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
-        require_once "mc/model/responseObject.class.php";
+        require_once "mvc/view/responseObject.class.php";
         $response = new responseObject();
         $response->response("Der Benutzer mit der ID {$tempId} wurde erfolgreich gelöscht","6","responseSuccess");
 

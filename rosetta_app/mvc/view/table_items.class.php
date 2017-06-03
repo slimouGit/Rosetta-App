@@ -18,6 +18,8 @@ class table_items
         global $res;
 
         //---------------------------------------
+
+        //CONTROLLER
         //Pruefung, ob etwas gesucht wurde
         if(empty($_POST['search'])){
             $_POST['search']="";
@@ -25,9 +27,10 @@ class table_items
         }else {
             $tempSearch = true;
         }
+
         //---------------------------------------
 
-       ?>
+        ?>
 
 
         <div class="row">
@@ -59,6 +62,7 @@ class table_items
             //in jeder Zeile wird $id inkrementiert
             $id++;
 
+            //CONTROLLER
             //Pruefung, ob Datensatz aktiv oder geloescht wurde
             if($row["state"]==$temp) {
         ?>

@@ -10,7 +10,7 @@ session_destroy();
 
 <?php
 //include connection to database
-include "mc/controller/db_connect.php";
+include "mvc/model/db_connect.php";
 ?>
 
 <?php

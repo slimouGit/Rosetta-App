@@ -31,6 +31,7 @@
     </div>
 
     <?php
+    //CONTROLLER
     if($authorization == "admin"){
     ?>
 

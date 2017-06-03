@@ -7,7 +7,7 @@ include "lib/elements/header.php";
 <?php
 $hideForm ="";
 
-//
+//CONTROLLER
 if(empty($_GET["user_id"])){
     $_GET["user_id"] = $_POST['user_id'];
     $hideForm = "true";
@@ -33,21 +33,23 @@ if(empty($_GET["user_id"])){
 
                 //------------------------------------------------------------------------------------------
 
+                //CONTROLLER
                 if(!$hideForm=="true") {
 
                     //Anzeige des Datensatzes
-                    require "mc/model/table_user.class.php";
+                    require "mvc/view/table_user.class.php";
                     table_user::showUser($tempId);
                 }
 
                 //------------------------------------------------------------------------------------------
 
+                //CONTROLLER
                 if(isset($_GET['delete_user'])) {
 
                     $currentDate = date('d.m.Y H:i');
 
                     //Daten loeschen ueber Controller delete_item
-                    require "mc/controller/delete_user.class.php";
+                    require "mvc/model/delete_user.class.php";
                     delete_user::deleteUserData($tempId);
 
                     //------------------------------------------------------------------------------------------
@@ -63,10 +65,11 @@ if(empty($_GET["user_id"])){
         <div class="container">
             <div class='row'>
                 <?php
+                //CONTROLLER
                 if(!$hideForm=="true") {
 
                     //Meldung wird ausgegeben
-                    require_once "mc/model/responseObject.class.php";
+                    require_once "mvc/view/responseObject.class.php";
                     $response = new responseObject();
                     $response->success("Soll dieser Datensatz wirklich gelöscht werden?");
 
@@ -82,8 +85,9 @@ if(empty($_GET["user_id"])){
                 <form action="?delete_user=1" method = "post">
 
                     <?php
-                    require_once "mc/model/formularFields.class.php";
+                    require_once "mvc/view/formularFields.class.php";
 
+                    //CONTROLLER
                     if(!$hideForm=="true") {
                         $form = new formular();
                         $form->hiddenField("user_id", "" . $_GET["user_id"] . "");

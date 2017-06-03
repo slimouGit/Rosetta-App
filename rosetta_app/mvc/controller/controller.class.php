@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: salim
+ * Date: 03.06.2017
+ * Time: 15:25
+ */
+class controller
+{
+
+}
