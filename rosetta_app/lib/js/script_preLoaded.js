@@ -7,6 +7,6 @@ console.log("script_preLoaded");
 //uebergibt die ID der Sucheingabe an das Script in autocomplete.php
 $(function() {
     $( "#skills" ).autocomplete({
-        source: 'mvc/model/autocomplete.php'
+        source: 'mvc/model/autocomplete_model.php'
     });
 });
