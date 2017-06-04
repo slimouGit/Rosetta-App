@@ -15,7 +15,7 @@ $authorization = $_SESSION['authorization'];
 
 <?php
 //include connection to database
-include "mvc/model/db_connect.php";
+include "mvc/model/db_connect_model.php";
 ?>
 
 <!DOCTYPE HTML>
