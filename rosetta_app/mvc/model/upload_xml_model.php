@@ -20,7 +20,7 @@ echo "Der neue Pfad lautet: ".$new_path. "<br/>";
 $xmlDoc = new DOMDocument();
 $xmlDoc->load($fileName);
 //include db connection
-//include "include/db_connect.php";
+//include "include/db_connect_model.php";
 //Erstellen eines einzigartigen tokens SOLLTE SPAETER GLOBAL LAUFEN!!!
 //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
 //da hier noch nicht mit der ID gearbeitet werden kann
