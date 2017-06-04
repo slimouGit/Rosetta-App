@@ -50,7 +50,7 @@ include "lib/elements/header.php";
 
                      <form action="?change_user=1" method = "post">
                         <?php
-                        require_once "mvc/view/formularFields.class.php";
+                        require_once "mvc/view/formularFields_view.class.php";
                             $form = new formular();
                             $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->inputField("Vorname", "forename", "" . $row["forename"] . "", "", "", 2, 8);
@@ -88,7 +88,7 @@ include "lib/elements/header.php";
                     //------------------------------------------------------------------------------------------
 
                     //Daten aendern ueber Controller edit_item
-                    require "mvc/model/edit_user.class.php";
+                    require "mvc/model/edit_user_model.class.php";
                     edit_user::editUserData($forename,$surname,$email,$authorization,$user_id);
 
                     //------------------------------------------------------------------------------------------

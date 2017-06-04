@@ -5,7 +5,7 @@ include "lib/elements/header.php";
 
 <?php
 //include connection to database
-include "mvc/model/db_connect.php";
+include "mvc/model/db_connect_model.php";
 ?>
 
         <!---------------------------------------------->

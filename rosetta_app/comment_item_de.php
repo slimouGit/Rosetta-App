@@ -41,7 +41,7 @@ include "lib/elements/header.php";
 
                     <?php
 
-                    require_once "mvc/view/formularFields.class.php";
+                    require_once "mvc/view/formularFields_view.class.php";
 
                     if(!$hideForm=="true"){
 
@@ -85,7 +85,7 @@ include "lib/elements/header.php";
                 //------------------------------------------------------------------------------------------
 
                 //Meldung wird ausgegeben
-                require_once "mvc/view/responseObject.class.php";
+                require_once "mvc/view/responseObject_view.class.php";
                 $response = new responseObject();
                 $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich kommentiert","6","responseSuccess");
 
@@ -93,7 +93,7 @@ include "lib/elements/header.php";
 
                 //aktualisierter Datensatz wird ausgegeben
                 $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $data_id");
-                require "mvc/view/table_items.class.php";
+                require "mvc/view/table_items_view.class.php";
                 table_items::showData();
 
                 //------------------------------------------------------------------------------------------

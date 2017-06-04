@@ -61,12 +61,12 @@ include "lib/elements/header.php";
                     if ($count == 0) {
 
                         //Meldung wird ausgegeben
-                        require_once "mvc/view/responseObject.class.php";
+                        require_once "mvc/view/responseObject_view.class.php";
                         $response = new responseObject();
                         $response->response("Kein Ergebnis für {$_POST['search']} verfügbar","6","responseFalse");
 
                     } else {
-                        require "mvc/view/table_items.class.php";
+                        require "mvc/view/table_items_view.class.php";
                         table_items::showData();
                     }
                 }

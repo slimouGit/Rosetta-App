@@ -56,7 +56,7 @@ include "lib/elements/header.php";
 
                         <?php
 
-                        require_once "mvc/view/formularFields.class.php";
+                        require_once "mvc/view/formularFields_view.class.php";
 
                             $form = new formular();
 
@@ -132,7 +132,7 @@ include "lib/elements/header.php";
                 //------------------------------------------------------------------------------------------
 
                 //Daten aendern ueber Controller edit_item
-                require "mvc/model/edit_item.class.php";
+                require "mvc/model/edit_item_model.class.php";
                 edit_item::editData($item_de,$item_fr,$item_it,$category,$info,$car,$username,$data_id);
 
                 //------------------------------------------------------------------------------------------

@@ -19,7 +19,7 @@ include "lib/elements/header.php";
 
                             <?php
                             // EINBINDEN PHP-Klasse mit Formlar-Objekten
-                            require_once "mvc/view/formularFields.class.php";
+                            require_once "mvc/view/formularFields_view.class.php";
 
                             // Objekt erzeugen
                             $form = new formular();
@@ -79,7 +79,7 @@ include "lib/elements/header.php";
                     //------------------------------------------------------------------------------------------
 
                     //Daten eintragen ueber Controller insert_item
-                    require "mvc/model/insert_item.class.php";
+                    require "mvc/model/insert_item_model.class.php";
                     insert_item::insertData($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username);
 
                     //------------------------------------------------------------------------------------------

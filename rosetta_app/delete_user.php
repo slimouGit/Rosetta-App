@@ -37,7 +37,7 @@ if(empty($_GET["user_id"])){
                 if(!$hideForm=="true") {
 
                     //Anzeige des Datensatzes
-                    require "mvc/view/table_user.class.php";
+                    require "mvc/view/table_user_view.class.php";
                     table_user::showUser($tempId);
                 }
 
@@ -49,7 +49,7 @@ if(empty($_GET["user_id"])){
                     $currentDate = date('d.m.Y H:i');
 
                     //Daten loeschen ueber Controller delete_item
-                    require "mvc/model/delete_user.class.php";
+                    require "mvc/model/delete_user_model.class.php";
                     delete_user::deleteUserData($tempId);
 
                     //------------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ if(empty($_GET["user_id"])){
                 if(!$hideForm=="true") {
 
                     //Meldung wird ausgegeben
-                    require_once "mvc/view/responseObject.class.php";
+                    require_once "mvc/view/responseObject_view.class.php";
                     $response = new responseObject();
                     $response->success("Soll dieser Datensatz wirklich gelöscht werden?");
 
@@ -85,7 +85,7 @@ if(empty($_GET["user_id"])){
                 <form action="?delete_user=1" method = "post">
 
                     <?php
-                    require_once "mvc/view/formularFields.class.php";
+                    require_once "mvc/view/formularFields_view.class.php";
 
                     //CONTROLLER
                     if(!$hideForm=="true") {

@@ -7,7 +7,7 @@ include "lib/elements/header.php";
 
 <?php
 //include connection to database
-include "mvc/model/db_connect.php";
+include "mvc/model/db_connect_model.php";
 ?>
 
     <div class="container">
@@ -50,7 +50,7 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
                 echo "Kein Ergebnis für " . $_POST['search'];
             }
             else{
-                require "mvc/view/table_items.class.php";
+                require "mvc/view/table_items_view.class.php";
                 table_items::showData();
             }
             ?>

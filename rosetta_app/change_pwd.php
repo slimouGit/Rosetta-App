@@ -52,7 +52,7 @@ include "lib/elements/header.php";
                     <form action="?change_pwd=1" method="post">
 
                         <?php
-                            require_once "mvc/view/formularFields.class.php";
+                            require_once "mvc/view/formularFields_view.class.php";
                             $form = new formular();
                             $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->passwordField("Passwort", "password", "", "", "", 2, 8);
@@ -107,7 +107,7 @@ include "lib/elements/header.php";
                     if($result) {
 
                         //Meldung wird ausgegeben
-                        require_once "mvc/view/responseObject.class.php";
+                        require_once "mvc/view/responseObject_view.class.php";
                         $response = new responseObject();
                         $response->response("Das Passwort wurde erfolgreich geändert.", "4", "");
                     }

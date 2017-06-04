@@ -6,7 +6,7 @@ include "lib/elements/headerStart.php";
 
 <?php
 //include db connection
-include "mvc/model/db_connect.php";
+include "mvc/model/db_connect_model.php";
 ?>
 
 <?php
@@ -91,7 +91,7 @@ include 'lib/elements/navigationStart.php';
                         <div class="formWrapper col-lg-3">
                             <?php
                             //Meldung wird ausgegeben
-                            require_once "mvc/view/responseObject.class.php";
+                            require_once "mvc/view/responseObject_view.class.php";
                             $response = new responseObject();
                             $response->response("Ein Link wurde an Deine Email geschickt","6","responseSuccess");
                             ?>

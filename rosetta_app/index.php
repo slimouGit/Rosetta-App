@@ -16,7 +16,7 @@ include "lib/elements/header.php";
         </div>
         <div class="row">
             <?php
-            include "mvc/view/dashboard.php";
+            include "mvc/view/dashboard_view.php";
             ?>
         </div>
     </div>
