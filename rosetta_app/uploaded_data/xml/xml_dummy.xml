@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<items>
+    <item>
+        <item_de>Adaptives Bremslicht</item_de>
+        <item_fr>Feux de stop adaptatifs</item_fr>
+        <item_it>Luce di stop adattiva</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Airbagsystem</item_de>
+        <item_fr>Système d’airbags</item_fr>
+        <item_it>Sistema di airbag</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Frontairbags, Fahrer und Beifahrer</item_de>
+        <item_fr>airbags frontaux, conducteur et passager avant</item_fr>
+        <item_it>airbag frontali, conducente e passeggero</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+</items>
