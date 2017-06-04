@@ -8,7 +8,7 @@ include "rosetta_app/lib/elements/headerStart.php";
 
 <?php
 //include connection to database
-include "rosetta_app/mvc/model/db_connect.php";
+include "rosetta_app/mvc/model/db_connect_model.php";
 ?>
 
 <?php
@@ -78,7 +78,7 @@ include 'rosetta_app/lib/elements/navigationStart.php';
             <form action="?login=1" method="post">
 
                 <?php
-                require_once "rosetta_app/mvc/view/formularFields.class.php";
+                require_once "rosetta_app/mvc/view/formularFields_view.class.php";
                 $form = new formular();
                 $form->inputField("", "email", "", "Email", "", 0,  11);
                 $form->passwordField("", "password", "Passwort", "", "", 0,  11);
