@@ -35,6 +35,23 @@ include "lib/elements/header.php";
                             $form->checkBox("Antara");
                             $form->checkBox("AstraST");
                             $form->checkBox("AstraNG");
+                            $form->checkBox("Cascada");
+                            $form->checkBox("ComboKastenwagen");
+                            $form->checkBox("ComboPassenger");
+                            $form->checkBox("Corsa");
+                            $form->checkBox("Crossland");
+                            $form->checkBox("GTC_OPC");
+                            $form->checkBox("InsigniaLimousine");
+                            $form->checkBox("InsigniaOPC");
+                            $form->checkBox("InsigniaST");
+                            $form->checkBox("KARL");
+                            $form->checkBox("Meriva");
+                            $form->checkBox("MokkaX");
+                            $form->checkBox("MovanoCombiBus");
+                            $form->checkBox("MovanoFahrgestell");
+                            $form->checkBox("MovanoVan");
+                            $form->checkBox("Zafira");
+
                             $form->selectFinish();
 
                             $form->submitButton("2","Eintragen");
