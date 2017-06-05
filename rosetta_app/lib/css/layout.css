@@ -344,3 +344,50 @@ textarea {
 .image-preview-input-title {
     margin-left:2px;
 }
+
+/****************************************************/
+
+/*Autocomplete*/
+
+.ui-menu-item {
+    font-size: .75em !important;
+    padding:10px 0px 10px 10px !important;
+    border-bottom: 1px dashed #b9edf3;
+}
+
+
+.ui-state-focus {
+    color: #fff !important;
+    font-weight: bold !important;
+    background: none !important;
+    background-color: #2e6da4 !important;
+    border: none !important;
+}
+
+#ui-id-1{
+    width: 500px;
+    min-height: 50px;
+    max-height: 300px;
+    border: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+#ui-id-1::-webkit-scrollbar {
+    width: 12px;
+}
+
+#ui-id-1::-webkit-scrollbar-track {
+    border-bottom-right-radius: 1em;
+}
+
+#ui-id-1::-webkit-scrollbar-thumb {
+    background-color: #2e6da4;
+    border-bottom-right-radius: 1em;
+}
+
+/****************************************************/
