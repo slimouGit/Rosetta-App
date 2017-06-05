@@ -2,7 +2,6 @@
  * Created by salim on 19.05.2017.
  */
 console.log("script_postLoaded");
-console.log("Test");
 
     //Funktion fuer die dropdown-select-box mit Mehrfachauswahl-Checkbox
     $(document).ready(function() {
