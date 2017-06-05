@@ -6,15 +6,15 @@ $target_dir = $path."/";
 $fileName = $_FILES["xmlFile"]["name"];
 $new_path = $target_dir . $fileName;
 
-echo "Originaldateiname: "  . $fileName."<br />";
+//echo "Originaldateiname: "  . $fileName."<br />";
 
 /* Temporaerer Dateiname auf dem Server */
-echo "Temporaerer Dateiname: " . $_FILES["xmlFile"]["tmp_name"] . "</p>";
+//echo "Temporaerer Dateiname: " . $_FILES["xmlFile"]["tmp_name"] . "</p>";
 
 copy($_FILES["xmlFile"]["tmp_name"],$new_path);
 
-echo "<p>Datei wurde kopiert in {$target_dir}<br />";
-echo "Der neue Pfad lautet: ".$new_path. "<br/>";
+//echo "<p>Datei wurde kopiert in {$target_dir}<br />";
+//echo "Der neue Pfad lautet: ".$new_path. "<br/>";
 
 $xmlDoc = new DOMDocument();
 $xmlDoc->load($fileName);
@@ -42,8 +42,17 @@ for ($i=0; $i < $itemCount; $i++){
     //Daten werden eingefuegt
     $res = $pdo->prepare("INSERT INTO rosetta_data (token, item_de, item_fr, item_it, category, info, carline, user_create) VALUES (:token, :item_de, :item_fr, :item_it, :category, :info, :carline, :user_create)");
     $res->execute(array('token' => $token, 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'category' => $category, 'info' => $info, 'carline' => $carline, 'user_create' => $username));
-    print "Added Data $i: <br/> $item_de <br/> $item_fr<br/> $item_it<br/> $carline<br/> <br/> ";
+    //print "Added Data $i: <br/> $item_de <br/> $item_fr<br/> $item_it<br/> $carline<br/> <br/> ";
 }
+
+//------------------------------------------------------------------------------------------
+
+//Meldung wird ausgegeben
+
+//CONTROLLER
+require_once "mvc/view/responseObject_view.class.php";
+$uploadResponse = new responseObject();
+$uploadResponse->uploadResponse($fileName, $itemCount);
 
 //-----------------------------------------------------------------------------------------------
 
