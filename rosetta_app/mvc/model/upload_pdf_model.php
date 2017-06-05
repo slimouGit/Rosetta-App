@@ -14,7 +14,6 @@ $target_dir = $path."/uploaded_data/pricelists/";
 
 //Variablen initialisiseren
 $fileName = $_FILES["upfile"]["name"];
-$fileName = strtolower($fileName);
 $fileSize = $_FILES["upfile"]["size"];
 $fileType = $_FILES["upfile"]["type"];
 
