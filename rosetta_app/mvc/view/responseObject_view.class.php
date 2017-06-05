@@ -41,7 +41,7 @@ class responseObject
 
     //--------------------------------------------------------------------------------------------------------------------------
 
-    public function uploadResponse($fileName, $itemCount)
+    public function uploadResponseXML($fileName, $itemCount)
     {
         if ($itemCount == 0) {
             $class = "responseFalse";
@@ -69,5 +69,19 @@ class responseObject
     }
 
     //--------------------------------------------------------------------------------------------------------------------------
+
+    public function uploadResponsePDF($fileName,$fileSize){
+        echo "<div class='container'>
+                <div class=\"container row  col-sm-8 responseUploadHeader responseSuccess responseShadow\">
+                    <div class=\"col-sm-12\">
+                            <h4>Upload hat geklappt</h4>
+                    </div>
+                    </div>
+                    <div class=\"row col-sm-8 responseContent responseShadow\">
+                            <p>Dateiname: {$fileName}</p>
+                            <p>Dateigröße: {$fileSize} kb</p>
+                    </div>
+                </div>";
+    }
 
 }

@@ -6,61 +6,38 @@
  * Time: 14:40
  */
 
-echo "PDF wird hochgeladen";
 
+//Pfade initialisieren
 $path = getcwd();
 $target_dir = $path."/uploaded_data/pricelists/";
 
 
-
-/* Kontrolldaten */
-echo "<p>Zur Kontrolle:<br />";
-echo "Originaldateiname: "
-    . $_FILES["upfile"]["name"] . "<br />";
+//Variablen initialisiseren
 $fileName = $_FILES["upfile"]["name"];
 $fileName = strtolower($fileName);
-
-
-/* Kontrolldaten */
-echo "<p>Zur Kontrolle:<br />";
-echo "Originaldateiname: "
-    . $_FILES["upfile"]["name"] . "<br />";
-$fileName = $_FILES["upfile"]["name"];
-$fileName = strtolower($fileName);
-
-
-
+$fileSize = $_FILES["upfile"]["size"];
+$fileType = $_FILES["upfile"]["type"];
 
 $new_path = $target_dir . $fileName;
 
 
-
-echo "Dateigroesse: "
-    . $_FILES["upfile"]["size"] . "<br />";
-echo "Dateityp: "
-    . $_FILES["upfile"]["type"] . "<br />";
-
-/* Dateiendung extrahieren */
-$dname = explode(".",$_FILES["upfile"]["name"]);
-$ext = $dname[count($dname)-1];
-
-echo "Dateiendung: $ext<br />";
-
-/* Temporaerer Dateiname auf dem Server */
-echo "Temporaerer Dateiname: "
-    . $_FILES["upfile"]["tmp_name"] . "</p>";
+//Klassen-Objekt
+require_once "mvc/view/responseObject_view.class.php";
+$uploadResponse = new responseObject();
 
 
-if($_FILES["upfile"]["size"]>0)
+//Pruefung, ob Datei valide
+if($_FILES["upfile"]["size"]>0 && strpos($fileType, 'pdf') == true)
 {
     copy($_FILES["upfile"]["tmp_name"],$new_path);
-    echo "<p>Datei wurde kopiert in {$target_dir}<br />";
+
+    //------------------------------------------------------------------------------------------
+
+    //Meldung wird ausgegeben
+     $uploadResponse->uploadResponsePDF($fileName, $fileSize);
+
+    //-----------------------------------------------------------------------------------------------
 }
 else
-    echo "<p>Kopierfehler</p>";
-
-function uploadFile($fileName, $new_path){
-    move_uploaded_file ($fileName, $new_path);
-
-    echo "new path: ".$new_path;
-}
+    //Meldung wird ausgegeben
+    $uploadResponse->response("Fehler", "6", "responseFalse" );

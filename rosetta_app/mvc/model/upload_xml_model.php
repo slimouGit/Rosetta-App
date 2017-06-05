@@ -1,25 +1,16 @@
 <?php
 
-
+//Pfade initialisieren
 $path = getcwd();
 $target_dir = $path."/";
 $fileName = $_FILES["xmlFile"]["name"];
 $new_path = $target_dir . $fileName;
 
-//echo "Originaldateiname: "  . $fileName."<br />";
-
-/* Temporaerer Dateiname auf dem Server */
-//echo "Temporaerer Dateiname: " . $_FILES["xmlFile"]["tmp_name"] . "</p>";
-
 copy($_FILES["xmlFile"]["tmp_name"],$new_path);
-
-//echo "<p>Datei wurde kopiert in {$target_dir}<br />";
-//echo "Der neue Pfad lautet: ".$new_path. "<br/>";
 
 $xmlDoc = new DOMDocument();
 $xmlDoc->load($fileName);
-//include db connection
-//include "include/db_connect_model.php";
+
 //Erstellen eines einzigartigen tokens SOLLTE SPAETER GLOBAL LAUFEN!!!
 //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
 //da hier noch nicht mit der ID gearbeitet werden kann
@@ -42,7 +33,6 @@ for ($i=0; $i < $itemCount; $i++){
     //Daten werden eingefuegt
     $res = $pdo->prepare("INSERT INTO rosetta_data (token, item_de, item_fr, item_it, category, info, carline, user_create) VALUES (:token, :item_de, :item_fr, :item_it, :category, :info, :carline, :user_create)");
     $res->execute(array('token' => $token, 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'category' => $category, 'info' => $info, 'carline' => $carline, 'user_create' => $username));
-    //print "Added Data $i: <br/> $item_de <br/> $item_fr<br/> $item_it<br/> $carline<br/> <br/> ";
 }
 
 //------------------------------------------------------------------------------------------
@@ -52,7 +42,7 @@ for ($i=0; $i < $itemCount; $i++){
 //CONTROLLER
 require_once "mvc/view/responseObject_view.class.php";
 $uploadResponse = new responseObject();
-$uploadResponse->uploadResponse($fileName, $itemCount);
+$uploadResponse->uploadResponseXML($fileName, $itemCount);
 
 //-----------------------------------------------------------------------------------------------
 
@@ -64,7 +54,7 @@ $desk = $path."/uploaded_data/xml/".$fileName;
 copy($source,$desk);
 unlink($source);
 
-
+//Datei wieder loeschen, falls keine Daten importiert wurden
 if($itemCount==0){
     unlink($desk);
 }
