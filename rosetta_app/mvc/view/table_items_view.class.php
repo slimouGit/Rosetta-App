@@ -141,9 +141,9 @@ class table_items
                             <div class="row">
                                 <div class="col-md-12 white ">
                                     <span class="carlineHeadline">Enthalten in:</span>
-                                    <?php
-                                        echo $row["carline"];
-                                    ?>
+
+                                    <?php include "table_items_content/data_carline_view.php"; ?>
+
                                 </div>
                             </div>
 
