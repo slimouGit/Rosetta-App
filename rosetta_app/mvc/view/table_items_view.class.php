@@ -104,27 +104,9 @@ class table_items
 
                             <div class="row">
 
-                                <!-- Rubrik -->
-                                <div class="col-md-4 white col ">
-                                    <?php
-                                    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
-                                        echo $row["category"];
-                                    } else {
-                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["category"]);
-                                    }
-                                    ?>
-                                </div>
-
-                                <!-- Info -->
-                                <div class="col-md-4 white col ">
-                                    <?php
-                                    if ($tempSearch == false || strstr($_POST['search'], $slash)) {
-                                        echo $row["info"];
-                                    } else {
-                                        echo preg_replace("/" . $_POST['search'] . "/", "<span class='highlight'>" . $_POST['search'] . "</span>", $row["info"]);
-                                    }
-                                    ?>
-                                </div>
+                                <?php
+                                include "table_items_content/data_category_info.php";
+                                ?>
 
                                 <!-- Edit -->
                                 <div class="col-md-4 white col">
