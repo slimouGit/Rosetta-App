@@ -64,4 +64,9 @@ $desk = $path."/uploaded_data/xml/".$fileName;
 copy($source,$desk);
 unlink($source);
 
+
+if($itemCount==0){
+    unlink($desk);
+}
+
 ?>
