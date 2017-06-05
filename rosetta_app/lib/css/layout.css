@@ -309,6 +309,25 @@ textarea {
     box-shadow: 2px 2px 2px #888888;
 }
 
+.responseUploadHeader{
+    padding:5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.responseContent{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+
+.responseShadow{
+    box-shadow: 2px 2px 2px #888888;
+}
+
 .responseSuccess{
     background-color: #04bb0c;
 }
