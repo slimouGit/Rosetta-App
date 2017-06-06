@@ -8,7 +8,6 @@ class register_user {
     }//ENDE function insertData
 
     function insertUserItem($forename,$surname,$authorization,$email,$password_hash){
-        echo $forename ." " . $surname ." " . $authorization ." " . $email ." " . $password_hash;
 
         global $res;
 
@@ -31,7 +30,17 @@ class register_user {
 
             $response->response("Der Nutzer wurde erfolgreich registriert","6","responseSuccess");
 
-            //$tempFormular = false;
+            //------------------------------------------------------------------------------------------
+
+            //Eintrag anzeigen
+            $res = $pdo->query("SELECT * FROM rosetta_users WHERE password LIKE '" . $password_hash . "' ");
+
+            //CONTROLLER
+            require "mvc/view/table_user_view.class.php";
+            table_user::showUser();
+
+            //---------------------------------------------------------------------------------------
+
         } else {
             $response->response("Beim Speichern ist ein Fehler aufgetreten","6","responseFalse");
         }
