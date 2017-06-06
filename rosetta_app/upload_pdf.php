@@ -50,7 +50,7 @@ include "mvc/model/db_connect_model.php";
 
                 //CONTROLLER
                 if(isset($_GET['upload_pdf'])) {
-                    include "mvc/model/upload_pdf_model.php";
+                   include "mvc/model/upload_pdf_model.php";
                 }
                 ?>
                 </div>
