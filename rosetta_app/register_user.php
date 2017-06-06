@@ -93,17 +93,9 @@ include "lib/elements/header.php";
                 if(!$error) {
                     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
-                    $res = $pdo->prepare("INSERT INTO rosetta_users (forename, surname, authorization, email, password) VALUES (:forename, :surname, :authorization, :email, :password)");
-                    $result = $res->execute(array('forename' => $forename, 'surname' => $surname, 'authorization' => $authorization, 'email' => $email, 'password' => $password_hash));
-
-                    if($result) {
-
-                        $response->response("Der Nutzer wurde erfolgreich registriert","6","responseSuccess");
-
-                        $tempFormular = false;
-                    } else {
-                        $response->response("Beim Speichern ist ein Fehler aufgetreten","6","responseFalse");
-                    }
+                    //Daten eintragen ueber Controller insert_item
+                    require "mvc/model/register_user_model.class.php";
+                    register_user::insertUserData($forename,$surname,$authorization,$email,$password_hash);
                 }
             }
 
