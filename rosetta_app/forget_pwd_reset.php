@@ -124,18 +124,12 @@ include 'lib/elements/navigationStart.php';
 
                         $passwordhash = password_hash($password, PASSWORD_DEFAULT);
 
-                        $res = $pdo->prepare("UPDATE rosetta_users SET password = :passwordhash WHERE user_id = :user_id");
-                        $result = $res->execute(array('passwordhash' => $passwordhash, 'user_id'=> $tempId ));
+                        //Daten eintragen ueber Controller forget_pwd_mode
+                        require "mvc/model/set_pwd_model.class.php";
+                        set_pwd::resetPWDCode($passwordhash, $tempId);
 
-                        if($result) {
 
-                            //Meldung wird ausgegeben
-                            require_once "mvc/view/responseObject_view.class.php";
-                            $response = new responseObject();
-                            $response->response("Das Passwort wurde erfolgreich geändert.", "4", "");
-
-                            echo "<a href=\"../index.php\">zum login</a>";
-                        }
+                        echo "<a href=\"../index.php\">zum login</a>";
                     }
                 }
                 ?>

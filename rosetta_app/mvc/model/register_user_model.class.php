@@ -5,7 +5,7 @@ class register_user {
     public static function insertUserData($forename,$surname,$authorization,$email,$password_hash)
     {
         self::insertUserItem($forename,$surname,$authorization,$email,$password_hash);
-    }//ENDE function insertData
+    }//ENDE function insertUserData
 
     function insertUserItem($forename,$surname,$authorization,$email,$password_hash){
 

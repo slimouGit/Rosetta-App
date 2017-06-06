@@ -70,22 +70,15 @@ include 'lib/elements/navigationStart.php';
 
                 $currentDate = date('Y-m-d H:i:s');
 
-                $res = $pdo->prepare("UPDATE rosetta_users SET password_code = :password_code, password_date = :password_date WHERE user_id = :user_id");
-                $result = $res->execute(array('password_code' => $passwordcode, 'password_date' => $currentDate, 'user_id' => $user['user_id']));
+                $user_id = $user['user_id'];
+                $user_email = $user['email'];
+                $user_forename = $user['forename'];
 
-                $empfaenger = $user['email'];
-                $betreff = "Neues Passwort für deinen Account auf www.rosetta-app.de";
-                $from = "From: admin@rosetta-app.de";
-                $url_passwordcode = 'http://rosetta-app.de/rosetta_app/forget_pwd_reset.php?user_id='.$user['user_id'].'&code='.$passwordcode;
-
-                $text = 'Hallo '.$user['forename'].',
-                    für deinen Account auf www.rosetta-app.de wurde nach einem neuen Passwort gefragt. 
-                    Um ein neues Passwort zu vergeben, rufe die folgende Website über den folgenden Link auf:                
-                    '. $url_passwordcode .'
-                    Sollte dir dein Passwort wieder eingefallen sein oder hast du dies nicht angefordert, so bitte ignoriere diese E-Mail.';
-
-                mail($empfaenger, $betreff, $text, $from);
+                //Daten eintragen ueber Controller forget_pwd_mode
+                require "mvc/model/set_pwd_model.class.php";
+                set_pwd::insertPWDCode($passwordcode, $currentDate, $user_id, $user_email, $user_forename);
                 ?>
+
                 <div class="col-lg-12">
                     <div class='row'>
                         <div class="formWrapper col-lg-3">
