@@ -28,7 +28,7 @@
                         <li><a href="register_user.php">Nutzer registrieren</a></li>
                         <li><a href="user_complete.php">Benutzer verwalten</a></li>
                         <li><a href="data_complete.php">Daten gesamt</a></li>
-                        <li><a href="deleted_item.php">Daten gelöscht</a></li>
+                        <li><a href="deleted_items.php">Daten gelöscht</a></li>
                     </ul>
                 </li>
 
