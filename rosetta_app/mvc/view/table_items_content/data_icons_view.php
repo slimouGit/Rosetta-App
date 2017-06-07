@@ -18,7 +18,7 @@
 <!--Icons fuer Franzoesisch-->
 <div class="col-md-4 white col">
 
-    <a name="comment_fr" title="Eintrag kommentieren" href="comment_item_fr.php?data_id=<?php echo $row['data_id']?>">
+    <a name="comment_fr" title="Eintrag kommentieren" href="comment_item.php?data_id=<?php echo $row['data_id']?>item_fr=<?php echo $row['item_fr']?>">
         <img src="lib/img/button_comment.png"/>
     </a>
 
