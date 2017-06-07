@@ -13,7 +13,7 @@ include "lib/elements/header.php";
         <!------------------------------------------------------------->
 
         <div class='row'>
-            <h1>Rosetta-App edit user</h1>
+            <h1>Rosetta-App Nutzerdaten ändern</h1>
         </div>
 
         <!------------------------------------------------------------->

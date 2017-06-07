@@ -7,7 +7,7 @@ include "lib/elements/header.php";
 
         <div class="container">
             <div class='row'>
-                <h1>Rosetta-Data create item</h1>
+                <h1>Rosetta-Data Daten eintragen</h1>
             </div>
 
             <!------------------------------------------------------------->

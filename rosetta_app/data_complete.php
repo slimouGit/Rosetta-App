@@ -9,7 +9,7 @@ include "lib/elements/header.php";
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-App complete data</h1>
+            <h1>Rosetta-App gesamte Daten</h1>
             <?php
             $res = $pdo->query("SELECT * FROM `rosetta_data`");
             require "mvc/view/table_items_view.class.php";

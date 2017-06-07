@@ -10,7 +10,7 @@ include "lib/elements/header.php";
     <!-------------------------------------------------------------->
 
     <div class='row'>
-        <h1>Rosetta-App search data</h1>
+        <h1>Rosetta-App Suche</h1>
     </div>
 
     <!------------------------------------------------------------->

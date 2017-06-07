@@ -16,7 +16,7 @@ include "mvc/model/db_connect_model.php";
 
             <div class="container">
                 <div class='row'>
-                    <h1>Rosetta-App upload PDF</h1>
+                    <h1>Rosetta-App PDF hochladen</h1>
                 </div>
             </div>
 

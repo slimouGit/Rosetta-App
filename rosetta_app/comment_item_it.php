@@ -11,7 +11,7 @@ include "lib/elements/header.php";
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-App comment data</h1>
+            <h1>Rosetta-App Kommentar</h1>
         </div>
 
         <div class='row'>

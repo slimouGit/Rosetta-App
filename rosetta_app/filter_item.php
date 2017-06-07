@@ -12,7 +12,7 @@ include "mvc/model/db_connect_model.php";
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-App filter item</h1>
+            <h1>Rosetta-App Daten filtern</h1>
         </div>
     </div>
 <?php

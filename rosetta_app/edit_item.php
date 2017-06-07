@@ -12,7 +12,7 @@ include "lib/elements/header.php";
         <!------------------------------------------------------------->
 
         <div class='row'>
-            <h1>Rosetta-App edit data</h1>
+            <h1>Rosetta-App Daten bearbeiten</h1>
         </div>
 
         <!------------------------------------------------------------->

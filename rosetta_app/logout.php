@@ -22,7 +22,7 @@ include 'lib/elements/navigation.php';
 
     <div class="container">
         <div class='row'>
-            <h1>Rosetta-App logged out</h1>
+            <h1>Rosetta-App ausgeloggt</h1>
 
             <p><a href="../index.php">login</a></p>
         </div>

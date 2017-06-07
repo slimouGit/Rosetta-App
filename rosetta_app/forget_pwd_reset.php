@@ -24,7 +24,7 @@ include 'lib/elements/navigationStart.php';
         <!-------------------------------------------------------------->
 
         <div class='row'>
-            <h1>Rosetta-App change password</h1>
+            <h1>Rosetta-App Passwort ändern</h1>
         </div>
 
         <!------------------------------------------------------------->

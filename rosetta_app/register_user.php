@@ -11,7 +11,7 @@ include "lib/elements/header.php";
     <!-------------------------------------------------------------->
 
     <div class='row'>
-        <h1>Rosetta-App register user</h1>
+        <h1>Rosetta-App Nutzer registrieren</h1>
     </div>
 
     <!------------------------------------------------------------->

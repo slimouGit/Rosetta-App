@@ -21,7 +21,7 @@ if(empty($_GET["user_id"])){
 
             <div class='row'>
 
-                <h1>Rosetta-Data delete user</h1>
+                <h1>Rosetta-Data Nutzer löschen</h1>
 
                 <?php
 
