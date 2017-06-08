@@ -9,6 +9,11 @@
             </button>
             <a class="navbar-brand" href="index.php">Rosetta-App</a>
         </div>
+
+
+        <?php if(isset($_SESSION['username'])) { ?>
+
+
         <div class="collapse navbar-collapse navbar-left" id="bs-exmple-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="search_item.php">Suchen</a></li>
@@ -16,9 +21,9 @@
                 <li><a href="upload_pdf.php">PDF hochladen</a></li>
                 <li><a href="upload_xml.php">XML hochladen</a></li>
 
-                <?php
-                    if($authorization=="admin"){
-                ?>
+
+                <?php if($authorization=="admin"){ ?>
+
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration
@@ -32,14 +37,19 @@
                     </ul>
                 </li>
 
-                <?php
-                    }
-                ?>
+
+                <?php } ?> <!-- ENDE if($authorization=="admin") -->
+
 
                 <li><a href="logout.php">logout</a></li>
                 <li><a href="change_pwd.php">Passwort ändern</a></li>
             </ul>
         </div>
+
+
+        <?php } ?> <!-- ENDE if(isset($_SESSION['username'])) -->
+
+
     </div>
 </nav>
 
