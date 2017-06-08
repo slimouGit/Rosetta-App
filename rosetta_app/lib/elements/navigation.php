@@ -22,7 +22,10 @@
                 <li><a href="upload_xml.php">XML hochladen</a></li>
 
 
-                <?php if($authorization=="admin"){ ?>
+                <?php
+                    if(empty($authorization)){$authorization="user";}
+                    if($authorization=="admin"){
+                ?>
 
 
                 <li class="dropdown">
