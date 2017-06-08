@@ -79,7 +79,17 @@ include "lib/elements/header.php";
 
                 //Ueberpruefen, ob Email bereits existiert
                 if(!$error) {
-                    $res = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
+                    //$res = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
+
+                    //------------------------------------------------------------------------------------------
+
+                    //
+                    require "mvc/model/select_data.class.php";
+                    select_data::select_individuelUser("email");
+
+                    //------------------------------------------------------------------------------------------
+
+
                     $result = $res->execute(array('email' => $email));
                     $user = $res->fetch();
 

@@ -7,7 +7,6 @@ include "lib/elements/header.php";
 <?php
 $hideForm ="";
 
-//CONTROLLER
 if(empty($_GET["data_id"])){
     $_GET["data_id"] = $_POST['data_id'];
     $hideForm = "true";
@@ -29,11 +28,15 @@ if(empty($_GET["data_id"])){
 
                 $tempId = $_GET["data_id"];
 
-                $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
+                //------------------------------------------------------------------------------------------
+
+                //
+                require "mvc/model/select_data.class.php";
+                //select_data::select_item($tempId);
+                select_data::select_specificDB("rosetta_data", "data_id", $tempId);
 
                 //------------------------------------------------------------------------------------------
 
-                //CONTROLLER
                 if(!$hideForm=="true") {
 
                     //Anzeige des Datensatzes
@@ -43,7 +46,6 @@ if(empty($_GET["data_id"])){
 
                 //------------------------------------------------------------------------------------------
 
-                //CONTROLLER
                 if(isset($_GET['delete_item'])) {
 
                     $currentDate = date('d.m.Y H:i');
@@ -65,7 +67,7 @@ if(empty($_GET["data_id"])){
         <div class="container">
             <div class='row'>
                 <?php
-                //CONTROLLER
+
                 if(!$hideForm=="true") {
 
                     //Meldung wird ausgegeben
@@ -87,7 +89,6 @@ if(empty($_GET["data_id"])){
                     <?php
                     require_once "mvc/view/formularFields_view.class.php";
 
-                    //CONTROLLER
                     if(!$hideForm=="true") {
                         $form = new formular();
                         $form->hiddenField("data_id", "" . $_GET["data_id"] . "");

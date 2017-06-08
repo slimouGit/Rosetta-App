@@ -10,7 +10,13 @@ include "lib/elements/header.php";
         <div class='row'>
             <h1>Rosetta-App Nutzer-Daten</h1>
             <?php
-            $res = $pdo->query("SELECT * FROM `rosetta_users`");
+            //------------------------------------------------------------------------------------------
+
+            //
+            require "mvc/model/select_data.class.php"   ;
+            select_data::select_completeDB("rosetta_users");
+
+            //------------------------------------------------------------------------------------------
             require "mvc/view/table_user_view.class.php";
             table_user::showUser();
             ?>

@@ -10,10 +10,7 @@ include "lib/elements/header.php";
     <div class="container">
         <div class='row'>
             <h1>Rosetta-App</h1>
-            <?php
-            echo "Hallo " . $username;
-            ?>
-        </div>
+         </div>
         <div class="row">
             <?php
             include "mvc/view/dashboard_view.php";

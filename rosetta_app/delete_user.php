@@ -29,7 +29,11 @@ if(empty($_GET["user_id"])){
 
                 $tempId = $_GET["user_id"];
 
-                $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
+                //------------------------------------------------------------------------------------------
+
+                //
+                require "mvc/model/select_data.class.php";
+                select_data::select_specificDB("rosetta_users", "user_id", $tempId);
 
                 //------------------------------------------------------------------------------------------
 
@@ -48,7 +52,7 @@ if(empty($_GET["user_id"])){
 
                     $currentDate = date('d.m.Y H:i');
 
-                    //Daten loeschen ueber Controller delete_item
+                    //
                     require "mvc/model/delete_user_model.class.php";
                     delete_user::deleteUserData($tempId);
 

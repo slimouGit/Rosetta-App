@@ -22,7 +22,7 @@ include "lib/elements/header.php";
         //also, ob er sein eigenes Passwort oder als Administrator das eines Nutzers aendern will
 
         //$_GET["user_id"] ist leer, wenn ueber Navigation "Passwort ändern" auf Seite gewechselt wird
-        //CONTROLLER
+
         if(empty($_GET["user_id"])){
                 //$_POST["user_id"] ist leer, wenn nicht ueber hidden-field im Formular uebergeben wurde
                 //dann wird $_POST["user_id"] mit der ID des aktuellen Nutzers initialisiert,
@@ -36,9 +36,13 @@ include "lib/elements/header.php";
             //$tempId wird mit der uebergebenen ID aus table_user.class initialisiert
             $tempId = $_GET["user_id"];
 
-        //--------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------
 
-            $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
+        //Benutzer waehlen ueber Klasse select_data.class.php
+        require "mvc/model/select_data.class.php";
+        select_data::select_specificDB("rosetta_users", "user_id", $tempId);
+
+        //------------------------------------------------------------------------------------------
 
             //
             foreach ($res AS $row):

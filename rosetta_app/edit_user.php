@@ -37,8 +37,13 @@ include "lib/elements/header.php";
             $tempId = $_GET["user_id"];
             echo $tempId;
 
-            //
-            $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
+                //------------------------------------------------------------------------------------------
+
+                //Benutzer waehlen ueber Klasse select_data.class.php
+                require "mvc/model/select_data.class.php";
+                select_data::select_specificDB("rosetta_users", "user_id", $tempId);
+
+                //------------------------------------------------------------------------------------------
 
             //
             foreach ($res AS $row):

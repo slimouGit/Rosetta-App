@@ -10,7 +10,13 @@ include "lib/elements/header.php";
         <div class='row'>
             <h1>Rosetta-App gelöschte Daten</h1>
             <?php
-            $res = $pdo->query("SELECT * FROM `rosetta_data`");
+            //------------------------------------------------------------------------------------------
+
+            //
+            require "mvc/model/select_data.class.php";
+            select_data::select_completeDB("rosetta_data");
+
+            //------------------------------------------------------------------------------------------
             require "mvc/view/table_items_view.class.php";
             table_items::showDeletedData();
             ?>

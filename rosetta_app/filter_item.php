@@ -33,19 +33,24 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
 
 ?>
 
-
     <div class="container">
         <div class='row'>
             <?php
 
             //$cat wir mit Spalten definiert, in denen gesucht werden soll
-            $cat = 'item_de, item_fr, item_it, category, info, carline';
-            $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $tempItem . "%'");
+            //$cat = 'item_de, item_fr, item_it, category, info, carline';
+
+            //------------------------------------------------------------------------------------------
+
+            //
+            require "mvc/model/select_data.class.php";
+            select_data::select_filteredData($tempItem);
+
+            //------------------------------------------------------------------------------------------
 
             //pruefen, ob Suche ein Resultat ergibt
             $count = $res->rowCount();
 
-            //CONTROLLER
             if($count == 0){
                 echo "Kein Ergebnis für " . $_POST['search'];
             }
@@ -56,9 +61,6 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
             ?>
         </div>
     </div>
-
-
-
 
 <?php
 //include header

@@ -52,16 +52,17 @@ include 'lib/elements/navigationStart.php';
 
     //-------------------------------------------------
 
-    //CONTROLLER
     if(isset($_GET['send']) ) {
         if(!isset($_POST['email']) || empty($_POST['email'])) {
             $error = "Bitte eine E-Mail-Adresse eintragen";
         } else {
-            $statement = $pdo->prepare("SELECT * FROM rosetta_users WHERE email = :email");
-            $result = $statement->execute(array('email' => $_POST['email']));
-            $user = $statement->fetch();
 
-            //CONTROLLER
+            require "mvc/model/select_data.class.php";
+            select_data::select_individuelUser("email");
+
+            $result = $res->execute(array('email' => $_POST['email']));
+            $user = $res->fetch();
+
             if($user === false) {
                 $error = "Kein Benutzer gefunden";
             } else {
@@ -101,10 +102,8 @@ include 'lib/elements/navigationStart.php';
 
     //------------------------------------------------------
 
-    //CONTROLLER
-    if($showForm){
+     if($showForm){
 
-        //CONTROLLER
     //Fehlermeldung
     if(isset($error) && !empty($error)) {
         ?>

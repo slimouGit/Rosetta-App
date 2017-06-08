@@ -55,9 +55,13 @@ include 'lib/elements/navigationStart.php';
         //der uebergebene Code wird in $code abgelegt
         $code = $_GET['code'];
 
-        //--------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------
 
-        $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
+        //Benutzer waehlen ueber Klasse select_data.class.php
+        require "mvc/model/select_data.class.php";
+        select_data::select_specificDB("rosetta_users", "user_id", $tempId);
+
+        //------------------------------------------------------------------------------------------
 
         //
         foreach ($res AS $row):

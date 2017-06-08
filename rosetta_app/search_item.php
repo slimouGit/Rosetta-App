@@ -51,10 +51,11 @@ include "lib/elements/header.php";
                     $error = true;
                 }
                 if (!$error) {
-                    //$cat wir mit Spalten definiert, in denen gesucht werden soll
-                    //der Eintrag muss auf 'active' gesetzt sein
-                    $cat = 'item_de, item_fr, item_it, category, info, carline';
-                    $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $_POST['search'] . "%' AND state LIKE 'active'");
+
+                    $tempItem = $_POST['search'];
+
+                    require "mvc/model/select_data.class.php";
+                    select_data::select_searchedData($tempItem);
 
                     //pruefen, ob Suche ein Resultat ergibt
                     $count = $res->rowCount();

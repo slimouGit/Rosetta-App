@@ -8,53 +8,6 @@
  */
 class select_data
 {
-    /*
-    public function select_item($tempId){
-
-        global $res;
-        include "mvc/model/db_connect_model.php";
-
-        //---------------------------------------------------------------------------------------
-
-        $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId");
-
-        //---------------------------------------------------------------------------------------
-    }//ENDE function select_item($tempId)
-
-
-    //----------------------------------------------------------------------------------------------------
-
-
-    public function select_completeData(){
-
-        global $res;
-        include "mvc/model/db_connect_model.php";
-
-        //---------------------------------------------------------------------------------------
-
-        $res = $pdo->query("SELECT * FROM rosetta_data");
-
-        //---------------------------------------------------------------------------------------
-    }//ENDE function select_completeData()
-
-
-
-    //----------------------------------------------------------------------------------------------------
-
-
-    public function select_user($tempId){
-
-        global $res;
-        include "mvc/model/db_connect_model.php";
-
-        //---------------------------------------------------------------------------------------
-
-        $res = $pdo->query("SELECT * FROM rosetta_users WHERE user_id LIKE $tempId");
-
-        //---------------------------------------------------------------------------------------
-    }//ENDE function select_user($tempId)
-
-    */
 
     //----------------------------------------------------------------------------------------------------
 
@@ -64,11 +17,8 @@ class select_data
         global $res;
         include "mvc/model/db_connect_model.php";
 
-        //---------------------------------------------------------------------------------------
-
         $res = $pdo->prepare("SELECT * FROM rosetta_users WHERE $tempValue = :$tempValue");
 
-        //---------------------------------------------------------------------------------------
     }//ENDE function select_user($tempId)
 
 
@@ -77,19 +27,32 @@ class select_data
     /*
      * Funktion zum Filtern der Daten
      */
-    public function select_individuelData($tempItem){
+    public function select_filteredData($tempItem){
 
         global $res;
         include "mvc/model/db_connect_model.php";
 
-        //
         $cat = 'item_de, item_fr, item_it, category, info, carline';
-
-        //---------------------------------------------------------------------------------------
 
         $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $tempItem . "%'");
 
-        //---------------------------------------------------------------------------------------
+    }//ENDE function select_individuelData($cat,$tempItem)
+
+
+    //----------------------------------------------------------------------------------------------------
+
+    /*
+     * Funktion zum Suchen der Daten
+     */
+    public function select_searchedData($tempItem){
+
+        global $res;
+        include "mvc/model/db_connect_model.php";
+
+        $cat = 'item_de, item_fr, item_it, category, info, carline';
+
+        $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $tempItem . "%' AND state LIKE 'active'");
+
     }//ENDE function select_individuelData($cat,$tempItem)
 
 
@@ -101,11 +64,8 @@ class select_data
         global $res;
         include "mvc/model/db_connect_model.php";
 
-        //---------------------------------------------------------------------------------------
-
         $res = $pdo->query("SELECT * FROM $db");
 
-        //---------------------------------------------------------------------------------------
     }//ENDE function select_completeDB($db)
 
 
@@ -116,16 +76,11 @@ class select_data
         global $res;
         include "mvc/model/db_connect_model.php";
 
-        //---------------------------------------------------------------------------------------
-
         $res = $pdo->query("SELECT * FROM $db WHERE $column LIKE $value");
 
-        //---------------------------------------------------------------------------------------
     }//ENDE function select_specificDB($db, $column, $value)
 
 
     //----------------------------------------------------------------------------------------------------
-
-
 
 }
