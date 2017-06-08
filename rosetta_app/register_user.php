@@ -3,6 +3,11 @@
 include "lib/elements/header.php";
 ?>
 
+<?php
+//include connection to database
+include "mvc/model/config.php";
+?>
+
     <div class="container-fluid content">
 
 
@@ -25,12 +30,12 @@ include "lib/elements/header.php";
                     <?php
                     require_once "mvc/view/formularFields_view.class.php";
                     $form = new formular();
-                    $form->inputField("Vorname", "forename", "", "", "", 2, 8);
-                    $form->inputField("Nachname", "surname", "", "", "", 2,  8);
-                    $form->inputField("Email", "email", "", "", "", 2,  8);
+                    $form->inputField("Vorname", "forename", $_POST['forename'], "", "", 2, 8);
+                    $form->inputField("Nachname", "surname", $_POST['surname'], "", "", 2,  8);
+                    $form->inputField("Email", "email", $_POST['email'], "", "", 2,  8);
                     $form->optionField("Authorisation", "User", "Admin");
-                    $form->passwordField("Passwort", "password", "", "", "",2, 8);
-                    $form->passwordField("Passwort wiederholen", "password2", "", "", "", 2,  8);
+                    $form->passwordField("Passwort", "password", $_POST['password'], "", "",2, 8);
+                    $form->passwordField("Passwort wiederholen", "password2", $_POST['password2'], "", "", 2,  8);
                     $form->submitButton("2","Registrieren");
                     ?>
 

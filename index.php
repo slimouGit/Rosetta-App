@@ -16,6 +16,11 @@ include "rosetta_app/mvc/model/db_connect_model.php";
 include 'rosetta_app/lib/elements/navigation.php';
 ?>
 
+<?php
+//include connection to database
+include "rosetta_app/mvc/model/config.php";
+?>
+
     <!------------------------------------------>
 
     <div class="container-fluid content">
@@ -80,8 +85,8 @@ include 'rosetta_app/lib/elements/navigation.php';
                 <?php
                 require_once "rosetta_app/mvc/view/formularFields_view.class.php";
                 $form = new formular();
-                $form->inputField("", "email", "", "Email", "", 0,  11);
-                $form->passwordField("", "password", "Passwort", "", "", 0,  11);
+                $form->inputField("", "email", $_POST['email'], "Email", "", 0,  11);
+                $form->passwordField("", "password", $_POST['password'], "Passwort", "", 0,  11);
                 $form->submitButton("0","Login");
                 $form->ahref("rosetta_app/forget_pwd.php","Passwort vergessen");
                 ?>
