@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username'])) {
-    die('Bitte zuerst <a href="../index.php">einloggen</a>');
+    die('<meta http-equiv="refresh" content="0; URL=error.php">');
 }
 
 //Abfrage der Nutzer ID vom Login
