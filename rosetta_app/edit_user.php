@@ -25,7 +25,7 @@ include "lib/elements/header.php";
             //CONTROLLER
             if(empty($_GET["user_id"])){
                 $_GET["user_id"] = $_POST['user_id'];
-                $hideForm = "true";
+                //$hideForm = "true";
             };
 
             //
@@ -51,6 +51,7 @@ include "lib/elements/header.php";
                 ?>
 
             <div class='row'>
+                <div class="formWrapper col-lg-8">
                 <div class="formField">
 
                      <form action="?change_user=1" method = "post">
@@ -66,6 +67,7 @@ include "lib/elements/header.php";
                         ?>
                     </form>
                 </div><!--ENDE class="formField"-->
+                </div><!--ENDE class="formWrapper col-lg-8"-->
             </div><!--ENDE class='row' -->
 
 
@@ -84,18 +86,29 @@ include "lib/elements/header.php";
                 if(isset($_GET['change_user'])) {
                     //------------------------------------------------------------------------------------------
 
+                    $error = false;
                     $user_id = $_POST['user_id'];
                     $forename = $_POST['forename'];
                     $surname = $_POST['surname'];
                     $email = $_POST['email'];
                     $authorization = $_POST['authorization'];
 
+                    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        //Response-Objekt erzeugen
+                        require_once "mvc/view/responseObject_view.class.php";
+                        $response = new responseObject();
+                        $response->response("Bitte eine gültige Email-Adresse eingeben","6","responseFalse");
+
+                        $error = true;
+                    }
+
                     //------------------------------------------------------------------------------------------
+                    if(!$error) {
+                        //Daten aendern ueber Controller edit_item
+                        require "mvc/model/edit_user_model.class.php";
+                        edit_user::editUserData($forename, $surname, $email, $authorization, $user_id);
 
-                    //Daten aendern ueber Controller edit_item
-                    require "mvc/model/edit_user_model.class.php";
-                    edit_user::editUserData($forename,$surname,$email,$authorization,$user_id);
-
+                    }
                     //------------------------------------------------------------------------------------------
 
                 }
