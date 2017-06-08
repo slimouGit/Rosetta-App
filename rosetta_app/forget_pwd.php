@@ -11,7 +11,7 @@ include "mvc/model/db_connect_model.php";
 
 <?php
 //include navigation
-include 'lib/elements/navigationStart.php';
+include 'lib/elements/navigation.php';
 ?>
 
 <!------------------------------------------>

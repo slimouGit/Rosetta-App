@@ -13,7 +13,7 @@ include "rosetta_app/mvc/model/db_connect_model.php";
 
 <?php
 //include navigation
-include 'rosetta_app/lib/elements/navigationStart.php';
+include 'rosetta_app/lib/elements/navigation.php';
 ?>
 
     <!------------------------------------------>
