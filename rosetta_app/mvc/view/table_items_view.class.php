@@ -13,6 +13,7 @@ class table_items
         self::printData("deleted");
     }
 
+    //---------------------------------------
 
     function printData($temp){
         global $res;
@@ -32,7 +33,7 @@ class table_items
 
         ?>
 
-
+        <!-- Kopfzeile Datenausgabe -->
         <div class="row">
             <div class="col-md-12 col itemHeader">
                 <div class="row">
@@ -49,7 +50,7 @@ class table_items
 
         <?php
         //Slash wird in Variable $slash gespeichert, dient dazu, nicht mit preg_replace zu arbeiten,
-        // sobald ein Slash im gesuchten Wort enthalten ist, da dadurch ein Fehler geworfen wird (Stand: 170602)
+        //sobald ein Slash im gesuchten Wort enthalten ist, da dadurch ein Fehler geworfen wird (Stand: 170602)
         $slash = "/";
         ?>
 
@@ -69,81 +70,56 @@ class table_items
 
 
                 <div class="row">
+                    <div class="col-md-12 col itemWrapper">
+                        <div class="row ">
 
-                <div class="col-md-12 col itemWrapper">
 
-                    <div class="row ">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <?php include "table_items_content/data_output_view.php"; ?>
+                                </div>
+                                <!----------------------------------------------->
+                                <!-- Kommentieren/Filtern/Kopieren -->
+                                <div class="row editLine">
+                                    <?php include "table_items_content/data_icons_view.php"; ?>
+                                </div>
 
-                        <div class="col-md-9">
-
-                            <div class="row">
-
-                                <?php include "table_items_content/data_output_view.php"; ?>
-
+                                <!----------------------------------------------->
+                                <!-- Kommentare -->
+                                <?php include "table_items_content/data_comments_view.php"; ?>
                             </div>
 
 
-                            <!----------------------------------------------->
-                            <!-- Kommentieren/Filtern/Kopieren -->
-                            <div class="row editLine">
 
-                                <?php include "table_items_content/data_icons_view.php"; ?>
-
-                            </div>
-
-
-                            <!----------------------------------------------->
-                            <!-- Kommentare -->
-
-                            <?php include "table_items_content/data_comments_view.php"; ?>
-
-                        </div>
-
-
-                        <div class="col-md-3">
-
-                            <div class="row">
-
-                                <?php
-                                include "table_items_content/data_category_info.php";
-                                ?>
-
-                                <!-- Edit -->
-                                <div class="col-md-4 white col">
-                                    <a href="edit_item.php?data_id=<?php echo $row['data_id']?>"><img src="lib/img/button_edit.png"/></a>
-
-                                    <?php if($row["state"]=="active"){ ?>
-                                        <a href="delete_item.php?data_id=<?php echo $row['data_id']?>"><img src="lib/img/button_delete.png"/></a>
-                                    <?php } ?>
-
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <?php include "table_items_content/data_category_info_view.php"; ?>
+                                    <!-- Eintrag bearbeiten/loeschen -->
+                                    <div class="col-md-4 white col">
+                                        <?php include "table_items_content/data_edit_item_view.php"; ?>
+                                    </div>
+                                </div>
+                                <!--Carlines-->
+                                <div class="row">
+                                    <div class="col-md-12 white ">
+                                        <span class="carlineHeadline">Enthalten in:</span>
+                                        <?php include "table_items_content/data_carline_view.php"; ?>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!--Carlines-->
-                            <div class="row">
-                                <div class="col-md-12 white ">
-                                    <span class="carlineHeadline">Enthalten in:</span>
 
-                                    <?php include "table_items_content/data_carline_view.php"; ?>
 
-                                </div>
+                            <!--unterer Info-Bereich-->
+                            <div class="col-md-12">
+                                <?php include "table_items_content/data_bottomLine_view.php"; ?>
                             </div>
 
-                        </div>
 
 
-                        <!--unterer Info-Bereich-->
-                        <div class="col-md-12">
-
-                            <?php include "table_items_content/data_bottomLine_view.php"; ?>
-
-                        </div>
-
-
-                    </div><!-- row -->
-
-                </div><!-- wrapper -->
-                </div>
+                        </div><!-- row -->
+                    </div><!-- wrapper -->
+                </div><!-- row -->
 
 
                 <?php
@@ -158,8 +134,3 @@ class table_items
 }//ENDE class table_items
 ?>
 
-
-<!--Script zum Kopieren in die Zwischenablage-->
-<script>
-
-</script>
