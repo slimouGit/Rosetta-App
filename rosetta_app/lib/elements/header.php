@@ -22,6 +22,7 @@ include "mvc/model/db_connect_model.php";
 <html>
 
 <head>
+    <?php include "meta.php"; ?>
     <?php include "imports.php"; ?>
 </head>
 
