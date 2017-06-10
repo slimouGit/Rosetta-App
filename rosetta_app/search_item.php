@@ -54,7 +54,7 @@ include "lib/elements/header.php";
 
                     $tempItem = $_POST['search'];
 
-                    require "mvc/model/select_data.class.php";
+                    require "mvc/model/select_data_model.class.php";
                     select_data::select_searchedData($tempItem);
 
                     //pruefen, ob Suche ein Resultat ergibt

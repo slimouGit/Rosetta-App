@@ -57,8 +57,8 @@ include 'lib/elements/navigation.php';
 
         //------------------------------------------------------------------------------------------
 
-        //Benutzer waehlen ueber Klasse select_data.class.php
-        require "mvc/model/select_data.class.php";
+        //Benutzer waehlen ueber Klasse select_data_model.class.php
+        require "mvc/model/select_data_model.class.php";
         select_data::select_specificDB("rosetta_users", "user_id", $tempId);
 
         //------------------------------------------------------------------------------------------

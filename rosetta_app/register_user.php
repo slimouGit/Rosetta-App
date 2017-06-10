@@ -89,7 +89,7 @@ include "mvc/model/config.php";
                     //------------------------------------------------------------------------------------------
 
                     //
-                    require "mvc/model/select_data.class.php";
+                    require "mvc/model/select_data_model.class.php";
                     select_data::select_individuelUser("email");
 
                     //------------------------------------------------------------------------------------------

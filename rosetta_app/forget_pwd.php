@@ -57,7 +57,7 @@ include 'lib/elements/navigation.php';
             $error = "Bitte eine E-Mail-Adresse eintragen";
         } else {
 
-            require "mvc/model/select_data.class.php";
+            require "mvc/model/select_data_model.class.php";
             select_data::select_individuelUser("email");
 
             $result = $res->execute(array('email' => $_POST['email']));

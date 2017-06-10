@@ -15,7 +15,7 @@ include "lib/elements/header.php";
             //------------------------------------------------------------------------------------------
 
             //
-            require "mvc/model/select_data.class.php"   ;
+            require "mvc/model/select_data_model.class.php";
             select_data::select_completeDB("rosetta_data");
 
             //------------------------------------------------------------------------------------------
