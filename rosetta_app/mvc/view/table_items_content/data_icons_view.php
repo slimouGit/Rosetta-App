@@ -2,6 +2,9 @@
 <!--Icons fuer Deutsch-->
 <div class="col-md-4 white col">
 
+    <!--
+    <a name="comment_de" title="Eintrag kommentieren" href="comment_item.php?data_id=<?php echo $row['data_id']?>&&language=<?php echo 'de'?>">
+    -->
     <a name="comment_de" title="Eintrag kommentieren" href="comment_item_de.php?data_id=<?php echo $row['data_id']?>">
         <img src="lib/img/button_comment.png"/>
     </a>
@@ -17,7 +20,9 @@
 
 <!--Icons fuer Franzoesisch-->
 <div class="col-md-4 white col">
-
+    <!--
+    <a name="comment_fr" title="Eintrag kommentieren" href="comment_item.php?data_id=<?php echo $row['data_id']?>&&language=<?php echo 'fr'?>">
+    -->
     <a name="comment_fr" title="Eintrag kommentieren" href="comment_item_fr.php?data_id=<?php echo $row['data_id']?>">
         <img src="lib/img/button_comment.png"/>
     </a>

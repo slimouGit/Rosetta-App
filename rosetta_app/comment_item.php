@@ -3,11 +3,7 @@
 include "lib/elements/header.php";
 ?>
 
-
-
-
     <div class="container-fluid content">
-
 
     <div class="container">
         <div class='row'>
@@ -19,26 +15,31 @@ include "lib/elements/header.php";
 
             $hideForm ="";
 
-
-
-            //CONTROLLER
             if(empty($_GET["data_id"])){
                 $_GET["data_id"] = $_POST['data_id'];
                 $hideForm = "true";
-
             };
 
             //------------------------------------------------------------------------------------------
 
             //
             $tempId = $_GET["data_id"];
-            $tempItem = $_GET["item_fr"];
-            echo "Item: " . $_GET["item_fr"];
-            echo "ID: " . $_GET["data_id"];
 
-                //------------------------------------------------------------------------------------------
+            $language = $_GET["language"];
 
-            $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $tempId && item_fr LIKE $tempItem");
+            echo $language;
+            $name = "item_{$language}_comment";
+            $value = $name;
+            $db_row = "item_{$language}";
+
+
+            //------------------------------------------------------------------------------------------
+
+            //Daten ausgeben ueber Klasse select_data_model.class.php
+            require "mvc/model/select_data_model.class.php";
+            select_data::select_specificDB("rosetta_data", "data_id", $tempId);
+
+            //------------------------------------------------------------------------------------------
 
             foreach ($res AS $row):
                 ?>
@@ -49,14 +50,13 @@ include "lib/elements/header.php";
 
                     require_once "mvc/view/formularFields_view.class.php";
 
-                    //CONTROLLER
                     if(!$hideForm=="true"){
 
                         $form = new formular();
 
                         $form->hiddenField("data_id", "" . $row["data_id"] . "");
-                        $form->labelField($row["item_fr"]);
-                        $form->inputField("Kommentar", "item_fr_comment", "" . $row["item_fr_comment"] . "", "", "", 2,  8);
+                        $form->labelField($row[$db_row]);
+                        $form->inputField("Kommentar", $name, "" . $row[$value] . "", "", "", 2,  8);
 
                         $form->submitButton("2","Kommentieren");
                     }
@@ -71,37 +71,24 @@ include "lib/elements/header.php";
     <div class="container">
         <div class='row'>
             <?php
-            //CONTROLLER
+
             if(isset($_GET['change_item'])) {
                 $submitted = "true";
                 $data_id = $_POST['data_id'];
 
                 //------------------------------------------------------------------------------------------
 
-                $item_fr_comment = $_POST['item_fr_comment'];
-
+                $item_de_comment = $_POST['item_de_comment'];
 
                 //------------------------------------------------------------------------------------------
 
                 $currentDate = date('d.m.Y H:i');
 
-                //Kommentar wird aktualisiert
-                $res = $pdo->prepare("UPDATE rosetta_data SET item_fr_comment = :item_fr_comment, user_fr_comment = :user_fr_comment, date_fr_comment = :date_fr_comment WHERE data_id = :data_id");
-                $result = $res->execute(array('item_fr_comment' => $item_fr_comment,  'data_id'=> $data_id, 'user_fr_comment'=> $username, 'date_fr_comment' => $currentDate ));
-
                 //------------------------------------------------------------------------------------------
 
-                //Meldung wird ausgegeben
-                require_once "mvc/view/responseObject_view.class.php";
-                $response = new responseObject();
-                $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich kommentiert","6","responseSuccess");
-
-                //------------------------------------------------------------------------------------------
-
-                //aktualisierter Datensatz wird ausgegeben
-                $res = $pdo->query("SELECT * FROM rosetta_data WHERE data_id LIKE $data_id");
-                require "mvc/view/table_items_view.class.php";
-                table_items::showData();
+                //Daten aendern ueber Controller edit_item
+                require "mvc/model/comment_item.class.php";
+                comment_item::comment_generel_item($language);
 
                 //------------------------------------------------------------------------------------------
 

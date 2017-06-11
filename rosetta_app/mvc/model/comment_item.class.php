@@ -11,6 +11,31 @@
  */
 class comment_item
 {
+    //Kommentar GENEREL
+    public function comment_generel_item($language){
+        echo $language;
+        global $res;
+        include "mvc/model/db_connect_model.php";
+
+        //---------------------------------------------------------------------------------------
+        /*
+        //Kommentar wird aktualisiert
+        $res = $pdo->prepare("UPDATE rosetta_data SET item_de_comment = :item_de_comment, user_de_comment = :user_de_comment, date_de_comment = :date_de_comment WHERE data_id = :data_id");
+        $result = $res->execute(array('item_de_comment' => $item_de_comment,  'data_id'=> $data_id, 'user_de_comment'=> $username, 'date_de_comment' => $currentDate ));
+
+        //---------------------------------------------------------------------------------------
+
+        if($result){
+            self::giveResponse($data_id);
+        }
+           */
+    }//ENDE function comment_item_de
+
+
+
+    //------------------------------------------------------------------------------------------
+
+
     //Kommentar DEUTSCH
     public function comment_item_de($item_de_comment,$data_id,$username,$currentDate){
 
