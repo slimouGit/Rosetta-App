@@ -3,7 +3,9 @@
 include "lib/elements/header.php";
 ?>
 
+
     <div class="container-fluid content">
+
 
     <div class="container">
         <div class='row'>
@@ -20,6 +22,11 @@ include "lib/elements/header.php";
                 $hideForm = "true";
             };
 
+            if(empty($_GET["language"])){
+                $_GET["language"] = $_POST['language'];
+                $hideForm = "true";
+            };
+
             //------------------------------------------------------------------------------------------
 
             //
@@ -27,11 +34,8 @@ include "lib/elements/header.php";
 
             $language = $_GET["language"];
 
-            echo $language;
-            $name = "item_{$language}_comment";
-            $value = $name;
-            $db_row = "item_{$language}";
-
+            $item_language = "item_{$language}";
+            $item_language_comment = "{$item_language}_comment";
 
             //------------------------------------------------------------------------------------------
 
@@ -55,8 +59,9 @@ include "lib/elements/header.php";
                         $form = new formular();
 
                         $form->hiddenField("data_id", "" . $row["data_id"] . "");
-                        $form->labelField($row[$db_row]);
-                        $form->inputField("Kommentar", $name, "" . $row[$value] . "", "", "", 2,  8);
+                        $form->hiddenField("language", "" . $language . "");
+                        $form->labelField($row[$item_language]);
+                        $form->inputField("Kommentar", $item_language_comment, "" . $row[$item_language_comment] . "", "", "", 2,  8);
 
                         $form->submitButton("2","Kommentieren");
                     }
@@ -78,7 +83,9 @@ include "lib/elements/header.php";
 
                 //------------------------------------------------------------------------------------------
 
-                $item_de_comment = $_POST['item_de_comment'];
+                $item_language_comment = $_POST[$item_language_comment];
+
+                $language = $_POST['language'];
 
                 //------------------------------------------------------------------------------------------
 
@@ -88,7 +95,7 @@ include "lib/elements/header.php";
 
                 //Daten aendern ueber Controller edit_item
                 require "mvc/model/comment_item.class.php";
-                comment_item::comment_generel_item($language);
+                comment_item::comment_generel_item($language, $item_language_comment,$data_id,$username,$currentDate);
 
                 //------------------------------------------------------------------------------------------
 
