@@ -85,7 +85,7 @@ include 'lib/elements/navigation.php';
                             $form->hiddenField("user_id", "" . $row["user_id"] . "");
                             $form->passwordField("Passwort", "password", "", "", "", 2, 8);
                             $form->passwordField("Passwort wiederholen", "password2", "", "", "", 2, 8);
-                            $form->submitButton("2", "Registrieren");
+                            $form->submitButton("2", "senden");
                             ?>
 
                         </form>

@@ -92,7 +92,7 @@ if(empty($_GET["data_id"])){
                     if(!$hideForm=="true") {
                         $form = new formular();
                         $form->hiddenField("data_id", "" . $_GET["data_id"] . "");
-                        $form->submitButton("0","endgültig löschen");
+                        $form->submitButton("0","löschen");
                     }
                     ?>
                 </form>

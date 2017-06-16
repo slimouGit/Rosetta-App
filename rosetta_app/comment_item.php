@@ -63,7 +63,7 @@ include "lib/elements/header.php";
                         $form->labelField($row[$item_language]);
                         $form->inputField("Kommentar", $item_language_comment, "" . $row[$item_language_comment] . "", "", "", 2,  8);
 
-                        $form->submitButton("2","Kommentieren");
+                        $form->submitButton("2","kommentieren");
                     }
                     ?>
                 </form>

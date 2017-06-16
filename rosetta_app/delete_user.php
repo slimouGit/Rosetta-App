@@ -95,7 +95,7 @@ if(empty($_GET["user_id"])){
                     if(!$hideForm=="true") {
                         $form = new formular();
                         $form->hiddenField("user_id", "" . $_GET["user_id"] . "");
-                        $form->submitButton("0","endgültig löschen");
+                        $form->submitButton("0","löschen");
                     }
                     ?>
                 </form>

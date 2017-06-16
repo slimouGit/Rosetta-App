@@ -53,7 +53,7 @@ include "lib/elements/header.php";
 
                             $form->selectFinish();
 
-                            $form->submitButton("2","Eintragen");
+                            $form->submitButton("2","senden");
                             ?>
                         </form>
                     </div>

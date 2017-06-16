@@ -63,7 +63,7 @@ include "lib/elements/header.php";
                             $form->inputField("Nachname", "surname", "" . $row["surname"] . "", "", "", 2, 8);
                             $form->inputField("Email", "email", "" . $row["email"] . "", "", "", 2, 8);
                             $form->inputField("Authorisation", "authorization", "" . $row["authorization"] . "", "", "", 2, 8);
-                            $form->submitButton("2", "Ändern");
+                            $form->submitButton("2", "senden");
                         ?>
                     </form>
                 </div><!--ENDE class="formField"-->

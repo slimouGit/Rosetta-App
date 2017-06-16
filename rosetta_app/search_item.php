@@ -26,7 +26,7 @@ include "lib/elements/header.php";
                     <div class="row">
                         <div class="form-group">
                             <div class="col-sm-1">
-                                <input type="submit" class="btn btn-primary" value="Suchen">
+                                <input type="submit" class="btn btn-primary" value="suchen">
                             </div>
                         </div>
                     </div>
