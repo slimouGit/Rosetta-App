@@ -25,7 +25,7 @@ include "lib/elements/header.php";
             //CONTROLLER
             if(empty($_GET["user_id"])){
                 $_GET["user_id"] = $_POST['user_id'];
-                //$hideForm = "true";
+                $hideForm = "true";
             };
 
             //
