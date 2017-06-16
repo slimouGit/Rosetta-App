@@ -41,89 +41,11 @@ class comment_item
         if($result){
             self::giveResponse($data_id);
         }
-           /**/
-    }//ENDE function comment_generel_item
+
+    }//ENDE function comment_generel_item()
 
 
-
-    //------------------------------------------------------------------------------------------
-
-
-    //Kommentar DEUTSCH
-    public function comment_item_de($item_de_comment,$data_id,$username,$currentDate){
-
-        global $res;
-        include "mvc/model/db_connect_model.php";
-
-        //---------------------------------------------------------------------------------------
-
-        //Kommentar wird aktualisiert
-        $res = $pdo->prepare("UPDATE rosetta_data SET item_de_comment = :item_de_comment, user_de_comment = :user_de_comment, date_de_comment = :date_de_comment WHERE data_id = :data_id");
-        $result = $res->execute(array('item_de_comment' => $item_de_comment,  'data_id'=> $data_id, 'user_de_comment'=> $username, 'date_de_comment' => $currentDate ));
-
-        //---------------------------------------------------------------------------------------
-
-        if($result){
-            self::giveResponse($data_id);
-        }
-
-    }//ENDE function comment_item_de
-
-
-
-    //------------------------------------------------------------------------------------------
-
-
-
-    //Kommentar FRANZOESISCH
-    public function comment_item_fr($item_fr_comment,$data_id,$username,$currentDate){
-
-        global $res;
-        include "mvc/model/db_connect_model.php";
-
-        //---------------------------------------------------------------------------------------
-
-        //Kommentar wird aktualisiert
-        $res = $pdo->prepare("UPDATE rosetta_data SET item_fr_comment = :item_fr_comment, user_fr_comment = :user_fr_comment, date_fr_comment = :date_fr_comment WHERE data_id = :data_id");
-        $result = $res->execute(array('item_fr_comment' => $item_fr_comment,  'data_id'=> $data_id, 'user_fr_comment'=> $username, 'date_fr_comment' => $currentDate ));
-
-        //---------------------------------------------------------------------------------------
-
-        if($result){
-            self::giveResponse($data_id);
-        }
-
-    }//ENDE function comment_item_fr
-
-
-
-    //------------------------------------------------------------------------------------------
-
-
-
-    //Kommentar ITALIENISCH
-    public function comment_item_it($item_it_comment,$data_id,$username,$currentDate){
-
-        global $res;
-        include "mvc/model/db_connect_model.php";
-
-        //---------------------------------------------------------------------------------------
-
-        //Kommentar wird aktualisiert
-        $res = $pdo->prepare("UPDATE rosetta_data SET item_it_comment = :item_it_comment, user_it_comment = :user_it_comment, date_it_comment = :date_it_comment WHERE data_id = :data_id");
-        $result = $res->execute(array('item_it_comment' => $item_it_comment,  'data_id'=> $data_id, 'user_it_comment'=> $username, 'date_it_comment' => $currentDate ));
-
-        //---------------------------------------------------------------------------------------
-
-        if($result){
-            self::giveResponse($data_id);
-        }
-
-    }//ENDE function comment_item_it
-
-
-
-    //------------------------------------------------------------------------------------------
+   //------------------------------------------------------------------------------------------
 
 
     //Funktion gibt Response aus
@@ -148,5 +70,5 @@ class comment_item
 
         //------------------------------------------------------------------------------------------
 
-    }
+    }//ENDE function giveResponse()
 }
