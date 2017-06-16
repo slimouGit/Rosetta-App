@@ -17,6 +17,7 @@ class comment_item
         global $res;
         include "mvc/model/db_connect_model.php";
 
+
         //---------------------------------------------------------------------------------------
 
         if($language == "de"){
