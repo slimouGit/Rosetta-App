@@ -29,13 +29,21 @@ class edit_user
         $res = $pdo->prepare("UPDATE rosetta_users SET forename = :forename, surname = :surname, email = :email, authorization = :authorization, update_user = :update_user WHERE user_id = :user_id");
         $res->execute(array('forename' => $forename, 'surname' => $surname, 'email' => $email, 'authorization'=> $authorization, 'update_user'=> $currentDate, 'user_id'=> $user_id));
 
-        //------------------------------------------------------------------------------------------
+        //Anzahl der Updates in $number_of_changedRows
+        $number_of_changedRows = $res->rowCount();
+
+        //-----------------------------------------------------------------------------------------
 
         //Meldung wird ausgegeben
-        //CONTROLLER
+
         require_once "mvc/view/responseObject_view.class.php";
         $response = new responseObject();
-        $response->response("Der Benutzer mit der ID {$user_id} wurde erfolgreich geändert","6","responseSuccess");
+
+        if($number_of_changedRows>0){
+            $response->response("Der Benutzer mit der ID {$user_id} wurde erfolgreich geändert","6","responseSuccess");
+        }else{
+            $response->response("Der Benutzer mit der ID {$user_id} wurde nicht geändert","6","responseFalse");
+        }
 
         //------------------------------------------------------------------------------------------
 

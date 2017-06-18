@@ -29,13 +29,22 @@ class edit_item
         $res = $pdo->prepare("UPDATE rosetta_data SET state = :state_neu, item_de = :item_de, item_fr = :item_fr, item_it = :item_it, category = :category, info = :info, carline = :carline, user_update = :user_update WHERE data_id = :data_id");
         $res->execute(array('state_neu' => 'active', 'item_de' => $item_de, 'item_fr' => $item_fr, 'item_it' => $item_it, 'data_id'=> $data_id, 'category' => $category, 'info'=> $info, 'carline' => $car, 'user_update' => $username ));
 
+        //Anzahl der Updates in $number_of_changedRows
+        $number_of_changedRows = $res->rowCount();
+
         //------------------------------------------------------------------------------------------
 
         //CONTROLLER
         //Meldung wird ausgegeben
         require_once "mvc/view/responseObject_view.class.php";
         $response = new responseObject();
-        $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich aktualisiert","6","responseSuccess");
+
+        if($number_of_changedRows>0){
+            $response->response("Der Eintrag mit der ID {$data_id} wurde erfolgreich aktualisiert","6","responseSuccess");
+        }else{
+            $response->response("Der Eintrag mit der ID {$data_id} wurde nicht geändert","6","responseFalse");
+        }
+
 
         //------------------------------------------------------------------------------------------
 
