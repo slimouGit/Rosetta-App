@@ -11,21 +11,18 @@
 
 <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
 
-<!--bootstrap-multiselect lokal-->
-<script src="http://localhost/Rosetta-App/rosetta_app/lib/js/bootstrap-multiselect.js" type="text/javascript"></script>
-
-
-
 <!----------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- LOCAL -->
 <link href="http://localhost/Rosetta-App/rosetta_app/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://localhost/Rosetta-App/rosetta_app/lib/js/bootstrap-multiselect.js" type="text/javascript"></script>
 <script src="http://localhost/Rosetta-App/rosetta_app/lib/js/script_preLoaded.js"></script>
 <link rel="stylesheet" href="http://localhost/Rosetta-App/rosetta_app/lib/css/layout.css">
 
 
 <!-- ONLINE --
 <link href="http://rosetta-app.de/rosetta_app/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://rosetta-app.de/rosetta_app/lib/js/bootstrap-multiselect.js" type="text/javascript"></script>
 <script src="http://rosetta-app.de/rosetta_app/lib/js/script_preLoaded.js"></script>
 <link rel="stylesheet" href="http://rosetta-app.de/rosetta_app/lib/css/layout.css">
 
