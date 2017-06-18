@@ -26,3 +26,27 @@ if(empty($_POST['surname'])){
     $_POST['surname']="";
 }
 
+//carlineArray initialisieren
+$carlineArray = array(
+    "ADAM",
+    "Ampera",
+    "Antara",
+    "AstraST",
+    "AstraNG",
+    "Cascada",
+    "ComboKastenwagen",
+    "ComboPassenger",
+    "Corsa",
+    "Corsa",
+    "GTC_OPC",
+    "InsigniaGS",
+    "InsigniaST",
+    "KARL",
+    "Meriva",
+    "MokkaX",
+    "MovanoCombiBus",
+    "MovanoFahrgestell",
+    "MovanoVan",
+    "Vivaro",
+    "Zafira",
+);
