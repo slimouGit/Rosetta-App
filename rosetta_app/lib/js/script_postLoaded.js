@@ -6,6 +6,7 @@ console.log("script_postLoaded");
     //Funktion fuer die dropdown-select-box mit Mehrfachauswahl-Checkbox
     $(document).ready(function() {
         $('#example-getting-started').multiselect();
+        $('.example-getting-started').multiselect();
     });
 
 

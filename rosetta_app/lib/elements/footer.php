@@ -3,7 +3,7 @@
 
     <!-- LOCAL -->
     <!-- script local -->
-    <script src="http://localhost/Rosetta-App/rosetta_app/lib/js/script_postLoaded.js"></script>
+    <script src="lib/js/script_postLoaded.js"></script>
 
     <!-- ONLINE -->
     <!-- script online --
