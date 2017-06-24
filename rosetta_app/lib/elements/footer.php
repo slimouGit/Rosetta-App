@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script beinhaltet Bestandteile ab schliessendem Body-Tag
+ */
+?>
+
     </body>
     <!-- IMPORTE -->
 

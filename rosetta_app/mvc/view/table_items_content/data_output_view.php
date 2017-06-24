@@ -1,4 +1,11 @@
-
+<?php
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script stellt Daten in den jeweiligen Sprachen dar und highlighted bei Bedarf Fundstellen ($tempSearch nur gesetzt, wenn gesucht wurde)
+ */
+?>
 
 <!--Deutscher Text-->
 <div class="col-md-4 col itemFieldWrapper">

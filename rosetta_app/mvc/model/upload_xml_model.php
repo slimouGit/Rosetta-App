@@ -1,4 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: salimoussayfi
+ * Date: 01.06.17
+ * Time: 12:10
+ *
+ * Script zum Hochladen von XML-Dateien
+ */
 
 //Pfade initialisieren
 $path = getcwd();

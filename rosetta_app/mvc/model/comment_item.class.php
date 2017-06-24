@@ -2,16 +2,22 @@
 
 /**
  * Created by PhpStorm.
+ * User: salim
  *
  * Klasse schreibt die Kommentare in die Datenbank und gibt Rueckmeldung an den Benutzer
  *
- * User: salimoussayfi
- * Date: 07.06.17
- * Time: 17:22
  */
 class comment_item
 {
-    //Kommentar GENEREL
+    /**
+     * @param $language
+     * @param $item_language_comment
+     * @param $data_id
+     * @param $username
+     * @param $currentDate
+     *
+     *Kommentar GENEREL
+     */
     public function comment_generel_item($language, $item_language_comment,$data_id,$username,$currentDate){
 
         global $res;
@@ -48,8 +54,11 @@ class comment_item
 
    //------------------------------------------------------------------------------------------
 
-
-    //Funktion gibt Response aus
+    /**
+     * @param $data_id
+     *
+     * Funktion gibt Response aus
+     */
     public function giveResponse($data_id){
 
         global $res;

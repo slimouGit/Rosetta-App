@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script gibt jeweilige Kommentare und die Daten des Authors aus
+ */
+
+?>
+
 <div class="row">
     <div class="col-md-4 white col comment" style="color: #ff0000"><?php echo $row["item_de_comment"]; ?></div>
     <div class="col-md-4 white col comment" style="color: #ff0000"><?php echo $row["item_fr_comment"]; ?></div>

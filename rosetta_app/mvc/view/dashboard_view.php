@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script stellt je nach Berechtigung Links auf der Startseite dar
+ */
+?>
+
 <div class="col-lg-6">
 
     <div class="row">

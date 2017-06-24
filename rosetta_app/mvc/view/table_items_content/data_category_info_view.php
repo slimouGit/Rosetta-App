@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script stellt Inhalt der beiden Spalten Rubrik und Info dar
+ */
+
+?>
+
 <!-- Rubrik -->
 <div class="col-md-4 white col ">
     <?php

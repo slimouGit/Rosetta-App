@@ -5,14 +5,28 @@
  * User: salim
  * Date: 04.06.2017
  * Time: 13:37
+ *
+ * Klasse stellt Funktionen zum Erstellen und Aendern des Passworts bereit
  */
+
 class set_pwd
 {
+    /**
+     * @param $passwordcode
+     * @param $currentDate
+     * @param $user_id
+     * @param $user_email
+     * @param $user_forename
+     */
     public static function insertPWDCode($passwordcode, $currentDate, $user_id, $user_email, $user_forename)
     {
         self::insertTempCode($passwordcode, $currentDate, $user_id, $user_email, $user_forename);
     }//ENDE function insertPWDCode
 
+    /**
+     * @param $passwordhash
+     * @param $tempId
+     */
     public static function resetPWDCode($passwordhash, $tempId)
     {
         self::insertNewPWD($passwordhash, $tempId);
@@ -21,8 +35,13 @@ class set_pwd
 
     //---------------------------------------------------------------------------------------
 
-
-        /*
+        /**
+         * @param $passwordcode
+         * @param $currentDate
+         * @param $user_id
+         * @param $user_email
+         * @param $user_forename
+         *
          * Funktion speichert Passwort Code zum Abgleich in DB
          */
         function insertTempCode($passwordcode, $currentDate, $user_id, $user_email, $user_forename){
@@ -55,7 +74,10 @@ class set_pwd
 
         //---------------------------------------------------------------------------------------
 
-        /*
+        /**
+         * @param $passwordhash
+         * @param $tempId
+         *
          * Funktion aktualisiert Passwort in DB
          */
         function insertNewPWD($passwordhash, $tempId){
@@ -79,5 +101,5 @@ class set_pwd
                 $response->response("Das Passwort wurde erfolgreich geändert.", "4", "");
             }
 
-        }//ENDE function insertNewCode()
+        }//ENDE function insertNewPWD()
 }

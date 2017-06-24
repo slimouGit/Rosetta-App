@@ -4,6 +4,8 @@
  * User: salimoussayfi
  * Date: 01.06.17
  * Time: 14:40
+ *
+ * Script zum Hochladen von PDFs
  */
 
 include "mvc/model/config.php";

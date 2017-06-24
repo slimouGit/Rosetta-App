@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script stellt pro Sprache die drei Icons zum Kommentieren, Filtern und Speichern in die Zwischenablage eines Datensatzes dar
+ * und uebergibt jeweils die 'data_id' an das Zieldokument bzw. die JavaScript-Funktion copyToClipboard
+ */
+
+?>
 
 <!--Icons fuer Deutsch-->
 <div class="col-md-4 white col">

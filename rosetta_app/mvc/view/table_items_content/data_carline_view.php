@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script generiert Links zu jeweiligen PDFs
+ */
 
 $carlineArray = $row["carline"];
 

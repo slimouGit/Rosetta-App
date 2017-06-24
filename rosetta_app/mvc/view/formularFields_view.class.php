@@ -3,14 +3,18 @@
 /**
  * Created by PhpStorm.
  * User: salim
- * Date: 24.05.2017
- * Time: 21:31
+ *
+ * Klasse definiert verschiedene Formularfelder
  */
 class formular
 {
     //------------------------------------------------------
 
-    //label
+    /**
+     * @param $value
+     *
+     * label
+     */
     public function labelField($value){
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
@@ -22,7 +26,17 @@ class formular
                 </div>";
     }
 
-    //input field
+    /**
+     * @param $label
+     * @param $name
+     * @param $value
+     * @param $placeholder
+     * @param $id
+     * @param $labelSize
+     * @param $size
+     *
+     * input field
+     */
     public function inputField($label,$name, $value, $placeholder, $id, $labelSize, $size){
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
@@ -34,7 +48,15 @@ class formular
             </div>";
     }
 
-    //textarea
+    /**
+     * @param $label
+     * @param $name
+     * @param $value
+     * @param $labelSize
+     * @param $size
+     *
+     * textarea
+     */
     public function textareaField($label,$name,$value, $labelSize, $size){
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
@@ -46,7 +68,17 @@ class formular
             </div>";
     }
 
-    //password field
+    /**
+     * @param $label
+     * @param $name
+     * @param $value
+     * @param $placeholder
+     * @param $id
+     * @param $labelSize
+     * @param $size
+     *
+     * password field
+     */
     public function passwordField($label,$name, $value, $placeholder, $id, $labelSize, $size){
         echo "<div class=\"row formMarginBottom\">
                     <div class=\"form-group\">
@@ -58,12 +90,23 @@ class formular
                 </div>";
     }
 
-    //hidden field
+    /**
+     * @param $name
+     * @param $text
+     *
+     * hidden field
+     */
     public function hiddenField($name, $text){
         echo "<input type=\"hidden\" name=\"$name\" value=\"$text\">";
     }
 
-    //option field
+    /**
+     * @param $name
+     * @param $value1
+     * @param $value2
+     *
+     * option field
+     */
     public function optionField($name, $value1, $value2){
         echo "<div class=\"row formMarginBottom\">
             <div class=\"form-group\">
@@ -79,7 +122,12 @@ class formular
         </div>";
     }
 
-    //button
+    /**
+     * @param $col
+     * @param $text
+     *
+     * button
+     */
     public function submitButton($col, $text){
         echo "<div class=\"row formMarginBottom\">
                         <div class=\"col-sm-$col\"></div>
@@ -90,14 +138,23 @@ class formular
                 </div>";
     }
 
-    //link
+    /**
+     * @param $target
+     * @param $title
+     *
+     * link
+     */
     public function ahref($target,$title){
         echo "<a href=\"$target\">$title</a>";
     }
 
     //------------------------------------------------------
 
-    //start multiselect
+    /**
+     * @param $label
+     *
+     * start multiselect
+     */
     public function selectStart($label){
         echo "<div class=\"row formMarginBottom\">
         <div class=\"form-group\">
@@ -106,19 +163,29 @@ class formular
                 <select name=\"carline[]\" id=\"example-getting-started\" multiple=\"multiple\" class=\"checkbox-inline\">";
     }
 
-    //multiselect checkbox
+    /**
+     * @param $carline
+     *
+     * multiselect checkbox
+     */
     public function checkBox($carline){
         echo "<option name=\"carline[]\" type=\"checkbox\" title=\"$carline\" value=\"$carline\">$carline</option>";
     }
 
-    //ende multiselect
+    /**
+     * ende multiselect
+     */
     public function selectFinish(){
         echo "</select></div></div></div>";
     }
 
-    //carline mit Pruefung, ob carline in array vorhanden
+    /**
+     * @param $carName
+     * @param $temp
+     *
+     * carline mit Pruefung, ob carline in array vorhanden
+     */
     public function carlineCheck($carName, $temp){
-        //CONTROLLER
         if (in_array($carName, $temp)) {
             echo "<option type='checkbox' selected title=$carName value=\"$carName\">$carName</option>";
         }else {

@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Klasse stellt Geruest fuer Datenausgabe
+ * nicht als Tabelle implementiert
+ */
 
 class table_items
 {
@@ -15,12 +22,16 @@ class table_items
 
     //---------------------------------------
 
+    /**
+     * @param $temp
+     *
+     * Parameter zur Unterscheidung bei Datenausgabe
+     */
     function printData($temp){
         global $res;
 
         //---------------------------------------
 
-        //CONTROLLER
         //Pruefung, ob etwas gesucht wurde
         if(empty($_POST['search'])){
             $_POST['search']="";
@@ -127,7 +138,6 @@ class table_items
                     endforeach
 
                 ?>
-
 <?php
 
     }//ENDE function printData($temp){

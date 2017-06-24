@@ -1,4 +1,14 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script beinhaltet Bestandteile bis zum oeffnenden Body-Tag
+ * und Session-Informationen
+ */
+?>
+
+<?php
 session_start();
 if(!isset($_SESSION['username'])) {
     die('<meta http-equiv="refresh" content="0; URL=error.php">');

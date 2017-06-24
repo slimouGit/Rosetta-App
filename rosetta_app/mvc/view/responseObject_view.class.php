@@ -3,11 +3,14 @@
 /**
  * Created by PhpStorm.
  * User: salim
- * Date: 25.05.2017
- * Time: 11:51
+ *
+ * Klasse stellt verschieden Funktionen fuer Nutzerresponse bereit
  */
 class responseObject
 {
+    /**
+     * @param $response
+     */
     public function success($response){
         echo "<div class=\"row formMarginBottom \">
                     <div class=\"col-sm-8\">
@@ -16,6 +19,9 @@ class responseObject
                 </div>";
     }
 
+    /**
+     * @param $response
+     */
     public function error($response){
         echo "<div class=\"row formMarginBottom \">
                     <div class=\"col-sm-8\">
@@ -41,6 +47,10 @@ class responseObject
 
     //--------------------------------------------------------------------------------------------------------------------------
 
+    /**
+     * @param $fileName
+     * @param $itemCount
+     */
     public function uploadResponseXML($fileName, $itemCount)
     {
         if ($itemCount == 0) {
@@ -70,6 +80,10 @@ class responseObject
 
     //--------------------------------------------------------------------------------------------------------------------------
 
+    /**
+     * @param $fileName
+     * @param $fileSize
+     */
     public function uploadResponsePDF($fileName,$fileSize){
         echo "<div class='container'>
                 <div class=\"container row  col-sm-8 responseUploadHeader responseSuccess responseShadow\">

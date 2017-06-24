@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: salim
- * Date: 06.06.2017
- * Time: 11:54
+ *
+ * Script liefert vordefinierte Variablen/Arrays
  */
 
 if(empty($_POST['email'])){

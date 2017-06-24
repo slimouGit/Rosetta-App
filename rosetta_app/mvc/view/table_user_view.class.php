@@ -1,4 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Klasse stellt Geruest fuer Nutzerdatenausgabe
+ * nicht als Tabelle implementiert
+ */
+
 
 class table_user
 {

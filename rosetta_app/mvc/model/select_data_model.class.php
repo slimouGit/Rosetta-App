@@ -5,13 +5,18 @@
  * User: salimoussayfi
  * Date: 07.06.17
  * Time: 18:11
+ *
+ * Klasse stellt mehrere Funktionen zur Datenbank-Abfrage bereit
  */
+
 class select_data
 {
 
     //----------------------------------------------------------------------------------------------------
 
-
+    /**
+     * @param $tempValue
+     */
     public function select_individuelUser($tempValue){
 
         global $res;
@@ -58,7 +63,9 @@ class select_data
 
     //----------------------------------------------------------------------------------------------------
 
-
+    /**
+     * @param $db
+     */
     public function select_completeDB($db){
 
         global $res;
@@ -71,6 +78,11 @@ class select_data
 
     //----------------------------------------------------------------------------------------------------
 
+    /**
+     * @param $db
+     * @param $column
+     * @param $value
+     */
     public function select_specificDB($db, $column, $value){
 
         global $res;

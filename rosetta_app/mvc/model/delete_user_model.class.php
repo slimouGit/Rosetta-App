@@ -3,11 +3,14 @@
 /**
  * Created by PhpStorm.
  * User: salim
- * Date: 23.05.2017
- * Time: 21:41
+ *
+ * Klasse entfernt Nutzerdaten aus Datenbank entgültig
  */
 class delete_user
 {
+    /**
+     * @param $tempId
+     */
     public static function deleteUserData($tempId)
     {
         self::deleteUser($tempId);
@@ -15,6 +18,9 @@ class delete_user
 
     //---------------------------------------------------------------------------------------
 
+    /**
+     * @param $tempId
+     */
     function deleteUser($tempId){
 
         global $res;

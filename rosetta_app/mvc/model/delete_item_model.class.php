@@ -3,11 +3,18 @@
 /**
  * Created by PhpStorm.
  * User: salim
- * Date: 23.05.2017
- * Time: 21:41
+ *
+ * Klasse zum Loeschen der Datensaetze
+ * es wird lediglich der Eintrag in der Spalte 'state' aktualisiert
  */
+
 class delete_item
 {
+    /**
+     * @param $username
+     * @param $currentDate
+     * @param $tempId
+     */
     public static function deleteData($username, $currentDate, $tempId)
     {
         self::deleteItem($username, $currentDate, $tempId);
@@ -15,6 +22,11 @@ class delete_item
 
     //---------------------------------------------------------------------------------------
 
+    /**
+     * @param $username
+     * @param $currentDate
+     * @param $tempId
+     */
     function deleteItem($username, $currentDate, $tempId){
 
         global $res;

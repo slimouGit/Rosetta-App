@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script zur Autovervollstaendigung bei der Suchabfrage
+ */
 
 //include db connection
 include "db_connect_model.php";

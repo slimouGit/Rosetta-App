@@ -1,9 +1,24 @@
 <?php
 
-
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Klasse erstellt neues Tupel fuer Daten in Datenbank
+ */
 
 class insert_item
 {
+    /**
+     * @param $token
+     * @param $item_de
+     * @param $item_fr
+     * @param $item_it
+     * @param $category
+     * @param $info
+     * @param $car
+     * @param $username
+     */
     public static function insertData($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username)
     {
         self::insertItem($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username);
@@ -11,6 +26,16 @@ class insert_item
 
     //---------------------------------------------------------------------------------------
 
+    /**
+     * @param $token
+     * @param $item_de
+     * @param $item_fr
+     * @param $item_it
+     * @param $category
+     * @param $info
+     * @param $car
+     * @param $username
+     */
     function insertItem($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username){
 
         global $res;

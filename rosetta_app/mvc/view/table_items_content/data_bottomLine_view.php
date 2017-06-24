@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Script stellt folgende Daten eines Datensatzes dar: Erstellung, Aenderung, Loeschung
+ */
+
+?>
+
 <div class="row itemInfo">
 
 

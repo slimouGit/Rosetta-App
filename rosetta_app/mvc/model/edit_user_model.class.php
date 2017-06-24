@@ -3,17 +3,32 @@
 /**
  * Created by PhpStorm.
  * User: salim
- * Date: 27.05.2017
- * Time: 22:16
+ *
+ * Klasse speichert geaenderte Nutzerdaten ab
  */
+
 class edit_user
 {
+    /**
+     * @param $forename
+     * @param $surname
+     * @param $email
+     * @param $authorization
+     * @param $user_id
+     */
     public function editUserData($forename,$surname,$email,$authorization,$user_id){
         self::editUser($forename,$surname,$email,$authorization,$user_id);
     }//ENDE function editData
 
     //---------------------------------------------------------------------------------------
 
+    /**
+     * @param $forename
+     * @param $surname
+     * @param $email
+     * @param $authorization
+     * @param $user_id
+     */
     function editUser($forename,$surname,$email,$authorization,$user_id){
 
         global $res;

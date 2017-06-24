@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: salim
+ *
+ * Klasse erstellt neues Tupel fuer Nutzerdaten in Datenbank
+ */
 
 class register_user {
     public static function insertUserData($forename,$surname,$authorization,$email,$password_hash)
@@ -7,6 +13,13 @@ class register_user {
         self::insertUserItem($forename,$surname,$authorization,$email,$password_hash);
     }//ENDE function insertUserData
 
+    /**
+     * @param $forename
+     * @param $surname
+     * @param $authorization
+     * @param $email
+     * @param $password_hash
+     */
     function insertUserItem($forename,$surname,$authorization,$email,$password_hash){
 
         global $res;
