@@ -184,9 +184,7 @@ body{margin:0px;padding:0px;}
 
 /******************************************************************/
 
-
-
-/*Daeshboard*/
+/*Dashboard*/
 .daeshbordIcon{
     text-align: center;
     width: 45%;
@@ -206,7 +204,6 @@ body{margin:0px;padding:0px;}
     background-color: #2e6da4;
 }
 
-
 .daeshbordIcon .daeshbordText{
     color: #ddeff2;
     font-size: 20 px;
@@ -216,9 +213,11 @@ body{margin:0px;padding:0px;}
 
 /******************************************************************/
 
+/*Multiselect*/
 span.multiselect-native-select {
     position: relative
 }
+
 span.multiselect-native-select select {
     border: 0!important;
     clip: rect(0 0 0 0)!important;
@@ -231,33 +230,41 @@ span.multiselect-native-select select {
     left: 50%;
     top: 30px
 }
+
 .multiselect-container {
     position: absolute;
     list-style-type: none;
     margin: 0;
     padding: 0
 }
+
 .multiselect-container .input-group {
     margin: 5px
 }
+
 .multiselect-container>li {
     padding: 0
 }
+
 .multiselect-container>li>a.multiselect-all label {
     font-weight: 700
 }
+
 .multiselect-container>li.multiselect-group label {
     margin: 0;
     padding: 3px 20px 3px 20px;
     height: 100%;
     font-weight: 700
 }
+
 .multiselect-container>li.multiselect-group-clickable label {
     cursor: pointer
 }
+
 .multiselect-container>li>a {
     padding: 0
 }
+
 .multiselect-container>li>a>label {
     margin: 0;
     height: 100%;
@@ -268,16 +275,20 @@ span.multiselect-native-select select {
 .multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
     margin: 0
 }
+
 .multiselect-container>li>a>label>input[type=checkbox] {
     margin-bottom: 5px
 }
+
 .btn-group>.btn-group:nth-child(2)>.multiselect.btn {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px
 }
+
 .form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
     padding: 3px 20px 3px 40px
 }
+
 .form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
     margin-left: -20px;
     margin-right: 0
@@ -323,7 +334,6 @@ textarea {
     border-bottom-right-radius: 1em;
 }
 
-
 .responseShadow{
     box-shadow: 2px 2px 2px #888888;
 }
@@ -338,42 +348,12 @@ textarea {
 
 /****************************************************/
 
-/*Upload Files*/
-
-
-.image-preview-input {
-    position: relative;
-    overflow: hidden;
-    margin: 0px;
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-}
-.image-preview-input input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.image-preview-input-title {
-    margin-left:2px;
-}
-
-/****************************************************/
-
 /*Autocomplete*/
-
 .ui-menu-item {
     font-size: .75em !important;
     padding:10px 0px 10px 10px !important;
     border-bottom: 1px dashed #b9edf3;
 }
-
 
 .ui-state-focus {
     color: #fff !important;
