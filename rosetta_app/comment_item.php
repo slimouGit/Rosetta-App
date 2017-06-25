@@ -94,7 +94,7 @@ include "lib/elements/header.php";
                 //------------------------------------------------------------------------------------------
 
                 //Daten aendern ueber Controller edit_item
-                require "mvc/model/comment_item.class.php";
+                require "mvc/model/comment_item_model.class.php";
                 comment_item::comment_generel_item($language, $item_language_comment,$data_id,$username,$currentDate);
 
                 //------------------------------------------------------------------------------------------
