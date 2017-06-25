@@ -3,7 +3,7 @@
 session_start();
 
 //include header
-include "rosetta_app/lib/elements/headerStart.php";
+include "rosetta_app/lib/elements/headerWithoutSession.php";
 ?>
 
 <?php

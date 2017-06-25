@@ -1,7 +1,7 @@
 <?php
 
 //include header
-include "lib/elements/headerStart.php";
+include "lib/elements/headerWithoutSession.php";
 ?>
 
 <?php
