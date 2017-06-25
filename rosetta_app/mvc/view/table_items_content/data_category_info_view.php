@@ -10,7 +10,7 @@
 ?>
 
 <!-- Rubrik -->
-<div class="col-md-4 white col ">
+<div class="col-md-4 white col addedInfo">
     <?php
     if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["category"];
@@ -21,7 +21,7 @@
 </div>
 
 <!-- Info -->
-<div class="col-md-4 white col ">
+<div class="col-md-4 white col addedInfo">
     <?php
     if ($tempSearch == false || strstr($_POST['search'], $slash)) {
         echo $row["info"];

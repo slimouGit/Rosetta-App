@@ -75,6 +75,11 @@ body{margin:0px;padding:0px;}
     border-top: 1px dashed #2aabd2;
 }
 
+/*Klasse fuer Rubrik und Info*/
+.addedInfo{
+    font-size: .75em;
+}
+
 /*Feld mit Carline-Angaben*/
 .carlineHeadline {
     margin-top:10px;
