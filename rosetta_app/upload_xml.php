@@ -22,21 +22,14 @@ include "mvc/model/db_connect_model.php";
 
     <!---------------------------------------------->
 
-    <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <h4>XML auswählen</h4>
-                <form action="?upload_xml=1" method="post" enctype="multipart/form-data">
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <input type="file" class="form-control" name="xmlFile"/>
-                        </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Hochladen</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    <?php
+    // EINBINDEN PHP-Klasse mit Formlar-Objekten
+    require_once "mvc/view/formularFields_view.class.php";
+
+    // Objekt erzeugen
+    $form = new formular();
+    $form->uploadFile("XML wählen", "?upload_xml=1", "uploadXML");
+    ?>
 
     <!---------------------------------------------->
 

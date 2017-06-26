@@ -11,10 +11,10 @@
 //Pfade initialisieren
 $path = getcwd();
 $target_dir = $path."/";
-$fileName = $_FILES["xmlFile"]["name"];
+$fileName = $_FILES["uploadXML"]["name"];
 $new_path = $target_dir . $fileName;
 
-copy($_FILES["xmlFile"]["tmp_name"],$new_path);
+copy($_FILES["uploadXML"]["tmp_name"],$new_path);
 
 $xmlDoc = new DOMDocument();
 $xmlDoc->load($fileName);

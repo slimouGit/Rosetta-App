@@ -17,11 +17,11 @@ $target_dir = $path."/uploaded_data/pricelists/";
 
 
 //Variablen initialisiseren
-$fileName = $_FILES["upfile"]["name"];
+$fileName = $_FILES["uploadPDF"]["name"];
 $fileName = strtolower($fileName);
 
-$fileSize = $_FILES["upfile"]["size"];
-$fileType = $_FILES["upfile"]["type"];
+$fileSize = $_FILES["uploadPDF"]["size"];
+$fileType = $_FILES["uploadPDF"]["type"];
 
 
 //---------------------------------------------------------------------------------------
@@ -89,9 +89,9 @@ $uploadResponse = new responseObject();
 
 
 //Pruefung, ob Datei valide
-if($_FILES["upfile"]["size"]>0 && strpos($fileType, 'pdf') == true)
+if($_FILES["uploadPDF"]["size"]>0 && strpos($fileType, 'pdf') == true)
 {
-    copy($_FILES["upfile"]["tmp_name"],$new_path);
+    copy($_FILES["uploadPDF"]["tmp_name"],$new_path);
 
     //------------------------------------------------------------------------------------------
 

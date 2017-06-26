@@ -91,6 +91,32 @@ class formular
     }
 
     /**
+     * @param $headline
+     * @param $target
+     * @param $name
+     * @param $buttonValue
+     *
+     * upload file
+     */
+    public function uploadFile($headline, $target, $name){
+        echo "<div class=\"container\">
+                <div class=\"panel panel-default\">
+                    <div class=\"panel-body\">
+                    <h4>$headline</h4>
+                        <form action=\"$target\" method=\"post\" enctype=\"multipart/form-data\">
+                        <div class=\"form-inline\">
+                            <div class=\"form-group\">
+                                <input type=\"file\" class=\"form-control\" name=\"$name\"/>
+                            </div>
+                            <button type=\"submit\" class=\"btn btn-sm btn-primary\">Hochladen</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>";
+    }
+
+    /**
      * @param $name
      * @param $text
      *
