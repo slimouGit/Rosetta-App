@@ -26,6 +26,8 @@ class formular
                 </div>";
     }
 
+    //------------------------------------------------------
+
     /**
      * @param $label
      * @param $name
@@ -48,6 +50,8 @@ class formular
             </div>";
     }
 
+    //------------------------------------------------------
+
     /**
      * @param $label
      * @param $name
@@ -67,6 +71,8 @@ class formular
                 </div>
             </div>";
     }
+
+    //------------------------------------------------------
 
     /**
      * @param $label
@@ -89,6 +95,8 @@ class formular
                     </div>
                 </div>";
     }
+
+    //------------------------------------------------------
 
     /**
      * @param $headline
@@ -116,6 +124,8 @@ class formular
             </div>";
     }
 
+    //------------------------------------------------------
+
     /**
      * @param $name
      * @param $text
@@ -125,6 +135,8 @@ class formular
     public function hiddenField($name, $text){
         echo "<input type=\"hidden\" name=\"$name\" value=\"$text\">";
     }
+
+    //------------------------------------------------------
 
     /**
      * @param $name
@@ -148,6 +160,8 @@ class formular
         </div>";
     }
 
+    //------------------------------------------------------
+
     /**
      * @param $col
      * @param $text
@@ -163,6 +177,8 @@ class formular
                     </div>
                 </div>";
     }
+
+    //------------------------------------------------------
 
     /**
      * @param $target
@@ -189,6 +205,8 @@ class formular
                 <select name=\"carline[]\" id=\"example-getting-started\" multiple=\"multiple\" class=\"checkbox-inline\">";
     }
 
+    //------------------------------------------------------
+
     /**
      * @param $carline
      *
@@ -198,12 +216,16 @@ class formular
         echo "<option name=\"carline[]\" type=\"checkbox\" title=\"$carline\" value=\"$carline\">$carline</option>";
     }
 
+    //------------------------------------------------------
+
     /**
      * ende multiselect
      */
     public function selectFinish(){
         echo "</select></div></div></div>";
     }
+
+    //------------------------------------------------------
 
     /**
      * @param $carName
