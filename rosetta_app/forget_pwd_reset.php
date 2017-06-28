@@ -35,14 +35,12 @@ include 'lib/elements/navigation.php';
         //es wird unterschieden, ob der Nutzer ueber die Navigation oder aus "table_user.class" kommt,
         //also, ob er sein eigenes Passwort oder als Administrator das eines Nutzers aendern will
 
-        //CONTROLLER
         //$_GET["user_id"] ist leer, wenn ueber Navigation "Passwort ändern" auf Seite gewechselt wird
         if(empty($_GET["user_id"])){
             //$_POST["user_id"] ist leer, wenn nicht ueber hidden-field im Formular uebergeben wurde
             //dann wird $_POST["user_id"] mit der ID des aktuellen Nutzers initialisiert,
 
             //er aendert also sein eigenes Passwort
-            //CONTROLLER
             if(empty($_POST['user_id'])){
                 $_POST['user_id'] = $userid;
             }
@@ -66,7 +64,6 @@ include 'lib/elements/navigation.php';
         //
         foreach ($res AS $row):
 
-            //CONTROLLER
             //Pruefen, ob der generierte Code mit dem in der Datenbank abgelegten Code uebereinstimmt
             if($code===$row["password_code"]){
             ?>
@@ -108,7 +105,6 @@ include 'lib/elements/navigation.php';
 
                 //----------------------------------------------------------------
 
-                //CONTROLLER
                 if(isset($_GET['change_pwd'])) {
                     $error = false;
                     $password = $_POST['password'];

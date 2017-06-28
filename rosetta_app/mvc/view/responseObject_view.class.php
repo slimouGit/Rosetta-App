@@ -5,6 +5,15 @@
  * User: salim
  *
  * Klasse stellt verschieden Funktionen fuer Nutzerresponse bereit
+ *
+ * Funktionen:
+ *
+ * success($response)
+ * error($response)
+ * response($response, $size, $class)
+ * uploadResponseXML($fileName, $itemCount)
+ * uploadResponsePDF($fileName,$fileSize)
+ *
  */
 class responseObject
 {

@@ -43,11 +43,16 @@ include "lib/elements/header.php";
         <div class='row'>
             <?php
 
-            //CONTROLLER
+            //Meldung wird ausgegeben
+            require_once "mvc/view/responseObject_view.class.php";
+            $response = new responseObject();
+
             if(isset($_GET['search_item'])) {
                 $error = false;
                 if (strlen($_POST['search']) == 0) {
-                    echo 'Bitte einen Suchbegriff eingeben<br>';
+
+                    $response->response("Bitte einen Suchbegriff eingeben","6","responseFalse");
+
                     $error = true;
                 }
                 if (!$error) {
@@ -61,9 +66,6 @@ include "lib/elements/header.php";
                     $count = $res->rowCount();
                     if ($count == 0) {
 
-                        //Meldung wird ausgegeben
-                        require_once "mvc/view/responseObject_view.class.php";
-                        $response = new responseObject();
                         $response->response("Kein Ergebnis für {$_POST['search']} verfügbar","6","responseFalse");
 
                     } else {

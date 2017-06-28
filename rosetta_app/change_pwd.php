@@ -85,7 +85,6 @@ include "lib/elements/header.php";
 
             //----------------------------------------------------------------
 
-            //CONTROLLER
             if(isset($_GET['change_pwd'])) {
                 $error = false;
                 $password = $_POST['password'];

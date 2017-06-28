@@ -13,7 +13,7 @@ class table_user
 
     public static function showUser()
     {
-        self::printUser("active");
+        self::printUser();
     }
 
     function printUser(){

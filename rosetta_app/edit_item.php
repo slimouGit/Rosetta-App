@@ -21,7 +21,6 @@ include "lib/elements/header.php";
 
             $hideForm ="";
 
-            //CONTROLLER
             if(empty($_GET["data_id"])){
                 $_GET["data_id"] = $_POST['data_id'];
                 $hideForm = "true";
@@ -29,7 +28,6 @@ include "lib/elements/header.php";
 
             //------------------------------------------------------------------------------------------
 
-            //CONTROLLER
             if(!$hideForm=="true") {
 
             //------------------------------------------------------------------------------------------
@@ -112,14 +110,13 @@ include "lib/elements/header.php";
     <div class="container">
         <div class='row'>
             <?php
-            //CONTROLLER
+
             if(isset($_GET['change_item'])) {
                 $submitted = "true";
                 $data_id = $_POST['data_id'];
 
                 //------------------------------------------------------------------------------------------
 
-                //CONTROLLER
                 //Pruefung, ob checkboxen ausgewaehlt wurden
                 if(!empty($_POST['carline'])) {$car = implode(', ', $_POST['carline']);}
                 //das Array carline wird ueber implode in $car gespeichert

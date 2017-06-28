@@ -7,7 +7,6 @@ include "lib/elements/header.php";
 <?php
 $hideForm ="";
 
-//CONTROLLER
 if(empty($_GET["user_id"])){
     $_GET["user_id"] = $_POST['user_id'];
     $hideForm = "true";
@@ -37,7 +36,6 @@ if(empty($_GET["user_id"])){
 
                 //------------------------------------------------------------------------------------------
 
-                //CONTROLLER
                 if(!$hideForm=="true") {
 
                     //Anzeige des Datensatzes
@@ -47,7 +45,6 @@ if(empty($_GET["user_id"])){
 
                 //------------------------------------------------------------------------------------------
 
-                //CONTROLLER
                 if(isset($_GET['delete_user'])) {
 
                     $currentDate = date('d.m.Y H:i');
@@ -91,7 +88,6 @@ if(empty($_GET["user_id"])){
                     <?php
                     require_once "mvc/view/formularFields_view.class.php";
 
-                    //CONTROLLER
                     if(!$hideForm=="true") {
                         $form = new formular();
                         $form->hiddenField("user_id", "" . $_GET["user_id"] . "");

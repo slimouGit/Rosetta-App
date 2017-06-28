@@ -5,6 +5,23 @@
  * User: salim
  *
  * Klasse definiert verschiedene Formularfelder
+ *
+ * Funktionen:
+ *
+ * labelField($value)
+ * inputField($label,$name, $value, $placeholder, $id, $labelSize, $size)
+ * textareaField($label,$name,$value, $labelSize, $size)
+ * passwordField($label,$name, $value, $placeholder, $id, $labelSize, $size)
+ * uploadFile($headline, $target, $name)
+ * hiddenField($name, $text)
+ * optionField($name, $value1, $value2)
+ * submitButton($col, $text)
+ * ahref($target,$title)
+ * selectStart($label)
+ * checkBox($carline)
+ * selectFinish()
+ * carlineCheck($carName, $temp)
+ *
  */
 class formular
 {
@@ -26,7 +43,9 @@ class formular
                 </div>";
     }
 
+
     //------------------------------------------------------
+
 
     /**
      * @param $label

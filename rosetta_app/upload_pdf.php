@@ -37,7 +37,6 @@ include "mvc/model/db_connect_model.php";
                 <div class='row'>
                 <?php
 
-                //CONTROLLER
                 if(isset($_GET['upload_pdf'])) {
                    include "mvc/model/upload_pdf_model.php";
                 }

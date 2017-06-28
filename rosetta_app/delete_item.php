@@ -32,7 +32,7 @@ if(empty($_GET["data_id"])){
 
                 //
                 require "mvc/model/select_data_model.class.php";
-                //select_data::select_item($tempId);
+
                 select_data::select_specificDB("rosetta_data", "data_id", $tempId);
 
                 //------------------------------------------------------------------------------------------

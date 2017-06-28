@@ -52,7 +52,6 @@ include "mvc/model/config.php";
 
             <?php
 
-            //CONTROLLER
             if(isset($_GET['register'])) {
 
                 //Response-Objekt erzeugen

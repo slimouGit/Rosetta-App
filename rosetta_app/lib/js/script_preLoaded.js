@@ -4,9 +4,6 @@
 console.log("script_preLoaded");
 
 //Funktion zum Speichern in die Zwischenablage
-//ueber temporaer hinzugefuegtes input-Feld
-//gleichzeitig werden alle Leerzeichen geloescht,
-//die dem Wert anhaengen
 function copyToClipboard(e) {
     var $temp = $("<input>");
     $("body").append($temp);

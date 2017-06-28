@@ -21,7 +21,7 @@ $xmlDoc->load($fileName);
 
 //Erstellen eines einzigartigen tokens SOLLTE SPAETER GLOBAL LAUFEN!!!
 //dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird
-//da hier noch nicht mit der ID gearbeitet werden kann
+//da hier noch nicht mit der spaeteren ID gearbeitet werden kann
 $token = bin2hex(openssl_random_pseudo_bytes(16));
 $token = (string)$token;
 $username = $username;

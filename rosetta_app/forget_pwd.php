@@ -75,7 +75,7 @@ include 'lib/elements/navigation.php';
                 $user_email = $user['email'];
                 $user_forename = $user['forename'];
 
-                //Daten eintragen ueber Controller forget_pwd_mode
+                //Daten eintragen ueber forget_pwd_mode
                 require "mvc/model/set_pwd_model.class.php";
                 set_pwd::insertPWDCode($passwordcode, $currentDate, $user_id, $user_email, $user_forename);
                 ?>

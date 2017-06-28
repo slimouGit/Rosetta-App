@@ -40,7 +40,7 @@
     </div>
 
     <?php
-    //CONTROLLER
+    //Anzeige der Items je nach Authorisierung des Nutzers
     if($authorization == "admin"){
     ?>
 

@@ -17,9 +17,9 @@
 
     <div class="col-md-3 itemBottom col">
         <?php
-        //Feld wird erst angezeigt, wenn Datum > 1970 ist
+
         $updateYear = date('Y', strtotime($row['date_update']));
-        //CONTROLLER
+
         if($updateYear>1970){ ?>
             Geändert von <?php echo $row['user_update']?> am <?php echo date('d.m.Y H:i', strtotime($row['date_update']));
         }else { ?>&nbsp;<?php } ?>
@@ -30,7 +30,7 @@
     <div class="col-md-3 itemBottom col">
         <?php
         //dieses Feld ist nur sichtbar, wenn Eintrag geloescht wurde
-        //CONTROLLER
+
         if($temp=="deleted") { ?>
             Gelöscht von <?php echo $row['user_delete'] ?> am <?php echo date('d.m.Y H:i', strtotime($row['date_delete']));
         }else { ?>&nbsp;<?php } ?>

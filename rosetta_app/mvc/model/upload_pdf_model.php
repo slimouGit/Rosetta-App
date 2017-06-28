@@ -26,10 +26,6 @@ $fileType = $_FILES["uploadPDF"]["type"];
 
 //---------------------------------------------------------------------------------------
 
-/**
- * folgende Loesung ist nicht die eleganteste, da nicht gut wartbar, wenn Carlines hinzukommen oder entfernt werden
- */
-
 $carline;
 
 /*
@@ -40,6 +36,15 @@ for($i = 0; $i<count($carlineArray);$i++){
     if (preg_match('/$carlineArray[$i]/', $fileName)) {$carline = $carlineArray[$i];}
 }
 */
+
+
+
+
+/**
+ * folgende Loesung ist nicht die eleganteste, da nicht gut wartbar, wenn Carlines hinzukommen oder entfernt werden
+ * muss noch optimiert werden
+ */
+
 
 //Carline testen
 if (preg_match('/adam/', $fileName)) {$carline = "ADAM";}

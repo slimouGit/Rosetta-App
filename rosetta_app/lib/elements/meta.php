@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Salim Oussayfi">
-<meta name="description" content="Praxis-Projekt Beuth-Hochschule/Medieninformatik B.Sc.">
+<meta name="description" content="Praxis-Projekt SS2017 Beuth-Hochschule/Medieninformatik B.Sc.">
 
 <title>Rosetta-App</title>
 

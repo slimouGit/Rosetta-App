@@ -37,9 +37,6 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
         <div class='row'>
             <?php
 
-            //$cat wir mit Spalten definiert, in denen gesucht werden soll
-            //$cat = 'item_de, item_fr, item_it, category, info, carline';
-
             //------------------------------------------------------------------------------------------
 
             //

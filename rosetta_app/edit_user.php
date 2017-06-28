@@ -22,7 +22,6 @@ include "lib/elements/header.php";
 
             $hideForm ="";
 
-            //CONTROLLER
             if(empty($_GET["user_id"])){
                 $_GET["user_id"] = $_POST['user_id'];
                 $hideForm = "true";
@@ -81,7 +80,6 @@ include "lib/elements/header.php";
             <div class='row'>
                 <?php
 
-                //CONTROLLER
                 if(isset($_GET['change_user'])) {
                     //------------------------------------------------------------------------------------------
 

@@ -66,7 +66,6 @@ include "lib/elements/header.php";
             <div class='row'>
                 <?php
 
-                //CONTROLLER
                 if(isset($_GET['insert_item'])) {
 
                     //Erstellen eines einzigartigen tokens dient dazu, wenn der letzte eingetragene Datensatz angezeigt wird

@@ -8,6 +8,13 @@
  */
 
 class register_user {
+    /**
+     * @param $forename
+     * @param $surname
+     * @param $authorization
+     * @param $email
+     * @param $password_hash
+     */
     public static function insertUserData($forename,$surname,$authorization,$email,$password_hash)
     {
         self::insertUserItem($forename,$surname,$authorization,$email,$password_hash);
