@@ -7,6 +7,15 @@
  * Time: 18:11
  *
  * Klasse stellt mehrere Funktionen zur Datenbank-Abfrage bereit
+ *
+ * Funktionen:
+ *
+ * select_individuelUser($tempValue)
+ * select_filteredData($tempItem)
+ * select_searchedData($tempItem)
+ * select_completeDB($db)
+ * select_specificDB($db, $column, $value)
+ *
  */
 
 class select_data
