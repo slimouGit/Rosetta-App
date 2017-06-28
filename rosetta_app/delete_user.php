@@ -66,13 +66,13 @@ if(empty($_GET["user_id"])){
         <div class="container">
             <div class='row'>
                 <?php
-                //CONTROLLER
+
                 if(!$hideForm=="true") {
 
                     //Meldung wird ausgegeben
                     require_once "mvc/view/responseObject_view.class.php";
                     $response = new responseObject();
-                    $response->success("Soll dieser Datensatz wirklich gelöscht werden?");
+                    $response->response("Soll der Nutzer mit der ID {$tempId} wirklich gelöscht werden?","6","responseFalse");
 
                 }
                 ?>

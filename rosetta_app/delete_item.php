@@ -73,7 +73,7 @@ if(empty($_GET["data_id"])){
                     //Meldung wird ausgegeben
                     require_once "mvc/view/responseObject_view.class.php";
                     $response = new responseObject();
-                    $response->success("Soll dieser Datensatz wirklich gelöscht werden?");
+                    $response->response("Soll der Eintrag mit der ID {$tempId} wirklich gelöscht werden?","6","responseFalse");
 
                 }
                 ?>
