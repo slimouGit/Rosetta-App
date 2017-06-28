@@ -17,18 +17,6 @@ class delete_item
      */
     public static function deleteData($username, $currentDate, $tempId)
     {
-        self::deleteItem($username, $currentDate, $tempId);
-    }//ENDE function deleteData
-
-    //---------------------------------------------------------------------------------------
-
-    /**
-     * @param $username
-     * @param $currentDate
-     * @param $tempId
-     */
-    function deleteItem($username, $currentDate, $tempId){
-
         global $res;
 
         //---------------------------------------------------------------------------------------

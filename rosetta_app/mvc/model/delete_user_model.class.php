@@ -13,16 +13,6 @@ class delete_user
      */
     public static function deleteUserData($tempId)
     {
-        self::deleteUser($tempId);
-    }//ENDE function deleteUser
-
-    //---------------------------------------------------------------------------------------
-
-    /**
-     * @param $tempId
-     */
-    function deleteUser($tempId){
-
         global $res;
         //---------------------------------------------------------------------------------------
 

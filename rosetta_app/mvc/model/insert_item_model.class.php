@@ -21,23 +21,6 @@ class insert_item
      */
     public static function insertData($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username)
     {
-        self::insertItem($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username);
-    }//ENDE function insertData
-
-    //---------------------------------------------------------------------------------------
-
-    /**
-     * @param $token
-     * @param $item_de
-     * @param $item_fr
-     * @param $item_it
-     * @param $category
-     * @param $info
-     * @param $car
-     * @param $username
-     */
-    function insertItem($token,$item_de,$item_fr,$item_it,$category,$info,$car,$username){
-
         global $res;
 
         //---------------------------------------------------------------------------------------

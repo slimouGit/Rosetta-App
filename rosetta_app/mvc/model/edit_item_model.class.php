@@ -20,22 +20,6 @@ class edit_item
      * @param $data_id
      */
     public function editData($item_de,$item_fr,$item_it,$category,$info,$car,$username,$data_id){
-        self::editItem($item_de,$item_fr,$item_it,$category,$info,$car,$username,$data_id);
-    }//ENDE function editData
-
-    //---------------------------------------------------------------------------------------
-
-    /**
-     * @param $item_de
-     * @param $item_fr
-     * @param $item_it
-     * @param $category
-     * @param $info
-     * @param $car
-     * @param $username
-     * @param $data_id
-     */
-    function editItem($item_de,$item_fr,$item_it,$category,$info,$car,$username,$data_id){
 
         global $res;
 

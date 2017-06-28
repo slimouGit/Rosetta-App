@@ -13,10 +13,6 @@ class table_user
 
     public static function showUser()
     {
-        self::printUser();
-    }
-
-    function printUser(){
         global $res;
 
         ?>
