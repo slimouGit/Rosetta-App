@@ -58,12 +58,10 @@ class select_data
     /*
      * Funktion zum Suchen der Daten
      */
-    public function select_searchedData($tempItem){
+    public function select_searchedData($cat, $tempItem){
 
         global $res;
         include "mvc/model/db_connect_model.php";
-
-        $cat = 'item_de, item_fr, item_it, category, info, carline';
 
         $res = $pdo->query("SELECT * FROM rosetta_data WHERE CONCAT_WS('',$cat) LIKE '%" . $tempItem . "%' AND state LIKE 'active'");
 
