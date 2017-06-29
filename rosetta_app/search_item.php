@@ -22,14 +22,15 @@ include "lib/elements/header.php";
 
                     <!--Inputfeld zur Suche hier nicht uber Klasse implementiert-->
                     <div class="row formMarginBottom">
-                    <div class="col-sm-10 ui-widget">
+                    <div class="col-sm-2 control-label">Suchbegriff</div>
+                    <div class="col-sm-8 ui-widget">
                         <input type="text" class="form-control" id="skills" name="search" value="<?php echo isset($_POST['search']) ? $_POST['search'] : ''; ?>" placeholder="Suchbegriff">
                     </div>
                     </div>
 
 
                     <div class="row formMarginBottom">
-                        <div class="col-sm-2 control-label">Einschränken</div>
+                        <div class="col-sm-2 control-label">suchen in</div>
                         <div class="col-sm-8">
                             <?php
                                 //ueber die Checkboxen kann die Suche eingeschraenkt werden
@@ -47,6 +48,7 @@ include "lib/elements/header.php";
                     </div>
 
                     <div class="row">
+                        <div class="col-sm-2 control-label"></div>
                         <div class="form-group">
                             <div class="col-sm-1">
                                 <input type="submit" class="btn btn-primary" value="suchen">
