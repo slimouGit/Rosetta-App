@@ -21,6 +21,7 @@
  * checkBox($carline)
  * selectFinish()
  * carlineCheck($carName, $temp)
+ * checkboxFiltering($column,$value)
  *
  */
 class formular
@@ -258,6 +259,18 @@ class formular
         }else {
             echo "<option type='checkbox' title=$carName value=\"$carName\">$carName</option>";
         }
+    }
+
+    //------------------------------------------------------
+
+    /**
+     * @param $column
+     * @param $value
+     */
+    public function checkboxFiltering($column,$value){
+        echo "<label class=\"checkbox-inline\">
+                <input name=\"searchCategory[]\" type=\"checkbox\"  value=\"$column\">$value
+              </label>";
     }
 
     //------------------------------------------------------
