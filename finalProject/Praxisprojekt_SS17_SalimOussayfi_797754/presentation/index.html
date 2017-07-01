@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rosetta-App</title>
+        <style>
+            body{margin: 0px;padding: 0px;}
+            img{height:700px;}
+            #canvas{position: absolute; }
+            .canvas{position: absolute; top:0px;visibility:hidden;}
+            #button2{visibility: hidden}
+            #thankYou{position: absolute; }
+        </style>
+        <script>
+            //-------------------------------------------------------------------------
+            var counter = 1;
+            //-------------------------------------------------------------------------
+            function fadeOut(){
+                document.getElementById("startImg").style.display = "none";
+                    if(counter==21){
+                        return false;
+                    }
+                document.getElementById("slide_"+counter).style.visibility = "visible";
+
+                setTimeout(function(){ fadeOut(); }, 20000);
+
+                counter++;
+            }
+            //-------------------------------------------------------------------------
+            function thankYou() {
+                document.getElementById("thankYou").style.visibility = "visible";
+            }
+            //-------------------------------------------------------------------------
+        </script>
+    </head>
+    <body>
+
+        <div id="canvas">
+            <div><img id="startImg" onclick="fadeOut()" src="img/rosetta-app_praesentation_start.jpg"></div>
+            <div id="slide_1" class="canvas"><img src="img/rosetta-app_praesentation1.jpg"></div>
+            <div id="slide_2" class="canvas"><img src="img/rosetta-app_praesentation2.jpg"></div>
+            <div id="slide_3" class="canvas"><img src="img/rosetta-app_praesentation3.jpg"></div>
+            <div id="slide_4" class="canvas"><img src="img/rosetta-app_praesentation4.jpg"></div>
+            <div id="slide_5" class="canvas"><img src="img/rosetta-app_praesentation5.jpg"></div>
+            <div id="slide_6" class="canvas"><img src="img/rosetta-app_praesentation6.jpg"></div>
+            <div id="slide_7" class="canvas"><img src="img/rosetta-app_praesentation7.jpg"></div>
+            <div id="slide_8" class="canvas"><img src="img/rosetta-app_praesentation8.jpg"></div>
+            <div id="slide_9" class="canvas"><img src="img/rosetta-app_praesentation9.jpg"></div>
+            <div id="slide_10" class="canvas"><img src="img/rosetta-app_praesentation10.jpg"></div>
+            <div id="slide_11" class="canvas"><img src="img/rosetta-app_praesentation11.jpg"></div>
+            <div id="slide_12" class="canvas"><img src="img/rosetta-app_praesentation12.jpg"></div>
+            <div id="slide_13" class="canvas"><img src="img/rosetta-app_praesentation13.jpg"></div>
+            <div id="slide_14" class="canvas"><img src="img/rosetta-app_praesentation14.jpg"></div>
+            <div id="slide_15" class="canvas"><img src="img/rosetta-app_praesentation15.jpg"></div>
+            <div id="slide_16" class="canvas"><img src="img/rosetta-app_praesentation16.jpg"></div>
+            <div id="slide_17" class="canvas"><img src="img/rosetta-app_praesentation17.jpg"></div>
+            <div id="slide_18" class="canvas"><img src="img/rosetta-app_praesentation18.jpg"></div>
+            <div id="slide_19" class="canvas"><img src="img/rosetta-app_praesentation19.jpg"></div>
+            <div id="slide_20" class="canvas"><img onclick="thankYou()" src="img/rosetta-app_praesentation20.jpg"></div>
+        </div>
+
+        <div id="thankYou" class="canvas">
+            <img src="img/rosetta-app_praesentation_danke.jpg">
+        </div>
+
+    </body>
+</html>

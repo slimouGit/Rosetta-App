@@ -1,0 +1,397 @@
+body{margin:0px;padding:0px;}
+/******************************************/
+
+
+/*Container fuer Datenausgabe*/
+.col {
+    background: none;
+    height: auto;
+}
+
+.row .white {
+    background: white;
+    color: black;
+}
+
+.row .bottomLine {
+    border-bottom: 1px dashed #888888;
+}
+
+.row .topLine {
+    border-top: 1px dashed #888888;
+}
+
+/*Feld enthaelt .itemField mit Daten*/
+.itemFieldWrapper{
+    padding: 0px 10px;
+}
+
+/*FormularWrapper*/
+.formWrapper{
+    padding: 10px 0px;
+}
+
+/*Felder mit Daten*/
+.itemField{
+    background-color: #dcedef;
+    padding: 5px 5px 10px 10px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+/*Felder mit Daten*/
+.formField{
+    background-color: #ddeff2;
+    padding: 20px 5px 10px 10px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.formMarginBottom{
+    margin-bottom:20px;
+}
+/*Felder mit Icons*/
+.row .editLine {
+    padding: 10px 0px;
+}
+
+.itemWrapper{
+    margin: 10px 0px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.itemHeader {
+    margin: 10px 0px;
+    padding: 10px ;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.topLineDashed{
+    border-top: 1px dashed #2aabd2;
+}
+
+/*Klasse fuer Rubrik und Info*/
+.addedInfo{
+    font-size: .75em;
+}
+
+/*Feld mit Carline-Angaben*/
+.carlineHeadline {
+    margin-top:10px;
+    padding-top:10px;
+    border-top: 1px dashed #2aabd2;
+    font-size: .75em;
+    font-weight: bold;
+    color: #1b6d85;
+    display: block;
+}
+
+/*Kommentarzeile*/
+.comment {
+    color: #ff0000;
+    font-size: .75em;
+}
+.userComment{
+    font-weight: bold;
+    color: #8c8c8c;
+    font-size: .75em;
+}
+
+.dateComment{
+    font-size: .75em;
+}
+
+.commentInfo {
+    margin-top: 5px;
+    padding: 5px 0px;
+}
+
+/*Zeile mit Daten zum Eintrag => userCreate, userUpdate, userDelete, data_id*/
+.itemInfo {
+    margin-top: 5px;
+}
+
+.row .itemBottom {
+    background-color: #2e6da4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: .75em;
+}
+
+
+.borderRoundBottomLeft {
+    border-bottom-left-radius: 1em;
+}
+
+.borderRoundBottomRight {
+    border-bottom-right-radius: 1em;
+}
+
+/******************************************/
+
+
+/*Highlighting der Suchfunktion*/
+.highlight{background-color: yellow; }
+/******************************************/
+
+
+/*Item-Container*/
+.itemRow{
+    margin: 20px; padding-bottom: 30px;
+}
+/******************************************/
+
+
+/*navabar*/
+.navbar{
+    color: #fff;
+    background-color: #2e6da4;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+
+
+/******************************************/
+
+/**/
+.content {
+    position: relative;
+    top: 50px;
+}
+/******************************************/
+
+
+/**/
+.userRow {
+    color: #fff;
+    background-color: #2e6da4;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/******************************************/
+
+
+
+
+/*User Tabelle*/
+.userTableRow{
+    border-bottom: 1px dashed #2aabd2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+/******************************************************************/
+
+/*Dashboard*/
+.daeshbordIcon{
+    text-align: center;
+    width: 45%;
+    height:120px;
+    padding-top:25px;
+    margin:10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px #888888;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.daeshbordIconUser {
+    background-color: #009cff;
+}
+
+.daeshbordIconAdmin{
+    background-color: #2e6da4;
+}
+
+.daeshbordIcon .daeshbordText{
+    color: #ddeff2;
+    font-size: 20 px;
+    font-weight: bold;
+}
+
+
+/******************************************************************/
+
+/*Multiselect*/
+span.multiselect-native-select {
+    position: relative
+}
+
+span.multiselect-native-select select {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    height: 1px!important;
+    margin: -1px -1px -1px -3px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+    left: 50%;
+    top: 30px
+}
+
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.multiselect-container .input-group {
+    margin: 5px
+}
+
+.multiselect-container>li {
+    padding: 0
+}
+
+.multiselect-container>li>a.multiselect-all label {
+    font-weight: 700
+}
+
+.multiselect-container>li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    font-weight: 700
+}
+
+.multiselect-container>li.multiselect-group-clickable label {
+    cursor: pointer
+}
+
+.multiselect-container>li>a {
+    padding: 0
+}
+
+.multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 0 3px 30px
+}
+.multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+    margin: 0
+}
+
+.multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 5px
+}
+
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+
+/****************************************************/
+
+/*textarea*/
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 10px;
+    max-height: 500px;
+}
+
+/****************************************************/
+
+/*Response Feld*/
+.response{
+    text-align: center;
+    background-color: #04bb0c;
+    padding:5px;
+    color: #fff;
+    font-size: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.responseUploadHeader{
+    padding:5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.responseContent{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.responseShadow{
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.responseSuccess{
+    background-color: #04bb0c;
+}
+
+.responseFalse{
+    background-color: #ff0000;
+}
+
+/****************************************************/
+
+/*Autocomplete*/
+.ui-menu-item {
+    font-size: .75em !important;
+    padding:10px 0px 10px 10px !important;
+    border-bottom: 1px dashed #b9edf3;
+}
+
+.ui-state-focus {
+    color: #fff !important;
+    font-weight: bold !important;
+    background: none !important;
+    background-color: #2e6da4 !important;
+    border: none !important;
+}
+
+#ui-id-1{
+    width: 500px;
+    min-height: 50px;
+    max-height: 300px;
+    border: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+#ui-id-1::-webkit-scrollbar {
+    width: 12px;
+}
+
+#ui-id-1::-webkit-scrollbar-track {
+    border-bottom-right-radius: 1em;
+}
+
+#ui-id-1::-webkit-scrollbar-thumb {
+    background-color: #2e6da4;
+    border-bottom-right-radius: 1em;
+}
+
+/****************************************************/
