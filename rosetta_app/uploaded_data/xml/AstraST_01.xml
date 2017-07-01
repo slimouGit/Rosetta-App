@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<items>
+    <item>
+        <item_de>Adaptives Bremslicht</item_de>
+        <item_fr>Feux de stop adaptatifs</item_fr>
+        <item_it>Luce di stop adattiva</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Airbagsystem</item_de>
+        <item_fr>Système d`airbags</item_fr>
+        <item_it>Sistema di airbag</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Frontairbags, Fahrer und Beifahrer</item_de>
+        <item_fr>airbags frontaux, conducteur et passager avant</item_fr>
+        <item_it>airbag frontali, conducente e passeggero</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Brust-Becken-Seitenairbags, Fahrer und Beifahrer</item_de>
+        <item_fr>airbags latéraux thorax/bassin, conducteur et passager avant</item_fr>
+        <item_it>airbag laterali torace-bacino, conducente e passeggero</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Kopfairbags, vorn und hinten aussen</item_de>
+        <item_fr>airbags rideaux, à l`avant et à l`arrière (places extérieures)</item_fr>
+        <item_it>airbag a tendina, anteriori e posteriori laterali</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Front- und Seitenairbag, Beifahrer, manuell deaktivierbar</item_de>
+        <item_fr>airbag frontal et airbag latéral du passager avant désactivables manuellement</item_fr>
+        <item_it>airbag frontale e laterale passeggero disattivabile manualmente</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Antiblockiersystem (ABS) mit Kurvenbremskontrolle und Bremsassistent</item_de>
+        <item_fr>Système antiblocage des roues (ABS) avec contrôle du freinage en courbe et assistant de freinage</item_fr>
+        <item_it>Sistema antibloccaggio (ABS) con controllo della frenata in curva e assistenza alla frenata</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Automatische Aktivierung des Warnblinkers und Entriegelung der Türen nach Auslösung von Airbag oder Gurtstraffer</item_de>
+        <item_fr>Activation automatique des feux de détresse et déverrouillage des portes en cas de déclenchement d`un airbag ou d`un prétensionneur de ceinture</item_fr>
+        <item_it>Attivazione automatica dei lampeggiatori d`emergenza e sbloccaggio delle portiere in seguito all`attivazione degli airbag o del pretensionatore</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Berg-Anfahr-Assistent</item_de>
+        <item_fr>Assistant de démarrage en côte</item_fr>
+        <item_it>Assistenza alla partenza in salita</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Elektronisches Stabilitätsprogramm Plus (ESP®Plus)</item_de>
+        <item_fr>Programme électronique de stabilité Plus (ESP®Plus)</item_fr>
+        <item_it>Controllo elettronico della stabilità Plus (ESP®Plus)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Fussgängerschutz</item_de>
+        <item_fr>Protection des piétons</item_fr>
+        <item_it>Protezione pedoni</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Dreipunkt-Sicherheitsgurte auf allen Plätzen, Gurtkraftbegrenzer, pyrotechnische Gurtschlossstraffer, vorn, doppelter Gurtstraffer, vorn und hinten, sowie Gurtwarner, vorn und hinten</item_de>
+        <item_fr>Ceintures de sécurité à trois points d`ancrage pour tous les passagers, avec limiteur d`effort, prétensionneur pyrotechnique agissant sur la boucle à l`avant, double prétensionneur, à l`avant et à l`arrière et avertisseur de ceinture non attachée à l`avant et à l`arrière</item_fr>
+        <item_it>Cintura di sicurezza a 3 punti per tutti i posti, limitatore di carico e pretensionatore pirotecnico, anteriore, nonché doppio pretensionatore, anteriore e posteriore e spia cintura non allacciata, anteriore e posteriore</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Kindersicherung in den hinteren Türen, manuell</item_de>
+        <item_fr>Sécurité-enfants manuelle sur les portes arrière</item_fr>
+        <item_it>Sicurezza bambini nelle portiere posteriori, manuale</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Passive 2-Wege-Kopfstützen, vorn, höheneinstellbar, 3 Kopfstützen, hinten, höheneinstellbar</item_de>
+        <item_fr>Appuis-tête passifs à 2 voies à l`avant, réglables en hauteur, 3 appuis-tête à l`arrière, réglables en hauteur</item_fr>
+        <item_it>Poggiatesta anteriori passivi a 2 regolazioni, regolabili in altezza, 3 poggiatesta posteriori, regolabili in altezza</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Reifendruck-Kontrollsystem</item_de>
+        <item_fr>Système de contrôle de la pression des pneus</item_fr>
+        <item_it>Sistema di controllo pressione pneumatici</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Reifen-Reparatur-Set, inkl. Reifendichtmittel und 12-Volt-Kompressor (ohne Wagenheber)</item_de>
+        <item_fr>Kit de réparation des pneumatiques, avec produit d`étanchéité et compresseur 12 V (sans cric)</item_fr>
+        <item_it>Set di riparazione pneumatici, incl. sigillante e compressore 12 Volt (senza cric)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Seitenaufprallschutz</item_de>
+        <item_fr>Renforts de protection latérale</item_fr>
+        <item_it>Protezione anticollisione laterale</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Sicherheitslenksäule</item_de>
+        <item_fr>Colonne de direction de sécurité</item_fr>
+        <item_it>Piantone dello sterzo collassabile</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Auskuppelnde Sicherheitspedale PRS (Pedal Release System)</item_de>
+        <item_fr>Pédalier rétractable de sécurité PRS (Pedal Release System)</item_fr>
+        <item_it>Sistema di sganciamento dei pedali PRS (Pedal Release System)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Sporttaste (nur für Dynamic)</item_de>
+        <item_fr>Touche Sport (version Dynamic seulement)</item_fr>
+        <item_it>Tasto sport (solo per Dynamic)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>LED-Tagfahrlicht inkl. LED-Blinker, vorn, manuelle Scheinwerferleuchtweiten¬regulierung</item_de>
+        <item_fr>Eclairage de jour à LED et clignotants à LED à l`avant, réglage manuel de la portée des feux de route</item_fr>
+        <item_it>Luci di marcia diurna a LED incl. indicatori di direzione a LED, anteriori, regolazione manuale portata fari</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Traktionskontrolle mit Motor- und Bremseingriff (TCPlus)</item_de>
+        <item_fr>Contrôle de la traction intervenant sur le moteur et les freins (TCPlus)</item_fr>
+        <item_it>Controllo della trazione con intervento di motore e freni (TCPlus)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>4 Verzurrösen im Gepäckraum</item_de>
+        <item_fr>4 anneaux d`arrimage dans le coffre</item_fr>
+        <item_it>4 anelli di ancoraggio nel bagagliaio</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Vorrüstung für Kindersitz-Befestigungssystem ISOFIX, inkl. Top Tether Befestigungsösen, hinten aussen</item_de>
+        <item_fr>Pré-équipement pour système ISOFIX de fixation des sièges enfant, avec anneaux d`arrimage Top Tether sur les sièges arrière extérieurs</item_fr>
+        <item_it>Predisposizione per sistema di fissaggio seggiolino per bambini ISOFIX con fissaggio Top Tether, posteriore laterale</item_it>
+        <category>Serienausstattung</category>
+        <info>Sicherheit</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Komfort- und sonstige Ausstattung</item_de>
+        <item_fr>Confort et autres équipements</item_fr>
+        <item_it>Comfort e ulteriori equipaggiamenti</item_it>
+        <category>Serienausstattung</category>
+        <info>Komfort</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Ablagefächer</item_de>
+        <item_fr>Rangements</item_fr>
+        <item_it>Vani portaoggetti</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Ablagefach, in der Mittelkonsole</item_de>
+        <item_fr>Compartiment dans la console centrale</item_fr>
+        <item_it>vano portaoggetti nella console centrale</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Ablagefach, in Instrumententafel, Fahrerseite</item_de>
+        <item_fr>Compartiment dans le tableau de bord, côté conducteur</item_fr>
+        <item_it>vano portaoggetti nella plancia degli strumenti, lato guida</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Handschuhfach</item_de>
+        <item_fr>Boîte à gants</item_fr>
+        <item_it>cassetto portaoggetti</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Getränkehalter, in der Mittelkonsole</item_de>
+        <item_fr>Porte-boisson dans la console centrale</item_fr>
+        <item_it>portabibite nella console centrale</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Ablagefach in den vorderen Türen, geeignet für 1,5-Liter-Getränkeflaschen</item_de>
+        <item_fr>Compartiment pouvant accueillir des bouteilles de 1,5 l dans les portes avant</item_fr>
+        <item_it>vano nelle portiere anteriori, idoneo per bottiglie di 1,5 litri</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Ablagefach in den hinteren Türen, geeignet für 0,5-Liter-Getränkeflaschen</item_de>
+        <item_fr>Compartiment pouvant accueillir des bouteilles de 0,5 l dans les portes arrière</item_fr>
+        <item_it>vano nelle portiere posteriori, idoneo per bottiglie di 0,5 litri</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Taschen an den Vordersitzrücken (nur für Dynamic und Excellence)</item_de>
+        <item_fr>Aumônières au dos des sièges avant (versions Dynamic et Excellence seulement)</item_fr>
+        <item_it>tasche negli schienali dei sedili anteriori (solo per Dynamic ed Excellence)</item_it>
+        <category>Serienausstattung</category>
+        <info>Ablagefächer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Aussenspiegel</item_de>
+        <item_fr>Rétroviseurs extérieurs</item_fr>
+        <item_it>Retrovisori estern</item_it>
+        <category>Serienausstattung</category>
+        <info>Aussenspiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Elektrisch einstell- und beheizbar</item_de>
+        <item_fr>Réglables électriquement et chauffants</item_fr>
+        <item_it>regolabili e riscaldabili elettricamente</item_it>
+        <category>Serienausstattung</category>
+        <info>Aussenspiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Manuell anklappbar</item_de>
+        <item_fr>Rabattables manuellement</item_fr>
+        <item_it>ripiegabili manualmente</item_it>
+        <category>Serienausstattung</category>
+        <info>Aussenspiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Aussenspiegelgehäuse in Wagenfarbe</item_de>
+        <item_fr>Coques couleur carrosserie</item_fr>
+        <item_it>alloggiamenti retrovisori in tinta carrozzeria</item_it>
+        <category>Serienausstattung</category>
+        <info>Aussenspiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Batterieentladeschutz</item_de>
+        <item_fr>Protection contre le déchargement de la batterie</item_fr>
+        <item_it>Dispositivo salvabatteria</item_it>
+        <category>Serienausstattung</category>
+        <info>Batterie</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Dekorleisten, Sand, matt</item_de>
+        <item_fr>Baguettes décoratives, sable mat</item_fr>
+        <item_it>Liste decorative, Sabbia, opaco</item_it>
+        <category>Serienausstattung</category>
+        <info>Dekorleiste</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Dieselpartikelfilter (DPF), wartungsfrei (für alle Dieselmotoren)</item_de>
+        <item_fr>Filtre à particules diesel (DPF) sans entretien (sur tous les moteurs diesel)</item_fr>
+        <item_it>Filtro antiparticolato  (DPF), privo di manutenzione (per tutti i motori diesel)</item_it>
+        <category>Serienausstattung</category>
+        <info>Dieselpartikelfilter</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Drehzahlmesser</item_de>
+        <item_fr>Compte-tours</item_fr>
+        <item_it>Contagiri</item_it>
+        <category>Serienausstattung</category>
+        <info>Drehzahlmesser</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Elektrische Fensterheber vorn</item_de>
+        <item_fr>Lève-glaces électriques à l`avant</item_fr>
+        <item_it>Alzacristalli, anteriori, elettrici</item_it>
+        <category>Serienausstattung</category>
+        <info>Elektrische Fensterheber</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Tippfunktion</item_de>
+        <item_fr>commande par impulsion</item_fr>
+        <item_it>funzione a impulso</item_it>
+        <category>Serienausstattung</category>
+        <info>Elektrische Fensterheber</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Einklemmschutz</item_de>
+        <item_fr>système antipincement</item_fr>
+        <item_it>protezione antincastro</item_it>
+        <category>Serienausstattung</category>
+        <info>Elektrische Fensterheber</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Hochschaltempfehlung über Anzeige im Instrumentendisplay (nur in Verbindung mit manuellem Schaltgetriebe und Automatikgetriebe im manuellen Schaltmodus)</item_de>
+        <item_fr>Indicateur de changement de rapport via un témoin dans le combiné d`instruments (fonctionne uniquement sur les boîtes manuelles ou en mode manuel sur les boîtes automatiques)</item_fr>
+        <item_it>Spia cambio marcia nel quadro strumenti (solo con cambio manuale e cambio automatico in modalità manuale)</item_it>
+        <category>Serienausstattung</category>
+        <info>Hochschaltempfehlung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Innenraumbeleuchtung, vorn und hinten</item_de>
+        <item_fr>Eclairage intérieur à l`avant et à l`arrière</item_fr>
+        <item_it>Illuminazione abitacolo, anteriore e posteriore</item_it>
+        <category>Serienausstattung</category>
+        <info>Innenraumbeleuchtung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Instrumente, schwarz, mit Hochglanzchromringen, 3,5”-Instrumentendisplay</item_de>
+        <item_fr>Instruments noirs, bordés de cercles en chrome brillant, avec écran 3,5”</item_fr>
+        <item_it>Strumentazione, nera, con cornici cromate lucide, display 3,5” nel quadro strumenti</item_it>
+        <category>Serienausstattung</category>
+        <info>Instrumente</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Karosserie mit Vollverzinkung aller korrosionsgefährdeten Teile</item_de>
+        <item_fr>Carrosserie dont les pièces sensibles à la corrosion sont entièrement galvanisées</item_fr>
+        <item_it>Carrozzeria con zincatura di tutti i pezzi soggetti a corrosione</item_it>
+        <category>Serienausstattung</category>
+        <info>Karosserie</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Klimaanlage</item_de>
+        <item_fr>Climatisation</item_fr>
+        <item_it>Climatizzatore</item_it>
+        <category>Serienausstattung</category>
+        <info>Klimaanlage</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Umluftschaltung, manuell</item_de>
+        <item_fr>fonction recirculation de l`air, manuelle</item_fr>
+        <item_it>funzione ricircolo dell`aria manuale</item_it>
+        <category>Serienausstattung</category>
+        <info>Klimaanlage</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Partikel- und Pollenfilter</item_de>
+        <item_fr>filtre à particules et à pollen</item_fr>
+        <item_it>filtro antipolline e antipolvere</item_it>
+        <category>Serienausstattung</category>
+        <info>Klimaanlage</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Komfortlenkrad</item_de>
+        <item_fr>Volant confort</item_fr>
+        <item_it>Volante comfort</item_it>
+        <category>Serienausstattung</category>
+        <info>Komfortlenkrad</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Komfortsitze mit Stoffpolster, Schwarz</item_de>
+        <item_fr>Sièges confort, avec sellerie en tissu noir</item_fr>
+        <item_it>Sedili comfort con rivestimento in tessuto, nero</item_it>
+        <category>Serienausstattung</category>
+        <info>Komfortsitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Lenksäule, höhen- und längseinstellbar</item_de>
+        <item_fr>Colonne de direction réglable en hauteur et en profondeur</item_fr>
+        <item_it>Piantone dello sterzo, regolabile in altezza e profondità</item_it>
+        <category>Serienausstattung</category>
+        <info>Lenksäule</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Laderaumabdeckung</item_de>
+        <item_fr>Cache-coffre</item_fr>
+        <item_it>Copertura vano di carico</item_it>
+        <category>Serienausstattung</category>
+        <info>Laderaumabdeckung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Quickheat-Heizsystem (Serie für Dieselmotoren)</item_de>
+        <item_fr>Chauffage rapide Quickheat (de série sur les modèles diesel)</item_fr>
+        <item_it>Sistema di riscaldamento rapido Quickheat (di serie per i motori diesel)</item_it>
+        <category>Serienausstattung</category>
+        <info>Quickheat-Heizsystem</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Scheinwerfer in Hochglanz-Chromoptik</item_de>
+        <item_fr>Phares au look chrome brillant</item_fr>
+        <item_it>Fari in look cromato lucido</item_it>
+        <category>Serienausstattung</category>
+        <info>Scheinwerfer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Service-Intervall-Anzeige</item_de>
+        <item_fr>Affichage de l`intervalle entre les services</item_fr>
+        <item_it>Indicatore intervallo di servizio</item_it>
+        <category>Serienausstattung</category>
+        <info>Service-Intervall-Anzeige</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Servolenkung, geschwindigkeitsabhängig</item_de>
+        <item_fr>Direction assistée asservie à la vitesse</item_fr>
+        <item_it>Servosterzo, in funzione della velocità</item_it>
+        <category>Serienausstattung</category>
+        <info>Servolenkung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Sitze</item_de>
+        <item_fr>Sièges</item_fr>
+        <item_it>Sedili</item_it>
+        <category>Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Fahrersitz 6-fach einstellbar (Länge, Höhe)</item_de>
+        <item_fr>Siège conducteur avec 6 possibilités de réglage (profondeur, hauteur)</item_fr>
+        <item_it>sedile conducente regolabile su 6 posizioni (lunghezza, altezza)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Beifahrersitz 4-fach einstellbar (Länge)</item_de>
+        <item_fr>Siège passager avant avec 4 possibilités de réglage (profondeur)</item_fr>
+        <item_it>sedile passeggero anteriore regolabile su 4 posizioni (lunghezza)</item_it>
+        <category>Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Rücksitzlehne im Verhältnis 60:40 vorklappbar</item_de>
+        <item_fr>Dossier arrière rabattable en deux parties asymétriques (60:40)</item_fr>
+        <item_it>schienali dei sedili posteriori ribaltabili in avanti 60:40</item_it>
+        <category>Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+
+    <item>
+        <item_de>Stahlfelgen 6 J x 15 mit Reifen 195/65 R15 (für 1.6 CDTI ecoFLEX [81 kW] Stahlfelgen 6½ J x 16 mit Reifen 205/55 R16)</item_de>
+        <item_fr>Jantes en acier 6 J x 15 avec pneus 195/65 R15 (jantes en acier 6½ J x 16 avec pneus 205/55 R16 sur les modèles 1.6 CDTI ecoFLEX [81 kW])</item_fr>
+        <item_it>Cerchi in acciaio 6 J x 15 con pneumatici 195/65 R15 (per 1.6 CDTI ecoFLEX [81 kW] cerchi in acciaio 6½ J x 16 con pneumatici 205/55 R16)</item_it>
+        <category>Serienausstattung</category>
+        <info>Felgen</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Steckdose, 12 Volt, in der Mittelkonsole und im Gepäckraum</item_de>
+        <item_fr>Prise 12 V dans la console centrale et dans le coffre</item_fr>
+        <item_it>Presa, 12 Volt nella console centrale e nel bagagliaio</item_it>
+        <category>Serienausstattung</category>
+        <info>Steckdose</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Make-up-Spiegel in Sonnenblende, nur Beifahrer</item_de>
+        <item_fr>Miroir de courtoisie dans le pare-soleil, passager avant seulement</item_fr>
+        <item_it>Specchietto di cortesia nell`aletta parasole, solo lato passeggero</item_it>
+        <category>Serienausstattung</category>
+        <info>Spiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Türaussengriffe in Wagenfarbe</item_de>
+        <item_fr>Poignées extérieures couleur carrosserie</item_fr>
+        <item_it>Maniglie esterne delle portiere in tinta carrozzeria</item_it>
+        <category>Serienausstattung</category>
+        <info>Türgriff</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Dachreling, Schwarz</item_de>
+        <item_fr>Barres de toit, noires</item_fr>
+        <item_it>Barre tetto nere</item_it>
+        <category>Serienausstattung</category>
+        <info>Dach</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Auspuffendrohr, sichtbar, einfach für 1.6 BiTurbo CDTI,
+            doppelt für 1.6 ECOTEC® Direct Injection Turbo</item_de>
+        <item_fr>Sortie d`échappement, visible, simple pour le 1.6 BiTurbo CDTI,
+            double pour le 1.6 ECOTEC® Direct Injection Turbo</item_fr>
+        <item_it>1 terminale di scarico, visibile, per 1.6 BiTurbo CDTI,
+            2 terminali di scarico, visibili, per 1.6 ECOTEC®  Direct Injection Turbo</item_it>
+        <category>Serienausstattung</category>
+        <info>Auspuff</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Wärmeschutzverglasung, grün getönt</item_de>
+        <item_fr>Vitres athermiques, teintées en vert</item_fr>
+        <item_it>Vetri atermici con sfumatura verde</item_it>
+        <category>Serienausstattung</category>
+        <info>Wärmeschutzverglasung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Zentralverriegelung, inkl. Funkfernbedienung und Innenschalter</item_de>
+        <item_fr>Verrouillage central, avec télécommande et commande intérieure</item_fr>
+        <item_it>Chiusura centralizzata con telecomando e interruttore interno</item_it>
+        <category>Serienausstattung</category>
+        <info>Zentralverriegelung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>2 Zündschlüssel, ein Zündschlüssel auf Aussenfarbe abgestimmt und klappbar</item_de>
+        <item_fr>2 clés de contact, dont une assortie à la couleur de la carrosserie et pliable</item_fr>
+        <item_it>2 chiavi di accensione, una in tinta carrozzeria e ripiegabile</item_it>
+        <category>Serienausstattung</category>
+        <info>Zündschlüssel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>ecoFLEX-Motorisierung mit Start/Stop System</item_de>
+        <item_fr>Motorisation ecoFLEX avec système Start/Stop</item_fr>
+        <item_it>Motorizzazione ecoFLEX con sistema Start/Stop</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>ecoFLEX-Fahrassistent für 1.0 Direct Injection Turbo ecoFLEX und 1.6 CDTI ecoFLEX (81 kW)</item_de>
+        <item_fr>Assistant ecoFLEX sur les modèles 1.0 Direct Injection Turbo ecoFLEX et 1.6 CDTI ecoFLEX (81 kW)</item_fr>
+        <item_it>assistenza alla guida ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX
+            e 1.6 CDTI ecoFLEX (81 kW)</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Verstärkter Anlasser</item_de>
+        <item_fr>Démarreur renforcé</item_fr>
+        <item_it>motorino davviamento rinforzato</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>AGM-Hochleistungsbatterie</item_de>
+        <item_fr>Batterie hautes performances AGM</item_fr>
+        <item_it>batteria ad alto rendimento AGM</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Reifen mit geringerem Rollwiderstand für 1.0 Direct Injection Turbo ecoFLEX
+            (nur bei 15”- und 16”-Felgen)</item_de>
+        <item_fr>Pneus avec faible résistance au roulement sur les modèles 1.0 Direct Injection Turbo ecoFLEX (seulement avec jantes 15” et 16”)</item_fr>
+        <item_it>pneumatici a bassa resistenza al rotolamento per 1.0 Direct Injection Turbo ecoFLEX (solo per cerchi di 15” e 16”)</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>eco-Schalter zur Bedienung der Start/Stop-Funktion</item_de>
+        <item_fr>Bouton eco pour piloter la fonction Start/Stop</item_fr>
+        <item_it>interruttore eco di comando della funzione Start/Stop</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>ecoFLEX-Emblem für 1.0 Direct Injection Turbo ecoFLEX</item_de>
+        <item_fr>Logo ecoFLEX sur les modèles 1.0 Direct Injection Turbo ecoFLEX</item_fr>
+        <item_it>logo ecoFLEX per 1.0 Direct Injection Turbo ecoFLEX</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Bremsenergie-Rückgewinnung</item_de>
+        <item_fr>Récupération de l`énergie de freinage</item_fr>
+        <item_it>recupero dell`energia in frenata</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Active Aero Shutter, Aerofinnen auf Heckklappe und Aerolippe am Frontstossfänger für 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</item_de>
+        <item_fr>Active Aero Shutter, éléments aérodynamiques sur le hayon et lèvre aérodynamique sur le pare-chocs avant sur les modèles 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</item_fr>
+        <item_it>Active Aero Shutter, alette aerodinamiche sul portellone e spoiler aerodinamico sottoparaurti anteriore per 1.0 Direct Injection Turbo ecoFLEX Easytronic® 3.0</item_it>
+        <category>Serienausstattung</category>
+        <info>ecoFLEX-Motorisierung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Modellbezogene Serienausstattung</item_de>
+        <item_fr>Equipement de série par modèle</item_fr>
+        <item_it>Equipaggiamento di serie in base al modello</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>-</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Sensorgesteuerte Heckklappe, elektrisch, per Fussgeste</item_de>
+        <item_fr>Hayon commandé par capteur et geste du pied, électrique</item_fr>
+        <item_it>Portellone posteriore comandato mediante sensore</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Heckklappe</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Schlüsselloses Schliess- und Startsystem «Keyless Open»</item_de>
+        <item_fr>Système «Keyless Open» de verrouillage et de démarrage sans clé</item_fr>
+        <item_it>Sistema di apertura e avvio senza chiave «Keyless Open»</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Keyless Open</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Lendenwirbelstütze, elektropneumatisch, Fahrer</item_de>
+        <item_fr>Appui lombaire électropneumatique, conducteur</item_fr>
+        <item_it>Sostegno lombare elettropneumatico, lato conducente</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Lendenwirbelstütze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Türeinstiegsleisten mit Schriftzug OPEL, vorn</item_de>
+        <item_fr>Seuils de portes avec inscription OPEL à l`avant</item_fr>
+        <item_it>Battitacchi con scritta OPEL, anteriori</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Türeinstiegsleisten</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Ambientebeleuchtung in den Türen vorn</item_de>
+        <item_fr>Eclairage d`ambiance dans les portes avant</item_fr>
+        <item_it>Illuminazione dambiente, portiere anteriori</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Ambientebeleuchtung</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Frontkamera</item_de>
+        <item_fr>Caméra avant</item_fr>
+        <item_it>Telecamera frontale</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Frontkamera</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Dachhimmel, schwarz</item_de>
+        <item_fr>Ciel de toit, noir</item_fr>
+        <item_it>Padiglione nero</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Dachhimmel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Nebelscheinwerfer</item_de>
+        <item_fr>Antibrouillards</item_fr>
+        <item_it>Fari fendinebbia</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Nebelscheinwerfer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Sicht-Paket, u. a. mit Regensensor</item_de>
+        <item_fr>Pack Visibilité, entre autres avec capteur de pluie</item_fr>
+        <item_it>Pacchetto visibilità, ad es. con sensore pioggia</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Sicht-Paket</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Fensterzierleisten, oberhalb Chrom, B-Säule in Hochglanzschwarz</item_de>
+        <item_fr>Baguettes décoratives chromées en dessus des vitres, montant B en noir brillant</item_fr>
+        <item_it>Modanature decorative finestrini, profilo superiore cromato, montanti B in nero lucido</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Fensterzierleisten</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Dachreling, Silber</item_de>
+        <item_fr>Barres de toit, argentées</item_fr>
+        <item_it>Barre tetto argento</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Dach</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Licht-Paket</item_de>
+        <item_fr>Pack Eclairage</item_fr>
+        <item_it>Pacchetto luci</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Licht-Paket</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Mittelarmlehne, vorn, verschiebbar, inkl. Staufächer und Getränkehalter</item_de>
+        <item_fr>Accoudoir central, coulissant à l`avant, avec compartiments de rangement et porte-boisson</item_fr>
+        <item_it>Bracciolo centrale scorrevole, anteriore, con vani portaoggetti e portabibite</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Mittelarmlehne</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Mittelarmlehne, vorn, verschiebbar, inkl. Staufächer, Getränkehalter und elektrische Parkbremse</item_de>
+        <item_fr>Accoudoir central coulissant à l`avant, avec compartiments de rangement, porte-boisson et frein de parking électrique</item_fr>
+        <item_it>Bracciolo centrale scorrevole, anteriore, con vani portaoggetti, portabibite e freno di parcheggio elettrico</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Mittelarmlehne</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Fensterheber, elektrisch, vorn und hinten</item_de>
+        <item_fr>Lève-glaces électriques à l`avant et à l`arrière</item_fr>
+        <item_it>Alzacristalli elettrici anteriori e posteriori</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Fensterheber</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Geschwindigkeitsregler und -begrenzer</item_de>
+        <item_fr>Régulateur et limiteur de vitesse</item_fr>
+        <item_it>Regolatore e limitatore di velocità</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Geschwindigkeitsregler</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Radio R 4.0 IntelliLink, 7”-Touchscreen, Colour Info Display, Freisprecheinrichtung via Bluetooth®-Schnittstelle, DAB+</item_de>
+        <item_fr>Radio R 4.0 IntelliLink, écran tactile Colour Info Display 7”, kit mains-libres via interface Bluetooth®, DAB+</item_fr>
+        <item_it>Radio R 4.0 IntelliLink, schermo tattile 7”, Colour Info Display, dispositivo vivavoce tramite interfaccia Bluetooth®, DAB+</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>IntelliLink</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Bordcomputer mit Check-Control System</item_de>
+        <item_fr>Ordinateur de bord avec système Check Control</item_fr>
+        <item_it>Computer di bordo con sistema Check-Control</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Bordcomputer</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Reifendruck-Kontrollsystem (Anzeige für jedes Rad)</item_de>
+        <item_fr>Système de contrôle de la pression des pneus (affichage pour chaque roue)</item_fr>
+        <item_it>Sistema di controllo pressione pneumatici (indicazione per ogni ruota)</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Reifendruck-Kontrollsystem</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Aussenspiegel manuell anklappbar</item_de>
+        <item_fr>Rétroviseurs extérieurs rabattables manuellement</item_fr>
+        <item_it>Retrovisori esterni ripiegabili manualmente</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Aussenspiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Aussenspiegel elektrisch anklappbar</item_de>
+        <item_fr>Rétroviseurs extérieurs rabattables électriquement</item_fr>
+        <item_it>Retrovisori esterni ripiegabili elettricamente</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Aussenspiegel</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Komfortsitze, vorn, mit Stoffpolster, Dekorleisten Sand, matt</item_de>
+        <item_fr>Sièges confort à l`avant, avec sellerie tissu, baguettes décoratives sable mat</item_fr>
+        <item_it>Sedili anteriori comfort con rivestimento in tessuto, liste decorative Sabbia, opaco</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Komfortsitze, vorn, mit Stoffpolster, mit sportlicher Stilistik, Dekorleisten Klavierlack</item_de>
+        <item_fr>Sièges confort au look sport à l`avant, avec sellerie tissu, baguettes décoratives couleur vernis de piano</item_fr>
+        <item_it>Sedili anteriori comfort con rivestimento in tessuto e stile sportivo, liste decorative in lacca pianoforte</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Komfortsitze, vorn, mit Polster-Kombination Stoff/Ledernachbildung Morrocana, Dekorleisten Klavierlack</item_de>
+        <item_fr>Sièges confort à l`avant, avec sellerie combinée tissu/imitation cuir Morrocana, baguettes décoratives couleur vernis de piano</item_fr>
+        <item_it>Sedili anteriori comfort con rivestimento combinato tessuto/similpelle Morrocana, liste decorative in lacca pianoforte</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Sitze</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Lederlenkrad mit Lenkradfernbedienung</item_de>
+        <item_fr>Volant gainé cuir avec commandes au volant</item_fr>
+        <item_it>Volante in pelle con comandi al volante</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Lenkrad</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Klimaanlage, inkl. Fussraumheizung, hinten</item_de>
+        <item_fr>Climatisation avec chauffage pour les pieds à l`arrière</item_fr>
+        <item_it>Climatizzatore con riscaldamento pozzetto piedi posteriore</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Klimaanlage</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Zweizonen-Klimaautomatik, inkl. Fussraum¬heizung, hinten</item_de>
+        <item_fr>Climatisation automatique bizone avec chauffage pour les pieds à l`arrière</item_fr>
+        <item_it>Climatizzatore automatico bizona con riscaldamento pozzetto piedi posteriore</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Klimaanlage</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Designfelgen 6½ J x 16 mit Reifen 205/55 R16</item_de>
+        <item_fr>Jantes design 6½ J x 16 avec pneus 205/55 R16</item_fr>
+        <item_it>Cerchi design 6½ J x 16 con pneumatici 205/55 R16</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Felgen</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>Leichtmetallfelgen 7½ J x 17 mit Reifen 225/45 R17</item_de>
+        <item_fr>Jantes en alliage léger 7½ J x 17 avec pneus 225/45 R17</item_fr>
+        <item_it>Cerchi in lega leggera 7½ J x 17 con pneumatici 225/45 R17</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Felgen</info>
+        <carline>AstraST</carline>
+    </item>
+
+    <item>
+        <item_de>OnStar. Ihr persönlicher Online- und Service-Assistent mit folgenden Umfängen: automatische Unfallhilfe, WLAN Hotspot, Smartphone App, Diebstahl-Notfall¬service, Fahrzeug-Diagnose, auto¬matische Zieleingabe (ein integriertes Opel Navigationssystem ist Voraussetzung). Rund um die Uhr und 365 Tage im Jahr verbindet Opel OnStar Sie nahezu überall in Europa mit einem einzigartigen Service. OnStar Services sind für die ersten 12 Monate kostenlos. Ausgeschlossen sind die WLAN Hotspot Dienstleistungen. Weitere Informationen zur Verfügbarkeit und zur kostenlosen WLAN Hotspot Testperiode erhalten Sie auf www.opel-onstar.ch</item_de>
+        <item_fr>OnStar. Votre assistant personnel en ligne pour la mobilité et les services comprenant les prestations et fonctions suivantes: service d`assistance automatique en cas d`accident, point d`accès Wi-Fi, appli pour smartphone, assistance en cas de vol de véhicule, diagnostics du véhicule, téléchargement d`itinéraire (disponible uniquement sur les véhicules équipés d`un système de navigation Opel intégré). 24 heures sur 24, 365 jours par an et dans presque toute l`Europe, Opel OnStar vous permet d`accéder à des services uniques en leur genre. Les services OnStar sont gratuits pendant les 12 premiers mois. A l`exception des prestations liées au point d`accès Wi-Fi. Pour de plus amples informations sur la disponibilité et la période de test gratuite du point d`accès Wi-Fi, veuillez consulter le site www.opel-onstar.ch</item_fr>
+        <item_it>OnStar. Il vostro assistente personale di servizio online con le seguenti prestazioni: risposta automatica in caso d`incidente, hotspot Wi-Fi, app per smartphone, assistenza per furto veicolo, diagnostica veicolo, download dell`itinerario (requisito indispensabile: sistema di navigazione Opel integrato). Opel OnStar vi collega 24 ore al giorno e 365 giorni all`anno a un servizio di prim`ordine quasi ovunque in Europa. I servizi OnStar sono gratuiti per i primi 12 mesi. Esclusi i servizi hotspot Wi-Fi. Trovate ulteriori informazioni sulla disponibilità e sul periodo di prova gratuito per l`hotspot Wi-Fi su www.opel-onstar.ch</item_it>
+        <category>Modellbezogene Serienausstattung</category>
+        <info>Fußnote</info>
+        <carline>AstraST</carline>
+    </item>
+
+</items>
+
+
+
+
+
+
