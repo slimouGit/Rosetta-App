@@ -20,7 +20,7 @@ if(empty($_GET["data_id"])){
 
             <div class='row'>
 
-                <h1>Rosetta-Data Daten löschen</h1>
+                <h1>Rosetta-App Daten löschen</h1>
 
                 <?php
 

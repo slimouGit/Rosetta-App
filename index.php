@@ -27,7 +27,7 @@ include "rosetta_app/mvc/model/config.php";
 
         <div class="col-lg-12">
             <div class='row'>
-                <h1>Rosetta-App welcome</h1>
+                <h1>Rosetta-App Login</h1>
             </div>
         </div>
 
