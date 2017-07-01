@@ -29,7 +29,6 @@ include "lib/elements/header.php";
 
             //------------------------------------------------------------------------------------------
 
-            //
             $tempId = $_GET["data_id"];
 
             $language = $_GET["language"];

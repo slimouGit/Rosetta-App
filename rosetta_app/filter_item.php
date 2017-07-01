@@ -39,7 +39,6 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
 
             //------------------------------------------------------------------------------------------
 
-            //
             require "mvc/model/select_data_model.class.php";
             select_data::select_filteredData($tempItem);
 

@@ -30,7 +30,6 @@ if(empty($_GET["user_id"])){
 
                 //------------------------------------------------------------------------------------------
 
-                //
                 require "mvc/model/select_data_model.class.php";
                 select_data::select_specificDB("rosetta_users", "user_id", $tempId);
 
@@ -49,7 +48,6 @@ if(empty($_GET["user_id"])){
 
                     $currentDate = date('d.m.Y H:i');
 
-                    //
                     require "mvc/model/delete_user_model.class.php";
                     delete_user::deleteUserData($tempId);
 

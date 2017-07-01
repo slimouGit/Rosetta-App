@@ -61,7 +61,6 @@ include 'lib/elements/navigation.php';
 
         //------------------------------------------------------------------------------------------
 
-        //
         foreach ($res AS $row):
 
             //Pruefen, ob der generierte Code mit dem in der Datenbank abgelegten Code uebereinstimmt
