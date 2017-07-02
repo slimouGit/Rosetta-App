@@ -1,9 +1,9 @@
 Bei dieser Abgabe enthalten sind die drei Ordner: 
 - "documentary" mit der eingereichten Dokumentation
-- "presentation" mit der Präsentation sowohl als PDF als auch interaktiv
+- "presentation" mit der Praesentation sowohl als PDF als auch interaktiv
 - "system" mit dem Programm-Code
 
-Das komplette Projekt ist auf Github verfügbar: 
+Das komplette Projekt ist auf Github verfuegbar:
 - https://github.com/slimouGit/Rosetta-App.git
 
 Der bis jetzt abgeschlossene Entwicklungsstand ist online:
