@@ -1,5 +1,4 @@
 <?php
-//include header
 include "lib/elements/header.php";
 ?>
 
@@ -101,6 +100,5 @@ if(empty($_GET["user_id"])){
     </div><!--ENDE container-fluid content-->
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
