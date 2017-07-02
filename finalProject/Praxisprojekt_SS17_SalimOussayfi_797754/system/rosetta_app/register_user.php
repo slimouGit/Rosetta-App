@@ -119,3 +119,4 @@ include "mvc/model/config.php";
 <?php
 include "lib/elements/footer.php";
 ?>
+
