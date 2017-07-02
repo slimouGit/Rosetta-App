@@ -1,10 +1,5 @@
 <?php
-//include header
 include "lib/elements/header.php";
-?>
-
-<?php
-//include connection to database
 include "mvc/model/config.php";
 ?>
 
@@ -122,6 +117,5 @@ include "mvc/model/config.php";
 
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>

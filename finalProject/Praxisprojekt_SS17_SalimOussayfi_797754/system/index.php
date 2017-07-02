@@ -2,22 +2,9 @@
 
 session_start();
 
-//include header
 include "rosetta_app/lib/elements/headerWithoutSession.php";
-?>
-
-<?php
-//include connection to database
 include "rosetta_app/mvc/model/db_connect_model.php";
-?>
-
-<?php
-//include navigation
 include 'rosetta_app/lib/elements/navigation.php';
-?>
-
-<?php
-//include connection to database
 include "rosetta_app/mvc/model/config.php";
 ?>
 
@@ -35,7 +22,6 @@ include "rosetta_app/mvc/model/config.php";
 
     <?php
 
-    //CONTROLLER
     if(isset($_GET['login'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];

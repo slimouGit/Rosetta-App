@@ -1,12 +1,11 @@
 <?php
-//include header
 include "lib/elements/header.php";
 ?>
 
     <div class="container-fluid content">
 
 <?php
-//include connection to database
+//include Datenbankanbindung
 include "mvc/model/db_connect_model.php";
 ?>
 
@@ -59,6 +58,5 @@ if(!empty($_GET["item_it"])&&$_GET["item_it"]){
     </div>
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
