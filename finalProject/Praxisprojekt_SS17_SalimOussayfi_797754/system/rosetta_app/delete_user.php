@@ -102,3 +102,4 @@ if(empty($_GET["user_id"])){
 <?php
 include "lib/elements/footer.php";
 ?>
+
