@@ -1,9 +1,9 @@
 Bei dieser Abgabe enthalten sind die drei Ordner: 
 - "documentary" mit der eingereichten Dokumentation
-- "presentation" mit der Präsentation sowohl als PDF als auch interaktiv
-- "system" mit dem Programm-Code
+- "presentation" mit der Praesentation sowohl als PDF als auch interaktiv
+- "system" mit dem Programm-Code (in dem Ordner befindet sich auch der Ordner "database" mit dem SQL-Script fuer die beiden Tabellen "rosetta_data" und "rosetta_users" mit ersten Datensaetzen)
 
-Das komplette Projekt ist auf Github verfügbar: 
+Das komplette Projekt ist auf Github verfuegbar:
 - https://github.com/slimouGit/Rosetta-App.git
 
 Der bis jetzt abgeschlossene Entwicklungsstand ist online:

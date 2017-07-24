@@ -1,5 +1,4 @@
 <?php
-//include header
 include "lib/elements/header.php";
 ?>
 
@@ -110,7 +109,7 @@ include "lib/elements/header.php";
     </div><!--ENDE container-fluid content-->
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
+
 

@@ -1,5 +1,4 @@
 <?php
-//include header
 include "lib/elements/header.php";
 ?>
 <?php
@@ -9,12 +8,10 @@ session_destroy();
 ?>
 
 <?php
-//include connection to database
 include "mvc/model/db_connect_model.php";
 ?>
 
 <?php
-//include navigation
 include 'lib/elements/navigation.php';
 ?>
 
@@ -29,6 +26,6 @@ include 'lib/elements/navigation.php';
     </div>
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
+

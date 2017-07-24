@@ -1,11 +1,5 @@
 <?php
-//include header
 include "lib/elements/header.php";
-?>
-
-<?php
-//include connection to database
-include "mvc/model/db_connect_model.php";
 ?>
 
         <!---------------------------------------------->
@@ -51,8 +45,5 @@ include "mvc/model/db_connect_model.php";
         <!---------------------------------------------->
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
-
-

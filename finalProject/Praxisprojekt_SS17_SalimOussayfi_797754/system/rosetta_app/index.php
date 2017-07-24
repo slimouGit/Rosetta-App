@@ -1,5 +1,4 @@
 <?php
-//include header
 include "lib/elements/header.php";
 ?>
 
@@ -19,6 +18,6 @@ include "lib/elements/header.php";
     </div>
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
+

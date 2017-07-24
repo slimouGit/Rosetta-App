@@ -1,16 +1,6 @@
 <?php
-
-//include header
 include "lib/elements/headerWithoutSession.php";
-?>
-
-<?php
-//include db connection
 include "mvc/model/db_connect_model.php";
-?>
-
-<?php
-//include navigation
 include 'lib/elements/navigation.php';
 ?>
 
@@ -145,6 +135,6 @@ include 'lib/elements/navigation.php';
     <!-------------------------------------------------------------->
 
 <?php
-//include header
 include "lib/elements/footer.php";
 ?>
+
