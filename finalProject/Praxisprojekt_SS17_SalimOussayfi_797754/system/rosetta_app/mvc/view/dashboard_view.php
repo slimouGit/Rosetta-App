@@ -66,7 +66,7 @@
                 <h4><span class="daeshbordText">Gesamte Daten</span></h4>
             </div>
         </a>
-        <a href="deleted_item.php">
+        <a href="deleted_items.php">
             <div class="col-lg-6 daeshbordIcon daeshbordIconAdmin">
                 <img src="lib/img/deletedData_icon.png">
                 <h4><span class="daeshbordText">Gelöschte Daten</span></h4>
